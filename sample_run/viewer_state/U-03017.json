@@ -70,14 +70,16 @@
       },
       "goal_extensions": {
         "value": {
-          "unfinished_series": []
+          "lapses": [],
+          "unfinished_series": [],
+          "tv_telemetry_available": false
         },
         "source": [
-          "policy:series-reconciliation"
+          "policy:goal-evidence"
         ],
         "observed_at": "2026-10-01T12:10:50.219000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": []
       }
     },
@@ -111,6 +113,7 @@
         "condition": "on 3 distinct IST days",
         "window_hours": 336
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "e3afc68e-7380-4cf5-b288-931d9d28bb49",
       "eligibility_evidence": {
@@ -182,14 +185,16 @@
           },
           "goal_extensions": {
             "value": {
-              "unfinished_series": []
+              "lapses": [],
+              "unfinished_series": [],
+              "tv_telemetry_available": false
             },
             "source": [
-              "policy:series-reconciliation"
+              "policy:goal-evidence"
             ],
             "observed_at": "2026-10-01T02:47:33.299000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": []
           }
         },
@@ -226,25 +231,25 @@
           "window_hours": 336
         },
         "signal_refs": [
-          "event:oua-018656",
-          "event:oua-018659",
-          "event:oua-018663",
-          "event:oua-018670",
-          "event:oua-018666",
-          "event:oua-018675",
-          "event:oua-018679",
-          "event:oua-018684",
-          "event:oua-018689"
+          "event:oua-018691",
+          "event:oua-018694",
+          "event:oua-018698",
+          "event:oua-018705",
+          "event:oua-018701",
+          "event:oua-018710",
+          "event:oua-018714",
+          "event:oua-018719",
+          "event:oua-018724"
         ],
         "exposure_refs": [
-          "event:oua-018655",
-          "event:oua-018658",
-          "event:oua-018662"
+          "event:oua-018690",
+          "event:oua-018693",
+          "event:oua-018697"
         ],
         "associated_signal_refs": [
-          "event:oua-018656",
-          "event:oua-018659",
-          "event:oua-018663"
+          "event:oua-018691",
+          "event:oua-018694",
+          "event:oua-018698"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

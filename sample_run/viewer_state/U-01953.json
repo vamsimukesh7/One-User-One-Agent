@@ -64,6 +64,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-02T10:36:40.312000Z",
+              "source": {
+                "ref": "event:3503d327-be8d-4c1c-8bb9-fd06eef3394d",
+                "observed_at": "2026-09-02T10:36:40.312Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "bagi-baya-d4",
@@ -76,19 +85,26 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
-          "event:ada30e16-4e53-4686-bbd6-df867e4f5d6f"
+          "event:ada30e16-4e53-4686-bbd6-df867e4f5d6f",
+          "event:3503d327-be8d-4c1c-8bb9-fd06eef3394d"
         ],
         "observed_at": "2026-10-01T04:47:54.883000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:ada30e16-4e53-4686-bbd6-df867e4f5d6f",
             "observed_at": "2026-09-01T13:00:30.387Z",
             "freshness_s": 2562444.496
+          },
+          {
+            "ref": "event:3503d327-be8d-4c1c-8bb9-fd06eef3394d",
+            "observed_at": "2026-09-02T10:36:40.312Z",
+            "freshness_s": 2484674.571
           }
         ]
       }

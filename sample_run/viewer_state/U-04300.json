@@ -64,14 +64,16 @@
       },
       "goal_extensions": {
         "value": {
-          "unfinished_series": []
+          "lapses": [],
+          "unfinished_series": [],
+          "tv_telemetry_available": false
         },
         "source": [
-          "policy:series-reconciliation"
+          "policy:goal-evidence"
         ],
         "observed_at": "2026-10-01T10:56:51.706000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": []
       }
     },
@@ -107,6 +109,7 @@
         "condition": "any title",
         "window_hours": 24
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "bc6b451b-ca40-4c7c-a3cd-da320a7c9fe9",
       "eligibility_evidence": {
@@ -172,14 +175,16 @@
           },
           "goal_extensions": {
             "value": {
-              "unfinished_series": []
+              "lapses": [],
+              "unfinished_series": [],
+              "tv_telemetry_available": false
             },
             "source": [
-              "policy:series-reconciliation"
+              "policy:goal-evidence"
             ],
             "observed_at": "2026-10-01T10:56:50.627000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": []
           }
         },
@@ -211,7 +216,7 @@
           "window_hours": 24
         },
         "signal_refs": [
-          "event:oua-026915"
+          "event:oua-026961"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

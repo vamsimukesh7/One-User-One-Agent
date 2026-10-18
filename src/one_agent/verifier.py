@@ -35,6 +35,7 @@ class Verifier:
         settings = max([trigger]+[e for e in events if fresh_trigger(e,at) and ts(e['received_at']) > ts(trigger['received_at'])],key=lambda e:ts(e['received_at']))
         test('dialect', action.get('dialect') == settings.get('app_dialect') == context['facts']['dialect']['value'] and action.get('dialect') in {'d1','d2','d3','d4','d5','d6'})
         if action.get('type')!='home_page':
+            test('message_goal',action.get('goal_id',plan['goal_id'])==plan['goal_id'])
             failed.extend(message_checks(self.pack,self.store,action,context,at))
             test('session_idempotency',self.store.db.execute('SELECT 1 FROM actions WHERE user_id=? AND session_id=? AND action_id<>?',(trigger['user_id'],trigger.get('session_id'),action.get('action_id',''))).fetchone() is None)
             return {'passed':passed,'failed':failed}

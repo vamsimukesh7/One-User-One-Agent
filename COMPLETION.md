@@ -28,7 +28,7 @@ Reopened SQLite contains 1,746 viewer records, 921 persisted judgments and 15,29
 
 Completion ITT: 250/758 treatment versus 234/746 holdout. Difference +1.61 percentage points; 95% CI −3.10 to +6.32. Benefit is inconclusive. No favorable result was substituted.
 
-G06, G10 and G11 remain safely excluded because the supplied data does not define “recently,” operationalize “meaningful engagement,” or supply TV telemetry. No live LLM, frontend, real notification provider or cloud deployment was added; the latest request explicitly permits the local mock workflow. Other boundaries, including legacy historical audit coverage and single-writer operation, are documented in KNOWN_LIMITATIONS.md.
+Update: G06, G10 and G11 are now implemented; see ALL_GOALS.md for approved definitions and current validation. The metrics above describe the earlier baseline. No live LLM, frontend, real notification provider or cloud deployment was added; the latest request explicitly permits the local mock workflow. Other boundaries, including legacy historical audit coverage and single-writer operation, are documented in KNOWN_LIMITATIONS.md.
 
 ## Reproduce from the project root
 

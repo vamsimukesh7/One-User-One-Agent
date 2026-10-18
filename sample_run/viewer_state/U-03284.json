@@ -64,6 +64,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-06T21:34:08.719000Z",
+              "source": {
+                "ref": "event:79415db2-8cf1-456c-8552-f81905fc4b10",
+                "observed_at": "2026-09-06T21:34:08.719Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "bagugu-gigupi-d1",
@@ -146,7 +155,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:862ba1c9-02c3-455e-939e-4718beaf7c27",
@@ -163,11 +173,12 @@
           "event:75bdf588-97c7-4f60-8a0f-891caa5236fb",
           "event:b6a771a1-aa95-4433-8817-b18cd3b4b557",
           "event:30591ff7-e5de-4741-86e7-cf7bae14f7be",
-          "event:0b24f371-871f-457d-8dbd-3d515038a3c2"
+          "event:0b24f371-871f-457d-8dbd-3d515038a3c2",
+          "event:79415db2-8cf1-456c-8552-f81905fc4b10"
         ],
         "observed_at": "2026-10-01T05:06:59.189000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:862ba1c9-02c3-455e-939e-4718beaf7c27",
@@ -243,6 +254,11 @@
             "ref": "event:0b24f371-871f-457d-8dbd-3d515038a3c2",
             "observed_at": "2026-09-24T08:48:17.530Z",
             "freshness_s": 591521.659
+          },
+          {
+            "ref": "event:79415db2-8cf1-456c-8552-f81905fc4b10",
+            "observed_at": "2026-09-06T21:34:08.719Z",
+            "freshness_s": 2100770.47
           }
         ]
       }
@@ -268,7 +284,7 @@
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G07",
+      "goal_id": "G06",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -276,18 +292,19 @@
   ],
   "plans": [
     {
-      "plan_id": "P-0714771ca46372dfc881",
+      "plan_id": "P-2672ca70f838d1302da0",
       "user_id": "U-03284",
-      "goal_id": "G07",
+      "goal_id": "G06",
       "status": "failed",
       "started_at": "2026-10-01T04:55:50.638000Z",
-      "deadline": "2026-10-04T04:55:50.638000Z",
+      "deadline": "2026-10-15T04:55:50.638000Z",
       "success": {
-        "event": "play_started",
-        "condition": "same content_slug as the unfinished series",
-        "window_hours": 72
+        "event": "purchase_completed",
+        "condition": "any paid plan",
+        "window_hours": 336
       },
-      "rule_version": "2026-09-30",
+      "definition_source": "User-approved operational definitions (G06: 30 days; G10: 2 different episodes on 2 IST days); CLI overrides are recorded explicitly; no viewer facts invented",
+      "rule_version": "implementation-v1-da3ab3d7cc81ce2ebc7a",
       "trigger_event_id": "822d8416-87fe-4387-80a1-64897f79605f",
       "eligibility_evidence": {
         "facts": {
@@ -352,6 +369,15 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [
+                {
+                  "at": "2026-09-06T21:34:08.719000Z",
+                  "source": {
+                    "ref": "event:79415db2-8cf1-456c-8552-f81905fc4b10",
+                    "observed_at": "2026-09-06T21:34:08.719Z"
+                  }
+                }
+              ],
               "unfinished_series": [
                 {
                   "content_slug": "bagugu-gigupi-d1",
@@ -434,7 +460,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:862ba1c9-02c3-455e-939e-4718beaf7c27",
@@ -451,11 +478,12 @@
               "event:75bdf588-97c7-4f60-8a0f-891caa5236fb",
               "event:b6a771a1-aa95-4433-8817-b18cd3b4b557",
               "event:30591ff7-e5de-4741-86e7-cf7bae14f7be",
-              "event:0b24f371-871f-457d-8dbd-3d515038a3c2"
+              "event:0b24f371-871f-457d-8dbd-3d515038a3c2",
+              "event:79415db2-8cf1-456c-8552-f81905fc4b10"
             ],
             "observed_at": "2026-10-01T04:55:50.638000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:862ba1c9-02c3-455e-939e-4718beaf7c27",
@@ -531,6 +559,11 @@
                 "ref": "event:0b24f371-871f-457d-8dbd-3d515038a3c2",
                 "observed_at": "2026-09-24T08:48:17.530Z",
                 "freshness_s": 590853.108
+              },
+              {
+                "ref": "event:79415db2-8cf1-456c-8552-f81905fc4b10",
+                "observed_at": "2026-09-06T21:34:08.719Z",
+                "freshness_s": 2100101.919
               }
             ]
           }
@@ -551,24 +584,26 @@
         ]
       },
       "eligibility_rule": {
-        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+        "text": "Subscription recently lapsed.",
+        "subscription_status": [
+          "lapsed"
+        ],
+        "lapse_within_days": 30
       },
       "actions": [],
-      "target_content_slug": "bagugu-gigupi-d1",
-      "next_episode_id": "bagugu-gigupi-d1-s1e2",
       "final_outcome": {
-        "plan_id": "P-0714771ca46372dfc881",
+        "plan_id": "P-2672ca70f838d1302da0",
         "user_id": "U-03284",
-        "goal_id": "G07",
-        "rule_version": "2026-09-30",
+        "goal_id": "G06",
+        "rule_version": "implementation-v1-da3ab3d7cc81ce2ebc7a",
         "started_at": "2026-10-01T04:55:50.638000Z",
-        "deadline": "2026-10-04T04:55:50.638000Z",
+        "deadline": "2026-10-15T04:55:50.638000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "play_started",
-          "condition": "same content_slug as the unfinished series",
-          "window_hours": 72
+          "event": "purchase_completed",
+          "condition": "any paid plan",
+          "window_hours": 336
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -576,7 +611,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-04T04:55:50.638000Z"
+      "closed_at": "2026-10-15T04:55:50.638000Z"
     }
   ]
 }

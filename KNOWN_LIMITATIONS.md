@@ -1,6 +1,6 @@
 # Known limitations
 
-- G06 remains excluded because “recently” has no specified threshold. G10 lacks an operational success definition. G11's TV event does not exist in the supplied stream. No artificial definitions or telemetry were added.
+- All twelve goals have implementation support. G06 uses the user-approved 30-day lapse threshold; G10 requires two distinct episode completions on two IST days within seven days. G11 requires real TV telemetry, absent from the supplied pack: selection is disabled unless instrumentation is explicitly declared. No TV observations are fabricated.
 - G07 requires a covered lifetime and valid catalogue episode IDs. Older viewers with truncated histories cannot prove an episode is still unwatched. Unknown episode references and unavailable/wrong-locale targets fail closed.
 - All four channels produce local simulator-compatible actions. There are no real push/WhatsApp credentials, external sends, delivery integrations, frontend or cloud deployment. These are outside the requested local assignment scope. The simulator queues in-app messages without impression events; their individual effect stays inconclusive.
 - The provider is a replay/mock advisor with deterministic fallback, not a live LLM. No personal API key is required. Custom providers must be process-safe and picklable on Windows; process startup failure and timeout fall back safely.

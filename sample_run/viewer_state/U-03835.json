@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "bagi-baya-d4",
@@ -82,14 +83,15 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:87f72ad4-6e26-4b30-9f67-0c35b5f63f47"
         ],
         "observed_at": "2026-10-01T04:42:23.225000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:87f72ad4-6e26-4b30-9f67-0c35b5f63f47",
@@ -130,6 +132,7 @@
         "condition": "on 3 distinct IST days",
         "window_hours": 336
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "6fbc3906-e3b4-42a7-93a1-499ac0987277",
       "eligibility_evidence": {
@@ -201,6 +204,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "bagi-baya-d4",
@@ -213,14 +217,15 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:87f72ad4-6e26-4b30-9f67-0c35b5f63f47"
             ],
             "observed_at": "2026-10-01T04:42:23.225000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:87f72ad4-6e26-4b30-9f67-0c35b5f63f47",

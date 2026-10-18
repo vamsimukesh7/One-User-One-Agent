@@ -64,6 +64,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "guka-kosusa-d2",
@@ -76,14 +77,15 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:6895da11-f938-4f61-9001-a197f35d9ef9"
         ],
         "observed_at": "2026-10-01T16:17:38.842000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:6895da11-f938-4f61-9001-a197f35d9ef9",
@@ -123,6 +125,7 @@
         "condition": "any episode",
         "window_hours": 72
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "11425203-41e3-418b-958f-010980bce18b",
       "eligibility_evidence": {
@@ -188,6 +191,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "guka-kosusa-d2",
@@ -200,14 +204,15 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:6895da11-f938-4f61-9001-a197f35d9ef9"
             ],
             "observed_at": "2026-10-01T16:17:38.842000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:6895da11-f938-4f61-9001-a197f35d9ef9",
@@ -247,7 +252,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-029893"
+          "event:oua-029942"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

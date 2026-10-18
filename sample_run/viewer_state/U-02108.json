@@ -64,6 +64,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "guka-kosusa-d2",
@@ -84,7 +85,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:56d6db70-7624-4bef-b9ad-d92c3d8e8707",
@@ -93,7 +95,7 @@
         ],
         "observed_at": "2026-10-01T04:46:00.355000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:56d6db70-7624-4bef-b9ad-d92c3d8e8707",

@@ -70,6 +70,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-03T22:46:32.305000Z",
+              "source": {
+                "ref": "event:8cdce297-d2de-4266-88ba-8610ad20e34d",
+                "observed_at": "2026-09-03T22:46:32.305Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "dhapipa-gini-d2",
@@ -151,7 +160,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:f68faa33-8884-4b5d-90ce-4c1395585a8c",
@@ -166,11 +176,12 @@
           "event:3d85fe35-dc47-4288-981c-9fa01a77c498",
           "event:9ee6014a-9530-4f0d-9d76-0628e3cfc171",
           "event:a7f4557e-ce7f-4b58-be21-0c69a1c9c460",
-          "event:7129d78d-b5c3-4060-8f89-bae2954dc01c"
+          "event:7129d78d-b5c3-4060-8f89-bae2954dc01c",
+          "event:8cdce297-d2de-4266-88ba-8610ad20e34d"
         ],
         "observed_at": "2026-10-01T01:50:37.389000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:f68faa33-8884-4b5d-90ce-4c1395585a8c",
@@ -236,6 +247,11 @@
             "ref": "event:7129d78d-b5c3-4060-8f89-bae2954dc01c",
             "observed_at": "2026-09-06T16:32:39.823Z",
             "freshness_s": 2107077.566
+          },
+          {
+            "ref": "event:8cdce297-d2de-4266-88ba-8610ad20e34d",
+            "observed_at": "2026-09-03T22:46:32.305Z",
+            "freshness_s": 2343845.084
           }
         ]
       }

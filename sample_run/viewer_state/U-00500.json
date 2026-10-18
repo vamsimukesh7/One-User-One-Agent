@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "gune-halo-d1",
@@ -90,7 +91,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:a0b2eee6-0c11-4b2a-bd17-bb666b264b2e",
@@ -99,7 +101,7 @@
         ],
         "observed_at": "2026-10-01T09:08:01.492000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:a0b2eee6-0c11-4b2a-bd17-bb666b264b2e",
@@ -158,6 +160,7 @@
         "condition": "on 3 distinct IST days",
         "window_hours": 336
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "e5c2558f-e0ef-4ee7-a5ec-5fd70d6166fd",
       "eligibility_evidence": {
@@ -229,6 +232,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "gune-halo-d1",
@@ -249,7 +253,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:a0b2eee6-0c11-4b2a-bd17-bb666b264b2e",
@@ -258,7 +263,7 @@
             ],
             "observed_at": "2026-10-01T09:08:01.492000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:a0b2eee6-0c11-4b2a-bd17-bb666b264b2e",

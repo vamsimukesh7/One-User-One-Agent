@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "gubava-gihaya-d5",
@@ -109,7 +110,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:fc244370-6f82-44d6-8d3a-01ec1e56e1ce",
@@ -121,7 +123,7 @@
         ],
         "observed_at": "2026-10-01T14:02:02.074000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:fc244370-6f82-44d6-8d3a-01ec1e56e1ce",

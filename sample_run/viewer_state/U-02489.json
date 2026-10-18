@@ -64,6 +64,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-19T20:41:43.483000Z",
+              "source": {
+                "ref": "event:eac0ea43-90dc-407a-b492-39cc6686569b",
+                "observed_at": "2026-09-19T20:41:43.483Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "baguti-gida-d4",
@@ -76,19 +85,26 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
-          "event:c7e63db5-460d-475a-b1a1-5adf1aace6c2"
+          "event:c7e63db5-460d-475a-b1a1-5adf1aace6c2",
+          "event:eac0ea43-90dc-407a-b492-39cc6686569b"
         ],
         "observed_at": "2026-10-01T06:42:18.406000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:c7e63db5-460d-475a-b1a1-5adf1aace6c2",
             "observed_at": "2026-09-27T08:45:30.179Z",
             "freshness_s": 338208.227
+          },
+          {
+            "ref": "event:eac0ea43-90dc-407a-b492-39cc6686569b",
+            "observed_at": "2026-09-19T20:41:43.483Z",
+            "freshness_s": 986434.923
           }
         ]
       }
@@ -112,7 +128,7 @@
   "latest_decision_id": "D-f27e40b8963f72cdd0a7",
   "learning": [
     {
-      "goal_id": "G07",
+      "goal_id": "G06",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -120,18 +136,19 @@
   ],
   "plans": [
     {
-      "plan_id": "P-b2e790416ca590ca3ff6",
+      "plan_id": "P-6ca50e817083a7733d11",
       "user_id": "U-02489",
-      "goal_id": "G07",
+      "goal_id": "G06",
       "status": "failed",
       "started_at": "2026-10-01T06:42:18.406000Z",
-      "deadline": "2026-10-04T06:42:18.406000Z",
+      "deadline": "2026-10-15T06:42:18.406000Z",
       "success": {
-        "event": "play_started",
-        "condition": "same content_slug as the unfinished series",
-        "window_hours": 72
+        "event": "purchase_completed",
+        "condition": "any paid plan",
+        "window_hours": 336
       },
-      "rule_version": "2026-09-30",
+      "definition_source": "User-approved operational definitions (G06: 30 days; G10: 2 different episodes on 2 IST days); CLI overrides are recorded explicitly; no viewer facts invented",
+      "rule_version": "implementation-v1-da3ab3d7cc81ce2ebc7a",
       "trigger_event_id": "3910798f-e189-4971-b0b6-f4aee011b4ca",
       "eligibility_evidence": {
         "facts": {
@@ -196,6 +213,15 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [
+                {
+                  "at": "2026-09-19T20:41:43.483000Z",
+                  "source": {
+                    "ref": "event:eac0ea43-90dc-407a-b492-39cc6686569b",
+                    "observed_at": "2026-09-19T20:41:43.483Z"
+                  }
+                }
+              ],
               "unfinished_series": [
                 {
                   "content_slug": "baguti-gida-d4",
@@ -208,19 +234,26 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
-              "event:c7e63db5-460d-475a-b1a1-5adf1aace6c2"
+              "event:c7e63db5-460d-475a-b1a1-5adf1aace6c2",
+              "event:eac0ea43-90dc-407a-b492-39cc6686569b"
             ],
             "observed_at": "2026-10-01T06:42:18.406000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:c7e63db5-460d-475a-b1a1-5adf1aace6c2",
                 "observed_at": "2026-09-27T08:45:30.179Z",
                 "freshness_s": 338208.227
+              },
+              {
+                "ref": "event:eac0ea43-90dc-407a-b492-39cc6686569b",
+                "observed_at": "2026-09-19T20:41:43.483Z",
+                "freshness_s": 986434.923
               }
             ]
           }
@@ -241,26 +274,28 @@
         ]
       },
       "eligibility_rule": {
-        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+        "text": "Subscription recently lapsed.",
+        "subscription_status": [
+          "lapsed"
+        ],
+        "lapse_within_days": 30
       },
       "actions": [
         "A-f27e40b8963f72cdd0a7"
       ],
-      "target_content_slug": "baguti-gida-d4",
-      "next_episode_id": "baguti-gida-d4-s1e1",
       "final_outcome": {
-        "plan_id": "P-b2e790416ca590ca3ff6",
+        "plan_id": "P-6ca50e817083a7733d11",
         "user_id": "U-02489",
-        "goal_id": "G07",
-        "rule_version": "2026-09-30",
+        "goal_id": "G06",
+        "rule_version": "implementation-v1-da3ab3d7cc81ce2ebc7a",
         "started_at": "2026-10-01T06:42:18.406000Z",
-        "deadline": "2026-10-04T06:42:18.406000Z",
+        "deadline": "2026-10-15T06:42:18.406000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "play_started",
-          "condition": "same content_slug as the unfinished series",
-          "window_hours": 72
+          "event": "purchase_completed",
+          "condition": "any paid plan",
+          "window_hours": 336
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -268,7 +303,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-04T06:42:18.406000Z"
+      "closed_at": "2026-10-15T06:42:18.406000Z"
     }
   ]
 }

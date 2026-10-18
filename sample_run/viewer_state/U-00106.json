@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "kova-sako-d5",
@@ -82,14 +83,15 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:2b54b773-89bd-4ebc-a601-fe8b15a50d4e"
         ],
         "observed_at": "2026-10-01T13:02:38.589000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:2b54b773-89bd-4ebc-a601-fe8b15a50d4e",
@@ -130,6 +132,7 @@
         "condition": "on 3 distinct IST days",
         "window_hours": 336
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "2cf3bf25-9fc6-4ad4-b689-a696a41aac06",
       "eligibility_evidence": {
@@ -201,6 +204,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "kova-sako-d5",
@@ -213,14 +217,15 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:2b54b773-89bd-4ebc-a601-fe8b15a50d4e"
             ],
             "observed_at": "2026-10-01T10:11:49.017000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:2b54b773-89bd-4ebc-a601-fe8b15a50d4e",
@@ -262,7 +267,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-000678"
+          "event:oua-000680"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

@@ -2,11 +2,11 @@
 from datetime import timedelta
 from .common import day, event_time, ts
 from .policy import invalidation
-from .goals import UNSUPPORTED
+from .goals import supported
 
 
 def matching_events(plan, events, pack):
-    if plan['goal_id'] in UNSUPPORTED or plan.get('unsupported_rule') or not plan.get('success',{}).get('event'):return []
+    if not supported(plan['goal_id'],{'success':plan.get('success',{}),'eligibility':plan.get('eligibility_rule',{})}) or plan.get('unsupported_rule') or not plan.get('success',{}).get('event'):return []
     start, end = ts(plan['started_at']), ts(plan['deadline'])
     if plan.get('closed_at') and plan['status']=='superseded':
         end = min(end, ts(plan['closed_at']))
@@ -31,6 +31,9 @@ def matching_events(plan, events, pack):
         if g == 'G07':
             title=pack.catalogue.get(props.get('title_id'))
             if not title or title['content_slug']!=plan.get('target_content_slug'):continue
+        if g=='G10':
+            title=pack.catalogue.get(props.get('title_id'))
+            if not title or props.get('episode_id') not in {ep.get('episode_id') for ep in pack.episodes[title['content_slug']]}:continue
         if g == 'G08':
             title = pack.catalogue.get(props.get('title_id'))
             if not title or not day(start)-timedelta(days=30) <= ts(title['release_date']+'T00:00:00Z').date() <= day(start):
@@ -39,6 +42,9 @@ def matching_events(plan, events, pack):
     result.sort(key=lambda e: e['received_at'])
     if plan['goal_id']=='G09' and len({day(event_time(e)[0]) for e in result}) < 3:
         return []
+    if plan['goal_id']=='G10':
+        if len({day(event_time(e)[0]) for e in result})<plan['success']['min_distinct_days']:return []
+        if plan['success'].get('min_distinct_episodes') and len({e['properties']['episode_id'] for e in result})<plan['success']['min_distinct_episodes']:return []
     return result
 
 
@@ -53,7 +59,7 @@ def judge(plan, events, pack, observation_end, action_ids=(), observation_comple
     for e in signals:
         if any(x.get('session_id') and x.get('session_id')==e.get('session_id') and ts(x['received_at']) <= event_time(e)[0] for x in exposed):
             associated.append(e['event_id'])
-    if plan['goal_id'] in UNSUPPORTED or plan.get('unsupported_rule') or not plan.get('success',{}).get('event'):
+    if not supported(plan['goal_id'],{'success':plan.get('success',{}),'eligibility':plan.get('eligibility_rule',{})}) or plan.get('unsupported_rule') or not plan.get('success',{}).get('event'):
         status,reason='inconclusive','unsupported_or_missing_success_signal'
     elif plan.get('closed_reason')=='corrected_rule_revoked_eligibility':
         status,reason='inconclusive','corrected_rule_revoked_eligibility'
@@ -63,6 +69,8 @@ def judge(plan, events, pack, observation_end, action_ids=(), observation_comple
         status, reason = 'succeeded', 'observed_success_signal_in_goal_window'
     elif plan['status']=='superseded':
         status, reason = 'inconclusive', 'goal_superseded_by_changed_evidence'
+    elif plan['goal_id']=='G11' and not plan['success'].get('telemetry_available',False):
+        status,reason='inconclusive','tv_telemetry_unavailable'
     elif not observation_complete:
         status,reason='inconclusive','success_observation_incomplete'
     elif observation_end >= ts(plan['deadline']):

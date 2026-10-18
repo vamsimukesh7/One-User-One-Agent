@@ -70,6 +70,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-08T17:02:12.008000Z",
+              "source": {
+                "ref": "event:53cc0680-1729-4e38-bff6-d1cebef905fd",
+                "observed_at": "2026-09-08T17:02:12.008Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "guka-kosusa-d2",
@@ -183,7 +192,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:4e945417-e42b-42b3-83fe-b1a1395e5c19",
@@ -206,11 +216,12 @@
           "event:500d5da2-e397-4d50-b8b9-b6dcc4bdcfa4",
           "event:03aef494-db3c-4123-9fbf-f959cf149f97",
           "event:886de93a-a062-4477-a320-a902fe3acd7e",
-          "event:93706bdd-8a1b-4c06-a6b9-4b2244c7cdc1"
+          "event:93706bdd-8a1b-4c06-a6b9-4b2244c7cdc1",
+          "event:53cc0680-1729-4e38-bff6-d1cebef905fd"
         ],
         "observed_at": "2026-10-01T12:55:46.876000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:4e945417-e42b-42b3-83fe-b1a1395e5c19",
@@ -316,6 +327,11 @@
             "ref": "event:93706bdd-8a1b-4c06-a6b9-4b2244c7cdc1",
             "observed_at": "2026-09-03T13:46:32.196Z",
             "freshness_s": 2416154.68
+          },
+          {
+            "ref": "event:53cc0680-1729-4e38-bff6-d1cebef905fd",
+            "observed_at": "2026-09-08T17:02:12.008Z",
+            "freshness_s": 1972414.868
           }
         ]
       }
@@ -365,6 +381,7 @@
         "condition": "a title released in the 30 days before the goal start",
         "window_hours": 168
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "7bfa40d7-a96d-4183-9d1e-4ef3ff41fcba",
       "eligibility_evidence": {
@@ -436,6 +453,15 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [
+                {
+                  "at": "2026-09-08T17:02:12.008000Z",
+                  "source": {
+                    "ref": "event:53cc0680-1729-4e38-bff6-d1cebef905fd",
+                    "observed_at": "2026-09-08T17:02:12.008Z"
+                  }
+                }
+              ],
               "unfinished_series": [
                 {
                   "content_slug": "guka-kosusa-d2",
@@ -549,7 +575,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:4e945417-e42b-42b3-83fe-b1a1395e5c19",
@@ -572,11 +599,12 @@
               "event:500d5da2-e397-4d50-b8b9-b6dcc4bdcfa4",
               "event:03aef494-db3c-4123-9fbf-f959cf149f97",
               "event:886de93a-a062-4477-a320-a902fe3acd7e",
-              "event:93706bdd-8a1b-4c06-a6b9-4b2244c7cdc1"
+              "event:93706bdd-8a1b-4c06-a6b9-4b2244c7cdc1",
+              "event:53cc0680-1729-4e38-bff6-d1cebef905fd"
             ],
             "observed_at": "2026-10-01T12:55:46.876000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:4e945417-e42b-42b3-83fe-b1a1395e5c19",
@@ -682,6 +710,11 @@
                 "ref": "event:93706bdd-8a1b-4c06-a6b9-4b2244c7cdc1",
                 "observed_at": "2026-09-03T13:46:32.196Z",
                 "freshness_s": 2416154.68
+              },
+              {
+                "ref": "event:53cc0680-1729-4e38-bff6-d1cebef905fd",
+                "observed_at": "2026-09-08T17:02:12.008Z",
+                "freshness_s": 1972414.868
               }
             ]
           }
@@ -732,10 +765,10 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-019311"
+          "event:oua-019348"
         ],
         "exposure_refs": [
-          "event:oua-019300"
+          "event:oua-019337"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

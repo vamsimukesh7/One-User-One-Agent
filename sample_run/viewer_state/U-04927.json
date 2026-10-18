@@ -64,6 +64,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-02T14:01:07.179000Z",
+              "source": {
+                "ref": "event:d42a0bda-d869-4a9b-a015-6a92f9b0f989",
+                "observed_at": "2026-09-02T14:01:07.179Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "guka-kosusa-d2",
@@ -99,18 +108,20 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:22843d05-13c9-4579-b0e4-dd111fdd8821",
           "event:c368b48a-9705-4a3c-bace-6bac282ffbbb",
           "event:a6a81d6a-8fa3-44b4-86a9-1e698511adad",
           "event:cbf980b6-f3ed-40a0-a592-2061bf8026e7",
-          "event:d502ab0b-8f11-460f-beda-9088d6f1719f"
+          "event:d502ab0b-8f11-460f-beda-9088d6f1719f",
+          "event:d42a0bda-d869-4a9b-a015-6a92f9b0f989"
         ],
         "observed_at": "2026-10-01T04:45:23.322000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:22843d05-13c9-4579-b0e4-dd111fdd8821",
@@ -136,6 +147,11 @@
             "ref": "event:d502ab0b-8f11-460f-beda-9088d6f1719f",
             "observed_at": "2026-09-03T18:45:38.864Z",
             "freshness_s": 2368784.458
+          },
+          {
+            "ref": "event:d42a0bda-d869-4a9b-a015-6a92f9b0f989",
+            "observed_at": "2026-09-02T14:01:07.179Z",
+            "freshness_s": 2472256.143
           }
         ]
       }

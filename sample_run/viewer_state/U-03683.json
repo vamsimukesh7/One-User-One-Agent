@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "bhaja-moguba-d2",
@@ -190,7 +191,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:f1b2a9f5-af5c-440f-a376-a9c678714827",
@@ -217,7 +219,7 @@
         ],
         "observed_at": "2026-10-01T17:27:07.464000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:f1b2a9f5-af5c-440f-a376-a9c678714827",

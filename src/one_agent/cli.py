@@ -12,6 +12,10 @@ def main():
     replay.add_argument('--pack',default='data/one_user_one_agent_pack')
     replay.add_argument('--out',default='runs/latest')
     replay.add_argument('--channel',choices=['home_page','push','whatsapp','in_app_message'])
+    replay.add_argument('--lapse-days',type=int,default=30,help='G06: recency of a documented lapse (implementation assumption)')
+    replay.add_argument('--engagement',choices=['two_episodes_two_days','one_episode','three_play_days'],default='two_episodes_two_days',help='G10: explicit operational definition')
+    replay.add_argument('--tv-telemetry-available',action='store_true',help='Declare an actual complete TV event feed; never synthesizes events')
+    replay.add_argument('--extra-events',help='Additional real observation JSONL, e.g. instrumented TV events')
     replay.add_argument('--seed',default='oua-practice')
     replay.add_argument('--max-model-calls',type=int,default=8)
     replay.add_argument('--max-tool-calls',type=int,default=20)
@@ -23,7 +27,7 @@ def main():
         if args.max_model_calls<0 or args.max_tool_calls<0:
             parser.error('Call budgets must be nonnegative')
         try:
-            print(json.dumps(run(args.pack,args.out,args.seed,args.max_model_calls,args.max_tool_calls,args.channel),indent=2))
+            print(json.dumps(run(args.pack,args.out,args.seed,args.max_model_calls,args.max_tool_calls,args.channel,args.lapse_days,args.engagement,args.tv_telemetry_available,args.extra_events),indent=2))
         except (ValueError,FileNotFoundError) as exc:
             parser.exit(2,str(exc)+'\n')
     else:

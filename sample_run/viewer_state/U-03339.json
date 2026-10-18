@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "yalo-nipa-d1",
@@ -82,14 +83,15 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:56efa432-9393-4f0f-9277-f0a7f53c1701"
         ],
         "observed_at": "2026-10-01T15:15:33.960000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:56efa432-9393-4f0f-9277-f0a7f53c1701",
@@ -131,6 +133,7 @@
         "condition": "on 3 distinct IST days",
         "window_hours": 336
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "f6c370f6-888e-4f16-8df2-0fd824762857",
       "eligibility_evidence": {
@@ -202,6 +205,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "yalo-nipa-d1",
@@ -214,14 +218,15 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:56efa432-9393-4f0f-9277-f0a7f53c1701"
             ],
             "observed_at": "2026-10-01T14:54:11.650000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:56efa432-9393-4f0f-9277-f0a7f53c1701",
@@ -263,16 +268,16 @@
           "window_hours": 336
         },
         "signal_refs": [
-          "event:oua-020894",
-          "event:oua-020902",
-          "event:oua-020908"
+          "event:oua-020933",
+          "event:oua-020941",
+          "event:oua-020947"
         ],
         "exposure_refs": [
-          "event:oua-020891",
-          "event:oua-020893"
+          "event:oua-020930",
+          "event:oua-020932"
         ],
         "associated_signal_refs": [
-          "event:oua-020894"
+          "event:oua-020933"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

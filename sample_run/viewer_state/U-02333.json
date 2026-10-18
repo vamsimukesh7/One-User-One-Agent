@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "dhapipa-gini-d2",
@@ -161,7 +162,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:4fa50ac6-42d0-4247-801c-d9d1183b95a4",
@@ -186,7 +188,7 @@
         ],
         "observed_at": "2026-10-01T16:30:25.991000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:4fa50ac6-42d0-4247-801c-d9d1183b95a4",

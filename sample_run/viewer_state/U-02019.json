@@ -64,6 +64,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "yatite-roloda-d3",
@@ -76,14 +77,15 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:b41fddc8-2756-492d-a2ec-7f6c07f6e094"
         ],
         "observed_at": "2026-10-01T16:09:15.985000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:b41fddc8-2756-492d-a2ec-7f6c07f6e094",
@@ -132,6 +134,7 @@
         "condition": "any episode",
         "window_hours": 72
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "0ad6902d-8ae7-4590-9853-d21b6819efb0",
       "eligibility_evidence": {
@@ -197,6 +200,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "yatite-roloda-d3",
@@ -209,14 +213,15 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:b41fddc8-2756-492d-a2ec-7f6c07f6e094"
             ],
             "observed_at": "2026-10-01T16:09:15.985000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:b41fddc8-2756-492d-a2ec-7f6c07f6e094",

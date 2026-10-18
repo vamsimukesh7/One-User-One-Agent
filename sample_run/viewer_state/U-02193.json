@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "kova-sako-d5",
@@ -82,14 +83,15 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:d7dae5cc-fb20-4aa8-a563-47106f0e67a3"
         ],
         "observed_at": "2026-10-01T16:45:47.197000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:d7dae5cc-fb20-4aa8-a563-47106f0e67a3",
@@ -137,6 +139,7 @@
         "condition": "same content_slug as the unfinished series",
         "window_hours": 72
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "6dd1ec00-5be4-4ff2-a487-5c165469cf87",
       "eligibility_evidence": {
@@ -208,6 +211,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "kova-sako-d5",
@@ -220,14 +224,15 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:d7dae5cc-fb20-4aa8-a563-47106f0e67a3"
             ],
             "observed_at": "2026-10-01T16:45:47.197000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:d7dae5cc-fb20-4aa8-a563-47106f0e67a3",

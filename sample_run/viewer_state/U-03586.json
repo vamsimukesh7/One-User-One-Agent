@@ -64,6 +64,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "baguti-gida-d4",
@@ -76,14 +77,15 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:0f30aeaf-422b-490c-8254-0fd48d30b1af"
         ],
         "observed_at": "2026-10-01T15:04:02.700000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:0f30aeaf-422b-490c-8254-0fd48d30b1af",
@@ -123,6 +125,7 @@
         "condition": "any episode",
         "window_hours": 72
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "af22ff9c-2640-414d-908a-67b095fc15ec",
       "eligibility_evidence": {
@@ -188,6 +191,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "baguti-gida-d4",
@@ -200,14 +204,15 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:0f30aeaf-422b-490c-8254-0fd48d30b1af"
             ],
             "observed_at": "2026-10-01T15:04:02.700000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:0f30aeaf-422b-490c-8254-0fd48d30b1af",

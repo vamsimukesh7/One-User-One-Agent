@@ -64,6 +64,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "yatite-roloda-d3",
@@ -80,7 +81,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:45d36fbf-37df-4028-b76d-2ba1efc436ea",
@@ -88,7 +90,7 @@
         ],
         "observed_at": "2026-10-01T17:35:43.236000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:45d36fbf-37df-4028-b76d-2ba1efc436ea",
@@ -114,7 +116,170 @@
   "latest_decision_id": "D-a44b003431b0576fd355",
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
-    "model_call_skipped: no actionable uncertainty or budget; deterministic policy"
+    "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
+    {
+      "goal_id": "G10",
+      "result": "failed",
+      "intervention": "inconclusive_no_linked_success",
+      "lesson": "Do not equate publishing with seeing or observing success with causation."
+    }
   ],
-  "plans": []
+  "plans": [
+    {
+      "plan_id": "P-56c83a4d5665822723dc",
+      "user_id": "U-03799",
+      "goal_id": "G10",
+      "status": "failed",
+      "started_at": "2026-10-01T17:09:41.194000Z",
+      "deadline": "2026-10-08T17:09:41.194000Z",
+      "success": {
+        "event": "episode_completed",
+        "condition": "two_episodes_two_days",
+        "window_hours": 168,
+        "min_distinct_episodes": 2,
+        "min_distinct_days": 2
+      },
+      "definition_source": "User-approved operational definitions (G06: 30 days; G10: 2 different episodes on 2 IST days); CLI overrides are recorded explicitly; no viewer facts invented",
+      "rule_version": "implementation-v1-c241477a372c159da22c",
+      "trigger_event_id": "9c14a63d-95c7-4214-9074-b043f2e0cbaf",
+      "eligibility_evidence": {
+        "facts": {
+          "dialect": {
+            "value": "d3",
+            "source": "event:9c14a63d-95c7-4214-9074-b043f2e0cbaf",
+            "observed_at": "2026-10-01T17:09:41.194Z",
+            "freshness_s": 0,
+            "resolution_rule": "latest fresh app setting at decision; profile and campaign never override it"
+          },
+          "language": {
+            "value": "hin",
+            "source": "event:9c14a63d-95c7-4214-9074-b043f2e0cbaf",
+            "observed_at": "2026-10-01T17:09:41.194Z",
+            "freshness_s": 0,
+            "resolution_rule": "latest fresh app setting"
+          },
+          "signup_at": {
+            "value": "2026-07-13T20:54:39.340Z",
+            "source": "profiles_snapshot.csv:3034",
+            "observed_at": "2026-09-30T00:00:00.000Z",
+            "freshness_s": 148181.194,
+            "resolution_rule": "earliest supported signup; no inferred signup for missing profile"
+          },
+          "subscription_status": {
+            "value": "never",
+            "source": "profiles_snapshot.csv:3034",
+            "observed_at": "2026-09-30T00:00:00.000Z",
+            "freshness_s": 148181.194,
+            "resolution_rule": "billing evidence defeats stale snapshot; expired plans unknown"
+          },
+          "ever_paid": {
+            "value": false,
+            "source": [
+              "profiles_snapshot.csv:3034"
+            ],
+            "observed_at": "2026-09-30T00:00:00.000Z",
+            "freshness_s": 148181.194,
+            "resolution_rule": "positive paid evidence is monotonic; a stale never cannot erase it",
+            "source_observations": []
+          },
+          "notifications_opt_in": {
+            "value": true,
+            "source": "profiles_snapshot.csv:3034",
+            "observed_at": "2026-09-30T00:00:00.000Z",
+            "freshness_s": 148181.194,
+            "resolution_rule": "explicit opt-out overrides snapshot; missing consent is false"
+          },
+          "whatsapp_opt_in": {
+            "value": false,
+            "source": "profiles_snapshot.csv:3034",
+            "observed_at": "2026-09-30T00:00:00.000Z",
+            "freshness_s": 148181.194,
+            "resolution_rule": "explicit opt-out overrides snapshot; missing consent is false"
+          },
+          "history_covers_signup": {
+            "value": false,
+            "source": "pack:README:30-day-window",
+            "observed_at": "2026-08-31T18:30:00.000000Z",
+            "freshness_s": 2673581.194,
+            "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "lapses": [],
+              "unfinished_series": [
+                {
+                  "content_slug": "yatite-roloda-d3",
+                  "next_episode_id": "yatite-roloda-d3-s1e2",
+                  "last_play_at": "2026-09-11T05:21:42.924000Z",
+                  "sources": [
+                    {
+                      "ref": "event:45d36fbf-37df-4028-b76d-2ba1efc436ea",
+                      "observed_at": "2026-09-11T05:21:42.924Z"
+                    },
+                    {
+                      "ref": "event:10821a97-77fd-4468-b4f3-bf65b6c2ecef",
+                      "observed_at": "2026-09-11T05:25:23.149Z"
+                    }
+                  ]
+                }
+              ],
+              "tv_telemetry_available": false
+            },
+            "source": [
+              "event:45d36fbf-37df-4028-b76d-2ba1efc436ea",
+              "event:10821a97-77fd-4468-b4f3-bf65b6c2ecef"
+            ],
+            "observed_at": "2026-10-01T17:09:41.194000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
+            "source_observations": [
+              {
+                "ref": "event:45d36fbf-37df-4028-b76d-2ba1efc436ea",
+                "observed_at": "2026-09-11T05:21:42.924Z",
+                "freshness_s": 1770478.27
+              },
+              {
+                "ref": "event:10821a97-77fd-4468-b4f3-bf65b6c2ecef",
+                "observed_at": "2026-09-11T05:25:23.149Z",
+                "freshness_s": 1770258.045
+              }
+            ]
+          }
+        },
+        "conflicts": [],
+        "assumptions": [
+          "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
+          "The supplied history is complete from its documented window start, subject to late arrivals.",
+          "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Any user."
+      },
+      "actions": [],
+      "final_outcome": {
+        "plan_id": "P-56c83a4d5665822723dc",
+        "user_id": "U-03799",
+        "goal_id": "G10",
+        "rule_version": "implementation-v1-c241477a372c159da22c",
+        "started_at": "2026-10-01T17:09:41.194000Z",
+        "deadline": "2026-10-08T17:09:41.194000Z",
+        "status": "failed",
+        "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
+        "success_signal": {
+          "event": "episode_completed",
+          "condition": "two_episodes_two_days",
+          "window_hours": 168,
+          "min_distinct_episodes": 2,
+          "min_distinct_days": 2
+        },
+        "signal_refs": [],
+        "exposure_refs": [],
+        "associated_signal_refs": [],
+        "intervention_judgment": "inconclusive_no_linked_success",
+        "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
+      },
+      "closed_at": "2026-10-08T17:09:41.194000Z"
+    }
+  ]
 }

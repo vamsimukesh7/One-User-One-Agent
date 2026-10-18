@@ -64,6 +64,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-13T22:45:15.729000Z",
+              "source": {
+                "ref": "event:bdf8fab6-7a88-4ccf-9fac-046655066255",
+                "observed_at": "2026-09-13T22:45:15.729Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "rigu-dhadi-d2",
@@ -80,15 +89,17 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:78391dff-0a69-4250-b2c9-698931208eab",
-          "event:920429db-c260-45e9-9e81-af94a8a0079e"
+          "event:920429db-c260-45e9-9e81-af94a8a0079e",
+          "event:bdf8fab6-7a88-4ccf-9fac-046655066255"
         ],
         "observed_at": "2026-10-01T12:40:38.387000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:78391dff-0a69-4250-b2c9-698931208eab",
@@ -99,6 +110,11 @@
             "ref": "event:920429db-c260-45e9-9e81-af94a8a0079e",
             "observed_at": "2026-09-22T14:38:33.803Z",
             "freshness_s": 770524.584
+          },
+          {
+            "ref": "event:bdf8fab6-7a88-4ccf-9fac-046655066255",
+            "observed_at": "2026-09-13T22:45:15.729Z",
+            "freshness_s": 1518922.658
           }
         ]
       }

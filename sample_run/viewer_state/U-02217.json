@@ -64,6 +64,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "yatite-roloda-d3",
@@ -76,14 +77,15 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:756f02bf-f712-423a-9294-fa5d825414a2"
         ],
         "observed_at": "2026-10-01T09:54:40.656000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:756f02bf-f712-423a-9294-fa5d825414a2",
@@ -131,6 +133,7 @@
         "condition": "any title",
         "window_hours": 168
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "2c27a9cd-5215-4749-abbc-9b3cf9cf8ebd",
       "eligibility_evidence": {
@@ -196,6 +199,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "yatite-roloda-d3",
@@ -208,14 +212,15 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:756f02bf-f712-423a-9294-fa5d825414a2"
             ],
             "observed_at": "2026-10-01T09:54:40.656000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:756f02bf-f712-423a-9294-fa5d825414a2",
@@ -261,13 +266,13 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-014217"
+          "event:oua-014246"
         ],
         "exposure_refs": [
-          "event:oua-014216"
+          "event:oua-014245"
         ],
         "associated_signal_refs": [
-          "event:oua-014217"
+          "event:oua-014246"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

@@ -70,6 +70,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-18T21:55:18.889000Z",
+              "source": {
+                "ref": "event:67f95953-05ca-480c-85ee-9c17ea26dae4",
+                "observed_at": "2026-09-18T21:55:18.889Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "rasuya-moni-d6",
@@ -117,7 +126,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:1b38268d-c32d-45f3-96e8-60b3d1692f70",
@@ -127,11 +137,12 @@
           "event:5c8978fc-aa27-489f-9a0c-36e7edeb010a",
           "event:a5ba6e53-24ef-4337-8fbd-15f3caf323ae",
           "event:c36d8474-153f-4be9-9ff8-39b3b3cf884d",
-          "event:a4441194-6d91-49e3-a4dd-4ae946b0c1f5"
+          "event:a4441194-6d91-49e3-a4dd-4ae946b0c1f5",
+          "event:67f95953-05ca-480c-85ee-9c17ea26dae4"
         ],
         "observed_at": "2026-10-01T18:13:25.894000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:1b38268d-c32d-45f3-96e8-60b3d1692f70",
@@ -172,6 +183,11 @@
             "ref": "event:a4441194-6d91-49e3-a4dd-4ae946b0c1f5",
             "observed_at": "2026-09-20T03:33:43.432Z",
             "freshness_s": 1003182.462
+          },
+          {
+            "ref": "event:67f95953-05ca-480c-85ee-9c17ea26dae4",
+            "observed_at": "2026-09-18T21:55:18.889Z",
+            "freshness_s": 1109887.005
           }
         ]
       }
@@ -207,6 +223,7 @@
         "condition": "a title released in the 30 days before the goal start",
         "window_hours": 168
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "e8f88e3a-0e4e-4a5b-bd43-b837fccbcb3a",
       "eligibility_evidence": {
@@ -278,6 +295,15 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [
+                {
+                  "at": "2026-09-18T21:55:18.889000Z",
+                  "source": {
+                    "ref": "event:67f95953-05ca-480c-85ee-9c17ea26dae4",
+                    "observed_at": "2026-09-18T21:55:18.889Z"
+                  }
+                }
+              ],
               "unfinished_series": [
                 {
                   "content_slug": "rasuya-moni-d6",
@@ -325,7 +351,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:1b38268d-c32d-45f3-96e8-60b3d1692f70",
@@ -335,11 +362,12 @@
               "event:5c8978fc-aa27-489f-9a0c-36e7edeb010a",
               "event:a5ba6e53-24ef-4337-8fbd-15f3caf323ae",
               "event:c36d8474-153f-4be9-9ff8-39b3b3cf884d",
-              "event:a4441194-6d91-49e3-a4dd-4ae946b0c1f5"
+              "event:a4441194-6d91-49e3-a4dd-4ae946b0c1f5",
+              "event:67f95953-05ca-480c-85ee-9c17ea26dae4"
             ],
             "observed_at": "2026-10-01T18:13:25.894000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:1b38268d-c32d-45f3-96e8-60b3d1692f70",
@@ -380,6 +408,11 @@
                 "ref": "event:a4441194-6d91-49e3-a4dd-4ae946b0c1f5",
                 "observed_at": "2026-09-20T03:33:43.432Z",
                 "freshness_s": 1003182.462
+              },
+              {
+                "ref": "event:67f95953-05ca-480c-85ee-9c17ea26dae4",
+                "observed_at": "2026-09-18T21:55:18.889Z",
+                "freshness_s": 1109887.005
               }
             ]
           }

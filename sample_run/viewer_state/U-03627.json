@@ -64,6 +64,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-20T07:20:44.711000Z",
+              "source": {
+                "ref": "event:cd6c26f8-96f0-4f18-9a9c-939f5711a211",
+                "observed_at": "2026-09-20T07:20:44.711Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "hapibha-d1",
@@ -76,19 +85,26 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
-          "event:0eb085ba-eb8a-46d2-b155-9fe3ef189220"
+          "event:0eb085ba-eb8a-46d2-b155-9fe3ef189220",
+          "event:cd6c26f8-96f0-4f18-9a9c-939f5711a211"
         ],
         "observed_at": "2026-10-01T13:36:22.806000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:0eb085ba-eb8a-46d2-b155-9fe3ef189220",
             "observed_at": "2026-09-17T07:24:13.705Z",
             "freshness_s": 1231929.101
+          },
+          {
+            "ref": "event:cd6c26f8-96f0-4f18-9a9c-939f5711a211",
+            "observed_at": "2026-09-20T07:20:44.711Z",
+            "freshness_s": 972938.095
           }
         ]
       }
@@ -104,7 +120,7 @@
   "latest_decision_id": "D-84ab292b5102206e9502",
   "learning": [
     {
-      "goal_id": "G07",
+      "goal_id": "G06",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -112,18 +128,19 @@
   ],
   "plans": [
     {
-      "plan_id": "P-3a437c7c57cad65e0a63",
+      "plan_id": "P-43afcce919f095e6beac",
       "user_id": "U-03627",
-      "goal_id": "G07",
+      "goal_id": "G06",
       "status": "failed",
       "started_at": "2026-10-01T13:36:21.167000Z",
-      "deadline": "2026-10-04T13:36:21.167000Z",
+      "deadline": "2026-10-15T13:36:21.167000Z",
       "success": {
-        "event": "play_started",
-        "condition": "same content_slug as the unfinished series",
-        "window_hours": 72
+        "event": "purchase_completed",
+        "condition": "any paid plan",
+        "window_hours": 336
       },
-      "rule_version": "2026-09-30",
+      "definition_source": "User-approved operational definitions (G06: 30 days; G10: 2 different episodes on 2 IST days); CLI overrides are recorded explicitly; no viewer facts invented",
+      "rule_version": "implementation-v1-da3ab3d7cc81ce2ebc7a",
       "trigger_event_id": "93abb3ed-ec8b-4bd0-91b3-23ab3fc72c25",
       "eligibility_evidence": {
         "facts": {
@@ -188,6 +205,15 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [
+                {
+                  "at": "2026-09-20T07:20:44.711000Z",
+                  "source": {
+                    "ref": "event:cd6c26f8-96f0-4f18-9a9c-939f5711a211",
+                    "observed_at": "2026-09-20T07:20:44.711Z"
+                  }
+                }
+              ],
               "unfinished_series": [
                 {
                   "content_slug": "hapibha-d1",
@@ -200,19 +226,26 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
-              "event:0eb085ba-eb8a-46d2-b155-9fe3ef189220"
+              "event:0eb085ba-eb8a-46d2-b155-9fe3ef189220",
+              "event:cd6c26f8-96f0-4f18-9a9c-939f5711a211"
             ],
             "observed_at": "2026-10-01T13:36:21.167000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:0eb085ba-eb8a-46d2-b155-9fe3ef189220",
                 "observed_at": "2026-09-17T07:24:13.705Z",
                 "freshness_s": 1231927.462
+              },
+              {
+                "ref": "event:cd6c26f8-96f0-4f18-9a9c-939f5711a211",
+                "observed_at": "2026-09-20T07:20:44.711Z",
+                "freshness_s": 972936.456
               }
             ]
           }
@@ -225,26 +258,28 @@
         ]
       },
       "eligibility_rule": {
-        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+        "text": "Subscription recently lapsed.",
+        "subscription_status": [
+          "lapsed"
+        ],
+        "lapse_within_days": 30
       },
       "actions": [
         "A-637c8f2a6cdedac514a7"
       ],
-      "target_content_slug": "hapibha-d1",
-      "next_episode_id": "hapibha-d1-s1e1",
       "final_outcome": {
-        "plan_id": "P-3a437c7c57cad65e0a63",
+        "plan_id": "P-43afcce919f095e6beac",
         "user_id": "U-03627",
-        "goal_id": "G07",
-        "rule_version": "2026-09-30",
+        "goal_id": "G06",
+        "rule_version": "implementation-v1-da3ab3d7cc81ce2ebc7a",
         "started_at": "2026-10-01T13:36:21.167000Z",
-        "deadline": "2026-10-04T13:36:21.167000Z",
+        "deadline": "2026-10-15T13:36:21.167000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "play_started",
-          "condition": "same content_slug as the unfinished series",
-          "window_hours": 72
+          "event": "purchase_completed",
+          "condition": "any paid plan",
+          "window_hours": 336
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -252,7 +287,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-04T13:36:21.167000Z"
+      "closed_at": "2026-10-15T13:36:21.167000Z"
     }
   ]
 }

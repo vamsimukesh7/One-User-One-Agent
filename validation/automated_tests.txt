@@ -25,7 +25,21 @@ test_store_failure_no_action (test_agent.AgentTests.test_store_failure_no_action
 test_verifier_rejects_wrong_dialect_and_injected_message (test_agent.AgentTests.test_verifier_rejects_wrong_dialect_and_injected_message) ... ok
 test_withdrawn_title_and_slug_duplicates_rejected (test_agent.AgentTests.test_withdrawn_title_and_slug_duplicates_rejected) ... ok
 test_zero_budget_still_enrolls_holdout_independent_endpoint (test_agent.AgentTests.test_zero_budget_still_enrolls_holdout_independent_endpoint) ... ok
-test_ambiguous_goals_remain_excluded (test_extensions.Extensions.test_ambiguous_goals_remain_excluded) ... ok
+test_configuration_and_versions_survive_restart (test_all_goals.AllGoals.test_configuration_and_versions_survive_restart) ... ok
+test_g06_configurable_recency_and_rule_correction (test_all_goals.AllGoals.test_g06_configurable_recency_and_rule_correction) ... ok
+test_g06_does_not_reactivate_paid_or_trial_purchase (test_all_goals.AllGoals.test_g06_does_not_reactivate_paid_or_trial_purchase) ... ok
+test_g06_is_selected_and_purchase_replans (test_all_goals.AllGoals.test_g06_is_selected_and_purchase_replans) ... ok
+test_g06_requires_a_documented_recent_lapse (test_all_goals.AllGoals.test_g06_requires_a_documented_recent_lapse) ... ok
+test_g10_alternative_definitions (test_all_goals.AllGoals.test_g10_alternative_definitions) ... ok
+test_g10_late_receipt_and_window_boundaries (test_all_goals.AllGoals.test_g10_late_receipt_and_window_boundaries) ... ok
+test_g10_rejects_unknown_episodes_foreign_users_and_play_only (test_all_goals.AllGoals.test_g10_rejects_unknown_episodes_foreign_users_and_play_only) ... ok
+test_g10_requires_two_distinct_episodes_on_two_ist_days (test_all_goals.AllGoals.test_g10_requires_two_distinct_episodes_on_two_ist_days) ... ok
+test_g10_selectable_without_inventing_lifetime_history (test_all_goals.AllGoals.test_g10_selectable_without_inventing_lifetime_history) ... ok
+test_g11_complete_instrumented_window_can_fail (test_all_goals.AllGoals.test_g11_complete_instrumented_window_can_fail) ... ok
+test_g11_engine_persists_real_tv_success (test_all_goals.AllGoals.test_g11_engine_persists_real_tv_success) ... ok
+test_g11_never_equates_mobile_open_with_tv_success (test_all_goals.AllGoals.test_g11_never_equates_mobile_open_with_tv_success) ... ok
+test_g11_requires_declared_instrumentation_for_selection (test_all_goals.AllGoals.test_g11_requires_declared_instrumentation_for_selection) ... ok
+test_invalid_configuration_is_rejected (test_all_goals.AllGoals.test_invalid_configuration_is_rejected) ... ok
 test_audit_excludes_late_deliveries_and_batch_simulation (test_extensions.Extensions.test_audit_excludes_late_deliveries_and_batch_simulation) ... ok
 test_audit_preserves_pending_published_and_closed_states (test_extensions.Extensions.test_audit_preserves_pending_published_and_closed_states) ... ok
 test_audit_tracks_corrected_rule_and_cancelled_action (test_extensions.Extensions.test_audit_tracks_corrected_rule_and_cancelled_action) ... ok
@@ -41,7 +55,8 @@ test_push_publishes_with_consent (test_extensions.Extensions.test_push_publishes
 test_push_requires_consent (test_extensions.Extensions.test_push_requires_consent) ... ok
 test_quiet_hours_block_external_messages_but_allow_inapp (test_extensions.Extensions.test_quiet_hours_block_external_messages_but_allow_inapp) ... ok
 test_shared_cap_across_push_and_whatsapp_and_restart (test_extensions.Extensions.test_shared_cap_across_push_and_whatsapp_and_restart) ... ok
-test_unsupported_goal_cannot_claim_success_or_failure (test_extensions.Extensions.test_unsupported_goal_cannot_claim_success_or_failure) ... ok
+test_unconfigured_goal_cannot_claim_success_or_failure (test_extensions.Extensions.test_unconfigured_goal_cannot_claim_success_or_failure) ... ok
+test_unconfigured_goals_remain_excluded (test_extensions.Extensions.test_unconfigured_goals_remain_excluded) ... ok
 test_whatsapp_template_and_variables_are_verified (test_extensions.Extensions.test_whatsapp_template_and_variables_are_verified) ... ok
 test_G08_continuation_never_uses_newer_than_goal_release (test_regressions.AuditRegressions.test_G08_continuation_never_uses_newer_than_goal_release) ... ok
 test_actual_blocking_provider_has_deadline (test_regressions.AuditRegressions.test_actual_blocking_provider_has_deadline) ... ok
@@ -85,6 +100,6 @@ test_stale_pending_action_cannot_publish_after_rule_change (test_rule_outcome_me
 test_unknown_correction_fails_closed (test_rule_outcome_measurement.RuleAndOutcomeTests.test_unknown_correction_fails_closed) ... ok
 
 ----------------------------------------------------------------------
-Ran 85 tests in 0.580s
+Ran 100 tests in 0.846s
 
 OK

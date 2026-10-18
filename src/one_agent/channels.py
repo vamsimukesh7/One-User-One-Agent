@@ -23,7 +23,7 @@ def daily_count(store,user,at,channels,exclude=None):
                and day(ts(a.get('send_at') or a['published_at']))==day(at))
 
 
-def copy_for(pack,channel,title):
+def copy_for(pack,channel,title,goal_id=None):
     # Catalogue text is a value, never an instruction. No price/deadline claims.
     name=title.get('title',title['title_id'])
     if channel=='whatsapp':
@@ -32,7 +32,7 @@ def copy_for(pack,channel,title):
         if not template:return None
         return {'template_id':template['template_id'],
                 'variables':{'title_name':name,'dialect_name':title['dialect']}}
-    return {'text':{'title':'Aapke liye','body':name[:120]},'deeplink':'ott://title/'+title['title_id']}
+    return {'text':{'title':'TV app par dekhiye' if goal_id=='G11' and channel=='in_app_message' else 'Aapke liye','body':name[:120]},'deeplink':'ott://title/'+title['title_id']}
 
 
 def choose(pack,store,context,plan,at,preferred=None):
@@ -43,7 +43,7 @@ def choose(pack,store,context,plan,at,preferred=None):
         for c in order:
             field={'push':'notifications_opt_in','whatsapp':'whatsapp_opt_in'}[c]
             if c in pack.policy and f[field]['value']:return c
-    if goal in {'G04','G05','G07'} and 'in_app_message' in pack.policy and not daily_count(store,plan['user_id'],at,{'in_app_message'}):
+    if goal in {'G04','G05','G06','G07','G10','G11'} and 'in_app_message' in pack.policy and not daily_count(store,plan['user_id'],at,{'in_app_message'}):
         return 'in_app_message'
     return 'home_page'
 
@@ -61,7 +61,7 @@ def message_checks(pack,store,action,context,at):
     if not title or not pack.available(title,at):failed.append('message_title_available')
     if title:
         if title['dialect']!=f['dialect']['value'] or title['language']!=f['language']['value']:failed.append('message_locale')
-        expected=copy_for(pack,c,title)
+        expected=copy_for(pack,c,title,action.get("goal_id"))
         if expected is None or any(action.get(k)!=v for k,v in (expected or {}).items()):failed.append('approved_copy_and_template')
         forbidden=pack.policy.get('push',{}).get('copy',{}).get('forbidden_phrases',[])
         rendered=json.dumps(action.get('text') or action.get('variables') or {},ensure_ascii=False).lower()

@@ -64,15 +64,31 @@
       },
       "goal_extensions": {
         "value": {
-          "unfinished_series": []
+          "lapses": [
+            {
+              "at": "2026-09-10T06:47:41.567000Z",
+              "source": {
+                "ref": "event:830a9d9d-0fbf-442b-b16b-19d78486b96d",
+                "observed_at": "2026-09-10T06:47:41.567Z"
+              }
+            }
+          ],
+          "unfinished_series": [],
+          "tv_telemetry_available": false
         },
         "source": [
-          "policy:series-reconciliation"
+          "event:830a9d9d-0fbf-442b-b16b-19d78486b96d"
         ],
         "observed_at": "2026-10-01T09:51:50.674000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
-        "source_observations": []
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
+        "source_observations": [
+          {
+            "ref": "event:830a9d9d-0fbf-442b-b16b-19d78486b96d",
+            "observed_at": "2026-09-10T06:47:41.567Z",
+            "freshness_s": 1825449.107
+          }
+        ]
       }
     },
     "conflicts": [],

@@ -70,15 +70,31 @@
       },
       "goal_extensions": {
         "value": {
-          "unfinished_series": []
+          "lapses": [
+            {
+              "at": "2026-09-08T14:45:36.313000Z",
+              "source": {
+                "ref": "event:4f09d5e6-37c5-48ae-bdff-06237bcf965a",
+                "observed_at": "2026-09-08T14:45:36.313Z"
+              }
+            }
+          ],
+          "unfinished_series": [],
+          "tv_telemetry_available": false
         },
         "source": [
-          "policy:series-reconciliation"
+          "event:4f09d5e6-37c5-48ae-bdff-06237bcf965a"
         ],
         "observed_at": "2026-10-01T17:10:58.191000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
-        "source_observations": []
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
+        "source_observations": [
+          {
+            "ref": "event:4f09d5e6-37c5-48ae-bdff-06237bcf965a",
+            "observed_at": "2026-09-08T14:45:36.313Z",
+            "freshness_s": 1995921.878
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -112,6 +128,7 @@
         "condition": "a title released in the 30 days before the goal start",
         "window_hours": 168
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "d1313999-cce4-40b3-8fee-cc8bf2e6f16e",
       "eligibility_evidence": {
@@ -183,15 +200,31 @@
           },
           "goal_extensions": {
             "value": {
-              "unfinished_series": []
+              "lapses": [
+                {
+                  "at": "2026-09-08T14:45:36.313000Z",
+                  "source": {
+                    "ref": "event:4f09d5e6-37c5-48ae-bdff-06237bcf965a",
+                    "observed_at": "2026-09-08T14:45:36.313Z"
+                  }
+                }
+              ],
+              "unfinished_series": [],
+              "tv_telemetry_available": false
             },
             "source": [
-              "policy:series-reconciliation"
+              "event:4f09d5e6-37c5-48ae-bdff-06237bcf965a"
             ],
             "observed_at": "2026-10-01T17:10:58.191000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
-            "source_observations": []
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
+            "source_observations": [
+              {
+                "ref": "event:4f09d5e6-37c5-48ae-bdff-06237bcf965a",
+                "observed_at": "2026-09-08T14:45:36.313Z",
+                "freshness_s": 1995921.878
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -223,7 +256,7 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-006558"
+          "event:oua-006572"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

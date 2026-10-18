@@ -64,6 +64,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-19T10:51:19.197000Z",
+              "source": {
+                "ref": "event:40b21ff3-c467-4f7e-ab21-ca87d9b62eae",
+                "observed_at": "2026-09-19T10:51:19.197Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "hama-chudibha-d1",
@@ -119,7 +128,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:b03170d8-ea05-442d-98ad-9b8b7b2b9e0c",
@@ -131,11 +141,12 @@
           "event:0003c833-72d3-4e20-9628-313f59c4d2ec",
           "event:3dab7f10-691c-4649-9a9e-8863833c9b63",
           "event:525842db-b0b1-456d-b03b-aa39f306db5b",
-          "event:1d107a57-bab2-41dc-8842-f20307915378"
+          "event:1d107a57-bab2-41dc-8842-f20307915378",
+          "event:40b21ff3-c467-4f7e-ab21-ca87d9b62eae"
         ],
         "observed_at": "2026-10-01T15:32:11.630000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:b03170d8-ea05-442d-98ad-9b8b7b2b9e0c",
@@ -186,6 +197,11 @@
             "ref": "event:1d107a57-bab2-41dc-8842-f20307915378",
             "observed_at": "2026-09-29T19:33:17.393Z",
             "freshness_s": 158334.237
+          },
+          {
+            "ref": "event:40b21ff3-c467-4f7e-ab21-ca87d9b62eae",
+            "observed_at": "2026-09-19T10:51:19.197Z",
+            "freshness_s": 1053652.433
           }
         ]
       }
@@ -202,7 +218,7 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G07",
+      "goal_id": "G06",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -210,18 +226,19 @@
   ],
   "plans": [
     {
-      "plan_id": "P-e343842a216522e2be03",
+      "plan_id": "P-2d0b087a76d96defcb69",
       "user_id": "U-04783",
-      "goal_id": "G07",
+      "goal_id": "G06",
       "status": "failed",
       "started_at": "2026-10-01T15:32:11.630000Z",
-      "deadline": "2026-10-04T15:32:11.630000Z",
+      "deadline": "2026-10-15T15:32:11.630000Z",
       "success": {
-        "event": "play_started",
-        "condition": "same content_slug as the unfinished series",
-        "window_hours": 72
+        "event": "purchase_completed",
+        "condition": "any paid plan",
+        "window_hours": 336
       },
-      "rule_version": "2026-09-30",
+      "definition_source": "User-approved operational definitions (G06: 30 days; G10: 2 different episodes on 2 IST days); CLI overrides are recorded explicitly; no viewer facts invented",
+      "rule_version": "implementation-v1-da3ab3d7cc81ce2ebc7a",
       "trigger_event_id": "6b1e9824-d11d-48cd-81d7-dbdf5141a1ca",
       "eligibility_evidence": {
         "facts": {
@@ -286,6 +303,15 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [
+                {
+                  "at": "2026-09-19T10:51:19.197000Z",
+                  "source": {
+                    "ref": "event:40b21ff3-c467-4f7e-ab21-ca87d9b62eae",
+                    "observed_at": "2026-09-19T10:51:19.197Z"
+                  }
+                }
+              ],
               "unfinished_series": [
                 {
                   "content_slug": "hama-chudibha-d1",
@@ -341,7 +367,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:b03170d8-ea05-442d-98ad-9b8b7b2b9e0c",
@@ -353,11 +380,12 @@
               "event:0003c833-72d3-4e20-9628-313f59c4d2ec",
               "event:3dab7f10-691c-4649-9a9e-8863833c9b63",
               "event:525842db-b0b1-456d-b03b-aa39f306db5b",
-              "event:1d107a57-bab2-41dc-8842-f20307915378"
+              "event:1d107a57-bab2-41dc-8842-f20307915378",
+              "event:40b21ff3-c467-4f7e-ab21-ca87d9b62eae"
             ],
             "observed_at": "2026-10-01T15:32:11.630000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:b03170d8-ea05-442d-98ad-9b8b7b2b9e0c",
@@ -408,6 +436,11 @@
                 "ref": "event:1d107a57-bab2-41dc-8842-f20307915378",
                 "observed_at": "2026-09-29T19:33:17.393Z",
                 "freshness_s": 158334.237
+              },
+              {
+                "ref": "event:40b21ff3-c467-4f7e-ab21-ca87d9b62eae",
+                "observed_at": "2026-09-19T10:51:19.197Z",
+                "freshness_s": 1053652.433
               }
             ]
           }
@@ -420,24 +453,26 @@
         ]
       },
       "eligibility_rule": {
-        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+        "text": "Subscription recently lapsed.",
+        "subscription_status": [
+          "lapsed"
+        ],
+        "lapse_within_days": 30
       },
       "actions": [],
-      "target_content_slug": "hama-chudibha-d1",
-      "next_episode_id": "hama-chudibha-d1-s1e4",
       "final_outcome": {
-        "plan_id": "P-e343842a216522e2be03",
+        "plan_id": "P-2d0b087a76d96defcb69",
         "user_id": "U-04783",
-        "goal_id": "G07",
-        "rule_version": "2026-09-30",
+        "goal_id": "G06",
+        "rule_version": "implementation-v1-da3ab3d7cc81ce2ebc7a",
         "started_at": "2026-10-01T15:32:11.630000Z",
-        "deadline": "2026-10-04T15:32:11.630000Z",
+        "deadline": "2026-10-15T15:32:11.630000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "play_started",
-          "condition": "same content_slug as the unfinished series",
-          "window_hours": 72
+          "event": "purchase_completed",
+          "condition": "any paid plan",
+          "window_hours": 336
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -445,7 +480,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-04T15:32:11.630000Z"
+      "closed_at": "2026-10-15T15:32:11.630000Z"
     }
   ]
 }

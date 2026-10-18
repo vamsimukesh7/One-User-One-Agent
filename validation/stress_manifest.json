@@ -1,9 +1,17 @@
 {
-  "purpose": "Isolated artificial 3x stress; not valid viewer/impact evidence",
-  "start_ist": "2026-10-01T20:30:00+05:30",
-  "end_ist": "2026-10-01T20:40:00+05:30",
-  "original_window_deliveries": 165,
-  "tripled_window_deliveries": 495,
-  "added_deliveries": 330,
-  "total_deliveries": 3099
+  "seed": "oua-practice",
+  "pack": "/workspace/One-User-One-Agent/runs/repro-stress-pack",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "history_start": "2026-08-31T18:30:00.000000Z",
+  "observation_end": "2026-10-15T18:30:00.000000Z",
+  "max_model_calls": 8,
+  "max_tool_calls": 20,
+  "channel": "auto",
+  "goal_configuration": {
+    "g06_lapse_days": 30,
+    "g10_engagement": "two_episodes_two_days",
+    "tv_telemetry_available": false,
+    "definition_source": "User-approved operational definitions (G06: 30 days; G10: 2 different episodes on 2 IST days); CLI overrides are recorded explicitly; no viewer facts invented"
+  },
+  "extra_events": null
 }

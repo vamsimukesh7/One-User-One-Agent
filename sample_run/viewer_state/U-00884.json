@@ -64,6 +64,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "yatite-roloda-d3",
@@ -87,7 +88,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:8365a64a-8a57-4208-b4e3-dfb92ba565c7",
@@ -95,7 +97,7 @@
         ],
         "observed_at": "2026-10-01T14:48:40.991000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:8365a64a-8a57-4208-b4e3-dfb92ba565c7",
@@ -157,6 +159,7 @@
         "condition": "any episode",
         "window_hours": 72
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "bcf2c57d-f6ea-48dd-896a-31cd5bbcb579",
       "eligibility_evidence": {
@@ -222,6 +225,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "yatite-roloda-d3",
@@ -245,7 +249,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:8365a64a-8a57-4208-b4e3-dfb92ba565c7",
@@ -253,7 +258,7 @@
             ],
             "observed_at": "2026-10-01T10:29:51.842000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:8365a64a-8a57-4208-b4e3-dfb92ba565c7",
@@ -310,7 +315,7 @@
           "window_hours": 72
         },
         "signal_refs": [
-          "event:oua-005817"
+          "event:oua-005828"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

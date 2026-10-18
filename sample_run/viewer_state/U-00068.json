@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "nisu-sapapa-d4",
@@ -104,7 +105,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:813048c4-1272-4de1-8440-8a8bca86ffbe",
@@ -113,7 +115,7 @@
         ],
         "observed_at": "2026-10-01T09:55:41.292000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:813048c4-1272-4de1-8440-8a8bca86ffbe",

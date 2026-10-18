@@ -51,12 +51,12 @@ For isolated channel testing, `--channel home_page`, `--channel push`, `--channe
 | G03 | Recent signup; later IST-day return within 48h; affected plans adopt the supplied correction to `play_started`. |
 | G04 | Supported active trial; non-trial purchase within 7d. |
 | G05 | Covered never-paid history; first non-trial purchase within 7d. |
-| G06 | Safely excluded: “recently lapsed” has no supplied threshold. |
+| G06 | Implemented: documented subscription lapse within the previous 30 days (user-approved). |
 | G07 | Covered lifetime; catalogue episode IDs reconcile starts/completions for an unfinished series inactive at least 3d; success is a play of the same content slug within 72h. |
 | G08 | Active subscriber; a play of content released within 30d before the original goal start, within 7d. |
 | G09 | Active subscriber, at most one play day in covered prior 14d; success requires three distinct IST play days within 14d. |
-| G10 | Safely excluded: “meaningful engagement” has no measurable success definition. |
-| G11 | Safely excluded: `tv_app_open` is absent from supplied telemetry. |
+| G10 | Implemented: complete 2 distinct episodes on 2 distinct IST days within 7 days (user-approved). |
+| G11 | Implemented: actual `tv_app_open` within the goal window; selection requires declared TV instrumentation. |
 | G12 | Covered 14d without an app open for an established viewer; subsequent play within 7d. |
 
 Absence claims explicitly assume the supplied observation window is complete. Late contradictory historical evidence can invalidate earlier first-time goals. Unsupported goals never silently become eligible. Unimplemented rule-correction semantics fail closed.
@@ -78,3 +78,5 @@ py scripts/validate_run.py --pack runs/stress_pack --run runs/stress
 This triples the busiest ten-minute evening window using isolated synthetic session copies. It is a single-worker operational replay, not a production-concurrency benchmark or valid impact experiment.
 
 See `ARCHITECTURE.md`, `AI_COLLABORATION.md`, `KNOWN_LIMITATIONS.md`, and `COMPLETION.md` for the implementation and executed validation.
+
+See [ALL_GOALS.md](ALL_GOALS.md) for approved G06/G10 definitions, TV instrumentation requirements, updated validation and Windows commands.

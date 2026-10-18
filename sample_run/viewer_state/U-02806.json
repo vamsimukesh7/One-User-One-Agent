@@ -64,6 +64,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "digi-mone-d3",
@@ -76,14 +77,15 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:f39c415b-5ba6-4a8f-8ecd-aa810d86eadb"
         ],
         "observed_at": "2026-10-01T15:46:45.973000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:f39c415b-5ba6-4a8f-8ecd-aa810d86eadb",
@@ -125,6 +127,7 @@
         "condition": "any episode",
         "window_hours": 72
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "72ecd570-4d14-4a7e-af33-bdca3020b71e",
       "eligibility_evidence": {
@@ -190,6 +193,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "digi-mone-d3",
@@ -202,14 +206,15 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:f39c415b-5ba6-4a8f-8ecd-aa810d86eadb"
             ],
             "observed_at": "2026-10-01T15:46:44.983000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:f39c415b-5ba6-4a8f-8ecd-aa810d86eadb",

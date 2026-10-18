@@ -64,6 +64,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "bagi-baya-d4",
@@ -80,7 +81,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:408267d3-f4fb-4910-b1e2-5798562d2fba",
@@ -88,7 +90,7 @@
         ],
         "observed_at": "2026-10-01T14:49:34.939000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:408267d3-f4fb-4910-b1e2-5798562d2fba",
@@ -133,6 +135,7 @@
         "condition": "same content_slug as the unfinished series",
         "window_hours": 72
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "92f47a34-202b-47e1-ac20-b9a65a4cecc0",
       "eligibility_evidence": {
@@ -198,6 +201,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "bagi-baya-d4",
@@ -214,7 +218,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:408267d3-f4fb-4910-b1e2-5798562d2fba",
@@ -222,7 +227,7 @@
             ],
             "observed_at": "2026-10-01T14:49:34.939000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:408267d3-f4fb-4910-b1e2-5798562d2fba",

@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "guka-kosusa-d2",
@@ -82,14 +83,15 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:d980dd58-f716-4a96-ad2f-9fc35620ca88"
         ],
         "observed_at": "2026-10-01T07:31:07.934000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:d980dd58-f716-4a96-ad2f-9fc35620ca88",
@@ -138,6 +140,7 @@
         "condition": "on 3 distinct IST days",
         "window_hours": 336
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "b9364ddb-da5d-4484-becf-01581e811d53",
       "eligibility_evidence": {
@@ -209,6 +212,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "guka-kosusa-d2",
@@ -221,14 +225,15 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:d980dd58-f716-4a96-ad2f-9fc35620ca88"
             ],
             "observed_at": "2026-10-01T07:31:07.934000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:d980dd58-f716-4a96-ad2f-9fc35620ca88",
@@ -275,11 +280,11 @@
           "window_hours": 336
         },
         "signal_refs": [
-          "event:oua-023647",
-          "event:oua-023650",
-          "event:oua-023657",
-          "event:oua-023663",
-          "event:oua-023669"
+          "event:oua-023687",
+          "event:oua-023690",
+          "event:oua-023697",
+          "event:oua-023703",
+          "event:oua-023709"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

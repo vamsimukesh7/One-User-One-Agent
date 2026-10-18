@@ -99,7 +99,7 @@ class Extensions(unittest.TestCase):
         for title in self.pack.catalogue.values():title['title']='Hurry guaranteed'
         d,_=self.engine.decide(event());self.assertIn('forbidden_copy',d['checks']['failed'])
 
-    def test_ambiguous_goals_remain_excluded(self):
+    def test_unconfigured_goals_remain_excluded(self):
         self.setup_extensions();self.pack.profiles['test-viewer'][0]['subscription_status']='lapsed'
         e=event('lapse',kind='subscription_lapsed',at=NOW-timedelta(days=2))
         c=resolve(self.pack,'test-viewer',event(),[e],NOW)
@@ -130,9 +130,9 @@ class Extensions(unittest.TestCase):
         c=resolve(self.pack,'test-viewer',event(),events,NOW)
         self.assertNotIn('G07',candidates(c,events,NOW,self.pack,'trigger-1'))
 
-    def test_unsupported_goal_cannot_claim_success_or_failure(self):
+    def test_unconfigured_goal_cannot_claim_success_or_failure(self):
         self.setup_extensions()
-        for gid in ('G06','G10','G11'):
+        for gid in ('G06','G10'):
             p={'goal_id':gid,'plan_id':'unsupported','user_id':'test-viewer','started_at':iso(NOW),
                'deadline':iso(NOW+timedelta(days=14)),'status':'open','rule_version':'2026-09-30','success':self.pack.goals[gid]['success']}
             result=judge(p,[event('tv',kind='tv_app_open',at=NOW+timedelta(days=1))],self.pack,NOW+timedelta(days=15))

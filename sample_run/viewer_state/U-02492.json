@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "gima-bhadaba-d1",
@@ -124,7 +125,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:3cae93cf-3e2d-40e5-9b18-a9ae6ed202c0",
@@ -138,7 +140,7 @@
         ],
         "observed_at": "2026-10-01T04:19:42.339000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:3cae93cf-3e2d-40e5-9b18-a9ae6ed202c0",
@@ -221,6 +223,7 @@
         "condition": "a title released in the 30 days before the goal start",
         "window_hours": 168
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "7c8e767a-9884-4557-a8b9-ddfebbb8b475",
       "eligibility_evidence": {
@@ -292,6 +295,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "gima-bhadaba-d1",
@@ -346,7 +350,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:3cae93cf-3e2d-40e5-9b18-a9ae6ed202c0",
@@ -360,7 +365,7 @@
             ],
             "observed_at": "2026-10-01T03:08:30.358000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:3cae93cf-3e2d-40e5-9b18-a9ae6ed202c0",

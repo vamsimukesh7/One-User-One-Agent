@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "hate-d1",
@@ -117,7 +118,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:e8aac05b-e506-4dcd-8f9a-11c19e9398d3",
@@ -131,7 +133,7 @@
         ],
         "observed_at": "2026-10-01T14:05:50.874000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:e8aac05b-e506-4dcd-8f9a-11c19e9398d3",
@@ -206,6 +208,7 @@
         "condition": "on 3 distinct IST days",
         "window_hours": 336
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "09d759dc-8be1-4885-8e38-2850a4f7b6b6",
       "eligibility_evidence": {
@@ -277,6 +280,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "hate-d1",
@@ -324,7 +328,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:e8aac05b-e506-4dcd-8f9a-11c19e9398d3",
@@ -338,7 +343,7 @@
             ],
             "observed_at": "2026-10-01T04:11:53.815000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:e8aac05b-e506-4dcd-8f9a-11c19e9398d3",
@@ -415,20 +420,20 @@
           "window_hours": 336
         },
         "signal_refs": [
-          "event:oua-021446",
-          "event:oua-021449",
-          "event:oua-021454",
-          "event:oua-021457",
-          "event:oua-021460",
-          "event:oua-021464"
+          "event:oua-021485",
+          "event:oua-021488",
+          "event:oua-021493",
+          "event:oua-021496",
+          "event:oua-021499",
+          "event:oua-021503"
         ],
         "exposure_refs": [
-          "event:oua-021445",
-          "event:oua-021448"
+          "event:oua-021484",
+          "event:oua-021487"
         ],
         "associated_signal_refs": [
-          "event:oua-021446",
-          "event:oua-021449"
+          "event:oua-021485",
+          "event:oua-021488"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

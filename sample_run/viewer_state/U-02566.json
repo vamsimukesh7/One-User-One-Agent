@@ -70,6 +70,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-18T20:21:41.848000Z",
+              "source": {
+                "ref": "event:e20f1c93-f5ee-498a-9046-3f8717aa969a",
+                "observed_at": "2026-09-18T20:21:41.848Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "nini-namoko-d1",
@@ -149,7 +158,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:65243731-2d93-4442-814f-a8e53b4357d2",
@@ -167,11 +177,12 @@
           "event:fcf87d25-7302-43cf-b681-f801be894dae",
           "event:125700f7-c128-4633-99bf-85ebb0a57c21",
           "event:2d7ab706-d666-4470-9e62-a3f4861d0c36",
-          "event:d686b639-27f9-4dc2-be9b-03e2f3418b30"
+          "event:d686b639-27f9-4dc2-be9b-03e2f3418b30",
+          "event:e20f1c93-f5ee-498a-9046-3f8717aa969a"
         ],
         "observed_at": "2026-10-01T12:07:06.061000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:65243731-2d93-4442-814f-a8e53b4357d2",
@@ -252,6 +263,11 @@
             "ref": "event:d686b639-27f9-4dc2-be9b-03e2f3418b30",
             "observed_at": "2026-09-26T14:15:21.335Z",
             "freshness_s": 424304.726
+          },
+          {
+            "ref": "event:e20f1c93-f5ee-498a-9046-3f8717aa969a",
+            "observed_at": "2026-09-18T20:21:41.848Z",
+            "freshness_s": 1093524.213
           }
         ]
       }
@@ -294,6 +310,7 @@
         "condition": "a title released in the 30 days before the goal start",
         "window_hours": 168
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "a2b8f4eb-cb7b-4006-a5b5-df1ee241c182",
       "eligibility_evidence": {
@@ -365,6 +382,15 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [
+                {
+                  "at": "2026-09-18T20:21:41.848000Z",
+                  "source": {
+                    "ref": "event:e20f1c93-f5ee-498a-9046-3f8717aa969a",
+                    "observed_at": "2026-09-18T20:21:41.848Z"
+                  }
+                }
+              ],
               "unfinished_series": [
                 {
                   "content_slug": "nini-namoko-d1",
@@ -444,7 +470,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:65243731-2d93-4442-814f-a8e53b4357d2",
@@ -462,11 +489,12 @@
               "event:fcf87d25-7302-43cf-b681-f801be894dae",
               "event:125700f7-c128-4633-99bf-85ebb0a57c21",
               "event:2d7ab706-d666-4470-9e62-a3f4861d0c36",
-              "event:d686b639-27f9-4dc2-be9b-03e2f3418b30"
+              "event:d686b639-27f9-4dc2-be9b-03e2f3418b30",
+              "event:e20f1c93-f5ee-498a-9046-3f8717aa969a"
             ],
             "observed_at": "2026-10-01T12:07:06.061000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:65243731-2d93-4442-814f-a8e53b4357d2",
@@ -547,6 +575,11 @@
                 "ref": "event:d686b639-27f9-4dc2-be9b-03e2f3418b30",
                 "observed_at": "2026-09-26T14:15:21.335Z",
                 "freshness_s": 424304.726
+              },
+              {
+                "ref": "event:e20f1c93-f5ee-498a-9046-3f8717aa969a",
+                "observed_at": "2026-09-18T20:21:41.848Z",
+                "freshness_s": 1093524.213
               }
             ]
           }
@@ -591,7 +624,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-015981"
+          "event:oua-016013"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

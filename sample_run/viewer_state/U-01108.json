@@ -70,6 +70,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-02T21:27:27.659000Z",
+              "source": {
+                "ref": "event:f145551b-484e-43ca-8862-e6462abfb8da",
+                "observed_at": "2026-09-02T21:27:27.659Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "hama-chudibha-d1",
@@ -109,7 +118,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:d2822d24-a802-4b9d-8a8b-6a46aff3a2dc",
@@ -117,11 +127,12 @@
           "event:04b66ae9-017e-496c-90d3-dc5a5df4ccf8",
           "event:a614ad70-3405-4585-a3e6-0445ee98b3d3",
           "event:8188587b-507a-4ff0-889a-84353d3e60db",
-          "event:626301b8-fcf3-4764-8b1a-b96a958acef7"
+          "event:626301b8-fcf3-4764-8b1a-b96a958acef7",
+          "event:f145551b-484e-43ca-8862-e6462abfb8da"
         ],
         "observed_at": "2026-10-01T14:04:51.528000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:d2822d24-a802-4b9d-8a8b-6a46aff3a2dc",
@@ -152,6 +163,11 @@
             "ref": "event:626301b8-fcf3-4764-8b1a-b96a958acef7",
             "observed_at": "2026-09-02T02:23:11.982Z",
             "freshness_s": 2547699.546
+          },
+          {
+            "ref": "event:f145551b-484e-43ca-8862-e6462abfb8da",
+            "observed_at": "2026-09-02T21:27:27.659Z",
+            "freshness_s": 2479043.869
           }
         ]
       }
@@ -202,6 +218,7 @@
         "condition": "a title released in the 30 days before the goal start",
         "window_hours": 168
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "eb75a620-92b5-44be-b0d5-7d9c1b0e5ead",
       "eligibility_evidence": {
@@ -273,6 +290,15 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [
+                {
+                  "at": "2026-09-02T21:27:27.659000Z",
+                  "source": {
+                    "ref": "event:f145551b-484e-43ca-8862-e6462abfb8da",
+                    "observed_at": "2026-09-02T21:27:27.659Z"
+                  }
+                }
+              ],
               "unfinished_series": [
                 {
                   "content_slug": "hama-chudibha-d1",
@@ -312,7 +338,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:d2822d24-a802-4b9d-8a8b-6a46aff3a2dc",
@@ -320,11 +347,12 @@
               "event:04b66ae9-017e-496c-90d3-dc5a5df4ccf8",
               "event:a614ad70-3405-4585-a3e6-0445ee98b3d3",
               "event:8188587b-507a-4ff0-889a-84353d3e60db",
-              "event:626301b8-fcf3-4764-8b1a-b96a958acef7"
+              "event:626301b8-fcf3-4764-8b1a-b96a958acef7",
+              "event:f145551b-484e-43ca-8862-e6462abfb8da"
             ],
             "observed_at": "2026-10-01T14:04:51.528000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:d2822d24-a802-4b9d-8a8b-6a46aff3a2dc",
@@ -355,6 +383,11 @@
                 "ref": "event:626301b8-fcf3-4764-8b1a-b96a958acef7",
                 "observed_at": "2026-09-02T02:23:11.982Z",
                 "freshness_s": 2547699.546
+              },
+              {
+                "ref": "event:f145551b-484e-43ca-8862-e6462abfb8da",
+                "observed_at": "2026-09-02T21:27:27.659Z",
+                "freshness_s": 2479043.869
               }
             ]
           }
@@ -406,7 +439,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-007435"
+          "event:oua-007450"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

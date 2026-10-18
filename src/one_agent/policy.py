@@ -5,8 +5,7 @@ from urllib.parse import urlsplit
 from .common import day, event_time, iso, ts, fresh_trigger
 
 
-from .goals import UNSUPPORTED
-DISABLED_GOALS = UNSUPPORTED
+from .goals import supported
 
 
 def fact(value, ref, observed_at, now, rule):
@@ -92,7 +91,8 @@ def resolve(pack, user, trigger, events, now):
     from .goals import extension_facts
     extensions=extension_facts(pack,events,now)
     sources={s['ref']:s for series in extensions['unfinished_series'] for s in series['sources']}
-    facts['goal_extensions']=fact(extensions,list(sources) or ['policy:series-reconciliation'],iso(now),now,'Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required')
+    sources.update({l['source']['ref']:l['source'] for l in extensions['lapses']})
+    facts['goal_extensions']=fact(extensions,list(sources) or ['policy:goal-evidence'],iso(now),now,'Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared')
     facts['goal_extensions']['source_observations']=[dict(s,freshness_s=max(0,(now-ts(s['observed_at'])).total_seconds())) for s in sources.values()]
     return {'facts': facts, 'conflicts': conflicts,
             'assumptions': ['Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.',
@@ -111,8 +111,7 @@ def eligible(goal_id, context, events, now, history_start, exclude_event=None, r
     if rule.get('subscription_status') and status not in rule['subscription_status']:return False,'corrected subscription eligibility'
     if 'signed_up_within_days' in rule and (not signup or not timedelta(0)<=now-signup<=timedelta(days=rule['signed_up_within_days'])):return False,'corrected signup window'
     if rule.get('requires_no_prior_event') in names:return False,'corrected prior-event exclusion'
-    if goal_id in DISABLED_GOALS:
-        return False, DISABLED_GOALS[goal_id]
+    if rules is not None and not supported(goal_id,rules):return False,'missing operational goal definition'
     if goal_id == 'G01':
         return bool(covered and signup and timedelta(0) <= now-signup <= timedelta(days=rule.get('signed_up_within_days',7)) and 'play_started' not in names), 'recent signup; covered history; no prior play'
     if goal_id == 'G02':
@@ -124,8 +123,16 @@ def eligible(goal_id, context, events, now, history_start, exclude_event=None, r
     if goal_id == 'G05':
         return status in rule.get('subscription_status',['never']) and covered and not f['ever_paid']['value'], 'covered lifetime; never paid; no contrary billing'
     extension=f.get('goal_extensions',{}).get('value',{})
+    if goal_id == 'G06':
+        days=rule.get('lapse_within_days')
+        recent=days and any(now-timedelta(days=days)<=ts(l['at'])<=now for l in extension.get('lapses',[]))
+        return bool(status in rule.get('subscription_status',['lapsed']) and recent),'dated lapse within configured recency window'
+    if goal_id == 'G10':
+        return bool(rules and supported(goal_id,rules)),'explicit measurable engagement definition'
     if goal_id == 'G07':
         return covered and bool(extension.get('unfinished_series')), 'covered lifetime; known unfinished series with three days inactivity'
+    if goal_id == 'G11':
+        return status in rule.get('subscription_status',['active']) and extension.get('tv_telemetry_available',False), 'active subscriber and declared TV telemetry availability'
     if goal_id == 'G08':
         return status in rule.get('subscription_status',['active']), 'supported active subscription'
     if goal_id == 'G09':
@@ -158,7 +165,7 @@ def select_content(pack, context, events, goal, now, goal_started_at=None, targe
     for t in pack.catalogue.values():
         if t['dialect'] != dialect or t['language'] != language or not pack.available(t, now):
             continue
-        if goal in {'G01','G02','G03','G12'} and t['is_premium']=='true':
+        if goal in {'G01','G02','G03','G10','G12'} and t['is_premium']=='true':
             continue
         if goal == 'G08' and not (day(release_anchor)-timedelta(days=30) <= ts(t['release_date']+'T00:00:00Z').date() <= day(release_anchor)):
             continue

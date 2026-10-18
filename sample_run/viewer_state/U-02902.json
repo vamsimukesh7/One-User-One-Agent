@@ -64,6 +64,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-10T15:35:56.211000Z",
+              "source": {
+                "ref": "event:dec7c323-62ae-4708-ba73-98d5d0cd66d8",
+                "observed_at": "2026-09-10T15:35:56.211Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "hate-d1",
@@ -80,15 +89,17 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:ecff107a-b0c6-4544-a0c1-33db45eaed4b",
-          "event:74d2b642-1752-4605-8949-58e6bbb37d5d"
+          "event:74d2b642-1752-4605-8949-58e6bbb37d5d",
+          "event:dec7c323-62ae-4708-ba73-98d5d0cd66d8"
         ],
         "observed_at": "2026-10-01T14:50:39.134000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:ecff107a-b0c6-4544-a0c1-33db45eaed4b",
@@ -99,6 +110,11 @@
             "ref": "event:74d2b642-1752-4605-8949-58e6bbb37d5d",
             "observed_at": "2026-09-09T13:23:29.379Z",
             "freshness_s": 1906029.755
+          },
+          {
+            "ref": "event:dec7c323-62ae-4708-ba73-98d5d0cd66d8",
+            "observed_at": "2026-09-10T15:35:56.211Z",
+            "freshness_s": 1811682.923
           }
         ]
       }
@@ -122,7 +138,7 @@
   "latest_decision_id": "D-f9c000758391c0fad77a",
   "learning": [
     {
-      "goal_id": "G07",
+      "goal_id": "G06",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -130,18 +146,19 @@
   ],
   "plans": [
     {
-      "plan_id": "P-d0179053b44b2822df83",
+      "plan_id": "P-090a99ecaf4b01e8dd0d",
       "user_id": "U-02902",
-      "goal_id": "G07",
+      "goal_id": "G06",
       "status": "failed",
       "started_at": "2026-10-01T14:50:39.134000Z",
-      "deadline": "2026-10-04T14:50:39.134000Z",
+      "deadline": "2026-10-15T14:50:39.134000Z",
       "success": {
-        "event": "play_started",
-        "condition": "same content_slug as the unfinished series",
-        "window_hours": 72
+        "event": "purchase_completed",
+        "condition": "any paid plan",
+        "window_hours": 336
       },
-      "rule_version": "2026-09-30",
+      "definition_source": "User-approved operational definitions (G06: 30 days; G10: 2 different episodes on 2 IST days); CLI overrides are recorded explicitly; no viewer facts invented",
+      "rule_version": "implementation-v1-da3ab3d7cc81ce2ebc7a",
       "trigger_event_id": "7aa5cf49-0fc1-4b3f-833d-3ac5fadfd039",
       "eligibility_evidence": {
         "facts": {
@@ -206,6 +223,15 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [
+                {
+                  "at": "2026-09-10T15:35:56.211000Z",
+                  "source": {
+                    "ref": "event:dec7c323-62ae-4708-ba73-98d5d0cd66d8",
+                    "observed_at": "2026-09-10T15:35:56.211Z"
+                  }
+                }
+              ],
               "unfinished_series": [
                 {
                   "content_slug": "hate-d1",
@@ -222,15 +248,17 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:ecff107a-b0c6-4544-a0c1-33db45eaed4b",
-              "event:74d2b642-1752-4605-8949-58e6bbb37d5d"
+              "event:74d2b642-1752-4605-8949-58e6bbb37d5d",
+              "event:dec7c323-62ae-4708-ba73-98d5d0cd66d8"
             ],
             "observed_at": "2026-10-01T14:50:39.134000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:ecff107a-b0c6-4544-a0c1-33db45eaed4b",
@@ -241,6 +269,11 @@
                 "ref": "event:74d2b642-1752-4605-8949-58e6bbb37d5d",
                 "observed_at": "2026-09-09T13:23:29.379Z",
                 "freshness_s": 1906029.755
+              },
+              {
+                "ref": "event:dec7c323-62ae-4708-ba73-98d5d0cd66d8",
+                "observed_at": "2026-09-10T15:35:56.211Z",
+                "freshness_s": 1811682.923
               }
             ]
           }
@@ -261,26 +294,28 @@
         ]
       },
       "eligibility_rule": {
-        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+        "text": "Subscription recently lapsed.",
+        "subscription_status": [
+          "lapsed"
+        ],
+        "lapse_within_days": 30
       },
       "actions": [
         "A-f9c000758391c0fad77a"
       ],
-      "target_content_slug": "hate-d1",
-      "next_episode_id": "hate-d1-s1e2",
       "final_outcome": {
-        "plan_id": "P-d0179053b44b2822df83",
+        "plan_id": "P-090a99ecaf4b01e8dd0d",
         "user_id": "U-02902",
-        "goal_id": "G07",
-        "rule_version": "2026-09-30",
+        "goal_id": "G06",
+        "rule_version": "implementation-v1-da3ab3d7cc81ce2ebc7a",
         "started_at": "2026-10-01T14:50:39.134000Z",
-        "deadline": "2026-10-04T14:50:39.134000Z",
+        "deadline": "2026-10-15T14:50:39.134000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "play_started",
-          "condition": "same content_slug as the unfinished series",
-          "window_hours": 72
+          "event": "purchase_completed",
+          "condition": "any paid plan",
+          "window_hours": 336
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -288,7 +323,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-04T14:50:39.134000Z"
+      "closed_at": "2026-10-15T14:50:39.134000Z"
     }
   ]
 }

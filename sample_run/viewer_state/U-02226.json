@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "rigu-dhadi-d2",
@@ -105,7 +106,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:0b2fa3e2-69d3-4868-87b0-b0f38d087b22",
@@ -116,7 +118,7 @@
         ],
         "observed_at": "2026-10-01T06:08:00.697000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:0b2fa3e2-69d3-4868-87b0-b0f38d087b22",
@@ -177,6 +179,7 @@
         "condition": "on 3 distinct IST days",
         "window_hours": 336
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "9dbcd722-bf48-4e21-ab7f-b95dc7c1ec9a",
       "eligibility_evidence": {
@@ -248,6 +251,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "rigu-dhadi-d2",
@@ -283,7 +287,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:0b2fa3e2-69d3-4868-87b0-b0f38d087b22",
@@ -294,7 +299,7 @@
             ],
             "observed_at": "2026-10-01T06:08:00.697000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:0b2fa3e2-69d3-4868-87b0-b0f38d087b22",

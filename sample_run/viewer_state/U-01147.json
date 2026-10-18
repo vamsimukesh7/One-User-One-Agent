@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "losubha-rima-d6",
@@ -124,7 +125,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:ddeb592c-0960-4856-b750-1be64b1e4fb6",
@@ -138,7 +140,7 @@
         ],
         "observed_at": "2026-10-01T10:52:40.910000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:ddeb592c-0960-4856-b750-1be64b1e4fb6",

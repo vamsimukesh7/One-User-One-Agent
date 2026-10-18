@@ -64,6 +64,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "hama-chudibha-d1",
@@ -76,14 +77,15 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:cdff7111-48d2-43af-8a06-4efe5adba02d"
         ],
         "observed_at": "2026-09-30T23:42:41.898000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:cdff7111-48d2-43af-8a06-4efe5adba02d",
@@ -139,6 +141,7 @@
         "condition": "any title",
         "window_hours": 168
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "b11b162d-f2e3-4d6a-9f3f-1ad7ed441c75",
       "eligibility_evidence": {
@@ -204,6 +207,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "hama-chudibha-d1",
@@ -216,14 +220,15 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:cdff7111-48d2-43af-8a06-4efe5adba02d"
             ],
             "observed_at": "2026-09-30T23:42:41.898000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:cdff7111-48d2-43af-8a06-4efe5adba02d",
@@ -274,9 +279,9 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-013887",
-          "event:oua-013899",
-          "event:oua-013896"
+          "event:oua-013914",
+          "event:oua-013926",
+          "event:oua-013923"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

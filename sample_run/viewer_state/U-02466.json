@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "hama-chudibha-d1",
@@ -82,14 +83,15 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:c8a2ffe6-dd3c-48cb-ba40-4ef873ca54e4"
         ],
         "observed_at": "2026-10-01T14:08:08.014000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:c8a2ffe6-dd3c-48cb-ba40-4ef873ca54e4",
@@ -138,6 +140,7 @@
         "condition": "on 3 distinct IST days",
         "window_hours": 336
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "0013cf98-4c42-4f0b-aea7-bb5c7e367286",
       "eligibility_evidence": {
@@ -209,6 +212,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "hama-chudibha-d1",
@@ -221,14 +225,15 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:c8a2ffe6-dd3c-48cb-ba40-4ef873ca54e4"
             ],
             "observed_at": "2026-10-01T03:52:39.305000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:c8a2ffe6-dd3c-48cb-ba40-4ef873ca54e4",
@@ -279,8 +284,8 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-015445",
-          "event:oua-015448"
+          "event:oua-015476",
+          "event:oua-015479"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

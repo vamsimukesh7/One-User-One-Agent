@@ -70,14 +70,16 @@
       },
       "goal_extensions": {
         "value": {
-          "unfinished_series": []
+          "lapses": [],
+          "unfinished_series": [],
+          "tv_telemetry_available": false
         },
         "source": [
-          "policy:series-reconciliation"
+          "policy:goal-evidence"
         ],
         "observed_at": "2026-10-01T11:38:38.885000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": []
       }
     },
@@ -113,6 +115,7 @@
         "condition": "a title released in the 30 days before the goal start",
         "window_hours": 168
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "9a9c29ca-f05a-4f88-b7f3-6ff2555f757c",
       "eligibility_evidence": {
@@ -184,6 +187,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "kova-sako-d5",
@@ -220,7 +224,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:31a0ee65-551a-409a-8b8f-4b2ae545fa27",
@@ -233,7 +238,7 @@
             ],
             "observed_at": "2026-09-30T23:31:46.382000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:31a0ee65-551a-409a-8b8f-4b2ae545fa27",
@@ -302,7 +307,7 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-025048"
+          "event:oua-025090"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

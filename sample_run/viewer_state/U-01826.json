@@ -64,6 +64,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-02T12:04:02.205000Z",
+              "source": {
+                "ref": "event:7a29d065-d9fe-4773-808a-15ab8123c244",
+                "observed_at": "2026-09-02T12:04:02.205Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "molo-d2",
@@ -115,7 +124,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:653c2105-0cb1-4332-947b-9be5b3150837",
@@ -126,11 +136,12 @@
           "event:71696267-99c2-4f95-92cd-9d406e698f1e",
           "event:25345441-a204-4168-8df6-1abd97ec9ef6",
           "event:26835ceb-2e5e-4b69-bb3c-4c7ad7e5c827",
-          "event:3e426738-8d5d-4fa4-bd18-34da4f4353b7"
+          "event:3e426738-8d5d-4fa4-bd18-34da4f4353b7",
+          "event:7a29d065-d9fe-4773-808a-15ab8123c244"
         ],
         "observed_at": "2026-10-01T04:46:06.248000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:653c2105-0cb1-4332-947b-9be5b3150837",
@@ -176,6 +187,11 @@
             "ref": "event:3e426738-8d5d-4fa4-bd18-34da4f4353b7",
             "observed_at": "2026-09-22T22:40:44.212Z",
             "freshness_s": 713122.036
+          },
+          {
+            "ref": "event:7a29d065-d9fe-4773-808a-15ab8123c244",
+            "observed_at": "2026-09-02T12:04:02.205Z",
+            "freshness_s": 2479324.043
           }
         ]
       }

@@ -64,6 +64,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "yane-tegi-d3",
@@ -80,7 +81,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:3e02df84-780e-48e1-b2b1-a654d89fd296",
@@ -88,7 +90,7 @@
         ],
         "observed_at": "2026-10-01T15:26:16.025000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:3e02df84-780e-48e1-b2b1-a654d89fd296",
@@ -122,7 +124,6 @@
   "latest_decision_id": "D-92cd3adca8f1d1ed7055",
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
-    "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
       "goal_id": "G12",
       "result": "succeeded",
@@ -143,6 +144,7 @@
         "condition": "any title",
         "window_hours": 168
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "d5e30b12-d852-4a84-9d00-5cee9c00ca9c",
       "eligibility_evidence": {
@@ -208,6 +210,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "yane-tegi-d3",
@@ -224,7 +227,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:3e02df84-780e-48e1-b2b1-a654d89fd296",
@@ -232,7 +236,7 @@
             ],
             "observed_at": "2026-10-01T09:23:15.867000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:3e02df84-780e-48e1-b2b1-a654d89fd296",
@@ -284,14 +288,14 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-002021"
+          "event:oua-002025"
         ],
         "exposure_refs": [
-          "event:oua-002020",
-          "event:oua-002023"
+          "event:oua-002024",
+          "event:oua-002027"
         ],
         "associated_signal_refs": [
-          "event:oua-002021"
+          "event:oua-002025"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

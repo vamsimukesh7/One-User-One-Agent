@@ -23,6 +23,14 @@ class Engine:
         self.provider = provider or ReplayProvider(pack.faults, pack.controls)
         self.limits = {'max_model_calls':max_model_calls,'max_tool_calls':max_tool_calls,'deadline_ms':deadline_ms}
         self.verifier = Verifier(pack,store)
+        configuration=store.db.execute("SELECT value FROM metadata WHERE key='goal_configuration'").fetchone()
+        if configuration:
+            from .goals import configure
+            config=json.loads(configuration[0])
+            configure(pack,config['g06_lapse_days'],config['g10_engagement'],config['tv_telemetry_available'])
+        elif hasattr(pack,'goal_configuration'):
+            store.db.execute("INSERT INTO metadata VALUES ('goal_configuration',?)",(json.dumps(pack.goal_configuration),))
+            store.db.commit()
         saved = store.db.execute("SELECT value FROM metadata WHERE key='runtime_rules'").fetchone()
         if saved:
             runtime = json.loads(saved[0])
@@ -364,7 +372,7 @@ class Engine:
                 plan = {'plan_id':stable_id('P',trigger['event_id'],gid),'user_id':trigger['user_id'],
                         'goal_id':gid,'status':'open','started_at':iso(now),
                         'deadline':iso(now+timedelta(hours=self.pack.goals[gid]['success']['window_hours'])),
-                        'success':copy.deepcopy(self.pack.goals[gid]['success']), 'rule_version':self.pack.rule_versions[gid],
+                        'success':copy.deepcopy(self.pack.goals[gid]['success']), 'definition_source':self.pack.goals[gid].get('definition_source','supplied goal catalogue'), 'rule_version':self.pack.rule_versions[gid],
                         'trigger_event_id':trigger['event_id'],'eligibility_evidence':context,'eligibility_rule':copy.deepcopy(self.pack.goals[gid]['eligibility']),'actions':[]}
                 if gid=='G07':
                     target=context['facts']['goal_extensions']['value']['unfinished_series'][0]
@@ -379,12 +387,12 @@ class Engine:
                 ids = select_content(self.pack,context,events,plan['goal_id'],now,plan['started_at'],plan.get('target_content_slug'))
                 channel=choose(self.pack,self.store,context,plan,now,self.channel)
                 if channel!='home_page' and ids:
-                    payload=copy_for(self.pack,channel,self.pack.catalogue[ids[0]])
+                    payload=copy_for(self.pack,channel,self.pack.catalogue[ids[0]],plan['goal_id'])
                     if payload is None:reason='no_approved_template_for_language'
                     else:
                         action={'action_id':stable_id('A',trigger['event_id']),'decision_id':did,
                                 'user_id':trigger['user_id'],'trigger_event_id':trigger['event_id'],
-                                'type':channel,'dialect':context['facts']['dialect']['value'],'title_id':ids[0],**payload}
+                                'type':channel,'goal_id':plan['goal_id'],'dialect':context['facts']['dialect']['value'],'title_id':ids[0],**payload}
                 elif len(ids)<4:
                     reason = 'insufficient_unique_available_titles_for_hero_and_row'
                 else:
@@ -432,7 +440,7 @@ class Engine:
                         'trigger':{'event':trigger['event'],'event_id':trigger['event_id'],'received_at':trigger['received_at'],
                                    'deliver_at':trigger.get('deliver_at',trigger['received_at']), 'event_age_s':(now-effective).total_seconds(),
                                    'clock_estimate_valid':valid},
-                        'goal':{'id':plan['goal_id'],'plan_id':plan['plan_id'],'deadline':plan['deadline'],'success':plan['success'], 'rule_version':plan['rule_version']} if plan else None,
+                        'goal':{'id':plan['goal_id'],'plan_id':plan['plan_id'],'deadline':plan['deadline'],'success':plan['success'], 'rule_version':plan['rule_version'],'definition_source':plan.get('definition_source','supplied goal catalogue')} if plan else None,
                         'action':action['type'].upper() if action else 'NO_ACTION','no_action_reason':reason,
                         'dialect':dict(context['facts']['dialect'],conflicts=[c for c in context['conflicts'] if c['field']=='dialect']),
                         'content':title_ids(action) if action else [],

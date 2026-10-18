@@ -64,6 +64,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-23T00:19:27.109000Z",
+              "source": {
+                "ref": "event:7472072c-447c-47b2-ad01-4540290be9b0",
+                "observed_at": "2026-09-23T00:19:27.109Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "kova-sako-d5",
@@ -95,17 +104,19 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:34a04596-9045-440b-a887-4d722d56e1f2",
           "event:8610f106-7386-4c99-88cb-789145230087",
           "event:40728824-ea30-4d08-adc9-312220274df2",
-          "event:25eb04dc-a3c1-4557-b939-53c482e4c8db"
+          "event:25eb04dc-a3c1-4557-b939-53c482e4c8db",
+          "event:7472072c-447c-47b2-ad01-4540290be9b0"
         ],
         "observed_at": "2026-10-01T17:29:19.486000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:34a04596-9045-440b-a887-4d722d56e1f2",
@@ -126,6 +137,11 @@
             "ref": "event:25eb04dc-a3c1-4557-b939-53c482e4c8db",
             "observed_at": "2026-09-09T16:30:04.211Z",
             "freshness_s": 1904355.275
+          },
+          {
+            "ref": "event:7472072c-447c-47b2-ad01-4540290be9b0",
+            "observed_at": "2026-09-23T00:19:27.109Z",
+            "freshness_s": 752992.377
           }
         ]
       }
@@ -149,10 +165,224 @@
   "latest_decision_id": "D-f4b8cbb2af2671d0ec89",
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
-    "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
-    "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
-    "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
-    "model_call_skipped: no actionable uncertainty or budget; deterministic policy"
+    {
+      "goal_id": "G06",
+      "result": "succeeded",
+      "intervention": "inconclusive_no_linked_success",
+      "lesson": "Do not equate publishing with seeing or observing success with causation."
+    }
   ],
-  "plans": []
+  "plans": [
+    {
+      "plan_id": "P-3bfcf5457ab88be28ff4",
+      "user_id": "U-01171",
+      "goal_id": "G06",
+      "status": "succeeded",
+      "started_at": "2026-10-01T10:02:20.706000Z",
+      "deadline": "2026-10-15T10:02:20.706000Z",
+      "success": {
+        "event": "purchase_completed",
+        "condition": "any paid plan",
+        "window_hours": 336
+      },
+      "definition_source": "User-approved operational definitions (G06: 30 days; G10: 2 different episodes on 2 IST days); CLI overrides are recorded explicitly; no viewer facts invented",
+      "rule_version": "implementation-v1-da3ab3d7cc81ce2ebc7a",
+      "trigger_event_id": "ee72d061-c55c-4c6b-83d0-80c0f5d86519",
+      "eligibility_evidence": {
+        "facts": {
+          "dialect": {
+            "value": "d5",
+            "source": "event:ee72d061-c55c-4c6b-83d0-80c0f5d86519",
+            "observed_at": "2026-10-01T10:02:20.706Z",
+            "freshness_s": 0,
+            "resolution_rule": "latest fresh app setting at decision; profile and campaign never override it"
+          },
+          "language": {
+            "value": "hin",
+            "source": "event:ee72d061-c55c-4c6b-83d0-80c0f5d86519",
+            "observed_at": "2026-10-01T10:02:20.706Z",
+            "freshness_s": 0,
+            "resolution_rule": "latest fresh app setting"
+          },
+          "signup_at": {
+            "value": "2025-01-03T03:16:02.766Z",
+            "source": "profiles_snapshot.csv:3732",
+            "observed_at": "2026-09-30T00:00:00.000Z",
+            "freshness_s": 122540.706,
+            "resolution_rule": "earliest supported signup; no inferred signup for missing profile"
+          },
+          "subscription_status": {
+            "value": "lapsed",
+            "source": "profiles_snapshot.csv:3732",
+            "observed_at": "2026-09-30T00:00:00.000Z",
+            "freshness_s": 122540.706,
+            "resolution_rule": "billing evidence defeats stale snapshot; expired plans unknown"
+          },
+          "ever_paid": {
+            "value": true,
+            "source": [
+              "profiles_snapshot.csv:3732"
+            ],
+            "observed_at": "2026-09-30T00:00:00.000Z",
+            "freshness_s": 122540.706,
+            "resolution_rule": "positive paid evidence is monotonic; a stale never cannot erase it",
+            "source_observations": []
+          },
+          "notifications_opt_in": {
+            "value": true,
+            "source": "profiles_snapshot.csv:3732",
+            "observed_at": "2026-09-30T00:00:00.000Z",
+            "freshness_s": 122540.706,
+            "resolution_rule": "explicit opt-out overrides snapshot; missing consent is false"
+          },
+          "whatsapp_opt_in": {
+            "value": false,
+            "source": "profiles_snapshot.csv:3732",
+            "observed_at": "2026-09-30T00:00:00.000Z",
+            "freshness_s": 122540.706,
+            "resolution_rule": "explicit opt-out overrides snapshot; missing consent is false"
+          },
+          "history_covers_signup": {
+            "value": false,
+            "source": "pack:README:30-day-window",
+            "observed_at": "2026-08-31T18:30:00.000000Z",
+            "freshness_s": 2647940.706,
+            "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "lapses": [
+                {
+                  "at": "2026-09-23T00:19:27.109000Z",
+                  "source": {
+                    "ref": "event:7472072c-447c-47b2-ad01-4540290be9b0",
+                    "observed_at": "2026-09-23T00:19:27.109Z"
+                  }
+                }
+              ],
+              "unfinished_series": [
+                {
+                  "content_slug": "kova-sako-d5",
+                  "next_episode_id": "kova-sako-d5-s1e2",
+                  "last_play_at": "2026-09-23T07:37:30.971000Z",
+                  "sources": [
+                    {
+                      "ref": "event:34a04596-9045-440b-a887-4d722d56e1f2",
+                      "observed_at": "2026-09-21T03:57:17.451Z"
+                    },
+                    {
+                      "ref": "event:8610f106-7386-4c99-88cb-789145230087",
+                      "observed_at": "2026-09-21T04:00:01.277Z"
+                    },
+                    {
+                      "ref": "event:40728824-ea30-4d08-adc9-312220274df2",
+                      "observed_at": "2026-09-23T07:37:30.971Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "bhama-chunapi-d5",
+                  "next_episode_id": "bhama-chunapi-d5-s1e1",
+                  "last_play_at": "2026-09-09T16:30:04.211000Z",
+                  "sources": [
+                    {
+                      "ref": "event:25eb04dc-a3c1-4557-b939-53c482e4c8db",
+                      "observed_at": "2026-09-09T16:30:04.211Z"
+                    }
+                  ]
+                }
+              ],
+              "tv_telemetry_available": false
+            },
+            "source": [
+              "event:34a04596-9045-440b-a887-4d722d56e1f2",
+              "event:8610f106-7386-4c99-88cb-789145230087",
+              "event:40728824-ea30-4d08-adc9-312220274df2",
+              "event:25eb04dc-a3c1-4557-b939-53c482e4c8db",
+              "event:7472072c-447c-47b2-ad01-4540290be9b0"
+            ],
+            "observed_at": "2026-10-01T10:02:20.706000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
+            "source_observations": [
+              {
+                "ref": "event:34a04596-9045-440b-a887-4d722d56e1f2",
+                "observed_at": "2026-09-21T03:57:17.451Z",
+                "freshness_s": 885903.255
+              },
+              {
+                "ref": "event:8610f106-7386-4c99-88cb-789145230087",
+                "observed_at": "2026-09-21T04:00:01.277Z",
+                "freshness_s": 885739.429
+              },
+              {
+                "ref": "event:40728824-ea30-4d08-adc9-312220274df2",
+                "observed_at": "2026-09-23T07:37:30.971Z",
+                "freshness_s": 699889.735
+              },
+              {
+                "ref": "event:25eb04dc-a3c1-4557-b939-53c482e4c8db",
+                "observed_at": "2026-09-09T16:30:04.211Z",
+                "freshness_s": 1877536.495
+              },
+              {
+                "ref": "event:7472072c-447c-47b2-ad01-4540290be9b0",
+                "observed_at": "2026-09-23T00:19:27.109Z",
+                "freshness_s": 726173.597
+              }
+            ]
+          }
+        },
+        "conflicts": [
+          {
+            "field": "dialect",
+            "chosen": "d5",
+            "other": "d2",
+            "source": "profiles_snapshot.csv:3732",
+            "resolution": "app_setting_over_profile"
+          }
+        ],
+        "assumptions": [
+          "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
+          "The supplied history is complete from its documented window start, subject to late arrivals.",
+          "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Subscription recently lapsed.",
+        "subscription_status": [
+          "lapsed"
+        ],
+        "lapse_within_days": 30
+      },
+      "actions": [
+        "A-54d69e20bcf553450c85",
+        "A-b3c1904c3fd832b20338",
+        "A-f4b8cbb2af2671d0ec89"
+      ],
+      "final_outcome": {
+        "plan_id": "P-3bfcf5457ab88be28ff4",
+        "user_id": "U-01171",
+        "goal_id": "G06",
+        "rule_version": "implementation-v1-da3ab3d7cc81ce2ebc7a",
+        "started_at": "2026-10-01T10:02:20.706000Z",
+        "deadline": "2026-10-15T10:02:20.706000Z",
+        "status": "succeeded",
+        "reason": "observed_success_signal_in_goal_window",
+        "success_signal": {
+          "event": "purchase_completed",
+          "condition": "any paid plan",
+          "window_hours": 336
+        },
+        "signal_refs": [
+          "event:oua-007745"
+        ],
+        "exposure_refs": [],
+        "associated_signal_refs": [],
+        "intervention_judgment": "inconclusive_no_linked_success",
+        "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
+      },
+      "closed_at": "2026-10-15T10:02:20.706000Z"
+    }
+  ]
 }

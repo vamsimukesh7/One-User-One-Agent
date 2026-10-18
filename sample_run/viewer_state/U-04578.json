@@ -64,14 +64,16 @@
       },
       "goal_extensions": {
         "value": {
-          "unfinished_series": []
+          "lapses": [],
+          "unfinished_series": [],
+          "tv_telemetry_available": false
         },
         "source": [
-          "policy:series-reconciliation"
+          "policy:goal-evidence"
         ],
         "observed_at": "2026-10-01T14:25:44.977000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": []
       }
     },
@@ -85,7 +87,6 @@
   "active_plan_id": null,
   "latest_decision_id": "D-b27ad404d089835ff139",
   "learning": [
-    "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
       "goal_id": "G12",
       "result": "succeeded",
@@ -106,6 +107,7 @@
         "condition": "any title",
         "window_hours": 168
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "de1b5640-a8b3-4b51-ad59-2d0daed59715",
       "eligibility_evidence": {
@@ -171,14 +173,16 @@
           },
           "goal_extensions": {
             "value": {
-              "unfinished_series": []
+              "lapses": [],
+              "unfinished_series": [],
+              "tv_telemetry_available": false
             },
             "source": [
-              "policy:series-reconciliation"
+              "policy:goal-evidence"
             ],
             "observed_at": "2026-10-01T08:39:08.662000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": []
           }
         },
@@ -211,7 +215,7 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-028435"
+          "event:oua-028483"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

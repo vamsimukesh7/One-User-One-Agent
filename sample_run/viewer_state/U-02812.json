@@ -64,6 +64,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-27T03:06:03.481000Z",
+              "source": {
+                "ref": "event:93252eb1-1626-415b-a709-584d753955d9",
+                "observed_at": "2026-09-27T03:06:03.481Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "yara-koja-d6",
@@ -76,19 +85,26 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
-          "event:da30e64f-1146-4518-85a7-e4aad28e61d9"
+          "event:da30e64f-1146-4518-85a7-e4aad28e61d9",
+          "event:93252eb1-1626-415b-a709-584d753955d9"
         ],
         "observed_at": "2026-10-01T16:48:15.341000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:da30e64f-1146-4518-85a7-e4aad28e61d9",
             "observed_at": "2026-09-18T15:10:48.621Z",
             "freshness_s": 1129046.72
+          },
+          {
+            "ref": "event:93252eb1-1626-415b-a709-584d753955d9",
+            "observed_at": "2026-09-27T03:06:03.481Z",
+            "freshness_s": 394931.86
           }
         ]
       }

@@ -70,6 +70,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "raja-d4",
@@ -93,7 +94,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:e43469d6-7080-42d1-9a5f-516c8d07f8d7",
@@ -101,7 +103,7 @@
         ],
         "observed_at": "2026-10-01T12:21:37.324000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:e43469d6-7080-42d1-9a5f-516c8d07f8d7",
@@ -162,6 +164,7 @@
         "condition": "a title released in the 30 days before the goal start",
         "window_hours": 168
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "a788547c-0db0-4d06-83f7-736896637756",
       "eligibility_evidence": {
@@ -233,6 +236,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "raja-d4",
@@ -256,7 +260,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:e43469d6-7080-42d1-9a5f-516c8d07f8d7",
@@ -264,7 +269,7 @@
             ],
             "observed_at": "2026-10-01T12:21:37.324000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:e43469d6-7080-42d1-9a5f-516c8d07f8d7",
@@ -323,7 +328,7 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-029172"
+          "event:oua-029221"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

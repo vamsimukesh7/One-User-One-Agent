@@ -70,6 +70,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-28T00:50:20.119000Z",
+              "source": {
+                "ref": "event:494717db-a1ea-4dae-b782-6471206e55e4",
+                "observed_at": "2026-09-28T00:50:20.119Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "nasachu-dhapa-d6",
@@ -93,15 +102,17 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:53caaca0-87d0-4bcb-95ba-c70f74a83efa",
-          "event:c727677c-d9c5-478d-830b-bc1732253867"
+          "event:c727677c-d9c5-478d-830b-bc1732253867",
+          "event:494717db-a1ea-4dae-b782-6471206e55e4"
         ],
         "observed_at": "2026-10-01T16:47:05.400000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:53caaca0-87d0-4bcb-95ba-c70f74a83efa",
@@ -112,6 +123,11 @@
             "ref": "event:c727677c-d9c5-478d-830b-bc1732253867",
             "observed_at": "2026-09-28T09:31:20.520Z",
             "freshness_s": 285344.88
+          },
+          {
+            "ref": "event:494717db-a1ea-4dae-b782-6471206e55e4",
+            "observed_at": "2026-09-28T00:50:20.119Z",
+            "freshness_s": 316605.281
           }
         ]
       }
@@ -147,6 +163,7 @@
         "condition": "any episode",
         "window_hours": 72
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "22d4d59f-0ddb-44d6-add0-cb2cfeabd243",
       "eligibility_evidence": {
@@ -218,6 +235,15 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [
+                {
+                  "at": "2026-09-28T00:50:20.119000Z",
+                  "source": {
+                    "ref": "event:494717db-a1ea-4dae-b782-6471206e55e4",
+                    "observed_at": "2026-09-28T00:50:20.119Z"
+                  }
+                }
+              ],
               "unfinished_series": [
                 {
                   "content_slug": "nasachu-dhapa-d6",
@@ -241,15 +267,17 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:53caaca0-87d0-4bcb-95ba-c70f74a83efa",
-              "event:c727677c-d9c5-478d-830b-bc1732253867"
+              "event:c727677c-d9c5-478d-830b-bc1732253867",
+              "event:494717db-a1ea-4dae-b782-6471206e55e4"
             ],
             "observed_at": "2026-10-01T16:47:05.400000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:53caaca0-87d0-4bcb-95ba-c70f74a83efa",
@@ -260,6 +288,11 @@
                 "ref": "event:c727677c-d9c5-478d-830b-bc1732253867",
                 "observed_at": "2026-09-28T09:31:20.520Z",
                 "freshness_s": 285344.88
+              },
+              {
+                "ref": "event:494717db-a1ea-4dae-b782-6471206e55e4",
+                "observed_at": "2026-09-28T00:50:20.119Z",
+                "freshness_s": 316605.281
               }
             ]
           }

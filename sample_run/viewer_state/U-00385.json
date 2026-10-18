@@ -70,6 +70,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-10T23:25:36.947000Z",
+              "source": {
+                "ref": "event:9d9fbed0-ffbd-4252-acd6-68971b4822f5",
+                "observed_at": "2026-09-10T23:25:36.947Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "molo-d2",
@@ -101,17 +110,19 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:d6bb7e67-e1ef-47d8-837a-81b54eeab963",
           "event:e43acdb3-f848-479e-9431-af0dee8c7a5b",
           "event:d1024c29-3e6e-4c35-83bd-84538cdf668e",
-          "event:2f777688-cd9b-4f7a-9785-f860c868e9da"
+          "event:2f777688-cd9b-4f7a-9785-f860c868e9da",
+          "event:9d9fbed0-ffbd-4252-acd6-68971b4822f5"
         ],
         "observed_at": "2026-10-01T09:51:34.823000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:d6bb7e67-e1ef-47d8-837a-81b54eeab963",
@@ -132,6 +143,11 @@
             "ref": "event:2f777688-cd9b-4f7a-9785-f860c868e9da",
             "observed_at": "2026-09-25T17:33:36.124Z",
             "freshness_s": 490678.699
+          },
+          {
+            "ref": "event:9d9fbed0-ffbd-4252-acd6-68971b4822f5",
+            "observed_at": "2026-09-10T23:25:36.947Z",
+            "freshness_s": 1765557.876
           }
         ]
       }
@@ -174,6 +190,7 @@
         "condition": "same content_slug as the unfinished series",
         "window_hours": 72
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "65e916a2-06e0-4cc7-9f05-6b1e49db477f",
       "eligibility_evidence": {
@@ -245,6 +262,15 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [
+                {
+                  "at": "2026-09-10T23:25:36.947000Z",
+                  "source": {
+                    "ref": "event:9d9fbed0-ffbd-4252-acd6-68971b4822f5",
+                    "observed_at": "2026-09-10T23:25:36.947Z"
+                  }
+                }
+              ],
               "unfinished_series": [
                 {
                   "content_slug": "molo-d2",
@@ -276,17 +302,19 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:d6bb7e67-e1ef-47d8-837a-81b54eeab963",
               "event:e43acdb3-f848-479e-9431-af0dee8c7a5b",
               "event:d1024c29-3e6e-4c35-83bd-84538cdf668e",
-              "event:2f777688-cd9b-4f7a-9785-f860c868e9da"
+              "event:2f777688-cd9b-4f7a-9785-f860c868e9da",
+              "event:9d9fbed0-ffbd-4252-acd6-68971b4822f5"
             ],
             "observed_at": "2026-10-01T09:51:34.823000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:d6bb7e67-e1ef-47d8-837a-81b54eeab963",
@@ -307,6 +335,11 @@
                 "ref": "event:2f777688-cd9b-4f7a-9785-f860c868e9da",
                 "observed_at": "2026-09-25T17:33:36.124Z",
                 "freshness_s": 490678.699
+              },
+              {
+                "ref": "event:9d9fbed0-ffbd-4252-acd6-68971b4822f5",
+                "observed_at": "2026-09-10T23:25:36.947Z",
+                "freshness_s": 1765557.876
               }
             ]
           }

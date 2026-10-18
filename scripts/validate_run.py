@@ -84,7 +84,10 @@ def main():
             assert tid not in withdrawals or published<withdrawals[tid]
         assert len(slugs)==len(set(slugs))
     event_index={}
-    for path in [pack/'data/events.jsonl',pack/'replay/live_events.jsonl',pack/'replay/triggers.jsonl',run/'sim/outcome_events.jsonl']:
+    paths=[pack/'data/events.jsonl',pack/'replay/live_events.jsonl',pack/'replay/triggers.jsonl',run/'sim/outcome_events.jsonl']
+    manifest=json.loads((run/'run_manifest.json').read_text())
+    if manifest.get('extra_events'):paths.append(Path(manifest['extra_events']))
+    for path in paths:
         for e in load(path):
             prior=event_index.get(e['event_id'])
             if prior is None or ts(e['received_at']) < ts(prior['received_at']):
@@ -107,6 +110,13 @@ def main():
             assert e['event']==outcome['success_signal']['event']
             effective=ts(e['received_at'])-(ts(e['sent_at'])-ts(e['occurred_at']))
             assert ts(outcome['started_at'])<effective<=ts(outcome['deadline'])
+        if outcome['goal_id']=='G10' and outcome['status']=='succeeded':
+            signals=[event_index[ref[6:]] for ref in outcome['signal_refs']]
+            rule=outcome['success_signal']
+            ist=timezone(timedelta(hours=5,minutes=30))
+            days={(ts(e['received_at'])-(ts(e['sent_at'])-ts(e['occurred_at']))).astimezone(ist).date() for e in signals}
+            assert len(days)>=rule['min_distinct_days']
+            assert len({e['properties']['episode_id'] for e in signals})>=rule.get('min_distinct_episodes',0)
         if outcome['associated_signal_refs']:
             assert outcome['exposure_refs']
     by_trigger={d['trigger']['event_id']:d for d in decisions}

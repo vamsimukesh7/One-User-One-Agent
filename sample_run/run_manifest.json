@@ -6,5 +6,12 @@
   "observation_end": "2026-10-15T18:30:00.000000Z",
   "max_model_calls": 8,
   "max_tool_calls": 20,
-  "channel": "auto"
+  "channel": "auto",
+  "goal_configuration": {
+    "g06_lapse_days": 30,
+    "g10_engagement": "two_episodes_two_days",
+    "tv_telemetry_available": false,
+    "definition_source": "User-approved operational definitions (G06: 30 days; G10: 2 different episodes on 2 IST days); CLI overrides are recorded explicitly; no viewer facts invented"
+  },
+  "extra_events": null
 }

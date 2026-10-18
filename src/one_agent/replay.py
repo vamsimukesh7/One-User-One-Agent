@@ -17,12 +17,12 @@ def percentile(values, p):
     return values[min(len(values)-1,int((len(values)-1)*p))] if values else 0
 
 
-def run(pack_path, out_path, seed='oua-practice', max_model_calls=8, max_tool_calls=20, channel=None):
+def run(pack_path, out_path, seed='oua-practice', max_model_calls=8, max_tool_calls=20, channel=None, lapse_days=30, engagement="two_episodes_two_days", tv_telemetry_available=False, extra_events=None):
     out = Path(out_path)
     if out.exists() and any(out.iterdir()):
         raise ValueError(f'Output directory is not empty: {out}. Use a new --out directory to preserve prior evidence.')
     out.mkdir(parents=True,exist_ok=True)
-    pack = Pack(pack_path)
+    pack = Pack(pack_path,tv_telemetry_available,lapse_days,engagement)
     store = Store(out/'state.sqlite3')
     history = list(jsonl(pack.root/'data/events.jsonl'))
     first_receipt = min(ts(e['received_at']) for e in history)
@@ -33,6 +33,9 @@ def run(pack_path, out_path, seed='oua-practice', max_model_calls=8, max_tool_ca
         timeline.append((ts(e['received_at']),1,'event',e))
     for e in jsonl(pack.root/'replay/live_events.jsonl'):
         timeline.append((ts(e.get('deliver_at',e['received_at'])),2,'event',e))
+    if extra_events:
+        for e in jsonl(extra_events):
+            timeline.append((ts(e.get('deliver_at',e['received_at'])),2,'event',e))
     triggers = list(jsonl(pack.root/'replay/triggers.jsonl'))
     for e in triggers:
         timeline.append((ts(e.get('deliver_at',e['received_at'])),3,'trigger',e))
@@ -119,7 +122,7 @@ def run(pack_path, out_path, seed='oua-practice', max_model_calls=8, max_tool_ca
     impact=reports(pack,store,out,observation_end,sim_report,latency)
     write_json(out/'run_manifest.json',{'seed':seed,'pack':str(pack.root.resolve()),'python':sys.version,
                                       'history_start':iso(pack.history_start),'observation_end':iso(observation_end),
-                                      'max_model_calls':max_model_calls,'max_tool_calls':max_tool_calls,'channel':channel or 'auto'})
+                                      'max_model_calls':max_model_calls,'max_tool_calls':max_tool_calls,'channel':channel or 'auto','goal_configuration':pack.goal_configuration,'extra_events':str(extra_events) if extra_events else None})
     store.close()
     return {'output':str(out),'decisions':len(latencies),'actions':sim_report['counts'].get('actions_total',0),
             'policy_problems':sim_report['policy_problem_count'],'primary_itt':impact['replay']['primary_completion_72h']}

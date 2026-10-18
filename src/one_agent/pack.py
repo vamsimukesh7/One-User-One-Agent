@@ -5,7 +5,7 @@ from .common import csv_rows, jsonl, ts
 
 
 class Pack:
-    def __init__(self, root):
+    def __init__(self, root, tv_telemetry_available=False, lapse_days=30, engagement="two_episodes_two_days"):
         self.root = Path(root)
         self.goals = {g['goal_id']: g for g in json.loads((self.root/'config/goals.json').read_text())['goals']}
         self.policy = json.loads((self.root/'config/interventions.json').read_text())
@@ -23,6 +23,8 @@ class Pack:
         self.withdrawn = {}
         self.rule_versions = {g: '2026-09-30' for g in self.goals}
         self.history_start = None
+        from .goals import configure
+        configure(self,lapse_days,engagement,tv_telemetry_available)
 
     def profile(self, user, now):
         rows = [r for r in self.profiles[user] if ts(r['snapshot_at']) <= now and ts(r['updated_at']) <= now]

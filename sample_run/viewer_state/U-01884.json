@@ -70,6 +70,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-02T07:32:58.956000Z",
+              "source": {
+                "ref": "event:262a73e8-ad7b-442c-bca3-4317099ad7f5",
+                "observed_at": "2026-09-02T07:32:58.956Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "bagi-baya-d4",
@@ -130,7 +139,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:80cd30b1-88dd-4d5e-8db6-49d28cd3c661",
@@ -145,11 +155,12 @@
           "event:68b874b8-a391-4ee5-bb4c-c3f2f16465fe",
           "event:7710acb1-cdce-40c2-badf-919b5345461b",
           "event:b3efb15f-c371-4fa0-9fec-5dca3eb79ea7",
-          "event:be1bf8db-2f17-4911-87de-8392eba1a1dd"
+          "event:be1bf8db-2f17-4911-87de-8392eba1a1dd",
+          "event:262a73e8-ad7b-442c-bca3-4317099ad7f5"
         ],
         "observed_at": "2026-10-01T17:33:58.997000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:80cd30b1-88dd-4d5e-8db6-49d28cd3c661",
@@ -215,6 +226,11 @@
             "ref": "event:be1bf8db-2f17-4911-87de-8392eba1a1dd",
             "observed_at": "2026-09-26T12:58:48.346Z",
             "freshness_s": 448510.651
+          },
+          {
+            "ref": "event:262a73e8-ad7b-442c-bca3-4317099ad7f5",
+            "observed_at": "2026-09-02T07:32:58.956Z",
+            "freshness_s": 2541660.041
           }
         ]
       }
@@ -257,6 +273,7 @@
         "condition": "a title released in the 30 days before the goal start",
         "window_hours": 168
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "dd441dd7-0c6b-4cc3-a2e5-967a8775ec0a",
       "eligibility_evidence": {
@@ -328,6 +345,15 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [
+                {
+                  "at": "2026-09-02T07:32:58.956000Z",
+                  "source": {
+                    "ref": "event:262a73e8-ad7b-442c-bca3-4317099ad7f5",
+                    "observed_at": "2026-09-02T07:32:58.956Z"
+                  }
+                }
+              ],
               "unfinished_series": [
                 {
                   "content_slug": "bagi-baya-d4",
@@ -388,7 +414,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:80cd30b1-88dd-4d5e-8db6-49d28cd3c661",
@@ -403,11 +430,12 @@
               "event:68b874b8-a391-4ee5-bb4c-c3f2f16465fe",
               "event:7710acb1-cdce-40c2-badf-919b5345461b",
               "event:b3efb15f-c371-4fa0-9fec-5dca3eb79ea7",
-              "event:be1bf8db-2f17-4911-87de-8392eba1a1dd"
+              "event:be1bf8db-2f17-4911-87de-8392eba1a1dd",
+              "event:262a73e8-ad7b-442c-bca3-4317099ad7f5"
             ],
             "observed_at": "2026-10-01T17:33:58.997000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:80cd30b1-88dd-4d5e-8db6-49d28cd3c661",
@@ -473,6 +501,11 @@
                 "ref": "event:be1bf8db-2f17-4911-87de-8392eba1a1dd",
                 "observed_at": "2026-09-26T12:58:48.346Z",
                 "freshness_s": 448510.651
+              },
+              {
+                "ref": "event:262a73e8-ad7b-442c-bca3-4317099ad7f5",
+                "observed_at": "2026-09-02T07:32:58.956Z",
+                "freshness_s": 2541660.041
               }
             ]
           }

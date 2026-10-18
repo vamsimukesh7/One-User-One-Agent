@@ -64,6 +64,15 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [
+            {
+              "at": "2026-09-20T15:45:24.593000Z",
+              "source": {
+                "ref": "event:3d0e0caa-c661-4002-b0dc-489f78089c9c",
+                "observed_at": "2026-09-20T15:45:24.593Z"
+              }
+            }
+          ],
           "unfinished_series": [
             {
               "content_slug": "hapibha-d1",
@@ -76,19 +85,26 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
-          "event:ceb218a2-b1e9-4d29-ad5f-9392ccb8c5ac"
+          "event:ceb218a2-b1e9-4d29-ad5f-9392ccb8c5ac",
+          "event:3d0e0caa-c661-4002-b0dc-489f78089c9c"
         ],
         "observed_at": "2026-10-01T14:39:22.627000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:ceb218a2-b1e9-4d29-ad5f-9392ccb8c5ac",
             "observed_at": "2026-09-28T06:41:30.615Z",
             "freshness_s": 287872.012
+          },
+          {
+            "ref": "event:3d0e0caa-c661-4002-b0dc-489f78089c9c",
+            "observed_at": "2026-09-20T15:45:24.593Z",
+            "freshness_s": 946438.034
           }
         ]
       }
@@ -124,6 +140,7 @@
         "condition": "any episode",
         "window_hours": 72
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "2a77fc58-0df4-417d-8a75-09d400f9bfd1",
       "eligibility_evidence": {
@@ -189,6 +206,15 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [
+                {
+                  "at": "2026-09-20T15:45:24.593000Z",
+                  "source": {
+                    "ref": "event:3d0e0caa-c661-4002-b0dc-489f78089c9c",
+                    "observed_at": "2026-09-20T15:45:24.593Z"
+                  }
+                }
+              ],
               "unfinished_series": [
                 {
                   "content_slug": "hapibha-d1",
@@ -201,19 +227,26 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
-              "event:ceb218a2-b1e9-4d29-ad5f-9392ccb8c5ac"
+              "event:ceb218a2-b1e9-4d29-ad5f-9392ccb8c5ac",
+              "event:3d0e0caa-c661-4002-b0dc-489f78089c9c"
             ],
             "observed_at": "2026-10-01T12:21:56.972000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:ceb218a2-b1e9-4d29-ad5f-9392ccb8c5ac",
                 "observed_at": "2026-09-28T06:41:30.615Z",
                 "freshness_s": 279626.357
+              },
+              {
+                "ref": "event:3d0e0caa-c661-4002-b0dc-489f78089c9c",
+                "observed_at": "2026-09-20T15:45:24.593Z",
+                "freshness_s": 938192.379
               }
             ]
           }
@@ -248,7 +281,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-014673"
+          "event:oua-014703"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

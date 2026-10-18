@@ -64,6 +64,7 @@
       },
       "goal_extensions": {
         "value": {
+          "lapses": [],
           "unfinished_series": [
             {
               "content_slug": "jakasa-dapi-d3",
@@ -76,14 +77,15 @@
                 }
               ]
             }
-          ]
+          ],
+          "tv_telemetry_available": false
         },
         "source": [
           "event:2f1f5edd-52e9-44af-8391-e2f4c24f42fc"
         ],
         "observed_at": "2026-10-01T14:03:40.721000Z",
         "freshness_s": 0,
-        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
         "source_observations": [
           {
             "ref": "event:2f1f5edd-52e9-44af-8391-e2f4c24f42fc",
@@ -133,6 +135,7 @@
         "condition": "any title",
         "window_hours": 168
       },
+      "definition_source": "supplied goal catalogue",
       "rule_version": "2026-09-30",
       "trigger_event_id": "b9f12995-86cf-4f85-9f64-7cf66bcd3574",
       "eligibility_evidence": {
@@ -198,6 +201,7 @@
           },
           "goal_extensions": {
             "value": {
+              "lapses": [],
               "unfinished_series": [
                 {
                   "content_slug": "jakasa-dapi-d3",
@@ -210,14 +214,15 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "tv_telemetry_available": false
             },
             "source": [
               "event:2f1f5edd-52e9-44af-8391-e2f4c24f42fc"
             ],
             "observed_at": "2026-10-01T14:03:40.721000Z",
             "freshness_s": 0,
-            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "resolution_rule": "Catalogue episode reconciliation and dated lapse evidence; TV instrumentation is explicitly declared",
             "source_observations": [
               {
                 "ref": "event:2f1f5edd-52e9-44af-8391-e2f4c24f42fc",
@@ -261,7 +266,7 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-013223"
+          "event:oua-013250"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],
