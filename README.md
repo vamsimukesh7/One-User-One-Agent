@@ -4,7 +4,7 @@ A local, runnable lifecycle agent for the supplied OTT assignment. Each viewer h
 
 ## Run the submission
 
-Requires Python 3.10+ with SQLite (validated with Python 3.12). From the repository root, extract the supplied ZIP under `data/` if it is not already present:
+Requires Linux and Python 3.10+ with SQLite (validated with Python 3.12). From the repository root, extract the supplied ZIP under `data/` if it is not already present:
 
 ```bash
 python -m zipfile -e /path/to/one_user_one_agent_data_pack.zip data
@@ -25,12 +25,12 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 python scripts/validate_run.py --pack data/one_user_one_agent_pack --run sample_run
 ```
 
-The second command validates the full included replay against the original inputs and simulator events. After a new replay, substitute its output directory. The data pack, SQLite databases, and large per-viewer/simulator exports remain local and are ignored by Git. Give evaluators the supplied pack alongside this repository; the run command regenerates all artifacts. No data is sent to external APIs.
+The second command validates the full included replay against the original inputs and simulator events. After a new replay, substitute its output directory. The supplied data pack and SQLite databases remain local and are ignored by Git. Complete sample viewer snapshots and simulator events are included. Give evaluators the supplied pack alongside this repository; the run command regenerates all artifacts. No data is sent to external APIs.
 
 Inspect a viewer, including all decisions, plans, actions and final learning:
 
 ```bash
-PYTHONPATH=src python -m one_agent audit --db sample_run/state.sqlite3 --viewer U-01991
+PYTHONPATH=src python -m one_agent audit --db runs/demo/state.sqlite3 --viewer U-01991
 ```
 
 ## Read the result
@@ -70,3 +70,15 @@ Goal selection is deterministic and inspectable. The replay model is an untruste
 For older viewers, absence in a 30-day export cannot prove “never.” Those first-time goals are refused. Holdout viewers can own shadow goals for audit but receive no action. Missing evidence, stale triggers, exhausted budgets, duplicate sessions and failed verification all have explicit no-action reasons.
 
 See `ARCHITECTURE.md` for trust boundaries and timing, `KNOWN_LIMITATIONS.md` for remaining scope, and `AI_COLLABORATION.md` for how the implementation was checked.
+
+## Audit remediation and traffic check
+
+See [REMEDIATION.md](REMEDIATION.md) for corrected failure modes and executed evidence. Reproduce the isolated 3× busiest-evening-window traffic check:
+
+```bash
+python scripts/make_stress_pack.py --pack data/one_user_one_agent_pack --out runs/stress_pack
+PYTHONPATH=src python -m one_agent replay --pack runs/stress_pack --out runs/stress
+python scripts/validate_run.py --pack runs/stress_pack --run runs/stress
+```
+
+This duplicates synthetic sessions for operational testing; its impact estimates are not valid viewer-effect evidence.

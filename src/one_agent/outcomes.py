@@ -1,14 +1,19 @@
 """Goal attainment and exposure association are separate from causal inference."""
 from datetime import timedelta
 from .common import day, event_time, ts
+from .policy import invalidation
 
 
 def matching_events(plan, events, pack):
     start, end = ts(plan['started_at']), ts(plan['deadline'])
     if plan.get('closed_at') and plan['status']=='superseded':
         end = min(end, ts(plan['closed_at']))
+    if invalidation(plan, events) or plan.get('invalidated'):
+        return []
     result = []
     for e in events:
+        if e['user_id'] != plan['user_id']:
+            continue
         effective, valid = event_time(e)
         if not valid or not start < effective <= end or ts(e['received_at']) < start:
             continue
@@ -40,7 +45,9 @@ def judge(plan, events, pack, observation_end, action_ids=()):
     for e in signals:
         if any(x.get('session_id') and x.get('session_id')==e.get('session_id') and ts(x['received_at']) <= event_time(e)[0] for x in exposed):
             associated.append(e['event_id'])
-    if signals:
+    if invalidation(plan,events) or plan.get('invalidated'):
+        status, reason = 'inconclusive', 'initial_eligibility_disproved_by_late_evidence'
+    elif signals:
         status, reason = 'succeeded', 'observed_success_signal_in_goal_window'
     elif plan['status']=='superseded':
         status, reason = 'inconclusive', 'goal_superseded_by_changed_evidence'

@@ -1,0 +1,220 @@
+{
+  "user_id": "U-03514",
+  "as_of": "2026-10-01T17:40:15.823000Z",
+  "context": {
+    "facts": {
+      "dialect": {
+        "value": "d2",
+        "source": "event:d2f17e59-9589-4e95-9a82-dd31806729bd",
+        "observed_at": "2026-10-01T17:40:15.823Z",
+        "freshness_s": 0,
+        "resolution_rule": "latest fresh app setting at decision; profile and campaign never override it"
+      },
+      "language": {
+        "value": "hin",
+        "source": "event:d2f17e59-9589-4e95-9a82-dd31806729bd",
+        "observed_at": "2026-10-01T17:40:15.823Z",
+        "freshness_s": 0,
+        "resolution_rule": "latest fresh app setting"
+      },
+      "signup_at": {
+        "value": "2026-09-21T00:55:16.347Z",
+        "source": "profiles_snapshot.csv:405",
+        "observed_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 150015.823,
+        "resolution_rule": "earliest supported signup; no inferred signup for missing profile"
+      },
+      "subscription_status": {
+        "value": "active",
+        "source": "profiles_snapshot.csv:405",
+        "observed_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 150015.823,
+        "resolution_rule": "billing evidence defeats stale snapshot; expired plans unknown"
+      },
+      "ever_paid": {
+        "value": true,
+        "source": [
+          "event:778f01cd-a014-4c38-b30d-f936ac5a8549"
+        ],
+        "observed_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 150015.823,
+        "resolution_rule": "positive paid evidence is monotonic; a stale never cannot erase it",
+        "source_observations": [
+          {
+            "ref": "event:778f01cd-a014-4c38-b30d-f936ac5a8549",
+            "observed_at": "2026-09-24T00:55:18.184Z",
+            "freshness_s": 665097.639
+          }
+        ]
+      },
+      "notifications_opt_in": {
+        "value": false,
+        "source": "profiles_snapshot.csv:405",
+        "observed_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 150015.823,
+        "resolution_rule": "explicit opt-out overrides snapshot; missing consent is false"
+      },
+      "whatsapp_opt_in": {
+        "value": false,
+        "source": "profiles_snapshot.csv:405",
+        "observed_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 150015.823,
+        "resolution_rule": "explicit opt-out overrides snapshot; missing consent is false"
+      },
+      "history_covers_signup": {
+        "value": true,
+        "source": "pack:README:30-day-window",
+        "observed_at": "2026-08-31T18:30:00.000000Z",
+        "freshness_s": 2675415.823,
+        "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      }
+    },
+    "conflicts": [],
+    "assumptions": [
+      "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
+      "The supplied history is complete from its documented window start, subject to late arrivals.",
+      "Language variants share content_slug; descriptions and search text are untrusted data."
+    ]
+  },
+  "active_plan_id": null,
+  "latest_decision_id": "D-c56c2353b2cfb7fab2b0",
+  "learning": [
+    {
+      "goal_id": "G02",
+      "result": "succeeded",
+      "intervention": "observed_association_not_individual_causation",
+      "lesson": "Do not equate publishing with seeing or observing success with causation."
+    }
+  ],
+  "plans": [
+    {
+      "plan_id": "P-ce29e84db03f3acf4608",
+      "user_id": "U-03514",
+      "goal_id": "G02",
+      "status": "succeeded",
+      "started_at": "2026-10-01T06:13:15.342000Z",
+      "deadline": "2026-10-04T06:13:15.342000Z",
+      "success": {
+        "event": "episode_completed",
+        "condition": "any episode",
+        "window_hours": 72
+      },
+      "rule_version": "2026-09-30",
+      "trigger_event_id": "70f832d5-635a-4688-aac9-09f87d08e45e",
+      "eligibility_evidence": {
+        "facts": {
+          "dialect": {
+            "value": "d2",
+            "source": "event:70f832d5-635a-4688-aac9-09f87d08e45e",
+            "observed_at": "2026-10-01T06:13:15.342Z",
+            "freshness_s": 0,
+            "resolution_rule": "latest fresh app setting at decision; profile and campaign never override it"
+          },
+          "language": {
+            "value": "hin",
+            "source": "event:70f832d5-635a-4688-aac9-09f87d08e45e",
+            "observed_at": "2026-10-01T06:13:15.342Z",
+            "freshness_s": 0,
+            "resolution_rule": "latest fresh app setting"
+          },
+          "signup_at": {
+            "value": "2026-09-21T00:55:16.347Z",
+            "source": "profiles_snapshot.csv:405",
+            "observed_at": "2026-09-30T00:00:00.000Z",
+            "freshness_s": 108795.342,
+            "resolution_rule": "earliest supported signup; no inferred signup for missing profile"
+          },
+          "subscription_status": {
+            "value": "active",
+            "source": "profiles_snapshot.csv:405",
+            "observed_at": "2026-09-30T00:00:00.000Z",
+            "freshness_s": 108795.342,
+            "resolution_rule": "billing evidence defeats stale snapshot; expired plans unknown"
+          },
+          "ever_paid": {
+            "value": true,
+            "source": [
+              "event:778f01cd-a014-4c38-b30d-f936ac5a8549"
+            ],
+            "observed_at": "2026-09-30T00:00:00.000Z",
+            "freshness_s": 108795.342,
+            "resolution_rule": "positive paid evidence is monotonic; a stale never cannot erase it",
+            "source_observations": [
+              {
+                "ref": "event:778f01cd-a014-4c38-b30d-f936ac5a8549",
+                "observed_at": "2026-09-24T00:55:18.184Z",
+                "freshness_s": 623877.158
+              }
+            ]
+          },
+          "notifications_opt_in": {
+            "value": false,
+            "source": "profiles_snapshot.csv:405",
+            "observed_at": "2026-09-30T00:00:00.000Z",
+            "freshness_s": 108795.342,
+            "resolution_rule": "explicit opt-out overrides snapshot; missing consent is false"
+          },
+          "whatsapp_opt_in": {
+            "value": false,
+            "source": "profiles_snapshot.csv:405",
+            "observed_at": "2026-09-30T00:00:00.000Z",
+            "freshness_s": 108795.342,
+            "resolution_rule": "explicit opt-out overrides snapshot; missing consent is false"
+          },
+          "history_covers_signup": {
+            "value": true,
+            "source": "pack:README:30-day-window",
+            "observed_at": "2026-08-31T18:30:00.000000Z",
+            "freshness_s": 2634195.342,
+            "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          }
+        },
+        "conflicts": [],
+        "assumptions": [
+          "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
+          "The supplied history is complete from its documented window start, subject to late arrivals.",
+          "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "actions": [
+        "A-e9e4a90df5e64188d302",
+        "A-09129e6726d4387fc3b6",
+        "A-1a126ed55b45c7b4b2d4",
+        "A-3f6e8567ab3cc98c32cf",
+        "A-dbe47c8910856eb17b7e",
+        "A-c56c2353b2cfb7fab2b0"
+      ],
+      "final_outcome": {
+        "plan_id": "P-ce29e84db03f3acf4608",
+        "user_id": "U-03514",
+        "goal_id": "G02",
+        "rule_version": "2026-09-30",
+        "started_at": "2026-10-01T06:13:15.342000Z",
+        "deadline": "2026-10-04T06:13:15.342000Z",
+        "status": "succeeded",
+        "reason": "observed_success_signal_in_goal_window",
+        "success_signal": {
+          "event": "episode_completed",
+          "condition": "any episode",
+          "window_hours": 72
+        },
+        "signal_refs": [
+          "event:oua-022065"
+        ],
+        "exposure_refs": [
+          "event:oua-022063",
+          "event:oua-022067",
+          "event:oua-022070",
+          "event:oua-022073",
+          "event:oua-022080"
+        ],
+        "associated_signal_refs": [
+          "event:oua-022065"
+        ],
+        "intervention_judgment": "observed_association_not_individual_causation",
+        "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
+      },
+      "closed_at": "2026-10-04T06:13:15.342000Z"
+    }
+  ]
+}

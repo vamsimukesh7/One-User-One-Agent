@@ -1,6 +1,6 @@
 """Rejects proposals independently. Model eligibility/confidence never authorizes action."""
 from .common import fresh_trigger, ts
-from .policy import eligible
+from .policy import eligible, prior_events, invalidation
 
 
 class Verifier:
@@ -21,9 +21,9 @@ class Verifier:
         # Recompute eligibility from facts/events, not proposal. Continuation uses original
         # signup window but current status and event history (elapsed window alone is not revocation).
         eligibility_at = ts(plan['started_at'])
-        prior = [e for e in events if ts(e['received_at']) <= eligibility_at]
+        prior = prior_events(plan, events)
         ok, _ = eligible(plan['goal_id'], context, prior, eligibility_at, self.pack.history_start, plan['trigger_event_id'])
-        test('eligibility', ok)
+        test('eligibility', ok and not invalidation(plan,events))
         test('rule_version', plan['rule_version'] == self.pack.rule_versions[plan['goal_id']])
         settings = max([trigger]+[e for e in events if fresh_trigger(e,at) and ts(e['received_at']) > ts(trigger['received_at'])],key=lambda e:ts(e['received_at']))
         test('dialect', action.get('dialect') == settings.get('app_dialect') == context['facts']['dialect']['value'] and action.get('dialect') in {'d1','d2','d3','d4','d5','d6'})
@@ -37,6 +37,7 @@ class Verifier:
         titles = [self.pack.catalogue.get(i) for i in ids]
         test('catalogue_exists', bool(ids) and all(titles))
         test('content_dialect', all(t and t['dialect']==action.get('dialect') for t in titles))
+        test('content_language', all(t and t['language']==context['facts']['language']['value'] for t in titles))
         test('availability_at_publish', all(t and self.pack.available(t,at) for t in titles))
         slugs = [t['content_slug'] for t in titles if t]
         test('unique_content_slug', len(slugs)==len(set(slugs)))

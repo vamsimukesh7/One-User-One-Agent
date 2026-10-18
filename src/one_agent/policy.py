@@ -40,13 +40,15 @@ def resolve(pack, user, trigger, events, now):
                           'source': 'event:'+trigger['event_id']+':deeplink', 'resolution': 'app_setting_over_campaign'})
     signup = profile.get('signup_at') if profile else None
     signup_source = profile['_ref'] if profile and signup else None
+    signup_observed = profile['snapshot_at'] if profile and signup else None
     for e in events:
         if e['event'] == 'signup_completed':
             estimate, valid = event_time(e)
             if valid and (not signup or estimate < ts(signup)):
                 signup, signup_source = iso(estimate), 'event:'+e['event_id']
+                signup_observed = e['received_at']
     if signup:
-        facts['signup_at'] = fact(signup, signup_source, profile['snapshot_at'] if signup_source.startswith('profiles') else signup,
+        facts['signup_at'] = fact(signup, signup_source, signup_observed,
                                    now, 'earliest supported signup; no inferred signup for missing profile')
     status = profile['subscription_status'] if profile else 'unknown'
     source = profile['_ref'] if profile else 'missing_profile'
@@ -58,20 +60,30 @@ def resolve(pack, user, trigger, events, now):
                    (e['event'] == 'purchase_completed' and e.get('properties',{}).get('is_trial') is False)]
     billing = [e for e in events if e['event'] in {'purchase_completed','subscription_renewed','subscription_lapsed'}]
     if billing:
-        e = billing[-1]
-        if not profile or ts(e['received_at']) >= ts(profile['updated_at']) or (status == 'never' and paid_events):
+        valid_billing = [e for e in billing if event_time(e)[1]]
+        # Receipt controls what is known; effective time controls lifecycle order.
+        latest_time = max((event_time(e)[0] for e in valid_billing), default=None)
+        latest = [e for e in valid_billing if event_time(e)[0] == latest_time]
+        ambiguous = len({(e['event'],e.get('properties',{}).get('is_trial')) for e in latest}) > 1
+        e = max(latest, key=lambda e: ts(e['received_at'])) if latest else billing[-1]
+        if not latest or ambiguous:
+            status, source, observed = 'unknown', 'event:'+e['event_id'], e['received_at']
+            conflicts.append({'field':'subscription_status','resolution':'ambiguous_billing_order'})
+        elif not profile or latest_time >= ts(profile['updated_at']) or (status == 'never' and paid_events):
             props = e.get('properties', {})
             replacement = ('lapsed' if e['event'] == 'subscription_lapsed' else
                            'trial_active' if props.get('is_trial') is True else
                            'active' if e['event'] == 'subscription_renewed' or props.get('is_trial') is False else 'unknown')
             if replacement != status:
                 conflicts.append({'field':'subscription_status','chosen':replacement,'other':status,
-                                  'source':'event:'+e['event_id'],'resolution':'billing_event_over_snapshot'})
+                                  'source':'event:'+e['event_id'],'resolution':'effective_billing_order_over_snapshot'})
             status, source, observed = replacement, 'event:'+e['event_id'], e['received_at']
     facts['subscription_status'] = fact(status, source, observed, now, 'billing evidence defeats stale snapshot; expired plans unknown')
     facts['ever_paid'] = fact(bool(paid_events) or (profile is not None and profile['subscription_status'] in {'active','lapsed'}),
                               ['event:'+e['event_id'] for e in paid_events] or [source], observed, now,
                               'positive paid evidence is monotonic; a stale never cannot erase it')
+    facts['ever_paid']['source_observations'] = [{'ref':'event:'+e['event_id'],'observed_at':e['received_at'],
+        'freshness_s':max(0,(now-ts(e['received_at'])).total_seconds())} for e in paid_events]
     for channel, field in [('push','notifications_opt_in'),('whatsapp','whatsapp_opt_in')]:
         optouts = [e for e in events if e['event']=='notification_opt_out' and e.get('properties',{}).get('channel')==channel]
         consent = bool(profile and profile[field]=='true') and not optouts
@@ -123,7 +135,7 @@ def candidates(context, events, now, pack, trigger_id):
     return [g for g in order if eligible(g,context,events,now,pack.history_start,trigger_id)[0]]
 
 
-def select_content(pack, context, events, goal, now):
+def select_content(pack, context, events, goal, now, goal_started_at=None):
     dialect = context['facts']['dialect']['value']
     language = context['facts']['language']['value']
     genres = Counter()
@@ -133,12 +145,13 @@ def select_content(pack, context, events, goal, now):
             if t:
                 genres.update(t['genres'].split('|'))
     pool = []
+    release_anchor = ts(goal_started_at) if goal_started_at else now
     for t in pack.catalogue.values():
-        if t['dialect'] != dialect or not pack.available(t, now):
+        if t['dialect'] != dialect or t['language'] != language or not pack.available(t, now):
             continue
         if goal in {'G01','G02','G03','G12'} and t['is_premium']=='true':
             continue
-        if goal == 'G08' and not (day(now)-timedelta(days=30) <= ts(t['release_date']+'T00:00:00Z').date() <= day(now)):
+        if goal == 'G08' and not (day(release_anchor)-timedelta(days=30) <= ts(t['release_date']+'T00:00:00Z').date() <= day(release_anchor)):
             continue
         eps = pack.episodes[t['content_slug']]
         minutes = min((int(e['minutes']) for e in eps), default=999)
@@ -151,3 +164,20 @@ def select_content(pack, context, events, goal, now):
         if len(chosen)==4:
             break
     return chosen
+
+
+def prior_events(plan, events):
+    """Historical eligibility uses all now-known evidence effective before commitment."""
+    start = ts(plan['started_at'])
+    return [e for e in events if event_time(e)[0] <= start]
+
+
+def invalidation(plan, events):
+    required_absence = {'G01':'play_started','G02':'episode_completed'}
+    prior = prior_events(plan,events)
+    if any(e['event']==required_absence.get(plan['goal_id']) for e in prior):
+        return 'late_evidence_disproves_initial_eligibility'
+    if plan['goal_id']=='G05' and any(e['event']=='subscription_renewed' or
+        (e['event']=='purchase_completed' and e.get('properties',{}).get('is_trial') is False) for e in prior):
+        return 'late_evidence_disproves_initial_eligibility'
+    return None

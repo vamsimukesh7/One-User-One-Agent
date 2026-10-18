@@ -48,8 +48,11 @@ def reports(pack, store, out, observation_end, simulator_report, latency):
         result = judge(plan,by_user[plan['user_id']],pack,observation_end,plan['actions'])
         outcomes.append(result)
         plan['final_outcome'] = result
-        if plan['status']=='open' and result['status']!='inconclusive':
+        if result['reason']=='initial_eligibility_disproved_by_late_evidence':
+            plan['invalidated']=True
+        if result['status']!='inconclusive' or plan.get('invalidated'):
             plan['status'] = result['status']
+            plan.setdefault('closed_at',plan['deadline'])
         store.save_plan(plan)
     write_jsonl(out/'outcomes.jsonl',outcomes)
     endpoints = {}

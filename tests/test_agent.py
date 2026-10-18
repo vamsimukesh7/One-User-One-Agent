@@ -68,6 +68,7 @@ class AgentTests(unittest.TestCase):
     def test_publish_and_restart_deduplicate(self):
         d,duplicate=self.engine.decide(event())
         self.assertFalse(duplicate);self.assertEqual(d['action'],'HOME_PAGE')
+        self.engine.finalize_publication(d,NOW+timedelta(milliseconds=5),5)
         self.store.close();self.store=Store(self.path);self.engine=Engine(self.pack,self.store)
         again,duplicate=self.engine.decide(event())
         self.assertTrue(duplicate);self.assertEqual(d,again)
@@ -237,15 +238,16 @@ class AgentTests(unittest.TestCase):
         self.assertEqual(d['no_action_reason'],'evidence_changed_during_dependency_wait')
         self.assertFalse(self.store.records('plans')[0]['actions'])
 
-    def test_late_old_billing_revokes_goal_without_success_credit(self):
+    def test_old_purchase_does_not_override_newer_trial_snapshot(self):
         self.pack.profiles['test-viewer'][0]['subscription_status']='trial_active'
         self.pack.profiles['test-viewer'][0]['signup_at']=iso(NOW-timedelta(days=100))
         self.engine.decide(event())
         self.engine.observe(event('old-billing',kind='purchase_completed',at=NOW+timedelta(minutes=2),
                             occurred_at=iso(NOW-timedelta(days=2)),properties={'is_trial':False}))
-        self.assertIsNone(self.store.active('test-viewer'))
-        plan=self.store.records('plans')[0]
-        self.assertEqual(plan['status'],'superseded')
+        plan=self.store.active('test-viewer')
+        self.assertIsNotNone(plan)
+        self.assertEqual(plan['goal_id'],'G04')
+        self.assertNotIn('signal_refs',plan)
 
     def test_zero_budget_still_enrolls_holdout_independent_endpoint(self):
         self.engine=Engine(self.pack,self.store,max_tool_calls=0)

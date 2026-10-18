@@ -50,6 +50,7 @@ def main():
         for tid in ids:
             title=catalogue[tid];slugs.append(title['content_slug'])
             assert title['dialect']==action['dialect']
+            assert title['language']==trigger['app_language']
             assert ts(title['available_from'])<=published
             assert not title['available_until'] or published<ts(title['available_until'])
             assert tid not in withdrawals or published<withdrawals[tid]

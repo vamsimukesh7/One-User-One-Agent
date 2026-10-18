@@ -1,12 +1,15 @@
 """Single-writer SQLite journal. A decision, plan and action commit atomically."""
 import json
 import sqlite3
+from pathlib import Path
 from .common import iso, ts
 
 
 class Store:
     def __init__(self, path):
-        self.db = sqlite3.connect(path)
+        self.path = Path(path)
+        self.failure_path = self.path.with_suffix(".failures.jsonl")
+        self.db = sqlite3.connect(path, timeout=0.1)
         self.db.row_factory = sqlite3.Row
         self.db.executescript('''
         PRAGMA journal_mode=WAL;
@@ -31,6 +34,9 @@ class Store:
         CREATE TABLE IF NOT EXISTS audit (seq INTEGER PRIMARY KEY, body TEXT NOT NULL);
         CREATE TABLE IF NOT EXISTS metadata (key TEXT PRIMARY KEY, value TEXT NOT NULL);
         ''')
+        if 'dispatch_state' not in {r[1] for r in self.db.execute('PRAGMA table_info(actions)')}:
+            self.db.execute("ALTER TABLE actions ADD COLUMN dispatch_state TEXT NOT NULL DEFAULT 'PUBLISHED'")
+        self.db.commit()
 
     def ingest(self, event):
         return self.db.execute('INSERT OR IGNORE INTO events VALUES (?,?,?,?)',
@@ -49,8 +55,27 @@ class Store:
         return json.loads(row[0]) if row else None
 
     def save_plan(self, plan):
-        self.db.execute('INSERT OR REPLACE INTO plans VALUES (?,?,?,?,?)',
+        self.db.execute('''INSERT INTO plans VALUES (?,?,?,?,?) ON CONFLICT(plan_id) DO UPDATE SET
+                        goal_id=excluded.goal_id,status=excluded.status,body=excluded.body''',
                         (plan['plan_id'], plan['user_id'], plan['goal_id'], plan['status'], json.dumps(plan)))
+
+    def sync_viewer(self, user, at):
+        row = self.db.execute('SELECT body FROM viewers WHERE user_id=?', (user,)).fetchone()
+        if row:
+            viewer = json.loads(row[0])
+            active = self.active(user)
+            viewer['active_plan_id'] = active['plan_id'] if active else None
+            viewer['state_updated_at'] = at
+            self.db.execute('UPDATE viewers SET body=? WHERE user_id=?', (json.dumps(viewer), user))
+
+    def published_actions(self):
+        return [json.loads(r[0]) for r in self.db.execute("SELECT body FROM actions WHERE dispatch_state='PUBLISHED' ORDER BY rowid")]
+
+    def emergency(self, decision):
+        # Independent local failure journal: no claim that the unavailable DB committed.
+        import os
+        with self.failure_path.open('a', encoding='utf8') as stream:
+            stream.write(json.dumps(decision)+'\n'); stream.flush(); os.fsync(stream.fileno())
 
     def log(self, value):
         self.db.execute('INSERT INTO audit(body) VALUES (?)', (json.dumps(value),))

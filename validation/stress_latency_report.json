@@ -1,0 +1,15 @@
+{
+  "unique_decisions": 3005,
+  "duplicate_deliveries": 94,
+  "p50_ms": 3.030114000011963,
+  "p95_ms": 9.692668000070626,
+  "p99_ms": 16.697432000099376,
+  "max_ms": 2004.131900999937,
+  "over_60s": 0,
+  "over_5m": 0,
+  "measured_service_p95_ms": 6.621894000090833,
+  "measured_service_max_ms": 162.06128599992553,
+  "simulated_dependency_wait_total_ms": 7110,
+  "replay_wall_seconds_before_reports": 26.13263462100008,
+  "clock_contract": "Single virtual decision worker; service measured including SQLite commit. Dependency delays modeled, not slept. Queue included; no production throughput claim."
+}

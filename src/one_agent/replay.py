@@ -91,10 +91,12 @@ def run(pack_path, out_path, seed='oua-practice', max_model_calls=8, max_tool_ca
                         changed_during_wait.append(pending)
                 engine.finalize_publication(decision,worker_available,wall_ms+wait+queue_ms,
                                             changed_during_wait)
-                latencies.append(wall_ms+wait+queue_ms); service.append(wall_ms)
+                final_wall_ms=(time.perf_counter()-wall_start)*1000
+                worker_available=start+timedelta(milliseconds=final_wall_ms+wait)
+                latencies.append(final_wall_ms+wait+queue_ms); service.append(final_wall_ms)
     store.db.commit()
     write_jsonl(out/'decisions.jsonl',store.records('decisions'))
-    write_jsonl(out/'actions.jsonl',store.records('actions'))
+    write_jsonl(out/'actions.jsonl',store.published_actions())
     write_jsonl(out/'audit.jsonl',store.records('audit'))
     write_jsonl(out/'cohorts.jsonl',store.records('cohorts'))
     # The supplied simulator remains unmodified and runs locally without network.
