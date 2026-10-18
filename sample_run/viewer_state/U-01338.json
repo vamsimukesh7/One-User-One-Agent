@@ -67,6 +67,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2652976.713,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e1",
+              "last_play_at": "2026-09-07T10:10:05.275000Z",
+              "sources": [
+                {
+                  "ref": "event:458c5bba-3f6e-479b-a897-60b4bafd9181",
+                  "observed_at": "2026-09-07T10:10:05.275Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "chunasu-loba-d1",
+              "next_episode_id": "chunasu-loba-d1-s1e1",
+              "last_play_at": "2026-09-04T13:26:18.523000Z",
+              "sources": [
+                {
+                  "ref": "event:e6407ffe-c960-4d0d-99a2-896aa103c476",
+                  "observed_at": "2026-09-04T13:26:18.523Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:458c5bba-3f6e-479b-a897-60b4bafd9181",
+          "event:e6407ffe-c960-4d0d-99a2-896aa103c476"
+        ],
+        "observed_at": "2026-10-01T11:26:16.713000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:458c5bba-3f6e-479b-a897-60b4bafd9181",
+            "observed_at": "2026-09-07T10:10:05.275Z",
+            "freshness_s": 2078171.438
+          },
+          {
+            "ref": "event:e6407ffe-c960-4d0d-99a2-896aa103c476",
+            "observed_at": "2026-09-04T13:26:18.523Z",
+            "freshness_s": 2325598.19
+          }
+        ]
       }
     },
     "conflicts": [
@@ -176,6 +223,53 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2652976.713,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "hama-chudibha-d1",
+                  "next_episode_id": "hama-chudibha-d1-s1e1",
+                  "last_play_at": "2026-09-07T10:10:05.275000Z",
+                  "sources": [
+                    {
+                      "ref": "event:458c5bba-3f6e-479b-a897-60b4bafd9181",
+                      "observed_at": "2026-09-07T10:10:05.275Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "chunasu-loba-d1",
+                  "next_episode_id": "chunasu-loba-d1-s1e1",
+                  "last_play_at": "2026-09-04T13:26:18.523000Z",
+                  "sources": [
+                    {
+                      "ref": "event:e6407ffe-c960-4d0d-99a2-896aa103c476",
+                      "observed_at": "2026-09-04T13:26:18.523Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:458c5bba-3f6e-479b-a897-60b4bafd9181",
+              "event:e6407ffe-c960-4d0d-99a2-896aa103c476"
+            ],
+            "observed_at": "2026-10-01T11:26:16.713000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:458c5bba-3f6e-479b-a897-60b4bafd9181",
+                "observed_at": "2026-09-07T10:10:05.275Z",
+                "freshness_s": 2078171.438
+              },
+              {
+                "ref": "event:e6407ffe-c960-4d0d-99a2-896aa103c476",
+                "observed_at": "2026-09-04T13:26:18.523Z",
+                "freshness_s": 2325598.19
+              }
+            ]
           }
         },
         "conflicts": [
@@ -191,6 +285,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

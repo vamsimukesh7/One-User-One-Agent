@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2619566.48,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "dichupi-niha-d2",
+              "next_episode_id": "dichupi-niha-d2-s1e1",
+              "last_play_at": "2026-09-17T18:14:17.347000Z",
+              "sources": [
+                {
+                  "ref": "event:daf300a5-7677-4f42-8221-8eb46ffb0afb",
+                  "observed_at": "2026-09-17T18:14:17.347Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:daf300a5-7677-4f42-8221-8eb46ffb0afb"
+        ],
+        "observed_at": "2026-10-01T02:09:26.480000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:daf300a5-7677-4f42-8221-8eb46ffb0afb",
+            "observed_at": "2026-09-17T18:14:17.347Z",
+            "freshness_s": 1151709.133
+          }
+        ]
       }
     },
     "conflicts": [],

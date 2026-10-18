@@ -67,6 +67,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2656368.693,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "dada-nitepi-d5",
+              "next_episode_id": "dada-nitepi-d5-s1e1",
+              "last_play_at": "2026-09-01T16:52:54.782000Z",
+              "sources": [
+                {
+                  "ref": "event:4aa92bb3-10dd-4a26-86cd-b18684f056b1",
+                  "observed_at": "2026-09-01T17:23:50.396Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "diti-kochu-d5",
+              "next_episode_id": "diti-kochu-d5-s1e1",
+              "last_play_at": "2026-09-01T08:51:28.677000Z",
+              "sources": [
+                {
+                  "ref": "event:6e535654-6baa-4c14-a690-7663afc1b987",
+                  "observed_at": "2026-09-01T08:51:28.677Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:4aa92bb3-10dd-4a26-86cd-b18684f056b1",
+          "event:6e535654-6baa-4c14-a690-7663afc1b987"
+        ],
+        "observed_at": "2026-10-01T12:22:48.693000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:4aa92bb3-10dd-4a26-86cd-b18684f056b1",
+            "observed_at": "2026-09-01T17:23:50.396Z",
+            "freshness_s": 2573938.297
+          },
+          {
+            "ref": "event:6e535654-6baa-4c14-a690-7663afc1b987",
+            "observed_at": "2026-09-01T08:51:28.677Z",
+            "freshness_s": 2604680.016
+          }
+        ]
       }
     },
     "conflicts": [
@@ -177,6 +224,53 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2651639.151,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "dada-nitepi-d5",
+                  "next_episode_id": "dada-nitepi-d5-s1e1",
+                  "last_play_at": "2026-09-01T16:52:54.782000Z",
+                  "sources": [
+                    {
+                      "ref": "event:4aa92bb3-10dd-4a26-86cd-b18684f056b1",
+                      "observed_at": "2026-09-01T17:23:50.396Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "diti-kochu-d5",
+                  "next_episode_id": "diti-kochu-d5-s1e1",
+                  "last_play_at": "2026-09-01T08:51:28.677000Z",
+                  "sources": [
+                    {
+                      "ref": "event:6e535654-6baa-4c14-a690-7663afc1b987",
+                      "observed_at": "2026-09-01T08:51:28.677Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:4aa92bb3-10dd-4a26-86cd-b18684f056b1",
+              "event:6e535654-6baa-4c14-a690-7663afc1b987"
+            ],
+            "observed_at": "2026-10-01T11:03:59.151000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:4aa92bb3-10dd-4a26-86cd-b18684f056b1",
+                "observed_at": "2026-09-01T17:23:50.396Z",
+                "freshness_s": 2569208.755
+              },
+              {
+                "ref": "event:6e535654-6baa-4c14-a690-7663afc1b987",
+                "observed_at": "2026-09-01T08:51:28.677Z",
+                "freshness_s": 2599950.474
+              }
+            ]
           }
         },
         "conflicts": [
@@ -192,6 +286,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],
@@ -210,7 +310,7 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-007254"
+          "event:oua-007261"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

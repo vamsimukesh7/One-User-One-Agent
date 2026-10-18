@@ -61,6 +61,18 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2640730.941,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": []
+        },
+        "source": [
+          "policy:series-reconciliation"
+        ],
+        "observed_at": "2026-10-01T08:02:10.941000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": []
       }
     },
     "conflicts": [],
@@ -155,6 +167,18 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2640727.095,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": []
+            },
+            "source": [
+              "policy:series-reconciliation"
+            ],
+            "observed_at": "2026-10-01T08:02:07.095000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": []
           }
         },
         "conflicts": [],
@@ -163,6 +187,11 @@
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
+      },
+      "eligibility_rule": {
+        "text": "Signed up in the last 7 days and has never started a play.",
+        "signed_up_within_days": 7,
+        "requires_no_prior_event": "play_started"
       },
       "actions": [
         "A-29e657a72c21d25ea50f"
@@ -182,13 +211,13 @@
           "window_hours": 24
         },
         "signal_refs": [
-          "event:oua-014928"
-        ],
-        "exposure_refs": [
           "event:oua-014927"
         ],
+        "exposure_refs": [
+          "event:oua-014926"
+        ],
         "associated_signal_refs": [
-          "event:oua-014928"
+          "event:oua-014927"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

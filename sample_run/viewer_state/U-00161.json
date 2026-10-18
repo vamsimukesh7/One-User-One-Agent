@@ -67,6 +67,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2642198.594,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "gidi-dima-d1",
+              "next_episode_id": "gidi-dima-d1-s1e1",
+              "last_play_at": "2026-09-20T15:31:42.235000Z",
+              "sources": [
+                {
+                  "ref": "event:7ff47d9f-6b06-44be-9ab1-eda556cb9f81",
+                  "observed_at": "2026-09-22T06:18:24.250Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:7ff47d9f-6b06-44be-9ab1-eda556cb9f81"
+        ],
+        "observed_at": "2026-10-01T08:26:38.594000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:7ff47d9f-6b06-44be-9ab1-eda556cb9f81",
+            "observed_at": "2026-09-22T06:18:24.250Z",
+            "freshness_s": 785294.344
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +197,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2642198.594,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "gidi-dima-d1",
+                  "next_episode_id": "gidi-dima-d1-s1e1",
+                  "last_play_at": "2026-09-20T15:31:42.235000Z",
+                  "sources": [
+                    {
+                      "ref": "event:7ff47d9f-6b06-44be-9ab1-eda556cb9f81",
+                      "observed_at": "2026-09-22T06:18:24.250Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:7ff47d9f-6b06-44be-9ab1-eda556cb9f81"
+            ],
+            "observed_at": "2026-10-01T08:26:38.594000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:7ff47d9f-6b06-44be-9ab1-eda556cb9f81",
+                "observed_at": "2026-09-22T06:18:24.250Z",
+                "freshness_s": 785294.344
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +234,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -195,7 +261,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-000930"
+          "event:oua-000932"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

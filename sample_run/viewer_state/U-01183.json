@@ -67,6 +67,83 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2633460.811,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "rasuya-moni-d6",
+              "next_episode_id": "rasuya-moni-d6-s1e2",
+              "last_play_at": "2026-09-24T18:21:31.821000Z",
+              "sources": [
+                {
+                  "ref": "event:4245de9c-aa62-4db1-8407-c6e48dbc43d4",
+                  "observed_at": "2026-09-04T15:41:22.854Z"
+                },
+                {
+                  "ref": "event:8e8862a2-2a31-427a-ac14-e6f2b982fc88",
+                  "observed_at": "2026-09-16T14:12:03.961Z"
+                },
+                {
+                  "ref": "event:3009784e-e3fb-43e5-9482-27b8877194df",
+                  "observed_at": "2026-09-24T18:21:31.821Z"
+                },
+                {
+                  "ref": "event:2636b330-6873-421c-9d59-c9f9848f2303",
+                  "observed_at": "2026-09-24T18:50:58.215Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "suchumo-yadi-d6",
+              "next_episode_id": "suchumo-yadi-d6-s1e1",
+              "last_play_at": "2026-09-20T15:20:24.089000Z",
+              "sources": [
+                {
+                  "ref": "event:e25758f5-d4ac-4db2-a68f-78ed197f0a69",
+                  "observed_at": "2026-09-20T15:20:24.089Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:4245de9c-aa62-4db1-8407-c6e48dbc43d4",
+          "event:8e8862a2-2a31-427a-ac14-e6f2b982fc88",
+          "event:3009784e-e3fb-43e5-9482-27b8877194df",
+          "event:2636b330-6873-421c-9d59-c9f9848f2303",
+          "event:e25758f5-d4ac-4db2-a68f-78ed197f0a69"
+        ],
+        "observed_at": "2026-10-01T06:01:00.811000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:4245de9c-aa62-4db1-8407-c6e48dbc43d4",
+            "observed_at": "2026-09-04T15:41:22.854Z",
+            "freshness_s": 2297977.957
+          },
+          {
+            "ref": "event:8e8862a2-2a31-427a-ac14-e6f2b982fc88",
+            "observed_at": "2026-09-16T14:12:03.961Z",
+            "freshness_s": 1266536.85
+          },
+          {
+            "ref": "event:3009784e-e3fb-43e5-9482-27b8877194df",
+            "observed_at": "2026-09-24T18:21:31.821Z",
+            "freshness_s": 560368.99
+          },
+          {
+            "ref": "event:2636b330-6873-421c-9d59-c9f9848f2303",
+            "observed_at": "2026-09-24T18:50:58.215Z",
+            "freshness_s": 558602.596
+          },
+          {
+            "ref": "event:e25758f5-d4ac-4db2-a68f-78ed197f0a69",
+            "observed_at": "2026-09-20T15:20:24.089Z",
+            "freshness_s": 916836.722
+          }
+        ]
       }
     },
     "conflicts": [
@@ -175,6 +252,83 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2633460.811,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "rasuya-moni-d6",
+                  "next_episode_id": "rasuya-moni-d6-s1e2",
+                  "last_play_at": "2026-09-24T18:21:31.821000Z",
+                  "sources": [
+                    {
+                      "ref": "event:4245de9c-aa62-4db1-8407-c6e48dbc43d4",
+                      "observed_at": "2026-09-04T15:41:22.854Z"
+                    },
+                    {
+                      "ref": "event:8e8862a2-2a31-427a-ac14-e6f2b982fc88",
+                      "observed_at": "2026-09-16T14:12:03.961Z"
+                    },
+                    {
+                      "ref": "event:3009784e-e3fb-43e5-9482-27b8877194df",
+                      "observed_at": "2026-09-24T18:21:31.821Z"
+                    },
+                    {
+                      "ref": "event:2636b330-6873-421c-9d59-c9f9848f2303",
+                      "observed_at": "2026-09-24T18:50:58.215Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "suchumo-yadi-d6",
+                  "next_episode_id": "suchumo-yadi-d6-s1e1",
+                  "last_play_at": "2026-09-20T15:20:24.089000Z",
+                  "sources": [
+                    {
+                      "ref": "event:e25758f5-d4ac-4db2-a68f-78ed197f0a69",
+                      "observed_at": "2026-09-20T15:20:24.089Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:4245de9c-aa62-4db1-8407-c6e48dbc43d4",
+              "event:8e8862a2-2a31-427a-ac14-e6f2b982fc88",
+              "event:3009784e-e3fb-43e5-9482-27b8877194df",
+              "event:2636b330-6873-421c-9d59-c9f9848f2303",
+              "event:e25758f5-d4ac-4db2-a68f-78ed197f0a69"
+            ],
+            "observed_at": "2026-10-01T06:01:00.811000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:4245de9c-aa62-4db1-8407-c6e48dbc43d4",
+                "observed_at": "2026-09-04T15:41:22.854Z",
+                "freshness_s": 2297977.957
+              },
+              {
+                "ref": "event:8e8862a2-2a31-427a-ac14-e6f2b982fc88",
+                "observed_at": "2026-09-16T14:12:03.961Z",
+                "freshness_s": 1266536.85
+              },
+              {
+                "ref": "event:3009784e-e3fb-43e5-9482-27b8877194df",
+                "observed_at": "2026-09-24T18:21:31.821Z",
+                "freshness_s": 560368.99
+              },
+              {
+                "ref": "event:2636b330-6873-421c-9d59-c9f9848f2303",
+                "observed_at": "2026-09-24T18:50:58.215Z",
+                "freshness_s": 558602.596
+              },
+              {
+                "ref": "event:e25758f5-d4ac-4db2-a68f-78ed197f0a69",
+                "observed_at": "2026-09-20T15:20:24.089Z",
+                "freshness_s": 916836.722
+              }
+            ]
           }
         },
         "conflicts": [
@@ -190,6 +344,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

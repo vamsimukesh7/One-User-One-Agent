@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2663927.536,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e2",
+              "last_play_at": "2026-09-27T07:48:56.842000Z",
+              "sources": [
+                {
+                  "ref": "event:11012e0c-37b9-4370-991f-f48aa7e06c03",
+                  "observed_at": "2026-09-27T07:48:56.842Z"
+                },
+                {
+                  "ref": "event:abf92817-1a3f-4bd8-b16b-908a981be4e5",
+                  "observed_at": "2026-09-27T07:51:41.286Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:11012e0c-37b9-4370-991f-f48aa7e06c03",
+          "event:abf92817-1a3f-4bd8-b16b-908a981be4e5"
+        ],
+        "observed_at": "2026-10-01T14:28:47.536000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:11012e0c-37b9-4370-991f-f48aa7e06c03",
+            "observed_at": "2026-09-27T07:48:56.842Z",
+            "freshness_s": 369590.694
+          },
+          {
+            "ref": "event:abf92817-1a3f-4bd8-b16b-908a981be4e5",
+            "observed_at": "2026-09-27T07:51:41.286Z",
+            "freshness_s": 369426.25
+          }
+        ]
       }
     },
     "conflicts": [],

@@ -61,6 +61,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2657280.654,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "kova-sako-d5",
+              "next_episode_id": "kova-sako-d5-s1e1",
+              "last_play_at": "2026-09-24T20:50:43.989000Z",
+              "sources": [
+                {
+                  "ref": "event:83109cd5-0401-4613-948a-8cd949605521",
+                  "observed_at": "2026-09-19T16:23:21.595Z"
+                },
+                {
+                  "ref": "event:2b494e2c-b560-480c-a070-f89e2e2e8bf7",
+                  "observed_at": "2026-09-19T17:08:13.167Z"
+                },
+                {
+                  "ref": "event:50fbd825-f450-46b1-af8a-2a2abf61b4ea",
+                  "observed_at": "2026-09-24T20:50:43.989Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:83109cd5-0401-4613-948a-8cd949605521",
+          "event:2b494e2c-b560-480c-a070-f89e2e2e8bf7",
+          "event:50fbd825-f450-46b1-af8a-2a2abf61b4ea"
+        ],
+        "observed_at": "2026-10-01T12:38:00.654000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:83109cd5-0401-4613-948a-8cd949605521",
+            "observed_at": "2026-09-19T16:23:21.595Z",
+            "freshness_s": 1023279.059
+          },
+          {
+            "ref": "event:2b494e2c-b560-480c-a070-f89e2e2e8bf7",
+            "observed_at": "2026-09-19T17:08:13.167Z",
+            "freshness_s": 1020587.487
+          },
+          {
+            "ref": "event:50fbd825-f450-46b1-af8a-2a2abf61b4ea",
+            "observed_at": "2026-09-24T20:50:43.989Z",
+            "freshness_s": 575236.665
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -155,6 +205,56 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2643574.062,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "kova-sako-d5",
+                  "next_episode_id": "kova-sako-d5-s1e1",
+                  "last_play_at": "2026-09-24T20:50:43.989000Z",
+                  "sources": [
+                    {
+                      "ref": "event:83109cd5-0401-4613-948a-8cd949605521",
+                      "observed_at": "2026-09-19T16:23:21.595Z"
+                    },
+                    {
+                      "ref": "event:2b494e2c-b560-480c-a070-f89e2e2e8bf7",
+                      "observed_at": "2026-09-19T17:08:13.167Z"
+                    },
+                    {
+                      "ref": "event:50fbd825-f450-46b1-af8a-2a2abf61b4ea",
+                      "observed_at": "2026-09-24T20:50:43.989Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:83109cd5-0401-4613-948a-8cd949605521",
+              "event:2b494e2c-b560-480c-a070-f89e2e2e8bf7",
+              "event:50fbd825-f450-46b1-af8a-2a2abf61b4ea"
+            ],
+            "observed_at": "2026-10-01T08:49:34.062000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:83109cd5-0401-4613-948a-8cd949605521",
+                "observed_at": "2026-09-19T16:23:21.595Z",
+                "freshness_s": 1009572.467
+              },
+              {
+                "ref": "event:2b494e2c-b560-480c-a070-f89e2e2e8bf7",
+                "observed_at": "2026-09-19T17:08:13.167Z",
+                "freshness_s": 1006880.895
+              },
+              {
+                "ref": "event:50fbd825-f450-46b1-af8a-2a2abf61b4ea",
+                "observed_at": "2026-09-24T20:50:43.989Z",
+                "freshness_s": 561530.073
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -163,6 +263,10 @@
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
+      },
+      "eligibility_rule": {
+        "text": "Has never completed an episode.",
+        "requires_no_prior_event": "episode_completed"
       },
       "actions": [
         "A-1ef1accba55e0ffa8836",
@@ -184,8 +288,8 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-012972",
-          "event:oua-012974"
+          "event:oua-012976",
+          "event:oua-012978"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

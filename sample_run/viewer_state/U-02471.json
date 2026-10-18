@@ -61,6 +61,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2651556.809,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e1",
+              "last_play_at": "2026-09-16T07:05:26.497000Z",
+              "sources": [
+                {
+                  "ref": "event:81c145ca-3a6e-4f6a-8e45-7c08f2f6675d",
+                  "observed_at": "2026-09-16T07:05:26.497Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "bhaja-moguba-d2",
+              "next_episode_id": "bhaja-moguba-d2-s1e2",
+              "last_play_at": "2026-09-16T05:57:02.072000Z",
+              "sources": [
+                {
+                  "ref": "event:6b27e354-e897-44c9-b1c7-6325bde93c5f",
+                  "observed_at": "2026-09-16T05:57:02.072Z"
+                },
+                {
+                  "ref": "event:605817a7-c6d1-4928-9d19-f10c159f967b",
+                  "observed_at": "2026-09-16T06:00:42.517Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:81c145ca-3a6e-4f6a-8e45-7c08f2f6675d",
+          "event:6b27e354-e897-44c9-b1c7-6325bde93c5f",
+          "event:605817a7-c6d1-4928-9d19-f10c159f967b"
+        ],
+        "observed_at": "2026-10-01T11:02:36.809000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:81c145ca-3a6e-4f6a-8e45-7c08f2f6675d",
+            "observed_at": "2026-09-16T07:05:26.497Z",
+            "freshness_s": 1310230.312
+          },
+          {
+            "ref": "event:6b27e354-e897-44c9-b1c7-6325bde93c5f",
+            "observed_at": "2026-09-16T05:57:02.072Z",
+            "freshness_s": 1314334.737
+          },
+          {
+            "ref": "event:605817a7-c6d1-4928-9d19-f10c159f967b",
+            "observed_at": "2026-09-16T06:00:42.517Z",
+            "freshness_s": 1314114.292
+          }
+        ]
       }
     },
     "conflicts": [],

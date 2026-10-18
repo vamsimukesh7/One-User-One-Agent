@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2670458.842,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e1",
+              "last_play_at": "2026-09-22T07:29:01.643000Z",
+              "sources": [
+                {
+                  "ref": "event:6895da11-f938-4f61-9001-a197f35d9ef9",
+                  "observed_at": "2026-09-22T07:29:01.643Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:6895da11-f938-4f61-9001-a197f35d9ef9"
+        ],
+        "observed_at": "2026-10-01T16:17:38.842000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:6895da11-f938-4f61-9001-a197f35d9ef9",
+            "observed_at": "2026-09-22T07:29:01.643Z",
+            "freshness_s": 809317.199
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -155,6 +185,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2670458.842,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "guka-kosusa-d2",
+                  "next_episode_id": "guka-kosusa-d2-s1e1",
+                  "last_play_at": "2026-09-22T07:29:01.643000Z",
+                  "sources": [
+                    {
+                      "ref": "event:6895da11-f938-4f61-9001-a197f35d9ef9",
+                      "observed_at": "2026-09-22T07:29:01.643Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:6895da11-f938-4f61-9001-a197f35d9ef9"
+            ],
+            "observed_at": "2026-10-01T16:17:38.842000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:6895da11-f938-4f61-9001-a197f35d9ef9",
+                "observed_at": "2026-09-22T07:29:01.643Z",
+                "freshness_s": 809317.199
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -163,6 +223,10 @@
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
+      },
+      "eligibility_rule": {
+        "text": "Has never completed an episode.",
+        "requires_no_prior_event": "episode_completed"
       },
       "actions": [
         "A-9ed712bc102b94678e3f"
@@ -183,7 +247,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-029888"
+          "event:oua-029893"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

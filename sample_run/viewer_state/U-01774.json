@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2642974.708,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "dhapipa-gini-d2",
+              "next_episode_id": "dhapipa-gini-d2-s1e2",
+              "last_play_at": "2026-09-02T17:12:07.898000Z",
+              "sources": [
+                {
+                  "ref": "event:b4424b5e-8eef-4a71-af69-f830af9bffde",
+                  "observed_at": "2026-09-02T17:12:07.898Z"
+                },
+                {
+                  "ref": "event:59773a5b-0840-4264-806e-db812d4e5f61",
+                  "observed_at": "2026-09-02T17:14:52.682Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:b4424b5e-8eef-4a71-af69-f830af9bffde",
+          "event:59773a5b-0840-4264-806e-db812d4e5f61"
+        ],
+        "observed_at": "2026-10-01T08:39:34.708000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:b4424b5e-8eef-4a71-af69-f830af9bffde",
+            "observed_at": "2026-09-02T17:12:07.898Z",
+            "freshness_s": 2474846.81
+          },
+          {
+            "ref": "event:59773a5b-0840-4264-806e-db812d4e5f61",
+            "observed_at": "2026-09-02T17:14:52.682Z",
+            "freshness_s": 2474682.026
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -75,7 +115,7 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G12",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -83,16 +123,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-57cbe0212d3620dbee6d",
+      "plan_id": "P-3d237901959a4d8d77fa",
       "user_id": "U-01774",
-      "goal_id": "G12",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T08:39:34.708000Z",
-      "deadline": "2026-10-08T08:39:34.708000Z",
+      "deadline": "2026-10-04T08:39:34.708000Z",
       "success": {
         "event": "play_started",
-        "condition": "any title",
-        "window_hours": 168
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "983bc0a1-9b9b-436e-a301-5b1701058e53",
@@ -156,6 +196,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2642974.708,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "dhapipa-gini-d2",
+                  "next_episode_id": "dhapipa-gini-d2-s1e2",
+                  "last_play_at": "2026-09-02T17:12:07.898000Z",
+                  "sources": [
+                    {
+                      "ref": "event:b4424b5e-8eef-4a71-af69-f830af9bffde",
+                      "observed_at": "2026-09-02T17:12:07.898Z"
+                    },
+                    {
+                      "ref": "event:59773a5b-0840-4264-806e-db812d4e5f61",
+                      "observed_at": "2026-09-02T17:14:52.682Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:b4424b5e-8eef-4a71-af69-f830af9bffde",
+              "event:59773a5b-0840-4264-806e-db812d4e5f61"
+            ],
+            "observed_at": "2026-10-01T08:39:34.708000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:b4424b5e-8eef-4a71-af69-f830af9bffde",
+                "observed_at": "2026-09-02T17:12:07.898Z",
+                "freshness_s": 2474846.81
+              },
+              {
+                "ref": "event:59773a5b-0840-4264-806e-db812d4e5f61",
+                "observed_at": "2026-09-02T17:14:52.682Z",
+                "freshness_s": 2474682.026
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -165,20 +245,25 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [],
+      "target_content_slug": "dhapipa-gini-d2",
+      "next_episode_id": "dhapipa-gini-d2-s1e2",
       "final_outcome": {
-        "plan_id": "P-57cbe0212d3620dbee6d",
+        "plan_id": "P-3d237901959a4d8d77fa",
         "user_id": "U-01774",
-        "goal_id": "G12",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T08:39:34.708000Z",
-        "deadline": "2026-10-08T08:39:34.708000Z",
+        "deadline": "2026-10-04T08:39:34.708000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
           "event": "play_started",
-          "condition": "any title",
-          "window_hours": 168
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -186,7 +271,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T08:39:34.708000Z"
+      "closed_at": "2026-10-04T08:39:34.708000Z"
     }
   ]
 }

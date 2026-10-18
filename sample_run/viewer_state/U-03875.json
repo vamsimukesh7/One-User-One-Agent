@@ -67,6 +67,140 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2664950.181,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hapibha-d1",
+              "next_episode_id": "hapibha-d1-s1e4",
+              "last_play_at": "2026-09-28T14:43:19.765000Z",
+              "sources": [
+                {
+                  "ref": "event:43c461b5-6962-4fa3-aeda-96f41959adc4",
+                  "observed_at": "2026-09-18T09:12:29.368Z"
+                },
+                {
+                  "ref": "event:03083a06-2ac6-4ea6-a9ad-7c28543522c0",
+                  "observed_at": "2026-09-18T09:15:16.386Z"
+                },
+                {
+                  "ref": "event:5f2b0ea7-9abe-42bf-b1ca-7dccd5df50dc",
+                  "observed_at": "2026-09-25T07:53:22.479Z"
+                },
+                {
+                  "ref": "event:679ddf4e-c5c1-44d7-a4b1-59132d02f910",
+                  "observed_at": "2026-09-25T07:56:09.781Z"
+                },
+                {
+                  "ref": "event:4f85dbfa-efdb-4123-b2e6-cbdb778f1ebc",
+                  "observed_at": "2026-09-26T06:41:24.639Z"
+                },
+                {
+                  "ref": "event:c925289e-f799-42f7-b0df-9508182045d0",
+                  "observed_at": "2026-09-28T14:43:19.765Z"
+                },
+                {
+                  "ref": "event:558ec775-eba9-40b2-8aec-b73d9ea250c9",
+                  "observed_at": "2026-09-28T14:47:00.534Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "hate-d1",
+              "next_episode_id": "hate-d1-s1e2",
+              "last_play_at": "2026-09-25T07:43:50.927000Z",
+              "sources": [
+                {
+                  "ref": "event:c0156f55-3939-4e34-8aeb-cb8811808b4f",
+                  "observed_at": "2026-09-25T07:43:50.927Z"
+                },
+                {
+                  "ref": "event:675ff8f5-8df2-4fcc-a64a-39c49bf4f121",
+                  "observed_at": "2026-09-25T07:47:31.792Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "tidha-dakachu-d1",
+              "next_episode_id": "tidha-dakachu-d1-s1e1",
+              "last_play_at": "2026-09-01T16:39:53.784000Z",
+              "sources": [
+                {
+                  "ref": "event:37e75824-5975-413a-80db-25ced62beeb4",
+                  "observed_at": "2026-09-01T16:39:53.784Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:43c461b5-6962-4fa3-aeda-96f41959adc4",
+          "event:03083a06-2ac6-4ea6-a9ad-7c28543522c0",
+          "event:5f2b0ea7-9abe-42bf-b1ca-7dccd5df50dc",
+          "event:679ddf4e-c5c1-44d7-a4b1-59132d02f910",
+          "event:4f85dbfa-efdb-4123-b2e6-cbdb778f1ebc",
+          "event:c925289e-f799-42f7-b0df-9508182045d0",
+          "event:558ec775-eba9-40b2-8aec-b73d9ea250c9",
+          "event:c0156f55-3939-4e34-8aeb-cb8811808b4f",
+          "event:675ff8f5-8df2-4fcc-a64a-39c49bf4f121",
+          "event:37e75824-5975-413a-80db-25ced62beeb4"
+        ],
+        "observed_at": "2026-10-01T14:45:50.181000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:43c461b5-6962-4fa3-aeda-96f41959adc4",
+            "observed_at": "2026-09-18T09:12:29.368Z",
+            "freshness_s": 1143200.813
+          },
+          {
+            "ref": "event:03083a06-2ac6-4ea6-a9ad-7c28543522c0",
+            "observed_at": "2026-09-18T09:15:16.386Z",
+            "freshness_s": 1143033.795
+          },
+          {
+            "ref": "event:5f2b0ea7-9abe-42bf-b1ca-7dccd5df50dc",
+            "observed_at": "2026-09-25T07:53:22.479Z",
+            "freshness_s": 543147.702
+          },
+          {
+            "ref": "event:679ddf4e-c5c1-44d7-a4b1-59132d02f910",
+            "observed_at": "2026-09-25T07:56:09.781Z",
+            "freshness_s": 542980.4
+          },
+          {
+            "ref": "event:4f85dbfa-efdb-4123-b2e6-cbdb778f1ebc",
+            "observed_at": "2026-09-26T06:41:24.639Z",
+            "freshness_s": 461065.542
+          },
+          {
+            "ref": "event:c925289e-f799-42f7-b0df-9508182045d0",
+            "observed_at": "2026-09-28T14:43:19.765Z",
+            "freshness_s": 259350.416
+          },
+          {
+            "ref": "event:558ec775-eba9-40b2-8aec-b73d9ea250c9",
+            "observed_at": "2026-09-28T14:47:00.534Z",
+            "freshness_s": 259129.647
+          },
+          {
+            "ref": "event:c0156f55-3939-4e34-8aeb-cb8811808b4f",
+            "observed_at": "2026-09-25T07:43:50.927Z",
+            "freshness_s": 543719.254
+          },
+          {
+            "ref": "event:675ff8f5-8df2-4fcc-a64a-39c49bf4f121",
+            "observed_at": "2026-09-25T07:47:31.792Z",
+            "freshness_s": 543498.389
+          },
+          {
+            "ref": "event:37e75824-5975-413a-80db-25ced62beeb4",
+            "observed_at": "2026-09-01T16:39:53.784Z",
+            "freshness_s": 2585156.397
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +301,140 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2664950.181,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "hapibha-d1",
+                  "next_episode_id": "hapibha-d1-s1e4",
+                  "last_play_at": "2026-09-28T14:43:19.765000Z",
+                  "sources": [
+                    {
+                      "ref": "event:43c461b5-6962-4fa3-aeda-96f41959adc4",
+                      "observed_at": "2026-09-18T09:12:29.368Z"
+                    },
+                    {
+                      "ref": "event:03083a06-2ac6-4ea6-a9ad-7c28543522c0",
+                      "observed_at": "2026-09-18T09:15:16.386Z"
+                    },
+                    {
+                      "ref": "event:5f2b0ea7-9abe-42bf-b1ca-7dccd5df50dc",
+                      "observed_at": "2026-09-25T07:53:22.479Z"
+                    },
+                    {
+                      "ref": "event:679ddf4e-c5c1-44d7-a4b1-59132d02f910",
+                      "observed_at": "2026-09-25T07:56:09.781Z"
+                    },
+                    {
+                      "ref": "event:4f85dbfa-efdb-4123-b2e6-cbdb778f1ebc",
+                      "observed_at": "2026-09-26T06:41:24.639Z"
+                    },
+                    {
+                      "ref": "event:c925289e-f799-42f7-b0df-9508182045d0",
+                      "observed_at": "2026-09-28T14:43:19.765Z"
+                    },
+                    {
+                      "ref": "event:558ec775-eba9-40b2-8aec-b73d9ea250c9",
+                      "observed_at": "2026-09-28T14:47:00.534Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "hate-d1",
+                  "next_episode_id": "hate-d1-s1e2",
+                  "last_play_at": "2026-09-25T07:43:50.927000Z",
+                  "sources": [
+                    {
+                      "ref": "event:c0156f55-3939-4e34-8aeb-cb8811808b4f",
+                      "observed_at": "2026-09-25T07:43:50.927Z"
+                    },
+                    {
+                      "ref": "event:675ff8f5-8df2-4fcc-a64a-39c49bf4f121",
+                      "observed_at": "2026-09-25T07:47:31.792Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "tidha-dakachu-d1",
+                  "next_episode_id": "tidha-dakachu-d1-s1e1",
+                  "last_play_at": "2026-09-01T16:39:53.784000Z",
+                  "sources": [
+                    {
+                      "ref": "event:37e75824-5975-413a-80db-25ced62beeb4",
+                      "observed_at": "2026-09-01T16:39:53.784Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:43c461b5-6962-4fa3-aeda-96f41959adc4",
+              "event:03083a06-2ac6-4ea6-a9ad-7c28543522c0",
+              "event:5f2b0ea7-9abe-42bf-b1ca-7dccd5df50dc",
+              "event:679ddf4e-c5c1-44d7-a4b1-59132d02f910",
+              "event:4f85dbfa-efdb-4123-b2e6-cbdb778f1ebc",
+              "event:c925289e-f799-42f7-b0df-9508182045d0",
+              "event:558ec775-eba9-40b2-8aec-b73d9ea250c9",
+              "event:c0156f55-3939-4e34-8aeb-cb8811808b4f",
+              "event:675ff8f5-8df2-4fcc-a64a-39c49bf4f121",
+              "event:37e75824-5975-413a-80db-25ced62beeb4"
+            ],
+            "observed_at": "2026-10-01T14:45:50.181000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:43c461b5-6962-4fa3-aeda-96f41959adc4",
+                "observed_at": "2026-09-18T09:12:29.368Z",
+                "freshness_s": 1143200.813
+              },
+              {
+                "ref": "event:03083a06-2ac6-4ea6-a9ad-7c28543522c0",
+                "observed_at": "2026-09-18T09:15:16.386Z",
+                "freshness_s": 1143033.795
+              },
+              {
+                "ref": "event:5f2b0ea7-9abe-42bf-b1ca-7dccd5df50dc",
+                "observed_at": "2026-09-25T07:53:22.479Z",
+                "freshness_s": 543147.702
+              },
+              {
+                "ref": "event:679ddf4e-c5c1-44d7-a4b1-59132d02f910",
+                "observed_at": "2026-09-25T07:56:09.781Z",
+                "freshness_s": 542980.4
+              },
+              {
+                "ref": "event:4f85dbfa-efdb-4123-b2e6-cbdb778f1ebc",
+                "observed_at": "2026-09-26T06:41:24.639Z",
+                "freshness_s": 461065.542
+              },
+              {
+                "ref": "event:c925289e-f799-42f7-b0df-9508182045d0",
+                "observed_at": "2026-09-28T14:43:19.765Z",
+                "freshness_s": 259350.416
+              },
+              {
+                "ref": "event:558ec775-eba9-40b2-8aec-b73d9ea250c9",
+                "observed_at": "2026-09-28T14:47:00.534Z",
+                "freshness_s": 259129.647
+              },
+              {
+                "ref": "event:c0156f55-3939-4e34-8aeb-cb8811808b4f",
+                "observed_at": "2026-09-25T07:43:50.927Z",
+                "freshness_s": 543719.254
+              },
+              {
+                "ref": "event:675ff8f5-8df2-4fcc-a64a-39c49bf4f121",
+                "observed_at": "2026-09-25T07:47:31.792Z",
+                "freshness_s": 543498.389
+              },
+              {
+                "ref": "event:37e75824-5975-413a-80db-25ced62beeb4",
+                "observed_at": "2026-09-01T16:39:53.784Z",
+                "freshness_s": 2585156.397
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +442,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -195,7 +469,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-024479"
+          "event:oua-024481"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

@@ -61,6 +61,18 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2665989.053,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": []
+        },
+        "source": [
+          "policy:series-reconciliation"
+        ],
+        "observed_at": "2026-10-01T15:03:09.053000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": []
       }
     },
     "conflicts": [],
@@ -75,6 +87,6 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy"
   ],
-  "state_updated_at": "2026-10-01T15:04:57.248Z",
+  "state_updated_at": "2026-10-01T15:04:57.248000Z",
   "plans": []
 }

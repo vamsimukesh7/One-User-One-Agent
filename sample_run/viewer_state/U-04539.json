@@ -67,6 +67,103 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2629044.005,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e2",
+              "last_play_at": "2026-09-27T13:29:34.471000Z",
+              "sources": [
+                {
+                  "ref": "event:0efce320-48b4-4db6-a54f-e508f17b7606",
+                  "observed_at": "2026-09-06T05:34:57.349Z"
+                },
+                {
+                  "ref": "event:747771a1-da4b-4664-b103-8a8f5dceae0c",
+                  "observed_at": "2026-09-09T14:09:32.157Z"
+                },
+                {
+                  "ref": "event:95e88e08-c2d4-43e3-8fd6-6b57e8561240",
+                  "observed_at": "2026-09-12T22:40:24.941Z"
+                },
+                {
+                  "ref": "event:f444b662-8d82-4755-bf53-d3debd51a7f8",
+                  "observed_at": "2026-09-26T16:20:00.365Z"
+                },
+                {
+                  "ref": "event:414f790e-1263-4f74-ac73-c5e3d3ad4280",
+                  "observed_at": "2026-09-27T13:29:34.471Z"
+                },
+                {
+                  "ref": "event:0f6be848-eaa5-43ff-ad5f-5e707a5dbd0f",
+                  "observed_at": "2026-09-27T14:10:05.233Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "dhapipa-gini-d2",
+              "next_episode_id": "dhapipa-gini-d2-s1e1",
+              "last_play_at": "2026-09-04T03:21:15.749000Z",
+              "sources": [
+                {
+                  "ref": "event:bf47b758-24fd-4171-bf17-421385c1501c",
+                  "observed_at": "2026-09-04T03:21:15.749Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:0efce320-48b4-4db6-a54f-e508f17b7606",
+          "event:747771a1-da4b-4664-b103-8a8f5dceae0c",
+          "event:95e88e08-c2d4-43e3-8fd6-6b57e8561240",
+          "event:f444b662-8d82-4755-bf53-d3debd51a7f8",
+          "event:414f790e-1263-4f74-ac73-c5e3d3ad4280",
+          "event:0f6be848-eaa5-43ff-ad5f-5e707a5dbd0f",
+          "event:bf47b758-24fd-4171-bf17-421385c1501c"
+        ],
+        "observed_at": "2026-10-01T04:47:24.005000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:0efce320-48b4-4db6-a54f-e508f17b7606",
+            "observed_at": "2026-09-06T05:34:57.349Z",
+            "freshness_s": 2157146.656
+          },
+          {
+            "ref": "event:747771a1-da4b-4664-b103-8a8f5dceae0c",
+            "observed_at": "2026-09-09T14:09:32.157Z",
+            "freshness_s": 1867071.848
+          },
+          {
+            "ref": "event:95e88e08-c2d4-43e3-8fd6-6b57e8561240",
+            "observed_at": "2026-09-12T22:40:24.941Z",
+            "freshness_s": 1577219.064
+          },
+          {
+            "ref": "event:f444b662-8d82-4755-bf53-d3debd51a7f8",
+            "observed_at": "2026-09-26T16:20:00.365Z",
+            "freshness_s": 390443.64
+          },
+          {
+            "ref": "event:414f790e-1263-4f74-ac73-c5e3d3ad4280",
+            "observed_at": "2026-09-27T13:29:34.471Z",
+            "freshness_s": 314269.534
+          },
+          {
+            "ref": "event:0f6be848-eaa5-43ff-ad5f-5e707a5dbd0f",
+            "observed_at": "2026-09-27T14:10:05.233Z",
+            "freshness_s": 311838.772
+          },
+          {
+            "ref": "event:bf47b758-24fd-4171-bf17-421385c1501c",
+            "observed_at": "2026-09-04T03:21:15.749Z",
+            "freshness_s": 2337968.256
+          }
+        ]
       }
     },
     "conflicts": [
@@ -89,6 +186,6 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy"
   ],
-  "state_updated_at": "2026-10-01T12:42:48.301Z",
+  "state_updated_at": "2026-10-01T12:42:48.301000Z",
   "plans": []
 }

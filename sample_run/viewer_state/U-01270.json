@@ -61,6 +61,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2667729.252,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e2",
+              "last_play_at": "2026-09-22T09:15:35.013000Z",
+              "sources": [
+                {
+                  "ref": "event:b81e7693-951c-4079-a67f-b43ba3f3f9f7",
+                  "observed_at": "2026-09-20T12:20:02.775Z"
+                },
+                {
+                  "ref": "event:38c337d1-0dc5-4700-9589-af81d3bc3f60",
+                  "observed_at": "2026-09-20T12:22:49.637Z"
+                },
+                {
+                  "ref": "event:3357275b-54c6-4a8c-9315-de63642e4c68",
+                  "observed_at": "2026-09-22T09:15:35.013Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:b81e7693-951c-4079-a67f-b43ba3f3f9f7",
+          "event:38c337d1-0dc5-4700-9589-af81d3bc3f60",
+          "event:3357275b-54c6-4a8c-9315-de63642e4c68"
+        ],
+        "observed_at": "2026-10-01T15:32:09.252000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:b81e7693-951c-4079-a67f-b43ba3f3f9f7",
+            "observed_at": "2026-09-20T12:20:02.775Z",
+            "freshness_s": 961926.477
+          },
+          {
+            "ref": "event:38c337d1-0dc5-4700-9589-af81d3bc3f60",
+            "observed_at": "2026-09-20T12:22:49.637Z",
+            "freshness_s": 961759.615
+          },
+          {
+            "ref": "event:3357275b-54c6-4a8c-9315-de63642e4c68",
+            "observed_at": "2026-09-22T09:15:35.013Z",
+            "freshness_s": 800194.239
+          }
+        ]
       }
     },
     "conflicts": [],

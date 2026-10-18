@@ -61,6 +61,193 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2669199.296,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "dhada-bhate-d1",
+              "next_episode_id": "dhada-bhate-d1-s1e1",
+              "last_play_at": "2026-09-26T03:26:26.833000Z",
+              "sources": [
+                {
+                  "ref": "event:418c1d2d-164b-4c8c-8158-006caa2ed3b7",
+                  "observed_at": "2026-09-26T03:26:26.833Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "kopibha-niya-d1",
+              "next_episode_id": "kopibha-niya-d1-s1e8",
+              "last_play_at": "2026-09-22T14:45:19.056000Z",
+              "sources": [
+                {
+                  "ref": "event:10af2320-e0e6-4ab4-971e-36561e86fcee",
+                  "observed_at": "2026-09-01T07:59:33.379Z"
+                },
+                {
+                  "ref": "event:50ae9c04-8774-4347-acd5-de7bc2feccbf",
+                  "observed_at": "2026-09-01T08:25:19.322Z"
+                },
+                {
+                  "ref": "event:233a97a6-2b43-4121-bb21-e42e86a572c5",
+                  "observed_at": "2026-09-02T15:54:25.313Z"
+                },
+                {
+                  "ref": "event:e78d5b3b-ec98-4783-b2db-ce1882fce1d8",
+                  "observed_at": "2026-09-02T16:35:49.847Z"
+                },
+                {
+                  "ref": "event:c35e97ab-1c95-45ea-94e3-07786b0ca5cb",
+                  "observed_at": "2026-09-05T15:37:31.263Z"
+                },
+                {
+                  "ref": "event:43f7b3de-64b5-4bdb-a678-f2855cd219c0",
+                  "observed_at": "2026-09-05T16:10:38.760Z"
+                },
+                {
+                  "ref": "event:d2ed489f-b325-4014-ba40-95ba2933a777",
+                  "observed_at": "2026-09-09T12:00:47.346Z"
+                },
+                {
+                  "ref": "event:6a8dbb0c-30ea-419e-95db-03d6ae4fc03d",
+                  "observed_at": "2026-09-09T12:23:47.770Z"
+                },
+                {
+                  "ref": "event:c777394e-f0c9-4971-b6eb-5ed1d2528c48",
+                  "observed_at": "2026-09-09T16:35:27.170Z"
+                },
+                {
+                  "ref": "event:fb13d897-686e-4999-af7f-58edceffa88d",
+                  "observed_at": "2026-09-09T17:07:38.575Z"
+                },
+                {
+                  "ref": "event:39f72a5f-1bb0-4273-994c-769612ac052f",
+                  "observed_at": "2026-09-13T14:46:29.149Z"
+                },
+                {
+                  "ref": "event:fd5dad46-68fb-406c-b6da-b562ee0be8b8",
+                  "observed_at": "2026-09-13T15:16:49.727Z"
+                },
+                {
+                  "ref": "event:b8ec8e32-a97f-4da7-842a-4b306dbf6469",
+                  "observed_at": "2026-09-20T14:50:58.821Z"
+                },
+                {
+                  "ref": "event:e67d2a2d-ea78-400c-babb-702ca91e1785",
+                  "observed_at": "2026-09-22T14:45:19.056Z"
+                },
+                {
+                  "ref": "event:80758aa6-7bde-4402-8654-cfc747f63630",
+                  "observed_at": "2026-09-22T15:26:42.939Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:418c1d2d-164b-4c8c-8158-006caa2ed3b7",
+          "event:10af2320-e0e6-4ab4-971e-36561e86fcee",
+          "event:50ae9c04-8774-4347-acd5-de7bc2feccbf",
+          "event:233a97a6-2b43-4121-bb21-e42e86a572c5",
+          "event:e78d5b3b-ec98-4783-b2db-ce1882fce1d8",
+          "event:c35e97ab-1c95-45ea-94e3-07786b0ca5cb",
+          "event:43f7b3de-64b5-4bdb-a678-f2855cd219c0",
+          "event:d2ed489f-b325-4014-ba40-95ba2933a777",
+          "event:6a8dbb0c-30ea-419e-95db-03d6ae4fc03d",
+          "event:c777394e-f0c9-4971-b6eb-5ed1d2528c48",
+          "event:fb13d897-686e-4999-af7f-58edceffa88d",
+          "event:39f72a5f-1bb0-4273-994c-769612ac052f",
+          "event:fd5dad46-68fb-406c-b6da-b562ee0be8b8",
+          "event:b8ec8e32-a97f-4da7-842a-4b306dbf6469",
+          "event:e67d2a2d-ea78-400c-babb-702ca91e1785",
+          "event:80758aa6-7bde-4402-8654-cfc747f63630"
+        ],
+        "observed_at": "2026-10-01T15:56:39.296000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:418c1d2d-164b-4c8c-8158-006caa2ed3b7",
+            "observed_at": "2026-09-26T03:26:26.833Z",
+            "freshness_s": 477012.463
+          },
+          {
+            "ref": "event:10af2320-e0e6-4ab4-971e-36561e86fcee",
+            "observed_at": "2026-09-01T07:59:33.379Z",
+            "freshness_s": 2620625.917
+          },
+          {
+            "ref": "event:50ae9c04-8774-4347-acd5-de7bc2feccbf",
+            "observed_at": "2026-09-01T08:25:19.322Z",
+            "freshness_s": 2619079.974
+          },
+          {
+            "ref": "event:233a97a6-2b43-4121-bb21-e42e86a572c5",
+            "observed_at": "2026-09-02T15:54:25.313Z",
+            "freshness_s": 2505733.983
+          },
+          {
+            "ref": "event:e78d5b3b-ec98-4783-b2db-ce1882fce1d8",
+            "observed_at": "2026-09-02T16:35:49.847Z",
+            "freshness_s": 2503249.449
+          },
+          {
+            "ref": "event:c35e97ab-1c95-45ea-94e3-07786b0ca5cb",
+            "observed_at": "2026-09-05T15:37:31.263Z",
+            "freshness_s": 2247548.033
+          },
+          {
+            "ref": "event:43f7b3de-64b5-4bdb-a678-f2855cd219c0",
+            "observed_at": "2026-09-05T16:10:38.760Z",
+            "freshness_s": 2245560.536
+          },
+          {
+            "ref": "event:d2ed489f-b325-4014-ba40-95ba2933a777",
+            "observed_at": "2026-09-09T12:00:47.346Z",
+            "freshness_s": 1914951.95
+          },
+          {
+            "ref": "event:6a8dbb0c-30ea-419e-95db-03d6ae4fc03d",
+            "observed_at": "2026-09-09T12:23:47.770Z",
+            "freshness_s": 1913571.526
+          },
+          {
+            "ref": "event:c777394e-f0c9-4971-b6eb-5ed1d2528c48",
+            "observed_at": "2026-09-09T16:35:27.170Z",
+            "freshness_s": 1898472.126
+          },
+          {
+            "ref": "event:fb13d897-686e-4999-af7f-58edceffa88d",
+            "observed_at": "2026-09-09T17:07:38.575Z",
+            "freshness_s": 1896540.721
+          },
+          {
+            "ref": "event:39f72a5f-1bb0-4273-994c-769612ac052f",
+            "observed_at": "2026-09-13T14:46:29.149Z",
+            "freshness_s": 1559410.147
+          },
+          {
+            "ref": "event:fd5dad46-68fb-406c-b6da-b562ee0be8b8",
+            "observed_at": "2026-09-13T15:16:49.727Z",
+            "freshness_s": 1557589.569
+          },
+          {
+            "ref": "event:b8ec8e32-a97f-4da7-842a-4b306dbf6469",
+            "observed_at": "2026-09-20T14:50:58.821Z",
+            "freshness_s": 954340.475
+          },
+          {
+            "ref": "event:e67d2a2d-ea78-400c-babb-702ca91e1785",
+            "observed_at": "2026-09-22T14:45:19.056Z",
+            "freshness_s": 781880.24
+          },
+          {
+            "ref": "event:80758aa6-7bde-4402-8654-cfc747f63630",
+            "observed_at": "2026-09-22T15:26:42.939Z",
+            "freshness_s": 779396.357
+          }
+        ]
       }
     },
     "conflicts": [

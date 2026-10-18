@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2663137.563,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "rasuya-moni-d6",
+              "next_episode_id": "rasuya-moni-d6-s1e2",
+              "last_play_at": "2026-09-18T13:45:11.971000Z",
+              "sources": [
+                {
+                  "ref": "event:4336ce20-bf8a-4969-a01d-90fff41c7337",
+                  "observed_at": "2026-09-18T13:45:11.971Z"
+                },
+                {
+                  "ref": "event:8e29da3a-4774-4318-a8e9-2b9b846a6adc",
+                  "observed_at": "2026-09-18T14:14:36.911Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:4336ce20-bf8a-4969-a01d-90fff41c7337",
+          "event:8e29da3a-4774-4318-a8e9-2b9b846a6adc"
+        ],
+        "observed_at": "2026-10-01T14:15:37.563000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:4336ce20-bf8a-4969-a01d-90fff41c7337",
+            "observed_at": "2026-09-18T13:45:11.971Z",
+            "freshness_s": 1125025.592
+          },
+          {
+            "ref": "event:8e29da3a-4774-4318-a8e9-2b9b846a6adc",
+            "observed_at": "2026-09-18T14:14:36.911Z",
+            "freshness_s": 1123260.652
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -76,7 +116,7 @@
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G05",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -84,16 +124,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-0eeb9c69d2d9b56004f3",
+      "plan_id": "P-5e8d4774df4127ec7eec",
       "user_id": "U-01047",
-      "goal_id": "G05",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T13:46:17.397000Z",
-      "deadline": "2026-10-08T13:46:17.397000Z",
+      "deadline": "2026-10-04T13:46:17.397000Z",
       "success": {
-        "event": "purchase_completed",
-        "condition": "is_trial = false",
-        "window_hours": 168
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "076a9780-77fc-4da2-8287-28ff41a314ec",
@@ -157,6 +197,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2661377.397,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "rasuya-moni-d6",
+                  "next_episode_id": "rasuya-moni-d6-s1e2",
+                  "last_play_at": "2026-09-18T13:45:11.971000Z",
+                  "sources": [
+                    {
+                      "ref": "event:4336ce20-bf8a-4969-a01d-90fff41c7337",
+                      "observed_at": "2026-09-18T13:45:11.971Z"
+                    },
+                    {
+                      "ref": "event:8e29da3a-4774-4318-a8e9-2b9b846a6adc",
+                      "observed_at": "2026-09-18T14:14:36.911Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:4336ce20-bf8a-4969-a01d-90fff41c7337",
+              "event:8e29da3a-4774-4318-a8e9-2b9b846a6adc"
+            ],
+            "observed_at": "2026-10-01T13:46:17.397000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:4336ce20-bf8a-4969-a01d-90fff41c7337",
+                "observed_at": "2026-09-18T13:45:11.971Z",
+                "freshness_s": 1123265.426
+              },
+              {
+                "ref": "event:8e29da3a-4774-4318-a8e9-2b9b846a6adc",
+                "observed_at": "2026-09-18T14:14:36.911Z",
+                "freshness_s": 1121500.486
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -166,20 +246,25 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [],
+      "target_content_slug": "rasuya-moni-d6",
+      "next_episode_id": "rasuya-moni-d6-s1e2",
       "final_outcome": {
-        "plan_id": "P-0eeb9c69d2d9b56004f3",
+        "plan_id": "P-5e8d4774df4127ec7eec",
         "user_id": "U-01047",
-        "goal_id": "G05",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T13:46:17.397000Z",
-        "deadline": "2026-10-08T13:46:17.397000Z",
+        "deadline": "2026-10-04T13:46:17.397000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "purchase_completed",
-          "condition": "is_trial = false",
-          "window_hours": 168
+          "event": "play_started",
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -187,7 +272,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T13:46:17.397000Z"
+      "closed_at": "2026-10-04T13:46:17.397000Z"
     }
   ]
 }

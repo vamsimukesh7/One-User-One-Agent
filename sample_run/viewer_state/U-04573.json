@@ -67,6 +67,73 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2647609.428,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "ripiha-d1",
+              "next_episode_id": "ripiha-d1-s1e2",
+              "last_play_at": "2026-09-24T04:36:00.829000Z",
+              "sources": [
+                {
+                  "ref": "event:3eb87abe-6305-4933-b009-6c462cf2c778",
+                  "observed_at": "2026-09-24T04:36:00.829Z"
+                },
+                {
+                  "ref": "event:0e4173fa-f3b3-4c4e-b579-0280f9cbb3a8",
+                  "observed_at": "2026-09-24T05:17:24.557Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "kopibha-niya-d1",
+              "next_episode_id": "kopibha-niya-d1-s1e2",
+              "last_play_at": "2026-09-16T01:32:55.892000Z",
+              "sources": [
+                {
+                  "ref": "event:fdc7e279-699c-4277-ad52-b7028d2a9589",
+                  "observed_at": "2026-09-16T01:32:55.892Z"
+                },
+                {
+                  "ref": "event:56680153-9022-47d0-8a12-fa2142131d6c",
+                  "observed_at": "2026-09-16T01:58:41.371Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:3eb87abe-6305-4933-b009-6c462cf2c778",
+          "event:0e4173fa-f3b3-4c4e-b579-0280f9cbb3a8",
+          "event:fdc7e279-699c-4277-ad52-b7028d2a9589",
+          "event:56680153-9022-47d0-8a12-fa2142131d6c"
+        ],
+        "observed_at": "2026-10-01T09:56:49.428000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:3eb87abe-6305-4933-b009-6c462cf2c778",
+            "observed_at": "2026-09-24T04:36:00.829Z",
+            "freshness_s": 624048.599
+          },
+          {
+            "ref": "event:0e4173fa-f3b3-4c4e-b579-0280f9cbb3a8",
+            "observed_at": "2026-09-24T05:17:24.557Z",
+            "freshness_s": 621564.871
+          },
+          {
+            "ref": "event:fdc7e279-699c-4277-ad52-b7028d2a9589",
+            "observed_at": "2026-09-16T01:32:55.892Z",
+            "freshness_s": 1326233.536
+          },
+          {
+            "ref": "event:56680153-9022-47d0-8a12-fa2142131d6c",
+            "observed_at": "2026-09-16T01:58:41.371Z",
+            "freshness_s": 1324688.057
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +235,73 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2647609.428,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "ripiha-d1",
+                  "next_episode_id": "ripiha-d1-s1e2",
+                  "last_play_at": "2026-09-24T04:36:00.829000Z",
+                  "sources": [
+                    {
+                      "ref": "event:3eb87abe-6305-4933-b009-6c462cf2c778",
+                      "observed_at": "2026-09-24T04:36:00.829Z"
+                    },
+                    {
+                      "ref": "event:0e4173fa-f3b3-4c4e-b579-0280f9cbb3a8",
+                      "observed_at": "2026-09-24T05:17:24.557Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "kopibha-niya-d1",
+                  "next_episode_id": "kopibha-niya-d1-s1e2",
+                  "last_play_at": "2026-09-16T01:32:55.892000Z",
+                  "sources": [
+                    {
+                      "ref": "event:fdc7e279-699c-4277-ad52-b7028d2a9589",
+                      "observed_at": "2026-09-16T01:32:55.892Z"
+                    },
+                    {
+                      "ref": "event:56680153-9022-47d0-8a12-fa2142131d6c",
+                      "observed_at": "2026-09-16T01:58:41.371Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:3eb87abe-6305-4933-b009-6c462cf2c778",
+              "event:0e4173fa-f3b3-4c4e-b579-0280f9cbb3a8",
+              "event:fdc7e279-699c-4277-ad52-b7028d2a9589",
+              "event:56680153-9022-47d0-8a12-fa2142131d6c"
+            ],
+            "observed_at": "2026-10-01T09:56:49.428000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:3eb87abe-6305-4933-b009-6c462cf2c778",
+                "observed_at": "2026-09-24T04:36:00.829Z",
+                "freshness_s": 624048.599
+              },
+              {
+                "ref": "event:0e4173fa-f3b3-4c4e-b579-0280f9cbb3a8",
+                "observed_at": "2026-09-24T05:17:24.557Z",
+                "freshness_s": 621564.871
+              },
+              {
+                "ref": "event:fdc7e279-699c-4277-ad52-b7028d2a9589",
+                "observed_at": "2026-09-16T01:32:55.892Z",
+                "freshness_s": 1326233.536
+              },
+              {
+                "ref": "event:56680153-9022-47d0-8a12-fa2142131d6c",
+                "observed_at": "2026-09-16T01:58:41.371Z",
+                "freshness_s": 1324688.057
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +309,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

@@ -67,6 +67,73 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2661874.058,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e2",
+              "last_play_at": "2026-09-22T08:04:21.939000Z",
+              "sources": [
+                {
+                  "ref": "event:df0fad9d-cfe9-4210-b5e2-9942095d8006",
+                  "observed_at": "2026-09-18T07:28:25.120Z"
+                },
+                {
+                  "ref": "event:65debcf1-cc0b-4a7d-8bdb-fffb60e96dce",
+                  "observed_at": "2026-09-18T07:31:11.505Z"
+                },
+                {
+                  "ref": "event:7397617c-97d4-4cd9-ae2b-e6a46da74955",
+                  "observed_at": "2026-09-22T08:04:21.939Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "chugu-d2",
+              "next_episode_id": "chugu-d2-s1e1",
+              "last_play_at": "2026-09-08T15:28:51.602000Z",
+              "sources": [
+                {
+                  "ref": "event:eca6b24e-8215-4ed2-8fd7-715c69399a33",
+                  "observed_at": "2026-09-08T15:28:51.602Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:df0fad9d-cfe9-4210-b5e2-9942095d8006",
+          "event:65debcf1-cc0b-4a7d-8bdb-fffb60e96dce",
+          "event:7397617c-97d4-4cd9-ae2b-e6a46da74955",
+          "event:eca6b24e-8215-4ed2-8fd7-715c69399a33"
+        ],
+        "observed_at": "2026-10-01T13:54:34.058000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:df0fad9d-cfe9-4210-b5e2-9942095d8006",
+            "observed_at": "2026-09-18T07:28:25.120Z",
+            "freshness_s": 1146368.938
+          },
+          {
+            "ref": "event:65debcf1-cc0b-4a7d-8bdb-fffb60e96dce",
+            "observed_at": "2026-09-18T07:31:11.505Z",
+            "freshness_s": 1146202.553
+          },
+          {
+            "ref": "event:7397617c-97d4-4cd9-ae2b-e6a46da74955",
+            "observed_at": "2026-09-22T08:04:21.939Z",
+            "freshness_s": 798612.119
+          },
+          {
+            "ref": "event:eca6b24e-8215-4ed2-8fd7-715c69399a33",
+            "observed_at": "2026-09-08T15:28:51.602Z",
+            "freshness_s": 1981542.456
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -170,6 +237,73 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2655934.174,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "guka-kosusa-d2",
+                  "next_episode_id": "guka-kosusa-d2-s1e2",
+                  "last_play_at": "2026-09-22T08:04:21.939000Z",
+                  "sources": [
+                    {
+                      "ref": "event:df0fad9d-cfe9-4210-b5e2-9942095d8006",
+                      "observed_at": "2026-09-18T07:28:25.120Z"
+                    },
+                    {
+                      "ref": "event:65debcf1-cc0b-4a7d-8bdb-fffb60e96dce",
+                      "observed_at": "2026-09-18T07:31:11.505Z"
+                    },
+                    {
+                      "ref": "event:7397617c-97d4-4cd9-ae2b-e6a46da74955",
+                      "observed_at": "2026-09-22T08:04:21.939Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "chugu-d2",
+                  "next_episode_id": "chugu-d2-s1e1",
+                  "last_play_at": "2026-09-08T15:28:51.602000Z",
+                  "sources": [
+                    {
+                      "ref": "event:eca6b24e-8215-4ed2-8fd7-715c69399a33",
+                      "observed_at": "2026-09-08T15:28:51.602Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:df0fad9d-cfe9-4210-b5e2-9942095d8006",
+              "event:65debcf1-cc0b-4a7d-8bdb-fffb60e96dce",
+              "event:7397617c-97d4-4cd9-ae2b-e6a46da74955",
+              "event:eca6b24e-8215-4ed2-8fd7-715c69399a33"
+            ],
+            "observed_at": "2026-10-01T12:15:34.174000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:df0fad9d-cfe9-4210-b5e2-9942095d8006",
+                "observed_at": "2026-09-18T07:28:25.120Z",
+                "freshness_s": 1140429.054
+              },
+              {
+                "ref": "event:65debcf1-cc0b-4a7d-8bdb-fffb60e96dce",
+                "observed_at": "2026-09-18T07:31:11.505Z",
+                "freshness_s": 1140262.669
+              },
+              {
+                "ref": "event:7397617c-97d4-4cd9-ae2b-e6a46da74955",
+                "observed_at": "2026-09-22T08:04:21.939Z",
+                "freshness_s": 792672.235
+              },
+              {
+                "ref": "event:eca6b24e-8215-4ed2-8fd7-715c69399a33",
+                "observed_at": "2026-09-08T15:28:51.602Z",
+                "freshness_s": 1975602.572
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -177,6 +311,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

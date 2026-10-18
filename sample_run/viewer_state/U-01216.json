@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2666118.16,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "ladi-chuba-d1",
+              "next_episode_id": "ladi-chuba-d1-s1e1",
+              "last_play_at": "2026-09-08T12:22:14.764000Z",
+              "sources": [
+                {
+                  "ref": "event:8b2c7a38-48b0-4d88-8167-5c8f1e7e464b",
+                  "observed_at": "2026-09-08T12:22:14.764Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:8b2c7a38-48b0-4d88-8167-5c8f1e7e464b"
+        ],
+        "observed_at": "2026-10-01T15:05:18.160000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:8b2c7a38-48b0-4d88-8167-5c8f1e7e464b",
+            "observed_at": "2026-09-08T12:22:14.764Z",
+            "freshness_s": 1996983.396
+          }
+        ]
       }
     },
     "conflicts": [

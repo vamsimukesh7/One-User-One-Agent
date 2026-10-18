@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2673089.851,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "gubava-gihaya-d5",
+              "next_episode_id": "gubava-gihaya-d5-s1e2",
+              "last_play_at": "2026-09-14T14:36:11.809000Z",
+              "sources": [
+                {
+                  "ref": "event:50efbd50-cbae-4984-8d82-09c794abdc74",
+                  "observed_at": "2026-09-14T14:36:11.809Z"
+                },
+                {
+                  "ref": "event:daabe555-51bd-46e5-98d8-bc18a787a3b1",
+                  "observed_at": "2026-09-14T14:38:55.194Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:50efbd50-cbae-4984-8d82-09c794abdc74",
+          "event:daabe555-51bd-46e5-98d8-bc18a787a3b1"
+        ],
+        "observed_at": "2026-10-01T17:01:29.851000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:50efbd50-cbae-4984-8d82-09c794abdc74",
+            "observed_at": "2026-09-14T14:36:11.809Z",
+            "freshness_s": 1477518.042
+          },
+          {
+            "ref": "event:daabe555-51bd-46e5-98d8-bc18a787a3b1",
+            "observed_at": "2026-09-14T14:38:55.194Z",
+            "freshness_s": 1477354.657
+          }
+        ]
       }
     },
     "conflicts": [
@@ -164,6 +204,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2654654.265,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "gubava-gihaya-d5",
+                  "next_episode_id": "gubava-gihaya-d5-s1e2",
+                  "last_play_at": "2026-09-14T14:36:11.809000Z",
+                  "sources": [
+                    {
+                      "ref": "event:50efbd50-cbae-4984-8d82-09c794abdc74",
+                      "observed_at": "2026-09-14T14:36:11.809Z"
+                    },
+                    {
+                      "ref": "event:daabe555-51bd-46e5-98d8-bc18a787a3b1",
+                      "observed_at": "2026-09-14T14:38:55.194Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:50efbd50-cbae-4984-8d82-09c794abdc74",
+              "event:daabe555-51bd-46e5-98d8-bc18a787a3b1"
+            ],
+            "observed_at": "2026-10-01T11:54:14.265000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:50efbd50-cbae-4984-8d82-09c794abdc74",
+                "observed_at": "2026-09-14T14:36:11.809Z",
+                "freshness_s": 1459082.456
+              },
+              {
+                "ref": "event:daabe555-51bd-46e5-98d8-bc18a787a3b1",
+                "observed_at": "2026-09-14T14:38:55.194Z",
+                "freshness_s": 1458919.071
+              }
+            ]
           }
         },
         "conflicts": [
@@ -180,6 +260,9 @@
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
+      },
+      "eligibility_rule": {
+        "text": "No app_open in the 14 days before the trigger."
       },
       "actions": [
         "A-8d01cbd710bbd9f2019a",
@@ -200,16 +283,16 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-009411",
-          "event:oua-009415"
+          "event:oua-009413",
+          "event:oua-009417"
         ],
         "exposure_refs": [
-          "event:oua-009410",
-          "event:oua-009414"
+          "event:oua-009412",
+          "event:oua-009416"
         ],
         "associated_signal_refs": [
-          "event:oua-009411",
-          "event:oua-009415"
+          "event:oua-009413",
+          "event:oua-009417"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

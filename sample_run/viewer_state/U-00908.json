@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2669894.365,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "tiya-bhamaro-d1",
+              "next_episode_id": "tiya-bhamaro-d1-s1e2",
+              "last_play_at": "2026-09-20T17:41:43.276000Z",
+              "sources": [
+                {
+                  "ref": "event:c68625ab-94a7-401f-8931-db99ad7d33dd",
+                  "observed_at": "2026-09-20T17:41:43.276Z"
+                },
+                {
+                  "ref": "event:298157c7-3c96-4d82-80e3-b89a2e274fbc",
+                  "observed_at": "2026-09-20T17:43:32.920Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:c68625ab-94a7-401f-8931-db99ad7d33dd",
+          "event:298157c7-3c96-4d82-80e3-b89a2e274fbc"
+        ],
+        "observed_at": "2026-10-01T16:08:14.365000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:c68625ab-94a7-401f-8931-db99ad7d33dd",
+            "observed_at": "2026-09-20T17:41:43.276Z",
+            "freshness_s": 944791.089
+          },
+          {
+            "ref": "event:298157c7-3c96-4d82-80e3-b89a2e274fbc",
+            "observed_at": "2026-09-20T17:43:32.920Z",
+            "freshness_s": 944681.445
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -74,24 +114,24 @@
   "latest_decision_id": "D-5812c8b1a2d8e13a27b7",
   "learning": [
     {
-      "goal_id": "G05",
-      "result": "succeeded",
-      "intervention": "observed_association_not_individual_causation",
+      "goal_id": "G07",
+      "result": "failed",
+      "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
     }
   ],
   "plans": [
     {
-      "plan_id": "P-8a0f663b411588947a72",
+      "plan_id": "P-bd19a9d076b205dc4363",
       "user_id": "U-00908",
-      "goal_id": "G05",
-      "status": "succeeded",
+      "goal_id": "G07",
+      "status": "failed",
       "started_at": "2026-10-01T04:42:19.702000Z",
-      "deadline": "2026-10-08T04:42:19.702000Z",
+      "deadline": "2026-10-04T04:42:19.702000Z",
       "success": {
-        "event": "purchase_completed",
-        "condition": "is_trial = false",
-        "window_hours": 168
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "f59b7416-a051-4333-86c8-57d712829bad",
@@ -155,6 +195,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2628739.702,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "tiya-bhamaro-d1",
+                  "next_episode_id": "tiya-bhamaro-d1-s1e2",
+                  "last_play_at": "2026-09-20T17:41:43.276000Z",
+                  "sources": [
+                    {
+                      "ref": "event:c68625ab-94a7-401f-8931-db99ad7d33dd",
+                      "observed_at": "2026-09-20T17:41:43.276Z"
+                    },
+                    {
+                      "ref": "event:298157c7-3c96-4d82-80e3-b89a2e274fbc",
+                      "observed_at": "2026-09-20T17:43:32.920Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:c68625ab-94a7-401f-8931-db99ad7d33dd",
+              "event:298157c7-3c96-4d82-80e3-b89a2e274fbc"
+            ],
+            "observed_at": "2026-10-01T04:42:19.702000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:c68625ab-94a7-401f-8931-db99ad7d33dd",
+                "observed_at": "2026-09-20T17:41:43.276Z",
+                "freshness_s": 903636.426
+              },
+              {
+                "ref": "event:298157c7-3c96-4d82-80e3-b89a2e274fbc",
+                "observed_at": "2026-09-20T17:43:32.920Z",
+                "freshness_s": 903526.782
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -164,42 +244,41 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [
         "A-73619785c4917fa13c38",
         "A-00cb54de1a2dad990bfd",
         "A-a5fcddc7a70ea95e9275",
         "A-5812c8b1a2d8e13a27b7"
       ],
+      "target_content_slug": "tiya-bhamaro-d1",
+      "next_episode_id": "tiya-bhamaro-d1-s1e2",
       "final_outcome": {
-        "plan_id": "P-8a0f663b411588947a72",
+        "plan_id": "P-bd19a9d076b205dc4363",
         "user_id": "U-00908",
-        "goal_id": "G05",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T04:42:19.702000Z",
-        "deadline": "2026-10-08T04:42:19.702000Z",
-        "status": "succeeded",
-        "reason": "observed_success_signal_in_goal_window",
+        "deadline": "2026-10-04T04:42:19.702000Z",
+        "status": "failed",
+        "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "purchase_completed",
-          "condition": "is_trial = false",
-          "window_hours": 168
+          "event": "play_started",
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
-        "signal_refs": [
-          "event:oua-006018"
-        ],
+        "signal_refs": [],
         "exposure_refs": [
-          "event:oua-006016",
-          "event:oua-006020",
-          "event:oua-006022",
-          "event:oua-006025"
+          "event:oua-006026",
+          "event:oua-006029"
         ],
-        "associated_signal_refs": [
-          "event:oua-006018"
-        ],
-        "intervention_judgment": "observed_association_not_individual_causation",
+        "associated_signal_refs": [],
+        "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T04:42:19.702000Z"
+      "closed_at": "2026-10-04T04:42:19.702000Z"
     }
   ]
 }

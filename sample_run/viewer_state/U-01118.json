@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2663744.532,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bhaja-moguba-d2",
+              "next_episode_id": "bhaja-moguba-d2-s1e1",
+              "last_play_at": "2026-09-11T18:48:24.671000Z",
+              "sources": [
+                {
+                  "ref": "event:18f2efd3-8b50-4317-8350-d446e74a4991",
+                  "observed_at": "2026-09-11T08:24:48.745Z"
+                },
+                {
+                  "ref": "event:2c19aaec-221d-4339-9c1b-84f1b1ed1dd6",
+                  "observed_at": "2026-09-11T19:02:44.846Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:18f2efd3-8b50-4317-8350-d446e74a4991",
+          "event:2c19aaec-221d-4339-9c1b-84f1b1ed1dd6"
+        ],
+        "observed_at": "2026-10-01T14:25:44.532000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:18f2efd3-8b50-4317-8350-d446e74a4991",
+            "observed_at": "2026-09-11T08:24:48.745Z",
+            "freshness_s": 1749655.787
+          },
+          {
+            "ref": "event:2c19aaec-221d-4339-9c1b-84f1b1ed1dd6",
+            "observed_at": "2026-09-11T19:02:44.846Z",
+            "freshness_s": 1711379.686
+          }
+        ]
       }
     },
     "conflicts": [

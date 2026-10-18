@@ -67,6 +67,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2672225.4,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "nasachu-dhapa-d6",
+              "next_episode_id": "nasachu-dhapa-d6-s1e1",
+              "last_play_at": "2026-09-28T13:52:07.553000Z",
+              "sources": [
+                {
+                  "ref": "event:53caaca0-87d0-4bcb-95ba-c70f74a83efa",
+                  "observed_at": "2026-09-28T13:52:07.553Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "rasuya-moni-d6",
+              "next_episode_id": "rasuya-moni-d6-s1e1",
+              "last_play_at": "2026-09-28T09:31:20.520000Z",
+              "sources": [
+                {
+                  "ref": "event:c727677c-d9c5-478d-830b-bc1732253867",
+                  "observed_at": "2026-09-28T09:31:20.520Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:53caaca0-87d0-4bcb-95ba-c70f74a83efa",
+          "event:c727677c-d9c5-478d-830b-bc1732253867"
+        ],
+        "observed_at": "2026-10-01T16:47:05.400000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:53caaca0-87d0-4bcb-95ba-c70f74a83efa",
+            "observed_at": "2026-09-28T13:52:07.553Z",
+            "freshness_s": 269697.847
+          },
+          {
+            "ref": "event:c727677c-d9c5-478d-830b-bc1732253867",
+            "observed_at": "2026-09-28T09:31:20.520Z",
+            "freshness_s": 285344.88
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +215,53 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2672225.4,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "nasachu-dhapa-d6",
+                  "next_episode_id": "nasachu-dhapa-d6-s1e1",
+                  "last_play_at": "2026-09-28T13:52:07.553000Z",
+                  "sources": [
+                    {
+                      "ref": "event:53caaca0-87d0-4bcb-95ba-c70f74a83efa",
+                      "observed_at": "2026-09-28T13:52:07.553Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "rasuya-moni-d6",
+                  "next_episode_id": "rasuya-moni-d6-s1e1",
+                  "last_play_at": "2026-09-28T09:31:20.520000Z",
+                  "sources": [
+                    {
+                      "ref": "event:c727677c-d9c5-478d-830b-bc1732253867",
+                      "observed_at": "2026-09-28T09:31:20.520Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:53caaca0-87d0-4bcb-95ba-c70f74a83efa",
+              "event:c727677c-d9c5-478d-830b-bc1732253867"
+            ],
+            "observed_at": "2026-10-01T16:47:05.400000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:53caaca0-87d0-4bcb-95ba-c70f74a83efa",
+                "observed_at": "2026-09-28T13:52:07.553Z",
+                "freshness_s": 269697.847
+              },
+              {
+                "ref": "event:c727677c-d9c5-478d-830b-bc1732253867",
+                "observed_at": "2026-09-28T09:31:20.520Z",
+                "freshness_s": 285344.88
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -176,6 +270,10 @@
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
+      },
+      "eligibility_rule": {
+        "text": "Has never completed an episode.",
+        "requires_no_prior_event": "episode_completed"
       },
       "actions": [],
       "final_outcome": {

@@ -17,7 +17,7 @@ def percentile(values, p):
     return values[min(len(values)-1,int((len(values)-1)*p))] if values else 0
 
 
-def run(pack_path, out_path, seed='oua-practice', max_model_calls=8, max_tool_calls=20):
+def run(pack_path, out_path, seed='oua-practice', max_model_calls=8, max_tool_calls=20, channel=None):
     out = Path(out_path)
     if out.exists() and any(out.iterdir()):
         raise ValueError(f'Output directory is not empty: {out}. Use a new --out directory to preserve prior evidence.')
@@ -27,7 +27,7 @@ def run(pack_path, out_path, seed='oua-practice', max_model_calls=8, max_tool_ca
     history = list(jsonl(pack.root/'data/events.jsonl'))
     first_receipt = min(ts(e['received_at']) for e in history)
     pack.history_start = datetime.combine(day(first_receipt),datetime.min.time(),IST)
-    engine = Engine(pack,store,max_model_calls=max_model_calls,max_tool_calls=max_tool_calls)
+    engine = Engine(pack,store,channel=channel,max_model_calls=max_model_calls,max_tool_calls=max_tool_calls)
     timeline=[]
     for e in history:
         timeline.append((ts(e['received_at']),1,'event',e))
@@ -103,10 +103,11 @@ def run(pack_path, out_path, seed='oua-practice', max_model_calls=8, max_tool_ca
     subprocess.run([sys.executable,str(pack.root/'simulator/simulate_outcomes.py'),
                     '--pack',str(pack.root),'--actions',str(out/'actions.jsonl'),
                     '--out',str(out/'sim'),'--seed',seed],check=True)
-    for event in jsonl(out/'sim/outcome_events.jsonl'):
-        store.ingest(event)
-    # Supplied simulator covers replay day plus days 1..14, through end of day 14 IST.
+    # Batch simulator evidence becomes known only at final evaluation, never retroactively.
     observation_end=datetime.combine(day(min(ts(e['received_at']) for e in triggers))+timedelta(days=15),datetime.min.time(),IST)
+    for event in jsonl(out/'sim/outcome_events.jsonl'):
+        store.ingest(event,observed_at=observation_end)
+    store.set_time(observation_end)
     sim_report=json.loads((out/'sim/simulator_report.json').read_text())
     latency={'unique_decisions':len(latencies),'duplicate_deliveries':duplicates,
              'p50_ms':percentile(latencies,.5),'p95_ms':percentile(latencies,.95),'p99_ms':percentile(latencies,.99),
@@ -118,7 +119,7 @@ def run(pack_path, out_path, seed='oua-practice', max_model_calls=8, max_tool_ca
     impact=reports(pack,store,out,observation_end,sim_report,latency)
     write_json(out/'run_manifest.json',{'seed':seed,'pack':str(pack.root.resolve()),'python':sys.version,
                                       'history_start':iso(pack.history_start),'observation_end':iso(observation_end),
-                                      'max_model_calls':max_model_calls,'max_tool_calls':max_tool_calls})
+                                      'max_model_calls':max_model_calls,'max_tool_calls':max_tool_calls,'channel':channel or 'auto'})
     store.close()
     return {'output':str(out),'decisions':len(latencies),'actions':sim_report['counts'].get('actions_total',0),
             'policy_problems':sim_report['policy_problem_count'],'primary_itt':impact['replay']['primary_completion_72h']}

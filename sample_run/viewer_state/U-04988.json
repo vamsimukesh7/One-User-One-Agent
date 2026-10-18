@@ -61,6 +61,103 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2672313.982,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bhaja-moguba-d2",
+              "next_episode_id": "bhaja-moguba-d2-s1e3",
+              "last_play_at": "2026-09-22T12:04:20.507000Z",
+              "sources": [
+                {
+                  "ref": "event:07271723-bf3d-4b05-bd2a-6f4cd4eca326",
+                  "observed_at": "2026-09-08T13:25:01.287Z"
+                },
+                {
+                  "ref": "event:d2531042-9727-4dc4-9948-cc7d7f99fada",
+                  "observed_at": "2026-09-08T15:16:00.268Z"
+                },
+                {
+                  "ref": "event:1d08a4f0-d505-4dea-859a-d324b6838a33",
+                  "observed_at": "2026-09-08T15:19:40.844Z"
+                },
+                {
+                  "ref": "event:efe55461-730f-465f-8adf-9898e87e3226",
+                  "observed_at": "2026-09-22T12:04:20.507Z"
+                },
+                {
+                  "ref": "event:050c379f-3887-49ef-9574-ee8e986ec02b",
+                  "observed_at": "2026-09-22T12:08:00.571Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "mapa-gidhadha-d2",
+              "next_episode_id": "mapa-gidhadha-d2-s1e2",
+              "last_play_at": "2026-09-08T11:47:43.281000Z",
+              "sources": [
+                {
+                  "ref": "event:ce7947b0-4ca6-4d08-8eef-381ad21528f7",
+                  "observed_at": "2026-09-08T11:47:43.281Z"
+                },
+                {
+                  "ref": "event:9105e9e6-8c8d-4810-80d1-bdcbabba8c43",
+                  "observed_at": "2026-09-08T11:50:28.109Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:07271723-bf3d-4b05-bd2a-6f4cd4eca326",
+          "event:d2531042-9727-4dc4-9948-cc7d7f99fada",
+          "event:1d08a4f0-d505-4dea-859a-d324b6838a33",
+          "event:efe55461-730f-465f-8adf-9898e87e3226",
+          "event:050c379f-3887-49ef-9574-ee8e986ec02b",
+          "event:ce7947b0-4ca6-4d08-8eef-381ad21528f7",
+          "event:9105e9e6-8c8d-4810-80d1-bdcbabba8c43"
+        ],
+        "observed_at": "2026-10-01T16:48:33.982000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:07271723-bf3d-4b05-bd2a-6f4cd4eca326",
+            "observed_at": "2026-09-08T13:25:01.287Z",
+            "freshness_s": 1999412.695
+          },
+          {
+            "ref": "event:d2531042-9727-4dc4-9948-cc7d7f99fada",
+            "observed_at": "2026-09-08T15:16:00.268Z",
+            "freshness_s": 1992753.714
+          },
+          {
+            "ref": "event:1d08a4f0-d505-4dea-859a-d324b6838a33",
+            "observed_at": "2026-09-08T15:19:40.844Z",
+            "freshness_s": 1992533.138
+          },
+          {
+            "ref": "event:efe55461-730f-465f-8adf-9898e87e3226",
+            "observed_at": "2026-09-22T12:04:20.507Z",
+            "freshness_s": 794653.475
+          },
+          {
+            "ref": "event:050c379f-3887-49ef-9574-ee8e986ec02b",
+            "observed_at": "2026-09-22T12:08:00.571Z",
+            "freshness_s": 794433.411
+          },
+          {
+            "ref": "event:ce7947b0-4ca6-4d08-8eef-381ad21528f7",
+            "observed_at": "2026-09-08T11:47:43.281Z",
+            "freshness_s": 2005250.701
+          },
+          {
+            "ref": "event:9105e9e6-8c8d-4810-80d1-bdcbabba8c43",
+            "observed_at": "2026-09-08T11:50:28.109Z",
+            "freshness_s": 2005085.873
+          }
+        ]
       }
     },
     "conflicts": [

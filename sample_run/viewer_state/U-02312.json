@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2641675.299,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "diti-kochu-d5",
+              "next_episode_id": "diti-kochu-d5-s1e2",
+              "last_play_at": "2026-09-08T13:53:28.947000Z",
+              "sources": [
+                {
+                  "ref": "event:a75bf37e-9a6e-4888-80b1-462a161f6458",
+                  "observed_at": "2026-09-08T13:53:28.947Z"
+                },
+                {
+                  "ref": "event:fadfa472-f1eb-4e5e-89d4-f40c10aeea64",
+                  "observed_at": "2026-09-08T13:57:09.474Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:a75bf37e-9a6e-4888-80b1-462a161f6458",
+          "event:fadfa472-f1eb-4e5e-89d4-f40c10aeea64"
+        ],
+        "observed_at": "2026-10-01T08:17:55.299000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:a75bf37e-9a6e-4888-80b1-462a161f6458",
+            "observed_at": "2026-09-08T13:53:28.947Z",
+            "freshness_s": 1967066.352
+          },
+          {
+            "ref": "event:fadfa472-f1eb-4e5e-89d4-f40c10aeea64",
+            "observed_at": "2026-09-08T13:57:09.474Z",
+            "freshness_s": 1966845.825
+          }
+        ]
       }
     },
     "conflicts": [

@@ -67,6 +67,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2669261.607,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "kopibha-niya-d1",
+              "next_episode_id": "kopibha-niya-d1-s1e1",
+              "last_play_at": "2026-09-12T18:13:28.349000Z",
+              "sources": [
+                {
+                  "ref": "event:59deb854-84ad-4403-b215-8f349d97beaf",
+                  "observed_at": "2026-09-12T18:13:28.349Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "bagugu-gigupi-d1",
+              "next_episode_id": "bagugu-gigupi-d1-s1e1",
+              "last_play_at": "2026-09-09T19:30:06.651000Z",
+              "sources": [
+                {
+                  "ref": "event:3584d839-ffdc-46de-9d9e-d67049405cf1",
+                  "observed_at": "2026-09-09T19:30:06.651Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:59deb854-84ad-4403-b215-8f349d97beaf",
+          "event:3584d839-ffdc-46de-9d9e-d67049405cf1"
+        ],
+        "observed_at": "2026-10-01T15:57:41.607000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:59deb854-84ad-4403-b215-8f349d97beaf",
+            "observed_at": "2026-09-12T18:13:28.349Z",
+            "freshness_s": 1633453.258
+          },
+          {
+            "ref": "event:3584d839-ffdc-46de-9d9e-d67049405cf1",
+            "observed_at": "2026-09-09T19:30:06.651Z",
+            "freshness_s": 1888054.956
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +214,53 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2669261.607,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "kopibha-niya-d1",
+                  "next_episode_id": "kopibha-niya-d1-s1e1",
+                  "last_play_at": "2026-09-12T18:13:28.349000Z",
+                  "sources": [
+                    {
+                      "ref": "event:59deb854-84ad-4403-b215-8f349d97beaf",
+                      "observed_at": "2026-09-12T18:13:28.349Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "bagugu-gigupi-d1",
+                  "next_episode_id": "bagugu-gigupi-d1-s1e1",
+                  "last_play_at": "2026-09-09T19:30:06.651000Z",
+                  "sources": [
+                    {
+                      "ref": "event:3584d839-ffdc-46de-9d9e-d67049405cf1",
+                      "observed_at": "2026-09-09T19:30:06.651Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:59deb854-84ad-4403-b215-8f349d97beaf",
+              "event:3584d839-ffdc-46de-9d9e-d67049405cf1"
+            ],
+            "observed_at": "2026-10-01T15:57:41.607000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:59deb854-84ad-4403-b215-8f349d97beaf",
+                "observed_at": "2026-09-12T18:13:28.349Z",
+                "freshness_s": 1633453.258
+              },
+              {
+                "ref": "event:3584d839-ffdc-46de-9d9e-d67049405cf1",
+                "observed_at": "2026-09-09T19:30:06.651Z",
+                "freshness_s": 1888054.956
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +268,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -195,7 +295,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-014712"
+          "event:oua-014711"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

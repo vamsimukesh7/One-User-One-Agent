@@ -61,6 +61,66 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2656345.965,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "digi-mone-d3",
+              "next_episode_id": "digi-mone-d3-s1e2",
+              "last_play_at": "2026-09-25T06:31:48.784000Z",
+              "sources": [
+                {
+                  "ref": "event:807b728c-a447-4705-bae8-a22d3862ed2a",
+                  "observed_at": "2026-09-02T06:39:52.976Z"
+                },
+                {
+                  "ref": "event:e5f09400-a717-48c2-a1b2-2a8c391e9891",
+                  "observed_at": "2026-09-02T06:42:38.397Z"
+                },
+                {
+                  "ref": "event:b67ed256-17d0-43df-9dde-f31138609010",
+                  "observed_at": "2026-09-03T16:57:44.330Z"
+                },
+                {
+                  "ref": "event:b58a86e9-bf8c-49e7-9a46-6cb1317b3fae",
+                  "observed_at": "2026-09-30T07:34:29.808Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:807b728c-a447-4705-bae8-a22d3862ed2a",
+          "event:e5f09400-a717-48c2-a1b2-2a8c391e9891",
+          "event:b67ed256-17d0-43df-9dde-f31138609010",
+          "event:b58a86e9-bf8c-49e7-9a46-6cb1317b3fae"
+        ],
+        "observed_at": "2026-10-01T12:22:25.965000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:807b728c-a447-4705-bae8-a22d3862ed2a",
+            "observed_at": "2026-09-02T06:39:52.976Z",
+            "freshness_s": 2526152.989
+          },
+          {
+            "ref": "event:e5f09400-a717-48c2-a1b2-2a8c391e9891",
+            "observed_at": "2026-09-02T06:42:38.397Z",
+            "freshness_s": 2525987.568
+          },
+          {
+            "ref": "event:b67ed256-17d0-43df-9dde-f31138609010",
+            "observed_at": "2026-09-03T16:57:44.330Z",
+            "freshness_s": 2402681.635
+          },
+          {
+            "ref": "event:b58a86e9-bf8c-49e7-9a46-6cb1317b3fae",
+            "observed_at": "2026-09-30T07:34:29.808Z",
+            "freshness_s": 103676.157
+          }
+        ]
       }
     },
     "conflicts": [],

@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2650533.666,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "baguti-gida-d4",
+              "next_episode_id": "baguti-gida-d4-s1e1",
+              "last_play_at": "2026-09-13T15:50:08.685000Z",
+              "sources": [
+                {
+                  "ref": "event:9cf931ee-5a11-481d-b87e-238283791c3c",
+                  "observed_at": "2026-09-13T15:50:08.685Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:9cf931ee-5a11-481d-b87e-238283791c3c"
+        ],
+        "observed_at": "2026-10-01T10:45:33.666000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:9cf931ee-5a11-481d-b87e-238283791c3c",
+            "observed_at": "2026-09-13T15:50:08.685Z",
+            "freshness_s": 1536924.981
+          }
+        ]
       }
     },
     "conflicts": [],

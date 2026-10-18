@@ -61,6 +61,66 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2670634.043,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yane-tegi-d3",
+              "next_episode_id": "yane-tegi-d3-s1e3",
+              "last_play_at": "2026-09-24T13:10:18.072000Z",
+              "sources": [
+                {
+                  "ref": "event:aefc8f7a-a7e9-4ad9-b959-f9cadfe1c249",
+                  "observed_at": "2026-09-22T14:37:39.879Z"
+                },
+                {
+                  "ref": "event:77f16ed2-965e-4f3b-af38-1dc7591810a0",
+                  "observed_at": "2026-09-22T14:41:19.505Z"
+                },
+                {
+                  "ref": "event:9e21910a-3764-461d-ad45-f412e549256f",
+                  "observed_at": "2026-09-24T13:10:18.072Z"
+                },
+                {
+                  "ref": "event:23ffbd83-0f44-4538-8ae8-6f1294eafae5",
+                  "observed_at": "2026-09-24T13:13:02.932Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:aefc8f7a-a7e9-4ad9-b959-f9cadfe1c249",
+          "event:77f16ed2-965e-4f3b-af38-1dc7591810a0",
+          "event:9e21910a-3764-461d-ad45-f412e549256f",
+          "event:23ffbd83-0f44-4538-8ae8-6f1294eafae5"
+        ],
+        "observed_at": "2026-10-01T16:20:34.043000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:aefc8f7a-a7e9-4ad9-b959-f9cadfe1c249",
+            "observed_at": "2026-09-22T14:37:39.879Z",
+            "freshness_s": 783774.164
+          },
+          {
+            "ref": "event:77f16ed2-965e-4f3b-af38-1dc7591810a0",
+            "observed_at": "2026-09-22T14:41:19.505Z",
+            "freshness_s": 783554.538
+          },
+          {
+            "ref": "event:9e21910a-3764-461d-ad45-f412e549256f",
+            "observed_at": "2026-09-24T13:10:18.072Z",
+            "freshness_s": 616215.971
+          },
+          {
+            "ref": "event:23ffbd83-0f44-4538-8ae8-6f1294eafae5",
+            "observed_at": "2026-09-24T13:13:02.932Z",
+            "freshness_s": 616051.111
+          }
+        ]
       }
     },
     "conflicts": [

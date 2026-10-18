@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2667376.025,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yane-tegi-d3",
+              "next_episode_id": "yane-tegi-d3-s1e1",
+              "last_play_at": "2026-09-16T14:59:57.947000Z",
+              "sources": [
+                {
+                  "ref": "event:3e02df84-780e-48e1-b2b1-a654d89fd296",
+                  "observed_at": "2026-09-15T05:09:59.639Z"
+                },
+                {
+                  "ref": "event:273af919-a1e5-4d39-9809-8657737be727",
+                  "observed_at": "2026-09-16T14:59:57.947Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:3e02df84-780e-48e1-b2b1-a654d89fd296",
+          "event:273af919-a1e5-4d39-9809-8657737be727"
+        ],
+        "observed_at": "2026-10-01T15:26:16.025000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:3e02df84-780e-48e1-b2b1-a654d89fd296",
+            "observed_at": "2026-09-15T05:09:59.639Z",
+            "freshness_s": 1419376.386
+          },
+          {
+            "ref": "event:273af919-a1e5-4d39-9809-8657737be727",
+            "observed_at": "2026-09-16T14:59:57.947Z",
+            "freshness_s": 1297578.078
+          }
+        ]
       }
     },
     "conflicts": [
@@ -165,6 +205,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2645595.867,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "yane-tegi-d3",
+                  "next_episode_id": "yane-tegi-d3-s1e1",
+                  "last_play_at": "2026-09-16T14:59:57.947000Z",
+                  "sources": [
+                    {
+                      "ref": "event:3e02df84-780e-48e1-b2b1-a654d89fd296",
+                      "observed_at": "2026-09-15T05:09:59.639Z"
+                    },
+                    {
+                      "ref": "event:273af919-a1e5-4d39-9809-8657737be727",
+                      "observed_at": "2026-09-16T14:59:57.947Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:3e02df84-780e-48e1-b2b1-a654d89fd296",
+              "event:273af919-a1e5-4d39-9809-8657737be727"
+            ],
+            "observed_at": "2026-10-01T09:23:15.867000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:3e02df84-780e-48e1-b2b1-a654d89fd296",
+                "observed_at": "2026-09-15T05:09:59.639Z",
+                "freshness_s": 1397596.228
+              },
+              {
+                "ref": "event:273af919-a1e5-4d39-9809-8657737be727",
+                "observed_at": "2026-09-16T14:59:57.947Z",
+                "freshness_s": 1275797.92
+              }
+            ]
           }
         },
         "conflicts": [
@@ -181,6 +261,9 @@
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
+      },
+      "eligibility_rule": {
+        "text": "No app_open in the 14 days before the trigger."
       },
       "actions": [
         "A-9c2a7bfe88f47888286a",
@@ -201,14 +284,14 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-002017"
+          "event:oua-002021"
         ],
         "exposure_refs": [
-          "event:oua-002016",
-          "event:oua-002019"
+          "event:oua-002020",
+          "event:oua-002023"
         ],
         "associated_signal_refs": [
-          "event:oua-002017"
+          "event:oua-002021"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

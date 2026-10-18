@@ -61,6 +61,66 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2675852.676,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bhari-vagi-d6",
+              "next_episode_id": "bhari-vagi-d6-s1e3",
+              "last_play_at": "2026-09-23T17:00:50.365000Z",
+              "sources": [
+                {
+                  "ref": "event:8777f54d-ebef-4826-ad7e-cf7734e31809",
+                  "observed_at": "2026-09-22T15:17:23.393Z"
+                },
+                {
+                  "ref": "event:63c4e0c7-c5dc-486d-ba08-06eae59100c7",
+                  "observed_at": "2026-09-22T15:19:14.039Z"
+                },
+                {
+                  "ref": "event:e7b8cb4e-2388-4f76-b129-e6da5e371280",
+                  "observed_at": "2026-09-23T17:00:50.365Z"
+                },
+                {
+                  "ref": "event:a82b48da-9560-4525-b6c1-08c127ec960e",
+                  "observed_at": "2026-09-23T17:02:40.274Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:8777f54d-ebef-4826-ad7e-cf7734e31809",
+          "event:63c4e0c7-c5dc-486d-ba08-06eae59100c7",
+          "event:e7b8cb4e-2388-4f76-b129-e6da5e371280",
+          "event:a82b48da-9560-4525-b6c1-08c127ec960e"
+        ],
+        "observed_at": "2026-10-01T17:47:32.676000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:8777f54d-ebef-4826-ad7e-cf7734e31809",
+            "observed_at": "2026-09-22T15:17:23.393Z",
+            "freshness_s": 786609.283
+          },
+          {
+            "ref": "event:63c4e0c7-c5dc-486d-ba08-06eae59100c7",
+            "observed_at": "2026-09-22T15:19:14.039Z",
+            "freshness_s": 786498.637
+          },
+          {
+            "ref": "event:e7b8cb4e-2388-4f76-b129-e6da5e371280",
+            "observed_at": "2026-09-23T17:00:50.365Z",
+            "freshness_s": 694002.311
+          },
+          {
+            "ref": "event:a82b48da-9560-4525-b6c1-08c127ec960e",
+            "observed_at": "2026-09-23T17:02:40.274Z",
+            "freshness_s": 693892.402
+          }
+        ]
       }
     },
     "conflicts": [],

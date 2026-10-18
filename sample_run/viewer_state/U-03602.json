@@ -67,6 +67,73 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2644133.252,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "rasuya-moni-d6",
+              "next_episode_id": "rasuya-moni-d6-s1e2",
+              "last_play_at": "2026-09-22T08:17:05.108000Z",
+              "sources": [
+                {
+                  "ref": "event:19ae3b51-9ad7-4628-a4f0-fa645ba9e8fd",
+                  "observed_at": "2026-09-16T07:26:52.441Z"
+                },
+                {
+                  "ref": "event:acde07b7-20d0-49d2-ab15-aa17d978ec8c",
+                  "observed_at": "2026-09-29T00:05:32.836Z"
+                },
+                {
+                  "ref": "event:f60d4ad7-f13b-48e5-ab82-48497eb4a1f5",
+                  "observed_at": "2026-09-29T00:34:58.554Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "gumosu-dhakoko-d6",
+              "next_episode_id": "gumosu-dhakoko-d6-s1e1",
+              "last_play_at": "2026-09-03T16:51:42.414000Z",
+              "sources": [
+                {
+                  "ref": "event:089f36bd-1668-4bfa-870c-7edeb1ac0dc6",
+                  "observed_at": "2026-09-03T16:51:42.414Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:19ae3b51-9ad7-4628-a4f0-fa645ba9e8fd",
+          "event:acde07b7-20d0-49d2-ab15-aa17d978ec8c",
+          "event:f60d4ad7-f13b-48e5-ab82-48497eb4a1f5",
+          "event:089f36bd-1668-4bfa-870c-7edeb1ac0dc6"
+        ],
+        "observed_at": "2026-10-01T08:58:53.252000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:19ae3b51-9ad7-4628-a4f0-fa645ba9e8fd",
+            "observed_at": "2026-09-16T07:26:52.441Z",
+            "freshness_s": 1301520.811
+          },
+          {
+            "ref": "event:acde07b7-20d0-49d2-ab15-aa17d978ec8c",
+            "observed_at": "2026-09-29T00:05:32.836Z",
+            "freshness_s": 204800.416
+          },
+          {
+            "ref": "event:f60d4ad7-f13b-48e5-ab82-48497eb4a1f5",
+            "observed_at": "2026-09-29T00:34:58.554Z",
+            "freshness_s": 203034.698
+          },
+          {
+            "ref": "event:089f36bd-1668-4bfa-870c-7edeb1ac0dc6",
+            "observed_at": "2026-09-03T16:51:42.414Z",
+            "freshness_s": 2390830.838
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +234,73 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2644133.252,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "rasuya-moni-d6",
+                  "next_episode_id": "rasuya-moni-d6-s1e2",
+                  "last_play_at": "2026-09-22T08:17:05.108000Z",
+                  "sources": [
+                    {
+                      "ref": "event:19ae3b51-9ad7-4628-a4f0-fa645ba9e8fd",
+                      "observed_at": "2026-09-16T07:26:52.441Z"
+                    },
+                    {
+                      "ref": "event:acde07b7-20d0-49d2-ab15-aa17d978ec8c",
+                      "observed_at": "2026-09-29T00:05:32.836Z"
+                    },
+                    {
+                      "ref": "event:f60d4ad7-f13b-48e5-ab82-48497eb4a1f5",
+                      "observed_at": "2026-09-29T00:34:58.554Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "gumosu-dhakoko-d6",
+                  "next_episode_id": "gumosu-dhakoko-d6-s1e1",
+                  "last_play_at": "2026-09-03T16:51:42.414000Z",
+                  "sources": [
+                    {
+                      "ref": "event:089f36bd-1668-4bfa-870c-7edeb1ac0dc6",
+                      "observed_at": "2026-09-03T16:51:42.414Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:19ae3b51-9ad7-4628-a4f0-fa645ba9e8fd",
+              "event:acde07b7-20d0-49d2-ab15-aa17d978ec8c",
+              "event:f60d4ad7-f13b-48e5-ab82-48497eb4a1f5",
+              "event:089f36bd-1668-4bfa-870c-7edeb1ac0dc6"
+            ],
+            "observed_at": "2026-10-01T08:58:53.252000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:19ae3b51-9ad7-4628-a4f0-fa645ba9e8fd",
+                "observed_at": "2026-09-16T07:26:52.441Z",
+                "freshness_s": 1301520.811
+              },
+              {
+                "ref": "event:acde07b7-20d0-49d2-ab15-aa17d978ec8c",
+                "observed_at": "2026-09-29T00:05:32.836Z",
+                "freshness_s": 204800.416
+              },
+              {
+                "ref": "event:f60d4ad7-f13b-48e5-ab82-48497eb4a1f5",
+                "observed_at": "2026-09-29T00:34:58.554Z",
+                "freshness_s": 203034.698
+              },
+              {
+                "ref": "event:089f36bd-1668-4bfa-870c-7edeb1ac0dc6",
+                "observed_at": "2026-09-03T16:51:42.414Z",
+                "freshness_s": 2390830.838
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +308,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [

@@ -67,6 +67,70 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2638228.547,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "kopibha-niya-d1",
+              "next_episode_id": "kopibha-niya-d1-s1e1",
+              "last_play_at": "2026-09-10T13:32:56.283000Z",
+              "sources": [
+                {
+                  "ref": "event:917d9ceb-a760-40df-945d-88e33d599b23",
+                  "observed_at": "2026-09-10T13:32:56.283Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e1",
+              "last_play_at": "2026-09-07T01:32:39.517000Z",
+              "sources": [
+                {
+                  "ref": "event:19205fbb-ea61-4c3d-aa75-3ff6a2bfac2b",
+                  "observed_at": "2026-09-07T01:32:39.517Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "bagugu-gigupi-d1",
+              "next_episode_id": "bagugu-gigupi-d1-s1e1",
+              "last_play_at": "2026-09-03T14:42:13.339000Z",
+              "sources": [
+                {
+                  "ref": "event:1fefbf3e-bde9-4d6a-a122-8d11a1cc50e7",
+                  "observed_at": "2026-09-03T14:42:13.339Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:917d9ceb-a760-40df-945d-88e33d599b23",
+          "event:19205fbb-ea61-4c3d-aa75-3ff6a2bfac2b",
+          "event:1fefbf3e-bde9-4d6a-a122-8d11a1cc50e7"
+        ],
+        "observed_at": "2026-10-01T07:20:28.547000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:917d9ceb-a760-40df-945d-88e33d599b23",
+            "observed_at": "2026-09-10T13:32:56.283Z",
+            "freshness_s": 1792052.264
+          },
+          {
+            "ref": "event:19205fbb-ea61-4c3d-aa75-3ff6a2bfac2b",
+            "observed_at": "2026-09-07T01:32:39.517Z",
+            "freshness_s": 2094469.03
+          },
+          {
+            "ref": "event:1fefbf3e-bde9-4d6a-a122-8d11a1cc50e7",
+            "observed_at": "2026-09-03T14:42:13.339Z",
+            "freshness_s": 2392695.208
+          }
+        ]
       }
     },
     "conflicts": [

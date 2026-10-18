@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2626794.673,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "gugu-d4",
+              "next_episode_id": "gugu-d4-s1e1",
+              "last_play_at": "2026-09-05T12:12:28.799000Z",
+              "sources": [
+                {
+                  "ref": "event:098fd83f-8e7b-44a2-b731-d042f9652b5b",
+                  "observed_at": "2026-09-05T12:12:28.799Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:098fd83f-8e7b-44a2-b731-d042f9652b5b"
+        ],
+        "observed_at": "2026-10-01T04:09:54.673000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:098fd83f-8e7b-44a2-b731-d042f9652b5b",
+            "observed_at": "2026-09-05T12:12:28.799Z",
+            "freshness_s": 2217445.874
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -75,6 +105,6 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy"
   ],
-  "state_updated_at": "2026-10-01T04:12:10.312Z",
+  "state_updated_at": "2026-10-01T04:12:10.312000Z",
   "plans": []
 }

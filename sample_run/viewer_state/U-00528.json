@@ -67,6 +67,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2675057.133,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bhaja-moguba-d2",
+              "next_episode_id": "bhaja-moguba-d2-s1e2",
+              "last_play_at": "2026-09-18T07:15:30.610000Z",
+              "sources": [
+                {
+                  "ref": "event:2cbcfaeb-7a83-4b54-aff2-08f435b3d8f3",
+                  "observed_at": "2026-09-18T07:15:30.610Z"
+                },
+                {
+                  "ref": "event:3ca549e7-b76b-4b4f-b2c1-4d495b7e3304",
+                  "observed_at": "2026-09-18T07:19:13.705Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "gibha-bhalomo-d2",
+              "next_episode_id": "gibha-bhalomo-d2-s1e1",
+              "last_play_at": "2026-09-01T02:38:31.484000Z",
+              "sources": [
+                {
+                  "ref": "event:648a4db3-02a4-4b4b-aece-9821a94a4380",
+                  "observed_at": "2026-09-01T02:38:31.484Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:2cbcfaeb-7a83-4b54-aff2-08f435b3d8f3",
+          "event:3ca549e7-b76b-4b4f-b2c1-4d495b7e3304",
+          "event:648a4db3-02a4-4b4b-aece-9821a94a4380"
+        ],
+        "observed_at": "2026-10-01T17:34:17.133000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:2cbcfaeb-7a83-4b54-aff2-08f435b3d8f3",
+            "observed_at": "2026-09-18T07:15:30.610Z",
+            "freshness_s": 1160326.523
+          },
+          {
+            "ref": "event:3ca549e7-b76b-4b4f-b2c1-4d495b7e3304",
+            "observed_at": "2026-09-18T07:19:13.705Z",
+            "freshness_s": 1160103.428
+          },
+          {
+            "ref": "event:648a4db3-02a4-4b4b-aece-9821a94a4380",
+            "observed_at": "2026-09-01T02:38:31.484Z",
+            "freshness_s": 2645745.649
+          }
+        ]
       }
     },
     "conflicts": [
@@ -176,6 +233,63 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2675057.133,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "bhaja-moguba-d2",
+                  "next_episode_id": "bhaja-moguba-d2-s1e2",
+                  "last_play_at": "2026-09-18T07:15:30.610000Z",
+                  "sources": [
+                    {
+                      "ref": "event:2cbcfaeb-7a83-4b54-aff2-08f435b3d8f3",
+                      "observed_at": "2026-09-18T07:15:30.610Z"
+                    },
+                    {
+                      "ref": "event:3ca549e7-b76b-4b4f-b2c1-4d495b7e3304",
+                      "observed_at": "2026-09-18T07:19:13.705Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "gibha-bhalomo-d2",
+                  "next_episode_id": "gibha-bhalomo-d2-s1e1",
+                  "last_play_at": "2026-09-01T02:38:31.484000Z",
+                  "sources": [
+                    {
+                      "ref": "event:648a4db3-02a4-4b4b-aece-9821a94a4380",
+                      "observed_at": "2026-09-01T02:38:31.484Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:2cbcfaeb-7a83-4b54-aff2-08f435b3d8f3",
+              "event:3ca549e7-b76b-4b4f-b2c1-4d495b7e3304",
+              "event:648a4db3-02a4-4b4b-aece-9821a94a4380"
+            ],
+            "observed_at": "2026-10-01T17:34:17.133000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:2cbcfaeb-7a83-4b54-aff2-08f435b3d8f3",
+                "observed_at": "2026-09-18T07:15:30.610Z",
+                "freshness_s": 1160326.523
+              },
+              {
+                "ref": "event:3ca549e7-b76b-4b4f-b2c1-4d495b7e3304",
+                "observed_at": "2026-09-18T07:19:13.705Z",
+                "freshness_s": 1160103.428
+              },
+              {
+                "ref": "event:648a4db3-02a4-4b4b-aece-9821a94a4380",
+                "observed_at": "2026-09-01T02:38:31.484Z",
+                "freshness_s": 2645745.649
+              }
+            ]
           }
         },
         "conflicts": [
@@ -191,6 +305,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

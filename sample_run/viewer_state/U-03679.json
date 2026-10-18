@@ -67,6 +67,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2614325.405,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "patena-d1",
+              "next_episode_id": "patena-d1-s1e2",
+              "last_play_at": "2026-09-27T14:17:13.025000Z",
+              "sources": [
+                {
+                  "ref": "event:eb6750b9-fe1e-4e64-bea6-33d98399ac95",
+                  "observed_at": "2026-09-26T13:36:41.772Z"
+                },
+                {
+                  "ref": "event:c90a4e1d-a13b-43cd-a857-59d57942b149",
+                  "observed_at": "2026-09-26T13:39:26.841Z"
+                },
+                {
+                  "ref": "event:44473996-026b-4114-a644-26f57460566c",
+                  "observed_at": "2026-09-27T14:17:13.025Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:eb6750b9-fe1e-4e64-bea6-33d98399ac95",
+          "event:c90a4e1d-a13b-43cd-a857-59d57942b149",
+          "event:44473996-026b-4114-a644-26f57460566c"
+        ],
+        "observed_at": "2026-10-01T00:42:05.405000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:eb6750b9-fe1e-4e64-bea6-33d98399ac95",
+            "observed_at": "2026-09-26T13:36:41.772Z",
+            "freshness_s": 385523.633
+          },
+          {
+            "ref": "event:c90a4e1d-a13b-43cd-a857-59d57942b149",
+            "observed_at": "2026-09-26T13:39:26.841Z",
+            "freshness_s": 385358.564
+          },
+          {
+            "ref": "event:44473996-026b-4114-a644-26f57460566c",
+            "observed_at": "2026-09-27T14:17:13.025Z",
+            "freshness_s": 296692.38
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -82,24 +132,24 @@
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G08",
-      "result": "succeeded",
+      "goal_id": "G07",
+      "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
     }
   ],
   "plans": [
     {
-      "plan_id": "P-79111c45f1e8949d48a4",
+      "plan_id": "P-1a8edbafb3ca22a6b1a2",
       "user_id": "U-03679",
-      "goal_id": "G08",
-      "status": "succeeded",
+      "goal_id": "G07",
+      "status": "failed",
       "started_at": "2026-10-01T00:42:04.249000Z",
-      "deadline": "2026-10-08T00:42:04.249000Z",
+      "deadline": "2026-10-04T00:42:04.249000Z",
       "success": {
         "event": "play_started",
-        "condition": "a title released in the 30 days before the goal start",
-        "window_hours": 168
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "3d64b249-c77e-4b7a-a774-eafb14cb0ac4",
@@ -169,6 +219,56 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2614324.249,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "patena-d1",
+                  "next_episode_id": "patena-d1-s1e2",
+                  "last_play_at": "2026-09-27T14:17:13.025000Z",
+                  "sources": [
+                    {
+                      "ref": "event:eb6750b9-fe1e-4e64-bea6-33d98399ac95",
+                      "observed_at": "2026-09-26T13:36:41.772Z"
+                    },
+                    {
+                      "ref": "event:c90a4e1d-a13b-43cd-a857-59d57942b149",
+                      "observed_at": "2026-09-26T13:39:26.841Z"
+                    },
+                    {
+                      "ref": "event:44473996-026b-4114-a644-26f57460566c",
+                      "observed_at": "2026-09-27T14:17:13.025Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:eb6750b9-fe1e-4e64-bea6-33d98399ac95",
+              "event:c90a4e1d-a13b-43cd-a857-59d57942b149",
+              "event:44473996-026b-4114-a644-26f57460566c"
+            ],
+            "observed_at": "2026-10-01T00:42:04.249000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:eb6750b9-fe1e-4e64-bea6-33d98399ac95",
+                "observed_at": "2026-09-26T13:36:41.772Z",
+                "freshness_s": 385522.477
+              },
+              {
+                "ref": "event:c90a4e1d-a13b-43cd-a857-59d57942b149",
+                "observed_at": "2026-09-26T13:39:26.841Z",
+                "freshness_s": 385357.408
+              },
+              {
+                "ref": "event:44473996-026b-4114-a644-26f57460566c",
+                "observed_at": "2026-09-27T14:17:13.025Z",
+                "freshness_s": 296691.224
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -178,30 +278,33 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [],
+      "target_content_slug": "patena-d1",
+      "next_episode_id": "patena-d1-s1e2",
       "final_outcome": {
-        "plan_id": "P-79111c45f1e8949d48a4",
+        "plan_id": "P-1a8edbafb3ca22a6b1a2",
         "user_id": "U-03679",
-        "goal_id": "G08",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T00:42:04.249000Z",
-        "deadline": "2026-10-08T00:42:04.249000Z",
-        "status": "succeeded",
-        "reason": "observed_success_signal_in_goal_window",
+        "deadline": "2026-10-04T00:42:04.249000Z",
+        "status": "failed",
+        "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
           "event": "play_started",
-          "condition": "a title released in the 30 days before the goal start",
-          "window_hours": 168
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
-        "signal_refs": [
-          "event:oua-023281"
-        ],
+        "signal_refs": [],
         "exposure_refs": [],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T00:42:04.249000Z"
+      "closed_at": "2026-10-04T00:42:04.249000Z"
     }
   ]
 }

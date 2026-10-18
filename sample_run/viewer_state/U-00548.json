@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2628976.698,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "jamo-hasa-d5",
+              "next_episode_id": "jamo-hasa-d5-s1e2",
+              "last_play_at": "2026-09-02T07:21:37.382000Z",
+              "sources": [
+                {
+                  "ref": "event:177d9d78-03db-42ec-a3d1-ffecc68c2298",
+                  "observed_at": "2026-09-02T07:21:37.382Z"
+                },
+                {
+                  "ref": "event:f6c10331-61ac-4154-a52a-10f082f181fb",
+                  "observed_at": "2026-09-02T07:24:23.949Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:177d9d78-03db-42ec-a3d1-ffecc68c2298",
+          "event:f6c10331-61ac-4154-a52a-10f082f181fb"
+        ],
+        "observed_at": "2026-10-01T04:46:16.698000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:177d9d78-03db-42ec-a3d1-ffecc68c2298",
+            "observed_at": "2026-09-02T07:21:37.382Z",
+            "freshness_s": 2496279.316
+          },
+          {
+            "ref": "event:f6c10331-61ac-4154-a52a-10f082f181fb",
+            "observed_at": "2026-09-02T07:24:23.949Z",
+            "freshness_s": 2496112.749
+          }
+        ]
       }
     },
     "conflicts": [],

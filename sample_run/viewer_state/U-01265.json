@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2671649.181,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hate-d1",
+              "next_episode_id": "hate-d1-s1e2",
+              "last_play_at": "2026-09-20T13:27:52.938000Z",
+              "sources": [
+                {
+                  "ref": "event:0befafad-864e-44cc-a9fd-f1b71af3d6b6",
+                  "observed_at": "2026-09-20T13:27:52.938Z"
+                },
+                {
+                  "ref": "event:d71cd2ab-8714-422a-8887-8bdffa8c27b7",
+                  "observed_at": "2026-09-20T13:31:32.772Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:0befafad-864e-44cc-a9fd-f1b71af3d6b6",
+          "event:d71cd2ab-8714-422a-8887-8bdffa8c27b7"
+        ],
+        "observed_at": "2026-10-01T16:37:29.181000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:0befafad-864e-44cc-a9fd-f1b71af3d6b6",
+            "observed_at": "2026-09-20T13:27:52.938Z",
+            "freshness_s": 961776.243
+          },
+          {
+            "ref": "event:d71cd2ab-8714-422a-8887-8bdffa8c27b7",
+            "observed_at": "2026-09-20T13:31:32.772Z",
+            "freshness_s": 961556.409
+          }
+        ]
       }
     },
     "conflicts": [

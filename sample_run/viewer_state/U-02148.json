@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2673840.802,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yatite-roloda-d3",
+              "next_episode_id": "yatite-roloda-d3-s1e2",
+              "last_play_at": "2026-09-13T03:43:50.344000Z",
+              "sources": [
+                {
+                  "ref": "event:0aaff1cd-6d3f-414e-889e-134b33b6b8df",
+                  "observed_at": "2026-09-13T03:43:50.344Z"
+                },
+                {
+                  "ref": "event:d96ae84f-7175-46d4-b448-5985274b3f2a",
+                  "observed_at": "2026-09-13T03:47:32.101Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:0aaff1cd-6d3f-414e-889e-134b33b6b8df",
+          "event:d96ae84f-7175-46d4-b448-5985274b3f2a"
+        ],
+        "observed_at": "2026-10-01T17:14:00.802000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:0aaff1cd-6d3f-414e-889e-134b33b6b8df",
+            "observed_at": "2026-09-13T03:43:50.344Z",
+            "freshness_s": 1603810.458
+          },
+          {
+            "ref": "event:d96ae84f-7175-46d4-b448-5985274b3f2a",
+            "observed_at": "2026-09-13T03:47:32.101Z",
+            "freshness_s": 1603588.701
+          }
+        ]
       }
     },
     "conflicts": [

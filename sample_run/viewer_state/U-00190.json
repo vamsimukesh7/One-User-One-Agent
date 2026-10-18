@@ -61,6 +61,93 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2674264.527,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bagi-baya-d4",
+              "next_episode_id": "bagi-baya-d4-s1e3",
+              "last_play_at": "2026-09-22T12:57:27.633000Z",
+              "sources": [
+                {
+                  "ref": "event:88a2ea87-e17a-4a30-a8a7-a3c1cc4794b1",
+                  "observed_at": "2026-09-05T05:26:34.882Z"
+                },
+                {
+                  "ref": "event:3cccbe1c-2e74-416d-a372-3498e2bbed2d",
+                  "observed_at": "2026-09-05T05:30:15.723Z"
+                },
+                {
+                  "ref": "event:5886d5fc-e8c2-4dc9-9a83-9af710b46623",
+                  "observed_at": "2026-09-19T07:51:07.576Z"
+                },
+                {
+                  "ref": "event:8239d713-c9b0-480f-b75e-d91227054109",
+                  "observed_at": "2026-09-19T07:52:58.315Z"
+                },
+                {
+                  "ref": "event:2772b764-1808-4134-9c01-9a69aab05f5b",
+                  "observed_at": "2026-09-22T12:57:27.633Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "jate-nerani-d4",
+              "next_episode_id": "jate-nerani-d4-s1e1",
+              "last_play_at": "2026-09-02T18:27:42.127000Z",
+              "sources": [
+                {
+                  "ref": "event:c7454d01-3b96-47d4-b1f9-5ebb28f21fcc",
+                  "observed_at": "2026-09-02T18:27:42.127Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:88a2ea87-e17a-4a30-a8a7-a3c1cc4794b1",
+          "event:3cccbe1c-2e74-416d-a372-3498e2bbed2d",
+          "event:5886d5fc-e8c2-4dc9-9a83-9af710b46623",
+          "event:8239d713-c9b0-480f-b75e-d91227054109",
+          "event:2772b764-1808-4134-9c01-9a69aab05f5b",
+          "event:c7454d01-3b96-47d4-b1f9-5ebb28f21fcc"
+        ],
+        "observed_at": "2026-10-01T17:21:04.527000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:88a2ea87-e17a-4a30-a8a7-a3c1cc4794b1",
+            "observed_at": "2026-09-05T05:26:34.882Z",
+            "freshness_s": 2289269.645
+          },
+          {
+            "ref": "event:3cccbe1c-2e74-416d-a372-3498e2bbed2d",
+            "observed_at": "2026-09-05T05:30:15.723Z",
+            "freshness_s": 2289048.804
+          },
+          {
+            "ref": "event:5886d5fc-e8c2-4dc9-9a83-9af710b46623",
+            "observed_at": "2026-09-19T07:51:07.576Z",
+            "freshness_s": 1070996.951
+          },
+          {
+            "ref": "event:8239d713-c9b0-480f-b75e-d91227054109",
+            "observed_at": "2026-09-19T07:52:58.315Z",
+            "freshness_s": 1070886.212
+          },
+          {
+            "ref": "event:2772b764-1808-4134-9c01-9a69aab05f5b",
+            "observed_at": "2026-09-22T12:57:27.633Z",
+            "freshness_s": 793416.894
+          },
+          {
+            "ref": "event:c7454d01-3b96-47d4-b1f9-5ebb28f21fcc",
+            "observed_at": "2026-09-02T18:27:42.127Z",
+            "freshness_s": 2501602.4
+          }
+        ]
       }
     },
     "conflicts": [

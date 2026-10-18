@@ -61,6 +61,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2678024.843,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "rigu-dhadi-d2",
+              "next_episode_id": "rigu-dhadi-d2-s1e2",
+              "last_play_at": "2026-09-18T10:37:16.438000Z",
+              "sources": [
+                {
+                  "ref": "event:146076b1-047c-4355-8a2c-f89a27a7fa8b",
+                  "observed_at": "2026-09-13T18:42:52.006Z"
+                },
+                {
+                  "ref": "event:3dfb5381-e3da-477d-bfca-22435ca7a1cd",
+                  "observed_at": "2026-09-13T18:45:39.287Z"
+                },
+                {
+                  "ref": "event:a70ef670-768c-4785-82f5-d73595deb64b",
+                  "observed_at": "2026-09-18T10:37:16.438Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:146076b1-047c-4355-8a2c-f89a27a7fa8b",
+          "event:3dfb5381-e3da-477d-bfca-22435ca7a1cd",
+          "event:a70ef670-768c-4785-82f5-d73595deb64b"
+        ],
+        "observed_at": "2026-10-01T18:23:44.843000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:146076b1-047c-4355-8a2c-f89a27a7fa8b",
+            "observed_at": "2026-09-13T18:42:52.006Z",
+            "freshness_s": 1554052.837
+          },
+          {
+            "ref": "event:3dfb5381-e3da-477d-bfca-22435ca7a1cd",
+            "observed_at": "2026-09-13T18:45:39.287Z",
+            "freshness_s": 1553885.556
+          },
+          {
+            "ref": "event:a70ef670-768c-4785-82f5-d73595deb64b",
+            "observed_at": "2026-09-18T10:37:16.438Z",
+            "freshness_s": 1151188.405
+          }
+        ]
       }
     },
     "conflicts": [],

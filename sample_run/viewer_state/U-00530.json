@@ -61,6 +61,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2666074.4,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e2",
+              "last_play_at": "2026-09-23T17:15:35.490000Z",
+              "sources": [
+                {
+                  "ref": "event:e7667af4-7ee2-4232-a1ed-be03de8ad55f",
+                  "observed_at": "2026-09-23T13:28:42.364Z"
+                },
+                {
+                  "ref": "event:c1994f7c-2ea4-4cbe-bc98-4545a60d99d6",
+                  "observed_at": "2026-09-23T13:31:30.462Z"
+                },
+                {
+                  "ref": "event:57eb0bca-f358-4510-9b9d-9d46650d0bf8",
+                  "observed_at": "2026-09-23T17:15:35.490Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:e7667af4-7ee2-4232-a1ed-be03de8ad55f",
+          "event:c1994f7c-2ea4-4cbe-bc98-4545a60d99d6",
+          "event:57eb0bca-f358-4510-9b9d-9d46650d0bf8"
+        ],
+        "observed_at": "2026-10-01T15:04:34.400000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:e7667af4-7ee2-4232-a1ed-be03de8ad55f",
+            "observed_at": "2026-09-23T13:28:42.364Z",
+            "freshness_s": 696952.036
+          },
+          {
+            "ref": "event:c1994f7c-2ea4-4cbe-bc98-4545a60d99d6",
+            "observed_at": "2026-09-23T13:31:30.462Z",
+            "freshness_s": 696783.938
+          },
+          {
+            "ref": "event:57eb0bca-f358-4510-9b9d-9d46650d0bf8",
+            "observed_at": "2026-09-23T17:15:35.490Z",
+            "freshness_s": 683338.91
+          }
+        ]
       }
     },
     "conflicts": [

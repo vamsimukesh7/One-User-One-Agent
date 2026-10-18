@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2662832.611,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "dhapipa-gini-d2",
+              "next_episode_id": "dhapipa-gini-d2-s1e1",
+              "last_play_at": "2026-09-25T17:50:46.368000Z",
+              "sources": [
+                {
+                  "ref": "event:5a12d3cc-68a3-4990-a885-8cb700438424",
+                  "observed_at": "2026-09-25T17:50:46.368Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:5a12d3cc-68a3-4990-a885-8cb700438424"
+        ],
+        "observed_at": "2026-10-01T14:10:32.611000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:5a12d3cc-68a3-4990-a885-8cb700438424",
+            "observed_at": "2026-09-25T17:50:46.368Z",
+            "freshness_s": 505186.243
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -80,7 +110,7 @@
       "lesson": "Do not equate publishing with seeing or observing success with causation."
     }
   ],
-  "state_updated_at": "2026-10-01T14:46:56.265Z",
+  "state_updated_at": "2026-10-01T14:46:56.265000Z",
   "plans": [
     {
       "plan_id": "P-c16ce415b1053aab434f",
@@ -156,6 +186,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2662832.611,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "dhapipa-gini-d2",
+                  "next_episode_id": "dhapipa-gini-d2-s1e1",
+                  "last_play_at": "2026-09-25T17:50:46.368000Z",
+                  "sources": [
+                    {
+                      "ref": "event:5a12d3cc-68a3-4990-a885-8cb700438424",
+                      "observed_at": "2026-09-25T17:50:46.368Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:5a12d3cc-68a3-4990-a885-8cb700438424"
+            ],
+            "observed_at": "2026-10-01T14:10:32.611000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:5a12d3cc-68a3-4990-a885-8cb700438424",
+                "observed_at": "2026-09-25T17:50:46.368Z",
+                "freshness_s": 505186.243
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -164,6 +224,10 @@
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
+      },
+      "eligibility_rule": {
+        "text": "Has never completed an episode.",
+        "requires_no_prior_event": "episode_completed"
       },
       "actions": [
         "A-1eaf62ad926d82940432"
@@ -184,7 +248,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-001391"
+          "event:oua-001394"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

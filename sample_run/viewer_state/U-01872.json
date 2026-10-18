@@ -67,6 +67,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2633284.283,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "tidha-dakachu-d1",
+              "next_episode_id": "tidha-dakachu-d1-s1e2",
+              "last_play_at": "2026-09-22T06:43:08.890000Z",
+              "sources": [
+                {
+                  "ref": "event:17f18157-294c-4c39-ad09-d3754ac70d89",
+                  "observed_at": "2026-09-22T06:43:08.890Z"
+                },
+                {
+                  "ref": "event:3632b990-23e2-4374-b2fb-881e48ba0611",
+                  "observed_at": "2026-09-22T07:08:53.419Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:17f18157-294c-4c39-ad09-d3754ac70d89",
+          "event:3632b990-23e2-4374-b2fb-881e48ba0611"
+        ],
+        "observed_at": "2026-10-01T05:58:04.283000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:17f18157-294c-4c39-ad09-d3754ac70d89",
+            "observed_at": "2026-09-22T06:43:08.890Z",
+            "freshness_s": 774895.393
+          },
+          {
+            "ref": "event:3632b990-23e2-4374-b2fb-881e48ba0611",
+            "observed_at": "2026-09-22T07:08:53.419Z",
+            "freshness_s": 773350.864
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -80,7 +120,7 @@
   "latest_decision_id": "D-9045eb8f498cbd362b8f",
   "learning": [
     {
-      "goal_id": "G08",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -88,16 +128,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-62884da9c5dbfec7aefb",
+      "plan_id": "P-4b60b14c27b225129b17",
       "user_id": "U-01872",
-      "goal_id": "G08",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T05:58:04.283000Z",
-      "deadline": "2026-10-08T05:58:04.283000Z",
+      "deadline": "2026-10-04T05:58:04.283000Z",
       "success": {
         "event": "play_started",
-        "condition": "a title released in the 30 days before the goal start",
-        "window_hours": 168
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "5f54f2e7-9e84-45b5-b8da-feeccdef1e7a",
@@ -167,6 +207,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2633284.283,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "tidha-dakachu-d1",
+                  "next_episode_id": "tidha-dakachu-d1-s1e2",
+                  "last_play_at": "2026-09-22T06:43:08.890000Z",
+                  "sources": [
+                    {
+                      "ref": "event:17f18157-294c-4c39-ad09-d3754ac70d89",
+                      "observed_at": "2026-09-22T06:43:08.890Z"
+                    },
+                    {
+                      "ref": "event:3632b990-23e2-4374-b2fb-881e48ba0611",
+                      "observed_at": "2026-09-22T07:08:53.419Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:17f18157-294c-4c39-ad09-d3754ac70d89",
+              "event:3632b990-23e2-4374-b2fb-881e48ba0611"
+            ],
+            "observed_at": "2026-10-01T05:58:04.283000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:17f18157-294c-4c39-ad09-d3754ac70d89",
+                "observed_at": "2026-09-22T06:43:08.890Z",
+                "freshness_s": 774895.393
+              },
+              {
+                "ref": "event:3632b990-23e2-4374-b2fb-881e48ba0611",
+                "observed_at": "2026-09-22T07:08:53.419Z",
+                "freshness_s": 773350.864
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -176,32 +256,35 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [
         "A-9045eb8f498cbd362b8f"
       ],
+      "target_content_slug": "tidha-dakachu-d1",
+      "next_episode_id": "tidha-dakachu-d1-s1e2",
       "final_outcome": {
-        "plan_id": "P-62884da9c5dbfec7aefb",
+        "plan_id": "P-4b60b14c27b225129b17",
         "user_id": "U-01872",
-        "goal_id": "G08",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T05:58:04.283000Z",
-        "deadline": "2026-10-08T05:58:04.283000Z",
+        "deadline": "2026-10-04T05:58:04.283000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
           "event": "play_started",
-          "condition": "a title released in the 30 days before the goal start",
-          "window_hours": 168
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
-        "exposure_refs": [
-          "event:oua-012459"
-        ],
+        "exposure_refs": [],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T05:58:04.283000Z"
+      "closed_at": "2026-10-04T05:58:04.283000Z"
     }
   ]
 }

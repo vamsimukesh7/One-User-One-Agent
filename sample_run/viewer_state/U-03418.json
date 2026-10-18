@@ -61,6 +61,83 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2673197.501,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e2",
+              "last_play_at": "2026-09-16T19:57:16.654000Z",
+              "sources": [
+                {
+                  "ref": "event:15cee551-d32e-44b2-8735-423c929c23de",
+                  "observed_at": "2026-09-16T19:57:16.654Z"
+                },
+                {
+                  "ref": "event:2fbbb8ee-ec85-45d9-8ac1-6a3dedd971a6",
+                  "observed_at": "2026-09-16T20:00:03.232Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "tidha-dakachu-d1",
+              "next_episode_id": "tidha-dakachu-d1-s1e2",
+              "last_play_at": "2026-09-12T14:25:56.859000Z",
+              "sources": [
+                {
+                  "ref": "event:92aae94b-71f7-4d86-a685-758561849499",
+                  "observed_at": "2026-09-06T13:49:51.419Z"
+                },
+                {
+                  "ref": "event:c64cd494-9573-49da-9a92-9df0e5ef9fc3",
+                  "observed_at": "2026-09-06T14:15:37.620Z"
+                },
+                {
+                  "ref": "event:9864a587-fd7e-49e3-9beb-f2ca1a871ccd",
+                  "observed_at": "2026-09-12T14:25:56.859Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:15cee551-d32e-44b2-8735-423c929c23de",
+          "event:2fbbb8ee-ec85-45d9-8ac1-6a3dedd971a6",
+          "event:92aae94b-71f7-4d86-a685-758561849499",
+          "event:c64cd494-9573-49da-9a92-9df0e5ef9fc3",
+          "event:9864a587-fd7e-49e3-9beb-f2ca1a871ccd"
+        ],
+        "observed_at": "2026-10-01T17:03:17.501000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:15cee551-d32e-44b2-8735-423c929c23de",
+            "observed_at": "2026-09-16T19:57:16.654Z",
+            "freshness_s": 1285560.847
+          },
+          {
+            "ref": "event:2fbbb8ee-ec85-45d9-8ac1-6a3dedd971a6",
+            "observed_at": "2026-09-16T20:00:03.232Z",
+            "freshness_s": 1285394.269
+          },
+          {
+            "ref": "event:92aae94b-71f7-4d86-a685-758561849499",
+            "observed_at": "2026-09-06T13:49:51.419Z",
+            "freshness_s": 2171606.082
+          },
+          {
+            "ref": "event:c64cd494-9573-49da-9a92-9df0e5ef9fc3",
+            "observed_at": "2026-09-06T14:15:37.620Z",
+            "freshness_s": 2170059.881
+          },
+          {
+            "ref": "event:9864a587-fd7e-49e3-9beb-f2ca1a871ccd",
+            "observed_at": "2026-09-12T14:25:56.859Z",
+            "freshness_s": 1651040.642
+          }
+        ]
       }
     },
     "conflicts": [

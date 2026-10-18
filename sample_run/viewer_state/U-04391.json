@@ -61,6 +61,73 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2665627.953,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yatite-roloda-d3",
+              "next_episode_id": "yatite-roloda-d3-s1e2",
+              "last_play_at": "2026-09-06T16:11:18.930000Z",
+              "sources": [
+                {
+                  "ref": "event:b49cf290-8851-4e91-94fc-4158a6bca424",
+                  "observed_at": "2026-09-06T16:11:18.930Z"
+                },
+                {
+                  "ref": "event:9bfbd1c4-578f-4bdc-ba16-da165c343682",
+                  "observed_at": "2026-09-06T16:14:57.922Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "lomobha-moni-d3",
+              "next_episode_id": "lomobha-moni-d3-s1e1",
+              "last_play_at": "2026-09-05T18:25:21.326000Z",
+              "sources": [
+                {
+                  "ref": "event:92b275d2-542e-4e90-b89e-434c934cd0f1",
+                  "observed_at": "2026-09-05T04:20:00.722Z"
+                },
+                {
+                  "ref": "event:b2e0785e-f7de-49f2-bb8f-1a3a55d9e38a",
+                  "observed_at": "2026-09-05T18:25:21.326Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:b49cf290-8851-4e91-94fc-4158a6bca424",
+          "event:9bfbd1c4-578f-4bdc-ba16-da165c343682",
+          "event:92b275d2-542e-4e90-b89e-434c934cd0f1",
+          "event:b2e0785e-f7de-49f2-bb8f-1a3a55d9e38a"
+        ],
+        "observed_at": "2026-10-01T14:57:07.953000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:b49cf290-8851-4e91-94fc-4158a6bca424",
+            "observed_at": "2026-09-06T16:11:18.930Z",
+            "freshness_s": 2155549.023
+          },
+          {
+            "ref": "event:9bfbd1c4-578f-4bdc-ba16-da165c343682",
+            "observed_at": "2026-09-06T16:14:57.922Z",
+            "freshness_s": 2155330.031
+          },
+          {
+            "ref": "event:92b275d2-542e-4e90-b89e-434c934cd0f1",
+            "observed_at": "2026-09-05T04:20:00.722Z",
+            "freshness_s": 2284627.231
+          },
+          {
+            "ref": "event:b2e0785e-f7de-49f2-bb8f-1a3a55d9e38a",
+            "observed_at": "2026-09-05T18:25:21.326Z",
+            "freshness_s": 2233906.627
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -156,6 +223,73 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2665627.953,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "yatite-roloda-d3",
+                  "next_episode_id": "yatite-roloda-d3-s1e2",
+                  "last_play_at": "2026-09-06T16:11:18.930000Z",
+                  "sources": [
+                    {
+                      "ref": "event:b49cf290-8851-4e91-94fc-4158a6bca424",
+                      "observed_at": "2026-09-06T16:11:18.930Z"
+                    },
+                    {
+                      "ref": "event:9bfbd1c4-578f-4bdc-ba16-da165c343682",
+                      "observed_at": "2026-09-06T16:14:57.922Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "lomobha-moni-d3",
+                  "next_episode_id": "lomobha-moni-d3-s1e1",
+                  "last_play_at": "2026-09-05T18:25:21.326000Z",
+                  "sources": [
+                    {
+                      "ref": "event:92b275d2-542e-4e90-b89e-434c934cd0f1",
+                      "observed_at": "2026-09-05T04:20:00.722Z"
+                    },
+                    {
+                      "ref": "event:b2e0785e-f7de-49f2-bb8f-1a3a55d9e38a",
+                      "observed_at": "2026-09-05T18:25:21.326Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:b49cf290-8851-4e91-94fc-4158a6bca424",
+              "event:9bfbd1c4-578f-4bdc-ba16-da165c343682",
+              "event:92b275d2-542e-4e90-b89e-434c934cd0f1",
+              "event:b2e0785e-f7de-49f2-bb8f-1a3a55d9e38a"
+            ],
+            "observed_at": "2026-10-01T14:57:07.953000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:b49cf290-8851-4e91-94fc-4158a6bca424",
+                "observed_at": "2026-09-06T16:11:18.930Z",
+                "freshness_s": 2155549.023
+              },
+              {
+                "ref": "event:9bfbd1c4-578f-4bdc-ba16-da165c343682",
+                "observed_at": "2026-09-06T16:14:57.922Z",
+                "freshness_s": 2155330.031
+              },
+              {
+                "ref": "event:92b275d2-542e-4e90-b89e-434c934cd0f1",
+                "observed_at": "2026-09-05T04:20:00.722Z",
+                "freshness_s": 2284627.231
+              },
+              {
+                "ref": "event:b2e0785e-f7de-49f2-bb8f-1a3a55d9e38a",
+                "observed_at": "2026-09-05T18:25:21.326Z",
+                "freshness_s": 2233906.627
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -164,6 +298,9 @@
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
+      },
+      "eligibility_rule": {
+        "text": "No app_open in the 14 days before the trigger."
       },
       "actions": [],
       "final_outcome": {
@@ -181,7 +318,7 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-027416"
+          "event:oua-027419"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

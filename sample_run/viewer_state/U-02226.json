@@ -67,6 +67,83 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2633880.697,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "rigu-dhadi-d2",
+              "next_episode_id": "rigu-dhadi-d2-s1e2",
+              "last_play_at": "2026-09-22T07:14:19.385000Z",
+              "sources": [
+                {
+                  "ref": "event:0b2fa3e2-69d3-4868-87b0-b0f38d087b22",
+                  "observed_at": "2026-09-05T05:21:17.628Z"
+                },
+                {
+                  "ref": "event:ea5350c9-a876-4537-b977-ba63eaea9807",
+                  "observed_at": "2026-09-08T15:59:05.688Z"
+                },
+                {
+                  "ref": "event:667237df-7f17-4b62-9cbf-d77d2394f718",
+                  "observed_at": "2026-09-22T07:14:19.385Z"
+                },
+                {
+                  "ref": "event:a618f0ba-e979-4d0e-83eb-47fafc84659e",
+                  "observed_at": "2026-09-22T07:17:05.337Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e1",
+              "last_play_at": "2026-09-12T13:11:11.369000Z",
+              "sources": [
+                {
+                  "ref": "event:88360c71-100d-4e64-be86-8c66e52da7dd",
+                  "observed_at": "2026-09-12T13:11:11.369Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:0b2fa3e2-69d3-4868-87b0-b0f38d087b22",
+          "event:ea5350c9-a876-4537-b977-ba63eaea9807",
+          "event:667237df-7f17-4b62-9cbf-d77d2394f718",
+          "event:a618f0ba-e979-4d0e-83eb-47fafc84659e",
+          "event:88360c71-100d-4e64-be86-8c66e52da7dd"
+        ],
+        "observed_at": "2026-10-01T06:08:00.697000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:0b2fa3e2-69d3-4868-87b0-b0f38d087b22",
+            "observed_at": "2026-09-05T05:21:17.628Z",
+            "freshness_s": 2249203.069
+          },
+          {
+            "ref": "event:ea5350c9-a876-4537-b977-ba63eaea9807",
+            "observed_at": "2026-09-08T15:59:05.688Z",
+            "freshness_s": 1951735.009
+          },
+          {
+            "ref": "event:667237df-7f17-4b62-9cbf-d77d2394f718",
+            "observed_at": "2026-09-22T07:14:19.385Z",
+            "freshness_s": 773621.312
+          },
+          {
+            "ref": "event:a618f0ba-e979-4d0e-83eb-47fafc84659e",
+            "observed_at": "2026-09-22T07:17:05.337Z",
+            "freshness_s": 773455.36
+          },
+          {
+            "ref": "event:88360c71-100d-4e64-be86-8c66e52da7dd",
+            "observed_at": "2026-09-12T13:11:11.369Z",
+            "freshness_s": 1616209.328
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +245,83 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2633880.697,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "rigu-dhadi-d2",
+                  "next_episode_id": "rigu-dhadi-d2-s1e2",
+                  "last_play_at": "2026-09-22T07:14:19.385000Z",
+                  "sources": [
+                    {
+                      "ref": "event:0b2fa3e2-69d3-4868-87b0-b0f38d087b22",
+                      "observed_at": "2026-09-05T05:21:17.628Z"
+                    },
+                    {
+                      "ref": "event:ea5350c9-a876-4537-b977-ba63eaea9807",
+                      "observed_at": "2026-09-08T15:59:05.688Z"
+                    },
+                    {
+                      "ref": "event:667237df-7f17-4b62-9cbf-d77d2394f718",
+                      "observed_at": "2026-09-22T07:14:19.385Z"
+                    },
+                    {
+                      "ref": "event:a618f0ba-e979-4d0e-83eb-47fafc84659e",
+                      "observed_at": "2026-09-22T07:17:05.337Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "molo-d2",
+                  "next_episode_id": "molo-d2-s1e1",
+                  "last_play_at": "2026-09-12T13:11:11.369000Z",
+                  "sources": [
+                    {
+                      "ref": "event:88360c71-100d-4e64-be86-8c66e52da7dd",
+                      "observed_at": "2026-09-12T13:11:11.369Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:0b2fa3e2-69d3-4868-87b0-b0f38d087b22",
+              "event:ea5350c9-a876-4537-b977-ba63eaea9807",
+              "event:667237df-7f17-4b62-9cbf-d77d2394f718",
+              "event:a618f0ba-e979-4d0e-83eb-47fafc84659e",
+              "event:88360c71-100d-4e64-be86-8c66e52da7dd"
+            ],
+            "observed_at": "2026-10-01T06:08:00.697000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:0b2fa3e2-69d3-4868-87b0-b0f38d087b22",
+                "observed_at": "2026-09-05T05:21:17.628Z",
+                "freshness_s": 2249203.069
+              },
+              {
+                "ref": "event:ea5350c9-a876-4537-b977-ba63eaea9807",
+                "observed_at": "2026-09-08T15:59:05.688Z",
+                "freshness_s": 1951735.009
+              },
+              {
+                "ref": "event:667237df-7f17-4b62-9cbf-d77d2394f718",
+                "observed_at": "2026-09-22T07:14:19.385Z",
+                "freshness_s": 773621.312
+              },
+              {
+                "ref": "event:a618f0ba-e979-4d0e-83eb-47fafc84659e",
+                "observed_at": "2026-09-22T07:17:05.337Z",
+                "freshness_s": 773455.36
+              },
+              {
+                "ref": "event:88360c71-100d-4e64-be86-8c66e52da7dd",
+                "observed_at": "2026-09-12T13:11:11.369Z",
+                "freshness_s": 1616209.328
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +329,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

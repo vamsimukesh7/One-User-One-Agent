@@ -1,6 +1,17 @@
 """Bounded optional model execution and explicit decision contracts."""
 import multiprocessing
+import time
 from .provider import ProviderResult, ReplayProvider
+
+
+def _invoke(provider, trigger, candidates, at, receive, send):
+    receive.close()
+    try:
+        send.send(provider.propose(trigger, candidates, at))
+    except Exception as exc:
+        send.send(ProviderResult(None, 'provider_transport_failure:' + type(exc).__name__))
+    finally:
+        send.close()
 
 
 def bounded_propose(provider, trigger, candidates, at, timeout_ms):
@@ -10,21 +21,18 @@ def bounded_propose(provider, trigger, candidates, at, timeout_ms):
     if isinstance(provider, ReplayProvider):
         return provider.propose(trigger, candidates, at)
     # Killable process, rather than a thread whose blocked call survives timeout.
-    # Custom providers must be fork-safe; production HTTP clients also need transport deadlines.
-    ctx = multiprocessing.get_context('fork')
+    # Custom providers must be process-safe (picklable on Windows); transports need deadlines too.
+    ctx = multiprocessing.get_context('fork' if 'fork' in multiprocessing.get_all_start_methods() else 'spawn')
     receive, send = ctx.Pipe(duplex=False)
-    def invoke():
-        receive.close()
-        try:
-            send.send(provider.propose(trigger, candidates, at))
-        except Exception as exc:
-            send.send(ProviderResult(None, 'provider_transport_failure:' + type(exc).__name__))
-        finally:
-            send.close()
-    process = ctx.Process(target=invoke, daemon=True)
-    process.start(); send.close()
+    process = ctx.Process(target=_invoke, args=(provider,trigger,candidates,at,receive,send), daemon=True)
+    started=time.perf_counter()
+    try:process.start()
+    except Exception as exc:
+        receive.close();send.close()
+        return ProviderResult(None,'provider_transport_failure:'+type(exc).__name__)
+    send.close()
     try:
-        if receive.poll(timeout_ms / 1000):
+        if receive.poll(max(0,timeout_ms / 1000-(time.perf_counter()-started))):
             try:
                 result = receive.recv()
                 return result if isinstance(result, ProviderResult) else ProviderResult(None, 'malformed_provider_result')

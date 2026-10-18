@@ -67,6 +67,83 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2678110.851,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hapibha-d1",
+              "next_episode_id": "hapibha-d1-s1e3",
+              "last_play_at": "2026-09-27T20:48:15.263000Z",
+              "sources": [
+                {
+                  "ref": "event:5f8107d5-1f06-4595-94aa-c8c63fe596a1",
+                  "observed_at": "2026-09-26T22:14:11.870Z"
+                },
+                {
+                  "ref": "event:446fc063-0535-4554-a21a-344fd11a59a0",
+                  "observed_at": "2026-09-26T22:16:55.947Z"
+                },
+                {
+                  "ref": "event:86820836-ebbb-4da4-9a00-d5864ed0ddbe",
+                  "observed_at": "2026-09-27T20:48:15.263Z"
+                },
+                {
+                  "ref": "event:5df83d47-81ff-4370-b60e-45d60d9e3253",
+                  "observed_at": "2026-09-27T20:51:00.506Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "tiya-bhamaro-d1",
+              "next_episode_id": "tiya-bhamaro-d1-s1e1",
+              "last_play_at": "2026-09-27T07:41:02.299000Z",
+              "sources": [
+                {
+                  "ref": "event:95d6955c-be0a-40d9-b416-6970860b368b",
+                  "observed_at": "2026-09-27T07:41:02.299Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:5f8107d5-1f06-4595-94aa-c8c63fe596a1",
+          "event:446fc063-0535-4554-a21a-344fd11a59a0",
+          "event:86820836-ebbb-4da4-9a00-d5864ed0ddbe",
+          "event:5df83d47-81ff-4370-b60e-45d60d9e3253",
+          "event:95d6955c-be0a-40d9-b416-6970860b368b"
+        ],
+        "observed_at": "2026-10-01T18:25:10.851000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:5f8107d5-1f06-4595-94aa-c8c63fe596a1",
+            "observed_at": "2026-09-26T22:14:11.870Z",
+            "freshness_s": 418258.981
+          },
+          {
+            "ref": "event:446fc063-0535-4554-a21a-344fd11a59a0",
+            "observed_at": "2026-09-26T22:16:55.947Z",
+            "freshness_s": 418094.904
+          },
+          {
+            "ref": "event:86820836-ebbb-4da4-9a00-d5864ed0ddbe",
+            "observed_at": "2026-09-27T20:48:15.263Z",
+            "freshness_s": 337015.588
+          },
+          {
+            "ref": "event:5df83d47-81ff-4370-b60e-45d60d9e3253",
+            "observed_at": "2026-09-27T20:51:00.506Z",
+            "freshness_s": 336850.345
+          },
+          {
+            "ref": "event:95d6955c-be0a-40d9-b416-6970860b368b",
+            "observed_at": "2026-09-27T07:41:02.299Z",
+            "freshness_s": 384248.552
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -80,24 +157,24 @@
   "latest_decision_id": "D-a2e9e3ea76577400b11e",
   "learning": [
     {
-      "goal_id": "G08",
-      "result": "succeeded",
-      "intervention": "observed_association_not_individual_causation",
+      "goal_id": "G07",
+      "result": "failed",
+      "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
     }
   ],
   "plans": [
     {
-      "plan_id": "P-e485d2fffdd29c9ba6d1",
+      "plan_id": "P-d09d8fbcf1a163f66faf",
       "user_id": "U-02511",
-      "goal_id": "G08",
-      "status": "succeeded",
+      "goal_id": "G07",
+      "status": "failed",
       "started_at": "2026-10-01T04:34:20.665000Z",
-      "deadline": "2026-10-08T04:34:20.665000Z",
+      "deadline": "2026-10-04T04:34:20.665000Z",
       "success": {
         "event": "play_started",
-        "condition": "a title released in the 30 days before the goal start",
-        "window_hours": 168
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "863f913c-863f-4b39-a121-54615f6c6456",
@@ -167,6 +244,83 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2628260.665,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "hapibha-d1",
+                  "next_episode_id": "hapibha-d1-s1e3",
+                  "last_play_at": "2026-09-27T20:48:15.263000Z",
+                  "sources": [
+                    {
+                      "ref": "event:5f8107d5-1f06-4595-94aa-c8c63fe596a1",
+                      "observed_at": "2026-09-26T22:14:11.870Z"
+                    },
+                    {
+                      "ref": "event:446fc063-0535-4554-a21a-344fd11a59a0",
+                      "observed_at": "2026-09-26T22:16:55.947Z"
+                    },
+                    {
+                      "ref": "event:86820836-ebbb-4da4-9a00-d5864ed0ddbe",
+                      "observed_at": "2026-09-27T20:48:15.263Z"
+                    },
+                    {
+                      "ref": "event:5df83d47-81ff-4370-b60e-45d60d9e3253",
+                      "observed_at": "2026-09-27T20:51:00.506Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "tiya-bhamaro-d1",
+                  "next_episode_id": "tiya-bhamaro-d1-s1e1",
+                  "last_play_at": "2026-09-27T07:41:02.299000Z",
+                  "sources": [
+                    {
+                      "ref": "event:95d6955c-be0a-40d9-b416-6970860b368b",
+                      "observed_at": "2026-09-27T07:41:02.299Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:5f8107d5-1f06-4595-94aa-c8c63fe596a1",
+              "event:446fc063-0535-4554-a21a-344fd11a59a0",
+              "event:86820836-ebbb-4da4-9a00-d5864ed0ddbe",
+              "event:5df83d47-81ff-4370-b60e-45d60d9e3253",
+              "event:95d6955c-be0a-40d9-b416-6970860b368b"
+            ],
+            "observed_at": "2026-10-01T04:34:20.665000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:5f8107d5-1f06-4595-94aa-c8c63fe596a1",
+                "observed_at": "2026-09-26T22:14:11.870Z",
+                "freshness_s": 368408.795
+              },
+              {
+                "ref": "event:446fc063-0535-4554-a21a-344fd11a59a0",
+                "observed_at": "2026-09-26T22:16:55.947Z",
+                "freshness_s": 368244.718
+              },
+              {
+                "ref": "event:86820836-ebbb-4da4-9a00-d5864ed0ddbe",
+                "observed_at": "2026-09-27T20:48:15.263Z",
+                "freshness_s": 287165.402
+              },
+              {
+                "ref": "event:5df83d47-81ff-4370-b60e-45d60d9e3253",
+                "observed_at": "2026-09-27T20:51:00.506Z",
+                "freshness_s": 287000.159
+              },
+              {
+                "ref": "event:95d6955c-be0a-40d9-b416-6970860b368b",
+                "observed_at": "2026-09-27T07:41:02.299Z",
+                "freshness_s": 334398.366
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -176,40 +330,33 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
-      "actions": [
-        "A-19fc0718d9328c179380",
-        "A-4c42e052944886963c64",
-        "A-a2e9e3ea76577400b11e"
-      ],
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
+      "actions": [],
+      "target_content_slug": "hapibha-d1",
+      "next_episode_id": "hapibha-d1-s1e3",
       "final_outcome": {
-        "plan_id": "P-e485d2fffdd29c9ba6d1",
+        "plan_id": "P-d09d8fbcf1a163f66faf",
         "user_id": "U-02511",
-        "goal_id": "G08",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T04:34:20.665000Z",
-        "deadline": "2026-10-08T04:34:20.665000Z",
-        "status": "succeeded",
-        "reason": "observed_success_signal_in_goal_window",
+        "deadline": "2026-10-04T04:34:20.665000Z",
+        "status": "failed",
+        "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
           "event": "play_started",
-          "condition": "a title released in the 30 days before the goal start",
-          "window_hours": 168
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
-        "signal_refs": [
-          "event:oua-015709"
-        ],
-        "exposure_refs": [
-          "event:oua-015701",
-          "event:oua-015704",
-          "event:oua-015708"
-        ],
-        "associated_signal_refs": [
-          "event:oua-015709"
-        ],
-        "intervention_judgment": "observed_association_not_individual_causation",
+        "signal_refs": [],
+        "exposure_refs": [],
+        "associated_signal_refs": [],
+        "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T04:34:20.665000Z"
+      "closed_at": "2026-10-04T04:34:20.665000Z"
     }
   ]
 }

@@ -67,6 +67,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2639757.28,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "gima-bhadaba-d1",
+              "next_episode_id": "gima-bhadaba-d1-s1e2",
+              "last_play_at": "2026-09-16T17:59:35.067000Z",
+              "sources": [
+                {
+                  "ref": "event:20effb3f-cd0d-4936-9f7c-2d18612e4642",
+                  "observed_at": "2026-09-16T17:59:35.067Z"
+                },
+                {
+                  "ref": "event:651237b1-e307-4a14-bc9f-eb2b5547eb68",
+                  "observed_at": "2026-09-16T18:02:21.224Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:20effb3f-cd0d-4936-9f7c-2d18612e4642",
+          "event:651237b1-e307-4a14-bc9f-eb2b5547eb68"
+        ],
+        "observed_at": "2026-10-01T07:45:57.280000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:20effb3f-cd0d-4936-9f7c-2d18612e4642",
+            "observed_at": "2026-09-16T17:59:35.067Z",
+            "freshness_s": 1259182.213
+          },
+          {
+            "ref": "event:651237b1-e307-4a14-bc9f-eb2b5547eb68",
+            "observed_at": "2026-09-16T18:02:21.224Z",
+            "freshness_s": 1259016.056
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +207,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2639757.28,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "gima-bhadaba-d1",
+                  "next_episode_id": "gima-bhadaba-d1-s1e2",
+                  "last_play_at": "2026-09-16T17:59:35.067000Z",
+                  "sources": [
+                    {
+                      "ref": "event:20effb3f-cd0d-4936-9f7c-2d18612e4642",
+                      "observed_at": "2026-09-16T17:59:35.067Z"
+                    },
+                    {
+                      "ref": "event:651237b1-e307-4a14-bc9f-eb2b5547eb68",
+                      "observed_at": "2026-09-16T18:02:21.224Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:20effb3f-cd0d-4936-9f7c-2d18612e4642",
+              "event:651237b1-e307-4a14-bc9f-eb2b5547eb68"
+            ],
+            "observed_at": "2026-10-01T07:45:57.280000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:20effb3f-cd0d-4936-9f7c-2d18612e4642",
+                "observed_at": "2026-09-16T17:59:35.067Z",
+                "freshness_s": 1259182.213
+              },
+              {
+                "ref": "event:651237b1-e307-4a14-bc9f-eb2b5547eb68",
+                "observed_at": "2026-09-16T18:02:21.224Z",
+                "freshness_s": 1259016.056
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +254,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [

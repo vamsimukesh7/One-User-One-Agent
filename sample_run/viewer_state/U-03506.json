@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2645871.11,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "rigu-dhadi-d2",
+              "next_episode_id": "rigu-dhadi-d2-s1e2",
+              "last_play_at": "2026-09-15T17:47:15.290000Z",
+              "sources": [
+                {
+                  "ref": "event:a6b90a3f-da66-4e7b-818d-e877eb473ad3",
+                  "observed_at": "2026-09-15T17:47:15.290Z"
+                },
+                {
+                  "ref": "event:99666535-2358-421c-b985-5302a7392c7e",
+                  "observed_at": "2026-09-15T17:50:01.738Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:a6b90a3f-da66-4e7b-818d-e877eb473ad3",
+          "event:99666535-2358-421c-b985-5302a7392c7e"
+        ],
+        "observed_at": "2026-10-01T09:27:51.110000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:a6b90a3f-da66-4e7b-818d-e877eb473ad3",
+            "observed_at": "2026-09-15T17:47:15.290Z",
+            "freshness_s": 1352435.82
+          },
+          {
+            "ref": "event:99666535-2358-421c-b985-5302a7392c7e",
+            "observed_at": "2026-09-15T17:50:01.738Z",
+            "freshness_s": 1352269.372
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -75,6 +115,6 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy"
   ],
-  "state_updated_at": "2026-10-01T09:30:04.489Z",
+  "state_updated_at": "2026-10-01T09:30:04.489000Z",
   "plans": []
 }

@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2640300.823,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e2",
+              "last_play_at": "2026-09-24T04:20:24.421000Z",
+              "sources": [
+                {
+                  "ref": "event:095b7388-95e8-4ddc-9506-a2cc3770282a",
+                  "observed_at": "2026-09-24T04:20:24.421Z"
+                },
+                {
+                  "ref": "event:c73ffaf9-44d1-4f56-b451-c5ea5b82dca5",
+                  "observed_at": "2026-09-24T04:23:10.071Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:095b7388-95e8-4ddc-9506-a2cc3770282a",
+          "event:c73ffaf9-44d1-4f56-b451-c5ea5b82dca5"
+        ],
+        "observed_at": "2026-10-01T07:55:00.823000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:095b7388-95e8-4ddc-9506-a2cc3770282a",
+            "observed_at": "2026-09-24T04:20:24.421Z",
+            "freshness_s": 617676.402
+          },
+          {
+            "ref": "event:c73ffaf9-44d1-4f56-b451-c5ea5b82dca5",
+            "observed_at": "2026-09-24T04:23:10.071Z",
+            "freshness_s": 617510.752
+          }
+        ]
       }
     },
     "conflicts": [

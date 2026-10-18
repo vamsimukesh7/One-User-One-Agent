@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2667286.069,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bagugu-gigupi-d1",
+              "next_episode_id": "bagugu-gigupi-d1-s1e2",
+              "last_play_at": "2026-09-16T14:49:36.626000Z",
+              "sources": [
+                {
+                  "ref": "event:370020db-bf7d-43ec-8895-474bd5046848",
+                  "observed_at": "2026-09-16T14:49:36.626Z"
+                },
+                {
+                  "ref": "event:1b4a36d6-346f-4c87-8b76-170944b41bb3",
+                  "observed_at": "2026-09-16T15:30:03.846Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:370020db-bf7d-43ec-8895-474bd5046848",
+          "event:1b4a36d6-346f-4c87-8b76-170944b41bb3"
+        ],
+        "observed_at": "2026-10-01T15:24:46.069000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:370020db-bf7d-43ec-8895-474bd5046848",
+            "observed_at": "2026-09-16T14:49:36.626Z",
+            "freshness_s": 1298109.443
+          },
+          {
+            "ref": "event:1b4a36d6-346f-4c87-8b76-170944b41bb3",
+            "observed_at": "2026-09-16T15:30:03.846Z",
+            "freshness_s": 1295682.223
+          }
+        ]
       }
     },
     "conflicts": [],

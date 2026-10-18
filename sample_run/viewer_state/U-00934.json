@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2644797.536,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "dhapipa-gini-d2",
+              "next_episode_id": "dhapipa-gini-d2-s1e2",
+              "last_play_at": "2026-09-02T13:38:15.801000Z",
+              "sources": [
+                {
+                  "ref": "event:06d93fd6-4e61-49a9-98cb-1f613dd2d893",
+                  "observed_at": "2026-09-02T13:38:15.801Z"
+                },
+                {
+                  "ref": "event:5d2acb22-0638-4072-a685-f6a266abcc4f",
+                  "observed_at": "2026-09-02T13:41:03.574Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:06d93fd6-4e61-49a9-98cb-1f613dd2d893",
+          "event:5d2acb22-0638-4072-a685-f6a266abcc4f"
+        ],
+        "observed_at": "2026-10-01T09:09:57.536000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:06d93fd6-4e61-49a9-98cb-1f613dd2d893",
+            "observed_at": "2026-09-02T13:38:15.801Z",
+            "freshness_s": 2489501.735
+          },
+          {
+            "ref": "event:5d2acb22-0638-4072-a685-f6a266abcc4f",
+            "observed_at": "2026-09-02T13:41:03.574Z",
+            "freshness_s": 2489333.962
+          }
+        ]
       }
     },
     "conflicts": [],

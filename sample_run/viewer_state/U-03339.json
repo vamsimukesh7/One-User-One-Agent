@@ -67,6 +67,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2666733.96,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yalo-nipa-d1",
+              "next_episode_id": "yalo-nipa-d1-s1e1",
+              "last_play_at": "2026-09-06T10:33:24.972000Z",
+              "sources": [
+                {
+                  "ref": "event:56efa432-9393-4f0f-9277-f0a7f53c1701",
+                  "observed_at": "2026-09-06T10:33:24.972Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:56efa432-9393-4f0f-9277-f0a7f53c1701"
+        ],
+        "observed_at": "2026-10-01T15:15:33.960000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:56efa432-9393-4f0f-9277-f0a7f53c1701",
+            "observed_at": "2026-09-06T10:33:24.972Z",
+            "freshness_s": 2176928.988
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -169,6 +199,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2665451.65,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "yalo-nipa-d1",
+                  "next_episode_id": "yalo-nipa-d1-s1e1",
+                  "last_play_at": "2026-09-06T10:33:24.972000Z",
+                  "sources": [
+                    {
+                      "ref": "event:56efa432-9393-4f0f-9277-f0a7f53c1701",
+                      "observed_at": "2026-09-06T10:33:24.972Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:56efa432-9393-4f0f-9277-f0a7f53c1701"
+            ],
+            "observed_at": "2026-10-01T14:54:11.650000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:56efa432-9393-4f0f-9277-f0a7f53c1701",
+                "observed_at": "2026-09-06T10:33:24.972Z",
+                "freshness_s": 2175646.678
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -176,6 +236,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -197,16 +263,16 @@
           "window_hours": 336
         },
         "signal_refs": [
-          "event:oua-020895",
-          "event:oua-020903",
-          "event:oua-020909"
+          "event:oua-020894",
+          "event:oua-020902",
+          "event:oua-020908"
         ],
         "exposure_refs": [
-          "event:oua-020892",
-          "event:oua-020894"
+          "event:oua-020891",
+          "event:oua-020893"
         ],
         "associated_signal_refs": [
-          "event:oua-020895"
+          "event:oua-020894"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

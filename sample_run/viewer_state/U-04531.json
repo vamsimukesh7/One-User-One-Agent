@@ -61,6 +61,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2655917.332,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bagugu-gigupi-d1",
+              "next_episode_id": "bagugu-gigupi-d1-s1e2",
+              "last_play_at": "2026-09-20T21:00:54.265000Z",
+              "sources": [
+                {
+                  "ref": "event:6b744f72-ca27-4e65-ab0f-00616c53b716",
+                  "observed_at": "2026-09-11T19:05:36.127Z"
+                },
+                {
+                  "ref": "event:4725f263-e608-4595-8c9f-6a835b5f5b9d",
+                  "observed_at": "2026-09-11T19:46:04.468Z"
+                },
+                {
+                  "ref": "event:a4a6a8d6-bdab-4e7f-8bc3-ef1cea6aa9cd",
+                  "observed_at": "2026-09-20T21:00:54.265Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:6b744f72-ca27-4e65-ab0f-00616c53b716",
+          "event:4725f263-e608-4595-8c9f-6a835b5f5b9d",
+          "event:a4a6a8d6-bdab-4e7f-8bc3-ef1cea6aa9cd"
+        ],
+        "observed_at": "2026-10-01T12:15:17.332000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:6b744f72-ca27-4e65-ab0f-00616c53b716",
+            "observed_at": "2026-09-11T19:05:36.127Z",
+            "freshness_s": 1703381.205
+          },
+          {
+            "ref": "event:4725f263-e608-4595-8c9f-6a835b5f5b9d",
+            "observed_at": "2026-09-11T19:46:04.468Z",
+            "freshness_s": 1700952.864
+          },
+          {
+            "ref": "event:a4a6a8d6-bdab-4e7f-8bc3-ef1cea6aa9cd",
+            "observed_at": "2026-09-20T21:00:54.265Z",
+            "freshness_s": 918863.067
+          }
+        ]
       }
     },
     "conflicts": [

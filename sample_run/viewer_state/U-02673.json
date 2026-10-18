@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2645983.289,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "neya-kadhana-d2",
+              "next_episode_id": "neya-kadhana-d2-s1e2",
+              "last_play_at": "2026-09-17T17:29:22.478000Z",
+              "sources": [
+                {
+                  "ref": "event:62049c78-af83-4d3d-9c09-4e214072d8d1",
+                  "observed_at": "2026-09-17T17:29:22.478Z"
+                },
+                {
+                  "ref": "event:30afce68-d494-4dd2-a0fc-668129eeffb5",
+                  "observed_at": "2026-09-17T17:33:02.254Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:62049c78-af83-4d3d-9c09-4e214072d8d1",
+          "event:30afce68-d494-4dd2-a0fc-668129eeffb5"
+        ],
+        "observed_at": "2026-10-01T09:29:43.289000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:62049c78-af83-4d3d-9c09-4e214072d8d1",
+            "observed_at": "2026-09-17T17:29:22.478Z",
+            "freshness_s": 1180820.811
+          },
+          {
+            "ref": "event:30afce68-d494-4dd2-a0fc-668129eeffb5",
+            "observed_at": "2026-09-17T17:33:02.254Z",
+            "freshness_s": 1180601.035
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -75,7 +115,7 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G05",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -83,16 +123,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-02cb9afce383847c8116",
+      "plan_id": "P-024b7a3186982d1b0311",
       "user_id": "U-02673",
-      "goal_id": "G05",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T09:29:43.289000Z",
-      "deadline": "2026-10-08T09:29:43.289000Z",
+      "deadline": "2026-10-04T09:29:43.289000Z",
       "success": {
-        "event": "purchase_completed",
-        "condition": "is_trial = false",
-        "window_hours": 168
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "600f1f4a-5577-48c5-9e1f-49f40357d554",
@@ -156,6 +196,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2645983.289,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "neya-kadhana-d2",
+                  "next_episode_id": "neya-kadhana-d2-s1e2",
+                  "last_play_at": "2026-09-17T17:29:22.478000Z",
+                  "sources": [
+                    {
+                      "ref": "event:62049c78-af83-4d3d-9c09-4e214072d8d1",
+                      "observed_at": "2026-09-17T17:29:22.478Z"
+                    },
+                    {
+                      "ref": "event:30afce68-d494-4dd2-a0fc-668129eeffb5",
+                      "observed_at": "2026-09-17T17:33:02.254Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:62049c78-af83-4d3d-9c09-4e214072d8d1",
+              "event:30afce68-d494-4dd2-a0fc-668129eeffb5"
+            ],
+            "observed_at": "2026-10-01T09:29:43.289000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:62049c78-af83-4d3d-9c09-4e214072d8d1",
+                "observed_at": "2026-09-17T17:29:22.478Z",
+                "freshness_s": 1180820.811
+              },
+              {
+                "ref": "event:30afce68-d494-4dd2-a0fc-668129eeffb5",
+                "observed_at": "2026-09-17T17:33:02.254Z",
+                "freshness_s": 1180601.035
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -165,20 +245,25 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [],
+      "target_content_slug": "neya-kadhana-d2",
+      "next_episode_id": "neya-kadhana-d2-s1e2",
       "final_outcome": {
-        "plan_id": "P-02cb9afce383847c8116",
+        "plan_id": "P-024b7a3186982d1b0311",
         "user_id": "U-02673",
-        "goal_id": "G05",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T09:29:43.289000Z",
-        "deadline": "2026-10-08T09:29:43.289000Z",
+        "deadline": "2026-10-04T09:29:43.289000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "purchase_completed",
-          "condition": "is_trial = false",
-          "window_hours": 168
+          "event": "play_started",
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -186,7 +271,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T09:29:43.289000Z"
+      "closed_at": "2026-10-04T09:29:43.289000Z"
     }
   ]
 }

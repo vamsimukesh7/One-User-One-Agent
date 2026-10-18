@@ -67,6 +67,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2638699.308,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bagugu-gigupi-d1",
+              "next_episode_id": "bagugu-gigupi-d1-s1e1",
+              "last_play_at": "2026-09-17T15:32:18.435000Z",
+              "sources": [
+                {
+                  "ref": "event:c8c86bf7-6a10-42b1-a86d-8f216fc0160f",
+                  "observed_at": "2026-09-17T15:32:18.435Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e1",
+              "last_play_at": "2026-09-14T19:09:46.797000Z",
+              "sources": [
+                {
+                  "ref": "event:84b47328-87c4-4465-aca3-558e2e3cf047",
+                  "observed_at": "2026-09-14T19:09:46.797Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:c8c86bf7-6a10-42b1-a86d-8f216fc0160f",
+          "event:84b47328-87c4-4465-aca3-558e2e3cf047"
+        ],
+        "observed_at": "2026-10-01T07:28:19.308000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:c8c86bf7-6a10-42b1-a86d-8f216fc0160f",
+            "observed_at": "2026-09-17T15:32:18.435Z",
+            "freshness_s": 1180560.873
+          },
+          {
+            "ref": "event:84b47328-87c4-4465-aca3-558e2e3cf047",
+            "observed_at": "2026-09-14T19:09:46.797Z",
+            "freshness_s": 1426712.511
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +214,53 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2638699.308,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "bagugu-gigupi-d1",
+                  "next_episode_id": "bagugu-gigupi-d1-s1e1",
+                  "last_play_at": "2026-09-17T15:32:18.435000Z",
+                  "sources": [
+                    {
+                      "ref": "event:c8c86bf7-6a10-42b1-a86d-8f216fc0160f",
+                      "observed_at": "2026-09-17T15:32:18.435Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "hama-chudibha-d1",
+                  "next_episode_id": "hama-chudibha-d1-s1e1",
+                  "last_play_at": "2026-09-14T19:09:46.797000Z",
+                  "sources": [
+                    {
+                      "ref": "event:84b47328-87c4-4465-aca3-558e2e3cf047",
+                      "observed_at": "2026-09-14T19:09:46.797Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:c8c86bf7-6a10-42b1-a86d-8f216fc0160f",
+              "event:84b47328-87c4-4465-aca3-558e2e3cf047"
+            ],
+            "observed_at": "2026-10-01T07:28:19.308000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:c8c86bf7-6a10-42b1-a86d-8f216fc0160f",
+                "observed_at": "2026-09-17T15:32:18.435Z",
+                "freshness_s": 1180560.873
+              },
+              {
+                "ref": "event:84b47328-87c4-4465-aca3-558e2e3cf047",
+                "observed_at": "2026-09-14T19:09:46.797Z",
+                "freshness_s": 1426712.511
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +268,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -194,14 +294,14 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-001978",
-          "event:oua-001982"
+          "event:oua-001982",
+          "event:oua-001986"
         ],
         "exposure_refs": [
-          "event:oua-001977"
+          "event:oua-001981"
         ],
         "associated_signal_refs": [
-          "event:oua-001978"
+          "event:oua-001982"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

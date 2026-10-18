@@ -61,6 +61,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2666388.079,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "diti-kochu-d5",
+              "next_episode_id": "diti-kochu-d5-s1e2",
+              "last_play_at": "2026-09-19T16:24:10.263000Z",
+              "sources": [
+                {
+                  "ref": "event:75aab971-59c7-47d3-bf9c-2731486ab08e",
+                  "observed_at": "2026-09-16T03:52:20.404Z"
+                },
+                {
+                  "ref": "event:745d32f0-cebc-44a5-8731-4eecbf3ea8ec",
+                  "observed_at": "2026-09-16T03:56:00.198Z"
+                },
+                {
+                  "ref": "event:9686e219-a9c5-481f-9727-4e716b037110",
+                  "observed_at": "2026-09-19T16:24:10.263Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:75aab971-59c7-47d3-bf9c-2731486ab08e",
+          "event:745d32f0-cebc-44a5-8731-4eecbf3ea8ec",
+          "event:9686e219-a9c5-481f-9727-4e716b037110"
+        ],
+        "observed_at": "2026-10-01T15:09:48.079000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:75aab971-59c7-47d3-bf9c-2731486ab08e",
+            "observed_at": "2026-09-16T03:52:20.404Z",
+            "freshness_s": 1336647.675
+          },
+          {
+            "ref": "event:745d32f0-cebc-44a5-8731-4eecbf3ea8ec",
+            "observed_at": "2026-09-16T03:56:00.198Z",
+            "freshness_s": 1336427.881
+          },
+          {
+            "ref": "event:9686e219-a9c5-481f-9727-4e716b037110",
+            "observed_at": "2026-09-19T16:24:10.263Z",
+            "freshness_s": 1032337.816
+          }
+        ]
       }
     },
     "conflicts": [

@@ -1,3 +1,5 @@
+> Historical remediation snapshot. See [COMPLETION.md](COMPLETION.md) for the latest implementation and validation.
+
 # Audit remediation
 
 The follow-up audit found real defects. This revision corrects the following, with regression coverage in `tests/test_regressions.py` and the existing suite:

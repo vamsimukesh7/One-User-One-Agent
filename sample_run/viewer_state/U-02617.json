@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2650160.758,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "gima-bhadaba-d1",
+              "next_episode_id": "gima-bhadaba-d1-s1e2",
+              "last_play_at": "2026-09-28T08:45:34.099000Z",
+              "sources": [
+                {
+                  "ref": "event:9129b45e-13e6-4e2f-8923-45555188c88f",
+                  "observed_at": "2026-09-28T08:45:34.099Z"
+                },
+                {
+                  "ref": "event:29484b77-b416-476e-b9a3-bd0546d89d0f",
+                  "observed_at": "2026-09-28T08:48:21.488Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:9129b45e-13e6-4e2f-8923-45555188c88f",
+          "event:29484b77-b416-476e-b9a3-bd0546d89d0f"
+        ],
+        "observed_at": "2026-10-01T10:39:20.758000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:9129b45e-13e6-4e2f-8923-45555188c88f",
+            "observed_at": "2026-09-28T08:45:34.099Z",
+            "freshness_s": 266026.659
+          },
+          {
+            "ref": "event:29484b77-b416-476e-b9a3-bd0546d89d0f",
+            "observed_at": "2026-09-28T08:48:21.488Z",
+            "freshness_s": 265859.27
+          }
+        ]
       }
     },
     "conflicts": [],

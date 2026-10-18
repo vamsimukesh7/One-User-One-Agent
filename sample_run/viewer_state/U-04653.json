@@ -67,6 +67,18 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2628970.296,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": []
+        },
+        "source": [
+          "policy:series-reconciliation"
+        ],
+        "observed_at": "2026-10-01T04:46:10.296000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": []
       }
     },
     "conflicts": [],
@@ -87,7 +99,7 @@
       "lesson": "Do not equate publishing with seeing or observing success with causation."
     }
   ],
-  "state_updated_at": "2026-10-01T09:38:38.102Z",
+  "state_updated_at": "2026-10-01T09:38:38.102000Z",
   "plans": [
     {
       "plan_id": "P-48cecb2e323d9ed29345",
@@ -169,6 +181,18 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2628632.755,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": []
+            },
+            "source": [
+              "policy:series-reconciliation"
+            ],
+            "observed_at": "2026-10-01T04:40:32.755000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": []
           }
         },
         "conflicts": [],
@@ -176,6 +200,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -197,7 +227,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-028874"
+          "event:oua-028879"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

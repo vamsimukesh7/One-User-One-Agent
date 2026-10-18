@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2661214.462,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hapibha-d1",
+              "next_episode_id": "hapibha-d1-s1e1",
+              "last_play_at": "2026-09-13T17:26:37.975000Z",
+              "sources": [
+                {
+                  "ref": "event:14d491ee-a885-4451-93ca-cf255e3ae3c3",
+                  "observed_at": "2026-09-13T17:26:37.975Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:14d491ee-a885-4451-93ca-cf255e3ae3c3"
+        ],
+        "observed_at": "2026-10-01T13:43:34.462000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:14d491ee-a885-4451-93ca-cf255e3ae3c3",
+            "observed_at": "2026-09-13T17:26:37.975Z",
+            "freshness_s": 1541816.487
+          }
+        ]
       }
     },
     "conflicts": [],

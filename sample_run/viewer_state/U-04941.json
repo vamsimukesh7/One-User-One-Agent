@@ -67,6 +67,76 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2667494.462,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e3",
+              "last_play_at": "2026-09-23T12:40:12.057000Z",
+              "sources": [
+                {
+                  "ref": "event:3c9374ef-c55e-47be-88e2-38595ed12270",
+                  "observed_at": "2026-09-11T11:51:11.519Z"
+                },
+                {
+                  "ref": "event:7d29693c-5c68-4373-a463-835a8f4f5dfb",
+                  "observed_at": "2026-09-11T12:31:40.359Z"
+                },
+                {
+                  "ref": "event:c9a31812-9c1a-4a66-a962-5bf46094efa5",
+                  "observed_at": "2026-09-13T16:02:27.914Z"
+                },
+                {
+                  "ref": "event:7b0b145a-4a8f-428a-a938-07ce71900972",
+                  "observed_at": "2026-09-23T12:40:12.057Z"
+                },
+                {
+                  "ref": "event:5381e8c4-04e1-4c7e-86f7-86a2910dc97f",
+                  "observed_at": "2026-09-23T13:05:57.228Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:3c9374ef-c55e-47be-88e2-38595ed12270",
+          "event:7d29693c-5c68-4373-a463-835a8f4f5dfb",
+          "event:c9a31812-9c1a-4a66-a962-5bf46094efa5",
+          "event:7b0b145a-4a8f-428a-a938-07ce71900972",
+          "event:5381e8c4-04e1-4c7e-86f7-86a2910dc97f"
+        ],
+        "observed_at": "2026-10-01T15:28:14.462000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:3c9374ef-c55e-47be-88e2-38595ed12270",
+            "observed_at": "2026-09-11T11:51:11.519Z",
+            "freshness_s": 1741022.943
+          },
+          {
+            "ref": "event:7d29693c-5c68-4373-a463-835a8f4f5dfb",
+            "observed_at": "2026-09-11T12:31:40.359Z",
+            "freshness_s": 1738594.103
+          },
+          {
+            "ref": "event:c9a31812-9c1a-4a66-a962-5bf46094efa5",
+            "observed_at": "2026-09-13T16:02:27.914Z",
+            "freshness_s": 1553146.548
+          },
+          {
+            "ref": "event:7b0b145a-4a8f-428a-a938-07ce71900972",
+            "observed_at": "2026-09-23T12:40:12.057Z",
+            "freshness_s": 701282.405
+          },
+          {
+            "ref": "event:5381e8c4-04e1-4c7e-86f7-86a2910dc97f",
+            "observed_at": "2026-09-23T13:05:57.228Z",
+            "freshness_s": 699737.234
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -81,7 +151,7 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G08",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -89,16 +159,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-32767aec562d6f885825",
+      "plan_id": "P-8e79c6d50e2f5ad99823",
       "user_id": "U-04941",
-      "goal_id": "G08",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T15:28:14.462000Z",
-      "deadline": "2026-10-08T15:28:14.462000Z",
+      "deadline": "2026-10-04T15:28:14.462000Z",
       "success": {
         "event": "play_started",
-        "condition": "a title released in the 30 days before the goal start",
-        "window_hours": 168
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "a20c5000-e4ac-45fc-b4ee-a2633bef00e7",
@@ -168,6 +238,76 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2667494.462,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "molo-d2",
+                  "next_episode_id": "molo-d2-s1e3",
+                  "last_play_at": "2026-09-23T12:40:12.057000Z",
+                  "sources": [
+                    {
+                      "ref": "event:3c9374ef-c55e-47be-88e2-38595ed12270",
+                      "observed_at": "2026-09-11T11:51:11.519Z"
+                    },
+                    {
+                      "ref": "event:7d29693c-5c68-4373-a463-835a8f4f5dfb",
+                      "observed_at": "2026-09-11T12:31:40.359Z"
+                    },
+                    {
+                      "ref": "event:c9a31812-9c1a-4a66-a962-5bf46094efa5",
+                      "observed_at": "2026-09-13T16:02:27.914Z"
+                    },
+                    {
+                      "ref": "event:7b0b145a-4a8f-428a-a938-07ce71900972",
+                      "observed_at": "2026-09-23T12:40:12.057Z"
+                    },
+                    {
+                      "ref": "event:5381e8c4-04e1-4c7e-86f7-86a2910dc97f",
+                      "observed_at": "2026-09-23T13:05:57.228Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:3c9374ef-c55e-47be-88e2-38595ed12270",
+              "event:7d29693c-5c68-4373-a463-835a8f4f5dfb",
+              "event:c9a31812-9c1a-4a66-a962-5bf46094efa5",
+              "event:7b0b145a-4a8f-428a-a938-07ce71900972",
+              "event:5381e8c4-04e1-4c7e-86f7-86a2910dc97f"
+            ],
+            "observed_at": "2026-10-01T15:28:14.462000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:3c9374ef-c55e-47be-88e2-38595ed12270",
+                "observed_at": "2026-09-11T11:51:11.519Z",
+                "freshness_s": 1741022.943
+              },
+              {
+                "ref": "event:7d29693c-5c68-4373-a463-835a8f4f5dfb",
+                "observed_at": "2026-09-11T12:31:40.359Z",
+                "freshness_s": 1738594.103
+              },
+              {
+                "ref": "event:c9a31812-9c1a-4a66-a962-5bf46094efa5",
+                "observed_at": "2026-09-13T16:02:27.914Z",
+                "freshness_s": 1553146.548
+              },
+              {
+                "ref": "event:7b0b145a-4a8f-428a-a938-07ce71900972",
+                "observed_at": "2026-09-23T12:40:12.057Z",
+                "freshness_s": 701282.405
+              },
+              {
+                "ref": "event:5381e8c4-04e1-4c7e-86f7-86a2910dc97f",
+                "observed_at": "2026-09-23T13:05:57.228Z",
+                "freshness_s": 699737.234
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -177,32 +317,35 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [
         "A-c4aaa43d565d05d4c8e9"
       ],
+      "target_content_slug": "molo-d2",
+      "next_episode_id": "molo-d2-s1e3",
       "final_outcome": {
-        "plan_id": "P-32767aec562d6f885825",
+        "plan_id": "P-8e79c6d50e2f5ad99823",
         "user_id": "U-04941",
-        "goal_id": "G08",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T15:28:14.462000Z",
-        "deadline": "2026-10-08T15:28:14.462000Z",
+        "deadline": "2026-10-04T15:28:14.462000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
           "event": "play_started",
-          "condition": "a title released in the 30 days before the goal start",
-          "window_hours": 168
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
-        "exposure_refs": [
-          "event:oua-030932"
-        ],
+        "exposure_refs": [],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T15:28:14.462000Z"
+      "closed_at": "2026-10-04T15:28:14.462000Z"
     }
   ]
 }

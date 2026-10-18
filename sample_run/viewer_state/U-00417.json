@@ -67,6 +67,90 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2635288.36,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yatite-roloda-d3",
+              "next_episode_id": "yatite-roloda-d3-s1e2",
+              "last_play_at": "2026-09-27T13:43:54.542000Z",
+              "sources": [
+                {
+                  "ref": "event:59992ef6-c338-4d4a-a430-e3422a4933fd",
+                  "observed_at": "2026-09-27T13:43:54.542Z"
+                },
+                {
+                  "ref": "event:255088fd-d0ef-4065-9b9e-d139ceebf51b",
+                  "observed_at": "2026-09-27T13:47:36.475Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "haja-d3",
+              "next_episode_id": "haja-d3-s1e1",
+              "last_play_at": "2026-09-11T09:17:12.151000Z",
+              "sources": [
+                {
+                  "ref": "event:7805c221-a42c-4611-83b7-274ece2ea449",
+                  "observed_at": "2026-09-06T07:24:13.831Z"
+                },
+                {
+                  "ref": "event:d7211e8f-b836-4a24-b0fc-1789c3114dda",
+                  "observed_at": "2026-09-11T09:17:12.151Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "jakasa-dapi-d3",
+              "next_episode_id": "jakasa-dapi-d3-s1e1",
+              "last_play_at": "2026-09-06T03:31:43.261000Z",
+              "sources": [
+                {
+                  "ref": "event:23a31862-aaa1-4c69-a309-f3a477fc3de5",
+                  "observed_at": "2026-09-06T03:31:43.261Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:59992ef6-c338-4d4a-a430-e3422a4933fd",
+          "event:255088fd-d0ef-4065-9b9e-d139ceebf51b",
+          "event:7805c221-a42c-4611-83b7-274ece2ea449",
+          "event:d7211e8f-b836-4a24-b0fc-1789c3114dda",
+          "event:23a31862-aaa1-4c69-a309-f3a477fc3de5"
+        ],
+        "observed_at": "2026-10-01T06:31:28.360000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:59992ef6-c338-4d4a-a430-e3422a4933fd",
+            "observed_at": "2026-09-27T13:43:54.542Z",
+            "freshness_s": 319653.818
+          },
+          {
+            "ref": "event:255088fd-d0ef-4065-9b9e-d139ceebf51b",
+            "observed_at": "2026-09-27T13:47:36.475Z",
+            "freshness_s": 319431.885
+          },
+          {
+            "ref": "event:7805c221-a42c-4611-83b7-274ece2ea449",
+            "observed_at": "2026-09-06T07:24:13.831Z",
+            "freshness_s": 2156834.529
+          },
+          {
+            "ref": "event:d7211e8f-b836-4a24-b0fc-1789c3114dda",
+            "observed_at": "2026-09-11T09:17:12.151Z",
+            "freshness_s": 1718056.209
+          },
+          {
+            "ref": "event:23a31862-aaa1-4c69-a309-f3a477fc3de5",
+            "observed_at": "2026-09-06T03:31:43.261Z",
+            "freshness_s": 2170785.099
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -170,6 +254,90 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2604921.354,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "yatite-roloda-d3",
+                  "next_episode_id": "yatite-roloda-d3-s1e2",
+                  "last_play_at": "2026-09-27T13:43:54.542000Z",
+                  "sources": [
+                    {
+                      "ref": "event:59992ef6-c338-4d4a-a430-e3422a4933fd",
+                      "observed_at": "2026-09-27T13:43:54.542Z"
+                    },
+                    {
+                      "ref": "event:255088fd-d0ef-4065-9b9e-d139ceebf51b",
+                      "observed_at": "2026-09-27T13:47:36.475Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "haja-d3",
+                  "next_episode_id": "haja-d3-s1e1",
+                  "last_play_at": "2026-09-11T09:17:12.151000Z",
+                  "sources": [
+                    {
+                      "ref": "event:7805c221-a42c-4611-83b7-274ece2ea449",
+                      "observed_at": "2026-09-06T07:24:13.831Z"
+                    },
+                    {
+                      "ref": "event:d7211e8f-b836-4a24-b0fc-1789c3114dda",
+                      "observed_at": "2026-09-11T09:17:12.151Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "jakasa-dapi-d3",
+                  "next_episode_id": "jakasa-dapi-d3-s1e1",
+                  "last_play_at": "2026-09-06T03:31:43.261000Z",
+                  "sources": [
+                    {
+                      "ref": "event:23a31862-aaa1-4c69-a309-f3a477fc3de5",
+                      "observed_at": "2026-09-06T03:31:43.261Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:59992ef6-c338-4d4a-a430-e3422a4933fd",
+              "event:255088fd-d0ef-4065-9b9e-d139ceebf51b",
+              "event:7805c221-a42c-4611-83b7-274ece2ea449",
+              "event:d7211e8f-b836-4a24-b0fc-1789c3114dda",
+              "event:23a31862-aaa1-4c69-a309-f3a477fc3de5"
+            ],
+            "observed_at": "2026-09-30T22:05:21.354000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:59992ef6-c338-4d4a-a430-e3422a4933fd",
+                "observed_at": "2026-09-27T13:43:54.542Z",
+                "freshness_s": 289286.812
+              },
+              {
+                "ref": "event:255088fd-d0ef-4065-9b9e-d139ceebf51b",
+                "observed_at": "2026-09-27T13:47:36.475Z",
+                "freshness_s": 289064.879
+              },
+              {
+                "ref": "event:7805c221-a42c-4611-83b7-274ece2ea449",
+                "observed_at": "2026-09-06T07:24:13.831Z",
+                "freshness_s": 2126467.523
+              },
+              {
+                "ref": "event:d7211e8f-b836-4a24-b0fc-1789c3114dda",
+                "observed_at": "2026-09-11T09:17:12.151Z",
+                "freshness_s": 1687689.203
+              },
+              {
+                "ref": "event:23a31862-aaa1-4c69-a309-f3a477fc3de5",
+                "observed_at": "2026-09-06T03:31:43.261Z",
+                "freshness_s": 2140418.093
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -177,6 +345,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],
@@ -195,11 +369,11 @@
           "window_hours": 336
         },
         "signal_refs": [
-          "event:oua-002806",
           "event:oua-002811",
           "event:oua-002816",
-          "event:oua-002820",
-          "event:oua-002824"
+          "event:oua-002821",
+          "event:oua-002825",
+          "event:oua-002829"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

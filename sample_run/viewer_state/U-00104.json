@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2665816.899,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bhaja-moguba-d2",
+              "next_episode_id": "bhaja-moguba-d2-s1e2",
+              "last_play_at": "2026-09-07T16:14:13.557000Z",
+              "sources": [
+                {
+                  "ref": "event:11976caa-06de-4eb3-8a12-ea716d945475",
+                  "observed_at": "2026-09-07T16:14:13.557Z"
+                },
+                {
+                  "ref": "event:b48bf1a9-b297-4b94-9dbe-741a13459f6d",
+                  "observed_at": "2026-09-07T16:17:55.448Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:11976caa-06de-4eb3-8a12-ea716d945475",
+          "event:b48bf1a9-b297-4b94-9dbe-741a13459f6d"
+        ],
+        "observed_at": "2026-10-01T15:00:16.899000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:11976caa-06de-4eb3-8a12-ea716d945475",
+            "observed_at": "2026-09-07T16:14:13.557Z",
+            "freshness_s": 2069163.342
+          },
+          {
+            "ref": "event:b48bf1a9-b297-4b94-9dbe-741a13459f6d",
+            "observed_at": "2026-09-07T16:17:55.448Z",
+            "freshness_s": 2068941.451
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -155,6 +195,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2665816.899,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "bhaja-moguba-d2",
+                  "next_episode_id": "bhaja-moguba-d2-s1e2",
+                  "last_play_at": "2026-09-07T16:14:13.557000Z",
+                  "sources": [
+                    {
+                      "ref": "event:11976caa-06de-4eb3-8a12-ea716d945475",
+                      "observed_at": "2026-09-07T16:14:13.557Z"
+                    },
+                    {
+                      "ref": "event:b48bf1a9-b297-4b94-9dbe-741a13459f6d",
+                      "observed_at": "2026-09-07T16:17:55.448Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:11976caa-06de-4eb3-8a12-ea716d945475",
+              "event:b48bf1a9-b297-4b94-9dbe-741a13459f6d"
+            ],
+            "observed_at": "2026-10-01T15:00:16.899000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:11976caa-06de-4eb3-8a12-ea716d945475",
+                "observed_at": "2026-09-07T16:14:13.557Z",
+                "freshness_s": 2069163.342
+              },
+              {
+                "ref": "event:b48bf1a9-b297-4b94-9dbe-741a13459f6d",
+                "observed_at": "2026-09-07T16:17:55.448Z",
+                "freshness_s": 2068941.451
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -163,6 +243,9 @@
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
+      },
+      "eligibility_rule": {
+        "text": "No app_open in the 14 days before the trigger."
       },
       "actions": [
         "A-da88a298d1690e1ecf3c"
@@ -182,7 +265,7 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-000674"
+          "event:oua-000675"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

@@ -61,6 +61,66 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2675118.303,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e2",
+              "last_play_at": "2026-09-19T06:22:51.296000Z",
+              "sources": [
+                {
+                  "ref": "event:21f9c6e1-5a98-46b0-b59f-3983b32a4f23",
+                  "observed_at": "2026-09-05T12:48:57.680Z"
+                },
+                {
+                  "ref": "event:6355181e-01bd-4eeb-b18a-ac3cf2ab339a",
+                  "observed_at": "2026-09-05T16:00:37.293Z"
+                },
+                {
+                  "ref": "event:aa647cd2-ac35-4135-b804-9bd56fd5eddf",
+                  "observed_at": "2026-09-05T16:03:23.403Z"
+                },
+                {
+                  "ref": "event:ea3579c8-23bc-4b10-968f-cbf02dd5734c",
+                  "observed_at": "2026-09-19T06:22:51.296Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:21f9c6e1-5a98-46b0-b59f-3983b32a4f23",
+          "event:6355181e-01bd-4eeb-b18a-ac3cf2ab339a",
+          "event:aa647cd2-ac35-4135-b804-9bd56fd5eddf",
+          "event:ea3579c8-23bc-4b10-968f-cbf02dd5734c"
+        ],
+        "observed_at": "2026-10-01T17:35:18.303000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:21f9c6e1-5a98-46b0-b59f-3983b32a4f23",
+            "observed_at": "2026-09-05T12:48:57.680Z",
+            "freshness_s": 2263580.623
+          },
+          {
+            "ref": "event:6355181e-01bd-4eeb-b18a-ac3cf2ab339a",
+            "observed_at": "2026-09-05T16:00:37.293Z",
+            "freshness_s": 2252081.01
+          },
+          {
+            "ref": "event:aa647cd2-ac35-4135-b804-9bd56fd5eddf",
+            "observed_at": "2026-09-05T16:03:23.403Z",
+            "freshness_s": 2251914.9
+          },
+          {
+            "ref": "event:ea3579c8-23bc-4b10-968f-cbf02dd5734c",
+            "observed_at": "2026-09-19T06:22:51.296Z",
+            "freshness_s": 1077147.007
+          }
+        ]
       }
     },
     "conflicts": [
@@ -82,7 +142,7 @@
   "latest_decision_id": "D-0f83737f76f94dfc6cab",
   "learning": [
     {
-      "goal_id": "G05",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -90,16 +150,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-8510b59cc0d40b586bb3",
+      "plan_id": "P-67ef8c05e1a89f8ec223",
       "user_id": "U-03592",
-      "goal_id": "G05",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T13:17:53.719000Z",
-      "deadline": "2026-10-08T13:17:53.719000Z",
+      "deadline": "2026-10-04T13:17:53.719000Z",
       "success": {
-        "event": "purchase_completed",
-        "condition": "is_trial = false",
-        "window_hours": 168
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "a7dd6785-ee60-4778-b2be-3bdfbcdcea1e",
@@ -163,6 +223,66 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2659673.719,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "hama-chudibha-d1",
+                  "next_episode_id": "hama-chudibha-d1-s1e2",
+                  "last_play_at": "2026-09-19T06:22:51.296000Z",
+                  "sources": [
+                    {
+                      "ref": "event:21f9c6e1-5a98-46b0-b59f-3983b32a4f23",
+                      "observed_at": "2026-09-05T12:48:57.680Z"
+                    },
+                    {
+                      "ref": "event:6355181e-01bd-4eeb-b18a-ac3cf2ab339a",
+                      "observed_at": "2026-09-05T16:00:37.293Z"
+                    },
+                    {
+                      "ref": "event:aa647cd2-ac35-4135-b804-9bd56fd5eddf",
+                      "observed_at": "2026-09-05T16:03:23.403Z"
+                    },
+                    {
+                      "ref": "event:ea3579c8-23bc-4b10-968f-cbf02dd5734c",
+                      "observed_at": "2026-09-19T06:22:51.296Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:21f9c6e1-5a98-46b0-b59f-3983b32a4f23",
+              "event:6355181e-01bd-4eeb-b18a-ac3cf2ab339a",
+              "event:aa647cd2-ac35-4135-b804-9bd56fd5eddf",
+              "event:ea3579c8-23bc-4b10-968f-cbf02dd5734c"
+            ],
+            "observed_at": "2026-10-01T13:17:53.719000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:21f9c6e1-5a98-46b0-b59f-3983b32a4f23",
+                "observed_at": "2026-09-05T12:48:57.680Z",
+                "freshness_s": 2248136.039
+              },
+              {
+                "ref": "event:6355181e-01bd-4eeb-b18a-ac3cf2ab339a",
+                "observed_at": "2026-09-05T16:00:37.293Z",
+                "freshness_s": 2236636.426
+              },
+              {
+                "ref": "event:aa647cd2-ac35-4135-b804-9bd56fd5eddf",
+                "observed_at": "2026-09-05T16:03:23.403Z",
+                "freshness_s": 2236470.316
+              },
+              {
+                "ref": "event:ea3579c8-23bc-4b10-968f-cbf02dd5734c",
+                "observed_at": "2026-09-19T06:22:51.296Z",
+                "freshness_s": 1061702.423
+              }
+            ]
           }
         },
         "conflicts": [
@@ -187,35 +307,39 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [
         "A-d4c01d9d515793da5ffc",
         "A-dcbed504e40abb64fa98",
         "A-0f83737f76f94dfc6cab"
       ],
+      "target_content_slug": "hama-chudibha-d1",
+      "next_episode_id": "hama-chudibha-d1-s1e2",
       "final_outcome": {
-        "plan_id": "P-8510b59cc0d40b586bb3",
+        "plan_id": "P-67ef8c05e1a89f8ec223",
         "user_id": "U-03592",
-        "goal_id": "G05",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T13:17:53.719000Z",
-        "deadline": "2026-10-08T13:17:53.719000Z",
+        "deadline": "2026-10-04T13:17:53.719000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "purchase_completed",
-          "condition": "is_trial = false",
-          "window_hours": 168
+          "event": "play_started",
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-022487",
-          "event:oua-022492"
+          "event:oua-022491"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T13:17:53.719000Z"
+      "closed_at": "2026-10-04T13:17:53.719000Z"
     }
   ]
 }

@@ -61,6 +61,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2672095.421,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "dhapipa-gini-d2",
+              "next_episode_id": "dhapipa-gini-d2-s1e2",
+              "last_play_at": "2026-09-25T13:43:38.867000Z",
+              "sources": [
+                {
+                  "ref": "event:e746f6af-e4ff-4ad5-9e0e-97965ac89970",
+                  "observed_at": "2026-09-25T13:43:38.867Z"
+                },
+                {
+                  "ref": "event:9c5a86ff-ef10-41c1-b39f-df7e054c8d22",
+                  "observed_at": "2026-09-25T13:46:25.526Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e1",
+              "last_play_at": "2026-09-19T16:47:01.997000Z",
+              "sources": [
+                {
+                  "ref": "event:46273121-c079-49f1-a14b-2fab3452bd83",
+                  "observed_at": "2026-09-19T16:47:01.997Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:e746f6af-e4ff-4ad5-9e0e-97965ac89970",
+          "event:9c5a86ff-ef10-41c1-b39f-df7e054c8d22",
+          "event:46273121-c079-49f1-a14b-2fab3452bd83"
+        ],
+        "observed_at": "2026-10-01T16:44:55.421000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:e746f6af-e4ff-4ad5-9e0e-97965ac89970",
+            "observed_at": "2026-09-25T13:43:38.867Z",
+            "freshness_s": 529276.554
+          },
+          {
+            "ref": "event:9c5a86ff-ef10-41c1-b39f-df7e054c8d22",
+            "observed_at": "2026-09-25T13:46:25.526Z",
+            "freshness_s": 529109.895
+          },
+          {
+            "ref": "event:46273121-c079-49f1-a14b-2fab3452bd83",
+            "observed_at": "2026-09-19T16:47:01.997Z",
+            "freshness_s": 1036673.424
+          }
+        ]
       }
     },
     "conflicts": [

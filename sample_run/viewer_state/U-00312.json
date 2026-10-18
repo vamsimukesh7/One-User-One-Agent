@@ -61,6 +61,153 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2663663.834,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bagi-baya-d4",
+              "next_episode_id": "bagi-baya-d4-s1e6",
+              "last_play_at": "2026-09-21T03:14:57.889000Z",
+              "sources": [
+                {
+                  "ref": "event:5027bd94-2318-4a4c-9ec8-5b1726d16117",
+                  "observed_at": "2026-09-03T17:15:30.533Z"
+                },
+                {
+                  "ref": "event:c8d38b9b-ada8-488b-b67c-6f8cc7c7877a",
+                  "observed_at": "2026-09-03T17:19:13.655Z"
+                },
+                {
+                  "ref": "event:d5a9ed2c-ae65-40fa-aa04-15b08c70daf8",
+                  "observed_at": "2026-09-04T17:40:56.774Z"
+                },
+                {
+                  "ref": "event:26e70c4a-014d-4a9c-84d7-9cd5ca45dbf9",
+                  "observed_at": "2026-09-04T17:42:47.734Z"
+                },
+                {
+                  "ref": "event:61d3ac1a-19c4-4c86-8a9f-7a5eb9aed4d4",
+                  "observed_at": "2026-09-10T07:03:31.710Z"
+                },
+                {
+                  "ref": "event:7abeb3b8-0c7c-4409-b13a-78925066b4ce",
+                  "observed_at": "2026-09-14T12:28:59.988Z"
+                },
+                {
+                  "ref": "event:e8098181-fdfa-43b3-96d1-75ff75a19583",
+                  "observed_at": "2026-09-14T12:32:39.916Z"
+                },
+                {
+                  "ref": "event:ce14d2a6-c319-4c24-a879-d77b92f95d14",
+                  "observed_at": "2026-09-18T13:22:39.825Z"
+                },
+                {
+                  "ref": "event:5e59112e-200b-4c87-b439-d13a3767d5d3",
+                  "observed_at": "2026-09-18T13:25:26.015Z"
+                },
+                {
+                  "ref": "event:02fd9078-c142-4f25-88a3-caa6e6f2202f",
+                  "observed_at": "2026-09-26T13:48:09.882Z"
+                },
+                {
+                  "ref": "event:c0a553f8-bf03-42c3-8951-8a4a0e47b879",
+                  "observed_at": "2026-09-26T13:51:51.844Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "vapa-kalasa-d4",
+              "next_episode_id": "vapa-kalasa-d4-s1e1",
+              "last_play_at": "2026-09-09T09:49:33.382000Z",
+              "sources": [
+                {
+                  "ref": "event:b1b0efed-a97b-4bf2-ba38-cf2bf9c04fe3",
+                  "observed_at": "2026-09-09T09:49:33.382Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:5027bd94-2318-4a4c-9ec8-5b1726d16117",
+          "event:c8d38b9b-ada8-488b-b67c-6f8cc7c7877a",
+          "event:d5a9ed2c-ae65-40fa-aa04-15b08c70daf8",
+          "event:26e70c4a-014d-4a9c-84d7-9cd5ca45dbf9",
+          "event:61d3ac1a-19c4-4c86-8a9f-7a5eb9aed4d4",
+          "event:7abeb3b8-0c7c-4409-b13a-78925066b4ce",
+          "event:e8098181-fdfa-43b3-96d1-75ff75a19583",
+          "event:ce14d2a6-c319-4c24-a879-d77b92f95d14",
+          "event:5e59112e-200b-4c87-b439-d13a3767d5d3",
+          "event:02fd9078-c142-4f25-88a3-caa6e6f2202f",
+          "event:c0a553f8-bf03-42c3-8951-8a4a0e47b879",
+          "event:b1b0efed-a97b-4bf2-ba38-cf2bf9c04fe3"
+        ],
+        "observed_at": "2026-10-01T14:24:23.834000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:5027bd94-2318-4a4c-9ec8-5b1726d16117",
+            "observed_at": "2026-09-03T17:15:30.533Z",
+            "freshness_s": 2408933.301
+          },
+          {
+            "ref": "event:c8d38b9b-ada8-488b-b67c-6f8cc7c7877a",
+            "observed_at": "2026-09-03T17:19:13.655Z",
+            "freshness_s": 2408710.179
+          },
+          {
+            "ref": "event:d5a9ed2c-ae65-40fa-aa04-15b08c70daf8",
+            "observed_at": "2026-09-04T17:40:56.774Z",
+            "freshness_s": 2321007.06
+          },
+          {
+            "ref": "event:26e70c4a-014d-4a9c-84d7-9cd5ca45dbf9",
+            "observed_at": "2026-09-04T17:42:47.734Z",
+            "freshness_s": 2320896.1
+          },
+          {
+            "ref": "event:61d3ac1a-19c4-4c86-8a9f-7a5eb9aed4d4",
+            "observed_at": "2026-09-10T07:03:31.710Z",
+            "freshness_s": 1840852.124
+          },
+          {
+            "ref": "event:7abeb3b8-0c7c-4409-b13a-78925066b4ce",
+            "observed_at": "2026-09-14T12:28:59.988Z",
+            "freshness_s": 1475723.846
+          },
+          {
+            "ref": "event:e8098181-fdfa-43b3-96d1-75ff75a19583",
+            "observed_at": "2026-09-14T12:32:39.916Z",
+            "freshness_s": 1475503.918
+          },
+          {
+            "ref": "event:ce14d2a6-c319-4c24-a879-d77b92f95d14",
+            "observed_at": "2026-09-18T13:22:39.825Z",
+            "freshness_s": 1126904.009
+          },
+          {
+            "ref": "event:5e59112e-200b-4c87-b439-d13a3767d5d3",
+            "observed_at": "2026-09-18T13:25:26.015Z",
+            "freshness_s": 1126737.819
+          },
+          {
+            "ref": "event:02fd9078-c142-4f25-88a3-caa6e6f2202f",
+            "observed_at": "2026-09-26T13:48:09.882Z",
+            "freshness_s": 434173.952
+          },
+          {
+            "ref": "event:c0a553f8-bf03-42c3-8951-8a4a0e47b879",
+            "observed_at": "2026-09-26T13:51:51.844Z",
+            "freshness_s": 433951.99
+          },
+          {
+            "ref": "event:b1b0efed-a97b-4bf2-ba38-cf2bf9c04fe3",
+            "observed_at": "2026-09-09T09:49:33.382Z",
+            "freshness_s": 1917290.452
+          }
+        ]
       }
     },
     "conflicts": [],

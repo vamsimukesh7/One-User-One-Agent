@@ -61,6 +61,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2667063.487,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "haja-d3",
+              "next_episode_id": "haja-d3-s1e2",
+              "last_play_at": "2026-09-17T01:06:34.157000Z",
+              "sources": [
+                {
+                  "ref": "event:5cc3b260-36aa-4692-973b-678995de573c",
+                  "observed_at": "2026-09-25T16:10:45.873Z"
+                },
+                {
+                  "ref": "event:8aa060ca-4522-45b3-897e-56af397d3c48",
+                  "observed_at": "2026-09-25T16:13:31.192Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "yane-tegi-d3",
+              "next_episode_id": "yane-tegi-d3-s1e1",
+              "last_play_at": "2026-09-15T15:18:45.395000Z",
+              "sources": [
+                {
+                  "ref": "event:df4180ad-812b-44d3-82c4-0ab8d62c3436",
+                  "observed_at": "2026-09-20T11:56:14.598Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:5cc3b260-36aa-4692-973b-678995de573c",
+          "event:8aa060ca-4522-45b3-897e-56af397d3c48",
+          "event:df4180ad-812b-44d3-82c4-0ab8d62c3436"
+        ],
+        "observed_at": "2026-10-01T15:21:03.487000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:5cc3b260-36aa-4692-973b-678995de573c",
+            "observed_at": "2026-09-25T16:10:45.873Z",
+            "freshness_s": 515417.614
+          },
+          {
+            "ref": "event:8aa060ca-4522-45b3-897e-56af397d3c48",
+            "observed_at": "2026-09-25T16:13:31.192Z",
+            "freshness_s": 515252.295
+          },
+          {
+            "ref": "event:df4180ad-812b-44d3-82c4-0ab8d62c3436",
+            "observed_at": "2026-09-20T11:56:14.598Z",
+            "freshness_s": 962688.889
+          }
+        ]
       }
     },
     "conflicts": [
@@ -83,24 +140,24 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G12",
-      "result": "succeeded",
+      "goal_id": "G07",
+      "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
     }
   ],
   "plans": [
     {
-      "plan_id": "P-19761f8126f70240937b",
+      "plan_id": "P-9f5594ae9b499e02709a",
       "user_id": "U-00906",
-      "goal_id": "G12",
-      "status": "succeeded",
+      "goal_id": "G07",
+      "status": "failed",
       "started_at": "2026-10-01T15:21:03.487000Z",
-      "deadline": "2026-10-08T15:21:03.487000Z",
+      "deadline": "2026-10-04T15:21:03.487000Z",
       "success": {
         "event": "play_started",
-        "condition": "any title",
-        "window_hours": 168
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "fe9fa3cc-c4a8-4d9f-bb07-f22bd9301483",
@@ -164,6 +221,63 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2667063.487,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "haja-d3",
+                  "next_episode_id": "haja-d3-s1e2",
+                  "last_play_at": "2026-09-17T01:06:34.157000Z",
+                  "sources": [
+                    {
+                      "ref": "event:5cc3b260-36aa-4692-973b-678995de573c",
+                      "observed_at": "2026-09-25T16:10:45.873Z"
+                    },
+                    {
+                      "ref": "event:8aa060ca-4522-45b3-897e-56af397d3c48",
+                      "observed_at": "2026-09-25T16:13:31.192Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "yane-tegi-d3",
+                  "next_episode_id": "yane-tegi-d3-s1e1",
+                  "last_play_at": "2026-09-15T15:18:45.395000Z",
+                  "sources": [
+                    {
+                      "ref": "event:df4180ad-812b-44d3-82c4-0ab8d62c3436",
+                      "observed_at": "2026-09-20T11:56:14.598Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:5cc3b260-36aa-4692-973b-678995de573c",
+              "event:8aa060ca-4522-45b3-897e-56af397d3c48",
+              "event:df4180ad-812b-44d3-82c4-0ab8d62c3436"
+            ],
+            "observed_at": "2026-10-01T15:21:03.487000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:5cc3b260-36aa-4692-973b-678995de573c",
+                "observed_at": "2026-09-25T16:10:45.873Z",
+                "freshness_s": 515417.614
+              },
+              {
+                "ref": "event:8aa060ca-4522-45b3-897e-56af397d3c48",
+                "observed_at": "2026-09-25T16:13:31.192Z",
+                "freshness_s": 515252.295
+              },
+              {
+                "ref": "event:df4180ad-812b-44d3-82c4-0ab8d62c3436",
+                "observed_at": "2026-09-20T11:56:14.598Z",
+                "freshness_s": 962688.889
+              }
+            ]
           }
         },
         "conflicts": [
@@ -181,30 +295,33 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [],
+      "target_content_slug": "haja-d3",
+      "next_episode_id": "haja-d3-s1e2",
       "final_outcome": {
-        "plan_id": "P-19761f8126f70240937b",
+        "plan_id": "P-9f5594ae9b499e02709a",
         "user_id": "U-00906",
-        "goal_id": "G12",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T15:21:03.487000Z",
-        "deadline": "2026-10-08T15:21:03.487000Z",
-        "status": "succeeded",
-        "reason": "observed_success_signal_in_goal_window",
+        "deadline": "2026-10-04T15:21:03.487000Z",
+        "status": "failed",
+        "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
           "event": "play_started",
-          "condition": "any title",
-          "window_hours": 168
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
-        "signal_refs": [
-          "event:oua-006002"
-        ],
+        "signal_refs": [],
         "exposure_refs": [],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T15:21:03.487000Z"
+      "closed_at": "2026-10-04T15:21:03.487000Z"
     }
   ]
 }

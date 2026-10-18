@@ -5,17 +5,19 @@
     "primary_completion_72h": {
       "estimable": true,
       "treatment_n": 758,
-      "treatment_successes": 251,
-      "treatment_rate": 0.3311345646437995,
+      "treatment_successes": 250,
+      "treatment_rate": 0.32981530343007914,
       "holdout_n": 746,
       "holdout_successes": 234,
       "holdout_rate": 0.3136729222520107,
-      "risk_difference": 0.017461642391788768,
+      "risk_difference": 0.016142381178068432,
       "ci95": [
-        -0.02975558918352085,
-        0.06454102912987654
+        -0.03104710035090337,
+        0.06320216345868562
       ],
-      "censored": {}
+      "censored": {},
+      "missing_outcome_policy": "No event is negative only inside a mature, explicitly assumed complete observation window; incomplete windows are censored.",
+      "small_sample": false
     },
     "secondary_paid_7d": {
       "estimable": true,
@@ -30,7 +32,9 @@
         -0.030127278216371234,
         0.007271835479842791
       ],
-      "censored": {}
+      "censored": {},
+      "missing_outcome_policy": "No event is negative only inside a mature, explicitly assumed complete observation window; incomplete windows are censored.",
+      "small_sample": false
     }
   },
   "pilot_itt": {

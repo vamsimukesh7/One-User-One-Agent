@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2647923.714,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "radi-d4",
+              "next_episode_id": "radi-d4-s1e1",
+              "last_play_at": "2026-09-07T01:13:13.559000Z",
+              "sources": [
+                {
+                  "ref": "event:48b4b464-5056-4040-b66b-898232c423ec",
+                  "observed_at": "2026-09-07T01:13:13.559Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:48b4b464-5056-4040-b66b-898232c423ec"
+        ],
+        "observed_at": "2026-10-01T10:02:03.714000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:48b4b464-5056-4040-b66b-898232c423ec",
+            "observed_at": "2026-09-07T01:13:13.559Z",
+            "freshness_s": 2105330.155
+          }
+        ]
       }
     },
     "conflicts": [
@@ -85,6 +115,6 @@
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy"
   ],
-  "state_updated_at": "2026-10-01T10:23:39.631Z",
+  "state_updated_at": "2026-10-01T10:23:39.631000Z",
   "plans": []
 }

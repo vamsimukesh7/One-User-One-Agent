@@ -61,6 +61,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2654551.914,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e1",
+              "last_play_at": "2026-09-14T19:32:02.528000Z",
+              "sources": [
+                {
+                  "ref": "event:15deac76-7982-4416-9025-f003dcccee32",
+                  "observed_at": "2026-09-14T21:08:56.270Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "gune-halo-d1",
+              "next_episode_id": "gune-halo-d1-s1e1",
+              "last_play_at": "2026-09-11T14:28:59.619000Z",
+              "sources": [
+                {
+                  "ref": "event:ab1c0841-9af9-4c0f-a9b6-afebf2609333",
+                  "observed_at": "2026-09-11T14:28:59.619Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:15deac76-7982-4416-9025-f003dcccee32",
+          "event:ab1c0841-9af9-4c0f-a9b6-afebf2609333"
+        ],
+        "observed_at": "2026-10-01T11:52:31.914000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:15deac76-7982-4416-9025-f003dcccee32",
+            "observed_at": "2026-09-14T21:08:56.270Z",
+            "freshness_s": 1435415.644
+          },
+          {
+            "ref": "event:ab1c0841-9af9-4c0f-a9b6-afebf2609333",
+            "observed_at": "2026-09-11T14:28:59.619Z",
+            "freshness_s": 1718612.295
+          }
+        ]
       }
     },
     "conflicts": [

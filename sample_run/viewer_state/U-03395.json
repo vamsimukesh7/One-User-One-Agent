@@ -61,6 +61,73 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2670491.068,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "nimo-tima-d5",
+              "next_episode_id": "nimo-tima-d5-s1e2",
+              "last_play_at": "2026-09-24T14:48:52.932000Z",
+              "sources": [
+                {
+                  "ref": "event:6ba081a6-8df8-476d-a46f-7d812feef908",
+                  "observed_at": "2026-09-24T14:48:52.932Z"
+                },
+                {
+                  "ref": "event:618d9a0e-0da1-46b1-9b15-89a464896410",
+                  "observed_at": "2026-09-24T14:51:38.922Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "yaka-naka-d5",
+              "next_episode_id": "yaka-naka-d5-s1e2",
+              "last_play_at": "2026-09-12T10:18:07.515000Z",
+              "sources": [
+                {
+                  "ref": "event:3316a3be-21eb-45ab-a368-b41e7841cbcb",
+                  "observed_at": "2026-09-12T10:18:07.515Z"
+                },
+                {
+                  "ref": "event:4c07720b-84eb-44be-874c-1d0066b351f8",
+                  "observed_at": "2026-09-12T10:20:54.688Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:6ba081a6-8df8-476d-a46f-7d812feef908",
+          "event:618d9a0e-0da1-46b1-9b15-89a464896410",
+          "event:3316a3be-21eb-45ab-a368-b41e7841cbcb",
+          "event:4c07720b-84eb-44be-874c-1d0066b351f8"
+        ],
+        "observed_at": "2026-10-01T16:18:11.068000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:6ba081a6-8df8-476d-a46f-7d812feef908",
+            "observed_at": "2026-09-24T14:48:52.932Z",
+            "freshness_s": 610158.136
+          },
+          {
+            "ref": "event:618d9a0e-0da1-46b1-9b15-89a464896410",
+            "observed_at": "2026-09-24T14:51:38.922Z",
+            "freshness_s": 609992.146
+          },
+          {
+            "ref": "event:3316a3be-21eb-45ab-a368-b41e7841cbcb",
+            "observed_at": "2026-09-12T10:18:07.515Z",
+            "freshness_s": 1663203.553
+          },
+          {
+            "ref": "event:4c07720b-84eb-44be-874c-1d0066b351f8",
+            "observed_at": "2026-09-12T10:20:54.688Z",
+            "freshness_s": 1663036.38
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -75,7 +142,7 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G05",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -83,16 +150,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-14c64ad28a5776bc31ee",
+      "plan_id": "P-855c02f86dc6946ead88",
       "user_id": "U-03395",
-      "goal_id": "G05",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T16:18:11.068000Z",
-      "deadline": "2026-10-08T16:18:11.068000Z",
+      "deadline": "2026-10-04T16:18:11.068000Z",
       "success": {
-        "event": "purchase_completed",
-        "condition": "is_trial = false",
-        "window_hours": 168
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "41cd3cf7-215a-4d71-a54b-c4b449953dd7",
@@ -156,6 +223,73 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2670491.068,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "nimo-tima-d5",
+                  "next_episode_id": "nimo-tima-d5-s1e2",
+                  "last_play_at": "2026-09-24T14:48:52.932000Z",
+                  "sources": [
+                    {
+                      "ref": "event:6ba081a6-8df8-476d-a46f-7d812feef908",
+                      "observed_at": "2026-09-24T14:48:52.932Z"
+                    },
+                    {
+                      "ref": "event:618d9a0e-0da1-46b1-9b15-89a464896410",
+                      "observed_at": "2026-09-24T14:51:38.922Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "yaka-naka-d5",
+                  "next_episode_id": "yaka-naka-d5-s1e2",
+                  "last_play_at": "2026-09-12T10:18:07.515000Z",
+                  "sources": [
+                    {
+                      "ref": "event:3316a3be-21eb-45ab-a368-b41e7841cbcb",
+                      "observed_at": "2026-09-12T10:18:07.515Z"
+                    },
+                    {
+                      "ref": "event:4c07720b-84eb-44be-874c-1d0066b351f8",
+                      "observed_at": "2026-09-12T10:20:54.688Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:6ba081a6-8df8-476d-a46f-7d812feef908",
+              "event:618d9a0e-0da1-46b1-9b15-89a464896410",
+              "event:3316a3be-21eb-45ab-a368-b41e7841cbcb",
+              "event:4c07720b-84eb-44be-874c-1d0066b351f8"
+            ],
+            "observed_at": "2026-10-01T16:18:11.068000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:6ba081a6-8df8-476d-a46f-7d812feef908",
+                "observed_at": "2026-09-24T14:48:52.932Z",
+                "freshness_s": 610158.136
+              },
+              {
+                "ref": "event:618d9a0e-0da1-46b1-9b15-89a464896410",
+                "observed_at": "2026-09-24T14:51:38.922Z",
+                "freshness_s": 609992.146
+              },
+              {
+                "ref": "event:3316a3be-21eb-45ab-a368-b41e7841cbcb",
+                "observed_at": "2026-09-12T10:18:07.515Z",
+                "freshness_s": 1663203.553
+              },
+              {
+                "ref": "event:4c07720b-84eb-44be-874c-1d0066b351f8",
+                "observed_at": "2026-09-12T10:20:54.688Z",
+                "freshness_s": 1663036.38
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -165,20 +299,25 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [],
+      "target_content_slug": "nimo-tima-d5",
+      "next_episode_id": "nimo-tima-d5-s1e2",
       "final_outcome": {
-        "plan_id": "P-14c64ad28a5776bc31ee",
+        "plan_id": "P-855c02f86dc6946ead88",
         "user_id": "U-03395",
-        "goal_id": "G05",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T16:18:11.068000Z",
-        "deadline": "2026-10-08T16:18:11.068000Z",
+        "deadline": "2026-10-04T16:18:11.068000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "purchase_completed",
-          "condition": "is_trial = false",
-          "window_hours": 168
+          "event": "play_started",
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -186,7 +325,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T16:18:11.068000Z"
+      "closed_at": "2026-10-04T16:18:11.068000Z"
     }
   ]
 }

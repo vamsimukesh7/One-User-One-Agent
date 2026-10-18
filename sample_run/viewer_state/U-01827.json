@@ -67,6 +67,70 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2629062.013,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "gubava-gihaya-d5",
+              "next_episode_id": "gubava-gihaya-d5-s1e1",
+              "last_play_at": "2026-09-27T14:44:17.220000Z",
+              "sources": [
+                {
+                  "ref": "event:651c9890-e358-4d3a-b2e5-7cdee2632026",
+                  "observed_at": "2026-09-27T14:44:17.220Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "yaka-naka-d5",
+              "next_episode_id": "yaka-naka-d5-s1e1",
+              "last_play_at": "2026-09-22T12:44:56.658000Z",
+              "sources": [
+                {
+                  "ref": "event:ff85e2e8-2ae0-41eb-ac86-ec3af57b5e50",
+                  "observed_at": "2026-09-22T12:44:56.658Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "labha-pako-d5",
+              "next_episode_id": "labha-pako-d5-s1e1",
+              "last_play_at": "2026-09-11T23:36:09.514000Z",
+              "sources": [
+                {
+                  "ref": "event:80495d9a-f3b1-4195-bb49-0139ad586062",
+                  "observed_at": "2026-09-11T23:36:09.514Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:651c9890-e358-4d3a-b2e5-7cdee2632026",
+          "event:ff85e2e8-2ae0-41eb-ac86-ec3af57b5e50",
+          "event:80495d9a-f3b1-4195-bb49-0139ad586062"
+        ],
+        "observed_at": "2026-10-01T04:47:42.013000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:651c9890-e358-4d3a-b2e5-7cdee2632026",
+            "observed_at": "2026-09-27T14:44:17.220Z",
+            "freshness_s": 309804.793
+          },
+          {
+            "ref": "event:ff85e2e8-2ae0-41eb-ac86-ec3af57b5e50",
+            "observed_at": "2026-09-22T12:44:56.658Z",
+            "freshness_s": 748965.355
+          },
+          {
+            "ref": "event:80495d9a-f3b1-4195-bb49-0139ad586062",
+            "observed_at": "2026-09-11T23:36:09.514Z",
+            "freshness_s": 1660292.499
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +232,70 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2593673.24,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "gubava-gihaya-d5",
+                  "next_episode_id": "gubava-gihaya-d5-s1e1",
+                  "last_play_at": "2026-09-27T14:44:17.220000Z",
+                  "sources": [
+                    {
+                      "ref": "event:651c9890-e358-4d3a-b2e5-7cdee2632026",
+                      "observed_at": "2026-09-27T14:44:17.220Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "yaka-naka-d5",
+                  "next_episode_id": "yaka-naka-d5-s1e1",
+                  "last_play_at": "2026-09-22T12:44:56.658000Z",
+                  "sources": [
+                    {
+                      "ref": "event:ff85e2e8-2ae0-41eb-ac86-ec3af57b5e50",
+                      "observed_at": "2026-09-22T12:44:56.658Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "labha-pako-d5",
+                  "next_episode_id": "labha-pako-d5-s1e1",
+                  "last_play_at": "2026-09-11T23:36:09.514000Z",
+                  "sources": [
+                    {
+                      "ref": "event:80495d9a-f3b1-4195-bb49-0139ad586062",
+                      "observed_at": "2026-09-11T23:36:09.514Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:651c9890-e358-4d3a-b2e5-7cdee2632026",
+              "event:ff85e2e8-2ae0-41eb-ac86-ec3af57b5e50",
+              "event:80495d9a-f3b1-4195-bb49-0139ad586062"
+            ],
+            "observed_at": "2026-09-30T18:57:53.240000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:651c9890-e358-4d3a-b2e5-7cdee2632026",
+                "observed_at": "2026-09-27T14:44:17.220Z",
+                "freshness_s": 274416.02
+              },
+              {
+                "ref": "event:ff85e2e8-2ae0-41eb-ac86-ec3af57b5e50",
+                "observed_at": "2026-09-22T12:44:56.658Z",
+                "freshness_s": 713576.582
+              },
+              {
+                "ref": "event:80495d9a-f3b1-4195-bb49-0139ad586062",
+                "observed_at": "2026-09-11T23:36:09.514Z",
+                "freshness_s": 1624903.726
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +303,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -196,7 +330,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-012268"
+          "event:oua-012273"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

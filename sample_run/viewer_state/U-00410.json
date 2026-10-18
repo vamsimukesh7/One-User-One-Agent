@@ -67,6 +67,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2649330.017,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yane-tegi-d3",
+              "next_episode_id": "yane-tegi-d3-s1e1",
+              "last_play_at": "2026-09-11T05:18:47.671000Z",
+              "sources": [
+                {
+                  "ref": "event:1da41012-0d9c-425d-b3ed-a9a41ede5276",
+                  "observed_at": "2026-09-11T05:18:47.671Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:1da41012-0d9c-425d-b3ed-a9a41ede5276"
+        ],
+        "observed_at": "2026-10-01T10:25:30.017000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:1da41012-0d9c-425d-b3ed-a9a41ede5276",
+            "observed_at": "2026-09-11T05:18:47.671Z",
+            "freshness_s": 1746402.346
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +197,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2594899.136,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "yane-tegi-d3",
+                  "next_episode_id": "yane-tegi-d3-s1e1",
+                  "last_play_at": "2026-09-11T05:18:47.671000Z",
+                  "sources": [
+                    {
+                      "ref": "event:1da41012-0d9c-425d-b3ed-a9a41ede5276",
+                      "observed_at": "2026-09-11T05:18:47.671Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:1da41012-0d9c-425d-b3ed-a9a41ede5276"
+            ],
+            "observed_at": "2026-09-30T19:18:19.136000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:1da41012-0d9c-425d-b3ed-a9a41ede5276",
+                "observed_at": "2026-09-11T05:18:47.671Z",
+                "freshness_s": 1691971.465
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +234,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -195,17 +261,17 @@
           "window_hours": 336
         },
         "signal_refs": [
-          "event:oua-002723",
-          "event:oua-002726",
-          "event:oua-002729",
-          "event:oua-002734"
+          "event:oua-002728",
+          "event:oua-002731",
+          "event:oua-002734",
+          "event:oua-002739"
         ],
         "exposure_refs": [
-          "event:oua-002720",
-          "event:oua-002722"
+          "event:oua-002725",
+          "event:oua-002727"
         ],
         "associated_signal_refs": [
-          "event:oua-002723"
+          "event:oua-002728"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

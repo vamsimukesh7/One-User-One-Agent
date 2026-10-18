@@ -67,6 +67,93 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2665950.477,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yatite-roloda-d3",
+              "next_episode_id": "yatite-roloda-d3-s1e1",
+              "last_play_at": "2026-09-23T14:37:06.088000Z",
+              "sources": [
+                {
+                  "ref": "event:6601dc2c-aa47-43d1-ba80-a53b51295417",
+                  "observed_at": "2026-09-04T15:34:20.450Z"
+                },
+                {
+                  "ref": "event:f1e05833-96bb-45a0-834f-4fdd9ecc3abc",
+                  "observed_at": "2026-09-04T15:56:43.685Z"
+                },
+                {
+                  "ref": "event:c812f5a3-1bd9-4695-9fc4-535195081ddb",
+                  "observed_at": "2026-09-09T08:48:49.281Z"
+                },
+                {
+                  "ref": "event:302000b5-c9a6-40b9-9f27-7cb5c74095e0",
+                  "observed_at": "2026-09-21T06:59:53.995Z"
+                },
+                {
+                  "ref": "event:2c20e4cd-da52-4c92-82e1-8d678dd2ec64",
+                  "observed_at": "2026-09-23T14:37:06.088Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "yane-tegi-d3",
+              "next_episode_id": "yane-tegi-d3-s1e1",
+              "last_play_at": "2026-09-08T13:24:18.827000Z",
+              "sources": [
+                {
+                  "ref": "event:0a44e546-251e-4909-960b-559048e075f5",
+                  "observed_at": "2026-09-08T13:24:18.827Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:6601dc2c-aa47-43d1-ba80-a53b51295417",
+          "event:f1e05833-96bb-45a0-834f-4fdd9ecc3abc",
+          "event:c812f5a3-1bd9-4695-9fc4-535195081ddb",
+          "event:302000b5-c9a6-40b9-9f27-7cb5c74095e0",
+          "event:2c20e4cd-da52-4c92-82e1-8d678dd2ec64",
+          "event:0a44e546-251e-4909-960b-559048e075f5"
+        ],
+        "observed_at": "2026-10-01T15:02:30.477000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:6601dc2c-aa47-43d1-ba80-a53b51295417",
+            "observed_at": "2026-09-04T15:34:20.450Z",
+            "freshness_s": 2330890.027
+          },
+          {
+            "ref": "event:f1e05833-96bb-45a0-834f-4fdd9ecc3abc",
+            "observed_at": "2026-09-04T15:56:43.685Z",
+            "freshness_s": 2329546.792
+          },
+          {
+            "ref": "event:c812f5a3-1bd9-4695-9fc4-535195081ddb",
+            "observed_at": "2026-09-09T08:48:49.281Z",
+            "freshness_s": 1923221.196
+          },
+          {
+            "ref": "event:302000b5-c9a6-40b9-9f27-7cb5c74095e0",
+            "observed_at": "2026-09-21T06:59:53.995Z",
+            "freshness_s": 892956.482
+          },
+          {
+            "ref": "event:2c20e4cd-da52-4c92-82e1-8d678dd2ec64",
+            "observed_at": "2026-09-23T14:37:06.088Z",
+            "freshness_s": 692724.389
+          },
+          {
+            "ref": "event:0a44e546-251e-4909-960b-559048e075f5",
+            "observed_at": "2026-09-08T13:24:18.827Z",
+            "freshness_s": 1993091.65
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -169,6 +256,93 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2665950.477,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "yatite-roloda-d3",
+                  "next_episode_id": "yatite-roloda-d3-s1e1",
+                  "last_play_at": "2026-09-23T14:37:06.088000Z",
+                  "sources": [
+                    {
+                      "ref": "event:6601dc2c-aa47-43d1-ba80-a53b51295417",
+                      "observed_at": "2026-09-04T15:34:20.450Z"
+                    },
+                    {
+                      "ref": "event:f1e05833-96bb-45a0-834f-4fdd9ecc3abc",
+                      "observed_at": "2026-09-04T15:56:43.685Z"
+                    },
+                    {
+                      "ref": "event:c812f5a3-1bd9-4695-9fc4-535195081ddb",
+                      "observed_at": "2026-09-09T08:48:49.281Z"
+                    },
+                    {
+                      "ref": "event:302000b5-c9a6-40b9-9f27-7cb5c74095e0",
+                      "observed_at": "2026-09-21T06:59:53.995Z"
+                    },
+                    {
+                      "ref": "event:2c20e4cd-da52-4c92-82e1-8d678dd2ec64",
+                      "observed_at": "2026-09-23T14:37:06.088Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "yane-tegi-d3",
+                  "next_episode_id": "yane-tegi-d3-s1e1",
+                  "last_play_at": "2026-09-08T13:24:18.827000Z",
+                  "sources": [
+                    {
+                      "ref": "event:0a44e546-251e-4909-960b-559048e075f5",
+                      "observed_at": "2026-09-08T13:24:18.827Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:6601dc2c-aa47-43d1-ba80-a53b51295417",
+              "event:f1e05833-96bb-45a0-834f-4fdd9ecc3abc",
+              "event:c812f5a3-1bd9-4695-9fc4-535195081ddb",
+              "event:302000b5-c9a6-40b9-9f27-7cb5c74095e0",
+              "event:2c20e4cd-da52-4c92-82e1-8d678dd2ec64",
+              "event:0a44e546-251e-4909-960b-559048e075f5"
+            ],
+            "observed_at": "2026-10-01T15:02:30.477000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:6601dc2c-aa47-43d1-ba80-a53b51295417",
+                "observed_at": "2026-09-04T15:34:20.450Z",
+                "freshness_s": 2330890.027
+              },
+              {
+                "ref": "event:f1e05833-96bb-45a0-834f-4fdd9ecc3abc",
+                "observed_at": "2026-09-04T15:56:43.685Z",
+                "freshness_s": 2329546.792
+              },
+              {
+                "ref": "event:c812f5a3-1bd9-4695-9fc4-535195081ddb",
+                "observed_at": "2026-09-09T08:48:49.281Z",
+                "freshness_s": 1923221.196
+              },
+              {
+                "ref": "event:302000b5-c9a6-40b9-9f27-7cb5c74095e0",
+                "observed_at": "2026-09-21T06:59:53.995Z",
+                "freshness_s": 892956.482
+              },
+              {
+                "ref": "event:2c20e4cd-da52-4c92-82e1-8d678dd2ec64",
+                "observed_at": "2026-09-23T14:37:06.088Z",
+                "freshness_s": 692724.389
+              },
+              {
+                "ref": "event:0a44e546-251e-4909-960b-559048e075f5",
+                "observed_at": "2026-09-08T13:24:18.827Z",
+                "freshness_s": 1993091.65
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -176,6 +350,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],
@@ -194,8 +374,8 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-008883",
-          "event:oua-008886"
+          "event:oua-008885",
+          "event:oua-008888"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

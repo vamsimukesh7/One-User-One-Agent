@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2666569.243,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e2",
+              "last_play_at": "2026-09-17T08:49:59.126000Z",
+              "sources": [
+                {
+                  "ref": "event:f65c6465-30c4-4d36-afa8-f9e51469238b",
+                  "observed_at": "2026-09-17T08:49:59.126Z"
+                },
+                {
+                  "ref": "event:b5c31fbc-077b-4fcf-b577-461594539b90",
+                  "observed_at": "2026-09-17T09:30:27.182Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:f65c6465-30c4-4d36-afa8-f9e51469238b",
+          "event:b5c31fbc-077b-4fcf-b577-461594539b90"
+        ],
+        "observed_at": "2026-10-01T15:12:49.243000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:f65c6465-30c4-4d36-afa8-f9e51469238b",
+            "observed_at": "2026-09-17T08:49:59.126Z",
+            "freshness_s": 1232570.117
+          },
+          {
+            "ref": "event:b5c31fbc-077b-4fcf-b577-461594539b90",
+            "observed_at": "2026-09-17T09:30:27.182Z",
+            "freshness_s": 1230142.061
+          }
+        ]
       }
     },
     "conflicts": [
@@ -164,6 +204,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2666569.243,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "molo-d2",
+                  "next_episode_id": "molo-d2-s1e2",
+                  "last_play_at": "2026-09-17T08:49:59.126000Z",
+                  "sources": [
+                    {
+                      "ref": "event:f65c6465-30c4-4d36-afa8-f9e51469238b",
+                      "observed_at": "2026-09-17T08:49:59.126Z"
+                    },
+                    {
+                      "ref": "event:b5c31fbc-077b-4fcf-b577-461594539b90",
+                      "observed_at": "2026-09-17T09:30:27.182Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:f65c6465-30c4-4d36-afa8-f9e51469238b",
+              "event:b5c31fbc-077b-4fcf-b577-461594539b90"
+            ],
+            "observed_at": "2026-10-01T15:12:49.243000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:f65c6465-30c4-4d36-afa8-f9e51469238b",
+                "observed_at": "2026-09-17T08:49:59.126Z",
+                "freshness_s": 1232570.117
+              },
+              {
+                "ref": "event:b5c31fbc-077b-4fcf-b577-461594539b90",
+                "observed_at": "2026-09-17T09:30:27.182Z",
+                "freshness_s": 1230142.061
+              }
+            ]
           }
         },
         "conflicts": [
@@ -181,6 +261,9 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "No app_open in the 14 days before the trigger."
+      },
       "actions": [],
       "final_outcome": {
         "plan_id": "P-2bf5a72715366f4d1d30",
@@ -197,8 +280,8 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-018152",
-          "event:oua-018155"
+          "event:oua-018151",
+          "event:oua-018154"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

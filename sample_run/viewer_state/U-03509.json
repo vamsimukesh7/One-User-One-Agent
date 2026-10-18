@@ -67,6 +67,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2644515.031,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yaka-naka-d5",
+              "next_episode_id": "yaka-naka-d5-s1e2",
+              "last_play_at": "2026-09-27T15:47:16.210000Z",
+              "sources": [
+                {
+                  "ref": "event:8a7150bd-322b-475e-933e-9838a2d96c0a",
+                  "observed_at": "2026-09-27T15:47:16.210Z"
+                },
+                {
+                  "ref": "event:9f988452-4ca0-4d19-9e7a-b89e653521e8",
+                  "observed_at": "2026-09-27T15:50:02.017Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "yahabha-d5",
+              "next_episode_id": "yahabha-d5-s1e1",
+              "last_play_at": "2026-09-10T12:06:40.583000Z",
+              "sources": [
+                {
+                  "ref": "event:698c644d-1a93-4267-8fe5-306aa08cb996",
+                  "observed_at": "2026-09-10T12:06:40.583Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:8a7150bd-322b-475e-933e-9838a2d96c0a",
+          "event:9f988452-4ca0-4d19-9e7a-b89e653521e8",
+          "event:698c644d-1a93-4267-8fe5-306aa08cb996"
+        ],
+        "observed_at": "2026-10-01T09:05:15.031000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:8a7150bd-322b-475e-933e-9838a2d96c0a",
+            "observed_at": "2026-09-27T15:47:16.210Z",
+            "freshness_s": 321478.821
+          },
+          {
+            "ref": "event:9f988452-4ca0-4d19-9e7a-b89e653521e8",
+            "observed_at": "2026-09-27T15:50:02.017Z",
+            "freshness_s": 321313.014
+          },
+          {
+            "ref": "event:698c644d-1a93-4267-8fe5-306aa08cb996",
+            "observed_at": "2026-09-10T12:06:40.583Z",
+            "freshness_s": 1803514.448
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +224,63 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2644515.031,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "yaka-naka-d5",
+                  "next_episode_id": "yaka-naka-d5-s1e2",
+                  "last_play_at": "2026-09-27T15:47:16.210000Z",
+                  "sources": [
+                    {
+                      "ref": "event:8a7150bd-322b-475e-933e-9838a2d96c0a",
+                      "observed_at": "2026-09-27T15:47:16.210Z"
+                    },
+                    {
+                      "ref": "event:9f988452-4ca0-4d19-9e7a-b89e653521e8",
+                      "observed_at": "2026-09-27T15:50:02.017Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "yahabha-d5",
+                  "next_episode_id": "yahabha-d5-s1e1",
+                  "last_play_at": "2026-09-10T12:06:40.583000Z",
+                  "sources": [
+                    {
+                      "ref": "event:698c644d-1a93-4267-8fe5-306aa08cb996",
+                      "observed_at": "2026-09-10T12:06:40.583Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:8a7150bd-322b-475e-933e-9838a2d96c0a",
+              "event:9f988452-4ca0-4d19-9e7a-b89e653521e8",
+              "event:698c644d-1a93-4267-8fe5-306aa08cb996"
+            ],
+            "observed_at": "2026-10-01T09:05:15.031000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:8a7150bd-322b-475e-933e-9838a2d96c0a",
+                "observed_at": "2026-09-27T15:47:16.210Z",
+                "freshness_s": 321478.821
+              },
+              {
+                "ref": "event:9f988452-4ca0-4d19-9e7a-b89e653521e8",
+                "observed_at": "2026-09-27T15:50:02.017Z",
+                "freshness_s": 321313.014
+              },
+              {
+                "ref": "event:698c644d-1a93-4267-8fe5-306aa08cb996",
+                "observed_at": "2026-09-10T12:06:40.583Z",
+                "freshness_s": 1803514.448
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +288,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -194,15 +314,15 @@
           "window_hours": 336
         },
         "signal_refs": [
-          "event:oua-022012",
-          "event:oua-022019",
-          "event:oua-022022"
+          "event:oua-022011",
+          "event:oua-022018",
+          "event:oua-022021"
         ],
         "exposure_refs": [
-          "event:oua-022011"
+          "event:oua-022010"
         ],
         "associated_signal_refs": [
-          "event:oua-022012"
+          "event:oua-022011"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

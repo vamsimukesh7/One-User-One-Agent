@@ -61,6 +61,66 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2644335.758,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "tidha-dakachu-d1",
+              "next_episode_id": "tidha-dakachu-d1-s1e3",
+              "last_play_at": "2026-09-18T04:00:04.714000Z",
+              "sources": [
+                {
+                  "ref": "event:d54bf761-40b6-4eeb-95b2-aad839d4f02f",
+                  "observed_at": "2026-09-04T17:08:05.778Z"
+                },
+                {
+                  "ref": "event:ad24a19e-c32b-46ba-9bf0-29aea4d37ca5",
+                  "observed_at": "2026-09-04T17:33:50.271Z"
+                },
+                {
+                  "ref": "event:de345d20-7b0d-469d-8cdd-d7892d3309a0",
+                  "observed_at": "2026-09-18T04:00:04.714Z"
+                },
+                {
+                  "ref": "event:8bb736ee-0abb-40cb-b088-45f0b26fd8aa",
+                  "observed_at": "2026-09-18T04:21:16.423Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:d54bf761-40b6-4eeb-95b2-aad839d4f02f",
+          "event:ad24a19e-c32b-46ba-9bf0-29aea4d37ca5",
+          "event:de345d20-7b0d-469d-8cdd-d7892d3309a0",
+          "event:8bb736ee-0abb-40cb-b088-45f0b26fd8aa"
+        ],
+        "observed_at": "2026-10-01T09:02:15.758000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:d54bf761-40b6-4eeb-95b2-aad839d4f02f",
+            "observed_at": "2026-09-04T17:08:05.778Z",
+            "freshness_s": 2303649.98
+          },
+          {
+            "ref": "event:ad24a19e-c32b-46ba-9bf0-29aea4d37ca5",
+            "observed_at": "2026-09-04T17:33:50.271Z",
+            "freshness_s": 2302105.487
+          },
+          {
+            "ref": "event:de345d20-7b0d-469d-8cdd-d7892d3309a0",
+            "observed_at": "2026-09-18T04:00:04.714Z",
+            "freshness_s": 1141331.044
+          },
+          {
+            "ref": "event:8bb736ee-0abb-40cb-b088-45f0b26fd8aa",
+            "observed_at": "2026-09-18T04:21:16.423Z",
+            "freshness_s": 1140059.335
+          }
+        ]
       }
     },
     "conflicts": [],

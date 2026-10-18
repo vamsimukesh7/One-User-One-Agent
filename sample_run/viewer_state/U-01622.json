@@ -67,6 +67,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2646937.134,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hapibha-d1",
+              "next_episode_id": "hapibha-d1-s1e2",
+              "last_play_at": "2026-09-23T15:35:09.940000Z",
+              "sources": [
+                {
+                  "ref": "event:47efdb85-bd38-475e-8579-e5122f8d0e8a",
+                  "observed_at": "2026-09-15T09:49:12.318Z"
+                },
+                {
+                  "ref": "event:db97a2de-03c6-4468-8eb1-b7761010edab",
+                  "observed_at": "2026-09-15T09:51:59.259Z"
+                },
+                {
+                  "ref": "event:1cae27cb-2ca6-431e-bf4b-634fe3dc840a",
+                  "observed_at": "2026-09-23T15:35:09.940Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:47efdb85-bd38-475e-8579-e5122f8d0e8a",
+          "event:db97a2de-03c6-4468-8eb1-b7761010edab",
+          "event:1cae27cb-2ca6-431e-bf4b-634fe3dc840a"
+        ],
+        "observed_at": "2026-10-01T09:45:37.134000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:47efdb85-bd38-475e-8579-e5122f8d0e8a",
+            "observed_at": "2026-09-15T09:49:12.318Z",
+            "freshness_s": 1382184.816
+          },
+          {
+            "ref": "event:db97a2de-03c6-4468-8eb1-b7761010edab",
+            "observed_at": "2026-09-15T09:51:59.259Z",
+            "freshness_s": 1382017.875
+          },
+          {
+            "ref": "event:1cae27cb-2ca6-431e-bf4b-634fe3dc840a",
+            "observed_at": "2026-09-23T15:35:09.940Z",
+            "freshness_s": 670227.194
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +218,56 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2646937.134,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "hapibha-d1",
+                  "next_episode_id": "hapibha-d1-s1e2",
+                  "last_play_at": "2026-09-23T15:35:09.940000Z",
+                  "sources": [
+                    {
+                      "ref": "event:47efdb85-bd38-475e-8579-e5122f8d0e8a",
+                      "observed_at": "2026-09-15T09:49:12.318Z"
+                    },
+                    {
+                      "ref": "event:db97a2de-03c6-4468-8eb1-b7761010edab",
+                      "observed_at": "2026-09-15T09:51:59.259Z"
+                    },
+                    {
+                      "ref": "event:1cae27cb-2ca6-431e-bf4b-634fe3dc840a",
+                      "observed_at": "2026-09-23T15:35:09.940Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:47efdb85-bd38-475e-8579-e5122f8d0e8a",
+              "event:db97a2de-03c6-4468-8eb1-b7761010edab",
+              "event:1cae27cb-2ca6-431e-bf4b-634fe3dc840a"
+            ],
+            "observed_at": "2026-10-01T09:45:37.134000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:47efdb85-bd38-475e-8579-e5122f8d0e8a",
+                "observed_at": "2026-09-15T09:49:12.318Z",
+                "freshness_s": 1382184.816
+              },
+              {
+                "ref": "event:db97a2de-03c6-4468-8eb1-b7761010edab",
+                "observed_at": "2026-09-15T09:51:59.259Z",
+                "freshness_s": 1382017.875
+              },
+              {
+                "ref": "event:1cae27cb-2ca6-431e-bf4b-634fe3dc840a",
+                "observed_at": "2026-09-23T15:35:09.940Z",
+                "freshness_s": 670227.194
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +275,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

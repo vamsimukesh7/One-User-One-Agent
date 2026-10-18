@@ -61,6 +61,18 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2675975.39,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": []
+        },
+        "source": [
+          "policy:series-reconciliation"
+        ],
+        "observed_at": "2026-10-01T17:49:35.390000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": []
       }
     },
     "conflicts": [],
@@ -157,6 +169,18 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2667625.991,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": []
+            },
+            "source": [
+              "policy:series-reconciliation"
+            ],
+            "observed_at": "2026-10-01T15:30:25.991000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": []
           }
         },
         "conflicts": [
@@ -173,6 +197,9 @@
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
+      },
+      "eligibility_rule": {
+        "text": "No app_open in the 14 days before the trigger."
       },
       "actions": [
         "A-d3da6bf160a074c9f2f3",
@@ -195,9 +222,9 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-012835",
-          "event:oua-012837",
-          "event:oua-012839"
+          "event:oua-012839",
+          "event:oua-012841",
+          "event:oua-012843"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

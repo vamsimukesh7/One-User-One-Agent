@@ -61,6 +61,116 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2665934.167,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e5",
+              "last_play_at": "2026-09-25T13:27:08.624000Z",
+              "sources": [
+                {
+                  "ref": "event:14d9966e-c540-4b91-8633-0972fdfa583a",
+                  "observed_at": "2026-09-17T14:39:12.344Z"
+                },
+                {
+                  "ref": "event:14aed3f7-5f34-4fa9-a303-30b3cb9a77e8",
+                  "observed_at": "2026-09-17T15:19:42.121Z"
+                },
+                {
+                  "ref": "event:e49d2400-1a02-43d0-926d-243d1966a201",
+                  "observed_at": "2026-09-19T14:05:22.642Z"
+                },
+                {
+                  "ref": "event:ecfecefa-a652-4904-afee-16ced0290a0b",
+                  "observed_at": "2026-09-19T14:31:10.561Z"
+                },
+                {
+                  "ref": "event:2e5f9976-bb02-465f-9b93-5c0fdcfb00c6",
+                  "observed_at": "2026-09-22T08:13:30.313Z"
+                },
+                {
+                  "ref": "event:aff44d6f-fc37-4a4f-82a8-0d2cc7ec0655",
+                  "observed_at": "2026-09-22T08:42:56.949Z"
+                },
+                {
+                  "ref": "event:1a1c497a-368b-4780-adff-15c727119b4a",
+                  "observed_at": "2026-09-22T11:25:08.790Z"
+                },
+                {
+                  "ref": "event:60f78920-2dce-4cc8-a307-981895864287",
+                  "observed_at": "2026-09-22T11:49:59.783Z"
+                },
+                {
+                  "ref": "event:50dc8d15-64dd-4e99-8828-a126c6c31c96",
+                  "observed_at": "2026-09-25T13:27:08.624Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:14d9966e-c540-4b91-8633-0972fdfa583a",
+          "event:14aed3f7-5f34-4fa9-a303-30b3cb9a77e8",
+          "event:e49d2400-1a02-43d0-926d-243d1966a201",
+          "event:ecfecefa-a652-4904-afee-16ced0290a0b",
+          "event:2e5f9976-bb02-465f-9b93-5c0fdcfb00c6",
+          "event:aff44d6f-fc37-4a4f-82a8-0d2cc7ec0655",
+          "event:1a1c497a-368b-4780-adff-15c727119b4a",
+          "event:60f78920-2dce-4cc8-a307-981895864287",
+          "event:50dc8d15-64dd-4e99-8828-a126c6c31c96"
+        ],
+        "observed_at": "2026-10-01T15:02:14.167000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:14d9966e-c540-4b91-8633-0972fdfa583a",
+            "observed_at": "2026-09-17T14:39:12.344Z",
+            "freshness_s": 1210981.823
+          },
+          {
+            "ref": "event:14aed3f7-5f34-4fa9-a303-30b3cb9a77e8",
+            "observed_at": "2026-09-17T15:19:42.121Z",
+            "freshness_s": 1208552.046
+          },
+          {
+            "ref": "event:e49d2400-1a02-43d0-926d-243d1966a201",
+            "observed_at": "2026-09-19T14:05:22.642Z",
+            "freshness_s": 1040211.525
+          },
+          {
+            "ref": "event:ecfecefa-a652-4904-afee-16ced0290a0b",
+            "observed_at": "2026-09-19T14:31:10.561Z",
+            "freshness_s": 1038663.606
+          },
+          {
+            "ref": "event:2e5f9976-bb02-465f-9b93-5c0fdcfb00c6",
+            "observed_at": "2026-09-22T08:13:30.313Z",
+            "freshness_s": 802123.854
+          },
+          {
+            "ref": "event:aff44d6f-fc37-4a4f-82a8-0d2cc7ec0655",
+            "observed_at": "2026-09-22T08:42:56.949Z",
+            "freshness_s": 800357.218
+          },
+          {
+            "ref": "event:1a1c497a-368b-4780-adff-15c727119b4a",
+            "observed_at": "2026-09-22T11:25:08.790Z",
+            "freshness_s": 790625.377
+          },
+          {
+            "ref": "event:60f78920-2dce-4cc8-a307-981895864287",
+            "observed_at": "2026-09-22T11:49:59.783Z",
+            "freshness_s": 789134.384
+          },
+          {
+            "ref": "event:50dc8d15-64dd-4e99-8828-a126c6c31c96",
+            "observed_at": "2026-09-25T13:27:08.624Z",
+            "freshness_s": 524105.543
+          }
+        ]
       }
     },
     "conflicts": [],

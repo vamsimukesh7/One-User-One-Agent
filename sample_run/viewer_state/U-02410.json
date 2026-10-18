@@ -67,6 +67,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2657022.784,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "nada-varoya-d2",
+              "next_episode_id": "nada-varoya-d2-s1e2",
+              "last_play_at": "2026-09-06T18:32:04.097000Z",
+              "sources": [
+                {
+                  "ref": "event:7a95c64d-a417-4f16-b111-5f5903ffa6fc",
+                  "observed_at": "2026-09-06T18:32:04.097Z"
+                },
+                {
+                  "ref": "event:30451c14-25a9-494c-9916-c877bbd308f3",
+                  "observed_at": "2026-09-06T18:59:40.646Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e1",
+              "last_play_at": "2026-09-03T20:09:30.662000Z",
+              "sources": [
+                {
+                  "ref": "event:e31258dd-8cb2-42cb-beaa-a55180cd3385",
+                  "observed_at": "2026-09-11T21:34:14.880Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:7a95c64d-a417-4f16-b111-5f5903ffa6fc",
+          "event:30451c14-25a9-494c-9916-c877bbd308f3",
+          "event:e31258dd-8cb2-42cb-beaa-a55180cd3385"
+        ],
+        "observed_at": "2026-10-01T12:33:42.784000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:7a95c64d-a417-4f16-b111-5f5903ffa6fc",
+            "observed_at": "2026-09-06T18:32:04.097Z",
+            "freshness_s": 2138498.687
+          },
+          {
+            "ref": "event:30451c14-25a9-494c-9916-c877bbd308f3",
+            "observed_at": "2026-09-06T18:59:40.646Z",
+            "freshness_s": 2136842.138
+          },
+          {
+            "ref": "event:e31258dd-8cb2-42cb-beaa-a55180cd3385",
+            "observed_at": "2026-09-11T21:34:14.880Z",
+            "freshness_s": 1695567.904
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +224,63 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2657022.784,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "nada-varoya-d2",
+                  "next_episode_id": "nada-varoya-d2-s1e2",
+                  "last_play_at": "2026-09-06T18:32:04.097000Z",
+                  "sources": [
+                    {
+                      "ref": "event:7a95c64d-a417-4f16-b111-5f5903ffa6fc",
+                      "observed_at": "2026-09-06T18:32:04.097Z"
+                    },
+                    {
+                      "ref": "event:30451c14-25a9-494c-9916-c877bbd308f3",
+                      "observed_at": "2026-09-06T18:59:40.646Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "guka-kosusa-d2",
+                  "next_episode_id": "guka-kosusa-d2-s1e1",
+                  "last_play_at": "2026-09-03T20:09:30.662000Z",
+                  "sources": [
+                    {
+                      "ref": "event:e31258dd-8cb2-42cb-beaa-a55180cd3385",
+                      "observed_at": "2026-09-11T21:34:14.880Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:7a95c64d-a417-4f16-b111-5f5903ffa6fc",
+              "event:30451c14-25a9-494c-9916-c877bbd308f3",
+              "event:e31258dd-8cb2-42cb-beaa-a55180cd3385"
+            ],
+            "observed_at": "2026-10-01T12:33:42.784000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:7a95c64d-a417-4f16-b111-5f5903ffa6fc",
+                "observed_at": "2026-09-06T18:32:04.097Z",
+                "freshness_s": 2138498.687
+              },
+              {
+                "ref": "event:30451c14-25a9-494c-9916-c877bbd308f3",
+                "observed_at": "2026-09-06T18:59:40.646Z",
+                "freshness_s": 2136842.138
+              },
+              {
+                "ref": "event:e31258dd-8cb2-42cb-beaa-a55180cd3385",
+                "observed_at": "2026-09-11T21:34:14.880Z",
+                "freshness_s": 1695567.904
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +288,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -195,7 +315,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-015212"
+          "event:oua-015211"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

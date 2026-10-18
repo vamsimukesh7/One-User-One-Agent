@@ -61,6 +61,66 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2664392.586,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hala-d1",
+              "next_episode_id": "hala-d1-s1e2",
+              "last_play_at": "2026-09-24T18:50:54.086000Z",
+              "sources": [
+                {
+                  "ref": "event:7f0d824e-2c7b-40dd-b25f-5753b34eab96",
+                  "observed_at": "2026-09-15T15:59:46.917Z"
+                },
+                {
+                  "ref": "event:c6765a98-6b47-424e-acc5-ad017be1a23b",
+                  "observed_at": "2026-09-15T16:03:27.128Z"
+                },
+                {
+                  "ref": "event:8ffdf666-98cc-4621-a3ab-15563fa73b4c",
+                  "observed_at": "2026-09-20T15:14:56.783Z"
+                },
+                {
+                  "ref": "event:b96be930-e148-4c62-b046-3f3e1f645396",
+                  "observed_at": "2026-09-24T18:50:54.086Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:7f0d824e-2c7b-40dd-b25f-5753b34eab96",
+          "event:c6765a98-6b47-424e-acc5-ad017be1a23b",
+          "event:8ffdf666-98cc-4621-a3ab-15563fa73b4c",
+          "event:b96be930-e148-4c62-b046-3f3e1f645396"
+        ],
+        "observed_at": "2026-10-01T14:36:32.586000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:7f0d824e-2c7b-40dd-b25f-5753b34eab96",
+            "observed_at": "2026-09-15T15:59:46.917Z",
+            "freshness_s": 1377405.669
+          },
+          {
+            "ref": "event:c6765a98-6b47-424e-acc5-ad017be1a23b",
+            "observed_at": "2026-09-15T16:03:27.128Z",
+            "freshness_s": 1377185.458
+          },
+          {
+            "ref": "event:8ffdf666-98cc-4621-a3ab-15563fa73b4c",
+            "observed_at": "2026-09-20T15:14:56.783Z",
+            "freshness_s": 948095.803
+          },
+          {
+            "ref": "event:b96be930-e148-4c62-b046-3f3e1f645396",
+            "observed_at": "2026-09-24T18:50:54.086Z",
+            "freshness_s": 589538.5
+          }
+        ]
       }
     },
     "conflicts": [

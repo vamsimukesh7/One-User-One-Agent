@@ -67,6 +67,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2629069.326,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hate-d1",
+              "next_episode_id": "hate-d1-s1e2",
+              "last_play_at": "2026-09-22T08:07:18.450000Z",
+              "sources": [
+                {
+                  "ref": "event:202eb47e-4a31-47ec-a810-82acac3ae6c7",
+                  "observed_at": "2026-09-22T08:07:18.450Z"
+                },
+                {
+                  "ref": "event:d6ec17fb-bd1d-41da-b0ba-332ab88a9a02",
+                  "observed_at": "2026-09-22T08:10:59.698Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:202eb47e-4a31-47ec-a810-82acac3ae6c7",
+          "event:d6ec17fb-bd1d-41da-b0ba-332ab88a9a02"
+        ],
+        "observed_at": "2026-10-01T04:47:49.326000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:202eb47e-4a31-47ec-a810-82acac3ae6c7",
+            "observed_at": "2026-09-22T08:07:18.450Z",
+            "freshness_s": 765630.876
+          },
+          {
+            "ref": "event:d6ec17fb-bd1d-41da-b0ba-332ab88a9a02",
+            "observed_at": "2026-09-22T08:10:59.698Z",
+            "freshness_s": 765409.628
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +208,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2596422.411,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "hate-d1",
+                  "next_episode_id": "hate-d1-s1e2",
+                  "last_play_at": "2026-09-22T08:07:18.450000Z",
+                  "sources": [
+                    {
+                      "ref": "event:202eb47e-4a31-47ec-a810-82acac3ae6c7",
+                      "observed_at": "2026-09-22T08:07:18.450Z"
+                    },
+                    {
+                      "ref": "event:d6ec17fb-bd1d-41da-b0ba-332ab88a9a02",
+                      "observed_at": "2026-09-22T08:10:59.698Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:202eb47e-4a31-47ec-a810-82acac3ae6c7",
+              "event:d6ec17fb-bd1d-41da-b0ba-332ab88a9a02"
+            ],
+            "observed_at": "2026-09-30T19:43:42.411000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:202eb47e-4a31-47ec-a810-82acac3ae6c7",
+                "observed_at": "2026-09-22T08:07:18.450Z",
+                "freshness_s": 732983.961
+              },
+              {
+                "ref": "event:d6ec17fb-bd1d-41da-b0ba-332ab88a9a02",
+                "observed_at": "2026-09-22T08:10:59.698Z",
+                "freshness_s": 732762.713
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +255,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -196,7 +282,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-026893"
+          "event:oua-026896"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

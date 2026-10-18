@@ -67,6 +67,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2665959.056,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "loyate-d6",
+              "next_episode_id": "loyate-d6-s1e1",
+              "last_play_at": "2026-09-24T17:18:10.361000Z",
+              "sources": [
+                {
+                  "ref": "event:420e9e77-9b26-48cc-bcf5-d0ea33b601c9",
+                  "observed_at": "2026-09-24T17:18:10.361Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "rasuya-moni-d6",
+              "next_episode_id": "rasuya-moni-d6-s1e1",
+              "last_play_at": "2026-09-19T16:07:35.423000Z",
+              "sources": [
+                {
+                  "ref": "event:595d1952-f899-4d00-a6e7-cef70bef2bc0",
+                  "observed_at": "2026-09-19T16:07:35.423Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:420e9e77-9b26-48cc-bcf5-d0ea33b601c9",
+          "event:595d1952-f899-4d00-a6e7-cef70bef2bc0"
+        ],
+        "observed_at": "2026-10-01T15:02:39.056000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:420e9e77-9b26-48cc-bcf5-d0ea33b601c9",
+            "observed_at": "2026-09-24T17:18:10.361Z",
+            "freshness_s": 596668.695
+          },
+          {
+            "ref": "event:595d1952-f899-4d00-a6e7-cef70bef2bc0",
+            "observed_at": "2026-09-19T16:07:35.423Z",
+            "freshness_s": 1032903.633
+          }
+        ]
       }
     },
     "conflicts": [
@@ -175,6 +222,53 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2662877.434,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "loyate-d6",
+                  "next_episode_id": "loyate-d6-s1e1",
+                  "last_play_at": "2026-09-24T17:18:10.361000Z",
+                  "sources": [
+                    {
+                      "ref": "event:420e9e77-9b26-48cc-bcf5-d0ea33b601c9",
+                      "observed_at": "2026-09-24T17:18:10.361Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "rasuya-moni-d6",
+                  "next_episode_id": "rasuya-moni-d6-s1e1",
+                  "last_play_at": "2026-09-19T16:07:35.423000Z",
+                  "sources": [
+                    {
+                      "ref": "event:595d1952-f899-4d00-a6e7-cef70bef2bc0",
+                      "observed_at": "2026-09-19T16:07:35.423Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:420e9e77-9b26-48cc-bcf5-d0ea33b601c9",
+              "event:595d1952-f899-4d00-a6e7-cef70bef2bc0"
+            ],
+            "observed_at": "2026-10-01T14:11:17.434000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:420e9e77-9b26-48cc-bcf5-d0ea33b601c9",
+                "observed_at": "2026-09-24T17:18:10.361Z",
+                "freshness_s": 593587.073
+              },
+              {
+                "ref": "event:595d1952-f899-4d00-a6e7-cef70bef2bc0",
+                "observed_at": "2026-09-19T16:07:35.423Z",
+                "freshness_s": 1029822.011
+              }
+            ]
           }
         },
         "conflicts": [
@@ -190,6 +284,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -212,7 +312,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-009435"
+          "event:oua-009437"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

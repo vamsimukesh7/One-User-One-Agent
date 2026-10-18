@@ -61,6 +61,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2647869.419,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "gubava-gihaya-d5",
+              "next_episode_id": "gubava-gihaya-d5-s1e2",
+              "last_play_at": "2026-09-15T06:11:44.061000Z",
+              "sources": [
+                {
+                  "ref": "event:b467cb2a-88f9-48cf-80fe-c34a63ae7777",
+                  "observed_at": "2026-09-13T05:09:13.921Z"
+                },
+                {
+                  "ref": "event:b06b27eb-a4ed-4464-998c-2be7cc0558fb",
+                  "observed_at": "2026-09-13T05:12:00.103Z"
+                },
+                {
+                  "ref": "event:4c66f9c4-ff9d-4267-8b3c-7b0d87f35047",
+                  "observed_at": "2026-09-19T08:17:54.772Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:b467cb2a-88f9-48cf-80fe-c34a63ae7777",
+          "event:b06b27eb-a4ed-4464-998c-2be7cc0558fb",
+          "event:4c66f9c4-ff9d-4267-8b3c-7b0d87f35047"
+        ],
+        "observed_at": "2026-10-01T10:01:09.419000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:b467cb2a-88f9-48cf-80fe-c34a63ae7777",
+            "observed_at": "2026-09-13T05:09:13.921Z",
+            "freshness_s": 1572715.498
+          },
+          {
+            "ref": "event:b06b27eb-a4ed-4464-998c-2be7cc0558fb",
+            "observed_at": "2026-09-13T05:12:00.103Z",
+            "freshness_s": 1572549.316
+          },
+          {
+            "ref": "event:4c66f9c4-ff9d-4267-8b3c-7b0d87f35047",
+            "observed_at": "2026-09-19T08:17:54.772Z",
+            "freshness_s": 1042994.647
+          }
+        ]
       }
     },
     "conflicts": [],

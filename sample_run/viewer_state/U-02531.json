@@ -67,6 +67,104 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2620467.134,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "dhapipa-gini-d2",
+              "next_episode_id": "dhapipa-gini-d2-s1e1",
+              "last_play_at": "2026-09-21T16:44:34.218000Z",
+              "sources": [
+                {
+                  "ref": "event:066c3e0c-605b-4c05-a94d-cfd2100d37a3",
+                  "observed_at": "2026-09-21T16:44:34.218Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "guneba-guba-d2",
+              "next_episode_id": "guneba-guba-d2-s1e1",
+              "last_play_at": "2026-09-13T12:02:18.535000Z",
+              "sources": [
+                {
+                  "ref": "event:7e775af8-71ee-4316-8269-baec857e9cd3",
+                  "observed_at": "2026-09-13T12:02:18.535Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "giba-hane-d2",
+              "next_episode_id": "giba-hane-d2-s1e1",
+              "last_play_at": "2026-09-05T14:06:44.388000Z",
+              "sources": [
+                {
+                  "ref": "event:aaf1de7c-dc1e-469a-99e7-d1796fd88b61",
+                  "observed_at": "2026-09-05T14:06:44.388Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e1",
+              "last_play_at": "2026-09-05T05:01:12.066000Z",
+              "sources": [
+                {
+                  "ref": "event:14b3ced4-963c-4dc8-bd07-6153498f39d4",
+                  "observed_at": "2026-09-05T05:01:12.066Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e1",
+              "last_play_at": "2026-09-01T14:02:49.450000Z",
+              "sources": [
+                {
+                  "ref": "event:4903b365-b560-45ba-9d32-7d5d4c8822cc",
+                  "observed_at": "2026-09-01T14:02:49.450Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:066c3e0c-605b-4c05-a94d-cfd2100d37a3",
+          "event:7e775af8-71ee-4316-8269-baec857e9cd3",
+          "event:aaf1de7c-dc1e-469a-99e7-d1796fd88b61",
+          "event:14b3ced4-963c-4dc8-bd07-6153498f39d4",
+          "event:4903b365-b560-45ba-9d32-7d5d4c8822cc"
+        ],
+        "observed_at": "2026-10-01T02:24:27.134000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:066c3e0c-605b-4c05-a94d-cfd2100d37a3",
+            "observed_at": "2026-09-21T16:44:34.218Z",
+            "freshness_s": 812392.916
+          },
+          {
+            "ref": "event:7e775af8-71ee-4316-8269-baec857e9cd3",
+            "observed_at": "2026-09-13T12:02:18.535Z",
+            "freshness_s": 1520528.599
+          },
+          {
+            "ref": "event:aaf1de7c-dc1e-469a-99e7-d1796fd88b61",
+            "observed_at": "2026-09-05T14:06:44.388Z",
+            "freshness_s": 2204262.746
+          },
+          {
+            "ref": "event:14b3ced4-963c-4dc8-bd07-6153498f39d4",
+            "observed_at": "2026-09-05T05:01:12.066Z",
+            "freshness_s": 2236995.068
+          },
+          {
+            "ref": "event:4903b365-b560-45ba-9d32-7d5d4c8822cc",
+            "observed_at": "2026-09-01T14:02:49.450Z",
+            "freshness_s": 2550097.684
+          }
+        ]
       }
     },
     "conflicts": [
@@ -176,6 +274,104 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2620467.134,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "dhapipa-gini-d2",
+                  "next_episode_id": "dhapipa-gini-d2-s1e1",
+                  "last_play_at": "2026-09-21T16:44:34.218000Z",
+                  "sources": [
+                    {
+                      "ref": "event:066c3e0c-605b-4c05-a94d-cfd2100d37a3",
+                      "observed_at": "2026-09-21T16:44:34.218Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "guneba-guba-d2",
+                  "next_episode_id": "guneba-guba-d2-s1e1",
+                  "last_play_at": "2026-09-13T12:02:18.535000Z",
+                  "sources": [
+                    {
+                      "ref": "event:7e775af8-71ee-4316-8269-baec857e9cd3",
+                      "observed_at": "2026-09-13T12:02:18.535Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "giba-hane-d2",
+                  "next_episode_id": "giba-hane-d2-s1e1",
+                  "last_play_at": "2026-09-05T14:06:44.388000Z",
+                  "sources": [
+                    {
+                      "ref": "event:aaf1de7c-dc1e-469a-99e7-d1796fd88b61",
+                      "observed_at": "2026-09-05T14:06:44.388Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "molo-d2",
+                  "next_episode_id": "molo-d2-s1e1",
+                  "last_play_at": "2026-09-05T05:01:12.066000Z",
+                  "sources": [
+                    {
+                      "ref": "event:14b3ced4-963c-4dc8-bd07-6153498f39d4",
+                      "observed_at": "2026-09-05T05:01:12.066Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "guka-kosusa-d2",
+                  "next_episode_id": "guka-kosusa-d2-s1e1",
+                  "last_play_at": "2026-09-01T14:02:49.450000Z",
+                  "sources": [
+                    {
+                      "ref": "event:4903b365-b560-45ba-9d32-7d5d4c8822cc",
+                      "observed_at": "2026-09-01T14:02:49.450Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:066c3e0c-605b-4c05-a94d-cfd2100d37a3",
+              "event:7e775af8-71ee-4316-8269-baec857e9cd3",
+              "event:aaf1de7c-dc1e-469a-99e7-d1796fd88b61",
+              "event:14b3ced4-963c-4dc8-bd07-6153498f39d4",
+              "event:4903b365-b560-45ba-9d32-7d5d4c8822cc"
+            ],
+            "observed_at": "2026-10-01T02:24:27.134000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:066c3e0c-605b-4c05-a94d-cfd2100d37a3",
+                "observed_at": "2026-09-21T16:44:34.218Z",
+                "freshness_s": 812392.916
+              },
+              {
+                "ref": "event:7e775af8-71ee-4316-8269-baec857e9cd3",
+                "observed_at": "2026-09-13T12:02:18.535Z",
+                "freshness_s": 1520528.599
+              },
+              {
+                "ref": "event:aaf1de7c-dc1e-469a-99e7-d1796fd88b61",
+                "observed_at": "2026-09-05T14:06:44.388Z",
+                "freshness_s": 2204262.746
+              },
+              {
+                "ref": "event:14b3ced4-963c-4dc8-bd07-6153498f39d4",
+                "observed_at": "2026-09-05T05:01:12.066Z",
+                "freshness_s": 2236995.068
+              },
+              {
+                "ref": "event:4903b365-b560-45ba-9d32-7d5d4c8822cc",
+                "observed_at": "2026-09-01T14:02:49.450Z",
+                "freshness_s": 2550097.684
+              }
+            ]
           }
         },
         "conflicts": [
@@ -191,6 +387,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

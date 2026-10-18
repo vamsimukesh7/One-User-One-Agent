@@ -61,6 +61,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2628965.285,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "rasuya-moni-d6",
+              "next_episode_id": "rasuya-moni-d6-s1e2",
+              "last_play_at": "2026-09-21T13:55:15.573000Z",
+              "sources": [
+                {
+                  "ref": "event:814dfa1e-a374-41fe-a4d8-b1be4d75bd03",
+                  "observed_at": "2026-09-03T15:39:02.881Z"
+                },
+                {
+                  "ref": "event:702f5a21-f0e3-48a3-b3d7-44ed7e4ef31e",
+                  "observed_at": "2026-09-21T13:55:15.573Z"
+                },
+                {
+                  "ref": "event:8de02b67-28eb-4e92-8374-c37cfd96eb60",
+                  "observed_at": "2026-09-21T14:24:39.613Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:814dfa1e-a374-41fe-a4d8-b1be4d75bd03",
+          "event:702f5a21-f0e3-48a3-b3d7-44ed7e4ef31e",
+          "event:8de02b67-28eb-4e92-8374-c37cfd96eb60"
+        ],
+        "observed_at": "2026-10-01T04:46:05.285000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:814dfa1e-a374-41fe-a4d8-b1be4d75bd03",
+            "observed_at": "2026-09-03T15:39:02.881Z",
+            "freshness_s": 2380022.404
+          },
+          {
+            "ref": "event:702f5a21-f0e3-48a3-b3d7-44ed7e4ef31e",
+            "observed_at": "2026-09-21T13:55:15.573Z",
+            "freshness_s": 831049.712
+          },
+          {
+            "ref": "event:8de02b67-28eb-4e92-8374-c37cfd96eb60",
+            "observed_at": "2026-09-21T14:24:39.613Z",
+            "freshness_s": 829285.672
+          }
+        ]
       }
     },
     "conflicts": [],

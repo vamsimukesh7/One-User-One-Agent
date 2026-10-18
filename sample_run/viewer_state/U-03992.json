@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2666239.365,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "rigu-dhadi-d2",
+              "next_episode_id": "rigu-dhadi-d2-s1e2",
+              "last_play_at": "2026-09-27T15:36:26.940000Z",
+              "sources": [
+                {
+                  "ref": "event:b619218c-448f-4e77-a529-04c0b7fb57d1",
+                  "observed_at": "2026-09-29T21:02:17.058Z"
+                },
+                {
+                  "ref": "event:d8a8611e-2500-405a-b5b6-12062a9ebad0",
+                  "observed_at": "2026-09-29T21:05:02.135Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:b619218c-448f-4e77-a529-04c0b7fb57d1",
+          "event:d8a8611e-2500-405a-b5b6-12062a9ebad0"
+        ],
+        "observed_at": "2026-10-01T15:07:19.365000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:b619218c-448f-4e77-a529-04c0b7fb57d1",
+            "observed_at": "2026-09-29T21:02:17.058Z",
+            "freshness_s": 151502.307
+          },
+          {
+            "ref": "event:d8a8611e-2500-405a-b5b6-12062a9ebad0",
+            "observed_at": "2026-09-29T21:05:02.135Z",
+            "freshness_s": 151337.23
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -75,7 +115,7 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G05",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -83,16 +123,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-04439f4a4245b9c0b2c1",
+      "plan_id": "P-a25ba50d13b39fba9f32",
       "user_id": "U-03992",
-      "goal_id": "G05",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T15:07:19.365000Z",
-      "deadline": "2026-10-08T15:07:19.365000Z",
+      "deadline": "2026-10-04T15:07:19.365000Z",
       "success": {
-        "event": "purchase_completed",
-        "condition": "is_trial = false",
-        "window_hours": 168
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "b5a471e4-fc7f-40a9-a240-a5dd8b506663",
@@ -156,6 +196,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2666239.365,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "rigu-dhadi-d2",
+                  "next_episode_id": "rigu-dhadi-d2-s1e2",
+                  "last_play_at": "2026-09-27T15:36:26.940000Z",
+                  "sources": [
+                    {
+                      "ref": "event:b619218c-448f-4e77-a529-04c0b7fb57d1",
+                      "observed_at": "2026-09-29T21:02:17.058Z"
+                    },
+                    {
+                      "ref": "event:d8a8611e-2500-405a-b5b6-12062a9ebad0",
+                      "observed_at": "2026-09-29T21:05:02.135Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:b619218c-448f-4e77-a529-04c0b7fb57d1",
+              "event:d8a8611e-2500-405a-b5b6-12062a9ebad0"
+            ],
+            "observed_at": "2026-10-01T15:07:19.365000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:b619218c-448f-4e77-a529-04c0b7fb57d1",
+                "observed_at": "2026-09-29T21:02:17.058Z",
+                "freshness_s": 151502.307
+              },
+              {
+                "ref": "event:d8a8611e-2500-405a-b5b6-12062a9ebad0",
+                "observed_at": "2026-09-29T21:05:02.135Z",
+                "freshness_s": 151337.23
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -165,20 +245,25 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [],
+      "target_content_slug": "rigu-dhadi-d2",
+      "next_episode_id": "rigu-dhadi-d2-s1e2",
       "final_outcome": {
-        "plan_id": "P-04439f4a4245b9c0b2c1",
+        "plan_id": "P-a25ba50d13b39fba9f32",
         "user_id": "U-03992",
-        "goal_id": "G05",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T15:07:19.365000Z",
-        "deadline": "2026-10-08T15:07:19.365000Z",
+        "deadline": "2026-10-04T15:07:19.365000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "purchase_completed",
-          "condition": "is_trial = false",
-          "window_hours": 168
+          "event": "play_started",
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -186,7 +271,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T15:07:19.365000Z"
+      "closed_at": "2026-10-04T15:07:19.365000Z"
     }
   ]
 }

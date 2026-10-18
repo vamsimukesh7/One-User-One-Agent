@@ -1,84 +1,80 @@
 # One User, One Agent
 
-A local, runnable lifecycle agent for the supplied OTT assignment. Each viewer has one durable goal and plan. Decisions cite evidence, independently verified home pages are published to an outbox, and observed outcomes are compared with randomized holdout. No API key, hosted model, external service, or third-party runtime dependency is required.
+A local lifecycle agent for the supplied OTT assignment. Each viewer owns one durable goal and plan. The agent resolves evidence, independently verifies an action or abstains, and judges actual outcomes against randomized holdout. It supports homepage, push, approved WhatsApp template, and in-app actions in the supplied simulator. No messages are sent to real people.
 
-## Run the submission
+Python 3.10+ with SQLite is required. The runtime uses only the standard library. The default mock provider reproduces supplied model faults and requires no personal API key. No frontend, hosted model, or deployment is required.
 
-Requires Linux and Python 3.10+ with SQLite (validated with Python 3.12). From the repository root, extract the supplied ZIP under `data/` if it is not already present:
+## Run on Windows
 
-```bash
-python -m zipfile -e /path/to/one_user_one_agent_data_pack.zip data
+From PowerShell, enter the project root (not a `runs` subfolder):
+
+```powershell
+cd C:\Users\User\One-User-One-Agent
+py -m pip install -e .
+py -m zipfile -e "$env:USERPROFILE\Downloads\one_user_one_agent_data_pack.zip" data
+py -m one_agent replay --pack data/one_user_one_agent_pack --out runs/demo
+py scripts/validate_run.py --pack data/one_user_one_agent_pack --run runs/demo
+py -m unittest discover -s tests -v
 ```
 
-Run the complete decide → act → simulate → judge → measure workflow with one command:
+Adjust the ZIP path to its actual location. Extract the pack once. Every replay needs a new or empty output directory. On Linux/macOS, use `python` instead of `py`; alternatively run with `PYTHONPATH=src` without installation.
 
-```bash
-PYTHONPATH=src python -m one_agent replay --pack data/one_user_one_agent_pack --out runs/demo
+```powershell
+notepad runs\demo\final_report.md
 ```
 
-This executes the supplied simulator unchanged. Output directories must be empty or new; existing runs are preserved. Change `--seed` for an independent simulator seed. `--max-model-calls 8 --max-tool-calls 20` are configurable ceilings. Setting model calls to zero uses the deterministic policy directly; the default mock reproduces every provided model fault.
+The replay executes the supplied simulator unchanged. `--seed` changes simulator randomness. `--max-model-calls 8 --max-tool-calls 20` configure ceilings; zero model calls uses deterministic planning. Insufficient data-call budgets cause explicit abstention, including when there is no remaining budget for dispatch verification.
 
-Run the automated checks:
+## Inspect a viewer at a point in time
 
-```bash
-PYTHONPATH=src python -m unittest discover -s tests -v
-python scripts/validate_run.py --pack data/one_user_one_agent_pack --run sample_run
+```powershell
+py -m one_agent audit --db runs/demo/state.sqlite3 --viewer U-01991
+py -m one_agent audit --db runs/demo/state.sqlite3 --viewer U-01991 --at "2026-10-01T12:00:00Z"
 ```
 
-The second command validates the full included replay against the original inputs and simulator events. After a new replay, substitute its output directory. The supplied data pack and SQLite databases remain local and are ignored by Git. Complete sample viewer snapshots and simulator events are included. Give evaluators the supplied pack alongside this repository; the run command regenerates all artifacts. No data is sent to external APIs.
+The audit command is read-only. `--at` reconstructs committed decisions, plans, actions, viewer projections and outcomes known by that time, plus received evidence. It excludes later deliveries and batch simulator evidence until the final observation watermark. Facts retain their last resolution timestamps; they are not fabricated retroactively. Older databases without version history support current-state inspection but require a new replay for `--at`.
 
-Inspect a viewer, including all decisions, plans, actions and final learning:
+## Actions and verification
 
-```bash
-PYTHONPATH=src python -m one_agent audit --db runs/demo/state.sqlite3 --viewer U-01991
-```
+Homepages use a hero and three distinct other content slugs in the viewer's current language and dialect. G07 targets its reconciled unfinished series. The policy considers consented push/WhatsApp for conversion and series-return goals, falls back to an in-app message where appropriate, or uses a homepage. Missing content, uncertain eligibility, stale triggers, holdout assignment, exhausted budgets and rejected verification produce recorded abstentions.
 
-## Read the result
+Every message is checked for consent where required, 22:00–08:00 IST quiet hours, the shared push/WhatsApp daily cap, the separate in-app cap, locale, availability, approved variables and honest copy. Only the supplied recommendation WhatsApp template is used; no invented pricing or deadlines. A published request is not a delivery or exposure. The simulator only queues in-app messages, so it cannot demonstrate an in-app exposure effect.
 
-- `sample_run/final_report.md`: replay counts, failures, latency and interpretation.
-- `sample_run/impact_report.md`: randomized replay and pilot effects, intervals and selection-bias explanation.
-- `sample_run/decisions.jsonl`: one auditable decision per unique trigger, including every abstention.
-- `sample_run/actions.jsonl`: simulator-compatible action outbox, home pages only.
-- `sample_run/outcomes.jsonl`: goal attainment and separately labeled exposure associations.
-- `sample_run/audit.jsonl`: duplicate deliveries, targeted rule updates, goal closure and operational changes.
-- `sample_run/cohorts.jsonl`: arm-independent enrollment at first fresh delivery.
-- `sample_run/latency_report.json`: actual service timing separated from explicitly modeled dependency waits.
-- `sample_run/viewer_state/` and `state.sqlite3`: complete durable state, generated on every run.
-- `sample_run/sim/`: untouched simulator output, generated on every run.
+For isolated channel testing, `--channel home_page`, `--channel push`, `--channel whatsapp`, or `--channel in_app_message` requests that channel. All verification still applies; the flag cannot bypass holdout, consent, caps, or content checks.
 
-## Decisions and deliberate scope
-
-App settings on a fresh trigger determine the displayed dialect. Profile and campaign disagreements stay visible. Billing events can override stale subscription snapshots. Consent defaults to false and opt-outs override snapshots, although this implementation sends no messages. Device clock offset is handled by anchoring `sent_at - occurred_at` to server receipt; events buffered more than ten minutes do not trigger personalization.
-
-Goal selection is deterministic and inspectable. The replay model is an untrusted advisor that can choose only an independently supported candidate; its assertions cannot create viewer facts. A heuristic confidence value expresses evidence adequacy, not a calibrated probability of success.
+## Goal coverage
 
 | Goal | Handling |
 |---|---|
-| G01 first play | Requires recent signup and observed history covering signup, with no prior play. |
-| G02 first completion | Requires observed history covering signup and no prior completion. |
-| G03 next-day return | Requires recent signup; open goals adopt the supplied correction from app-open to play on a later IST day. |
-| G04 trial to paid | Requires supported trial status; a non-trial purchase closes the goal. |
-| G05 first paid | Requires never-paid status, history covering signup, and no contrary paid evidence. |
-| G06 reactivation | Disabled: “recently” has no agreed threshold. |
-| G07 resume series | Deferred: episode reconciliation is intentionally outside this implementation. |
-| G08 new release | Active subscribers; select and judge titles released in the prior 30 days. |
-| G09 weekly habit | Active subscribers with at most one play day in covered prior 14 days; success needs three distinct IST play days. |
-| G10 meaningful engagement | Disabled: success is not measurable as specified. |
-| G11 TV activation | Disabled: required success event is not instrumented. |
-| G12 return after absence | Requires 14 days of observed history without a prior app open and an older supported signup. |
+| G01 | Recent signup, covered lifetime, no prior play; a subsequent play within 24h. |
+| G02 | Covered lifetime, no prior completion; a completion within 72h. A playback start is not completion. |
+| G03 | Recent signup; later IST-day return within 48h; affected plans adopt the supplied correction to `play_started`. |
+| G04 | Supported active trial; non-trial purchase within 7d. |
+| G05 | Covered never-paid history; first non-trial purchase within 7d. |
+| G06 | Safely excluded: “recently lapsed” has no supplied threshold. |
+| G07 | Covered lifetime; catalogue episode IDs reconcile starts/completions for an unfinished series inactive at least 3d; success is a play of the same content slug within 72h. |
+| G08 | Active subscriber; a play of content released within 30d before the original goal start, within 7d. |
+| G09 | Active subscriber, at most one play day in covered prior 14d; success requires three distinct IST play days within 14d. |
+| G10 | Safely excluded: “meaningful engagement” has no measurable success definition. |
+| G11 | Safely excluded: `tv_app_open` is absent from supplied telemetry. |
+| G12 | Covered 14d without an app open for an established viewer; subsequent play within 7d. |
 
-For older viewers, absence in a 30-day export cannot prove “never.” Those first-time goals are refused. Holdout viewers can own shadow goals for audit but receive no action. Missing evidence, stale triggers, exhausted budgets, duplicate sessions and failed verification all have explicit no-action reasons.
+Absence claims explicitly assume the supplied observation window is complete. Late contradictory historical evidence can invalidate earlier first-time goals. Unsupported goals never silently become eligible. Unimplemented rule-correction semantics fail closed.
 
-See `ARCHITECTURE.md` for trust boundaries and timing, `KNOWN_LIMITATIONS.md` for remaining scope, and `AI_COLLABORATION.md` for how the implementation was checked.
+## Generated evidence
 
-## Audit remediation and traffic check
+`sample_run/` contains an executed replay: `decisions.jsonl`, `actions.jsonl`, `outcomes.jsonl`, `audit.jsonl`, `cohorts.jsonl`, `viewer_state/`, simulator events, latency, impact and final reports. A fresh run also generates `state.sqlite3`, including transactional version history and persisted outcome judgments. Raw input pack and SQLite files are excluded from Git. Supply the original pack when sharing the repository.
 
-See [REMEDIATION.md](REMEDIATION.md) for corrected failure modes and executed evidence. Reproduce the isolated 3× busiest-evening-window traffic check:
+The independent validator rechecks actions against raw content, triggers and assignments, recomputes viewer-level ITT rates and confidence intervals, and checks viewer/plan/outcome consistency. The randomized primary endpoint is completion within 72h of first fresh delivery, regardless of whether an action was served. Goal attainment and exposure association are separate from population-level causal evidence. An interval spanning zero does not establish improvement.
 
-```bash
-python scripts/make_stress_pack.py --pack data/one_user_one_agent_pack --out runs/stress_pack
-PYTHONPATH=src python -m one_agent replay --pack runs/stress_pack --out runs/stress
-python scripts/validate_run.py --pack runs/stress_pack --run runs/stress
+## Reproduce the traffic check
+
+```powershell
+py scripts/make_stress_pack.py --pack data/one_user_one_agent_pack --out runs/stress_pack
+py -m one_agent replay --pack runs/stress_pack --out runs/stress
+py scripts/validate_run.py --pack runs/stress_pack --run runs/stress
 ```
 
-This duplicates synthetic sessions for operational testing; its impact estimates are not valid viewer-effect evidence.
+This triples the busiest ten-minute evening window using isolated synthetic session copies. It is a single-worker operational replay, not a production-concurrency benchmark or valid impact experiment.
+
+See `ARCHITECTURE.md`, `AI_COLLABORATION.md`, `KNOWN_LIMITATIONS.md`, and `COMPLETION.md` for the implementation and executed validation.

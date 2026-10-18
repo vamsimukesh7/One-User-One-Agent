@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2669893.301,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "nina-d5",
+              "next_episode_id": "nina-d5-s1e1",
+              "last_play_at": "2026-09-02T06:54:57.941000Z",
+              "sources": [
+                {
+                  "ref": "event:3e55ce41-a1bd-4264-85f3-6cd5267faae1",
+                  "observed_at": "2026-09-02T06:54:57.941Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:3e55ce41-a1bd-4264-85f3-6cd5267faae1"
+        ],
+        "observed_at": "2026-10-01T16:08:13.301000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:3e55ce41-a1bd-4264-85f3-6cd5267faae1",
+            "observed_at": "2026-09-02T06:54:57.941Z",
+            "freshness_s": 2538795.36
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -75,6 +105,6 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy"
   ],
-  "state_updated_at": "2026-10-01T16:10:21.466Z",
+  "state_updated_at": "2026-10-01T16:10:21.466000Z",
   "plans": []
 }

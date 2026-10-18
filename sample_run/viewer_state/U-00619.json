@@ -67,6 +67,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2668673.74,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "chupi-gugi-d6",
+              "next_episode_id": "chupi-gugi-d6-s1e1",
+              "last_play_at": "2026-09-05T09:17:16.508000Z",
+              "sources": [
+                {
+                  "ref": "event:e32eea86-9c80-4253-8ab9-7a3e6a292bdf",
+                  "observed_at": "2026-09-05T09:17:16.508Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "digu-d6",
+              "next_episode_id": "digu-d6-s1e1",
+              "last_play_at": "2026-09-02T15:40:23.386000Z",
+              "sources": [
+                {
+                  "ref": "event:1c498639-a119-4be9-9c73-3617f9d0c095",
+                  "observed_at": "2026-09-05T15:31:36.302Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:e32eea86-9c80-4253-8ab9-7a3e6a292bdf",
+          "event:1c498639-a119-4be9-9c73-3617f9d0c095"
+        ],
+        "observed_at": "2026-10-01T15:47:53.740000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:e32eea86-9c80-4253-8ab9-7a3e6a292bdf",
+            "observed_at": "2026-09-05T09:17:16.508Z",
+            "freshness_s": 2269837.232
+          },
+          {
+            "ref": "event:1c498639-a119-4be9-9c73-3617f9d0c095",
+            "observed_at": "2026-09-05T15:31:36.302Z",
+            "freshness_s": 2247377.438
+          }
+        ]
       }
     },
     "conflicts": [
@@ -176,6 +223,53 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2668673.74,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "chupi-gugi-d6",
+                  "next_episode_id": "chupi-gugi-d6-s1e1",
+                  "last_play_at": "2026-09-05T09:17:16.508000Z",
+                  "sources": [
+                    {
+                      "ref": "event:e32eea86-9c80-4253-8ab9-7a3e6a292bdf",
+                      "observed_at": "2026-09-05T09:17:16.508Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "digu-d6",
+                  "next_episode_id": "digu-d6-s1e1",
+                  "last_play_at": "2026-09-02T15:40:23.386000Z",
+                  "sources": [
+                    {
+                      "ref": "event:1c498639-a119-4be9-9c73-3617f9d0c095",
+                      "observed_at": "2026-09-05T15:31:36.302Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:e32eea86-9c80-4253-8ab9-7a3e6a292bdf",
+              "event:1c498639-a119-4be9-9c73-3617f9d0c095"
+            ],
+            "observed_at": "2026-10-01T15:47:53.740000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:e32eea86-9c80-4253-8ab9-7a3e6a292bdf",
+                "observed_at": "2026-09-05T09:17:16.508Z",
+                "freshness_s": 2269837.232
+              },
+              {
+                "ref": "event:1c498639-a119-4be9-9c73-3617f9d0c095",
+                "observed_at": "2026-09-05T15:31:36.302Z",
+                "freshness_s": 2247377.438
+              }
+            ]
           }
         },
         "conflicts": [
@@ -191,6 +285,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],
@@ -209,10 +309,10 @@
           "window_hours": 336
         },
         "signal_refs": [
-          "event:oua-003959",
-          "event:oua-003962",
-          "event:oua-003966",
-          "event:oua-003983"
+          "event:oua-003964",
+          "event:oua-003967",
+          "event:oua-003971",
+          "event:oua-003988"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

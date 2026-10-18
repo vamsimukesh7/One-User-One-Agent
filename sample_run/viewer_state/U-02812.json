@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2672295.341,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yara-koja-d6",
+              "next_episode_id": "yara-koja-d6-s1e1",
+              "last_play_at": "2026-09-18T15:10:48.621000Z",
+              "sources": [
+                {
+                  "ref": "event:da30e64f-1146-4518-85a7-e4aad28e61d9",
+                  "observed_at": "2026-09-18T15:10:48.621Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:da30e64f-1146-4518-85a7-e4aad28e61d9"
+        ],
+        "observed_at": "2026-10-01T16:48:15.341000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:da30e64f-1146-4518-85a7-e4aad28e61d9",
+            "observed_at": "2026-09-18T15:10:48.621Z",
+            "freshness_s": 1129046.72
+          }
+        ]
       }
     },
     "conflicts": [

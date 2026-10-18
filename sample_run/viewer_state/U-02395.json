@@ -67,6 +67,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2675020.612,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "tiya-bhamaro-d1",
+              "next_episode_id": "tiya-bhamaro-d1-s1e1",
+              "last_play_at": "2026-09-22T16:39:07.440000Z",
+              "sources": [
+                {
+                  "ref": "event:dfe30f87-588e-4f20-a525-26ea568bff44",
+                  "observed_at": "2026-09-22T16:39:07.440Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "hapibha-d1",
+              "next_episode_id": "hapibha-d1-s1e1",
+              "last_play_at": "2026-09-21T13:56:39.625000Z",
+              "sources": [
+                {
+                  "ref": "event:785d60d5-abbf-4645-b661-ba90066e351f",
+                  "observed_at": "2026-09-16T02:14:26.709Z"
+                },
+                {
+                  "ref": "event:ac0a4fad-959e-4cbb-96bb-16a9125a93ca",
+                  "observed_at": "2026-09-21T13:56:39.625Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:dfe30f87-588e-4f20-a525-26ea568bff44",
+          "event:785d60d5-abbf-4645-b661-ba90066e351f",
+          "event:ac0a4fad-959e-4cbb-96bb-16a9125a93ca"
+        ],
+        "observed_at": "2026-10-01T17:33:40.612000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:dfe30f87-588e-4f20-a525-26ea568bff44",
+            "observed_at": "2026-09-22T16:39:07.440Z",
+            "freshness_s": 780873.172
+          },
+          {
+            "ref": "event:785d60d5-abbf-4645-b661-ba90066e351f",
+            "observed_at": "2026-09-16T02:14:26.709Z",
+            "freshness_s": 1351153.903
+          },
+          {
+            "ref": "event:ac0a4fad-959e-4cbb-96bb-16a9125a93ca",
+            "observed_at": "2026-09-21T13:56:39.625Z",
+            "freshness_s": 877020.987
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +224,63 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2675020.612,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "tiya-bhamaro-d1",
+                  "next_episode_id": "tiya-bhamaro-d1-s1e1",
+                  "last_play_at": "2026-09-22T16:39:07.440000Z",
+                  "sources": [
+                    {
+                      "ref": "event:dfe30f87-588e-4f20-a525-26ea568bff44",
+                      "observed_at": "2026-09-22T16:39:07.440Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "hapibha-d1",
+                  "next_episode_id": "hapibha-d1-s1e1",
+                  "last_play_at": "2026-09-21T13:56:39.625000Z",
+                  "sources": [
+                    {
+                      "ref": "event:785d60d5-abbf-4645-b661-ba90066e351f",
+                      "observed_at": "2026-09-16T02:14:26.709Z"
+                    },
+                    {
+                      "ref": "event:ac0a4fad-959e-4cbb-96bb-16a9125a93ca",
+                      "observed_at": "2026-09-21T13:56:39.625Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:dfe30f87-588e-4f20-a525-26ea568bff44",
+              "event:785d60d5-abbf-4645-b661-ba90066e351f",
+              "event:ac0a4fad-959e-4cbb-96bb-16a9125a93ca"
+            ],
+            "observed_at": "2026-10-01T17:33:40.612000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:dfe30f87-588e-4f20-a525-26ea568bff44",
+                "observed_at": "2026-09-22T16:39:07.440Z",
+                "freshness_s": 780873.172
+              },
+              {
+                "ref": "event:785d60d5-abbf-4645-b661-ba90066e351f",
+                "observed_at": "2026-09-16T02:14:26.709Z",
+                "freshness_s": 1351153.903
+              },
+              {
+                "ref": "event:ac0a4fad-959e-4cbb-96bb-16a9125a93ca",
+                "observed_at": "2026-09-21T13:56:39.625Z",
+                "freshness_s": 877020.987
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +288,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -194,13 +314,13 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-015108"
-        ],
-        "exposure_refs": [
           "event:oua-015107"
         ],
+        "exposure_refs": [
+          "event:oua-015106"
+        ],
         "associated_signal_refs": [
-          "event:oua-015108"
+          "event:oua-015107"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

@@ -67,6 +67,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2671041.431,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e2",
+              "last_play_at": "2026-09-05T14:35:28.471000Z",
+              "sources": [
+                {
+                  "ref": "event:c3bbd3e3-dc3b-4e1b-98ac-246cc112e6aa",
+                  "observed_at": "2026-09-05T14:35:28.471Z"
+                },
+                {
+                  "ref": "event:711b95e7-cc80-48d7-801e-c03e51a254ef",
+                  "observed_at": "2026-09-05T15:15:57.665Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "kolani-mari-d2",
+              "next_episode_id": "kolani-mari-d2-s1e1",
+              "last_play_at": "2026-09-01T14:56:29.764000Z",
+              "sources": [
+                {
+                  "ref": "event:fa68812d-37f1-4150-aaa1-1d05b2f94a1e",
+                  "observed_at": "2026-09-01T14:56:29.764Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:c3bbd3e3-dc3b-4e1b-98ac-246cc112e6aa",
+          "event:711b95e7-cc80-48d7-801e-c03e51a254ef",
+          "event:fa68812d-37f1-4150-aaa1-1d05b2f94a1e"
+        ],
+        "observed_at": "2026-10-01T16:27:21.431000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:c3bbd3e3-dc3b-4e1b-98ac-246cc112e6aa",
+            "observed_at": "2026-09-05T14:35:28.471Z",
+            "freshness_s": 2253112.96
+          },
+          {
+            "ref": "event:711b95e7-cc80-48d7-801e-c03e51a254ef",
+            "observed_at": "2026-09-05T15:15:57.665Z",
+            "freshness_s": 2250683.766
+          },
+          {
+            "ref": "event:fa68812d-37f1-4150-aaa1-1d05b2f94a1e",
+            "observed_at": "2026-09-01T14:56:29.764Z",
+            "freshness_s": 2597451.667
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +224,63 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2671041.431,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "molo-d2",
+                  "next_episode_id": "molo-d2-s1e2",
+                  "last_play_at": "2026-09-05T14:35:28.471000Z",
+                  "sources": [
+                    {
+                      "ref": "event:c3bbd3e3-dc3b-4e1b-98ac-246cc112e6aa",
+                      "observed_at": "2026-09-05T14:35:28.471Z"
+                    },
+                    {
+                      "ref": "event:711b95e7-cc80-48d7-801e-c03e51a254ef",
+                      "observed_at": "2026-09-05T15:15:57.665Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "kolani-mari-d2",
+                  "next_episode_id": "kolani-mari-d2-s1e1",
+                  "last_play_at": "2026-09-01T14:56:29.764000Z",
+                  "sources": [
+                    {
+                      "ref": "event:fa68812d-37f1-4150-aaa1-1d05b2f94a1e",
+                      "observed_at": "2026-09-01T14:56:29.764Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:c3bbd3e3-dc3b-4e1b-98ac-246cc112e6aa",
+              "event:711b95e7-cc80-48d7-801e-c03e51a254ef",
+              "event:fa68812d-37f1-4150-aaa1-1d05b2f94a1e"
+            ],
+            "observed_at": "2026-10-01T16:27:21.431000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:c3bbd3e3-dc3b-4e1b-98ac-246cc112e6aa",
+                "observed_at": "2026-09-05T14:35:28.471Z",
+                "freshness_s": 2253112.96
+              },
+              {
+                "ref": "event:711b95e7-cc80-48d7-801e-c03e51a254ef",
+                "observed_at": "2026-09-05T15:15:57.665Z",
+                "freshness_s": 2250683.766
+              },
+              {
+                "ref": "event:fa68812d-37f1-4150-aaa1-1d05b2f94a1e",
+                "observed_at": "2026-09-01T14:56:29.764Z",
+                "freshness_s": 2597451.667
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +288,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -194,15 +314,15 @@
           "window_hours": 336
         },
         "signal_refs": [
-          "event:oua-010677",
-          "event:oua-010680",
-          "event:oua-010684"
+          "event:oua-010681",
+          "event:oua-010684",
+          "event:oua-010688"
         ],
         "exposure_refs": [
-          "event:oua-010676"
+          "event:oua-010680"
         ],
         "associated_signal_refs": [
-          "event:oua-010677"
+          "event:oua-010681"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

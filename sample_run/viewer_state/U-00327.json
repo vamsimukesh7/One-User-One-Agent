@@ -67,6 +67,73 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2658027.937,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yane-tegi-d3",
+              "next_episode_id": "yane-tegi-d3-s1e2",
+              "last_play_at": "2026-09-19T12:06:04.957000Z",
+              "sources": [
+                {
+                  "ref": "event:c4b8a090-071b-4e53-8f3b-227d284a3d83",
+                  "observed_at": "2026-09-09T17:23:49.931Z"
+                },
+                {
+                  "ref": "event:198595ce-e474-4bc3-91ad-34a0147af920",
+                  "observed_at": "2026-09-09T17:27:30.121Z"
+                },
+                {
+                  "ref": "event:cb7a5087-8552-4bf4-bfd6-c97caa1e6d27",
+                  "observed_at": "2026-09-19T12:06:04.957Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "lomobha-moni-d3",
+              "next_episode_id": "lomobha-moni-d3-s1e1",
+              "last_play_at": "2026-09-17T19:54:21.244000Z",
+              "sources": [
+                {
+                  "ref": "event:f15c14a4-1584-422f-b52b-71e04c1160d3",
+                  "observed_at": "2026-09-17T20:10:45.145Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:c4b8a090-071b-4e53-8f3b-227d284a3d83",
+          "event:198595ce-e474-4bc3-91ad-34a0147af920",
+          "event:cb7a5087-8552-4bf4-bfd6-c97caa1e6d27",
+          "event:f15c14a4-1584-422f-b52b-71e04c1160d3"
+        ],
+        "observed_at": "2026-10-01T12:50:27.937000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:c4b8a090-071b-4e53-8f3b-227d284a3d83",
+            "observed_at": "2026-09-09T17:23:49.931Z",
+            "freshness_s": 1884398.006
+          },
+          {
+            "ref": "event:198595ce-e474-4bc3-91ad-34a0147af920",
+            "observed_at": "2026-09-09T17:27:30.121Z",
+            "freshness_s": 1884177.816
+          },
+          {
+            "ref": "event:cb7a5087-8552-4bf4-bfd6-c97caa1e6d27",
+            "observed_at": "2026-09-19T12:06:04.957Z",
+            "freshness_s": 1039462.98
+          },
+          {
+            "ref": "event:f15c14a4-1584-422f-b52b-71e04c1160d3",
+            "observed_at": "2026-09-17T20:10:45.145Z",
+            "freshness_s": 1183182.792
+          }
+        ]
       }
     },
     "conflicts": [
@@ -177,6 +244,73 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2658027.937,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "yane-tegi-d3",
+                  "next_episode_id": "yane-tegi-d3-s1e2",
+                  "last_play_at": "2026-09-19T12:06:04.957000Z",
+                  "sources": [
+                    {
+                      "ref": "event:c4b8a090-071b-4e53-8f3b-227d284a3d83",
+                      "observed_at": "2026-09-09T17:23:49.931Z"
+                    },
+                    {
+                      "ref": "event:198595ce-e474-4bc3-91ad-34a0147af920",
+                      "observed_at": "2026-09-09T17:27:30.121Z"
+                    },
+                    {
+                      "ref": "event:cb7a5087-8552-4bf4-bfd6-c97caa1e6d27",
+                      "observed_at": "2026-09-19T12:06:04.957Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "lomobha-moni-d3",
+                  "next_episode_id": "lomobha-moni-d3-s1e1",
+                  "last_play_at": "2026-09-17T19:54:21.244000Z",
+                  "sources": [
+                    {
+                      "ref": "event:f15c14a4-1584-422f-b52b-71e04c1160d3",
+                      "observed_at": "2026-09-17T20:10:45.145Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:c4b8a090-071b-4e53-8f3b-227d284a3d83",
+              "event:198595ce-e474-4bc3-91ad-34a0147af920",
+              "event:cb7a5087-8552-4bf4-bfd6-c97caa1e6d27",
+              "event:f15c14a4-1584-422f-b52b-71e04c1160d3"
+            ],
+            "observed_at": "2026-10-01T12:50:27.937000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:c4b8a090-071b-4e53-8f3b-227d284a3d83",
+                "observed_at": "2026-09-09T17:23:49.931Z",
+                "freshness_s": 1884398.006
+              },
+              {
+                "ref": "event:198595ce-e474-4bc3-91ad-34a0147af920",
+                "observed_at": "2026-09-09T17:27:30.121Z",
+                "freshness_s": 1884177.816
+              },
+              {
+                "ref": "event:cb7a5087-8552-4bf4-bfd6-c97caa1e6d27",
+                "observed_at": "2026-09-19T12:06:04.957Z",
+                "freshness_s": 1039462.98
+              },
+              {
+                "ref": "event:f15c14a4-1584-422f-b52b-71e04c1160d3",
+                "observed_at": "2026-09-17T20:10:45.145Z",
+                "freshness_s": 1183182.792
+              }
+            ]
           }
         },
         "conflicts": [
@@ -192,6 +326,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

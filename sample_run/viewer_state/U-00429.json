@@ -67,6 +67,83 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2662193.718,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "tiko-subava-d4",
+              "next_episode_id": "tiko-subava-d4-s1e3",
+              "last_play_at": "2026-09-17T14:24:26.046000Z",
+              "sources": [
+                {
+                  "ref": "event:a6543cc4-1421-4d7d-8498-89324eed83c0",
+                  "observed_at": "2026-09-05T14:54:29.698Z"
+                },
+                {
+                  "ref": "event:4f7bb25c-5164-4af4-b721-0900edf66ebf",
+                  "observed_at": "2026-09-05T14:58:10.180Z"
+                },
+                {
+                  "ref": "event:cd2fa5e0-d28b-4101-a0d1-d261b600b1b7",
+                  "observed_at": "2026-09-17T19:50:14.598Z"
+                },
+                {
+                  "ref": "event:3c79c993-2000-444b-af99-9276ac9438f7",
+                  "observed_at": "2026-09-17T19:52:04.614Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "radi-d4",
+              "next_episode_id": "radi-d4-s1e1",
+              "last_play_at": "2026-09-06T11:44:53.993000Z",
+              "sources": [
+                {
+                  "ref": "event:bc2ee4f8-8b56-4cd3-8992-226757bf7615",
+                  "observed_at": "2026-09-06T11:44:53.993Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:a6543cc4-1421-4d7d-8498-89324eed83c0",
+          "event:4f7bb25c-5164-4af4-b721-0900edf66ebf",
+          "event:cd2fa5e0-d28b-4101-a0d1-d261b600b1b7",
+          "event:3c79c993-2000-444b-af99-9276ac9438f7",
+          "event:bc2ee4f8-8b56-4cd3-8992-226757bf7615"
+        ],
+        "observed_at": "2026-10-01T13:59:53.718000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:a6543cc4-1421-4d7d-8498-89324eed83c0",
+            "observed_at": "2026-09-05T14:54:29.698Z",
+            "freshness_s": 2243124.02
+          },
+          {
+            "ref": "event:4f7bb25c-5164-4af4-b721-0900edf66ebf",
+            "observed_at": "2026-09-05T14:58:10.180Z",
+            "freshness_s": 2242903.538
+          },
+          {
+            "ref": "event:cd2fa5e0-d28b-4101-a0d1-d261b600b1b7",
+            "observed_at": "2026-09-17T19:50:14.598Z",
+            "freshness_s": 1188579.12
+          },
+          {
+            "ref": "event:3c79c993-2000-444b-af99-9276ac9438f7",
+            "observed_at": "2026-09-17T19:52:04.614Z",
+            "freshness_s": 1188469.104
+          },
+          {
+            "ref": "event:bc2ee4f8-8b56-4cd3-8992-226757bf7615",
+            "observed_at": "2026-09-06T11:44:53.993Z",
+            "freshness_s": 2168099.725
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -169,6 +246,83 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2631044.356,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "tiko-subava-d4",
+                  "next_episode_id": "tiko-subava-d4-s1e3",
+                  "last_play_at": "2026-09-17T14:24:26.046000Z",
+                  "sources": [
+                    {
+                      "ref": "event:a6543cc4-1421-4d7d-8498-89324eed83c0",
+                      "observed_at": "2026-09-05T14:54:29.698Z"
+                    },
+                    {
+                      "ref": "event:4f7bb25c-5164-4af4-b721-0900edf66ebf",
+                      "observed_at": "2026-09-05T14:58:10.180Z"
+                    },
+                    {
+                      "ref": "event:cd2fa5e0-d28b-4101-a0d1-d261b600b1b7",
+                      "observed_at": "2026-09-17T19:50:14.598Z"
+                    },
+                    {
+                      "ref": "event:3c79c993-2000-444b-af99-9276ac9438f7",
+                      "observed_at": "2026-09-17T19:52:04.614Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "radi-d4",
+                  "next_episode_id": "radi-d4-s1e1",
+                  "last_play_at": "2026-09-06T11:44:53.993000Z",
+                  "sources": [
+                    {
+                      "ref": "event:bc2ee4f8-8b56-4cd3-8992-226757bf7615",
+                      "observed_at": "2026-09-06T11:44:53.993Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:a6543cc4-1421-4d7d-8498-89324eed83c0",
+              "event:4f7bb25c-5164-4af4-b721-0900edf66ebf",
+              "event:cd2fa5e0-d28b-4101-a0d1-d261b600b1b7",
+              "event:3c79c993-2000-444b-af99-9276ac9438f7",
+              "event:bc2ee4f8-8b56-4cd3-8992-226757bf7615"
+            ],
+            "observed_at": "2026-10-01T05:20:44.356000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:a6543cc4-1421-4d7d-8498-89324eed83c0",
+                "observed_at": "2026-09-05T14:54:29.698Z",
+                "freshness_s": 2211974.658
+              },
+              {
+                "ref": "event:4f7bb25c-5164-4af4-b721-0900edf66ebf",
+                "observed_at": "2026-09-05T14:58:10.180Z",
+                "freshness_s": 2211754.176
+              },
+              {
+                "ref": "event:cd2fa5e0-d28b-4101-a0d1-d261b600b1b7",
+                "observed_at": "2026-09-17T19:50:14.598Z",
+                "freshness_s": 1157429.758
+              },
+              {
+                "ref": "event:3c79c993-2000-444b-af99-9276ac9438f7",
+                "observed_at": "2026-09-17T19:52:04.614Z",
+                "freshness_s": 1157319.742
+              },
+              {
+                "ref": "event:bc2ee4f8-8b56-4cd3-8992-226757bf7615",
+                "observed_at": "2026-09-06T11:44:53.993Z",
+                "freshness_s": 2136950.363
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -176,6 +330,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],
@@ -194,10 +354,10 @@
           "window_hours": 336
         },
         "signal_refs": [
-          "event:oua-002887",
-          "event:oua-002890",
-          "event:oua-002893",
-          "event:oua-002897"
+          "event:oua-002892",
+          "event:oua-002895",
+          "event:oua-002898",
+          "event:oua-002902"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

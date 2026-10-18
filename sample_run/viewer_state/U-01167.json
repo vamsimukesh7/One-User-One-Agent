@@ -67,6 +67,73 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2650483.64,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yatite-roloda-d3",
+              "next_episode_id": "yatite-roloda-d3-s1e1",
+              "last_play_at": "2026-09-26T15:57:30.045000Z",
+              "sources": [
+                {
+                  "ref": "event:7c35e743-c4dd-4fb0-b6d2-e300ccebd86a",
+                  "observed_at": "2026-09-26T15:57:30.045Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "ririgi-d3",
+              "next_episode_id": "ririgi-d3-s1e2",
+              "last_play_at": "2026-09-22T15:32:03.621000Z",
+              "sources": [
+                {
+                  "ref": "event:33de251b-226c-4389-86e1-179098a6c88f",
+                  "observed_at": "2026-09-04T14:41:03.808Z"
+                },
+                {
+                  "ref": "event:ebc75b7e-b813-4c87-bf0e-b4f50e0475e2",
+                  "observed_at": "2026-09-04T15:04:03.520Z"
+                },
+                {
+                  "ref": "event:d892b991-cc5c-4005-ac43-4754d0ca2644",
+                  "observed_at": "2026-09-22T15:32:03.621Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:7c35e743-c4dd-4fb0-b6d2-e300ccebd86a",
+          "event:33de251b-226c-4389-86e1-179098a6c88f",
+          "event:ebc75b7e-b813-4c87-bf0e-b4f50e0475e2",
+          "event:d892b991-cc5c-4005-ac43-4754d0ca2644"
+        ],
+        "observed_at": "2026-10-01T10:44:43.640000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:7c35e743-c4dd-4fb0-b6d2-e300ccebd86a",
+            "observed_at": "2026-09-26T15:57:30.045Z",
+            "freshness_s": 413233.595
+          },
+          {
+            "ref": "event:33de251b-226c-4389-86e1-179098a6c88f",
+            "observed_at": "2026-09-04T14:41:03.808Z",
+            "freshness_s": 2318619.832
+          },
+          {
+            "ref": "event:ebc75b7e-b813-4c87-bf0e-b4f50e0475e2",
+            "observed_at": "2026-09-04T15:04:03.520Z",
+            "freshness_s": 2317240.12
+          },
+          {
+            "ref": "event:d892b991-cc5c-4005-ac43-4754d0ca2644",
+            "observed_at": "2026-09-22T15:32:03.621Z",
+            "freshness_s": 760360.019
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +234,73 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2650483.64,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "yatite-roloda-d3",
+                  "next_episode_id": "yatite-roloda-d3-s1e1",
+                  "last_play_at": "2026-09-26T15:57:30.045000Z",
+                  "sources": [
+                    {
+                      "ref": "event:7c35e743-c4dd-4fb0-b6d2-e300ccebd86a",
+                      "observed_at": "2026-09-26T15:57:30.045Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "ririgi-d3",
+                  "next_episode_id": "ririgi-d3-s1e2",
+                  "last_play_at": "2026-09-22T15:32:03.621000Z",
+                  "sources": [
+                    {
+                      "ref": "event:33de251b-226c-4389-86e1-179098a6c88f",
+                      "observed_at": "2026-09-04T14:41:03.808Z"
+                    },
+                    {
+                      "ref": "event:ebc75b7e-b813-4c87-bf0e-b4f50e0475e2",
+                      "observed_at": "2026-09-04T15:04:03.520Z"
+                    },
+                    {
+                      "ref": "event:d892b991-cc5c-4005-ac43-4754d0ca2644",
+                      "observed_at": "2026-09-22T15:32:03.621Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:7c35e743-c4dd-4fb0-b6d2-e300ccebd86a",
+              "event:33de251b-226c-4389-86e1-179098a6c88f",
+              "event:ebc75b7e-b813-4c87-bf0e-b4f50e0475e2",
+              "event:d892b991-cc5c-4005-ac43-4754d0ca2644"
+            ],
+            "observed_at": "2026-10-01T10:44:43.640000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:7c35e743-c4dd-4fb0-b6d2-e300ccebd86a",
+                "observed_at": "2026-09-26T15:57:30.045Z",
+                "freshness_s": 413233.595
+              },
+              {
+                "ref": "event:33de251b-226c-4389-86e1-179098a6c88f",
+                "observed_at": "2026-09-04T14:41:03.808Z",
+                "freshness_s": 2318619.832
+              },
+              {
+                "ref": "event:ebc75b7e-b813-4c87-bf0e-b4f50e0475e2",
+                "observed_at": "2026-09-04T15:04:03.520Z",
+                "freshness_s": 2317240.12
+              },
+              {
+                "ref": "event:d892b991-cc5c-4005-ac43-4754d0ca2644",
+                "observed_at": "2026-09-22T15:32:03.621Z",
+                "freshness_s": 760360.019
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +308,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

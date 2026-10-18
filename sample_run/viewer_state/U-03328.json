@@ -67,6 +67,150 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2665392.834,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "guneba-guba-d2",
+              "next_episode_id": "guneba-guba-d2-s1e2",
+              "last_play_at": "2026-09-23T15:02:58.329000Z",
+              "sources": [
+                {
+                  "ref": "event:0db3706c-a265-4b71-b1cd-af8dcf243972",
+                  "observed_at": "2026-09-17T05:00:16.619Z"
+                },
+                {
+                  "ref": "event:3bce3b09-3631-4366-ad5e-ab384a8180f6",
+                  "observed_at": "2026-09-17T05:03:58.692Z"
+                },
+                {
+                  "ref": "event:720760d8-5ae7-477a-b4b8-3ab54bb81309",
+                  "observed_at": "2026-09-23T15:02:58.329Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e3",
+              "last_play_at": "2026-09-22T04:16:34.059000Z",
+              "sources": [
+                {
+                  "ref": "event:8b850173-47da-476c-9f75-d7daebef2425",
+                  "observed_at": "2026-09-19T08:36:58.592Z"
+                },
+                {
+                  "ref": "event:3b4e6988-a309-4564-8ea4-b55a2e07e8b6",
+                  "observed_at": "2026-09-19T08:39:44.050Z"
+                },
+                {
+                  "ref": "event:b2908bf3-e538-460a-81cd-a5a7adb1ecdb",
+                  "observed_at": "2026-09-21T15:34:25.880Z"
+                },
+                {
+                  "ref": "event:b6603334-83f6-4449-b272-841fdac7f519",
+                  "observed_at": "2026-09-21T15:37:10.966Z"
+                },
+                {
+                  "ref": "event:9fab188f-f51e-498f-95d3-f690ca92cd83",
+                  "observed_at": "2026-09-22T04:16:34.059Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "chugu-d2",
+              "next_episode_id": "chugu-d2-s1e2",
+              "last_play_at": "2026-09-18T04:20:51.202000Z",
+              "sources": [
+                {
+                  "ref": "event:66aaee73-5630-4be4-9d5a-f965ef2b48e8",
+                  "observed_at": "2026-09-10T13:56:50.469Z"
+                },
+                {
+                  "ref": "event:04703160-25b7-444a-9b1e-853d9ef44811",
+                  "observed_at": "2026-09-10T14:26:17.591Z"
+                },
+                {
+                  "ref": "event:9459a4be-aa53-4036-b91f-604b37d1514e",
+                  "observed_at": "2026-09-18T04:20:51.202Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:0db3706c-a265-4b71-b1cd-af8dcf243972",
+          "event:3bce3b09-3631-4366-ad5e-ab384a8180f6",
+          "event:720760d8-5ae7-477a-b4b8-3ab54bb81309",
+          "event:8b850173-47da-476c-9f75-d7daebef2425",
+          "event:3b4e6988-a309-4564-8ea4-b55a2e07e8b6",
+          "event:b2908bf3-e538-460a-81cd-a5a7adb1ecdb",
+          "event:b6603334-83f6-4449-b272-841fdac7f519",
+          "event:9fab188f-f51e-498f-95d3-f690ca92cd83",
+          "event:66aaee73-5630-4be4-9d5a-f965ef2b48e8",
+          "event:04703160-25b7-444a-9b1e-853d9ef44811",
+          "event:9459a4be-aa53-4036-b91f-604b37d1514e"
+        ],
+        "observed_at": "2026-10-01T14:53:12.834000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:0db3706c-a265-4b71-b1cd-af8dcf243972",
+            "observed_at": "2026-09-17T05:00:16.619Z",
+            "freshness_s": 1245176.215
+          },
+          {
+            "ref": "event:3bce3b09-3631-4366-ad5e-ab384a8180f6",
+            "observed_at": "2026-09-17T05:03:58.692Z",
+            "freshness_s": 1244954.142
+          },
+          {
+            "ref": "event:720760d8-5ae7-477a-b4b8-3ab54bb81309",
+            "observed_at": "2026-09-23T15:02:58.329Z",
+            "freshness_s": 690614.505
+          },
+          {
+            "ref": "event:8b850173-47da-476c-9f75-d7daebef2425",
+            "observed_at": "2026-09-19T08:36:58.592Z",
+            "freshness_s": 1059374.242
+          },
+          {
+            "ref": "event:3b4e6988-a309-4564-8ea4-b55a2e07e8b6",
+            "observed_at": "2026-09-19T08:39:44.050Z",
+            "freshness_s": 1059208.784
+          },
+          {
+            "ref": "event:b2908bf3-e538-460a-81cd-a5a7adb1ecdb",
+            "observed_at": "2026-09-21T15:34:25.880Z",
+            "freshness_s": 861526.954
+          },
+          {
+            "ref": "event:b6603334-83f6-4449-b272-841fdac7f519",
+            "observed_at": "2026-09-21T15:37:10.966Z",
+            "freshness_s": 861361.868
+          },
+          {
+            "ref": "event:9fab188f-f51e-498f-95d3-f690ca92cd83",
+            "observed_at": "2026-09-22T04:16:34.059Z",
+            "freshness_s": 815798.775
+          },
+          {
+            "ref": "event:66aaee73-5630-4be4-9d5a-f965ef2b48e8",
+            "observed_at": "2026-09-10T13:56:50.469Z",
+            "freshness_s": 1817782.365
+          },
+          {
+            "ref": "event:04703160-25b7-444a-9b1e-853d9ef44811",
+            "observed_at": "2026-09-10T14:26:17.591Z",
+            "freshness_s": 1816015.243
+          },
+          {
+            "ref": "event:9459a4be-aa53-4036-b91f-604b37d1514e",
+            "observed_at": "2026-09-18T04:20:51.202Z",
+            "freshness_s": 1161141.632
+          }
+        ]
       }
     },
     "conflicts": [
@@ -175,6 +319,150 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2665392.834,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "guneba-guba-d2",
+                  "next_episode_id": "guneba-guba-d2-s1e2",
+                  "last_play_at": "2026-09-23T15:02:58.329000Z",
+                  "sources": [
+                    {
+                      "ref": "event:0db3706c-a265-4b71-b1cd-af8dcf243972",
+                      "observed_at": "2026-09-17T05:00:16.619Z"
+                    },
+                    {
+                      "ref": "event:3bce3b09-3631-4366-ad5e-ab384a8180f6",
+                      "observed_at": "2026-09-17T05:03:58.692Z"
+                    },
+                    {
+                      "ref": "event:720760d8-5ae7-477a-b4b8-3ab54bb81309",
+                      "observed_at": "2026-09-23T15:02:58.329Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "guka-kosusa-d2",
+                  "next_episode_id": "guka-kosusa-d2-s1e3",
+                  "last_play_at": "2026-09-22T04:16:34.059000Z",
+                  "sources": [
+                    {
+                      "ref": "event:8b850173-47da-476c-9f75-d7daebef2425",
+                      "observed_at": "2026-09-19T08:36:58.592Z"
+                    },
+                    {
+                      "ref": "event:3b4e6988-a309-4564-8ea4-b55a2e07e8b6",
+                      "observed_at": "2026-09-19T08:39:44.050Z"
+                    },
+                    {
+                      "ref": "event:b2908bf3-e538-460a-81cd-a5a7adb1ecdb",
+                      "observed_at": "2026-09-21T15:34:25.880Z"
+                    },
+                    {
+                      "ref": "event:b6603334-83f6-4449-b272-841fdac7f519",
+                      "observed_at": "2026-09-21T15:37:10.966Z"
+                    },
+                    {
+                      "ref": "event:9fab188f-f51e-498f-95d3-f690ca92cd83",
+                      "observed_at": "2026-09-22T04:16:34.059Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "chugu-d2",
+                  "next_episode_id": "chugu-d2-s1e2",
+                  "last_play_at": "2026-09-18T04:20:51.202000Z",
+                  "sources": [
+                    {
+                      "ref": "event:66aaee73-5630-4be4-9d5a-f965ef2b48e8",
+                      "observed_at": "2026-09-10T13:56:50.469Z"
+                    },
+                    {
+                      "ref": "event:04703160-25b7-444a-9b1e-853d9ef44811",
+                      "observed_at": "2026-09-10T14:26:17.591Z"
+                    },
+                    {
+                      "ref": "event:9459a4be-aa53-4036-b91f-604b37d1514e",
+                      "observed_at": "2026-09-18T04:20:51.202Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:0db3706c-a265-4b71-b1cd-af8dcf243972",
+              "event:3bce3b09-3631-4366-ad5e-ab384a8180f6",
+              "event:720760d8-5ae7-477a-b4b8-3ab54bb81309",
+              "event:8b850173-47da-476c-9f75-d7daebef2425",
+              "event:3b4e6988-a309-4564-8ea4-b55a2e07e8b6",
+              "event:b2908bf3-e538-460a-81cd-a5a7adb1ecdb",
+              "event:b6603334-83f6-4449-b272-841fdac7f519",
+              "event:9fab188f-f51e-498f-95d3-f690ca92cd83",
+              "event:66aaee73-5630-4be4-9d5a-f965ef2b48e8",
+              "event:04703160-25b7-444a-9b1e-853d9ef44811",
+              "event:9459a4be-aa53-4036-b91f-604b37d1514e"
+            ],
+            "observed_at": "2026-10-01T14:53:12.834000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:0db3706c-a265-4b71-b1cd-af8dcf243972",
+                "observed_at": "2026-09-17T05:00:16.619Z",
+                "freshness_s": 1245176.215
+              },
+              {
+                "ref": "event:3bce3b09-3631-4366-ad5e-ab384a8180f6",
+                "observed_at": "2026-09-17T05:03:58.692Z",
+                "freshness_s": 1244954.142
+              },
+              {
+                "ref": "event:720760d8-5ae7-477a-b4b8-3ab54bb81309",
+                "observed_at": "2026-09-23T15:02:58.329Z",
+                "freshness_s": 690614.505
+              },
+              {
+                "ref": "event:8b850173-47da-476c-9f75-d7daebef2425",
+                "observed_at": "2026-09-19T08:36:58.592Z",
+                "freshness_s": 1059374.242
+              },
+              {
+                "ref": "event:3b4e6988-a309-4564-8ea4-b55a2e07e8b6",
+                "observed_at": "2026-09-19T08:39:44.050Z",
+                "freshness_s": 1059208.784
+              },
+              {
+                "ref": "event:b2908bf3-e538-460a-81cd-a5a7adb1ecdb",
+                "observed_at": "2026-09-21T15:34:25.880Z",
+                "freshness_s": 861526.954
+              },
+              {
+                "ref": "event:b6603334-83f6-4449-b272-841fdac7f519",
+                "observed_at": "2026-09-21T15:37:10.966Z",
+                "freshness_s": 861361.868
+              },
+              {
+                "ref": "event:9fab188f-f51e-498f-95d3-f690ca92cd83",
+                "observed_at": "2026-09-22T04:16:34.059Z",
+                "freshness_s": 815798.775
+              },
+              {
+                "ref": "event:66aaee73-5630-4be4-9d5a-f965ef2b48e8",
+                "observed_at": "2026-09-10T13:56:50.469Z",
+                "freshness_s": 1817782.365
+              },
+              {
+                "ref": "event:04703160-25b7-444a-9b1e-853d9ef44811",
+                "observed_at": "2026-09-10T14:26:17.591Z",
+                "freshness_s": 1816015.243
+              },
+              {
+                "ref": "event:9459a4be-aa53-4036-b91f-604b37d1514e",
+                "observed_at": "2026-09-18T04:20:51.202Z",
+                "freshness_s": 1161141.632
+              }
+            ]
           }
         },
         "conflicts": [
@@ -190,6 +478,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -211,7 +505,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-020852"
+          "event:oua-020851"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

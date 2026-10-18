@@ -61,6 +61,18 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2642031.769,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": []
+        },
+        "source": [
+          "policy:series-reconciliation"
+        ],
+        "observed_at": "2026-10-01T08:23:51.769000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": []
       }
     },
     "conflicts": [
@@ -164,6 +176,18 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2642031.769,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": []
+            },
+            "source": [
+              "policy:series-reconciliation"
+            ],
+            "observed_at": "2026-10-01T08:23:51.769000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": []
           }
         },
         "conflicts": [
@@ -181,6 +205,9 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "No app_open in the 14 days before the trigger."
+      },
       "actions": [],
       "final_outcome": {
         "plan_id": "P-2a64d8d93976c6d528df",
@@ -197,7 +224,7 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-023234"
+          "event:oua-023236"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

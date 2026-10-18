@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2665855.544,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "loba-d4",
+              "next_episode_id": "loba-d4-s1e1",
+              "last_play_at": "2026-09-27T05:08:07.509000Z",
+              "sources": [
+                {
+                  "ref": "event:d88637e2-bff1-4d37-bf68-72d8ec8d44c8",
+                  "observed_at": "2026-09-27T18:45:08.871Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:d88637e2-bff1-4d37-bf68-72d8ec8d44c8"
+        ],
+        "observed_at": "2026-10-01T15:00:55.544000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:d88637e2-bff1-4d37-bf68-72d8ec8d44c8",
+            "observed_at": "2026-09-27T18:45:08.871Z",
+            "freshness_s": 332146.673
+          }
+        ]
       }
     },
     "conflicts": [],

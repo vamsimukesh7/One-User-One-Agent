@@ -67,6 +67,66 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2664518.924,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "raja-d4",
+              "next_episode_id": "raja-d4-s1e3",
+              "last_play_at": "2026-09-24T10:06:11.473000Z",
+              "sources": [
+                {
+                  "ref": "event:c150e8e4-64eb-448e-88f9-6c892e06c79e",
+                  "observed_at": "2026-09-05T10:50:22.890Z"
+                },
+                {
+                  "ref": "event:00f900b5-4569-4b83-b95d-0997934f60fa",
+                  "observed_at": "2026-09-05T10:54:03.491Z"
+                },
+                {
+                  "ref": "event:d0decffe-32cf-4c95-abb2-6e84e006daff",
+                  "observed_at": "2026-09-24T10:06:11.473Z"
+                },
+                {
+                  "ref": "event:7864e8ef-0117-40ca-aa4c-91670753054c",
+                  "observed_at": "2026-09-24T10:08:01.883Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:c150e8e4-64eb-448e-88f9-6c892e06c79e",
+          "event:00f900b5-4569-4b83-b95d-0997934f60fa",
+          "event:d0decffe-32cf-4c95-abb2-6e84e006daff",
+          "event:7864e8ef-0117-40ca-aa4c-91670753054c"
+        ],
+        "observed_at": "2026-10-01T14:38:38.924000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:c150e8e4-64eb-448e-88f9-6c892e06c79e",
+            "observed_at": "2026-09-05T10:50:22.890Z",
+            "freshness_s": 2260096.034
+          },
+          {
+            "ref": "event:00f900b5-4569-4b83-b95d-0997934f60fa",
+            "observed_at": "2026-09-05T10:54:03.491Z",
+            "freshness_s": 2259875.433
+          },
+          {
+            "ref": "event:d0decffe-32cf-4c95-abb2-6e84e006daff",
+            "observed_at": "2026-09-24T10:06:11.473Z",
+            "freshness_s": 621147.451
+          },
+          {
+            "ref": "event:7864e8ef-0117-40ca-aa4c-91670753054c",
+            "observed_at": "2026-09-24T10:08:01.883Z",
+            "freshness_s": 621037.041
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -80,7 +140,7 @@
   "latest_decision_id": "D-10e53b16ca5b18e4fa25",
   "learning": [
     {
-      "goal_id": "G09",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -88,16 +148,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-e4b744b9b03070586f68",
+      "plan_id": "P-02c3af93ce912f69782e",
       "user_id": "U-03882",
-      "goal_id": "G09",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T14:38:38.924000Z",
-      "deadline": "2026-10-15T14:38:38.924000Z",
+      "deadline": "2026-10-04T14:38:38.924000Z",
       "success": {
         "event": "play_started",
-        "condition": "on 3 distinct IST days",
-        "window_hours": 336
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "c9bfdad3-8911-4464-bc21-cd934a15fa6b",
@@ -167,6 +227,66 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2664518.924,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "raja-d4",
+                  "next_episode_id": "raja-d4-s1e3",
+                  "last_play_at": "2026-09-24T10:06:11.473000Z",
+                  "sources": [
+                    {
+                      "ref": "event:c150e8e4-64eb-448e-88f9-6c892e06c79e",
+                      "observed_at": "2026-09-05T10:50:22.890Z"
+                    },
+                    {
+                      "ref": "event:00f900b5-4569-4b83-b95d-0997934f60fa",
+                      "observed_at": "2026-09-05T10:54:03.491Z"
+                    },
+                    {
+                      "ref": "event:d0decffe-32cf-4c95-abb2-6e84e006daff",
+                      "observed_at": "2026-09-24T10:06:11.473Z"
+                    },
+                    {
+                      "ref": "event:7864e8ef-0117-40ca-aa4c-91670753054c",
+                      "observed_at": "2026-09-24T10:08:01.883Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:c150e8e4-64eb-448e-88f9-6c892e06c79e",
+              "event:00f900b5-4569-4b83-b95d-0997934f60fa",
+              "event:d0decffe-32cf-4c95-abb2-6e84e006daff",
+              "event:7864e8ef-0117-40ca-aa4c-91670753054c"
+            ],
+            "observed_at": "2026-10-01T14:38:38.924000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:c150e8e4-64eb-448e-88f9-6c892e06c79e",
+                "observed_at": "2026-09-05T10:50:22.890Z",
+                "freshness_s": 2260096.034
+              },
+              {
+                "ref": "event:00f900b5-4569-4b83-b95d-0997934f60fa",
+                "observed_at": "2026-09-05T10:54:03.491Z",
+                "freshness_s": 2259875.433
+              },
+              {
+                "ref": "event:d0decffe-32cf-4c95-abb2-6e84e006daff",
+                "observed_at": "2026-09-24T10:06:11.473Z",
+                "freshness_s": 621147.451
+              },
+              {
+                "ref": "event:7864e8ef-0117-40ca-aa4c-91670753054c",
+                "observed_at": "2026-09-24T10:08:01.883Z",
+                "freshness_s": 621037.041
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -176,22 +296,27 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [
         "A-10e53b16ca5b18e4fa25"
       ],
+      "target_content_slug": "raja-d4",
+      "next_episode_id": "raja-d4-s1e3",
       "final_outcome": {
-        "plan_id": "P-e4b744b9b03070586f68",
+        "plan_id": "P-02c3af93ce912f69782e",
         "user_id": "U-03882",
-        "goal_id": "G09",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T14:38:38.924000Z",
-        "deadline": "2026-10-15T14:38:38.924000Z",
+        "deadline": "2026-10-04T14:38:38.924000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
           "event": "play_started",
-          "condition": "on 3 distinct IST days",
-          "window_hours": 336
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -199,7 +324,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-15T14:38:38.924000Z"
+      "closed_at": "2026-10-04T14:38:38.924000Z"
     }
   ]
 }

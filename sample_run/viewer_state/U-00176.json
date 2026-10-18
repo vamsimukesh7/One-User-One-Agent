@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2665174.939,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bagi-baya-d4",
+              "next_episode_id": "bagi-baya-d4-s1e2",
+              "last_play_at": "2026-09-23T16:13:33.903000Z",
+              "sources": [
+                {
+                  "ref": "event:408267d3-f4fb-4910-b1e2-5798562d2fba",
+                  "observed_at": "2026-09-23T16:13:33.903Z"
+                },
+                {
+                  "ref": "event:d09ddb0e-66ef-4c95-b82f-7df9f1089ff1",
+                  "observed_at": "2026-09-23T16:17:14.173Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:408267d3-f4fb-4910-b1e2-5798562d2fba",
+          "event:d09ddb0e-66ef-4c95-b82f-7df9f1089ff1"
+        ],
+        "observed_at": "2026-10-01T14:49:34.939000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:408267d3-f4fb-4910-b1e2-5798562d2fba",
+            "observed_at": "2026-09-23T16:13:33.903Z",
+            "freshness_s": 686161.036
+          },
+          {
+            "ref": "event:d09ddb0e-66ef-4c95-b82f-7df9f1089ff1",
+            "observed_at": "2026-09-23T16:17:14.173Z",
+            "freshness_s": 685940.766
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -74,7 +114,7 @@
   "latest_decision_id": "D-860469177fedcb1d36a0",
   "learning": [
     {
-      "goal_id": "G05",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -82,16 +122,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-924045ee7deadc128214",
+      "plan_id": "P-c267bb9078f68e9cdefb",
       "user_id": "U-00176",
-      "goal_id": "G05",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T14:49:34.939000Z",
-      "deadline": "2026-10-08T14:49:34.939000Z",
+      "deadline": "2026-10-04T14:49:34.939000Z",
       "success": {
-        "event": "purchase_completed",
-        "condition": "is_trial = false",
-        "window_hours": 168
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "92f47a34-202b-47e1-ac20-b9a65a4cecc0",
@@ -155,6 +195,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2665174.939,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "bagi-baya-d4",
+                  "next_episode_id": "bagi-baya-d4-s1e2",
+                  "last_play_at": "2026-09-23T16:13:33.903000Z",
+                  "sources": [
+                    {
+                      "ref": "event:408267d3-f4fb-4910-b1e2-5798562d2fba",
+                      "observed_at": "2026-09-23T16:13:33.903Z"
+                    },
+                    {
+                      "ref": "event:d09ddb0e-66ef-4c95-b82f-7df9f1089ff1",
+                      "observed_at": "2026-09-23T16:17:14.173Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:408267d3-f4fb-4910-b1e2-5798562d2fba",
+              "event:d09ddb0e-66ef-4c95-b82f-7df9f1089ff1"
+            ],
+            "observed_at": "2026-10-01T14:49:34.939000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:408267d3-f4fb-4910-b1e2-5798562d2fba",
+                "observed_at": "2026-09-23T16:13:33.903Z",
+                "freshness_s": 686161.036
+              },
+              {
+                "ref": "event:d09ddb0e-66ef-4c95-b82f-7df9f1089ff1",
+                "observed_at": "2026-09-23T16:17:14.173Z",
+                "freshness_s": 685940.766
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -164,32 +244,35 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [
         "A-860469177fedcb1d36a0"
       ],
+      "target_content_slug": "bagi-baya-d4",
+      "next_episode_id": "bagi-baya-d4-s1e2",
       "final_outcome": {
-        "plan_id": "P-924045ee7deadc128214",
+        "plan_id": "P-c267bb9078f68e9cdefb",
         "user_id": "U-00176",
-        "goal_id": "G05",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T14:49:34.939000Z",
-        "deadline": "2026-10-08T14:49:34.939000Z",
+        "deadline": "2026-10-04T14:49:34.939000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "purchase_completed",
-          "condition": "is_trial = false",
-          "window_hours": 168
+          "event": "play_started",
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
-        "exposure_refs": [
-          "event:oua-001074"
-        ],
+        "exposure_refs": [],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T14:49:34.939000Z"
+      "closed_at": "2026-10-04T14:49:34.939000Z"
     }
   ]
 }

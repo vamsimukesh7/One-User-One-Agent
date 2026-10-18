@@ -39,7 +39,32 @@ def format_effect(label, result):
             f"(95% CI {result['ci95'][0]*100:+.2f} to {result['ci95'][1]*100:+.2f}).")
 
 
+def endpoint(cohorts, events_by_user, event_name, hours, observation_end):
+    arms={'agent':[],'holdout':[]};censored=Counter();seen={}
+    for cohort in cohorts:
+        user=cohort['user_id'];arm=cohort['arm']
+        if user in seen:
+            if seen[user]!=cohort:raise ValueError('Conflicting cohort assignment or entry window')
+            continue
+        seen[user]=cohort
+        if arm not in arms:
+            censored['unknown_arm']+=1;continue
+        start=ts(cohort['entry_at']);end=start+timedelta(hours=hours)
+        if end>observation_end or cohort.get('observation_complete',True) is False:
+            censored[arm]+=1;continue
+        success=any(e['user_id']==user and e['event']==event_name and event_time(e)[1]
+            and start<event_time(e)[0]<=end and ts(e['received_at'])<=observation_end
+            and (event_name!='purchase_completed' or e.get('properties',{}).get('is_trial') is False)
+            for e in events_by_user.get(user,[]))
+        arms[arm].append(success)
+    result=dict(compare(arms['agent'],arms['holdout']),censored=dict(censored))
+    result['missing_outcome_policy']='No event is negative only inside a mature, explicitly assumed complete observation window; incomplete windows are censored.'
+    result['small_sample']=min(len(arms['agent']),len(arms['holdout']))<30
+    return result
+
+
 def reports(pack, store, out, observation_end, simulator_report, latency):
+    store.set_time(observation_end)
     outcomes = []
     by_user = defaultdict(list)
     for row in store.db.execute('SELECT user_id,body FROM events ORDER BY received_at,event_id'):
@@ -47,6 +72,7 @@ def reports(pack, store, out, observation_end, simulator_report, latency):
     for plan in store.records('plans'):
         result = judge(plan,by_user[plan['user_id']],pack,observation_end,plan['actions'])
         outcomes.append(result)
+        store.save_outcome(result)
         plan['final_outcome'] = result
         if result['reason']=='initial_eligibility_disproved_by_late_evidence':
             plan['invalidated']=True
@@ -56,22 +82,11 @@ def reports(pack, store, out, observation_end, simulator_report, latency):
         store.save_plan(plan)
     write_jsonl(out/'outcomes.jsonl',outcomes)
     endpoints = {}
-    for name, event_name, hours in [('primary_completion_72h','episode_completed',72),('secondary_paid_7d','purchase_completed',168)]:
-        arms = {'agent':[],'holdout':[]}; censored=Counter()
-        for cohort in store.records('cohorts'):
-            arm = cohort['arm']
-            if arm not in arms:
-                continue
-            start = ts(cohort['entry_at']); end = start+timedelta(hours=hours)
-            if end > observation_end:
-                censored[arm] += 1; continue
-            success = any(e['event']==event_name and event_time(e)[1] and start < event_time(e)[0] <= end
-                          and ts(e['received_at']) <= observation_end
-                          and (event_name!='purchase_completed' or e.get('properties',{}).get('is_trial') is False)
-                          for e in by_user[cohort['user_id']])
-            arms[arm].append(success)
-        endpoints[name] = dict(compare(arms['agent'],arms['holdout']),censored=dict(censored))
-    pilot_assignment = {r['user_id']:r for r in csv_rows(pack.root/'pilot/pilot_assignment.csv')}
+    for name,event_name,hours in [('primary_completion_72h','episode_completed',72),('secondary_paid_7d','purchase_completed',168)]:
+        endpoints[name]=endpoint(store.records('cohorts'),by_user,event_name,hours,observation_end)
+    assignment_rows=csv_rows(pack.root/'pilot/pilot_assignment.csv')
+    pilot_assignment = {r['user_id']:r for r in assignment_rows}
+    if len(pilot_assignment)!=len(assignment_rows):raise ValueError('Duplicate pilot assignment users')
     pilot_outcomes = csv_rows(pack.root/'pilot/pilot_outcomes.csv')
     if len({r['user_id'] for r in pilot_outcomes}) != len(pilot_outcomes):
         raise ValueError('Duplicate pilot outcome users')
@@ -82,6 +97,7 @@ def reports(pack, store, out, observation_end, simulator_report, latency):
         assignment = pilot_assignment[row['user_id']]
         if row['arm'] != assignment['arm']:
             raise ValueError('Pilot assignment/outcome arm disagreement')
+        if row['succeeded'] not in {'true','false'}:raise ValueError('Missing or invalid pilot outcome')
         success = row['succeeded']=='true'
         pilot_arms[assignment['arm']].append(success)
         (served if assignment['served']=='true' else others).append(success)
@@ -131,7 +147,7 @@ def reports(pack, store, out, observation_end, simulator_report, latency):
     decisions=store.records('decisions'); actions=store.records('actions')
     reasons=Counter(d['no_action_reason'] for d in decisions if d['action']=='NO_ACTION')
     write_json(out/'latency_report.json',latency)
-    final = ['# Replay result','',f'{len(decisions)} unique decisions; {len(actions)} published home pages; '
+    final = ['# Replay result','',f'{len(decisions)} unique decisions; {len(actions)} published actions ({dict(Counter(a["type"] for a in actions))}); '
              f'{len(outcomes)} goal judgments; {len(store.records("cohorts"))} enrolled viewers.', '',
              f'Goal attainment: {dict(Counter(r["status"] for r in outcomes))}.', '',
              f'Simulator policy problems: {simulator_report["policy_problem_count"]}.', '',

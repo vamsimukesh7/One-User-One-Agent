@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2633222.63,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yaka-naka-d5",
+              "next_episode_id": "yaka-naka-d5-s1e1",
+              "last_play_at": "2026-09-25T14:56:07.153000Z",
+              "sources": [
+                {
+                  "ref": "event:6d899057-34e7-4984-a133-0f0827fcf09d",
+                  "observed_at": "2026-09-25T14:56:07.153Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:6d899057-34e7-4984-a133-0f0827fcf09d"
+        ],
+        "observed_at": "2026-10-01T05:57:02.630000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:6d899057-34e7-4984-a133-0f0827fcf09d",
+            "observed_at": "2026-09-25T14:56:07.153Z",
+            "freshness_s": 486055.477
+          }
+        ]
       }
     },
     "conflicts": [

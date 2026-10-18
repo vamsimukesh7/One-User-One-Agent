@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2665861.422,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bagi-baya-d4",
+              "next_episode_id": "bagi-baya-d4-s1e2",
+              "last_play_at": "2026-09-18T12:21:21.226000Z",
+              "sources": [
+                {
+                  "ref": "event:49989692-ab21-4557-a94e-873049f9f588",
+                  "observed_at": "2026-09-18T12:21:21.226Z"
+                },
+                {
+                  "ref": "event:4388d851-2fc9-44a0-a60b-2fd8f9492842",
+                  "observed_at": "2026-09-18T12:25:01.190Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:49989692-ab21-4557-a94e-873049f9f588",
+          "event:4388d851-2fc9-44a0-a60b-2fd8f9492842"
+        ],
+        "observed_at": "2026-10-01T15:01:01.422000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:49989692-ab21-4557-a94e-873049f9f588",
+            "observed_at": "2026-09-18T12:21:21.226Z",
+            "freshness_s": 1132780.196
+          },
+          {
+            "ref": "event:4388d851-2fc9-44a0-a60b-2fd8f9492842",
+            "observed_at": "2026-09-18T12:25:01.190Z",
+            "freshness_s": 1132560.232
+          }
+        ]
       }
     },
     "conflicts": [

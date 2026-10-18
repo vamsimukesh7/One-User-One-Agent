@@ -61,6 +61,66 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2654199.66,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "gubava-gihaya-d5",
+              "next_episode_id": "gubava-gihaya-d5-s1e2",
+              "last_play_at": "2026-09-25T13:18:58.704000Z",
+              "sources": [
+                {
+                  "ref": "event:2790ccaf-73c0-4690-80da-6815b64b70b7",
+                  "observed_at": "2026-09-25T10:14:29.214Z"
+                },
+                {
+                  "ref": "event:45a27b06-1afe-460e-af95-ff1c412ec797",
+                  "observed_at": "2026-09-25T11:58:16.654Z"
+                },
+                {
+                  "ref": "event:bde2cb48-bba3-46fe-a2d0-e9ce43642abd",
+                  "observed_at": "2026-09-25T13:18:58.704Z"
+                },
+                {
+                  "ref": "event:7c1f4466-bb28-4f74-826c-b995f405cb51",
+                  "observed_at": "2026-09-25T13:21:44.957Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:2790ccaf-73c0-4690-80da-6815b64b70b7",
+          "event:45a27b06-1afe-460e-af95-ff1c412ec797",
+          "event:bde2cb48-bba3-46fe-a2d0-e9ce43642abd",
+          "event:7c1f4466-bb28-4f74-826c-b995f405cb51"
+        ],
+        "observed_at": "2026-10-01T11:46:39.660000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:2790ccaf-73c0-4690-80da-6815b64b70b7",
+            "observed_at": "2026-09-25T10:14:29.214Z",
+            "freshness_s": 523930.446
+          },
+          {
+            "ref": "event:45a27b06-1afe-460e-af95-ff1c412ec797",
+            "observed_at": "2026-09-25T11:58:16.654Z",
+            "freshness_s": 517703.006
+          },
+          {
+            "ref": "event:bde2cb48-bba3-46fe-a2d0-e9ce43642abd",
+            "observed_at": "2026-09-25T13:18:58.704Z",
+            "freshness_s": 512860.956
+          },
+          {
+            "ref": "event:7c1f4466-bb28-4f74-826c-b995f405cb51",
+            "observed_at": "2026-09-25T13:21:44.957Z",
+            "freshness_s": 512694.703
+          }
+        ]
       }
     },
     "conflicts": [

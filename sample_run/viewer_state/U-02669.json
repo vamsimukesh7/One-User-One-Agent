@@ -67,6 +67,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2674880.537,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hapibha-d1",
+              "next_episode_id": "hapibha-d1-s1e2",
+              "last_play_at": "2026-09-08T14:23:06.123000Z",
+              "sources": [
+                {
+                  "ref": "event:6c1be537-49d7-4026-8c35-b14197803b9a",
+                  "observed_at": "2026-09-08T14:23:06.123Z"
+                },
+                {
+                  "ref": "event:fea3e70c-7b81-4ab8-b79a-9634d850171d",
+                  "observed_at": "2026-09-08T14:25:53.319Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:6c1be537-49d7-4026-8c35-b14197803b9a",
+          "event:fea3e70c-7b81-4ab8-b79a-9634d850171d"
+        ],
+        "observed_at": "2026-10-01T17:31:20.537000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:6c1be537-49d7-4026-8c35-b14197803b9a",
+            "observed_at": "2026-09-08T14:23:06.123Z",
+            "freshness_s": 1998494.414
+          },
+          {
+            "ref": "event:fea3e70c-7b81-4ab8-b79a-9634d850171d",
+            "observed_at": "2026-09-08T14:25:53.319Z",
+            "freshness_s": 1998327.218
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +207,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2611550.384,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "hapibha-d1",
+                  "next_episode_id": "hapibha-d1-s1e2",
+                  "last_play_at": "2026-09-08T14:23:06.123000Z",
+                  "sources": [
+                    {
+                      "ref": "event:6c1be537-49d7-4026-8c35-b14197803b9a",
+                      "observed_at": "2026-09-08T14:23:06.123Z"
+                    },
+                    {
+                      "ref": "event:fea3e70c-7b81-4ab8-b79a-9634d850171d",
+                      "observed_at": "2026-09-08T14:25:53.319Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:6c1be537-49d7-4026-8c35-b14197803b9a",
+              "event:fea3e70c-7b81-4ab8-b79a-9634d850171d"
+            ],
+            "observed_at": "2026-09-30T23:55:50.384000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:6c1be537-49d7-4026-8c35-b14197803b9a",
+                "observed_at": "2026-09-08T14:23:06.123Z",
+                "freshness_s": 1935164.261
+              },
+              {
+                "ref": "event:fea3e70c-7b81-4ab8-b79a-9634d850171d",
+                "observed_at": "2026-09-08T14:25:53.319Z",
+                "freshness_s": 1934997.065
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +254,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -197,9 +283,9 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-016458",
-          "event:oua-016461",
-          "event:oua-016464"
+          "event:oua-016456",
+          "event:oua-016459",
+          "event:oua-016462"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

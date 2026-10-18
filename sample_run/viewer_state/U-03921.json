@@ -67,6 +67,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2621586.554,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "radi-d4",
+              "next_episode_id": "radi-d4-s1e1",
+              "last_play_at": "2026-09-23T04:53:43.863000Z",
+              "sources": [
+                {
+                  "ref": "event:6bb06abe-39c6-47ac-b6bf-f83f603dc1af",
+                  "observed_at": "2026-09-23T04:57:43.545Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:6bb06abe-39c6-47ac-b6bf-f83f603dc1af"
+        ],
+        "observed_at": "2026-10-01T02:43:06.554000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:6bb06abe-39c6-47ac-b6bf-f83f603dc1af",
+            "observed_at": "2026-09-23T04:57:43.545Z",
+            "freshness_s": 683123.009
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -87,7 +117,7 @@
       "lesson": "Do not equate publishing with seeing or observing success with causation."
     }
   ],
-  "state_updated_at": "2026-10-01T11:42:01.824Z",
+  "state_updated_at": "2026-10-01T11:42:01.824000Z",
   "plans": [
     {
       "plan_id": "P-363b9a89b527afce2fc8",
@@ -169,6 +199,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2621586.554,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "radi-d4",
+                  "next_episode_id": "radi-d4-s1e1",
+                  "last_play_at": "2026-09-23T04:53:43.863000Z",
+                  "sources": [
+                    {
+                      "ref": "event:6bb06abe-39c6-47ac-b6bf-f83f603dc1af",
+                      "observed_at": "2026-09-23T04:57:43.545Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:6bb06abe-39c6-47ac-b6bf-f83f603dc1af"
+            ],
+            "observed_at": "2026-10-01T02:43:06.554000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:6bb06abe-39c6-47ac-b6bf-f83f603dc1af",
+                "observed_at": "2026-09-23T04:57:43.545Z",
+                "freshness_s": 683123.009
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -176,6 +236,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

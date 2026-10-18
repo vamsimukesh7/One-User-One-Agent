@@ -67,6 +67,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2672147.197,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "kova-sako-d5",
+              "next_episode_id": "kova-sako-d5-s1e1",
+              "last_play_at": "2026-09-17T08:14:45.051000Z",
+              "sources": [
+                {
+                  "ref": "event:d7dae5cc-fb20-4aa8-a563-47106f0e67a3",
+                  "observed_at": "2026-09-17T08:14:45.051Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:d7dae5cc-fb20-4aa8-a563-47106f0e67a3"
+        ],
+        "observed_at": "2026-10-01T16:45:47.197000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:d7dae5cc-fb20-4aa8-a563-47106f0e67a3",
+            "observed_at": "2026-09-17T08:14:45.051Z",
+            "freshness_s": 1240262.146
+          }
+        ]
       }
     },
     "conflicts": [
@@ -88,24 +118,24 @@
   "latest_decision_id": "D-1977e55b6fb00b97f7eb",
   "learning": [
     {
-      "goal_id": "G08",
-      "result": "succeeded",
+      "goal_id": "G07",
+      "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
     }
   ],
   "plans": [
     {
-      "plan_id": "P-d724fbdc0371022f805f",
+      "plan_id": "P-5b28a9edc7f71b01fffd",
       "user_id": "U-02193",
-      "goal_id": "G08",
-      "status": "succeeded",
+      "goal_id": "G07",
+      "status": "failed",
       "started_at": "2026-10-01T16:45:47.197000Z",
-      "deadline": "2026-10-08T16:45:47.197000Z",
+      "deadline": "2026-10-04T16:45:47.197000Z",
       "success": {
         "event": "play_started",
-        "condition": "a title released in the 30 days before the goal start",
-        "window_hours": 168
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "6dd1ec00-5be4-4ff2-a487-5c165469cf87",
@@ -175,6 +205,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2672147.197,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "kova-sako-d5",
+                  "next_episode_id": "kova-sako-d5-s1e1",
+                  "last_play_at": "2026-09-17T08:14:45.051000Z",
+                  "sources": [
+                    {
+                      "ref": "event:d7dae5cc-fb20-4aa8-a563-47106f0e67a3",
+                      "observed_at": "2026-09-17T08:14:45.051Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:d7dae5cc-fb20-4aa8-a563-47106f0e67a3"
+            ],
+            "observed_at": "2026-10-01T16:45:47.197000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:d7dae5cc-fb20-4aa8-a563-47106f0e67a3",
+                "observed_at": "2026-09-17T08:14:45.051Z",
+                "freshness_s": 1240262.146
+              }
+            ]
           }
         },
         "conflicts": [
@@ -192,35 +252,35 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [
         "A-1977e55b6fb00b97f7eb"
       ],
+      "target_content_slug": "kova-sako-d5",
+      "next_episode_id": "kova-sako-d5-s1e1",
       "final_outcome": {
-        "plan_id": "P-d724fbdc0371022f805f",
+        "plan_id": "P-5b28a9edc7f71b01fffd",
         "user_id": "U-02193",
-        "goal_id": "G08",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T16:45:47.197000Z",
-        "deadline": "2026-10-08T16:45:47.197000Z",
-        "status": "succeeded",
-        "reason": "observed_success_signal_in_goal_window",
+        "deadline": "2026-10-04T16:45:47.197000Z",
+        "status": "failed",
+        "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
           "event": "play_started",
-          "condition": "a title released in the 30 days before the goal start",
-          "window_hours": 168
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
-        "signal_refs": [
-          "event:oua-014091",
-          "event:oua-014098"
-        ],
-        "exposure_refs": [
-          "event:oua-014085"
-        ],
+        "signal_refs": [],
+        "exposure_refs": [],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T16:45:47.197000Z"
+      "closed_at": "2026-10-04T16:45:47.197000Z"
     }
   ]
 }

@@ -67,6 +67,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2669277.023,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "jakasa-dapi-d3",
+              "next_episode_id": "jakasa-dapi-d3-s1e1",
+              "last_play_at": "2026-09-13T17:21:56.884000Z",
+              "sources": [
+                {
+                  "ref": "event:807be374-7f83-4ca4-9b21-8c5b42b90304",
+                  "observed_at": "2026-09-13T17:21:56.884Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:807be374-7f83-4ca4-9b21-8c5b42b90304"
+        ],
+        "observed_at": "2026-10-01T15:57:57.023000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:807be374-7f83-4ca4-9b21-8c5b42b90304",
+            "observed_at": "2026-09-13T17:21:56.884Z",
+            "freshness_s": 1550160.139
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +197,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2669277.023,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "jakasa-dapi-d3",
+                  "next_episode_id": "jakasa-dapi-d3-s1e1",
+                  "last_play_at": "2026-09-13T17:21:56.884000Z",
+                  "sources": [
+                    {
+                      "ref": "event:807be374-7f83-4ca4-9b21-8c5b42b90304",
+                      "observed_at": "2026-09-13T17:21:56.884Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:807be374-7f83-4ca4-9b21-8c5b42b90304"
+            ],
+            "observed_at": "2026-10-01T15:57:57.023000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:807be374-7f83-4ca4-9b21-8c5b42b90304",
+                "observed_at": "2026-09-13T17:21:56.884Z",
+                "freshness_s": 1550160.139
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +234,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -195,7 +261,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-016933"
+          "event:oua-016931"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

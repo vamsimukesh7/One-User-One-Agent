@@ -61,6 +61,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2669246.271,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "ririgi-d3",
+              "next_episode_id": "ririgi-d3-s1e1",
+              "last_play_at": "2026-09-19T17:27:20.756000Z",
+              "sources": [
+                {
+                  "ref": "event:266c929b-e26e-4c31-a73f-1fe34d3a5b02",
+                  "observed_at": "2026-09-19T17:27:20.756Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "digi-mone-d3",
+              "next_episode_id": "digi-mone-d3-s1e1",
+              "last_play_at": "2026-09-02T13:31:49.884000Z",
+              "sources": [
+                {
+                  "ref": "event:ca0b3db2-115f-402f-994f-506e9649e495",
+                  "observed_at": "2026-09-02T13:31:49.884Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:266c929b-e26e-4c31-a73f-1fe34d3a5b02",
+          "event:ca0b3db2-115f-402f-994f-506e9649e495"
+        ],
+        "observed_at": "2026-10-01T15:57:26.271000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:266c929b-e26e-4c31-a73f-1fe34d3a5b02",
+            "observed_at": "2026-09-19T17:27:20.756Z",
+            "freshness_s": 1031405.515
+          },
+          {
+            "ref": "event:ca0b3db2-115f-402f-994f-506e9649e495",
+            "observed_at": "2026-09-02T13:31:49.884Z",
+            "freshness_s": 2514336.387
+          }
+        ]
       }
     },
     "conflicts": [],

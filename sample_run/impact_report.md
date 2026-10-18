@@ -1,6 +1,6 @@
 # Impact report
 
-Replay primary — completion within 72h: agent 251/758 (33.11%); holdout 234/746 (31.37%). Risk difference +1.75 percentage points (95% CI -2.98 to +6.45).
+Replay primary — completion within 72h: agent 250/758 (32.98%); holdout 234/746 (31.37%). Risk difference +1.61 percentage points (95% CI -3.10 to +6.32).
 
 Replay secondary — paid purchase within 7d: agent 21/758 (2.77%); holdout 29/746 (3.89%). Risk difference -1.12 percentage points (95% CI -3.01 to +0.73).
 

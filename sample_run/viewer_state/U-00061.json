@@ -67,6 +67,147 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2671887.998,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bala-naja-d2",
+              "next_episode_id": "bala-naja-d2-s1e1",
+              "last_play_at": "2026-09-27T12:45:11.801000Z",
+              "sources": [
+                {
+                  "ref": "event:92d745d5-cd6d-4765-a00d-73d8ef383d17",
+                  "observed_at": "2026-09-27T12:45:11.801Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e3",
+              "last_play_at": "2026-09-26T06:19:00.310000Z",
+              "sources": [
+                {
+                  "ref": "event:a25303ac-2935-4a5a-bada-1165b07090d5",
+                  "observed_at": "2026-09-15T08:33:28.699Z"
+                },
+                {
+                  "ref": "event:ee00119c-2b71-45e2-9e59-edfdaf385915",
+                  "observed_at": "2026-09-16T07:47:34.242Z"
+                },
+                {
+                  "ref": "event:60c0bcaf-8f8d-420a-99cd-95fbaee9ac99",
+                  "observed_at": "2026-09-16T08:13:20.759Z"
+                },
+                {
+                  "ref": "event:c97c5988-ac50-48eb-bfdb-56a8f9e0b566",
+                  "observed_at": "2026-09-16T11:08:58.566Z"
+                },
+                {
+                  "ref": "event:e0b5ea1d-5fb7-4dcc-9e7a-ffc1a1d1e880",
+                  "observed_at": "2026-09-16T11:49:27.859Z"
+                },
+                {
+                  "ref": "event:576138cf-c3ca-4bd4-a057-2ae74dedad79",
+                  "observed_at": "2026-09-26T06:19:00.310Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e2",
+              "last_play_at": "2026-09-21T09:49:17.399000Z",
+              "sources": [
+                {
+                  "ref": "event:75dcc679-85fa-48aa-bdbd-1ea3f454a741",
+                  "observed_at": "2026-09-21T09:49:17.399Z"
+                },
+                {
+                  "ref": "event:f42f3696-44c3-4611-a6ac-44ac322cb3cb",
+                  "observed_at": "2026-09-21T09:52:03.841Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "ritisa-guti-d2",
+              "next_episode_id": "ritisa-guti-d2-s1e1",
+              "last_play_at": "2026-09-15T08:59:53.708000Z",
+              "sources": [
+                {
+                  "ref": "event:2123a0b9-e355-42da-8800-e78859183847",
+                  "observed_at": "2026-09-21T05:16:10.144Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:92d745d5-cd6d-4765-a00d-73d8ef383d17",
+          "event:a25303ac-2935-4a5a-bada-1165b07090d5",
+          "event:ee00119c-2b71-45e2-9e59-edfdaf385915",
+          "event:60c0bcaf-8f8d-420a-99cd-95fbaee9ac99",
+          "event:c97c5988-ac50-48eb-bfdb-56a8f9e0b566",
+          "event:e0b5ea1d-5fb7-4dcc-9e7a-ffc1a1d1e880",
+          "event:576138cf-c3ca-4bd4-a057-2ae74dedad79",
+          "event:75dcc679-85fa-48aa-bdbd-1ea3f454a741",
+          "event:f42f3696-44c3-4611-a6ac-44ac322cb3cb",
+          "event:2123a0b9-e355-42da-8800-e78859183847"
+        ],
+        "observed_at": "2026-10-01T16:41:27.998000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:92d745d5-cd6d-4765-a00d-73d8ef383d17",
+            "observed_at": "2026-09-27T12:45:11.801Z",
+            "freshness_s": 359776.197
+          },
+          {
+            "ref": "event:a25303ac-2935-4a5a-bada-1165b07090d5",
+            "observed_at": "2026-09-15T08:33:28.699Z",
+            "freshness_s": 1411679.299
+          },
+          {
+            "ref": "event:ee00119c-2b71-45e2-9e59-edfdaf385915",
+            "observed_at": "2026-09-16T07:47:34.242Z",
+            "freshness_s": 1328033.756
+          },
+          {
+            "ref": "event:60c0bcaf-8f8d-420a-99cd-95fbaee9ac99",
+            "observed_at": "2026-09-16T08:13:20.759Z",
+            "freshness_s": 1326487.239
+          },
+          {
+            "ref": "event:c97c5988-ac50-48eb-bfdb-56a8f9e0b566",
+            "observed_at": "2026-09-16T11:08:58.566Z",
+            "freshness_s": 1315949.432
+          },
+          {
+            "ref": "event:e0b5ea1d-5fb7-4dcc-9e7a-ffc1a1d1e880",
+            "observed_at": "2026-09-16T11:49:27.859Z",
+            "freshness_s": 1313520.139
+          },
+          {
+            "ref": "event:576138cf-c3ca-4bd4-a057-2ae74dedad79",
+            "observed_at": "2026-09-26T06:19:00.310Z",
+            "freshness_s": 469347.688
+          },
+          {
+            "ref": "event:75dcc679-85fa-48aa-bdbd-1ea3f454a741",
+            "observed_at": "2026-09-21T09:49:17.399Z",
+            "freshness_s": 888730.599
+          },
+          {
+            "ref": "event:f42f3696-44c3-4611-a6ac-44ac322cb3cb",
+            "observed_at": "2026-09-21T09:52:03.841Z",
+            "freshness_s": 888564.157
+          },
+          {
+            "ref": "event:2123a0b9-e355-42da-8800-e78859183847",
+            "observed_at": "2026-09-21T05:16:10.144Z",
+            "freshness_s": 905117.854
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -80,7 +221,7 @@
   "latest_decision_id": "D-2a3a96c75e022c813d2a",
   "learning": [
     {
-      "goal_id": "G08",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -88,16 +229,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-9afc138fd475f881c234",
+      "plan_id": "P-34fe3fa3043b064e5343",
       "user_id": "U-00061",
-      "goal_id": "G08",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T15:01:01.249000Z",
-      "deadline": "2026-10-08T15:01:01.249000Z",
+      "deadline": "2026-10-04T15:01:01.249000Z",
       "success": {
         "event": "play_started",
-        "condition": "a title released in the 30 days before the goal start",
-        "window_hours": 168
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "59d4886f-11be-40f6-90dc-50f70842ac37",
@@ -167,6 +308,147 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2665861.249,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "bala-naja-d2",
+                  "next_episode_id": "bala-naja-d2-s1e1",
+                  "last_play_at": "2026-09-27T12:45:11.801000Z",
+                  "sources": [
+                    {
+                      "ref": "event:92d745d5-cd6d-4765-a00d-73d8ef383d17",
+                      "observed_at": "2026-09-27T12:45:11.801Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "molo-d2",
+                  "next_episode_id": "molo-d2-s1e3",
+                  "last_play_at": "2026-09-26T06:19:00.310000Z",
+                  "sources": [
+                    {
+                      "ref": "event:a25303ac-2935-4a5a-bada-1165b07090d5",
+                      "observed_at": "2026-09-15T08:33:28.699Z"
+                    },
+                    {
+                      "ref": "event:ee00119c-2b71-45e2-9e59-edfdaf385915",
+                      "observed_at": "2026-09-16T07:47:34.242Z"
+                    },
+                    {
+                      "ref": "event:60c0bcaf-8f8d-420a-99cd-95fbaee9ac99",
+                      "observed_at": "2026-09-16T08:13:20.759Z"
+                    },
+                    {
+                      "ref": "event:c97c5988-ac50-48eb-bfdb-56a8f9e0b566",
+                      "observed_at": "2026-09-16T11:08:58.566Z"
+                    },
+                    {
+                      "ref": "event:e0b5ea1d-5fb7-4dcc-9e7a-ffc1a1d1e880",
+                      "observed_at": "2026-09-16T11:49:27.859Z"
+                    },
+                    {
+                      "ref": "event:576138cf-c3ca-4bd4-a057-2ae74dedad79",
+                      "observed_at": "2026-09-26T06:19:00.310Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "guka-kosusa-d2",
+                  "next_episode_id": "guka-kosusa-d2-s1e2",
+                  "last_play_at": "2026-09-21T09:49:17.399000Z",
+                  "sources": [
+                    {
+                      "ref": "event:75dcc679-85fa-48aa-bdbd-1ea3f454a741",
+                      "observed_at": "2026-09-21T09:49:17.399Z"
+                    },
+                    {
+                      "ref": "event:f42f3696-44c3-4611-a6ac-44ac322cb3cb",
+                      "observed_at": "2026-09-21T09:52:03.841Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "ritisa-guti-d2",
+                  "next_episode_id": "ritisa-guti-d2-s1e1",
+                  "last_play_at": "2026-09-15T08:59:53.708000Z",
+                  "sources": [
+                    {
+                      "ref": "event:2123a0b9-e355-42da-8800-e78859183847",
+                      "observed_at": "2026-09-21T05:16:10.144Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:92d745d5-cd6d-4765-a00d-73d8ef383d17",
+              "event:a25303ac-2935-4a5a-bada-1165b07090d5",
+              "event:ee00119c-2b71-45e2-9e59-edfdaf385915",
+              "event:60c0bcaf-8f8d-420a-99cd-95fbaee9ac99",
+              "event:c97c5988-ac50-48eb-bfdb-56a8f9e0b566",
+              "event:e0b5ea1d-5fb7-4dcc-9e7a-ffc1a1d1e880",
+              "event:576138cf-c3ca-4bd4-a057-2ae74dedad79",
+              "event:75dcc679-85fa-48aa-bdbd-1ea3f454a741",
+              "event:f42f3696-44c3-4611-a6ac-44ac322cb3cb",
+              "event:2123a0b9-e355-42da-8800-e78859183847"
+            ],
+            "observed_at": "2026-10-01T15:01:01.249000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:92d745d5-cd6d-4765-a00d-73d8ef383d17",
+                "observed_at": "2026-09-27T12:45:11.801Z",
+                "freshness_s": 353749.448
+              },
+              {
+                "ref": "event:a25303ac-2935-4a5a-bada-1165b07090d5",
+                "observed_at": "2026-09-15T08:33:28.699Z",
+                "freshness_s": 1405652.55
+              },
+              {
+                "ref": "event:ee00119c-2b71-45e2-9e59-edfdaf385915",
+                "observed_at": "2026-09-16T07:47:34.242Z",
+                "freshness_s": 1322007.007
+              },
+              {
+                "ref": "event:60c0bcaf-8f8d-420a-99cd-95fbaee9ac99",
+                "observed_at": "2026-09-16T08:13:20.759Z",
+                "freshness_s": 1320460.49
+              },
+              {
+                "ref": "event:c97c5988-ac50-48eb-bfdb-56a8f9e0b566",
+                "observed_at": "2026-09-16T11:08:58.566Z",
+                "freshness_s": 1309922.683
+              },
+              {
+                "ref": "event:e0b5ea1d-5fb7-4dcc-9e7a-ffc1a1d1e880",
+                "observed_at": "2026-09-16T11:49:27.859Z",
+                "freshness_s": 1307493.39
+              },
+              {
+                "ref": "event:576138cf-c3ca-4bd4-a057-2ae74dedad79",
+                "observed_at": "2026-09-26T06:19:00.310Z",
+                "freshness_s": 463320.939
+              },
+              {
+                "ref": "event:75dcc679-85fa-48aa-bdbd-1ea3f454a741",
+                "observed_at": "2026-09-21T09:49:17.399Z",
+                "freshness_s": 882703.85
+              },
+              {
+                "ref": "event:f42f3696-44c3-4611-a6ac-44ac322cb3cb",
+                "observed_at": "2026-09-21T09:52:03.841Z",
+                "freshness_s": 882537.408
+              },
+              {
+                "ref": "event:2123a0b9-e355-42da-8800-e78859183847",
+                "observed_at": "2026-09-21T05:16:10.144Z",
+                "freshness_s": 899091.105
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -176,34 +458,36 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [
         "A-036bc41a9d0cb90fd620",
         "A-2a3a96c75e022c813d2a"
       ],
+      "target_content_slug": "bala-naja-d2",
+      "next_episode_id": "bala-naja-d2-s1e1",
       "final_outcome": {
-        "plan_id": "P-9afc138fd475f881c234",
+        "plan_id": "P-34fe3fa3043b064e5343",
         "user_id": "U-00061",
-        "goal_id": "G08",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T15:01:01.249000Z",
-        "deadline": "2026-10-08T15:01:01.249000Z",
+        "deadline": "2026-10-04T15:01:01.249000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
           "event": "play_started",
-          "condition": "a title released in the 30 days before the goal start",
-          "window_hours": 168
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
-        "exposure_refs": [
-          "event:oua-000371",
-          "event:oua-000375"
-        ],
+        "exposure_refs": [],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T15:01:01.249000Z"
+      "closed_at": "2026-10-04T15:01:01.249000Z"
     }
   ]
 }

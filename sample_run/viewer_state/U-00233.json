@@ -67,6 +67,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2674131.526,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "tero-koja-d2",
+              "next_episode_id": "tero-koja-d2-s1e2",
+              "last_play_at": "2026-09-12T12:36:04.372000Z",
+              "sources": [
+                {
+                  "ref": "event:28ab72d3-71e6-4c88-bb39-bfd23c9cb7cd",
+                  "observed_at": "2026-09-19T15:51:47.844Z"
+                },
+                {
+                  "ref": "event:e1c8e3fe-997a-490e-bb78-f4d8fe31a5bd",
+                  "observed_at": "2026-09-19T16:30:24.894Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "dhapipa-gini-d2",
+              "next_episode_id": "dhapipa-gini-d2-s1e1",
+              "last_play_at": "2026-09-12T07:30:09.339000Z",
+              "sources": [
+                {
+                  "ref": "event:67720e50-ad47-40ea-82ba-697a0952039b",
+                  "observed_at": "2026-09-12T07:32:01.295Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:28ab72d3-71e6-4c88-bb39-bfd23c9cb7cd",
+          "event:e1c8e3fe-997a-490e-bb78-f4d8fe31a5bd",
+          "event:67720e50-ad47-40ea-82ba-697a0952039b"
+        ],
+        "observed_at": "2026-10-01T17:18:51.526000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:28ab72d3-71e6-4c88-bb39-bfd23c9cb7cd",
+            "observed_at": "2026-09-19T15:51:47.844Z",
+            "freshness_s": 1042023.682
+          },
+          {
+            "ref": "event:e1c8e3fe-997a-490e-bb78-f4d8fe31a5bd",
+            "observed_at": "2026-09-19T16:30:24.894Z",
+            "freshness_s": 1039706.632
+          },
+          {
+            "ref": "event:67720e50-ad47-40ea-82ba-697a0952039b",
+            "observed_at": "2026-09-12T07:32:01.295Z",
+            "freshness_s": 1676810.231
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +225,63 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2674131.526,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "tero-koja-d2",
+                  "next_episode_id": "tero-koja-d2-s1e2",
+                  "last_play_at": "2026-09-12T12:36:04.372000Z",
+                  "sources": [
+                    {
+                      "ref": "event:28ab72d3-71e6-4c88-bb39-bfd23c9cb7cd",
+                      "observed_at": "2026-09-19T15:51:47.844Z"
+                    },
+                    {
+                      "ref": "event:e1c8e3fe-997a-490e-bb78-f4d8fe31a5bd",
+                      "observed_at": "2026-09-19T16:30:24.894Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "dhapipa-gini-d2",
+                  "next_episode_id": "dhapipa-gini-d2-s1e1",
+                  "last_play_at": "2026-09-12T07:30:09.339000Z",
+                  "sources": [
+                    {
+                      "ref": "event:67720e50-ad47-40ea-82ba-697a0952039b",
+                      "observed_at": "2026-09-12T07:32:01.295Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:28ab72d3-71e6-4c88-bb39-bfd23c9cb7cd",
+              "event:e1c8e3fe-997a-490e-bb78-f4d8fe31a5bd",
+              "event:67720e50-ad47-40ea-82ba-697a0952039b"
+            ],
+            "observed_at": "2026-10-01T17:18:51.526000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:28ab72d3-71e6-4c88-bb39-bfd23c9cb7cd",
+                "observed_at": "2026-09-19T15:51:47.844Z",
+                "freshness_s": 1042023.682
+              },
+              {
+                "ref": "event:e1c8e3fe-997a-490e-bb78-f4d8fe31a5bd",
+                "observed_at": "2026-09-19T16:30:24.894Z",
+                "freshness_s": 1039706.632
+              },
+              {
+                "ref": "event:67720e50-ad47-40ea-82ba-697a0952039b",
+                "observed_at": "2026-09-12T07:32:01.295Z",
+                "freshness_s": 1676810.231
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +289,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

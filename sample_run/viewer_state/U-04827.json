@@ -67,6 +67,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2609809.847,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yane-tegi-d3",
+              "next_episode_id": "yane-tegi-d3-s1e1",
+              "last_play_at": "2026-09-10T08:20:20.347000Z",
+              "sources": [
+                {
+                  "ref": "event:595506ad-d8d0-445a-b343-395a31462e3d",
+                  "observed_at": "2026-09-10T08:20:20.347Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:595506ad-d8d0-445a-b343-395a31462e3d"
+        ],
+        "observed_at": "2026-09-30T23:26:49.847000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:595506ad-d8d0-445a-b343-395a31462e3d",
+            "observed_at": "2026-09-10T08:20:20.347Z",
+            "freshness_s": 1782389.5
+          }
+        ]
       }
     },
     "conflicts": [],

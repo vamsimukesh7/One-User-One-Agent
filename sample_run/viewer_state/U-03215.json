@@ -61,6 +61,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2622549.722,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "chugu-d2",
+              "next_episode_id": "chugu-d2-s1e2",
+              "last_play_at": "2026-09-24T09:32:18.921000Z",
+              "sources": [
+                {
+                  "ref": "event:22ae491d-02d9-4428-a017-f279adc66684",
+                  "observed_at": "2026-09-03T06:01:59.880Z"
+                },
+                {
+                  "ref": "event:39520cf2-5df8-4d82-a0f3-069089b9036b",
+                  "observed_at": "2026-09-03T06:31:26.207Z"
+                },
+                {
+                  "ref": "event:761d28d5-3b5a-4332-b46d-349163d18d62",
+                  "observed_at": "2026-09-24T09:32:18.921Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:22ae491d-02d9-4428-a017-f279adc66684",
+          "event:39520cf2-5df8-4d82-a0f3-069089b9036b",
+          "event:761d28d5-3b5a-4332-b46d-349163d18d62"
+        ],
+        "observed_at": "2026-10-01T02:59:09.722000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:22ae491d-02d9-4428-a017-f279adc66684",
+            "observed_at": "2026-09-03T06:01:59.880Z",
+            "freshness_s": 2408229.842
+          },
+          {
+            "ref": "event:39520cf2-5df8-4d82-a0f3-069089b9036b",
+            "observed_at": "2026-09-03T06:31:26.207Z",
+            "freshness_s": 2406463.515
+          },
+          {
+            "ref": "event:761d28d5-3b5a-4332-b46d-349163d18d62",
+            "observed_at": "2026-09-24T09:32:18.921Z",
+            "freshness_s": 581210.801
+          }
+        ]
       }
     },
     "conflicts": [
@@ -83,25 +133,25 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G05",
-      "result": "succeeded",
+      "goal_id": "G07",
+      "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
     }
   ],
-  "state_updated_at": "2026-10-01T03:00:58.236Z",
+  "state_updated_at": "2026-10-01T03:00:58.236000Z",
   "plans": [
     {
-      "plan_id": "P-c5bd64ca82e3d9067b58",
+      "plan_id": "P-895f28eb3fcda092527e",
       "user_id": "U-03215",
-      "goal_id": "G05",
-      "status": "succeeded",
+      "goal_id": "G07",
+      "status": "failed",
       "started_at": "2026-10-01T02:59:09.722000Z",
-      "deadline": "2026-10-08T02:59:09.722000Z",
+      "deadline": "2026-10-04T02:59:09.722000Z",
       "success": {
-        "event": "purchase_completed",
-        "condition": "is_trial = false",
-        "window_hours": 168
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "0dcb742c-69ed-4bcf-ac19-29b8386c4e50",
@@ -165,6 +215,56 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2622549.722,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "chugu-d2",
+                  "next_episode_id": "chugu-d2-s1e2",
+                  "last_play_at": "2026-09-24T09:32:18.921000Z",
+                  "sources": [
+                    {
+                      "ref": "event:22ae491d-02d9-4428-a017-f279adc66684",
+                      "observed_at": "2026-09-03T06:01:59.880Z"
+                    },
+                    {
+                      "ref": "event:39520cf2-5df8-4d82-a0f3-069089b9036b",
+                      "observed_at": "2026-09-03T06:31:26.207Z"
+                    },
+                    {
+                      "ref": "event:761d28d5-3b5a-4332-b46d-349163d18d62",
+                      "observed_at": "2026-09-24T09:32:18.921Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:22ae491d-02d9-4428-a017-f279adc66684",
+              "event:39520cf2-5df8-4d82-a0f3-069089b9036b",
+              "event:761d28d5-3b5a-4332-b46d-349163d18d62"
+            ],
+            "observed_at": "2026-10-01T02:59:09.722000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:22ae491d-02d9-4428-a017-f279adc66684",
+                "observed_at": "2026-09-03T06:01:59.880Z",
+                "freshness_s": 2408229.842
+              },
+              {
+                "ref": "event:39520cf2-5df8-4d82-a0f3-069089b9036b",
+                "observed_at": "2026-09-03T06:31:26.207Z",
+                "freshness_s": 2406463.515
+              },
+              {
+                "ref": "event:761d28d5-3b5a-4332-b46d-349163d18d62",
+                "observed_at": "2026-09-24T09:32:18.921Z",
+                "freshness_s": 581210.801
+              }
+            ]
           }
         },
         "conflicts": [
@@ -182,33 +282,33 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [],
-      "closed_at": "2026-10-01T03:00:58.236Z",
-      "signal_refs": [
-        "event:75a48de4-47bd-40bd-9ac5-42f62f5089ab"
-      ],
+      "target_content_slug": "chugu-d2",
+      "next_episode_id": "chugu-d2-s1e2",
       "final_outcome": {
-        "plan_id": "P-c5bd64ca82e3d9067b58",
+        "plan_id": "P-895f28eb3fcda092527e",
         "user_id": "U-03215",
-        "goal_id": "G05",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T02:59:09.722000Z",
-        "deadline": "2026-10-08T02:59:09.722000Z",
-        "status": "succeeded",
-        "reason": "observed_success_signal_in_goal_window",
+        "deadline": "2026-10-04T02:59:09.722000Z",
+        "status": "failed",
+        "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "purchase_completed",
-          "condition": "is_trial = false",
-          "window_hours": 168
+          "event": "play_started",
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
-        "signal_refs": [
-          "event:75a48de4-47bd-40bd-9ac5-42f62f5089ab"
-        ],
+        "signal_refs": [],
         "exposure_refs": [],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
-      }
+      },
+      "closed_at": "2026-10-04T02:59:09.722000Z"
     }
   ]
 }

@@ -67,6 +67,93 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2635740.445,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e3",
+              "last_play_at": "2026-09-24T15:01:18.507000Z",
+              "sources": [
+                {
+                  "ref": "event:91b41dc8-02c7-46cf-81fd-2714c6542d90",
+                  "observed_at": "2026-09-06T07:52:12.010Z"
+                },
+                {
+                  "ref": "event:5668c476-0768-458a-ab08-abb426bfd65f",
+                  "observed_at": "2026-09-06T08:17:57.499Z"
+                },
+                {
+                  "ref": "event:0562d3c7-b7bb-48f6-8cc6-339b1575353e",
+                  "observed_at": "2026-09-06T17:00:14.760Z"
+                },
+                {
+                  "ref": "event:22a324fb-0ff4-4355-98c4-9235b4b90fc8",
+                  "observed_at": "2026-09-06T17:40:43.941Z"
+                },
+                {
+                  "ref": "event:5a9a5cfa-b4a9-4379-ba4c-f58fd30c8e8c",
+                  "observed_at": "2026-09-24T15:01:18.507Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "kolani-mari-d2",
+              "next_episode_id": "kolani-mari-d2-s1e1",
+              "last_play_at": "2026-09-04T14:23:09.874000Z",
+              "sources": [
+                {
+                  "ref": "event:39a29c39-7279-455d-8901-72fe83aded71",
+                  "observed_at": "2026-09-04T14:23:09.874Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:91b41dc8-02c7-46cf-81fd-2714c6542d90",
+          "event:5668c476-0768-458a-ab08-abb426bfd65f",
+          "event:0562d3c7-b7bb-48f6-8cc6-339b1575353e",
+          "event:22a324fb-0ff4-4355-98c4-9235b4b90fc8",
+          "event:5a9a5cfa-b4a9-4379-ba4c-f58fd30c8e8c",
+          "event:39a29c39-7279-455d-8901-72fe83aded71"
+        ],
+        "observed_at": "2026-10-01T06:39:00.445000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:91b41dc8-02c7-46cf-81fd-2714c6542d90",
+            "observed_at": "2026-09-06T07:52:12.010Z",
+            "freshness_s": 2155608.435
+          },
+          {
+            "ref": "event:5668c476-0768-458a-ab08-abb426bfd65f",
+            "observed_at": "2026-09-06T08:17:57.499Z",
+            "freshness_s": 2154062.946
+          },
+          {
+            "ref": "event:0562d3c7-b7bb-48f6-8cc6-339b1575353e",
+            "observed_at": "2026-09-06T17:00:14.760Z",
+            "freshness_s": 2122725.685
+          },
+          {
+            "ref": "event:22a324fb-0ff4-4355-98c4-9235b4b90fc8",
+            "observed_at": "2026-09-06T17:40:43.941Z",
+            "freshness_s": 2120296.504
+          },
+          {
+            "ref": "event:5a9a5cfa-b4a9-4379-ba4c-f58fd30c8e8c",
+            "observed_at": "2026-09-24T15:01:18.507Z",
+            "freshness_s": 574661.938
+          },
+          {
+            "ref": "event:39a29c39-7279-455d-8901-72fe83aded71",
+            "observed_at": "2026-09-04T14:23:09.874Z",
+            "freshness_s": 2304950.571
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +255,93 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2635740.445,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "molo-d2",
+                  "next_episode_id": "molo-d2-s1e3",
+                  "last_play_at": "2026-09-24T15:01:18.507000Z",
+                  "sources": [
+                    {
+                      "ref": "event:91b41dc8-02c7-46cf-81fd-2714c6542d90",
+                      "observed_at": "2026-09-06T07:52:12.010Z"
+                    },
+                    {
+                      "ref": "event:5668c476-0768-458a-ab08-abb426bfd65f",
+                      "observed_at": "2026-09-06T08:17:57.499Z"
+                    },
+                    {
+                      "ref": "event:0562d3c7-b7bb-48f6-8cc6-339b1575353e",
+                      "observed_at": "2026-09-06T17:00:14.760Z"
+                    },
+                    {
+                      "ref": "event:22a324fb-0ff4-4355-98c4-9235b4b90fc8",
+                      "observed_at": "2026-09-06T17:40:43.941Z"
+                    },
+                    {
+                      "ref": "event:5a9a5cfa-b4a9-4379-ba4c-f58fd30c8e8c",
+                      "observed_at": "2026-09-24T15:01:18.507Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "kolani-mari-d2",
+                  "next_episode_id": "kolani-mari-d2-s1e1",
+                  "last_play_at": "2026-09-04T14:23:09.874000Z",
+                  "sources": [
+                    {
+                      "ref": "event:39a29c39-7279-455d-8901-72fe83aded71",
+                      "observed_at": "2026-09-04T14:23:09.874Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:91b41dc8-02c7-46cf-81fd-2714c6542d90",
+              "event:5668c476-0768-458a-ab08-abb426bfd65f",
+              "event:0562d3c7-b7bb-48f6-8cc6-339b1575353e",
+              "event:22a324fb-0ff4-4355-98c4-9235b4b90fc8",
+              "event:5a9a5cfa-b4a9-4379-ba4c-f58fd30c8e8c",
+              "event:39a29c39-7279-455d-8901-72fe83aded71"
+            ],
+            "observed_at": "2026-10-01T06:39:00.445000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:91b41dc8-02c7-46cf-81fd-2714c6542d90",
+                "observed_at": "2026-09-06T07:52:12.010Z",
+                "freshness_s": 2155608.435
+              },
+              {
+                "ref": "event:5668c476-0768-458a-ab08-abb426bfd65f",
+                "observed_at": "2026-09-06T08:17:57.499Z",
+                "freshness_s": 2154062.946
+              },
+              {
+                "ref": "event:0562d3c7-b7bb-48f6-8cc6-339b1575353e",
+                "observed_at": "2026-09-06T17:00:14.760Z",
+                "freshness_s": 2122725.685
+              },
+              {
+                "ref": "event:22a324fb-0ff4-4355-98c4-9235b4b90fc8",
+                "observed_at": "2026-09-06T17:40:43.941Z",
+                "freshness_s": 2120296.504
+              },
+              {
+                "ref": "event:5a9a5cfa-b4a9-4379-ba4c-f58fd30c8e8c",
+                "observed_at": "2026-09-24T15:01:18.507Z",
+                "freshness_s": 574661.938
+              },
+              {
+                "ref": "event:39a29c39-7279-455d-8901-72fe83aded71",
+                "observed_at": "2026-09-04T14:23:09.874Z",
+                "freshness_s": 2304950.571
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +349,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

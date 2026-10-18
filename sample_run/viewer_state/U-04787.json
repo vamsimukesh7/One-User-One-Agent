@@ -61,6 +61,150 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2593316.335,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yatite-roloda-d3",
+              "next_episode_id": "yatite-roloda-d3-s1e3",
+              "last_play_at": "2026-09-27T02:30:27.774000Z",
+              "sources": [
+                {
+                  "ref": "event:30a13984-aa6a-414f-af80-e5a5e44fbdef",
+                  "observed_at": "2026-09-04T12:31:39.749Z"
+                },
+                {
+                  "ref": "event:72451a16-a047-4f43-853c-0ee80d8d6606",
+                  "observed_at": "2026-09-04T12:35:19.211Z"
+                },
+                {
+                  "ref": "event:e406951a-b322-4b19-b10e-d8db1c481a51",
+                  "observed_at": "2026-09-07T17:36:11.180Z"
+                },
+                {
+                  "ref": "event:4eb0d59b-5b44-43d3-813a-2b8317e9cf21",
+                  "observed_at": "2026-09-17T09:43:58.383Z"
+                },
+                {
+                  "ref": "event:4c343ef6-2cbb-4de5-9e32-950191ef59d7",
+                  "observed_at": "2026-09-27T02:30:27.774Z"
+                },
+                {
+                  "ref": "event:89fb9002-b6a8-4dfe-b4e1-0e95a9830fa7",
+                  "observed_at": "2026-09-27T02:32:19.015Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "digi-mone-d3",
+              "next_episode_id": "digi-mone-d3-s1e3",
+              "last_play_at": "2026-09-23T08:33:56.203000Z",
+              "sources": [
+                {
+                  "ref": "event:1d3151d9-54d9-4561-b8bb-4c7bf939ada2",
+                  "observed_at": "2026-09-03T13:31:21.986Z"
+                },
+                {
+                  "ref": "event:ff4b6324-9f1b-4f17-883c-67113b49f6e7",
+                  "observed_at": "2026-09-03T13:34:06.866Z"
+                },
+                {
+                  "ref": "event:943c3e06-0f5b-4a5c-aee2-569d42a1dbe7",
+                  "observed_at": "2026-09-23T08:33:56.203Z"
+                },
+                {
+                  "ref": "event:7df5c490-1315-4862-913e-50de1fb4deec",
+                  "observed_at": "2026-09-23T08:35:47.848Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "pate-kari-d3",
+              "next_episode_id": "pate-kari-d3-s1e1",
+              "last_play_at": "2026-09-03T02:10:07.418000Z",
+              "sources": [
+                {
+                  "ref": "event:a63ae45b-2c2d-4cab-87a4-deb41c434573",
+                  "observed_at": "2026-09-03T02:10:07.418Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:30a13984-aa6a-414f-af80-e5a5e44fbdef",
+          "event:72451a16-a047-4f43-853c-0ee80d8d6606",
+          "event:e406951a-b322-4b19-b10e-d8db1c481a51",
+          "event:4eb0d59b-5b44-43d3-813a-2b8317e9cf21",
+          "event:4c343ef6-2cbb-4de5-9e32-950191ef59d7",
+          "event:89fb9002-b6a8-4dfe-b4e1-0e95a9830fa7",
+          "event:1d3151d9-54d9-4561-b8bb-4c7bf939ada2",
+          "event:ff4b6324-9f1b-4f17-883c-67113b49f6e7",
+          "event:943c3e06-0f5b-4a5c-aee2-569d42a1dbe7",
+          "event:7df5c490-1315-4862-913e-50de1fb4deec",
+          "event:a63ae45b-2c2d-4cab-87a4-deb41c434573"
+        ],
+        "observed_at": "2026-09-30T18:51:56.335000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:30a13984-aa6a-414f-af80-e5a5e44fbdef",
+            "observed_at": "2026-09-04T12:31:39.749Z",
+            "freshness_s": 2269216.586
+          },
+          {
+            "ref": "event:72451a16-a047-4f43-853c-0ee80d8d6606",
+            "observed_at": "2026-09-04T12:35:19.211Z",
+            "freshness_s": 2268997.124
+          },
+          {
+            "ref": "event:e406951a-b322-4b19-b10e-d8db1c481a51",
+            "observed_at": "2026-09-07T17:36:11.180Z",
+            "freshness_s": 1991745.155
+          },
+          {
+            "ref": "event:4eb0d59b-5b44-43d3-813a-2b8317e9cf21",
+            "observed_at": "2026-09-17T09:43:58.383Z",
+            "freshness_s": 1156077.952
+          },
+          {
+            "ref": "event:4c343ef6-2cbb-4de5-9e32-950191ef59d7",
+            "observed_at": "2026-09-27T02:30:27.774Z",
+            "freshness_s": 318088.561
+          },
+          {
+            "ref": "event:89fb9002-b6a8-4dfe-b4e1-0e95a9830fa7",
+            "observed_at": "2026-09-27T02:32:19.015Z",
+            "freshness_s": 317977.32
+          },
+          {
+            "ref": "event:1d3151d9-54d9-4561-b8bb-4c7bf939ada2",
+            "observed_at": "2026-09-03T13:31:21.986Z",
+            "freshness_s": 2352034.349
+          },
+          {
+            "ref": "event:ff4b6324-9f1b-4f17-883c-67113b49f6e7",
+            "observed_at": "2026-09-03T13:34:06.866Z",
+            "freshness_s": 2351869.469
+          },
+          {
+            "ref": "event:943c3e06-0f5b-4a5c-aee2-569d42a1dbe7",
+            "observed_at": "2026-09-23T08:33:56.203Z",
+            "freshness_s": 641880.132
+          },
+          {
+            "ref": "event:7df5c490-1315-4862-913e-50de1fb4deec",
+            "observed_at": "2026-09-23T08:35:47.848Z",
+            "freshness_s": 641768.487
+          },
+          {
+            "ref": "event:a63ae45b-2c2d-4cab-87a4-deb41c434573",
+            "observed_at": "2026-09-03T02:10:07.418Z",
+            "freshness_s": 2392908.917
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -75,6 +219,6 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy"
   ],
-  "state_updated_at": "2026-09-30T18:53:43.929Z",
+  "state_updated_at": "2026-09-30T18:53:43.929000Z",
   "plans": []
 }

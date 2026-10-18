@@ -67,6 +67,80 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2634902.174,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bagugu-gigupi-d1",
+              "next_episode_id": "bagugu-gigupi-d1-s1e2",
+              "last_play_at": "2026-09-11T15:52:11.153000Z",
+              "sources": [
+                {
+                  "ref": "event:5093590b-91fa-4ad9-8403-cf801f32ae6d",
+                  "observed_at": "2026-09-11T15:52:11.153Z"
+                },
+                {
+                  "ref": "event:7dac549a-7d67-42be-ba76-3b2d6a1daadb",
+                  "observed_at": "2026-09-11T16:32:39.672Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "gidha-sudhako-d1",
+              "next_episode_id": "gidha-sudhako-d1-s1e1",
+              "last_play_at": "2026-09-07T12:19:54.627000Z",
+              "sources": [
+                {
+                  "ref": "event:1022997b-f66c-493a-a1f7-a39a11f8bfee",
+                  "observed_at": "2026-09-07T12:19:54.627Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "tidha-dakachu-d1",
+              "next_episode_id": "tidha-dakachu-d1-s1e1",
+              "last_play_at": "2026-09-03T16:24:33.792000Z",
+              "sources": [
+                {
+                  "ref": "event:48e102db-a569-4ac1-b72d-e5424439f8b5",
+                  "observed_at": "2026-09-03T16:24:33.792Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:5093590b-91fa-4ad9-8403-cf801f32ae6d",
+          "event:7dac549a-7d67-42be-ba76-3b2d6a1daadb",
+          "event:1022997b-f66c-493a-a1f7-a39a11f8bfee",
+          "event:48e102db-a569-4ac1-b72d-e5424439f8b5"
+        ],
+        "observed_at": "2026-10-01T06:25:02.174000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:5093590b-91fa-4ad9-8403-cf801f32ae6d",
+            "observed_at": "2026-09-11T15:52:11.153Z",
+            "freshness_s": 1693971.021
+          },
+          {
+            "ref": "event:7dac549a-7d67-42be-ba76-3b2d6a1daadb",
+            "observed_at": "2026-09-11T16:32:39.672Z",
+            "freshness_s": 1691542.502
+          },
+          {
+            "ref": "event:1022997b-f66c-493a-a1f7-a39a11f8bfee",
+            "observed_at": "2026-09-07T12:19:54.627Z",
+            "freshness_s": 2052307.547
+          },
+          {
+            "ref": "event:48e102db-a569-4ac1-b72d-e5424439f8b5",
+            "observed_at": "2026-09-03T16:24:33.792Z",
+            "freshness_s": 2383228.382
+          }
+        ]
       }
     },
     "conflicts": [
@@ -182,6 +256,80 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2634902.174,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "bagugu-gigupi-d1",
+                  "next_episode_id": "bagugu-gigupi-d1-s1e2",
+                  "last_play_at": "2026-09-11T15:52:11.153000Z",
+                  "sources": [
+                    {
+                      "ref": "event:5093590b-91fa-4ad9-8403-cf801f32ae6d",
+                      "observed_at": "2026-09-11T15:52:11.153Z"
+                    },
+                    {
+                      "ref": "event:7dac549a-7d67-42be-ba76-3b2d6a1daadb",
+                      "observed_at": "2026-09-11T16:32:39.672Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "gidha-sudhako-d1",
+                  "next_episode_id": "gidha-sudhako-d1-s1e1",
+                  "last_play_at": "2026-09-07T12:19:54.627000Z",
+                  "sources": [
+                    {
+                      "ref": "event:1022997b-f66c-493a-a1f7-a39a11f8bfee",
+                      "observed_at": "2026-09-07T12:19:54.627Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "tidha-dakachu-d1",
+                  "next_episode_id": "tidha-dakachu-d1-s1e1",
+                  "last_play_at": "2026-09-03T16:24:33.792000Z",
+                  "sources": [
+                    {
+                      "ref": "event:48e102db-a569-4ac1-b72d-e5424439f8b5",
+                      "observed_at": "2026-09-03T16:24:33.792Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:5093590b-91fa-4ad9-8403-cf801f32ae6d",
+              "event:7dac549a-7d67-42be-ba76-3b2d6a1daadb",
+              "event:1022997b-f66c-493a-a1f7-a39a11f8bfee",
+              "event:48e102db-a569-4ac1-b72d-e5424439f8b5"
+            ],
+            "observed_at": "2026-10-01T06:25:02.174000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:5093590b-91fa-4ad9-8403-cf801f32ae6d",
+                "observed_at": "2026-09-11T15:52:11.153Z",
+                "freshness_s": 1693971.021
+              },
+              {
+                "ref": "event:7dac549a-7d67-42be-ba76-3b2d6a1daadb",
+                "observed_at": "2026-09-11T16:32:39.672Z",
+                "freshness_s": 1691542.502
+              },
+              {
+                "ref": "event:1022997b-f66c-493a-a1f7-a39a11f8bfee",
+                "observed_at": "2026-09-07T12:19:54.627Z",
+                "freshness_s": 2052307.547
+              },
+              {
+                "ref": "event:48e102db-a569-4ac1-b72d-e5424439f8b5",
+                "observed_at": "2026-09-03T16:24:33.792Z",
+                "freshness_s": 2383228.382
+              }
+            ]
           }
         },
         "conflicts": [
@@ -206,6 +354,12 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
+        ]
+      },
       "actions": [
         "A-09fde5a40df38f151a15"
       ],
@@ -225,7 +379,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-027613"
+          "event:oua-027616"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

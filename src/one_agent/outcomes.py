@@ -2,16 +2,20 @@
 from datetime import timedelta
 from .common import day, event_time, ts
 from .policy import invalidation
+from .goals import UNSUPPORTED
 
 
 def matching_events(plan, events, pack):
+    if plan['goal_id'] in UNSUPPORTED or plan.get('unsupported_rule') or not plan.get('success',{}).get('event'):return []
     start, end = ts(plan['started_at']), ts(plan['deadline'])
     if plan.get('closed_at') and plan['status']=='superseded':
         end = min(end, ts(plan['closed_at']))
-    if invalidation(plan, events) or plan.get('invalidated'):
+    if invalidation(plan, events) or plan.get('invalidated') or plan.get('closed_reason')=='corrected_rule_revoked_eligibility':
         return []
-    result = []
-    for e in events:
+    result = [];seen=set()
+    for e in sorted(events,key=lambda e:e['received_at']):
+        if e['event_id'] in seen:continue
+        seen.add(e['event_id'])
         if e['user_id'] != plan['user_id']:
             continue
         effective, valid = event_time(e)
@@ -24,6 +28,9 @@ def matching_events(plan, events, pack):
             continue
         if g == 'G03' and day(effective) <= day(start):
             continue
+        if g == 'G07':
+            title=pack.catalogue.get(props.get('title_id'))
+            if not title or title['content_slug']!=plan.get('target_content_slug'):continue
         if g == 'G08':
             title = pack.catalogue.get(props.get('title_id'))
             if not title or not day(start)-timedelta(days=30) <= ts(title['release_date']+'T00:00:00Z').date() <= day(start):
@@ -35,22 +42,29 @@ def matching_events(plan, events, pack):
     return result
 
 
-def judge(plan, events, pack, observation_end, action_ids=()):
+def judge(plan, events, pack, observation_end, action_ids=(), observation_complete=True):
     events = [e for e in events if ts(e['received_at']) <= observation_end]
     signals = matching_events(plan, events, pack)
-    exposed = [e for e in events if e['event']=='home_page_shown'
+    exposed = [e for e in events if e['user_id']==plan['user_id'] and ((e['event']=='home_page_shown'
                and e.get('properties',{}).get('personalised') is True
-               and e.get('properties',{}).get('page_action_id') in action_ids]
+               and e.get('properties',{}).get('page_action_id') in action_ids) or
+               (e['event'] in {'message_clicked','in_app_message_shown'} and e.get('properties',{}).get('action_id') in action_ids))]
     associated = []
     for e in signals:
         if any(x.get('session_id') and x.get('session_id')==e.get('session_id') and ts(x['received_at']) <= event_time(e)[0] for x in exposed):
             associated.append(e['event_id'])
-    if invalidation(plan,events) or plan.get('invalidated'):
+    if plan['goal_id'] in UNSUPPORTED or plan.get('unsupported_rule') or not plan.get('success',{}).get('event'):
+        status,reason='inconclusive','unsupported_or_missing_success_signal'
+    elif plan.get('closed_reason')=='corrected_rule_revoked_eligibility':
+        status,reason='inconclusive','corrected_rule_revoked_eligibility'
+    elif invalidation(plan,events) or plan.get('invalidated'):
         status, reason = 'inconclusive', 'initial_eligibility_disproved_by_late_evidence'
     elif signals:
         status, reason = 'succeeded', 'observed_success_signal_in_goal_window'
     elif plan['status']=='superseded':
         status, reason = 'inconclusive', 'goal_superseded_by_changed_evidence'
+    elif not observation_complete:
+        status,reason='inconclusive','success_observation_incomplete'
     elif observation_end >= ts(plan['deadline']):
         status, reason = 'failed', 'no_success_signal_by_deadline_under_complete_feed_assumption'
     else:

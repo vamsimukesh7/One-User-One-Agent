@@ -67,6 +67,73 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2670361.901,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bagugu-gigupi-d1",
+              "next_episode_id": "bagugu-gigupi-d1-s1e2",
+              "last_play_at": "2026-09-28T14:23:13.523000Z",
+              "sources": [
+                {
+                  "ref": "event:b352fef9-301b-4e4b-8071-9702ea89434f",
+                  "observed_at": "2026-09-05T16:50:31.777Z"
+                },
+                {
+                  "ref": "event:26c94dc8-3cdc-48cc-aa3a-8a0acb5a4f2c",
+                  "observed_at": "2026-09-05T17:31:00.117Z"
+                },
+                {
+                  "ref": "event:ea97f54c-b464-47e2-a2a0-85758c846725",
+                  "observed_at": "2026-09-28T14:23:13.523Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "pate-batisa-d1",
+              "next_episode_id": "pate-batisa-d1-s1e1",
+              "last_play_at": "2026-09-05T16:46:09.046000Z",
+              "sources": [
+                {
+                  "ref": "event:0ff69d51-5f54-494d-b9db-569fae5eba9b",
+                  "observed_at": "2026-09-05T16:46:09.046Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:b352fef9-301b-4e4b-8071-9702ea89434f",
+          "event:26c94dc8-3cdc-48cc-aa3a-8a0acb5a4f2c",
+          "event:ea97f54c-b464-47e2-a2a0-85758c846725",
+          "event:0ff69d51-5f54-494d-b9db-569fae5eba9b"
+        ],
+        "observed_at": "2026-10-01T16:16:01.901000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:b352fef9-301b-4e4b-8071-9702ea89434f",
+            "observed_at": "2026-09-05T16:50:31.777Z",
+            "freshness_s": 2244330.124
+          },
+          {
+            "ref": "event:26c94dc8-3cdc-48cc-aa3a-8a0acb5a4f2c",
+            "observed_at": "2026-09-05T17:31:00.117Z",
+            "freshness_s": 2241901.784
+          },
+          {
+            "ref": "event:ea97f54c-b464-47e2-a2a0-85758c846725",
+            "observed_at": "2026-09-28T14:23:13.523Z",
+            "freshness_s": 265968.378
+          },
+          {
+            "ref": "event:0ff69d51-5f54-494d-b9db-569fae5eba9b",
+            "observed_at": "2026-09-05T16:46:09.046Z",
+            "freshness_s": 2244592.855
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -169,6 +236,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2649870.22,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "pate-batisa-d1",
+                  "next_episode_id": "pate-batisa-d1-s1e1",
+                  "last_play_at": "2026-09-05T16:46:09.046000Z",
+                  "sources": [
+                    {
+                      "ref": "event:0ff69d51-5f54-494d-b9db-569fae5eba9b",
+                      "observed_at": "2026-09-05T16:46:09.046Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:0ff69d51-5f54-494d-b9db-569fae5eba9b"
+            ],
+            "observed_at": "2026-10-01T10:34:30.220000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:0ff69d51-5f54-494d-b9db-569fae5eba9b",
+                "observed_at": "2026-09-05T16:46:09.046Z",
+                "freshness_s": 2224101.174
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -176,6 +273,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

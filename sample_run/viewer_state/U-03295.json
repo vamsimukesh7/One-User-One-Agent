@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2662396.812,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "naka-d6",
+              "next_episode_id": "naka-d6-s1e1",
+              "last_play_at": "2026-09-19T00:50:00.611000Z",
+              "sources": [
+                {
+                  "ref": "event:1e9e4af7-2f45-4c4d-9072-2794a6c12041",
+                  "observed_at": "2026-09-19T07:06:50.621Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:1e9e4af7-2f45-4c4d-9072-2794a6c12041"
+        ],
+        "observed_at": "2026-10-01T14:03:16.812000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:1e9e4af7-2f45-4c4d-9072-2794a6c12041",
+            "observed_at": "2026-09-19T07:06:50.621Z",
+            "freshness_s": 1061786.191
+          }
+        ]
       }
     },
     "conflicts": [],

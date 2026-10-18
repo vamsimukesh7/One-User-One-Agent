@@ -67,6 +67,70 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2653917.262,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e1",
+              "last_play_at": "2026-09-24T07:29:32.638000Z",
+              "sources": [
+                {
+                  "ref": "event:b8241647-cb21-4aa9-b0fa-d63c6f75cc3e",
+                  "observed_at": "2026-09-24T07:29:32.638Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "kolani-mari-d2",
+              "next_episode_id": "kolani-mari-d2-s1e1",
+              "last_play_at": "2026-09-14T05:29:40.987000Z",
+              "sources": [
+                {
+                  "ref": "event:7dce7ef1-6225-4e52-a5a5-b4e7e6ab9e34",
+                  "observed_at": "2026-09-14T05:29:40.987Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e1",
+              "last_play_at": "2026-09-11T01:50:12.747000Z",
+              "sources": [
+                {
+                  "ref": "event:b5e16fda-ee6a-4724-bcfb-1b4e94c2cba0",
+                  "observed_at": "2026-09-11T01:50:12.747Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:b8241647-cb21-4aa9-b0fa-d63c6f75cc3e",
+          "event:7dce7ef1-6225-4e52-a5a5-b4e7e6ab9e34",
+          "event:b5e16fda-ee6a-4724-bcfb-1b4e94c2cba0"
+        ],
+        "observed_at": "2026-10-01T11:41:57.262000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:b8241647-cb21-4aa9-b0fa-d63c6f75cc3e",
+            "observed_at": "2026-09-24T07:29:32.638Z",
+            "freshness_s": 619944.624
+          },
+          {
+            "ref": "event:7dce7ef1-6225-4e52-a5a5-b4e7e6ab9e34",
+            "observed_at": "2026-09-14T05:29:40.987Z",
+            "freshness_s": 1491136.275
+          },
+          {
+            "ref": "event:b5e16fda-ee6a-4724-bcfb-1b4e94c2cba0",
+            "observed_at": "2026-09-11T01:50:12.747Z",
+            "freshness_s": 1763504.515
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +232,70 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2653917.262,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "molo-d2",
+                  "next_episode_id": "molo-d2-s1e1",
+                  "last_play_at": "2026-09-24T07:29:32.638000Z",
+                  "sources": [
+                    {
+                      "ref": "event:b8241647-cb21-4aa9-b0fa-d63c6f75cc3e",
+                      "observed_at": "2026-09-24T07:29:32.638Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "kolani-mari-d2",
+                  "next_episode_id": "kolani-mari-d2-s1e1",
+                  "last_play_at": "2026-09-14T05:29:40.987000Z",
+                  "sources": [
+                    {
+                      "ref": "event:7dce7ef1-6225-4e52-a5a5-b4e7e6ab9e34",
+                      "observed_at": "2026-09-14T05:29:40.987Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "guka-kosusa-d2",
+                  "next_episode_id": "guka-kosusa-d2-s1e1",
+                  "last_play_at": "2026-09-11T01:50:12.747000Z",
+                  "sources": [
+                    {
+                      "ref": "event:b5e16fda-ee6a-4724-bcfb-1b4e94c2cba0",
+                      "observed_at": "2026-09-11T01:50:12.747Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:b8241647-cb21-4aa9-b0fa-d63c6f75cc3e",
+              "event:7dce7ef1-6225-4e52-a5a5-b4e7e6ab9e34",
+              "event:b5e16fda-ee6a-4724-bcfb-1b4e94c2cba0"
+            ],
+            "observed_at": "2026-10-01T11:41:57.262000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:b8241647-cb21-4aa9-b0fa-d63c6f75cc3e",
+                "observed_at": "2026-09-24T07:29:32.638Z",
+                "freshness_s": 619944.624
+              },
+              {
+                "ref": "event:7dce7ef1-6225-4e52-a5a5-b4e7e6ab9e34",
+                "observed_at": "2026-09-14T05:29:40.987Z",
+                "freshness_s": 1491136.275
+              },
+              {
+                "ref": "event:b5e16fda-ee6a-4724-bcfb-1b4e94c2cba0",
+                "observed_at": "2026-09-11T01:50:12.747Z",
+                "freshness_s": 1763504.515
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -176,6 +304,10 @@
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
+      },
+      "eligibility_rule": {
+        "text": "Has never completed an episode.",
+        "requires_no_prior_event": "episode_completed"
       },
       "actions": [],
       "final_outcome": {

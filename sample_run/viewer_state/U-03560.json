@@ -67,6 +67,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2628978.25,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hapibha-d1",
+              "next_episode_id": "hapibha-d1-s1e2",
+              "last_play_at": "2026-09-27T17:23:04.689000Z",
+              "sources": [
+                {
+                  "ref": "event:e14b318f-fe4b-4b74-98c4-310c1257ddee",
+                  "observed_at": "2026-09-27T17:23:04.689Z"
+                },
+                {
+                  "ref": "event:e5747823-8b57-4e84-875d-c096b54660c0",
+                  "observed_at": "2026-09-27T17:25:50.424Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e1",
+              "last_play_at": "2026-09-12T18:36:59.094000Z",
+              "sources": [
+                {
+                  "ref": "event:92fa411a-273b-4710-beac-a0b4b530af97",
+                  "observed_at": "2026-09-12T18:36:59.094Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:e14b318f-fe4b-4b74-98c4-310c1257ddee",
+          "event:e5747823-8b57-4e84-875d-c096b54660c0",
+          "event:92fa411a-273b-4710-beac-a0b4b530af97"
+        ],
+        "observed_at": "2026-10-01T04:46:18.250000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:e14b318f-fe4b-4b74-98c4-310c1257ddee",
+            "observed_at": "2026-09-27T17:23:04.689Z",
+            "freshness_s": 300193.561
+          },
+          {
+            "ref": "event:e5747823-8b57-4e84-875d-c096b54660c0",
+            "observed_at": "2026-09-27T17:25:50.424Z",
+            "freshness_s": 300027.826
+          },
+          {
+            "ref": "event:92fa411a-273b-4710-beac-a0b4b530af97",
+            "observed_at": "2026-09-12T18:36:59.094Z",
+            "freshness_s": 1591759.156
+          }
+        ]
       }
     },
     "conflicts": [

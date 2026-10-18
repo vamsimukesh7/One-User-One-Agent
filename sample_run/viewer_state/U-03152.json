@@ -67,6 +67,70 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2651500.803,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "radi-d4",
+              "next_episode_id": "radi-d4-s1e1",
+              "last_play_at": "2026-09-19T10:34:33.921000Z",
+              "sources": [
+                {
+                  "ref": "event:8d4edeb9-df14-486b-8ae5-a1be2563f134",
+                  "observed_at": "2026-09-19T10:34:33.921Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "rija-d4",
+              "next_episode_id": "rija-d4-s1e1",
+              "last_play_at": "2026-09-04T11:41:21.673000Z",
+              "sources": [
+                {
+                  "ref": "event:d4b45445-e2e2-48db-a50c-2f57e869919c",
+                  "observed_at": "2026-09-04T11:41:21.673Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "bharipa-lanaro-d4",
+              "next_episode_id": "bharipa-lanaro-d4-s1e1",
+              "last_play_at": "2026-09-02T10:59:58.442000Z",
+              "sources": [
+                {
+                  "ref": "event:2621ab12-1e53-4df7-950f-b02af4996bd3",
+                  "observed_at": "2026-09-02T11:22:59.653Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:8d4edeb9-df14-486b-8ae5-a1be2563f134",
+          "event:d4b45445-e2e2-48db-a50c-2f57e869919c",
+          "event:2621ab12-1e53-4df7-950f-b02af4996bd3"
+        ],
+        "observed_at": "2026-10-01T11:01:40.803000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:8d4edeb9-df14-486b-8ae5-a1be2563f134",
+            "observed_at": "2026-09-19T10:34:33.921Z",
+            "freshness_s": 1038426.882
+          },
+          {
+            "ref": "event:d4b45445-e2e2-48db-a50c-2f57e869919c",
+            "observed_at": "2026-09-04T11:41:21.673Z",
+            "freshness_s": 2330419.13
+          },
+          {
+            "ref": "event:2621ab12-1e53-4df7-950f-b02af4996bd3",
+            "observed_at": "2026-09-02T11:22:59.653Z",
+            "freshness_s": 2504321.15
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +232,70 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2651500.803,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "radi-d4",
+                  "next_episode_id": "radi-d4-s1e1",
+                  "last_play_at": "2026-09-19T10:34:33.921000Z",
+                  "sources": [
+                    {
+                      "ref": "event:8d4edeb9-df14-486b-8ae5-a1be2563f134",
+                      "observed_at": "2026-09-19T10:34:33.921Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "rija-d4",
+                  "next_episode_id": "rija-d4-s1e1",
+                  "last_play_at": "2026-09-04T11:41:21.673000Z",
+                  "sources": [
+                    {
+                      "ref": "event:d4b45445-e2e2-48db-a50c-2f57e869919c",
+                      "observed_at": "2026-09-04T11:41:21.673Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "bharipa-lanaro-d4",
+                  "next_episode_id": "bharipa-lanaro-d4-s1e1",
+                  "last_play_at": "2026-09-02T10:59:58.442000Z",
+                  "sources": [
+                    {
+                      "ref": "event:2621ab12-1e53-4df7-950f-b02af4996bd3",
+                      "observed_at": "2026-09-02T11:22:59.653Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:8d4edeb9-df14-486b-8ae5-a1be2563f134",
+              "event:d4b45445-e2e2-48db-a50c-2f57e869919c",
+              "event:2621ab12-1e53-4df7-950f-b02af4996bd3"
+            ],
+            "observed_at": "2026-10-01T11:01:40.803000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:8d4edeb9-df14-486b-8ae5-a1be2563f134",
+                "observed_at": "2026-09-19T10:34:33.921Z",
+                "freshness_s": 1038426.882
+              },
+              {
+                "ref": "event:d4b45445-e2e2-48db-a50c-2f57e869919c",
+                "observed_at": "2026-09-04T11:41:21.673Z",
+                "freshness_s": 2330419.13
+              },
+              {
+                "ref": "event:2621ab12-1e53-4df7-950f-b02af4996bd3",
+                "observed_at": "2026-09-02T11:22:59.653Z",
+                "freshness_s": 2504321.15
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +303,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

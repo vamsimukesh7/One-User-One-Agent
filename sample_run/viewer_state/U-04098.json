@@ -61,6 +61,100 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2660468.33,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e2",
+              "last_play_at": "2026-09-16T14:10:42.939000Z",
+              "sources": [
+                {
+                  "ref": "event:ebc7f533-12c7-4798-bd12-df90e93ef4e2",
+                  "observed_at": "2026-09-16T14:10:42.939Z"
+                },
+                {
+                  "ref": "event:b537e2ba-5f14-4d94-bcfc-116af719d9c7",
+                  "observed_at": "2026-09-16T14:13:28.109Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e2",
+              "last_play_at": "2026-09-14T16:25:12.389000Z",
+              "sources": [
+                {
+                  "ref": "event:b3504ad1-bac4-43ca-bae2-3fe7c29bd703",
+                  "observed_at": "2026-09-14T16:25:12.389Z"
+                },
+                {
+                  "ref": "event:a4bb441d-f5e0-4af8-b232-1b4ac0a9fabd",
+                  "observed_at": "2026-09-14T17:05:40.149Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "neya-kadhana-d2",
+              "next_episode_id": "neya-kadhana-d2-s1e2",
+              "last_play_at": "2026-09-10T10:21:55.557000Z",
+              "sources": [
+                {
+                  "ref": "event:80619890-f4b3-485f-b2cd-ec8c1eb59004",
+                  "observed_at": "2026-09-10T10:21:55.557Z"
+                },
+                {
+                  "ref": "event:39eea69d-cf2b-4d3e-bf6e-f6403cc77f66",
+                  "observed_at": "2026-09-10T10:25:36.709Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:ebc7f533-12c7-4798-bd12-df90e93ef4e2",
+          "event:b537e2ba-5f14-4d94-bcfc-116af719d9c7",
+          "event:b3504ad1-bac4-43ca-bae2-3fe7c29bd703",
+          "event:a4bb441d-f5e0-4af8-b232-1b4ac0a9fabd",
+          "event:80619890-f4b3-485f-b2cd-ec8c1eb59004",
+          "event:39eea69d-cf2b-4d3e-bf6e-f6403cc77f66"
+        ],
+        "observed_at": "2026-10-01T13:31:08.330000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:ebc7f533-12c7-4798-bd12-df90e93ef4e2",
+            "observed_at": "2026-09-16T14:10:42.939Z",
+            "freshness_s": 1293625.391
+          },
+          {
+            "ref": "event:b537e2ba-5f14-4d94-bcfc-116af719d9c7",
+            "observed_at": "2026-09-16T14:13:28.109Z",
+            "freshness_s": 1293460.221
+          },
+          {
+            "ref": "event:b3504ad1-bac4-43ca-bae2-3fe7c29bd703",
+            "observed_at": "2026-09-14T16:25:12.389Z",
+            "freshness_s": 1458355.941
+          },
+          {
+            "ref": "event:a4bb441d-f5e0-4af8-b232-1b4ac0a9fabd",
+            "observed_at": "2026-09-14T17:05:40.149Z",
+            "freshness_s": 1455928.181
+          },
+          {
+            "ref": "event:80619890-f4b3-485f-b2cd-ec8c1eb59004",
+            "observed_at": "2026-09-10T10:21:55.557Z",
+            "freshness_s": 1825752.773
+          },
+          {
+            "ref": "event:39eea69d-cf2b-4d3e-bf6e-f6403cc77f66",
+            "observed_at": "2026-09-10T10:25:36.709Z",
+            "freshness_s": 1825531.621
+          }
+        ]
       }
     },
     "conflicts": [],

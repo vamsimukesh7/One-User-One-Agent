@@ -61,6 +61,66 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2626349.808,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "kavadha-rilo-d5",
+              "next_episode_id": "kavadha-rilo-d5-s1e2",
+              "last_play_at": "2026-09-10T15:18:36.093000Z",
+              "sources": [
+                {
+                  "ref": "event:ad933629-280b-4d60-92c8-4f99d97d162c",
+                  "observed_at": "2026-09-09T09:02:41.203Z"
+                },
+                {
+                  "ref": "event:5f290aa3-c1c2-4578-9eff-0e3863ec14df",
+                  "observed_at": "2026-09-09T09:31:12.995Z"
+                },
+                {
+                  "ref": "event:9ace3985-931e-4962-b022-468051969285",
+                  "observed_at": "2026-09-10T14:48:32.813Z"
+                },
+                {
+                  "ref": "event:96b84740-bec9-44c1-a952-1a9267c72575",
+                  "observed_at": "2026-09-10T15:18:36.093Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:ad933629-280b-4d60-92c8-4f99d97d162c",
+          "event:5f290aa3-c1c2-4578-9eff-0e3863ec14df",
+          "event:9ace3985-931e-4962-b022-468051969285",
+          "event:96b84740-bec9-44c1-a952-1a9267c72575"
+        ],
+        "observed_at": "2026-10-01T04:02:29.808000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:ad933629-280b-4d60-92c8-4f99d97d162c",
+            "observed_at": "2026-09-09T09:02:41.203Z",
+            "freshness_s": 1882788.605
+          },
+          {
+            "ref": "event:5f290aa3-c1c2-4578-9eff-0e3863ec14df",
+            "observed_at": "2026-09-09T09:31:12.995Z",
+            "freshness_s": 1881076.813
+          },
+          {
+            "ref": "event:9ace3985-931e-4962-b022-468051969285",
+            "observed_at": "2026-09-10T14:48:32.813Z",
+            "freshness_s": 1775636.995
+          },
+          {
+            "ref": "event:96b84740-bec9-44c1-a952-1a9267c72575",
+            "observed_at": "2026-09-10T15:18:36.093Z",
+            "freshness_s": 1773833.715
+          }
+        ]
       }
     },
     "conflicts": [

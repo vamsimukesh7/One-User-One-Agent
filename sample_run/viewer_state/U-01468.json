@@ -61,6 +61,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2630264.26,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "nina-d5",
+              "next_episode_id": "nina-d5-s1e1",
+              "last_play_at": "2026-09-02T05:00:28.867000Z",
+              "sources": [
+                {
+                  "ref": "event:f95caed0-444b-4627-9bfc-116b5179caee",
+                  "observed_at": "2026-09-02T05:00:28.867Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "gubava-gihaya-d5",
+              "next_episode_id": "gubava-gihaya-d5-s1e1",
+              "last_play_at": "2026-09-01T13:22:37.912000Z",
+              "sources": [
+                {
+                  "ref": "event:7c6e6b4f-4435-4b26-8d43-83b1ca341e66",
+                  "observed_at": "2026-09-02T01:47:06.683Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:f95caed0-444b-4627-9bfc-116b5179caee",
+          "event:7c6e6b4f-4435-4b26-8d43-83b1ca341e66"
+        ],
+        "observed_at": "2026-10-01T05:07:44.260000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:f95caed0-444b-4627-9bfc-116b5179caee",
+            "observed_at": "2026-09-02T05:00:28.867Z",
+            "freshness_s": 2506035.393
+          },
+          {
+            "ref": "event:7c6e6b4f-4435-4b26-8d43-83b1ca341e66",
+            "observed_at": "2026-09-02T01:47:06.683Z",
+            "freshness_s": 2517637.577
+          }
+        ]
       }
     },
     "conflicts": [

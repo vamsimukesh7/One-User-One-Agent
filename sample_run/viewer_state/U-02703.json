@@ -67,6 +67,73 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2629724.98,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hate-d1",
+              "next_episode_id": "hate-d1-s1e2",
+              "last_play_at": "2026-09-27T13:20:51.799000Z",
+              "sources": [
+                {
+                  "ref": "event:4bc6fd62-2815-418d-861e-dd78fe77f3e8",
+                  "observed_at": "2026-09-01T05:02:37.637Z"
+                },
+                {
+                  "ref": "event:7f53b5d5-621c-4092-9674-255786a7b347",
+                  "observed_at": "2026-09-01T05:06:16.596Z"
+                },
+                {
+                  "ref": "event:13ed8eee-ee1a-429a-941b-daae504dca87",
+                  "observed_at": "2026-09-27T13:20:51.799Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "hadi-sudha-d1",
+              "next_episode_id": "hadi-sudha-d1-s1e1",
+              "last_play_at": "2026-09-01T13:40:25.869000Z",
+              "sources": [
+                {
+                  "ref": "event:1ebfc196-ace4-4c8b-9e1a-770b4245b003",
+                  "observed_at": "2026-09-01T13:40:25.869Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:4bc6fd62-2815-418d-861e-dd78fe77f3e8",
+          "event:7f53b5d5-621c-4092-9674-255786a7b347",
+          "event:13ed8eee-ee1a-429a-941b-daae504dca87",
+          "event:1ebfc196-ace4-4c8b-9e1a-770b4245b003"
+        ],
+        "observed_at": "2026-10-01T04:58:44.980000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:4bc6fd62-2815-418d-861e-dd78fe77f3e8",
+            "observed_at": "2026-09-01T05:02:37.637Z",
+            "freshness_s": 2591767.343
+          },
+          {
+            "ref": "event:7f53b5d5-621c-4092-9674-255786a7b347",
+            "observed_at": "2026-09-01T05:06:16.596Z",
+            "freshness_s": 2591548.384
+          },
+          {
+            "ref": "event:13ed8eee-ee1a-429a-941b-daae504dca87",
+            "observed_at": "2026-09-27T13:20:51.799Z",
+            "freshness_s": 315473.181
+          },
+          {
+            "ref": "event:1ebfc196-ace4-4c8b-9e1a-770b4245b003",
+            "observed_at": "2026-09-01T13:40:25.869Z",
+            "freshness_s": 2560699.111
+          }
+        ]
       }
     },
     "conflicts": [
@@ -177,6 +244,73 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2622703.009,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "hate-d1",
+                  "next_episode_id": "hate-d1-s1e2",
+                  "last_play_at": "2026-09-27T13:20:51.799000Z",
+                  "sources": [
+                    {
+                      "ref": "event:4bc6fd62-2815-418d-861e-dd78fe77f3e8",
+                      "observed_at": "2026-09-01T05:02:37.637Z"
+                    },
+                    {
+                      "ref": "event:7f53b5d5-621c-4092-9674-255786a7b347",
+                      "observed_at": "2026-09-01T05:06:16.596Z"
+                    },
+                    {
+                      "ref": "event:13ed8eee-ee1a-429a-941b-daae504dca87",
+                      "observed_at": "2026-09-27T13:20:51.799Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "hadi-sudha-d1",
+                  "next_episode_id": "hadi-sudha-d1-s1e1",
+                  "last_play_at": "2026-09-01T13:40:25.869000Z",
+                  "sources": [
+                    {
+                      "ref": "event:1ebfc196-ace4-4c8b-9e1a-770b4245b003",
+                      "observed_at": "2026-09-01T13:40:25.869Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:4bc6fd62-2815-418d-861e-dd78fe77f3e8",
+              "event:7f53b5d5-621c-4092-9674-255786a7b347",
+              "event:13ed8eee-ee1a-429a-941b-daae504dca87",
+              "event:1ebfc196-ace4-4c8b-9e1a-770b4245b003"
+            ],
+            "observed_at": "2026-10-01T03:01:43.009000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:4bc6fd62-2815-418d-861e-dd78fe77f3e8",
+                "observed_at": "2026-09-01T05:02:37.637Z",
+                "freshness_s": 2584745.372
+              },
+              {
+                "ref": "event:7f53b5d5-621c-4092-9674-255786a7b347",
+                "observed_at": "2026-09-01T05:06:16.596Z",
+                "freshness_s": 2584526.413
+              },
+              {
+                "ref": "event:13ed8eee-ee1a-429a-941b-daae504dca87",
+                "observed_at": "2026-09-27T13:20:51.799Z",
+                "freshness_s": 308451.21
+              },
+              {
+                "ref": "event:1ebfc196-ace4-4c8b-9e1a-770b4245b003",
+                "observed_at": "2026-09-01T13:40:25.869Z",
+                "freshness_s": 2553677.14
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -184,6 +318,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

@@ -3,6 +3,7 @@ import copy
 import json
 import sqlite3
 import time
+import os
 import unittest
 from datetime import timedelta
 from pathlib import Path
@@ -16,6 +17,12 @@ from one_agent.policy import resolve
 from one_agent.provider import ProviderResult
 from one_agent.runtime import validate_decision
 from one_agent.store import Store
+
+
+class BlockingProvider:
+    def propose(self,*args):
+        time.sleep(3)
+        return ProviderResult({"goal_id":"G01"})
 
 
 class AuditRegressions(unittest.TestCase):
@@ -58,13 +65,9 @@ class AuditRegressions(unittest.TestCase):
         self.assertFalse(self.store.records('actions'))
 
     def test_actual_blocking_provider_has_deadline(self):
-        class Blocking:
-            def propose(self,*args):
-                time.sleep(3)
-                return ProviderResult({'goal_id':'G01'})
-        self.engine=Engine(self.pack,self.store,provider=Blocking(),deadline_ms=150)
+        self.engine=Engine(self.pack,self.store,provider=BlockingProvider(),deadline_ms=1500 if os.name=="nt" else 150)
         begin=time.perf_counter();d,_=self.engine.decide(event());elapsed=(time.perf_counter()-begin)*1000
-        self.assertLess(elapsed,150)
+        self.assertLess(elapsed,1500 if os.name=="nt" else 150)
         self.assertTrue(any('model_timeout' in x for x in d['provider_notes']))
         self.assertEqual(d['action'],'HOME_PAGE')
 

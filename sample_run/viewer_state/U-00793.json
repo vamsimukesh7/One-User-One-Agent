@@ -67,6 +67,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2667858.576,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e2",
+              "last_play_at": "2026-09-07T10:35:09.829000Z",
+              "sources": [
+                {
+                  "ref": "event:be02ed39-2467-4178-abc1-f91fb9b17eec",
+                  "observed_at": "2026-09-07T10:35:09.829Z"
+                },
+                {
+                  "ref": "event:9e299191-f6cb-4c19-bb78-035e5612e748",
+                  "observed_at": "2026-09-07T10:37:52.994Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:be02ed39-2467-4178-abc1-f91fb9b17eec",
+          "event:9e299191-f6cb-4c19-bb78-035e5612e748"
+        ],
+        "observed_at": "2026-10-01T15:34:18.576000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:be02ed39-2467-4178-abc1-f91fb9b17eec",
+            "observed_at": "2026-09-07T10:35:09.829Z",
+            "freshness_s": 2091548.747
+          },
+          {
+            "ref": "event:9e299191-f6cb-4c19-bb78-035e5612e748",
+            "observed_at": "2026-09-07T10:37:52.994Z",
+            "freshness_s": 2091385.582
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +208,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2667858.576,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "hama-chudibha-d1",
+                  "next_episode_id": "hama-chudibha-d1-s1e2",
+                  "last_play_at": "2026-09-07T10:35:09.829000Z",
+                  "sources": [
+                    {
+                      "ref": "event:be02ed39-2467-4178-abc1-f91fb9b17eec",
+                      "observed_at": "2026-09-07T10:35:09.829Z"
+                    },
+                    {
+                      "ref": "event:9e299191-f6cb-4c19-bb78-035e5612e748",
+                      "observed_at": "2026-09-07T10:37:52.994Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:be02ed39-2467-4178-abc1-f91fb9b17eec",
+              "event:9e299191-f6cb-4c19-bb78-035e5612e748"
+            ],
+            "observed_at": "2026-10-01T15:34:18.576000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:be02ed39-2467-4178-abc1-f91fb9b17eec",
+                "observed_at": "2026-09-07T10:35:09.829Z",
+                "freshness_s": 2091548.747
+              },
+              {
+                "ref": "event:9e299191-f6cb-4c19-bb78-035e5612e748",
+                "observed_at": "2026-09-07T10:37:52.994Z",
+                "freshness_s": 2091385.582
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +255,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

@@ -5,12 +5,8 @@ from urllib.parse import urlsplit
 from .common import day, event_time, iso, ts, fresh_trigger
 
 
-DISABLED_GOALS = {
-    'G06': 'recently lapsed has no agreed recency threshold',
-    'G07': 'unfinished-series reconciliation deferred; never guess episode eligibility',
-    'G10': 'meaningful engagement has no defined measurable success signal',
-    'G11': 'tv_app_open is not instrumented in the supplied stream',
-}
+from .goals import UNSUPPORTED
+DISABLED_GOALS = UNSUPPORTED
 
 
 def fact(value, ref, observed_at, now, rule):
@@ -93,35 +89,48 @@ def resolve(pack, user, trigger, events, now):
     covered = bool(signup and pack.history_start and pack.history_start <= ts(signup) <= now)
     facts['history_covers_signup'] = fact(covered, 'pack:README:30-day-window', iso(pack.history_start or now), now,
                                          'absence is evidence only with signup within the observed interval; assumes feed completeness')
+    from .goals import extension_facts
+    extensions=extension_facts(pack,events,now)
+    sources={s['ref']:s for series in extensions['unfinished_series'] for s in series['sources']}
+    facts['goal_extensions']=fact(extensions,list(sources) or ['policy:series-reconciliation'],iso(now),now,'Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required')
+    facts['goal_extensions']['source_observations']=[dict(s,freshness_s=max(0,(now-ts(s['observed_at'])).total_seconds())) for s in sources.values()]
     return {'facts': facts, 'conflicts': conflicts,
             'assumptions': ['Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.',
                             'The supplied history is complete from its documented window start, subject to late arrivals.',
                             'Language variants share content_slug; descriptions and search text are untrusted data.']}
 
 
-def eligible(goal_id, context, events, now, history_start, exclude_event=None):
+def eligible(goal_id, context, events, now, history_start, exclude_event=None, rules=None):
     f = context['facts']
     status = f['subscription_status']['value']
     signup = ts(f.get('signup_at',{}).get('value'))
     covered = f['history_covers_signup']['value']
     names = {e['event'] for e in events}
+    rule=(rules or {}).get('eligibility',{})
+    if (rules or {}).get('unsupported_reason'):return False, rules['unsupported_reason']
+    if rule.get('subscription_status') and status not in rule['subscription_status']:return False,'corrected subscription eligibility'
+    if 'signed_up_within_days' in rule and (not signup or not timedelta(0)<=now-signup<=timedelta(days=rule['signed_up_within_days'])):return False,'corrected signup window'
+    if rule.get('requires_no_prior_event') in names:return False,'corrected prior-event exclusion'
     if goal_id in DISABLED_GOALS:
         return False, DISABLED_GOALS[goal_id]
     if goal_id == 'G01':
-        return bool(covered and signup and timedelta(0) <= now-signup <= timedelta(days=7) and 'play_started' not in names), 'recent signup; covered history; no prior play'
+        return bool(covered and signup and timedelta(0) <= now-signup <= timedelta(days=rule.get('signed_up_within_days',7)) and 'play_started' not in names), 'recent signup; covered history; no prior play'
     if goal_id == 'G02':
         return bool(covered and 'episode_completed' not in names), 'covered history; no prior completion'
     if goal_id == 'G03':
-        return bool(signup and timedelta(0) <= now-signup <= timedelta(days=2)), 'supported signup within two days'
+        return bool(signup and timedelta(0) <= now-signup <= timedelta(days=rule.get('signed_up_within_days',2))), 'supported signup within two days'
     if goal_id == 'G04':
-        return status == 'trial_active', 'supported active trial'
+        return status in rule.get('subscription_status',['trial_active']), 'supported active trial'
     if goal_id == 'G05':
-        return status == 'never' and covered and not f['ever_paid']['value'], 'covered lifetime; never paid; no contrary billing'
+        return status in rule.get('subscription_status',['never']) and covered and not f['ever_paid']['value'], 'covered lifetime; never paid; no contrary billing'
+    extension=f.get('goal_extensions',{}).get('value',{})
+    if goal_id == 'G07':
+        return covered and bool(extension.get('unfinished_series')), 'covered lifetime; known unfinished series with three days inactivity'
     if goal_id == 'G08':
-        return status == 'active', 'supported active subscription'
+        return status in rule.get('subscription_status',['active']), 'supported active subscription'
     if goal_id == 'G09':
         plays = {day(event_time(e)[0]) for e in events if e['event']=='play_started' and now-timedelta(days=14) <= event_time(e)[0] <= now}
-        return bool(status=='active' and history_start and history_start <= now-timedelta(days=14) and len(plays)<=1), 'active; at most one play day in covered prior 14 days'
+        return bool(status in rule.get('subscription_status',['active']) and history_start and history_start <= now-timedelta(days=14) and len(plays)<=1), 'active; at most one play day in covered prior 14 days'
     if goal_id == 'G12':
         opens = [e for e in events if e['event']=='app_open' and e['event_id']!=exclude_event and now-timedelta(days=14) <= event_time(e)[0] < now]
         return bool(history_start and history_start <= now-timedelta(days=14) and not opens and signup and signup <= now-timedelta(days=14)), 'covered prior 14 days; existing signup; no prior open'
@@ -131,11 +140,11 @@ def eligible(goal_id, context, events, now, history_start, exclude_event=None):
 def candidates(context, events, now, pack, trigger_id):
     # Early lifecycle: establish play before first completion, then next-day return.
     # Prefer return for a new viewer who already played; trial conversion before discovery.
-    order = ['G01','G03','G02','G04','G09','G08','G12','G05']
-    return [g for g in order if eligible(g,context,events,now,pack.history_start,trigger_id)[0]]
+    order = ['G01','G03','G02','G04','G06','G07','G11','G09','G08','G12','G05','G10']
+    return [g for g in order if g in pack.goals and eligible(g,context,events,now,pack.history_start,trigger_id,pack.goals[g])[0]]
 
 
-def select_content(pack, context, events, goal, now, goal_started_at=None):
+def select_content(pack, context, events, goal, now, goal_started_at=None, target_slug=None):
     dialect = context['facts']['dialect']['value']
     language = context['facts']['language']['value']
     genres = Counter()
@@ -156,7 +165,7 @@ def select_content(pack, context, events, goal, now, goal_started_at=None):
         eps = pack.episodes[t['content_slug']]
         minutes = min((int(e['minutes']) for e in eps), default=999)
         pool.append((t, sum(genres[g] for g in t['genres'].split('|')), minutes))
-    pool.sort(key=lambda x: (x[0]['language']!=language, -x[1], x[2] if goal in {'G01','G02'} else 0, x[0]['title_id']))
+    pool.sort(key=lambda x: (bool(target_slug) and x[0]['content_slug']!=target_slug, x[0]['language']!=language, -x[1], x[2] if goal in {'G01','G02'} else 0, x[0]['title_id']))
     chosen, slugs = [], set()
     for t, _, _ in pool:
         if t['content_slug'] not in slugs:

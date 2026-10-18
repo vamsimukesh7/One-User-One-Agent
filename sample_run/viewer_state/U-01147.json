@@ -67,6 +67,120 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2650960.91,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "losubha-rima-d6",
+              "next_episode_id": "losubha-rima-d6-s1e4",
+              "last_play_at": "2026-09-26T01:40:29.622000Z",
+              "sources": [
+                {
+                  "ref": "event:ddeb592c-0960-4856-b750-1be64b1e4fb6",
+                  "observed_at": "2026-09-07T10:08:44.344Z"
+                },
+                {
+                  "ref": "event:eab69f3e-3c1d-47c6-85ac-fe119232cc98",
+                  "observed_at": "2026-09-07T10:48:17.789Z"
+                },
+                {
+                  "ref": "event:d91d758d-a3fc-42bf-a205-a0263c957070",
+                  "observed_at": "2026-09-23T16:01:13.980Z"
+                },
+                {
+                  "ref": "event:009939fe-6e42-4fe3-bc45-3fc35cabff48",
+                  "observed_at": "2026-09-23T16:34:21.415Z"
+                },
+                {
+                  "ref": "event:ea2b49b3-c603-42f2-963a-a8d855f539c0",
+                  "observed_at": "2026-09-26T01:40:29.622Z"
+                },
+                {
+                  "ref": "event:dcdf68fa-40fd-4adc-96ca-b02435af9f24",
+                  "observed_at": "2026-09-26T02:13:37.106Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "hari-d6",
+              "next_episode_id": "hari-d6-s1e1",
+              "last_play_at": "2026-09-21T19:35:08.338000Z",
+              "sources": [
+                {
+                  "ref": "event:cb7ac78d-537b-4fca-8bf7-75dd6423d470",
+                  "observed_at": "2026-09-21T19:35:08.338Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "vamapi-gidi-d6",
+              "next_episode_id": "vamapi-gidi-d6-s1e1",
+              "last_play_at": "2026-09-21T14:11:34.003000Z",
+              "sources": [
+                {
+                  "ref": "event:b938671c-db38-4ef9-be6e-5744c5a699c4",
+                  "observed_at": "2026-09-21T14:11:34.003Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:ddeb592c-0960-4856-b750-1be64b1e4fb6",
+          "event:eab69f3e-3c1d-47c6-85ac-fe119232cc98",
+          "event:d91d758d-a3fc-42bf-a205-a0263c957070",
+          "event:009939fe-6e42-4fe3-bc45-3fc35cabff48",
+          "event:ea2b49b3-c603-42f2-963a-a8d855f539c0",
+          "event:dcdf68fa-40fd-4adc-96ca-b02435af9f24",
+          "event:cb7ac78d-537b-4fca-8bf7-75dd6423d470",
+          "event:b938671c-db38-4ef9-be6e-5744c5a699c4"
+        ],
+        "observed_at": "2026-10-01T10:52:40.910000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:ddeb592c-0960-4856-b750-1be64b1e4fb6",
+            "observed_at": "2026-09-07T10:08:44.344Z",
+            "freshness_s": 2076236.566
+          },
+          {
+            "ref": "event:eab69f3e-3c1d-47c6-85ac-fe119232cc98",
+            "observed_at": "2026-09-07T10:48:17.789Z",
+            "freshness_s": 2073863.121
+          },
+          {
+            "ref": "event:d91d758d-a3fc-42bf-a205-a0263c957070",
+            "observed_at": "2026-09-23T16:01:13.980Z",
+            "freshness_s": 672686.93
+          },
+          {
+            "ref": "event:009939fe-6e42-4fe3-bc45-3fc35cabff48",
+            "observed_at": "2026-09-23T16:34:21.415Z",
+            "freshness_s": 670699.495
+          },
+          {
+            "ref": "event:ea2b49b3-c603-42f2-963a-a8d855f539c0",
+            "observed_at": "2026-09-26T01:40:29.622Z",
+            "freshness_s": 465131.288
+          },
+          {
+            "ref": "event:dcdf68fa-40fd-4adc-96ca-b02435af9f24",
+            "observed_at": "2026-09-26T02:13:37.106Z",
+            "freshness_s": 463143.804
+          },
+          {
+            "ref": "event:cb7ac78d-537b-4fca-8bf7-75dd6423d470",
+            "observed_at": "2026-09-21T19:35:08.338Z",
+            "freshness_s": 832652.572
+          },
+          {
+            "ref": "event:b938671c-db38-4ef9-be6e-5744c5a699c4",
+            "observed_at": "2026-09-21T14:11:34.003Z",
+            "freshness_s": 852066.907
+          }
+        ]
       }
     },
     "conflicts": [

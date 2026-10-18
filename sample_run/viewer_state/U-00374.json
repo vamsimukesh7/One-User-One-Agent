@@ -61,6 +61,93 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2678267.895,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "pate-kari-d3",
+              "next_episode_id": "pate-kari-d3-s1e2",
+              "last_play_at": "2026-09-21T06:25:52.836000Z",
+              "sources": [
+                {
+                  "ref": "event:83f15e25-bfcf-40c3-93dc-36c138898c0d",
+                  "observed_at": "2026-09-21T06:25:52.836Z"
+                },
+                {
+                  "ref": "event:1ebda187-7b48-45e5-8d4b-b84c4d7b9c53",
+                  "observed_at": "2026-09-21T07:07:15.477Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "yatite-roloda-d3",
+              "next_episode_id": "yatite-roloda-d3-s1e3",
+              "last_play_at": "2026-09-19T13:13:30.514000Z",
+              "sources": [
+                {
+                  "ref": "event:531f3b1e-92ea-4e71-929b-62feb1d61020",
+                  "observed_at": "2026-09-10T12:58:04.637Z"
+                },
+                {
+                  "ref": "event:75deaee3-498e-4846-b552-87f5d47eb471",
+                  "observed_at": "2026-09-10T13:01:45.495Z"
+                },
+                {
+                  "ref": "event:7d7808c0-30f6-4557-b09b-67de55262b5b",
+                  "observed_at": "2026-09-19T13:13:30.514Z"
+                },
+                {
+                  "ref": "event:5a6edcab-75e4-4dcc-abba-8ba045416583",
+                  "observed_at": "2026-09-19T13:15:22.308Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:83f15e25-bfcf-40c3-93dc-36c138898c0d",
+          "event:1ebda187-7b48-45e5-8d4b-b84c4d7b9c53",
+          "event:531f3b1e-92ea-4e71-929b-62feb1d61020",
+          "event:75deaee3-498e-4846-b552-87f5d47eb471",
+          "event:7d7808c0-30f6-4557-b09b-67de55262b5b",
+          "event:5a6edcab-75e4-4dcc-abba-8ba045416583"
+        ],
+        "observed_at": "2026-10-01T18:27:47.895000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:83f15e25-bfcf-40c3-93dc-36c138898c0d",
+            "observed_at": "2026-09-21T06:25:52.836Z",
+            "freshness_s": 907315.059
+          },
+          {
+            "ref": "event:1ebda187-7b48-45e5-8d4b-b84c4d7b9c53",
+            "observed_at": "2026-09-21T07:07:15.477Z",
+            "freshness_s": 904832.418
+          },
+          {
+            "ref": "event:531f3b1e-92ea-4e71-929b-62feb1d61020",
+            "observed_at": "2026-09-10T12:58:04.637Z",
+            "freshness_s": 1834183.258
+          },
+          {
+            "ref": "event:75deaee3-498e-4846-b552-87f5d47eb471",
+            "observed_at": "2026-09-10T13:01:45.495Z",
+            "freshness_s": 1833962.4
+          },
+          {
+            "ref": "event:7d7808c0-30f6-4557-b09b-67de55262b5b",
+            "observed_at": "2026-09-19T13:13:30.514Z",
+            "freshness_s": 1055657.381
+          },
+          {
+            "ref": "event:5a6edcab-75e4-4dcc-abba-8ba045416583",
+            "observed_at": "2026-09-19T13:15:22.308Z",
+            "freshness_s": 1055545.587
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -74,7 +161,7 @@
   "latest_decision_id": "D-c81a0853b273cc83d4ba",
   "learning": [
     {
-      "goal_id": "G05",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -82,16 +169,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-cb9d8b40ee4167457436",
+      "plan_id": "P-aeaf17ec039ad2ce4026",
       "user_id": "U-00374",
-      "goal_id": "G05",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T05:58:29.304000Z",
-      "deadline": "2026-10-08T05:58:29.304000Z",
+      "deadline": "2026-10-04T05:58:29.304000Z",
       "success": {
-        "event": "purchase_completed",
-        "condition": "is_trial = false",
-        "window_hours": 168
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "945a9820-19de-4d26-ab2a-bb05477cb7d6",
@@ -155,6 +242,93 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2633309.304,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "pate-kari-d3",
+                  "next_episode_id": "pate-kari-d3-s1e2",
+                  "last_play_at": "2026-09-21T06:25:52.836000Z",
+                  "sources": [
+                    {
+                      "ref": "event:83f15e25-bfcf-40c3-93dc-36c138898c0d",
+                      "observed_at": "2026-09-21T06:25:52.836Z"
+                    },
+                    {
+                      "ref": "event:1ebda187-7b48-45e5-8d4b-b84c4d7b9c53",
+                      "observed_at": "2026-09-21T07:07:15.477Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "yatite-roloda-d3",
+                  "next_episode_id": "yatite-roloda-d3-s1e3",
+                  "last_play_at": "2026-09-19T13:13:30.514000Z",
+                  "sources": [
+                    {
+                      "ref": "event:531f3b1e-92ea-4e71-929b-62feb1d61020",
+                      "observed_at": "2026-09-10T12:58:04.637Z"
+                    },
+                    {
+                      "ref": "event:75deaee3-498e-4846-b552-87f5d47eb471",
+                      "observed_at": "2026-09-10T13:01:45.495Z"
+                    },
+                    {
+                      "ref": "event:7d7808c0-30f6-4557-b09b-67de55262b5b",
+                      "observed_at": "2026-09-19T13:13:30.514Z"
+                    },
+                    {
+                      "ref": "event:5a6edcab-75e4-4dcc-abba-8ba045416583",
+                      "observed_at": "2026-09-19T13:15:22.308Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:83f15e25-bfcf-40c3-93dc-36c138898c0d",
+              "event:1ebda187-7b48-45e5-8d4b-b84c4d7b9c53",
+              "event:531f3b1e-92ea-4e71-929b-62feb1d61020",
+              "event:75deaee3-498e-4846-b552-87f5d47eb471",
+              "event:7d7808c0-30f6-4557-b09b-67de55262b5b",
+              "event:5a6edcab-75e4-4dcc-abba-8ba045416583"
+            ],
+            "observed_at": "2026-10-01T05:58:29.304000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:83f15e25-bfcf-40c3-93dc-36c138898c0d",
+                "observed_at": "2026-09-21T06:25:52.836Z",
+                "freshness_s": 862356.468
+              },
+              {
+                "ref": "event:1ebda187-7b48-45e5-8d4b-b84c4d7b9c53",
+                "observed_at": "2026-09-21T07:07:15.477Z",
+                "freshness_s": 859873.827
+              },
+              {
+                "ref": "event:531f3b1e-92ea-4e71-929b-62feb1d61020",
+                "observed_at": "2026-09-10T12:58:04.637Z",
+                "freshness_s": 1789224.667
+              },
+              {
+                "ref": "event:75deaee3-498e-4846-b552-87f5d47eb471",
+                "observed_at": "2026-09-10T13:01:45.495Z",
+                "freshness_s": 1789003.809
+              },
+              {
+                "ref": "event:7d7808c0-30f6-4557-b09b-67de55262b5b",
+                "observed_at": "2026-09-19T13:13:30.514Z",
+                "freshness_s": 1010698.79
+              },
+              {
+                "ref": "event:5a6edcab-75e4-4dcc-abba-8ba045416583",
+                "observed_at": "2026-09-19T13:15:22.308Z",
+                "freshness_s": 1010586.996
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -164,35 +338,37 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [
         "A-1f51c6539ae5cb95a07f",
         "A-33497f40911a2d4037c3",
         "A-c81a0853b273cc83d4ba"
       ],
+      "target_content_slug": "pate-kari-d3",
+      "next_episode_id": "pate-kari-d3-s1e2",
       "final_outcome": {
-        "plan_id": "P-cb9d8b40ee4167457436",
+        "plan_id": "P-aeaf17ec039ad2ce4026",
         "user_id": "U-00374",
-        "goal_id": "G05",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T05:58:29.304000Z",
-        "deadline": "2026-10-08T05:58:29.304000Z",
+        "deadline": "2026-10-04T05:58:29.304000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "purchase_completed",
-          "condition": "is_trial = false",
-          "window_hours": 168
+          "event": "play_started",
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
-        "exposure_refs": [
-          "event:oua-002477",
-          "event:oua-002479"
-        ],
+        "exposure_refs": [],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T05:58:29.304000Z"
+      "closed_at": "2026-10-04T05:58:29.304000Z"
     }
   ]
 }

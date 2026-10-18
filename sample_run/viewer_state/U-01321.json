@@ -67,6 +67,73 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2660677.727,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "gubava-gihaya-d5",
+              "next_episode_id": "gubava-gihaya-d5-s1e2",
+              "last_play_at": "2026-09-26T11:51:11.924000Z",
+              "sources": [
+                {
+                  "ref": "event:5cce41fb-08ef-43de-a693-6fb2fc3b372e",
+                  "observed_at": "2026-09-23T22:44:07.678Z"
+                },
+                {
+                  "ref": "event:3f6f543a-f3d5-4ab0-9c09-085c47312322",
+                  "observed_at": "2026-09-26T11:51:11.924Z"
+                },
+                {
+                  "ref": "event:560a56ec-e250-41ef-b373-80dec6b50500",
+                  "observed_at": "2026-09-26T11:53:57.081Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "jamo-hasa-d5",
+              "next_episode_id": "jamo-hasa-d5-s1e1",
+              "last_play_at": "2026-09-19T18:57:44.094000Z",
+              "sources": [
+                {
+                  "ref": "event:d1e25679-bb6e-486f-a10c-d1d13ebcacc9",
+                  "observed_at": "2026-09-19T18:57:44.094Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:5cce41fb-08ef-43de-a693-6fb2fc3b372e",
+          "event:3f6f543a-f3d5-4ab0-9c09-085c47312322",
+          "event:560a56ec-e250-41ef-b373-80dec6b50500",
+          "event:d1e25679-bb6e-486f-a10c-d1d13ebcacc9"
+        ],
+        "observed_at": "2026-10-01T13:34:37.727000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:5cce41fb-08ef-43de-a693-6fb2fc3b372e",
+            "observed_at": "2026-09-23T22:44:07.678Z",
+            "freshness_s": 658230.049
+          },
+          {
+            "ref": "event:3f6f543a-f3d5-4ab0-9c09-085c47312322",
+            "observed_at": "2026-09-26T11:51:11.924Z",
+            "freshness_s": 438205.803
+          },
+          {
+            "ref": "event:560a56ec-e250-41ef-b373-80dec6b50500",
+            "observed_at": "2026-09-26T11:53:57.081Z",
+            "freshness_s": 438040.646
+          },
+          {
+            "ref": "event:d1e25679-bb6e-486f-a10c-d1d13ebcacc9",
+            "observed_at": "2026-09-19T18:57:44.094Z",
+            "freshness_s": 1017413.633
+          }
+        ]
       }
     },
     "conflicts": [
@@ -89,24 +156,24 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G08",
-      "result": "succeeded",
+      "goal_id": "G07",
+      "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
     }
   ],
   "plans": [
     {
-      "plan_id": "P-f947722ae199afabfe90",
+      "plan_id": "P-c6ccefa974c5d16424d3",
       "user_id": "U-01321",
-      "goal_id": "G08",
-      "status": "succeeded",
+      "goal_id": "G07",
+      "status": "failed",
       "started_at": "2026-10-01T13:34:37.727000Z",
-      "deadline": "2026-10-08T13:34:37.727000Z",
+      "deadline": "2026-10-04T13:34:37.727000Z",
       "success": {
         "event": "play_started",
-        "condition": "a title released in the 30 days before the goal start",
-        "window_hours": 168
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "f5deeb3f-44b6-4e97-b170-1ab2a4f0b907",
@@ -176,6 +243,73 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2660677.727,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "gubava-gihaya-d5",
+                  "next_episode_id": "gubava-gihaya-d5-s1e2",
+                  "last_play_at": "2026-09-26T11:51:11.924000Z",
+                  "sources": [
+                    {
+                      "ref": "event:5cce41fb-08ef-43de-a693-6fb2fc3b372e",
+                      "observed_at": "2026-09-23T22:44:07.678Z"
+                    },
+                    {
+                      "ref": "event:3f6f543a-f3d5-4ab0-9c09-085c47312322",
+                      "observed_at": "2026-09-26T11:51:11.924Z"
+                    },
+                    {
+                      "ref": "event:560a56ec-e250-41ef-b373-80dec6b50500",
+                      "observed_at": "2026-09-26T11:53:57.081Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "jamo-hasa-d5",
+                  "next_episode_id": "jamo-hasa-d5-s1e1",
+                  "last_play_at": "2026-09-19T18:57:44.094000Z",
+                  "sources": [
+                    {
+                      "ref": "event:d1e25679-bb6e-486f-a10c-d1d13ebcacc9",
+                      "observed_at": "2026-09-19T18:57:44.094Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:5cce41fb-08ef-43de-a693-6fb2fc3b372e",
+              "event:3f6f543a-f3d5-4ab0-9c09-085c47312322",
+              "event:560a56ec-e250-41ef-b373-80dec6b50500",
+              "event:d1e25679-bb6e-486f-a10c-d1d13ebcacc9"
+            ],
+            "observed_at": "2026-10-01T13:34:37.727000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:5cce41fb-08ef-43de-a693-6fb2fc3b372e",
+                "observed_at": "2026-09-23T22:44:07.678Z",
+                "freshness_s": 658230.049
+              },
+              {
+                "ref": "event:3f6f543a-f3d5-4ab0-9c09-085c47312322",
+                "observed_at": "2026-09-26T11:51:11.924Z",
+                "freshness_s": 438205.803
+              },
+              {
+                "ref": "event:560a56ec-e250-41ef-b373-80dec6b50500",
+                "observed_at": "2026-09-26T11:53:57.081Z",
+                "freshness_s": 438040.646
+              },
+              {
+                "ref": "event:d1e25679-bb6e-486f-a10c-d1d13ebcacc9",
+                "observed_at": "2026-09-19T18:57:44.094Z",
+                "freshness_s": 1017413.633
+              }
+            ]
           }
         },
         "conflicts": [
@@ -193,31 +327,33 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [],
+      "target_content_slug": "gubava-gihaya-d5",
+      "next_episode_id": "gubava-gihaya-d5-s1e2",
       "final_outcome": {
-        "plan_id": "P-f947722ae199afabfe90",
+        "plan_id": "P-c6ccefa974c5d16424d3",
         "user_id": "U-01321",
-        "goal_id": "G08",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T13:34:37.727000Z",
-        "deadline": "2026-10-08T13:34:37.727000Z",
-        "status": "succeeded",
-        "reason": "observed_success_signal_in_goal_window",
+        "deadline": "2026-10-04T13:34:37.727000Z",
+        "status": "failed",
+        "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
           "event": "play_started",
-          "condition": "a title released in the 30 days before the goal start",
-          "window_hours": 168
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
-        "signal_refs": [
-          "event:oua-008696",
-          "event:oua-008699"
-        ],
+        "signal_refs": [],
         "exposure_refs": [],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T13:34:37.727000Z"
+      "closed_at": "2026-10-04T13:34:37.727000Z"
     }
   ]
 }

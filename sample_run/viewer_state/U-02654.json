@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2643200.279,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e2",
+              "last_play_at": "2026-09-08T15:11:04.159000Z",
+              "sources": [
+                {
+                  "ref": "event:1274b60e-a817-49eb-be15-db087820deed",
+                  "observed_at": "2026-09-13T10:35:50.902Z"
+                },
+                {
+                  "ref": "event:9f67b29a-6a5f-4f32-964a-d8b655ec013b",
+                  "observed_at": "2026-09-13T11:16:18.541Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:1274b60e-a817-49eb-be15-db087820deed",
+          "event:9f67b29a-6a5f-4f32-964a-d8b655ec013b"
+        ],
+        "observed_at": "2026-10-01T08:43:20.279000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:1274b60e-a817-49eb-be15-db087820deed",
+            "observed_at": "2026-09-13T10:35:50.902Z",
+            "freshness_s": 1548449.377
+          },
+          {
+            "ref": "event:9f67b29a-6a5f-4f32-964a-d8b655ec013b",
+            "observed_at": "2026-09-13T11:16:18.541Z",
+            "freshness_s": 1546021.738
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -75,6 +115,6 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy"
   ],
-  "state_updated_at": "2026-10-01T08:45:13.367Z",
+  "state_updated_at": "2026-10-01T08:45:13.367000Z",
   "plans": []
 }

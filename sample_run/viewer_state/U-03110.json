@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2634813.861,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "tiko-subava-d4",
+              "next_episode_id": "tiko-subava-d4-s1e1",
+              "last_play_at": "2026-09-10T14:47:36.676000Z",
+              "sources": [
+                {
+                  "ref": "event:7a0cc782-a8fe-40f8-aba5-75ec0daec084",
+                  "observed_at": "2026-09-10T14:47:36.676Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:7a0cc782-a8fe-40f8-aba5-75ec0daec084"
+        ],
+        "observed_at": "2026-10-01T06:23:33.861000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:7a0cc782-a8fe-40f8-aba5-75ec0daec084",
+            "observed_at": "2026-09-10T14:47:36.676Z",
+            "freshness_s": 1784157.185
+          }
+        ]
       }
     },
     "conflicts": [

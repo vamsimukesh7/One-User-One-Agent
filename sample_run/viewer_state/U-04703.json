@@ -67,6 +67,144 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2670239.671,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e2",
+              "last_play_at": "2026-09-22T04:05:25.203000Z",
+              "sources": [
+                {
+                  "ref": "event:f3745ba4-8797-4bcb-8809-ec99aee9a57c",
+                  "observed_at": "2026-09-18T17:50:21.524Z"
+                },
+                {
+                  "ref": "event:1726b668-2a64-44ec-a494-cd4795bf19cc",
+                  "observed_at": "2026-09-18T17:53:07.476Z"
+                },
+                {
+                  "ref": "event:2586c024-add0-46cf-9006-5dd9649dfdb9",
+                  "observed_at": "2026-09-20T13:11:19.488Z"
+                },
+                {
+                  "ref": "event:18872f54-974e-4d60-aee8-0924fca6a645",
+                  "observed_at": "2026-09-22T04:05:25.203Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "tero-koja-d2",
+              "next_episode_id": "tero-koja-d2-s1e1",
+              "last_play_at": "2026-09-14T17:15:41.912000Z",
+              "sources": [
+                {
+                  "ref": "event:edb1c1e4-6bd5-4ed0-8051-92ed83cc46cb",
+                  "observed_at": "2026-09-04T12:31:33.731Z"
+                },
+                {
+                  "ref": "event:8e06289f-28c9-4544-a40d-bff2289b7c7f",
+                  "observed_at": "2026-09-14T17:15:41.912Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "rigu-dhadi-d2",
+              "next_episode_id": "rigu-dhadi-d2-s1e1",
+              "last_play_at": "2026-09-04T14:17:38.607000Z",
+              "sources": [
+                {
+                  "ref": "event:fef959ae-04b8-439f-b9b2-9be62b3b211f",
+                  "observed_at": "2026-09-04T14:17:38.607Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e1",
+              "last_play_at": "2026-09-04T13:47:39.650000Z",
+              "sources": [
+                {
+                  "ref": "event:3dd87cc6-1deb-4dfc-a43e-6935e271e40b",
+                  "observed_at": "2026-09-06T02:52:55.602Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "vatimo-jachu-d2",
+              "next_episode_id": "vatimo-jachu-d2-s1e1",
+              "last_play_at": "2026-09-01T07:49:59.880000Z",
+              "sources": [
+                {
+                  "ref": "event:edc5cf25-4d0d-4017-8c7f-49f8fb2f3b44",
+                  "observed_at": "2026-09-01T07:49:59.880Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:f3745ba4-8797-4bcb-8809-ec99aee9a57c",
+          "event:1726b668-2a64-44ec-a494-cd4795bf19cc",
+          "event:2586c024-add0-46cf-9006-5dd9649dfdb9",
+          "event:18872f54-974e-4d60-aee8-0924fca6a645",
+          "event:edb1c1e4-6bd5-4ed0-8051-92ed83cc46cb",
+          "event:8e06289f-28c9-4544-a40d-bff2289b7c7f",
+          "event:fef959ae-04b8-439f-b9b2-9be62b3b211f",
+          "event:3dd87cc6-1deb-4dfc-a43e-6935e271e40b",
+          "event:edc5cf25-4d0d-4017-8c7f-49f8fb2f3b44"
+        ],
+        "observed_at": "2026-10-01T16:13:59.671000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:f3745ba4-8797-4bcb-8809-ec99aee9a57c",
+            "observed_at": "2026-09-18T17:50:21.524Z",
+            "freshness_s": 1117418.147
+          },
+          {
+            "ref": "event:1726b668-2a64-44ec-a494-cd4795bf19cc",
+            "observed_at": "2026-09-18T17:53:07.476Z",
+            "freshness_s": 1117252.195
+          },
+          {
+            "ref": "event:2586c024-add0-46cf-9006-5dd9649dfdb9",
+            "observed_at": "2026-09-20T13:11:19.488Z",
+            "freshness_s": 961360.183
+          },
+          {
+            "ref": "event:18872f54-974e-4d60-aee8-0924fca6a645",
+            "observed_at": "2026-09-22T04:05:25.203Z",
+            "freshness_s": 821314.468
+          },
+          {
+            "ref": "event:edb1c1e4-6bd5-4ed0-8051-92ed83cc46cb",
+            "observed_at": "2026-09-04T12:31:33.731Z",
+            "freshness_s": 2346145.94
+          },
+          {
+            "ref": "event:8e06289f-28c9-4544-a40d-bff2289b7c7f",
+            "observed_at": "2026-09-14T17:15:41.912Z",
+            "freshness_s": 1465097.759
+          },
+          {
+            "ref": "event:fef959ae-04b8-439f-b9b2-9be62b3b211f",
+            "observed_at": "2026-09-04T14:17:38.607Z",
+            "freshness_s": 2339781.064
+          },
+          {
+            "ref": "event:3dd87cc6-1deb-4dfc-a43e-6935e271e40b",
+            "observed_at": "2026-09-06T02:52:55.602Z",
+            "freshness_s": 2208064.069
+          },
+          {
+            "ref": "event:edc5cf25-4d0d-4017-8c7f-49f8fb2f3b44",
+            "observed_at": "2026-09-01T07:49:59.880Z",
+            "freshness_s": 2622239.791
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +305,144 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2670239.671,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "guka-kosusa-d2",
+                  "next_episode_id": "guka-kosusa-d2-s1e2",
+                  "last_play_at": "2026-09-22T04:05:25.203000Z",
+                  "sources": [
+                    {
+                      "ref": "event:f3745ba4-8797-4bcb-8809-ec99aee9a57c",
+                      "observed_at": "2026-09-18T17:50:21.524Z"
+                    },
+                    {
+                      "ref": "event:1726b668-2a64-44ec-a494-cd4795bf19cc",
+                      "observed_at": "2026-09-18T17:53:07.476Z"
+                    },
+                    {
+                      "ref": "event:2586c024-add0-46cf-9006-5dd9649dfdb9",
+                      "observed_at": "2026-09-20T13:11:19.488Z"
+                    },
+                    {
+                      "ref": "event:18872f54-974e-4d60-aee8-0924fca6a645",
+                      "observed_at": "2026-09-22T04:05:25.203Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "tero-koja-d2",
+                  "next_episode_id": "tero-koja-d2-s1e1",
+                  "last_play_at": "2026-09-14T17:15:41.912000Z",
+                  "sources": [
+                    {
+                      "ref": "event:edb1c1e4-6bd5-4ed0-8051-92ed83cc46cb",
+                      "observed_at": "2026-09-04T12:31:33.731Z"
+                    },
+                    {
+                      "ref": "event:8e06289f-28c9-4544-a40d-bff2289b7c7f",
+                      "observed_at": "2026-09-14T17:15:41.912Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "rigu-dhadi-d2",
+                  "next_episode_id": "rigu-dhadi-d2-s1e1",
+                  "last_play_at": "2026-09-04T14:17:38.607000Z",
+                  "sources": [
+                    {
+                      "ref": "event:fef959ae-04b8-439f-b9b2-9be62b3b211f",
+                      "observed_at": "2026-09-04T14:17:38.607Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "molo-d2",
+                  "next_episode_id": "molo-d2-s1e1",
+                  "last_play_at": "2026-09-04T13:47:39.650000Z",
+                  "sources": [
+                    {
+                      "ref": "event:3dd87cc6-1deb-4dfc-a43e-6935e271e40b",
+                      "observed_at": "2026-09-06T02:52:55.602Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "vatimo-jachu-d2",
+                  "next_episode_id": "vatimo-jachu-d2-s1e1",
+                  "last_play_at": "2026-09-01T07:49:59.880000Z",
+                  "sources": [
+                    {
+                      "ref": "event:edc5cf25-4d0d-4017-8c7f-49f8fb2f3b44",
+                      "observed_at": "2026-09-01T07:49:59.880Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:f3745ba4-8797-4bcb-8809-ec99aee9a57c",
+              "event:1726b668-2a64-44ec-a494-cd4795bf19cc",
+              "event:2586c024-add0-46cf-9006-5dd9649dfdb9",
+              "event:18872f54-974e-4d60-aee8-0924fca6a645",
+              "event:edb1c1e4-6bd5-4ed0-8051-92ed83cc46cb",
+              "event:8e06289f-28c9-4544-a40d-bff2289b7c7f",
+              "event:fef959ae-04b8-439f-b9b2-9be62b3b211f",
+              "event:3dd87cc6-1deb-4dfc-a43e-6935e271e40b",
+              "event:edc5cf25-4d0d-4017-8c7f-49f8fb2f3b44"
+            ],
+            "observed_at": "2026-10-01T16:13:59.671000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:f3745ba4-8797-4bcb-8809-ec99aee9a57c",
+                "observed_at": "2026-09-18T17:50:21.524Z",
+                "freshness_s": 1117418.147
+              },
+              {
+                "ref": "event:1726b668-2a64-44ec-a494-cd4795bf19cc",
+                "observed_at": "2026-09-18T17:53:07.476Z",
+                "freshness_s": 1117252.195
+              },
+              {
+                "ref": "event:2586c024-add0-46cf-9006-5dd9649dfdb9",
+                "observed_at": "2026-09-20T13:11:19.488Z",
+                "freshness_s": 961360.183
+              },
+              {
+                "ref": "event:18872f54-974e-4d60-aee8-0924fca6a645",
+                "observed_at": "2026-09-22T04:05:25.203Z",
+                "freshness_s": 821314.468
+              },
+              {
+                "ref": "event:edb1c1e4-6bd5-4ed0-8051-92ed83cc46cb",
+                "observed_at": "2026-09-04T12:31:33.731Z",
+                "freshness_s": 2346145.94
+              },
+              {
+                "ref": "event:8e06289f-28c9-4544-a40d-bff2289b7c7f",
+                "observed_at": "2026-09-14T17:15:41.912Z",
+                "freshness_s": 1465097.759
+              },
+              {
+                "ref": "event:fef959ae-04b8-439f-b9b2-9be62b3b211f",
+                "observed_at": "2026-09-04T14:17:38.607Z",
+                "freshness_s": 2339781.064
+              },
+              {
+                "ref": "event:3dd87cc6-1deb-4dfc-a43e-6935e271e40b",
+                "observed_at": "2026-09-06T02:52:55.602Z",
+                "freshness_s": 2208064.069
+              },
+              {
+                "ref": "event:edc5cf25-4d0d-4017-8c7f-49f8fb2f3b44",
+                "observed_at": "2026-09-01T07:49:59.880Z",
+                "freshness_s": 2622239.791
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +450,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [

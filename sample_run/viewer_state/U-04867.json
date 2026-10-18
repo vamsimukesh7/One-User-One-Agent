@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2628904.379,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "pima-pana-d3",
+              "next_episode_id": "pima-pana-d3-s1e1",
+              "last_play_at": "2026-09-06T16:41:06.196000Z",
+              "sources": [
+                {
+                  "ref": "event:22a259df-60ca-41f8-a622-d56f243ad7f2",
+                  "observed_at": "2026-09-06T16:41:06.196Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:22a259df-60ca-41f8-a622-d56f243ad7f2"
+        ],
+        "observed_at": "2026-10-01T04:45:04.379000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:22a259df-60ca-41f8-a622-d56f243ad7f2",
+            "observed_at": "2026-09-06T16:41:06.196Z",
+            "freshness_s": 2117038.183
+          }
+        ]
       }
     },
     "conflicts": [],

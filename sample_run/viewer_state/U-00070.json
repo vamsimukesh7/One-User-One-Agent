@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2629065.808,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "rasuya-moni-d6",
+              "next_episode_id": "rasuya-moni-d6-s1e2",
+              "last_play_at": "2026-09-07T08:38:39.871000Z",
+              "sources": [
+                {
+                  "ref": "event:fcb0e68f-86d0-4b79-a10a-b6f407ea3d44",
+                  "observed_at": "2026-09-08T04:05:20.329Z"
+                },
+                {
+                  "ref": "event:79c29a8d-aa4e-4371-9a97-94f72e905a55",
+                  "observed_at": "2026-09-08T04:34:47.866Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:fcb0e68f-86d0-4b79-a10a-b6f407ea3d44",
+          "event:79c29a8d-aa4e-4371-9a97-94f72e905a55"
+        ],
+        "observed_at": "2026-10-01T04:47:45.808000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:fcb0e68f-86d0-4b79-a10a-b6f407ea3d44",
+            "observed_at": "2026-09-08T04:05:20.329Z",
+            "freshness_s": 1989745.479
+          },
+          {
+            "ref": "event:79c29a8d-aa4e-4371-9a97-94f72e905a55",
+            "observed_at": "2026-09-08T04:34:47.866Z",
+            "freshness_s": 1987977.942
+          }
+        ]
       }
     },
     "conflicts": [

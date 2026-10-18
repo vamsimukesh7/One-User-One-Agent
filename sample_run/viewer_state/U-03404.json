@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2670808.332,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "sugu-rana-d4",
+              "next_episode_id": "sugu-rana-d4-s1e1",
+              "last_play_at": "2026-09-07T10:11:59.805000Z",
+              "sources": [
+                {
+                  "ref": "event:8af201de-3b82-4b9f-95ac-1de943247228",
+                  "observed_at": "2026-09-07T10:11:59.805Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:8af201de-3b82-4b9f-95ac-1de943247228"
+        ],
+        "observed_at": "2026-10-01T16:23:28.332000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:8af201de-3b82-4b9f-95ac-1de943247228",
+            "observed_at": "2026-09-07T10:11:59.805Z",
+            "freshness_s": 2095888.527
+          }
+        ]
       }
     },
     "conflicts": [],

@@ -67,6 +67,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2644337.916,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "gubava-gihaya-d5",
+              "next_episode_id": "gubava-gihaya-d5-s1e1",
+              "last_play_at": "2026-09-20T06:57:53.068000Z",
+              "sources": [
+                {
+                  "ref": "event:4af36063-c02d-414c-af8d-d2d6c41bb6e2",
+                  "observed_at": "2026-09-20T06:57:53.068Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "yaka-naka-d5",
+              "next_episode_id": "yaka-naka-d5-s1e1",
+              "last_play_at": "2026-09-11T16:28:56.570000Z",
+              "sources": [
+                {
+                  "ref": "event:b63f6dbb-f92f-42ea-a552-ed9952c2f2eb",
+                  "observed_at": "2026-09-11T16:28:56.570Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:4af36063-c02d-414c-af8d-d2d6c41bb6e2",
+          "event:b63f6dbb-f92f-42ea-a552-ed9952c2f2eb"
+        ],
+        "observed_at": "2026-10-01T09:02:17.916000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:4af36063-c02d-414c-af8d-d2d6c41bb6e2",
+            "observed_at": "2026-09-20T06:57:53.068Z",
+            "freshness_s": 957864.848
+          },
+          {
+            "ref": "event:b63f6dbb-f92f-42ea-a552-ed9952c2f2eb",
+            "observed_at": "2026-09-11T16:28:56.570Z",
+            "freshness_s": 1701201.346
+          }
+        ]
       }
     },
     "conflicts": [
@@ -177,6 +224,53 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2644334.193,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "gubava-gihaya-d5",
+                  "next_episode_id": "gubava-gihaya-d5-s1e1",
+                  "last_play_at": "2026-09-20T06:57:53.068000Z",
+                  "sources": [
+                    {
+                      "ref": "event:4af36063-c02d-414c-af8d-d2d6c41bb6e2",
+                      "observed_at": "2026-09-20T06:57:53.068Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "yaka-naka-d5",
+                  "next_episode_id": "yaka-naka-d5-s1e1",
+                  "last_play_at": "2026-09-11T16:28:56.570000Z",
+                  "sources": [
+                    {
+                      "ref": "event:b63f6dbb-f92f-42ea-a552-ed9952c2f2eb",
+                      "observed_at": "2026-09-11T16:28:56.570Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:4af36063-c02d-414c-af8d-d2d6c41bb6e2",
+              "event:b63f6dbb-f92f-42ea-a552-ed9952c2f2eb"
+            ],
+            "observed_at": "2026-10-01T09:02:14.193000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:4af36063-c02d-414c-af8d-d2d6c41bb6e2",
+                "observed_at": "2026-09-20T06:57:53.068Z",
+                "freshness_s": 957861.125
+              },
+              {
+                "ref": "event:b63f6dbb-f92f-42ea-a552-ed9952c2f2eb",
+                "observed_at": "2026-09-11T16:28:56.570Z",
+                "freshness_s": 1701197.623
+              }
+            ]
           }
         },
         "conflicts": [
@@ -192,6 +286,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

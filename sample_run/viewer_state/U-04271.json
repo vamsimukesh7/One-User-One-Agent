@@ -67,6 +67,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2655760.679,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "lomobha-moni-d3",
+              "next_episode_id": "lomobha-moni-d3-s1e2",
+              "last_play_at": "2026-09-17T12:49:01.536000Z",
+              "sources": [
+                {
+                  "ref": "event:d4930355-8577-4adb-8d2b-827e5709b742",
+                  "observed_at": "2026-09-17T12:49:01.536Z"
+                },
+                {
+                  "ref": "event:e048c8c0-790c-4cad-a6fe-964d702a7f73",
+                  "observed_at": "2026-09-17T12:50:50.405Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "pate-kari-d3",
+              "next_episode_id": "pate-kari-d3-s1e1",
+              "last_play_at": "2026-09-02T16:31:49.521000Z",
+              "sources": [
+                {
+                  "ref": "event:403d2f3b-10ec-4c41-90ab-d20cc341bbcf",
+                  "observed_at": "2026-09-02T16:31:49.521Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:d4930355-8577-4adb-8d2b-827e5709b742",
+          "event:e048c8c0-790c-4cad-a6fe-964d702a7f73",
+          "event:403d2f3b-10ec-4c41-90ab-d20cc341bbcf"
+        ],
+        "observed_at": "2026-10-01T12:12:40.679000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:d4930355-8577-4adb-8d2b-827e5709b742",
+            "observed_at": "2026-09-17T12:49:01.536Z",
+            "freshness_s": 1207419.143
+          },
+          {
+            "ref": "event:e048c8c0-790c-4cad-a6fe-964d702a7f73",
+            "observed_at": "2026-09-17T12:50:50.405Z",
+            "freshness_s": 1207310.274
+          },
+          {
+            "ref": "event:403d2f3b-10ec-4c41-90ab-d20cc341bbcf",
+            "observed_at": "2026-09-02T16:31:49.521Z",
+            "freshness_s": 2490051.158
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +225,63 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2655760.679,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "lomobha-moni-d3",
+                  "next_episode_id": "lomobha-moni-d3-s1e2",
+                  "last_play_at": "2026-09-17T12:49:01.536000Z",
+                  "sources": [
+                    {
+                      "ref": "event:d4930355-8577-4adb-8d2b-827e5709b742",
+                      "observed_at": "2026-09-17T12:49:01.536Z"
+                    },
+                    {
+                      "ref": "event:e048c8c0-790c-4cad-a6fe-964d702a7f73",
+                      "observed_at": "2026-09-17T12:50:50.405Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "pate-kari-d3",
+                  "next_episode_id": "pate-kari-d3-s1e1",
+                  "last_play_at": "2026-09-02T16:31:49.521000Z",
+                  "sources": [
+                    {
+                      "ref": "event:403d2f3b-10ec-4c41-90ab-d20cc341bbcf",
+                      "observed_at": "2026-09-02T16:31:49.521Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:d4930355-8577-4adb-8d2b-827e5709b742",
+              "event:e048c8c0-790c-4cad-a6fe-964d702a7f73",
+              "event:403d2f3b-10ec-4c41-90ab-d20cc341bbcf"
+            ],
+            "observed_at": "2026-10-01T12:12:40.679000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:d4930355-8577-4adb-8d2b-827e5709b742",
+                "observed_at": "2026-09-17T12:49:01.536Z",
+                "freshness_s": 1207419.143
+              },
+              {
+                "ref": "event:e048c8c0-790c-4cad-a6fe-964d702a7f73",
+                "observed_at": "2026-09-17T12:50:50.405Z",
+                "freshness_s": 1207310.274
+              },
+              {
+                "ref": "event:403d2f3b-10ec-4c41-90ab-d20cc341bbcf",
+                "observed_at": "2026-09-02T16:31:49.521Z",
+                "freshness_s": 2490051.158
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +289,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],
@@ -193,7 +313,7 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-026759"
+          "event:oua-026762"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

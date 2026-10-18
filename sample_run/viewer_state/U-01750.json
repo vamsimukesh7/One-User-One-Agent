@@ -67,6 +67,113 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2674066.95,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "pate-kari-d3",
+              "next_episode_id": "pate-kari-d3-s1e2",
+              "last_play_at": "2026-09-23T06:53:21.707000Z",
+              "sources": [
+                {
+                  "ref": "event:a81f7cc7-8ae6-44c9-958e-ce0327cf91ba",
+                  "observed_at": "2026-09-23T06:53:21.707Z"
+                },
+                {
+                  "ref": "event:c5a4c93f-42ec-4ef1-a69a-069834846c4d",
+                  "observed_at": "2026-09-23T07:34:46.279Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "yane-tegi-d3",
+              "next_episode_id": "yane-tegi-d3-s1e4",
+              "last_play_at": "2026-09-10T16:25:51.784000Z",
+              "sources": [
+                {
+                  "ref": "event:ca2317bc-6808-4066-a086-b85b3b6dc7e2",
+                  "observed_at": "2026-09-02T11:27:14.999Z"
+                },
+                {
+                  "ref": "event:029cc4bb-0076-4f36-b664-049c0d8103cc",
+                  "observed_at": "2026-09-02T11:30:56.133Z"
+                },
+                {
+                  "ref": "event:9bc6929b-e34b-4ff1-9162-5ea26733d447",
+                  "observed_at": "2026-09-09T11:22:26.802Z"
+                },
+                {
+                  "ref": "event:a1812f0a-75cb-449d-a118-7fab70daee3b",
+                  "observed_at": "2026-09-09T11:25:13.446Z"
+                },
+                {
+                  "ref": "event:f755e64f-d7be-44fe-8c85-49e27f3d8c3d",
+                  "observed_at": "2026-09-14T08:39:18.862Z"
+                },
+                {
+                  "ref": "event:961a55ee-8620-486e-ad6c-9d8e87834e20",
+                  "observed_at": "2026-09-14T08:42:59.695Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:a81f7cc7-8ae6-44c9-958e-ce0327cf91ba",
+          "event:c5a4c93f-42ec-4ef1-a69a-069834846c4d",
+          "event:ca2317bc-6808-4066-a086-b85b3b6dc7e2",
+          "event:029cc4bb-0076-4f36-b664-049c0d8103cc",
+          "event:9bc6929b-e34b-4ff1-9162-5ea26733d447",
+          "event:a1812f0a-75cb-449d-a118-7fab70daee3b",
+          "event:f755e64f-d7be-44fe-8c85-49e27f3d8c3d",
+          "event:961a55ee-8620-486e-ad6c-9d8e87834e20"
+        ],
+        "observed_at": "2026-10-01T17:17:46.950000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:a81f7cc7-8ae6-44c9-958e-ce0327cf91ba",
+            "observed_at": "2026-09-23T06:53:21.707Z",
+            "freshness_s": 728665.243
+          },
+          {
+            "ref": "event:c5a4c93f-42ec-4ef1-a69a-069834846c4d",
+            "observed_at": "2026-09-23T07:34:46.279Z",
+            "freshness_s": 726180.671
+          },
+          {
+            "ref": "event:ca2317bc-6808-4066-a086-b85b3b6dc7e2",
+            "observed_at": "2026-09-02T11:27:14.999Z",
+            "freshness_s": 2526631.951
+          },
+          {
+            "ref": "event:029cc4bb-0076-4f36-b664-049c0d8103cc",
+            "observed_at": "2026-09-02T11:30:56.133Z",
+            "freshness_s": 2526410.817
+          },
+          {
+            "ref": "event:9bc6929b-e34b-4ff1-9162-5ea26733d447",
+            "observed_at": "2026-09-09T11:22:26.802Z",
+            "freshness_s": 1922120.148
+          },
+          {
+            "ref": "event:a1812f0a-75cb-449d-a118-7fab70daee3b",
+            "observed_at": "2026-09-09T11:25:13.446Z",
+            "freshness_s": 1921953.504
+          },
+          {
+            "ref": "event:f755e64f-d7be-44fe-8c85-49e27f3d8c3d",
+            "observed_at": "2026-09-14T08:39:18.862Z",
+            "freshness_s": 1499908.088
+          },
+          {
+            "ref": "event:961a55ee-8620-486e-ad6c-9d8e87834e20",
+            "observed_at": "2026-09-14T08:42:59.695Z",
+            "freshness_s": 1499687.255
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +275,113 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2674066.95,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "pate-kari-d3",
+                  "next_episode_id": "pate-kari-d3-s1e2",
+                  "last_play_at": "2026-09-23T06:53:21.707000Z",
+                  "sources": [
+                    {
+                      "ref": "event:a81f7cc7-8ae6-44c9-958e-ce0327cf91ba",
+                      "observed_at": "2026-09-23T06:53:21.707Z"
+                    },
+                    {
+                      "ref": "event:c5a4c93f-42ec-4ef1-a69a-069834846c4d",
+                      "observed_at": "2026-09-23T07:34:46.279Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "yane-tegi-d3",
+                  "next_episode_id": "yane-tegi-d3-s1e4",
+                  "last_play_at": "2026-09-10T16:25:51.784000Z",
+                  "sources": [
+                    {
+                      "ref": "event:ca2317bc-6808-4066-a086-b85b3b6dc7e2",
+                      "observed_at": "2026-09-02T11:27:14.999Z"
+                    },
+                    {
+                      "ref": "event:029cc4bb-0076-4f36-b664-049c0d8103cc",
+                      "observed_at": "2026-09-02T11:30:56.133Z"
+                    },
+                    {
+                      "ref": "event:9bc6929b-e34b-4ff1-9162-5ea26733d447",
+                      "observed_at": "2026-09-09T11:22:26.802Z"
+                    },
+                    {
+                      "ref": "event:a1812f0a-75cb-449d-a118-7fab70daee3b",
+                      "observed_at": "2026-09-09T11:25:13.446Z"
+                    },
+                    {
+                      "ref": "event:f755e64f-d7be-44fe-8c85-49e27f3d8c3d",
+                      "observed_at": "2026-09-14T08:39:18.862Z"
+                    },
+                    {
+                      "ref": "event:961a55ee-8620-486e-ad6c-9d8e87834e20",
+                      "observed_at": "2026-09-14T08:42:59.695Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:a81f7cc7-8ae6-44c9-958e-ce0327cf91ba",
+              "event:c5a4c93f-42ec-4ef1-a69a-069834846c4d",
+              "event:ca2317bc-6808-4066-a086-b85b3b6dc7e2",
+              "event:029cc4bb-0076-4f36-b664-049c0d8103cc",
+              "event:9bc6929b-e34b-4ff1-9162-5ea26733d447",
+              "event:a1812f0a-75cb-449d-a118-7fab70daee3b",
+              "event:f755e64f-d7be-44fe-8c85-49e27f3d8c3d",
+              "event:961a55ee-8620-486e-ad6c-9d8e87834e20"
+            ],
+            "observed_at": "2026-10-01T17:17:46.950000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:a81f7cc7-8ae6-44c9-958e-ce0327cf91ba",
+                "observed_at": "2026-09-23T06:53:21.707Z",
+                "freshness_s": 728665.243
+              },
+              {
+                "ref": "event:c5a4c93f-42ec-4ef1-a69a-069834846c4d",
+                "observed_at": "2026-09-23T07:34:46.279Z",
+                "freshness_s": 726180.671
+              },
+              {
+                "ref": "event:ca2317bc-6808-4066-a086-b85b3b6dc7e2",
+                "observed_at": "2026-09-02T11:27:14.999Z",
+                "freshness_s": 2526631.951
+              },
+              {
+                "ref": "event:029cc4bb-0076-4f36-b664-049c0d8103cc",
+                "observed_at": "2026-09-02T11:30:56.133Z",
+                "freshness_s": 2526410.817
+              },
+              {
+                "ref": "event:9bc6929b-e34b-4ff1-9162-5ea26733d447",
+                "observed_at": "2026-09-09T11:22:26.802Z",
+                "freshness_s": 1922120.148
+              },
+              {
+                "ref": "event:a1812f0a-75cb-449d-a118-7fab70daee3b",
+                "observed_at": "2026-09-09T11:25:13.446Z",
+                "freshness_s": 1921953.504
+              },
+              {
+                "ref": "event:f755e64f-d7be-44fe-8c85-49e27f3d8c3d",
+                "observed_at": "2026-09-14T08:39:18.862Z",
+                "freshness_s": 1499908.088
+              },
+              {
+                "ref": "event:961a55ee-8620-486e-ad6c-9d8e87834e20",
+                "observed_at": "2026-09-14T08:42:59.695Z",
+                "freshness_s": 1499687.255
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +389,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

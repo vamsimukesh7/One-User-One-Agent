@@ -2,11 +2,17 @@ name: Tests
 on: [push, pull_request]
 jobs:
   unit:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.12']
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONPATH: src
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
-      - name: Run isolated unit and regression tests
-        run: PYTHONPATH=src python -m unittest discover -s tests -v
+          python-version: ${{ matrix.python }}
+      - name: Run isolated unit, regression and CLI integration tests
+        run: python -m unittest discover -s tests -v

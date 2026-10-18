@@ -61,6 +61,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2632272.735,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "kopibha-niya-d1",
+              "next_episode_id": "kopibha-niya-d1-s1e2",
+              "last_play_at": "2026-09-24T11:40:31.641000Z",
+              "sources": [
+                {
+                  "ref": "event:208f227b-de61-4f4e-b7ba-1bb206ac2462",
+                  "observed_at": "2026-09-24T11:40:31.641Z"
+                },
+                {
+                  "ref": "event:8db6a2ee-36b4-45dd-98bd-b9c10d8378eb",
+                  "observed_at": "2026-09-24T12:06:16.775Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "hapibha-d1",
+              "next_episode_id": "hapibha-d1-s1e1",
+              "last_play_at": "2026-09-13T15:18:21.276000Z",
+              "sources": [
+                {
+                  "ref": "event:81268fac-90e1-4926-8b5e-611139bc9f4d",
+                  "observed_at": "2026-09-13T15:18:21.276Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:208f227b-de61-4f4e-b7ba-1bb206ac2462",
+          "event:8db6a2ee-36b4-45dd-98bd-b9c10d8378eb",
+          "event:81268fac-90e1-4926-8b5e-611139bc9f4d"
+        ],
+        "observed_at": "2026-10-01T05:41:12.735000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:208f227b-de61-4f4e-b7ba-1bb206ac2462",
+            "observed_at": "2026-09-24T11:40:31.641Z",
+            "freshness_s": 583241.094
+          },
+          {
+            "ref": "event:8db6a2ee-36b4-45dd-98bd-b9c10d8378eb",
+            "observed_at": "2026-09-24T12:06:16.775Z",
+            "freshness_s": 581695.96
+          },
+          {
+            "ref": "event:81268fac-90e1-4926-8b5e-611139bc9f4d",
+            "observed_at": "2026-09-13T15:18:21.276Z",
+            "freshness_s": 1520571.459
+          }
+        ]
       }
     },
     "conflicts": [
@@ -83,6 +140,6 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy"
   ],
-  "state_updated_at": "2026-10-01T05:42:54.597Z",
+  "state_updated_at": "2026-10-01T05:42:54.597000Z",
   "plans": []
 }

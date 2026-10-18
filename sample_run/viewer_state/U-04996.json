@@ -67,6 +67,123 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2649681.274,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "gubava-gihaya-d5",
+              "next_episode_id": "gubava-gihaya-d5-s1e4",
+              "last_play_at": "2026-09-23T10:49:52.324000Z",
+              "sources": [
+                {
+                  "ref": "event:8c502c83-5766-497b-ad87-75efbae8461e",
+                  "observed_at": "2026-09-05T14:40:36.844Z"
+                },
+                {
+                  "ref": "event:6dafb9aa-b74d-48b0-8b8f-9557d9cb750a",
+                  "observed_at": "2026-09-05T14:43:22.086Z"
+                },
+                {
+                  "ref": "event:e9f321f0-960d-42c9-8a15-2ca9a8af7e9a",
+                  "observed_at": "2026-09-10T15:49:44.023Z"
+                },
+                {
+                  "ref": "event:cacdc17b-d49e-40ff-a781-8b737e0c864c",
+                  "observed_at": "2026-09-15T04:49:15.841Z"
+                },
+                {
+                  "ref": "event:b1c1f97d-e7de-4bce-a3fb-0183c999c0d7",
+                  "observed_at": "2026-09-15T04:52:03.175Z"
+                },
+                {
+                  "ref": "event:51296774-deb6-4530-ad58-642d0d41f91b",
+                  "observed_at": "2026-09-16T16:11:03.512Z"
+                },
+                {
+                  "ref": "event:b6d096c8-4747-486f-b966-cdd1198ecd6c",
+                  "observed_at": "2026-09-23T11:01:27.823Z"
+                },
+                {
+                  "ref": "event:7f34d9aa-59e2-4a9b-8bd0-da053ad957a7",
+                  "observed_at": "2026-09-23T11:03:18.385Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "jamo-hasa-d5",
+              "next_episode_id": "jamo-hasa-d5-s1e1",
+              "last_play_at": "2026-09-10T05:26:58.927000Z",
+              "sources": [
+                {
+                  "ref": "event:ffd1ebb7-4496-4b0c-a619-71381852311e",
+                  "observed_at": "2026-09-10T05:26:58.927Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:8c502c83-5766-497b-ad87-75efbae8461e",
+          "event:6dafb9aa-b74d-48b0-8b8f-9557d9cb750a",
+          "event:e9f321f0-960d-42c9-8a15-2ca9a8af7e9a",
+          "event:cacdc17b-d49e-40ff-a781-8b737e0c864c",
+          "event:b1c1f97d-e7de-4bce-a3fb-0183c999c0d7",
+          "event:51296774-deb6-4530-ad58-642d0d41f91b",
+          "event:b6d096c8-4747-486f-b966-cdd1198ecd6c",
+          "event:7f34d9aa-59e2-4a9b-8bd0-da053ad957a7",
+          "event:ffd1ebb7-4496-4b0c-a619-71381852311e"
+        ],
+        "observed_at": "2026-10-01T10:31:21.274000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:8c502c83-5766-497b-ad87-75efbae8461e",
+            "observed_at": "2026-09-05T14:40:36.844Z",
+            "freshness_s": 2231444.43
+          },
+          {
+            "ref": "event:6dafb9aa-b74d-48b0-8b8f-9557d9cb750a",
+            "observed_at": "2026-09-05T14:43:22.086Z",
+            "freshness_s": 2231279.188
+          },
+          {
+            "ref": "event:e9f321f0-960d-42c9-8a15-2ca9a8af7e9a",
+            "observed_at": "2026-09-10T15:49:44.023Z",
+            "freshness_s": 1795297.251
+          },
+          {
+            "ref": "event:cacdc17b-d49e-40ff-a781-8b737e0c864c",
+            "observed_at": "2026-09-15T04:49:15.841Z",
+            "freshness_s": 1402925.433
+          },
+          {
+            "ref": "event:b1c1f97d-e7de-4bce-a3fb-0183c999c0d7",
+            "observed_at": "2026-09-15T04:52:03.175Z",
+            "freshness_s": 1402758.099
+          },
+          {
+            "ref": "event:51296774-deb6-4530-ad58-642d0d41f91b",
+            "observed_at": "2026-09-16T16:11:03.512Z",
+            "freshness_s": 1275617.762
+          },
+          {
+            "ref": "event:b6d096c8-4747-486f-b966-cdd1198ecd6c",
+            "observed_at": "2026-09-23T11:01:27.823Z",
+            "freshness_s": 689393.451
+          },
+          {
+            "ref": "event:7f34d9aa-59e2-4a9b-8bd0-da053ad957a7",
+            "observed_at": "2026-09-23T11:03:18.385Z",
+            "freshness_s": 689282.889
+          },
+          {
+            "ref": "event:ffd1ebb7-4496-4b0c-a619-71381852311e",
+            "observed_at": "2026-09-10T05:26:58.927Z",
+            "freshness_s": 1832662.347
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +284,123 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2649681.274,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "gubava-gihaya-d5",
+                  "next_episode_id": "gubava-gihaya-d5-s1e4",
+                  "last_play_at": "2026-09-23T10:49:52.324000Z",
+                  "sources": [
+                    {
+                      "ref": "event:8c502c83-5766-497b-ad87-75efbae8461e",
+                      "observed_at": "2026-09-05T14:40:36.844Z"
+                    },
+                    {
+                      "ref": "event:6dafb9aa-b74d-48b0-8b8f-9557d9cb750a",
+                      "observed_at": "2026-09-05T14:43:22.086Z"
+                    },
+                    {
+                      "ref": "event:e9f321f0-960d-42c9-8a15-2ca9a8af7e9a",
+                      "observed_at": "2026-09-10T15:49:44.023Z"
+                    },
+                    {
+                      "ref": "event:cacdc17b-d49e-40ff-a781-8b737e0c864c",
+                      "observed_at": "2026-09-15T04:49:15.841Z"
+                    },
+                    {
+                      "ref": "event:b1c1f97d-e7de-4bce-a3fb-0183c999c0d7",
+                      "observed_at": "2026-09-15T04:52:03.175Z"
+                    },
+                    {
+                      "ref": "event:51296774-deb6-4530-ad58-642d0d41f91b",
+                      "observed_at": "2026-09-16T16:11:03.512Z"
+                    },
+                    {
+                      "ref": "event:b6d096c8-4747-486f-b966-cdd1198ecd6c",
+                      "observed_at": "2026-09-23T11:01:27.823Z"
+                    },
+                    {
+                      "ref": "event:7f34d9aa-59e2-4a9b-8bd0-da053ad957a7",
+                      "observed_at": "2026-09-23T11:03:18.385Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "jamo-hasa-d5",
+                  "next_episode_id": "jamo-hasa-d5-s1e1",
+                  "last_play_at": "2026-09-10T05:26:58.927000Z",
+                  "sources": [
+                    {
+                      "ref": "event:ffd1ebb7-4496-4b0c-a619-71381852311e",
+                      "observed_at": "2026-09-10T05:26:58.927Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:8c502c83-5766-497b-ad87-75efbae8461e",
+              "event:6dafb9aa-b74d-48b0-8b8f-9557d9cb750a",
+              "event:e9f321f0-960d-42c9-8a15-2ca9a8af7e9a",
+              "event:cacdc17b-d49e-40ff-a781-8b737e0c864c",
+              "event:b1c1f97d-e7de-4bce-a3fb-0183c999c0d7",
+              "event:51296774-deb6-4530-ad58-642d0d41f91b",
+              "event:b6d096c8-4747-486f-b966-cdd1198ecd6c",
+              "event:7f34d9aa-59e2-4a9b-8bd0-da053ad957a7",
+              "event:ffd1ebb7-4496-4b0c-a619-71381852311e"
+            ],
+            "observed_at": "2026-10-01T10:31:21.274000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:8c502c83-5766-497b-ad87-75efbae8461e",
+                "observed_at": "2026-09-05T14:40:36.844Z",
+                "freshness_s": 2231444.43
+              },
+              {
+                "ref": "event:6dafb9aa-b74d-48b0-8b8f-9557d9cb750a",
+                "observed_at": "2026-09-05T14:43:22.086Z",
+                "freshness_s": 2231279.188
+              },
+              {
+                "ref": "event:e9f321f0-960d-42c9-8a15-2ca9a8af7e9a",
+                "observed_at": "2026-09-10T15:49:44.023Z",
+                "freshness_s": 1795297.251
+              },
+              {
+                "ref": "event:cacdc17b-d49e-40ff-a781-8b737e0c864c",
+                "observed_at": "2026-09-15T04:49:15.841Z",
+                "freshness_s": 1402925.433
+              },
+              {
+                "ref": "event:b1c1f97d-e7de-4bce-a3fb-0183c999c0d7",
+                "observed_at": "2026-09-15T04:52:03.175Z",
+                "freshness_s": 1402758.099
+              },
+              {
+                "ref": "event:51296774-deb6-4530-ad58-642d0d41f91b",
+                "observed_at": "2026-09-16T16:11:03.512Z",
+                "freshness_s": 1275617.762
+              },
+              {
+                "ref": "event:b6d096c8-4747-486f-b966-cdd1198ecd6c",
+                "observed_at": "2026-09-23T11:01:27.823Z",
+                "freshness_s": 689393.451
+              },
+              {
+                "ref": "event:7f34d9aa-59e2-4a9b-8bd0-da053ad957a7",
+                "observed_at": "2026-09-23T11:03:18.385Z",
+                "freshness_s": 689282.889
+              },
+              {
+                "ref": "event:ffd1ebb7-4496-4b0c-a619-71381852311e",
+                "observed_at": "2026-09-10T05:26:58.927Z",
+                "freshness_s": 1832662.347
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +408,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -195,7 +435,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-031298"
+          "event:oua-031300"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

@@ -67,6 +67,70 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2662203.513,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "gidha-sudhako-d1",
+              "next_episode_id": "gidha-sudhako-d1-s1e1",
+              "last_play_at": "2026-09-27T03:44:25.321000Z",
+              "sources": [
+                {
+                  "ref": "event:d1ac1bf7-921a-4bde-a7f2-7536255caefd",
+                  "observed_at": "2026-09-27T03:44:25.321Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "hate-d1",
+              "next_episode_id": "hate-d1-s1e1",
+              "last_play_at": "2026-09-10T12:24:02.163000Z",
+              "sources": [
+                {
+                  "ref": "event:ca6455f3-715a-4cd4-8591-ca42872391d1",
+                  "observed_at": "2026-09-10T12:24:02.163Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e1",
+              "last_play_at": "2026-09-09T04:41:07.899000Z",
+              "sources": [
+                {
+                  "ref": "event:73db93b7-f0c9-4ebc-8afe-c793c03d0149",
+                  "observed_at": "2026-09-09T04:41:07.899Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:d1ac1bf7-921a-4bde-a7f2-7536255caefd",
+          "event:ca6455f3-715a-4cd4-8591-ca42872391d1",
+          "event:73db93b7-f0c9-4ebc-8afe-c793c03d0149"
+        ],
+        "observed_at": "2026-10-01T14:00:03.513000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:d1ac1bf7-921a-4bde-a7f2-7536255caefd",
+            "observed_at": "2026-09-27T03:44:25.321Z",
+            "freshness_s": 382538.192
+          },
+          {
+            "ref": "event:ca6455f3-715a-4cd4-8591-ca42872391d1",
+            "observed_at": "2026-09-10T12:24:02.163Z",
+            "freshness_s": 1820161.35
+          },
+          {
+            "ref": "event:73db93b7-f0c9-4ebc-8afe-c793c03d0149",
+            "observed_at": "2026-09-09T04:41:07.899Z",
+            "freshness_s": 1934335.614
+          }
+        ]
       }
     },
     "conflicts": [],

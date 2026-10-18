@@ -67,6 +67,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2665974.607,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e1",
+              "last_play_at": "2026-09-27T15:36:07.289000Z",
+              "sources": [
+                {
+                  "ref": "event:cd4ac720-7cac-465d-914e-4a18715c950b",
+                  "observed_at": "2026-09-27T15:36:07.289Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "hate-d1",
+              "next_episode_id": "hate-d1-s1e1",
+              "last_play_at": "2026-09-13T18:27:35.676000Z",
+              "sources": [
+                {
+                  "ref": "event:151ccada-e533-4efa-b9e6-9942b2e8a889",
+                  "observed_at": "2026-09-13T18:27:35.676Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:cd4ac720-7cac-465d-914e-4a18715c950b",
+          "event:151ccada-e533-4efa-b9e6-9942b2e8a889"
+        ],
+        "observed_at": "2026-10-01T15:02:54.607000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:cd4ac720-7cac-465d-914e-4a18715c950b",
+            "observed_at": "2026-09-27T15:36:07.289Z",
+            "freshness_s": 343607.318
+          },
+          {
+            "ref": "event:151ccada-e533-4efa-b9e6-9942b2e8a889",
+            "observed_at": "2026-09-13T18:27:35.676Z",
+            "freshness_s": 1542918.931
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +215,53 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2655136.548,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "hama-chudibha-d1",
+                  "next_episode_id": "hama-chudibha-d1-s1e1",
+                  "last_play_at": "2026-09-27T15:36:07.289000Z",
+                  "sources": [
+                    {
+                      "ref": "event:cd4ac720-7cac-465d-914e-4a18715c950b",
+                      "observed_at": "2026-09-27T15:36:07.289Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "hate-d1",
+                  "next_episode_id": "hate-d1-s1e1",
+                  "last_play_at": "2026-09-13T18:27:35.676000Z",
+                  "sources": [
+                    {
+                      "ref": "event:151ccada-e533-4efa-b9e6-9942b2e8a889",
+                      "observed_at": "2026-09-13T18:27:35.676Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:cd4ac720-7cac-465d-914e-4a18715c950b",
+              "event:151ccada-e533-4efa-b9e6-9942b2e8a889"
+            ],
+            "observed_at": "2026-10-01T12:02:16.548000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:cd4ac720-7cac-465d-914e-4a18715c950b",
+                "observed_at": "2026-09-27T15:36:07.289Z",
+                "freshness_s": 332769.259
+              },
+              {
+                "ref": "event:151ccada-e533-4efa-b9e6-9942b2e8a889",
+                "observed_at": "2026-09-13T18:27:35.676Z",
+                "freshness_s": 1532080.872
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +269,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -196,7 +296,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-016351"
+          "event:oua-016349"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

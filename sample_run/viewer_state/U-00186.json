@@ -60,6 +60,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2654461.746,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e1",
+              "last_play_at": "2026-09-16T03:04:48.326000Z",
+              "sources": [
+                {
+                  "ref": "event:eefc91ca-8ef0-45f3-941f-369d3a00a56d",
+                  "observed_at": "2026-09-04T02:23:47.515Z"
+                },
+                {
+                  "ref": "event:8c0b42e6-c03e-4e3b-a0fc-31dd5c8f450c",
+                  "observed_at": "2026-09-16T03:04:48.326Z"
+                },
+                {
+                  "ref": "event:e0c23445-9fdc-45c7-900e-d0c12c7cee0a",
+                  "observed_at": "2026-09-23T23:26:27.554Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:eefc91ca-8ef0-45f3-941f-369d3a00a56d",
+          "event:8c0b42e6-c03e-4e3b-a0fc-31dd5c8f450c",
+          "event:e0c23445-9fdc-45c7-900e-d0c12c7cee0a"
+        ],
+        "observed_at": "2026-10-01T11:51:01.746000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:eefc91ca-8ef0-45f3-941f-369d3a00a56d",
+            "observed_at": "2026-09-04T02:23:47.515Z",
+            "freshness_s": 2366834.231
+          },
+          {
+            "ref": "event:8c0b42e6-c03e-4e3b-a0fc-31dd5c8f450c",
+            "observed_at": "2026-09-16T03:04:48.326Z",
+            "freshness_s": 1327573.42
+          },
+          {
+            "ref": "event:e0c23445-9fdc-45c7-900e-d0c12c7cee0a",
+            "observed_at": "2026-09-23T23:26:27.554Z",
+            "freshness_s": 649474.192
+          }
+        ]
       }
     },
     "conflicts": [
@@ -162,6 +212,56 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2654461.746,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "molo-d2",
+                  "next_episode_id": "molo-d2-s1e1",
+                  "last_play_at": "2026-09-16T03:04:48.326000Z",
+                  "sources": [
+                    {
+                      "ref": "event:eefc91ca-8ef0-45f3-941f-369d3a00a56d",
+                      "observed_at": "2026-09-04T02:23:47.515Z"
+                    },
+                    {
+                      "ref": "event:8c0b42e6-c03e-4e3b-a0fc-31dd5c8f450c",
+                      "observed_at": "2026-09-16T03:04:48.326Z"
+                    },
+                    {
+                      "ref": "event:e0c23445-9fdc-45c7-900e-d0c12c7cee0a",
+                      "observed_at": "2026-09-23T23:26:27.554Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:eefc91ca-8ef0-45f3-941f-369d3a00a56d",
+              "event:8c0b42e6-c03e-4e3b-a0fc-31dd5c8f450c",
+              "event:e0c23445-9fdc-45c7-900e-d0c12c7cee0a"
+            ],
+            "observed_at": "2026-10-01T11:51:01.746000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:eefc91ca-8ef0-45f3-941f-369d3a00a56d",
+                "observed_at": "2026-09-04T02:23:47.515Z",
+                "freshness_s": 2366834.231
+              },
+              {
+                "ref": "event:8c0b42e6-c03e-4e3b-a0fc-31dd5c8f450c",
+                "observed_at": "2026-09-16T03:04:48.326Z",
+                "freshness_s": 1327573.42
+              },
+              {
+                "ref": "event:e0c23445-9fdc-45c7-900e-d0c12c7cee0a",
+                "observed_at": "2026-09-23T23:26:27.554Z",
+                "freshness_s": 649474.192
+              }
+            ]
           }
         },
         "conflicts": [
@@ -177,6 +277,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],
@@ -195,9 +301,9 @@
           "window_hours": 336
         },
         "signal_refs": [
-          "event:oua-001169",
-          "event:oua-001171",
-          "event:oua-001181"
+          "event:oua-001172",
+          "event:oua-001174",
+          "event:oua-001184"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

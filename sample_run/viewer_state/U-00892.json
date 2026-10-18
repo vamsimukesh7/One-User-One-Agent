@@ -61,6 +61,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2666323.377,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "dhapipa-gini-d2",
+              "next_episode_id": "dhapipa-gini-d2-s1e2",
+              "last_play_at": "2026-09-22T06:47:48.013000Z",
+              "sources": [
+                {
+                  "ref": "event:55d50605-6cb3-48a2-a22c-d4c2f092ec02",
+                  "observed_at": "2026-09-09T22:23:07.003Z"
+                },
+                {
+                  "ref": "event:9ae13de5-ed55-4b78-8e71-a65de3d9d454",
+                  "observed_at": "2026-09-09T22:25:52.840Z"
+                },
+                {
+                  "ref": "event:b2cb323b-b91b-4add-ba0f-c129556114fc",
+                  "observed_at": "2026-09-22T06:47:48.013Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:55d50605-6cb3-48a2-a22c-d4c2f092ec02",
+          "event:9ae13de5-ed55-4b78-8e71-a65de3d9d454",
+          "event:b2cb323b-b91b-4add-ba0f-c129556114fc"
+        ],
+        "observed_at": "2026-10-01T15:08:43.377000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:55d50605-6cb3-48a2-a22c-d4c2f092ec02",
+            "observed_at": "2026-09-09T22:23:07.003Z",
+            "freshness_s": 1874736.374
+          },
+          {
+            "ref": "event:9ae13de5-ed55-4b78-8e71-a65de3d9d454",
+            "observed_at": "2026-09-09T22:25:52.840Z",
+            "freshness_s": 1874570.537
+          },
+          {
+            "ref": "event:b2cb323b-b91b-4add-ba0f-c129556114fc",
+            "observed_at": "2026-09-22T06:47:48.013Z",
+            "freshness_s": 807655.364
+          }
+        ]
       }
     },
     "conflicts": [],

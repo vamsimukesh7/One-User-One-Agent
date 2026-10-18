@@ -67,6 +67,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2637306.906,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e1",
+              "last_play_at": "2026-09-18T14:05:46.235000Z",
+              "sources": [
+                {
+                  "ref": "event:31ed3cae-039e-4893-81a6-5a6241ed19ea",
+                  "observed_at": "2026-09-16T14:40:39.728Z"
+                },
+                {
+                  "ref": "event:ff6d2a73-7958-4cd2-86ab-04f7d6d71d5d",
+                  "observed_at": "2026-09-18T14:05:46.235Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:31ed3cae-039e-4893-81a6-5a6241ed19ea",
+          "event:ff6d2a73-7958-4cd2-86ab-04f7d6d71d5d"
+        ],
+        "observed_at": "2026-10-01T07:05:06.906000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:31ed3cae-039e-4893-81a6-5a6241ed19ea",
+            "observed_at": "2026-09-16T14:40:39.728Z",
+            "freshness_s": 1268667.178
+          },
+          {
+            "ref": "event:ff6d2a73-7958-4cd2-86ab-04f7d6d71d5d",
+            "observed_at": "2026-09-18T14:05:46.235Z",
+            "freshness_s": 1097960.671
+          }
+        ]
       }
     },
     "conflicts": [
@@ -175,6 +215,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2631303.013,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "molo-d2",
+                  "next_episode_id": "molo-d2-s1e1",
+                  "last_play_at": "2026-09-18T14:05:46.235000Z",
+                  "sources": [
+                    {
+                      "ref": "event:31ed3cae-039e-4893-81a6-5a6241ed19ea",
+                      "observed_at": "2026-09-16T14:40:39.728Z"
+                    },
+                    {
+                      "ref": "event:ff6d2a73-7958-4cd2-86ab-04f7d6d71d5d",
+                      "observed_at": "2026-09-18T14:05:46.235Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:31ed3cae-039e-4893-81a6-5a6241ed19ea",
+              "event:ff6d2a73-7958-4cd2-86ab-04f7d6d71d5d"
+            ],
+            "observed_at": "2026-10-01T05:25:03.013000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:31ed3cae-039e-4893-81a6-5a6241ed19ea",
+                "observed_at": "2026-09-16T14:40:39.728Z",
+                "freshness_s": 1262663.285
+              },
+              {
+                "ref": "event:ff6d2a73-7958-4cd2-86ab-04f7d6d71d5d",
+                "observed_at": "2026-09-18T14:05:46.235Z",
+                "freshness_s": 1091956.778
+              }
+            ]
           }
         },
         "conflicts": [
@@ -191,6 +271,10 @@
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
+      },
+      "eligibility_rule": {
+        "text": "Has never completed an episode.",
+        "requires_no_prior_event": "episode_completed"
       },
       "actions": [
         "A-ec4bf3f46502aa8da9d3",
@@ -211,14 +295,14 @@
           "window_hours": 72
         },
         "signal_refs": [
-          "event:oua-017593"
+          "event:oua-017591"
         ],
         "exposure_refs": [
-          "event:oua-017591",
-          "event:oua-017595"
+          "event:oua-017589",
+          "event:oua-017593"
         ],
         "associated_signal_refs": [
-          "event:oua-017593"
+          "event:oua-017591"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

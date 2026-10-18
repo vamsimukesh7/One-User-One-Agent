@@ -67,6 +67,73 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2650617.421,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e1",
+              "last_play_at": "2026-09-22T16:29:58.421000Z",
+              "sources": [
+                {
+                  "ref": "event:a4874ce9-8f24-4d19-b006-609b0a995827",
+                  "observed_at": "2026-09-02T12:19:54.571Z"
+                },
+                {
+                  "ref": "event:e92f2cff-256a-4908-a83b-8b702154c967",
+                  "observed_at": "2026-09-10T15:42:13.380Z"
+                },
+                {
+                  "ref": "event:e9d60f96-47cb-4780-85e1-b3026398c615",
+                  "observed_at": "2026-09-22T16:29:58.421Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "hate-d1",
+              "next_episode_id": "hate-d1-s1e1",
+              "last_play_at": "2026-09-03T07:26:52.014000Z",
+              "sources": [
+                {
+                  "ref": "event:60ee2ecd-d376-4dd5-8485-712f314ba313",
+                  "observed_at": "2026-09-03T07:26:52.014Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:a4874ce9-8f24-4d19-b006-609b0a995827",
+          "event:e92f2cff-256a-4908-a83b-8b702154c967",
+          "event:e9d60f96-47cb-4780-85e1-b3026398c615",
+          "event:60ee2ecd-d376-4dd5-8485-712f314ba313"
+        ],
+        "observed_at": "2026-10-01T10:46:57.421000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:a4874ce9-8f24-4d19-b006-609b0a995827",
+            "observed_at": "2026-09-02T12:19:54.571Z",
+            "freshness_s": 2500022.85
+          },
+          {
+            "ref": "event:e92f2cff-256a-4908-a83b-8b702154c967",
+            "observed_at": "2026-09-10T15:42:13.380Z",
+            "freshness_s": 1796684.041
+          },
+          {
+            "ref": "event:e9d60f96-47cb-4780-85e1-b3026398c615",
+            "observed_at": "2026-09-22T16:29:58.421Z",
+            "freshness_s": 757019.0
+          },
+          {
+            "ref": "event:60ee2ecd-d376-4dd5-8485-712f314ba313",
+            "observed_at": "2026-09-03T07:26:52.014Z",
+            "freshness_s": 2431205.407
+          }
+        ]
       }
     },
     "conflicts": [
@@ -177,6 +244,73 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2650617.421,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "hama-chudibha-d1",
+                  "next_episode_id": "hama-chudibha-d1-s1e1",
+                  "last_play_at": "2026-09-22T16:29:58.421000Z",
+                  "sources": [
+                    {
+                      "ref": "event:a4874ce9-8f24-4d19-b006-609b0a995827",
+                      "observed_at": "2026-09-02T12:19:54.571Z"
+                    },
+                    {
+                      "ref": "event:e92f2cff-256a-4908-a83b-8b702154c967",
+                      "observed_at": "2026-09-10T15:42:13.380Z"
+                    },
+                    {
+                      "ref": "event:e9d60f96-47cb-4780-85e1-b3026398c615",
+                      "observed_at": "2026-09-22T16:29:58.421Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "hate-d1",
+                  "next_episode_id": "hate-d1-s1e1",
+                  "last_play_at": "2026-09-03T07:26:52.014000Z",
+                  "sources": [
+                    {
+                      "ref": "event:60ee2ecd-d376-4dd5-8485-712f314ba313",
+                      "observed_at": "2026-09-03T07:26:52.014Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:a4874ce9-8f24-4d19-b006-609b0a995827",
+              "event:e92f2cff-256a-4908-a83b-8b702154c967",
+              "event:e9d60f96-47cb-4780-85e1-b3026398c615",
+              "event:60ee2ecd-d376-4dd5-8485-712f314ba313"
+            ],
+            "observed_at": "2026-10-01T10:46:57.421000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:a4874ce9-8f24-4d19-b006-609b0a995827",
+                "observed_at": "2026-09-02T12:19:54.571Z",
+                "freshness_s": 2500022.85
+              },
+              {
+                "ref": "event:e92f2cff-256a-4908-a83b-8b702154c967",
+                "observed_at": "2026-09-10T15:42:13.380Z",
+                "freshness_s": 1796684.041
+              },
+              {
+                "ref": "event:e9d60f96-47cb-4780-85e1-b3026398c615",
+                "observed_at": "2026-09-22T16:29:58.421Z",
+                "freshness_s": 757019.0
+              },
+              {
+                "ref": "event:60ee2ecd-d376-4dd5-8485-712f314ba313",
+                "observed_at": "2026-09-03T07:26:52.014Z",
+                "freshness_s": 2431205.407
+              }
+            ]
           }
         },
         "conflicts": [
@@ -192,6 +326,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

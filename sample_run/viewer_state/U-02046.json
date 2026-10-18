@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2662420.721,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "jakasa-dapi-d3",
+              "next_episode_id": "jakasa-dapi-d3-s1e1",
+              "last_play_at": "2026-09-16T09:55:01.707000Z",
+              "sources": [
+                {
+                  "ref": "event:2f1f5edd-52e9-44af-8391-e2f4c24f42fc",
+                  "observed_at": "2026-09-16T09:55:01.707Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:2f1f5edd-52e9-44af-8391-e2f4c24f42fc"
+        ],
+        "observed_at": "2026-10-01T14:03:40.721000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:2f1f5edd-52e9-44af-8391-e2f4c24f42fc",
+            "observed_at": "2026-09-16T09:55:01.707Z",
+            "freshness_s": 1310919.014
+          }
+        ]
       }
     },
     "conflicts": [
@@ -89,7 +119,7 @@
       "lesson": "Do not equate publishing with seeing or observing success with causation."
     }
   ],
-  "state_updated_at": "2026-10-01T14:05:59.553Z",
+  "state_updated_at": "2026-10-01T14:05:59.553000Z",
   "plans": [
     {
       "plan_id": "P-6774e72ece77ace597a4",
@@ -165,6 +195,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2662420.721,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "jakasa-dapi-d3",
+                  "next_episode_id": "jakasa-dapi-d3-s1e1",
+                  "last_play_at": "2026-09-16T09:55:01.707000Z",
+                  "sources": [
+                    {
+                      "ref": "event:2f1f5edd-52e9-44af-8391-e2f4c24f42fc",
+                      "observed_at": "2026-09-16T09:55:01.707Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:2f1f5edd-52e9-44af-8391-e2f4c24f42fc"
+            ],
+            "observed_at": "2026-10-01T14:03:40.721000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:2f1f5edd-52e9-44af-8391-e2f4c24f42fc",
+                "observed_at": "2026-09-16T09:55:01.707Z",
+                "freshness_s": 1310919.014
+              }
+            ]
           }
         },
         "conflicts": [
@@ -182,6 +242,9 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "No app_open in the 14 days before the trigger."
+      },
       "actions": [],
       "final_outcome": {
         "plan_id": "P-6774e72ece77ace597a4",
@@ -198,7 +261,7 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-013218"
+          "event:oua-013223"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

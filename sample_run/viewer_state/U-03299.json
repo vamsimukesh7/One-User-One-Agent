@@ -61,6 +61,66 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2631124.028,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e3",
+              "last_play_at": "2026-09-17T11:29:10.987000Z",
+              "sources": [
+                {
+                  "ref": "event:2907b44e-0caf-434c-8161-540a27c1496f",
+                  "observed_at": "2026-09-17T07:59:23.989Z"
+                },
+                {
+                  "ref": "event:e89644e6-ae94-4c2e-9bee-831706c9783a",
+                  "observed_at": "2026-09-17T08:02:11.514Z"
+                },
+                {
+                  "ref": "event:f76eb32e-f171-468e-8b7f-831df5286b65",
+                  "observed_at": "2026-09-17T11:33:18.199Z"
+                },
+                {
+                  "ref": "event:ee2fd305-5650-4e2f-8a69-dfaa8e642bcf",
+                  "observed_at": "2026-09-17T11:36:02.862Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:2907b44e-0caf-434c-8161-540a27c1496f",
+          "event:e89644e6-ae94-4c2e-9bee-831706c9783a",
+          "event:f76eb32e-f171-468e-8b7f-831df5286b65",
+          "event:ee2fd305-5650-4e2f-8a69-dfaa8e642bcf"
+        ],
+        "observed_at": "2026-10-01T05:22:04.028000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:2907b44e-0caf-434c-8161-540a27c1496f",
+            "observed_at": "2026-09-17T07:59:23.989Z",
+            "freshness_s": 1200160.039
+          },
+          {
+            "ref": "event:e89644e6-ae94-4c2e-9bee-831706c9783a",
+            "observed_at": "2026-09-17T08:02:11.514Z",
+            "freshness_s": 1199992.514
+          },
+          {
+            "ref": "event:f76eb32e-f171-468e-8b7f-831df5286b65",
+            "observed_at": "2026-09-17T11:33:18.199Z",
+            "freshness_s": 1187325.829
+          },
+          {
+            "ref": "event:ee2fd305-5650-4e2f-8a69-dfaa8e642bcf",
+            "observed_at": "2026-09-17T11:36:02.862Z",
+            "freshness_s": 1187161.166
+          }
+        ]
       }
     },
     "conflicts": [

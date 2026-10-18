@@ -67,6 +67,154 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2669344.686,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e1",
+              "last_play_at": "2026-09-27T16:15:42.465000Z",
+              "sources": [
+                {
+                  "ref": "event:3dfadc6e-d169-407e-bf8a-39ce624b7c0e",
+                  "observed_at": "2026-09-08T07:36:47.983Z"
+                },
+                {
+                  "ref": "event:20bece26-fb0f-47f6-9f43-c37bac54a0d6",
+                  "observed_at": "2026-09-27T16:15:42.465Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e2",
+              "last_play_at": "2026-09-25T16:02:57.790000Z",
+              "sources": [
+                {
+                  "ref": "event:7da3f404-da99-4dfa-b635-1ae33d7f8a41",
+                  "observed_at": "2026-09-19T03:01:14.682Z"
+                },
+                {
+                  "ref": "event:1635df4d-219b-402e-bea6-7666e269e5f3",
+                  "observed_at": "2026-09-19T03:04:02.425Z"
+                },
+                {
+                  "ref": "event:fbd6e007-d363-4044-8b5d-a3fa2d69e946",
+                  "observed_at": "2026-09-25T16:02:57.790Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "dhapipa-gini-d2",
+              "next_episode_id": "dhapipa-gini-d2-s1e1",
+              "last_play_at": "2026-09-19T05:37:25.534000Z",
+              "sources": [
+                {
+                  "ref": "event:55940167-ecd1-43e7-92ea-46a3f9be4772",
+                  "observed_at": "2026-09-19T05:37:25.534Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "bhaja-moguba-d2",
+              "next_episode_id": "bhaja-moguba-d2-s1e2",
+              "last_play_at": "2026-09-12T12:06:50.937000Z",
+              "sources": [
+                {
+                  "ref": "event:413d9926-08bd-43ee-b3e0-dfea2366aba1",
+                  "observed_at": "2026-09-01T16:48:51.499Z"
+                },
+                {
+                  "ref": "event:03bb45c0-5774-4705-947b-7d6c74fa3688",
+                  "observed_at": "2026-09-01T16:52:33.087Z"
+                },
+                {
+                  "ref": "event:78fae162-35e1-48e7-94f3-1cc529b4d97f",
+                  "observed_at": "2026-09-12T12:06:50.937Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "dichupi-niha-d2",
+              "next_episode_id": "dichupi-niha-d2-s1e1",
+              "last_play_at": "2026-09-01T16:16:19.529000Z",
+              "sources": [
+                {
+                  "ref": "event:707a212e-70e2-4869-bfde-96f203021623",
+                  "observed_at": "2026-09-01T16:19:59.970Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:3dfadc6e-d169-407e-bf8a-39ce624b7c0e",
+          "event:20bece26-fb0f-47f6-9f43-c37bac54a0d6",
+          "event:7da3f404-da99-4dfa-b635-1ae33d7f8a41",
+          "event:1635df4d-219b-402e-bea6-7666e269e5f3",
+          "event:fbd6e007-d363-4044-8b5d-a3fa2d69e946",
+          "event:55940167-ecd1-43e7-92ea-46a3f9be4772",
+          "event:413d9926-08bd-43ee-b3e0-dfea2366aba1",
+          "event:03bb45c0-5774-4705-947b-7d6c74fa3688",
+          "event:78fae162-35e1-48e7-94f3-1cc529b4d97f",
+          "event:707a212e-70e2-4869-bfde-96f203021623"
+        ],
+        "observed_at": "2026-10-01T15:59:04.686000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:3dfadc6e-d169-407e-bf8a-39ce624b7c0e",
+            "observed_at": "2026-09-08T07:36:47.983Z",
+            "freshness_s": 2017336.703
+          },
+          {
+            "ref": "event:20bece26-fb0f-47f6-9f43-c37bac54a0d6",
+            "observed_at": "2026-09-27T16:15:42.465Z",
+            "freshness_s": 344602.221
+          },
+          {
+            "ref": "event:7da3f404-da99-4dfa-b635-1ae33d7f8a41",
+            "observed_at": "2026-09-19T03:01:14.682Z",
+            "freshness_s": 1083470.004
+          },
+          {
+            "ref": "event:1635df4d-219b-402e-bea6-7666e269e5f3",
+            "observed_at": "2026-09-19T03:04:02.425Z",
+            "freshness_s": 1083302.261
+          },
+          {
+            "ref": "event:fbd6e007-d363-4044-8b5d-a3fa2d69e946",
+            "observed_at": "2026-09-25T16:02:57.790Z",
+            "freshness_s": 518166.896
+          },
+          {
+            "ref": "event:55940167-ecd1-43e7-92ea-46a3f9be4772",
+            "observed_at": "2026-09-19T05:37:25.534Z",
+            "freshness_s": 1074099.152
+          },
+          {
+            "ref": "event:413d9926-08bd-43ee-b3e0-dfea2366aba1",
+            "observed_at": "2026-09-01T16:48:51.499Z",
+            "freshness_s": 2589013.187
+          },
+          {
+            "ref": "event:03bb45c0-5774-4705-947b-7d6c74fa3688",
+            "observed_at": "2026-09-01T16:52:33.087Z",
+            "freshness_s": 2588791.599
+          },
+          {
+            "ref": "event:78fae162-35e1-48e7-94f3-1cc529b4d97f",
+            "observed_at": "2026-09-12T12:06:50.937Z",
+            "freshness_s": 1655533.749
+          },
+          {
+            "ref": "event:707a212e-70e2-4869-bfde-96f203021623",
+            "observed_at": "2026-09-01T16:19:59.970Z",
+            "freshness_s": 2590744.716
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +315,154 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2666166.752,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "molo-d2",
+                  "next_episode_id": "molo-d2-s1e1",
+                  "last_play_at": "2026-09-27T16:15:42.465000Z",
+                  "sources": [
+                    {
+                      "ref": "event:3dfadc6e-d169-407e-bf8a-39ce624b7c0e",
+                      "observed_at": "2026-09-08T07:36:47.983Z"
+                    },
+                    {
+                      "ref": "event:20bece26-fb0f-47f6-9f43-c37bac54a0d6",
+                      "observed_at": "2026-09-27T16:15:42.465Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "guka-kosusa-d2",
+                  "next_episode_id": "guka-kosusa-d2-s1e2",
+                  "last_play_at": "2026-09-25T16:02:57.790000Z",
+                  "sources": [
+                    {
+                      "ref": "event:7da3f404-da99-4dfa-b635-1ae33d7f8a41",
+                      "observed_at": "2026-09-19T03:01:14.682Z"
+                    },
+                    {
+                      "ref": "event:1635df4d-219b-402e-bea6-7666e269e5f3",
+                      "observed_at": "2026-09-19T03:04:02.425Z"
+                    },
+                    {
+                      "ref": "event:fbd6e007-d363-4044-8b5d-a3fa2d69e946",
+                      "observed_at": "2026-09-25T16:02:57.790Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "dhapipa-gini-d2",
+                  "next_episode_id": "dhapipa-gini-d2-s1e1",
+                  "last_play_at": "2026-09-19T05:37:25.534000Z",
+                  "sources": [
+                    {
+                      "ref": "event:55940167-ecd1-43e7-92ea-46a3f9be4772",
+                      "observed_at": "2026-09-19T05:37:25.534Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "bhaja-moguba-d2",
+                  "next_episode_id": "bhaja-moguba-d2-s1e2",
+                  "last_play_at": "2026-09-12T12:06:50.937000Z",
+                  "sources": [
+                    {
+                      "ref": "event:413d9926-08bd-43ee-b3e0-dfea2366aba1",
+                      "observed_at": "2026-09-01T16:48:51.499Z"
+                    },
+                    {
+                      "ref": "event:03bb45c0-5774-4705-947b-7d6c74fa3688",
+                      "observed_at": "2026-09-01T16:52:33.087Z"
+                    },
+                    {
+                      "ref": "event:78fae162-35e1-48e7-94f3-1cc529b4d97f",
+                      "observed_at": "2026-09-12T12:06:50.937Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "dichupi-niha-d2",
+                  "next_episode_id": "dichupi-niha-d2-s1e1",
+                  "last_play_at": "2026-09-01T16:16:19.529000Z",
+                  "sources": [
+                    {
+                      "ref": "event:707a212e-70e2-4869-bfde-96f203021623",
+                      "observed_at": "2026-09-01T16:19:59.970Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:3dfadc6e-d169-407e-bf8a-39ce624b7c0e",
+              "event:20bece26-fb0f-47f6-9f43-c37bac54a0d6",
+              "event:7da3f404-da99-4dfa-b635-1ae33d7f8a41",
+              "event:1635df4d-219b-402e-bea6-7666e269e5f3",
+              "event:fbd6e007-d363-4044-8b5d-a3fa2d69e946",
+              "event:55940167-ecd1-43e7-92ea-46a3f9be4772",
+              "event:413d9926-08bd-43ee-b3e0-dfea2366aba1",
+              "event:03bb45c0-5774-4705-947b-7d6c74fa3688",
+              "event:78fae162-35e1-48e7-94f3-1cc529b4d97f",
+              "event:707a212e-70e2-4869-bfde-96f203021623"
+            ],
+            "observed_at": "2026-10-01T15:06:06.752000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:3dfadc6e-d169-407e-bf8a-39ce624b7c0e",
+                "observed_at": "2026-09-08T07:36:47.983Z",
+                "freshness_s": 2014158.769
+              },
+              {
+                "ref": "event:20bece26-fb0f-47f6-9f43-c37bac54a0d6",
+                "observed_at": "2026-09-27T16:15:42.465Z",
+                "freshness_s": 341424.287
+              },
+              {
+                "ref": "event:7da3f404-da99-4dfa-b635-1ae33d7f8a41",
+                "observed_at": "2026-09-19T03:01:14.682Z",
+                "freshness_s": 1080292.07
+              },
+              {
+                "ref": "event:1635df4d-219b-402e-bea6-7666e269e5f3",
+                "observed_at": "2026-09-19T03:04:02.425Z",
+                "freshness_s": 1080124.327
+              },
+              {
+                "ref": "event:fbd6e007-d363-4044-8b5d-a3fa2d69e946",
+                "observed_at": "2026-09-25T16:02:57.790Z",
+                "freshness_s": 514988.962
+              },
+              {
+                "ref": "event:55940167-ecd1-43e7-92ea-46a3f9be4772",
+                "observed_at": "2026-09-19T05:37:25.534Z",
+                "freshness_s": 1070921.218
+              },
+              {
+                "ref": "event:413d9926-08bd-43ee-b3e0-dfea2366aba1",
+                "observed_at": "2026-09-01T16:48:51.499Z",
+                "freshness_s": 2585835.253
+              },
+              {
+                "ref": "event:03bb45c0-5774-4705-947b-7d6c74fa3688",
+                "observed_at": "2026-09-01T16:52:33.087Z",
+                "freshness_s": 2585613.665
+              },
+              {
+                "ref": "event:78fae162-35e1-48e7-94f3-1cc529b4d97f",
+                "observed_at": "2026-09-12T12:06:50.937Z",
+                "freshness_s": 1652355.815
+              },
+              {
+                "ref": "event:707a212e-70e2-4869-bfde-96f203021623",
+                "observed_at": "2026-09-01T16:19:59.970Z",
+                "freshness_s": 2587566.782
+              }
+            ]
           }
         },
         "conflicts": [
@@ -182,6 +478,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -203,14 +505,14 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-014001"
+          "event:oua-014006"
         ],
         "exposure_refs": [
-          "event:oua-013998",
-          "event:oua-014000"
+          "event:oua-014003",
+          "event:oua-014005"
         ],
         "associated_signal_refs": [
-          "event:oua-014001"
+          "event:oua-014006"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

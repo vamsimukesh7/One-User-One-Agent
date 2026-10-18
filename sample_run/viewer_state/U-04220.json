@@ -67,6 +67,86 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2629064.939,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yatite-roloda-d3",
+              "next_episode_id": "yatite-roloda-d3-s1e2",
+              "last_play_at": "2026-09-18T13:38:40.492000Z",
+              "sources": [
+                {
+                  "ref": "event:d771aaa3-3c71-4378-a479-06eaf747dabe",
+                  "observed_at": "2026-09-07T06:34:06.067Z"
+                },
+                {
+                  "ref": "event:588efced-d118-40fc-b3ec-08101fc537f1",
+                  "observed_at": "2026-09-07T12:01:55.942Z"
+                },
+                {
+                  "ref": "event:fb1d7501-1cea-4da9-b653-1c76f8dd8cc1",
+                  "observed_at": "2026-09-12T15:58:21.455Z"
+                },
+                {
+                  "ref": "event:41d5e692-2c01-4b90-a69e-8b37e8d056d8",
+                  "observed_at": "2026-09-16T06:38:14.682Z"
+                },
+                {
+                  "ref": "event:d04c2915-b9af-42c4-9fde-1934253939a4",
+                  "observed_at": "2026-09-16T06:41:55.887Z"
+                },
+                {
+                  "ref": "event:8bf03c2f-bfcf-45fa-90b2-19e850498e72",
+                  "observed_at": "2026-09-18T13:38:40.492Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:d771aaa3-3c71-4378-a479-06eaf747dabe",
+          "event:588efced-d118-40fc-b3ec-08101fc537f1",
+          "event:fb1d7501-1cea-4da9-b653-1c76f8dd8cc1",
+          "event:41d5e692-2c01-4b90-a69e-8b37e8d056d8",
+          "event:d04c2915-b9af-42c4-9fde-1934253939a4",
+          "event:8bf03c2f-bfcf-45fa-90b2-19e850498e72"
+        ],
+        "observed_at": "2026-10-01T04:47:44.939000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:d771aaa3-3c71-4378-a479-06eaf747dabe",
+            "observed_at": "2026-09-07T06:34:06.067Z",
+            "freshness_s": 2067218.872
+          },
+          {
+            "ref": "event:588efced-d118-40fc-b3ec-08101fc537f1",
+            "observed_at": "2026-09-07T12:01:55.942Z",
+            "freshness_s": 2047548.997
+          },
+          {
+            "ref": "event:fb1d7501-1cea-4da9-b653-1c76f8dd8cc1",
+            "observed_at": "2026-09-12T15:58:21.455Z",
+            "freshness_s": 1601363.484
+          },
+          {
+            "ref": "event:41d5e692-2c01-4b90-a69e-8b37e8d056d8",
+            "observed_at": "2026-09-16T06:38:14.682Z",
+            "freshness_s": 1289370.257
+          },
+          {
+            "ref": "event:d04c2915-b9af-42c4-9fde-1934253939a4",
+            "observed_at": "2026-09-16T06:41:55.887Z",
+            "freshness_s": 1289149.052
+          },
+          {
+            "ref": "event:8bf03c2f-bfcf-45fa-90b2-19e850498e72",
+            "observed_at": "2026-09-18T13:38:40.492Z",
+            "freshness_s": 1091344.447
+          }
+        ]
       }
     },
     "conflicts": [],

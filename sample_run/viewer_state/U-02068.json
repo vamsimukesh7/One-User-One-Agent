@@ -67,6 +67,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2674268.477,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e1",
+              "last_play_at": "2026-09-18T01:57:59.553000Z",
+              "sources": [
+                {
+                  "ref": "event:0c135174-d908-490a-98f1-5ba340ec113d",
+                  "observed_at": "2026-09-18T01:57:59.553Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:0c135174-d908-490a-98f1-5ba340ec113d"
+        ],
+        "observed_at": "2026-10-01T17:21:08.477000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:0c135174-d908-490a-98f1-5ba340ec113d",
+            "observed_at": "2026-09-18T01:57:59.553Z",
+            "freshness_s": 1178588.924
+          }
+        ]
       }
     },
     "conflicts": [
@@ -90,7 +120,7 @@
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G08",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -98,16 +128,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-bb833f29573167da62c0",
+      "plan_id": "P-af86022779a0b9c05319",
       "user_id": "U-02068",
-      "goal_id": "G08",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-09-30T20:58:29.919000Z",
-      "deadline": "2026-10-07T20:58:29.919000Z",
+      "deadline": "2026-10-03T20:58:29.919000Z",
       "success": {
         "event": "play_started",
-        "condition": "a title released in the 30 days before the goal start",
-        "window_hours": 168
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "4c0958cb-166f-40e0-8bed-eebedb28feac",
@@ -177,6 +207,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2600909.919,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "hama-chudibha-d1",
+                  "next_episode_id": "hama-chudibha-d1-s1e1",
+                  "last_play_at": "2026-09-18T01:57:59.553000Z",
+                  "sources": [
+                    {
+                      "ref": "event:0c135174-d908-490a-98f1-5ba340ec113d",
+                      "observed_at": "2026-09-18T01:57:59.553Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:0c135174-d908-490a-98f1-5ba340ec113d"
+            ],
+            "observed_at": "2026-09-30T20:58:29.919000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:0c135174-d908-490a-98f1-5ba340ec113d",
+                "observed_at": "2026-09-18T01:57:59.553Z",
+                "freshness_s": 1105230.366
+              }
+            ]
           }
         },
         "conflicts": [
@@ -194,20 +254,25 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [],
+      "target_content_slug": "hama-chudibha-d1",
+      "next_episode_id": "hama-chudibha-d1-s1e1",
       "final_outcome": {
-        "plan_id": "P-bb833f29573167da62c0",
+        "plan_id": "P-af86022779a0b9c05319",
         "user_id": "U-02068",
-        "goal_id": "G08",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-09-30T20:58:29.919000Z",
-        "deadline": "2026-10-07T20:58:29.919000Z",
+        "deadline": "2026-10-03T20:58:29.919000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
           "event": "play_started",
-          "condition": "a title released in the 30 days before the goal start",
-          "window_hours": 168
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -215,7 +280,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-07T20:58:29.919000Z"
+      "closed_at": "2026-10-03T20:58:29.919000Z"
     }
   ]
 }

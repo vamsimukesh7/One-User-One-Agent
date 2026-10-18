@@ -61,6 +61,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2666234.743,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bagi-baya-d4",
+              "next_episode_id": "bagi-baya-d4-s1e2",
+              "last_play_at": "2026-09-13T15:51:24.655000Z",
+              "sources": [
+                {
+                  "ref": "event:bba4d67c-0615-4c03-afc0-b8399ba57a78",
+                  "observed_at": "2026-09-13T09:50:03.825Z"
+                },
+                {
+                  "ref": "event:8490a0d1-ccaf-4287-8808-b889a90d7a18",
+                  "observed_at": "2026-09-13T09:53:44.119Z"
+                },
+                {
+                  "ref": "event:a0222a01-b707-40e7-854f-3201e4009d98",
+                  "observed_at": "2026-09-13T15:51:24.655Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:bba4d67c-0615-4c03-afc0-b8399ba57a78",
+          "event:8490a0d1-ccaf-4287-8808-b889a90d7a18",
+          "event:a0222a01-b707-40e7-854f-3201e4009d98"
+        ],
+        "observed_at": "2026-10-01T15:07:14.743000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:bba4d67c-0615-4c03-afc0-b8399ba57a78",
+            "observed_at": "2026-09-13T09:50:03.825Z",
+            "freshness_s": 1574230.918
+          },
+          {
+            "ref": "event:8490a0d1-ccaf-4287-8808-b889a90d7a18",
+            "observed_at": "2026-09-13T09:53:44.119Z",
+            "freshness_s": 1574010.624
+          },
+          {
+            "ref": "event:a0222a01-b707-40e7-854f-3201e4009d98",
+            "observed_at": "2026-09-13T15:51:24.655Z",
+            "freshness_s": 1552550.088
+          }
+        ]
       }
     },
     "conflicts": [],

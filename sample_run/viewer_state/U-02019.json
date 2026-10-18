@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2669955.985,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yatite-roloda-d3",
+              "next_episode_id": "yatite-roloda-d3-s1e1",
+              "last_play_at": "2026-09-24T18:04:28.097000Z",
+              "sources": [
+                {
+                  "ref": "event:b41fddc8-2756-492d-a2ec-7f6c07f6e094",
+                  "observed_at": "2026-09-24T18:04:28.097Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:b41fddc8-2756-492d-a2ec-7f6c07f6e094"
+        ],
+        "observed_at": "2026-10-01T16:09:15.985000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:b41fddc8-2756-492d-a2ec-7f6c07f6e094",
+            "observed_at": "2026-09-24T18:04:28.097Z",
+            "freshness_s": 597887.888
+          }
+        ]
       }
     },
     "conflicts": [
@@ -164,6 +194,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2669955.985,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "yatite-roloda-d3",
+                  "next_episode_id": "yatite-roloda-d3-s1e1",
+                  "last_play_at": "2026-09-24T18:04:28.097000Z",
+                  "sources": [
+                    {
+                      "ref": "event:b41fddc8-2756-492d-a2ec-7f6c07f6e094",
+                      "observed_at": "2026-09-24T18:04:28.097Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:b41fddc8-2756-492d-a2ec-7f6c07f6e094"
+            ],
+            "observed_at": "2026-10-01T16:09:15.985000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:b41fddc8-2756-492d-a2ec-7f6c07f6e094",
+                "observed_at": "2026-09-24T18:04:28.097Z",
+                "freshness_s": 597887.888
+              }
+            ]
           }
         },
         "conflicts": [
@@ -180,6 +240,10 @@
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
+      },
+      "eligibility_rule": {
+        "text": "Has never completed an episode.",
+        "requires_no_prior_event": "episode_completed"
       },
       "actions": [],
       "final_outcome": {

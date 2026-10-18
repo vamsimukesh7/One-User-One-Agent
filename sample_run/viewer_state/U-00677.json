@@ -61,6 +61,86 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2661765.661,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hapibha-d1",
+              "next_episode_id": "hapibha-d1-s1e4",
+              "last_play_at": "2026-09-17T11:44:43.810000Z",
+              "sources": [
+                {
+                  "ref": "event:18c448c7-f3f5-434c-b142-9cdd444c5714",
+                  "observed_at": "2026-09-06T16:55:12.968Z"
+                },
+                {
+                  "ref": "event:9c54abc6-6dea-45b4-af41-a9ec86d314f4",
+                  "observed_at": "2026-09-06T16:57:59.014Z"
+                },
+                {
+                  "ref": "event:04980835-faff-49ac-9cc0-5704fc2f3dce",
+                  "observed_at": "2026-09-11T17:27:48.974Z"
+                },
+                {
+                  "ref": "event:71b0d1ae-1e2d-434a-b581-45a73b3b91d3",
+                  "observed_at": "2026-09-11T17:30:35.452Z"
+                },
+                {
+                  "ref": "event:6a8a10a9-dc18-4a95-8b28-1e24f2824b65",
+                  "observed_at": "2026-09-17T11:44:43.810Z"
+                },
+                {
+                  "ref": "event:4df8cc39-61dd-4a62-be20-7ef15971ef00",
+                  "observed_at": "2026-09-17T11:48:22.828Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:18c448c7-f3f5-434c-b142-9cdd444c5714",
+          "event:9c54abc6-6dea-45b4-af41-a9ec86d314f4",
+          "event:04980835-faff-49ac-9cc0-5704fc2f3dce",
+          "event:71b0d1ae-1e2d-434a-b581-45a73b3b91d3",
+          "event:6a8a10a9-dc18-4a95-8b28-1e24f2824b65",
+          "event:4df8cc39-61dd-4a62-be20-7ef15971ef00"
+        ],
+        "observed_at": "2026-10-01T13:52:45.661000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:18c448c7-f3f5-434c-b142-9cdd444c5714",
+            "observed_at": "2026-09-06T16:55:12.968Z",
+            "freshness_s": 2149052.693
+          },
+          {
+            "ref": "event:9c54abc6-6dea-45b4-af41-a9ec86d314f4",
+            "observed_at": "2026-09-06T16:57:59.014Z",
+            "freshness_s": 2148886.647
+          },
+          {
+            "ref": "event:04980835-faff-49ac-9cc0-5704fc2f3dce",
+            "observed_at": "2026-09-11T17:27:48.974Z",
+            "freshness_s": 1715096.687
+          },
+          {
+            "ref": "event:71b0d1ae-1e2d-434a-b581-45a73b3b91d3",
+            "observed_at": "2026-09-11T17:30:35.452Z",
+            "freshness_s": 1714930.209
+          },
+          {
+            "ref": "event:6a8a10a9-dc18-4a95-8b28-1e24f2824b65",
+            "observed_at": "2026-09-17T11:44:43.810Z",
+            "freshness_s": 1217281.851
+          },
+          {
+            "ref": "event:4df8cc39-61dd-4a62-be20-7ef15971ef00",
+            "observed_at": "2026-09-17T11:48:22.828Z",
+            "freshness_s": 1217062.833
+          }
+        ]
       }
     },
     "conflicts": [
@@ -82,7 +162,7 @@
   "latest_decision_id": "D-facbd9b3c31843305fc7",
   "learning": [
     {
-      "goal_id": "G05",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -90,16 +170,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-52c0b27f23638f9287a2",
+      "plan_id": "P-b3a0d2c407b90375a792",
       "user_id": "U-00677",
-      "goal_id": "G05",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T13:52:45.661000Z",
-      "deadline": "2026-10-08T13:52:45.661000Z",
+      "deadline": "2026-10-04T13:52:45.661000Z",
       "success": {
-        "event": "purchase_completed",
-        "condition": "is_trial = false",
-        "window_hours": 168
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "23dd800e-d98a-4d73-855d-48948957bc9d",
@@ -163,6 +243,86 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2661765.661,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "hapibha-d1",
+                  "next_episode_id": "hapibha-d1-s1e4",
+                  "last_play_at": "2026-09-17T11:44:43.810000Z",
+                  "sources": [
+                    {
+                      "ref": "event:18c448c7-f3f5-434c-b142-9cdd444c5714",
+                      "observed_at": "2026-09-06T16:55:12.968Z"
+                    },
+                    {
+                      "ref": "event:9c54abc6-6dea-45b4-af41-a9ec86d314f4",
+                      "observed_at": "2026-09-06T16:57:59.014Z"
+                    },
+                    {
+                      "ref": "event:04980835-faff-49ac-9cc0-5704fc2f3dce",
+                      "observed_at": "2026-09-11T17:27:48.974Z"
+                    },
+                    {
+                      "ref": "event:71b0d1ae-1e2d-434a-b581-45a73b3b91d3",
+                      "observed_at": "2026-09-11T17:30:35.452Z"
+                    },
+                    {
+                      "ref": "event:6a8a10a9-dc18-4a95-8b28-1e24f2824b65",
+                      "observed_at": "2026-09-17T11:44:43.810Z"
+                    },
+                    {
+                      "ref": "event:4df8cc39-61dd-4a62-be20-7ef15971ef00",
+                      "observed_at": "2026-09-17T11:48:22.828Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:18c448c7-f3f5-434c-b142-9cdd444c5714",
+              "event:9c54abc6-6dea-45b4-af41-a9ec86d314f4",
+              "event:04980835-faff-49ac-9cc0-5704fc2f3dce",
+              "event:71b0d1ae-1e2d-434a-b581-45a73b3b91d3",
+              "event:6a8a10a9-dc18-4a95-8b28-1e24f2824b65",
+              "event:4df8cc39-61dd-4a62-be20-7ef15971ef00"
+            ],
+            "observed_at": "2026-10-01T13:52:45.661000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:18c448c7-f3f5-434c-b142-9cdd444c5714",
+                "observed_at": "2026-09-06T16:55:12.968Z",
+                "freshness_s": 2149052.693
+              },
+              {
+                "ref": "event:9c54abc6-6dea-45b4-af41-a9ec86d314f4",
+                "observed_at": "2026-09-06T16:57:59.014Z",
+                "freshness_s": 2148886.647
+              },
+              {
+                "ref": "event:04980835-faff-49ac-9cc0-5704fc2f3dce",
+                "observed_at": "2026-09-11T17:27:48.974Z",
+                "freshness_s": 1715096.687
+              },
+              {
+                "ref": "event:71b0d1ae-1e2d-434a-b581-45a73b3b91d3",
+                "observed_at": "2026-09-11T17:30:35.452Z",
+                "freshness_s": 1714930.209
+              },
+              {
+                "ref": "event:6a8a10a9-dc18-4a95-8b28-1e24f2824b65",
+                "observed_at": "2026-09-17T11:44:43.810Z",
+                "freshness_s": 1217281.851
+              },
+              {
+                "ref": "event:4df8cc39-61dd-4a62-be20-7ef15971ef00",
+                "observed_at": "2026-09-17T11:48:22.828Z",
+                "freshness_s": 1217062.833
+              }
+            ]
           }
         },
         "conflicts": [
@@ -180,32 +340,35 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [
         "A-facbd9b3c31843305fc7"
       ],
+      "target_content_slug": "hapibha-d1",
+      "next_episode_id": "hapibha-d1-s1e4",
       "final_outcome": {
-        "plan_id": "P-52c0b27f23638f9287a2",
+        "plan_id": "P-b3a0d2c407b90375a792",
         "user_id": "U-00677",
-        "goal_id": "G05",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T13:52:45.661000Z",
-        "deadline": "2026-10-08T13:52:45.661000Z",
+        "deadline": "2026-10-04T13:52:45.661000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "purchase_completed",
-          "condition": "is_trial = false",
-          "window_hours": 168
+          "event": "play_started",
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
-        "exposure_refs": [
-          "event:oua-004334"
-        ],
+        "exposure_refs": [],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T13:52:45.661000Z"
+      "closed_at": "2026-10-04T13:52:45.661000Z"
     }
   ]
 }

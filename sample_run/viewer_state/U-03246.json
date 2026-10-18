@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2662605.604,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "digi-mone-d3",
+              "next_episode_id": "digi-mone-d3-s1e2",
+              "last_play_at": "2026-09-21T15:33:18.298000Z",
+              "sources": [
+                {
+                  "ref": "event:e3e90109-4609-4b8a-835c-0d6ce03cd439",
+                  "observed_at": "2026-09-21T15:57:48.660Z"
+                },
+                {
+                  "ref": "event:4207009c-b6d4-4b25-894b-4d1810c8b3cf",
+                  "observed_at": "2026-09-21T16:00:35.520Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:e3e90109-4609-4b8a-835c-0d6ce03cd439",
+          "event:4207009c-b6d4-4b25-894b-4d1810c8b3cf"
+        ],
+        "observed_at": "2026-10-01T14:06:45.604000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:e3e90109-4609-4b8a-835c-0d6ce03cd439",
+            "observed_at": "2026-09-21T15:57:48.660Z",
+            "freshness_s": 857336.944
+          },
+          {
+            "ref": "event:4207009c-b6d4-4b25-894b-4d1810c8b3cf",
+            "observed_at": "2026-09-21T16:00:35.520Z",
+            "freshness_s": 857170.084
+          }
+        ]
       }
     },
     "conflicts": [],

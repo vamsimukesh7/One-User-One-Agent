@@ -61,6 +61,83 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2661844.047,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "ririgi-d3",
+              "next_episode_id": "ririgi-d3-s1e3",
+              "last_play_at": "2026-09-06T12:52:05.854000Z",
+              "sources": [
+                {
+                  "ref": "event:7dae2dd8-b791-4328-8e6e-9073e0da309a",
+                  "observed_at": "2026-09-05T16:32:22.823Z"
+                },
+                {
+                  "ref": "event:72801c13-7e9d-4736-b1a6-239a39bcf38c",
+                  "observed_at": "2026-09-05T16:55:21.338Z"
+                },
+                {
+                  "ref": "event:4c9adf44-474f-4b06-9cc2-dd295f703a50",
+                  "observed_at": "2026-09-06T12:52:05.854Z"
+                },
+                {
+                  "ref": "event:814c4033-cce7-4457-b53c-75191b3df7b9",
+                  "observed_at": "2026-09-06T13:33:29.681Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "yane-tegi-d3",
+              "next_episode_id": "yane-tegi-d3-s1e1",
+              "last_play_at": "2026-09-01T12:34:53.725000Z",
+              "sources": [
+                {
+                  "ref": "event:7ccfe5ce-03a0-4a93-8691-9f4fb94b5ce7",
+                  "observed_at": "2026-09-06T06:39:51.893Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:7dae2dd8-b791-4328-8e6e-9073e0da309a",
+          "event:72801c13-7e9d-4736-b1a6-239a39bcf38c",
+          "event:4c9adf44-474f-4b06-9cc2-dd295f703a50",
+          "event:814c4033-cce7-4457-b53c-75191b3df7b9",
+          "event:7ccfe5ce-03a0-4a93-8691-9f4fb94b5ce7"
+        ],
+        "observed_at": "2026-10-01T13:54:04.047000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:7dae2dd8-b791-4328-8e6e-9073e0da309a",
+            "observed_at": "2026-09-05T16:32:22.823Z",
+            "freshness_s": 2236901.224
+          },
+          {
+            "ref": "event:72801c13-7e9d-4736-b1a6-239a39bcf38c",
+            "observed_at": "2026-09-05T16:55:21.338Z",
+            "freshness_s": 2235522.709
+          },
+          {
+            "ref": "event:4c9adf44-474f-4b06-9cc2-dd295f703a50",
+            "observed_at": "2026-09-06T12:52:05.854Z",
+            "freshness_s": 2163718.193
+          },
+          {
+            "ref": "event:814c4033-cce7-4457-b53c-75191b3df7b9",
+            "observed_at": "2026-09-06T13:33:29.681Z",
+            "freshness_s": 2161234.366
+          },
+          {
+            "ref": "event:7ccfe5ce-03a0-4a93-8691-9f4fb94b5ce7",
+            "observed_at": "2026-09-06T06:39:51.893Z",
+            "freshness_s": 2186052.154
+          }
+        ]
       }
     },
     "conflicts": [],

@@ -61,6 +61,130 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2661394.983,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yatite-roloda-d3",
+              "next_episode_id": "yatite-roloda-d3-s1e3",
+              "last_play_at": "2026-09-27T17:19:56.210000Z",
+              "sources": [
+                {
+                  "ref": "event:6a8ed3df-0829-4cdb-a6df-36f052a4cd70",
+                  "observed_at": "2026-09-17T12:53:02.537Z"
+                },
+                {
+                  "ref": "event:331e884a-66d8-4672-82b5-b18d9ec668aa",
+                  "observed_at": "2026-09-17T12:56:44.491Z"
+                },
+                {
+                  "ref": "event:a2548a1f-d322-45bc-b946-5d52ea97d598",
+                  "observed_at": "2026-09-18T09:51:03.710Z"
+                },
+                {
+                  "ref": "event:06a142b9-c29d-400f-a8c8-99dc0aeb120b",
+                  "observed_at": "2026-09-22T09:44:29.229Z"
+                },
+                {
+                  "ref": "event:9ba1d8a4-1ef4-40fa-8eac-407bef099883",
+                  "observed_at": "2026-09-22T16:57:47.913Z"
+                },
+                {
+                  "ref": "event:2499256f-8249-46fc-9354-028dfa9c1b3d",
+                  "observed_at": "2026-09-22T16:59:39.600Z"
+                },
+                {
+                  "ref": "event:e91bcba1-cb25-41e3-93ac-d704a3d3f131",
+                  "observed_at": "2026-09-29T11:48:20.841Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "ririgi-d3",
+              "next_episode_id": "ririgi-d3-s1e1",
+              "last_play_at": "2026-09-10T16:23:33.644000Z",
+              "sources": [
+                {
+                  "ref": "event:5624482a-619a-45cf-b67c-49b1465d47bd",
+                  "observed_at": "2026-09-10T16:26:38.159Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "digi-mone-d3",
+              "next_episode_id": "digi-mone-d3-s1e1",
+              "last_play_at": "2026-09-09T07:09:41.913000Z",
+              "sources": [
+                {
+                  "ref": "event:ef03c4aa-a916-4292-84cb-2b3993e08868",
+                  "observed_at": "2026-09-09T07:09:41.913Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:6a8ed3df-0829-4cdb-a6df-36f052a4cd70",
+          "event:331e884a-66d8-4672-82b5-b18d9ec668aa",
+          "event:a2548a1f-d322-45bc-b946-5d52ea97d598",
+          "event:06a142b9-c29d-400f-a8c8-99dc0aeb120b",
+          "event:9ba1d8a4-1ef4-40fa-8eac-407bef099883",
+          "event:2499256f-8249-46fc-9354-028dfa9c1b3d",
+          "event:e91bcba1-cb25-41e3-93ac-d704a3d3f131",
+          "event:5624482a-619a-45cf-b67c-49b1465d47bd",
+          "event:ef03c4aa-a916-4292-84cb-2b3993e08868"
+        ],
+        "observed_at": "2026-10-01T13:46:34.983000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:6a8ed3df-0829-4cdb-a6df-36f052a4cd70",
+            "observed_at": "2026-09-17T12:53:02.537Z",
+            "freshness_s": 1212812.446
+          },
+          {
+            "ref": "event:331e884a-66d8-4672-82b5-b18d9ec668aa",
+            "observed_at": "2026-09-17T12:56:44.491Z",
+            "freshness_s": 1212590.492
+          },
+          {
+            "ref": "event:a2548a1f-d322-45bc-b946-5d52ea97d598",
+            "observed_at": "2026-09-18T09:51:03.710Z",
+            "freshness_s": 1137331.273
+          },
+          {
+            "ref": "event:06a142b9-c29d-400f-a8c8-99dc0aeb120b",
+            "observed_at": "2026-09-22T09:44:29.229Z",
+            "freshness_s": 792125.754
+          },
+          {
+            "ref": "event:9ba1d8a4-1ef4-40fa-8eac-407bef099883",
+            "observed_at": "2026-09-22T16:57:47.913Z",
+            "freshness_s": 766127.07
+          },
+          {
+            "ref": "event:2499256f-8249-46fc-9354-028dfa9c1b3d",
+            "observed_at": "2026-09-22T16:59:39.600Z",
+            "freshness_s": 766015.383
+          },
+          {
+            "ref": "event:e91bcba1-cb25-41e3-93ac-d704a3d3f131",
+            "observed_at": "2026-09-29T11:48:20.841Z",
+            "freshness_s": 179894.142
+          },
+          {
+            "ref": "event:5624482a-619a-45cf-b67c-49b1465d47bd",
+            "observed_at": "2026-09-10T16:26:38.159Z",
+            "freshness_s": 1804796.824
+          },
+          {
+            "ref": "event:ef03c4aa-a916-4292-84cb-2b3993e08868",
+            "observed_at": "2026-09-09T07:09:41.913Z",
+            "freshness_s": 1924613.07
+          }
+        ]
       }
     },
     "conflicts": [

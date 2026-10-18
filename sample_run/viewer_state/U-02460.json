@@ -61,6 +61,76 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2594919.766,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yatite-roloda-d3",
+              "next_episode_id": "yatite-roloda-d3-s1e3",
+              "last_play_at": "2026-09-26T21:50:49.619000Z",
+              "sources": [
+                {
+                  "ref": "event:083b64e6-0c77-4154-9d1f-112f86eed954",
+                  "observed_at": "2026-09-04T12:57:13.014Z"
+                },
+                {
+                  "ref": "event:f553117c-4ebb-4ed2-9fe8-ae9b1ee2e5d9",
+                  "observed_at": "2026-09-04T13:00:53.911Z"
+                },
+                {
+                  "ref": "event:af5b3be9-3bc4-4c00-8ccc-a4bcac2c850b",
+                  "observed_at": "2026-09-07T15:34:19.934Z"
+                },
+                {
+                  "ref": "event:35649062-2061-426f-a52e-bc1b73cab48f",
+                  "observed_at": "2026-09-26T21:50:49.619Z"
+                },
+                {
+                  "ref": "event:113de08c-931d-4494-870a-e28db1bda805",
+                  "observed_at": "2026-09-26T21:52:39.175Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:083b64e6-0c77-4154-9d1f-112f86eed954",
+          "event:f553117c-4ebb-4ed2-9fe8-ae9b1ee2e5d9",
+          "event:af5b3be9-3bc4-4c00-8ccc-a4bcac2c850b",
+          "event:35649062-2061-426f-a52e-bc1b73cab48f",
+          "event:113de08c-931d-4494-870a-e28db1bda805"
+        ],
+        "observed_at": "2026-09-30T19:18:39.766000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:083b64e6-0c77-4154-9d1f-112f86eed954",
+            "observed_at": "2026-09-04T12:57:13.014Z",
+            "freshness_s": 2269286.752
+          },
+          {
+            "ref": "event:f553117c-4ebb-4ed2-9fe8-ae9b1ee2e5d9",
+            "observed_at": "2026-09-04T13:00:53.911Z",
+            "freshness_s": 2269065.855
+          },
+          {
+            "ref": "event:af5b3be9-3bc4-4c00-8ccc-a4bcac2c850b",
+            "observed_at": "2026-09-07T15:34:19.934Z",
+            "freshness_s": 2000659.832
+          },
+          {
+            "ref": "event:35649062-2061-426f-a52e-bc1b73cab48f",
+            "observed_at": "2026-09-26T21:50:49.619Z",
+            "freshness_s": 336470.147
+          },
+          {
+            "ref": "event:113de08c-931d-4494-870a-e28db1bda805",
+            "observed_at": "2026-09-26T21:52:39.175Z",
+            "freshness_s": 336360.591
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -75,7 +145,7 @@
   "learning": [
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G05",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -83,16 +153,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-99f06c8eaf071a1c156e",
+      "plan_id": "P-27db59354accc67b86c0",
       "user_id": "U-02460",
-      "goal_id": "G05",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-09-30T19:18:39.766000Z",
-      "deadline": "2026-10-07T19:18:39.766000Z",
+      "deadline": "2026-10-03T19:18:39.766000Z",
       "success": {
-        "event": "purchase_completed",
-        "condition": "is_trial = false",
-        "window_hours": 168
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "74237fcf-2f29-4ec8-ac9d-bf7d35d5020b",
@@ -156,6 +226,76 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2594919.766,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "yatite-roloda-d3",
+                  "next_episode_id": "yatite-roloda-d3-s1e3",
+                  "last_play_at": "2026-09-26T21:50:49.619000Z",
+                  "sources": [
+                    {
+                      "ref": "event:083b64e6-0c77-4154-9d1f-112f86eed954",
+                      "observed_at": "2026-09-04T12:57:13.014Z"
+                    },
+                    {
+                      "ref": "event:f553117c-4ebb-4ed2-9fe8-ae9b1ee2e5d9",
+                      "observed_at": "2026-09-04T13:00:53.911Z"
+                    },
+                    {
+                      "ref": "event:af5b3be9-3bc4-4c00-8ccc-a4bcac2c850b",
+                      "observed_at": "2026-09-07T15:34:19.934Z"
+                    },
+                    {
+                      "ref": "event:35649062-2061-426f-a52e-bc1b73cab48f",
+                      "observed_at": "2026-09-26T21:50:49.619Z"
+                    },
+                    {
+                      "ref": "event:113de08c-931d-4494-870a-e28db1bda805",
+                      "observed_at": "2026-09-26T21:52:39.175Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:083b64e6-0c77-4154-9d1f-112f86eed954",
+              "event:f553117c-4ebb-4ed2-9fe8-ae9b1ee2e5d9",
+              "event:af5b3be9-3bc4-4c00-8ccc-a4bcac2c850b",
+              "event:35649062-2061-426f-a52e-bc1b73cab48f",
+              "event:113de08c-931d-4494-870a-e28db1bda805"
+            ],
+            "observed_at": "2026-09-30T19:18:39.766000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:083b64e6-0c77-4154-9d1f-112f86eed954",
+                "observed_at": "2026-09-04T12:57:13.014Z",
+                "freshness_s": 2269286.752
+              },
+              {
+                "ref": "event:f553117c-4ebb-4ed2-9fe8-ae9b1ee2e5d9",
+                "observed_at": "2026-09-04T13:00:53.911Z",
+                "freshness_s": 2269065.855
+              },
+              {
+                "ref": "event:af5b3be9-3bc4-4c00-8ccc-a4bcac2c850b",
+                "observed_at": "2026-09-07T15:34:19.934Z",
+                "freshness_s": 2000659.832
+              },
+              {
+                "ref": "event:35649062-2061-426f-a52e-bc1b73cab48f",
+                "observed_at": "2026-09-26T21:50:49.619Z",
+                "freshness_s": 336470.147
+              },
+              {
+                "ref": "event:113de08c-931d-4494-870a-e28db1bda805",
+                "observed_at": "2026-09-26T21:52:39.175Z",
+                "freshness_s": 336360.591
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -165,20 +305,25 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [],
+      "target_content_slug": "yatite-roloda-d3",
+      "next_episode_id": "yatite-roloda-d3-s1e3",
       "final_outcome": {
-        "plan_id": "P-99f06c8eaf071a1c156e",
+        "plan_id": "P-27db59354accc67b86c0",
         "user_id": "U-02460",
-        "goal_id": "G05",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-09-30T19:18:39.766000Z",
-        "deadline": "2026-10-07T19:18:39.766000Z",
+        "deadline": "2026-10-03T19:18:39.766000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "purchase_completed",
-          "condition": "is_trial = false",
-          "window_hours": 168
+          "event": "play_started",
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -186,7 +331,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-07T19:18:39.766000Z"
+      "closed_at": "2026-10-03T19:18:39.766000Z"
     }
   ]
 }

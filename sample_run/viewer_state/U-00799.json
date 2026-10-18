@@ -67,6 +67,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2666319.772,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "radi-d4",
+              "next_episode_id": "radi-d4-s1e1",
+              "last_play_at": "2026-09-10T05:32:55.395000Z",
+              "sources": [
+                {
+                  "ref": "event:3ecc3ef5-9ba6-42d7-a686-6689fc6498d6",
+                  "observed_at": "2026-09-10T05:35:30.131Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "bagi-baya-d4",
+              "next_episode_id": "bagi-baya-d4-s1e1",
+              "last_play_at": "2026-09-09T12:49:57.542000Z",
+              "sources": [
+                {
+                  "ref": "event:95141a4d-8739-4858-aa9b-52e4dcacafd6",
+                  "observed_at": "2026-09-09T12:49:57.542Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:3ecc3ef5-9ba6-42d7-a686-6689fc6498d6",
+          "event:95141a4d-8739-4858-aa9b-52e4dcacafd6"
+        ],
+        "observed_at": "2026-10-01T15:08:39.772000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:3ecc3ef5-9ba6-42d7-a686-6689fc6498d6",
+            "observed_at": "2026-09-10T05:35:30.131Z",
+            "freshness_s": 1848789.641
+          },
+          {
+            "ref": "event:95141a4d-8739-4858-aa9b-52e4dcacafd6",
+            "observed_at": "2026-09-09T12:49:57.542Z",
+            "freshness_s": 1909122.23
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -169,6 +216,53 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2627720.754,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "radi-d4",
+                  "next_episode_id": "radi-d4-s1e1",
+                  "last_play_at": "2026-09-10T05:32:55.395000Z",
+                  "sources": [
+                    {
+                      "ref": "event:3ecc3ef5-9ba6-42d7-a686-6689fc6498d6",
+                      "observed_at": "2026-09-10T05:35:30.131Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "bagi-baya-d4",
+                  "next_episode_id": "bagi-baya-d4-s1e1",
+                  "last_play_at": "2026-09-09T12:49:57.542000Z",
+                  "sources": [
+                    {
+                      "ref": "event:95141a4d-8739-4858-aa9b-52e4dcacafd6",
+                      "observed_at": "2026-09-09T12:49:57.542Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:3ecc3ef5-9ba6-42d7-a686-6689fc6498d6",
+              "event:95141a4d-8739-4858-aa9b-52e4dcacafd6"
+            ],
+            "observed_at": "2026-10-01T04:25:20.754000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:3ecc3ef5-9ba6-42d7-a686-6689fc6498d6",
+                "observed_at": "2026-09-10T05:35:30.131Z",
+                "freshness_s": 1810190.623
+              },
+              {
+                "ref": "event:95141a4d-8739-4858-aa9b-52e4dcacafd6",
+                "observed_at": "2026-09-09T12:49:57.542Z",
+                "freshness_s": 1870523.212
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -176,6 +270,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

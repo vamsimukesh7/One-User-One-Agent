@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2628913.35,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "gubava-gihaya-d5",
+              "next_episode_id": "gubava-gihaya-d5-s1e2",
+              "last_play_at": "2026-09-19T07:34:16.835000Z",
+              "sources": [
+                {
+                  "ref": "event:896bb0fd-0b4a-41f2-bbd2-071fac9fb512",
+                  "observed_at": "2026-09-19T07:34:16.835Z"
+                },
+                {
+                  "ref": "event:f58949cb-c783-47b6-968a-ac8bdcb50d59",
+                  "observed_at": "2026-09-19T07:37:02.238Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:896bb0fd-0b4a-41f2-bbd2-071fac9fb512",
+          "event:f58949cb-c783-47b6-968a-ac8bdcb50d59"
+        ],
+        "observed_at": "2026-10-01T04:45:13.350000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:896bb0fd-0b4a-41f2-bbd2-071fac9fb512",
+            "observed_at": "2026-09-19T07:34:16.835Z",
+            "freshness_s": 1026656.515
+          },
+          {
+            "ref": "event:f58949cb-c783-47b6-968a-ac8bdcb50d59",
+            "observed_at": "2026-09-19T07:37:02.238Z",
+            "freshness_s": 1026491.112
+          }
+        ]
       }
     },
     "conflicts": [],

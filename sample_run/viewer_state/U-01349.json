@@ -61,6 +61,73 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2662982.461,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "diti-kochu-d5",
+              "next_episode_id": "diti-kochu-d5-s1e2",
+              "last_play_at": "2026-09-25T15:36:04.474000Z",
+              "sources": [
+                {
+                  "ref": "event:2e817ce1-31eb-4d67-8d9f-71785d7c5b1c",
+                  "observed_at": "2026-09-25T15:36:04.474Z"
+                },
+                {
+                  "ref": "event:cdda1f00-fc15-4a9b-84f1-d1c22f965e28",
+                  "observed_at": "2026-09-25T15:39:45.656Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "yaka-naka-d5",
+              "next_episode_id": "yaka-naka-d5-s1e2",
+              "last_play_at": "2026-09-21T17:27:02.982000Z",
+              "sources": [
+                {
+                  "ref": "event:45538390-b0d7-4353-bd57-f2f4308d8fd1",
+                  "observed_at": "2026-09-21T17:27:02.982Z"
+                },
+                {
+                  "ref": "event:8e34e257-a10f-4f91-a180-495f7b8f7ca9",
+                  "observed_at": "2026-09-21T17:29:48.527Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:2e817ce1-31eb-4d67-8d9f-71785d7c5b1c",
+          "event:cdda1f00-fc15-4a9b-84f1-d1c22f965e28",
+          "event:45538390-b0d7-4353-bd57-f2f4308d8fd1",
+          "event:8e34e257-a10f-4f91-a180-495f7b8f7ca9"
+        ],
+        "observed_at": "2026-10-01T14:13:02.461000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:2e817ce1-31eb-4d67-8d9f-71785d7c5b1c",
+            "observed_at": "2026-09-25T15:36:04.474Z",
+            "freshness_s": 513417.987
+          },
+          {
+            "ref": "event:cdda1f00-fc15-4a9b-84f1-d1c22f965e28",
+            "observed_at": "2026-09-25T15:39:45.656Z",
+            "freshness_s": 513196.805
+          },
+          {
+            "ref": "event:45538390-b0d7-4353-bd57-f2f4308d8fd1",
+            "observed_at": "2026-09-21T17:27:02.982Z",
+            "freshness_s": 852359.479
+          },
+          {
+            "ref": "event:8e34e257-a10f-4f91-a180-495f7b8f7ca9",
+            "observed_at": "2026-09-21T17:29:48.527Z",
+            "freshness_s": 852193.934
+          }
+        ]
       }
     },
     "conflicts": [

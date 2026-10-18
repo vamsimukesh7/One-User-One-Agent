@@ -61,6 +61,66 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2666313.061,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "gubava-gihaya-d5",
+              "next_episode_id": "gubava-gihaya-d5-s1e3",
+              "last_play_at": "2026-09-27T07:46:29.522000Z",
+              "sources": [
+                {
+                  "ref": "event:869041b2-3736-49a0-b997-43bc17c47e3e",
+                  "observed_at": "2026-09-20T18:11:19.086Z"
+                },
+                {
+                  "ref": "event:06cf30f1-abed-4d80-8dcd-9cdf5c857474",
+                  "observed_at": "2026-09-20T18:14:03.555Z"
+                },
+                {
+                  "ref": "event:6af14db9-639e-4f04-918a-3aa5afff7ce2",
+                  "observed_at": "2026-09-27T23:23:13.030Z"
+                },
+                {
+                  "ref": "event:0d9b3cf1-1c75-464c-b6fb-d5ce0b95138e",
+                  "observed_at": "2026-09-27T23:25:59.854Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:869041b2-3736-49a0-b997-43bc17c47e3e",
+          "event:06cf30f1-abed-4d80-8dcd-9cdf5c857474",
+          "event:6af14db9-639e-4f04-918a-3aa5afff7ce2",
+          "event:0d9b3cf1-1c75-464c-b6fb-d5ce0b95138e"
+        ],
+        "observed_at": "2026-10-01T15:08:33.061000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:869041b2-3736-49a0-b997-43bc17c47e3e",
+            "observed_at": "2026-09-20T18:11:19.086Z",
+            "freshness_s": 939433.975
+          },
+          {
+            "ref": "event:06cf30f1-abed-4d80-8dcd-9cdf5c857474",
+            "observed_at": "2026-09-20T18:14:03.555Z",
+            "freshness_s": 939269.506
+          },
+          {
+            "ref": "event:6af14db9-639e-4f04-918a-3aa5afff7ce2",
+            "observed_at": "2026-09-27T23:23:13.030Z",
+            "freshness_s": 315920.031
+          },
+          {
+            "ref": "event:0d9b3cf1-1c75-464c-b6fb-d5ce0b95138e",
+            "observed_at": "2026-09-27T23:25:59.854Z",
+            "freshness_s": 315753.207
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -77,7 +137,7 @@
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G05",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -85,16 +145,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-dc1c99f124bce27f965b",
+      "plan_id": "P-9c91bf1e183d514b181c",
       "user_id": "U-04184",
-      "goal_id": "G05",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T03:50:31.669000Z",
-      "deadline": "2026-10-08T03:50:31.669000Z",
+      "deadline": "2026-10-04T03:50:31.669000Z",
       "success": {
-        "event": "purchase_completed",
-        "condition": "is_trial = false",
-        "window_hours": 168
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "696e0ab5-15e7-4a55-a3be-60e88a32ee4e",
@@ -158,6 +218,66 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2625631.669,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "gubava-gihaya-d5",
+                  "next_episode_id": "gubava-gihaya-d5-s1e3",
+                  "last_play_at": "2026-09-27T07:46:29.522000Z",
+                  "sources": [
+                    {
+                      "ref": "event:869041b2-3736-49a0-b997-43bc17c47e3e",
+                      "observed_at": "2026-09-20T18:11:19.086Z"
+                    },
+                    {
+                      "ref": "event:06cf30f1-abed-4d80-8dcd-9cdf5c857474",
+                      "observed_at": "2026-09-20T18:14:03.555Z"
+                    },
+                    {
+                      "ref": "event:6af14db9-639e-4f04-918a-3aa5afff7ce2",
+                      "observed_at": "2026-09-27T23:23:13.030Z"
+                    },
+                    {
+                      "ref": "event:0d9b3cf1-1c75-464c-b6fb-d5ce0b95138e",
+                      "observed_at": "2026-09-27T23:25:59.854Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:869041b2-3736-49a0-b997-43bc17c47e3e",
+              "event:06cf30f1-abed-4d80-8dcd-9cdf5c857474",
+              "event:6af14db9-639e-4f04-918a-3aa5afff7ce2",
+              "event:0d9b3cf1-1c75-464c-b6fb-d5ce0b95138e"
+            ],
+            "observed_at": "2026-10-01T03:50:31.669000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:869041b2-3736-49a0-b997-43bc17c47e3e",
+                "observed_at": "2026-09-20T18:11:19.086Z",
+                "freshness_s": 898752.583
+              },
+              {
+                "ref": "event:06cf30f1-abed-4d80-8dcd-9cdf5c857474",
+                "observed_at": "2026-09-20T18:14:03.555Z",
+                "freshness_s": 898588.114
+              },
+              {
+                "ref": "event:6af14db9-639e-4f04-918a-3aa5afff7ce2",
+                "observed_at": "2026-09-27T23:23:13.030Z",
+                "freshness_s": 275238.639
+              },
+              {
+                "ref": "event:0d9b3cf1-1c75-464c-b6fb-d5ce0b95138e",
+                "observed_at": "2026-09-27T23:25:59.854Z",
+                "freshness_s": 275071.815
+              }
+            ]
           }
         },
         "conflicts": [
@@ -175,20 +295,25 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [],
+      "target_content_slug": "gubava-gihaya-d5",
+      "next_episode_id": "gubava-gihaya-d5-s1e3",
       "final_outcome": {
-        "plan_id": "P-dc1c99f124bce27f965b",
+        "plan_id": "P-9c91bf1e183d514b181c",
         "user_id": "U-04184",
-        "goal_id": "G05",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T03:50:31.669000Z",
-        "deadline": "2026-10-08T03:50:31.669000Z",
+        "deadline": "2026-10-04T03:50:31.669000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "purchase_completed",
-          "condition": "is_trial = false",
-          "window_hours": 168
+          "event": "play_started",
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -196,7 +321,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T03:50:31.669000Z"
+      "closed_at": "2026-10-04T03:50:31.669000Z"
     }
   ]
 }

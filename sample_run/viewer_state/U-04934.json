@@ -67,6 +67,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2637344.782,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "mopila-bani-d6",
+              "next_episode_id": "mopila-bani-d6-s1e1",
+              "last_play_at": "2026-09-10T13:31:44.186000Z",
+              "sources": [
+                {
+                  "ref": "event:df5c6704-b010-4b8d-b795-4ebd0e09cd31",
+                  "observed_at": "2026-09-07T17:27:51.320Z"
+                },
+                {
+                  "ref": "event:fed53802-1a01-4aae-a8d7-fa7da6343c76",
+                  "observed_at": "2026-09-10T13:31:44.186Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:df5c6704-b010-4b8d-b795-4ebd0e09cd31",
+          "event:fed53802-1a01-4aae-a8d7-fa7da6343c76"
+        ],
+        "observed_at": "2026-10-01T07:05:44.782000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:df5c6704-b010-4b8d-b795-4ebd0e09cd31",
+            "observed_at": "2026-09-07T17:27:51.320Z",
+            "freshness_s": 2036273.462
+          },
+          {
+            "ref": "event:fed53802-1a01-4aae-a8d7-fa7da6343c76",
+            "observed_at": "2026-09-10T13:31:44.186Z",
+            "freshness_s": 1791240.596
+          }
+        ]
       }
     },
     "conflicts": [
@@ -176,6 +216,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2637344.782,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "mopila-bani-d6",
+                  "next_episode_id": "mopila-bani-d6-s1e1",
+                  "last_play_at": "2026-09-10T13:31:44.186000Z",
+                  "sources": [
+                    {
+                      "ref": "event:df5c6704-b010-4b8d-b795-4ebd0e09cd31",
+                      "observed_at": "2026-09-07T17:27:51.320Z"
+                    },
+                    {
+                      "ref": "event:fed53802-1a01-4aae-a8d7-fa7da6343c76",
+                      "observed_at": "2026-09-10T13:31:44.186Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:df5c6704-b010-4b8d-b795-4ebd0e09cd31",
+              "event:fed53802-1a01-4aae-a8d7-fa7da6343c76"
+            ],
+            "observed_at": "2026-10-01T07:05:44.782000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:df5c6704-b010-4b8d-b795-4ebd0e09cd31",
+                "observed_at": "2026-09-07T17:27:51.320Z",
+                "freshness_s": 2036273.462
+              },
+              {
+                "ref": "event:fed53802-1a01-4aae-a8d7-fa7da6343c76",
+                "observed_at": "2026-09-10T13:31:44.186Z",
+                "freshness_s": 1791240.596
+              }
+            ]
           }
         },
         "conflicts": [
@@ -191,6 +271,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],
@@ -209,7 +295,7 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-030845"
+          "event:oua-030850"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

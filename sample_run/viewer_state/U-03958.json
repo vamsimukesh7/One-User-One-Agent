@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2640749.265,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "lomobha-moni-d3",
+              "next_episode_id": "lomobha-moni-d3-s1e2",
+              "last_play_at": "2026-09-04T17:12:41.932000Z",
+              "sources": [
+                {
+                  "ref": "event:4788ef41-7d88-4873-b320-173f625df696",
+                  "observed_at": "2026-09-04T20:49:00.638Z"
+                },
+                {
+                  "ref": "event:42f4265f-890c-4eae-ada9-0c30285cc0df",
+                  "observed_at": "2026-09-04T20:50:50.367Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:4788ef41-7d88-4873-b320-173f625df696",
+          "event:42f4265f-890c-4eae-ada9-0c30285cc0df"
+        ],
+        "observed_at": "2026-10-01T08:02:29.265000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:4788ef41-7d88-4873-b320-173f625df696",
+            "observed_at": "2026-09-04T20:49:00.638Z",
+            "freshness_s": 2286808.627
+          },
+          {
+            "ref": "event:42f4265f-890c-4eae-ada9-0c30285cc0df",
+            "observed_at": "2026-09-04T20:50:50.367Z",
+            "freshness_s": 2286698.898
+          }
+        ]
       }
     },
     "conflicts": [
@@ -164,6 +204,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2640749.265,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "lomobha-moni-d3",
+                  "next_episode_id": "lomobha-moni-d3-s1e2",
+                  "last_play_at": "2026-09-04T17:12:41.932000Z",
+                  "sources": [
+                    {
+                      "ref": "event:4788ef41-7d88-4873-b320-173f625df696",
+                      "observed_at": "2026-09-04T20:49:00.638Z"
+                    },
+                    {
+                      "ref": "event:42f4265f-890c-4eae-ada9-0c30285cc0df",
+                      "observed_at": "2026-09-04T20:50:50.367Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:4788ef41-7d88-4873-b320-173f625df696",
+              "event:42f4265f-890c-4eae-ada9-0c30285cc0df"
+            ],
+            "observed_at": "2026-10-01T08:02:29.265000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:4788ef41-7d88-4873-b320-173f625df696",
+                "observed_at": "2026-09-04T20:49:00.638Z",
+                "freshness_s": 2286808.627
+              },
+              {
+                "ref": "event:42f4265f-890c-4eae-ada9-0c30285cc0df",
+                "observed_at": "2026-09-04T20:50:50.367Z",
+                "freshness_s": 2286698.898
+              }
+            ]
           }
         },
         "conflicts": [
@@ -180,6 +260,9 @@
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
+      },
+      "eligibility_rule": {
+        "text": "No app_open in the 14 days before the trigger."
       },
       "actions": [],
       "final_outcome": {

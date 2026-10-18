@@ -67,6 +67,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2645195.91,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "jamo-hasa-d5",
+              "next_episode_id": "jamo-hasa-d5-s1e2",
+              "last_play_at": "2026-09-28T06:40:16.117000Z",
+              "sources": [
+                {
+                  "ref": "event:8b7933d2-0978-44c5-ba24-dc04ce8717d7",
+                  "observed_at": "2026-09-28T06:41:22.782Z"
+                },
+                {
+                  "ref": "event:04e39a30-44e0-47e3-8fda-2363c6e5c433",
+                  "observed_at": "2026-09-28T06:44:10.231Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "gubava-gihaya-d5",
+              "next_episode_id": "gubava-gihaya-d5-s1e1",
+              "last_play_at": "2026-09-03T16:07:26.695000Z",
+              "sources": [
+                {
+                  "ref": "event:bf7aff26-985b-4063-aaf3-b9525d2a2130",
+                  "observed_at": "2026-09-07T19:48:55.649Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:8b7933d2-0978-44c5-ba24-dc04ce8717d7",
+          "event:04e39a30-44e0-47e3-8fda-2363c6e5c433",
+          "event:bf7aff26-985b-4063-aaf3-b9525d2a2130"
+        ],
+        "observed_at": "2026-10-01T09:16:35.910000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:8b7933d2-0978-44c5-ba24-dc04ce8717d7",
+            "observed_at": "2026-09-28T06:41:22.782Z",
+            "freshness_s": 268513.128
+          },
+          {
+            "ref": "event:04e39a30-44e0-47e3-8fda-2363c6e5c433",
+            "observed_at": "2026-09-28T06:44:10.231Z",
+            "freshness_s": 268345.679
+          },
+          {
+            "ref": "event:bf7aff26-985b-4063-aaf3-b9525d2a2130",
+            "observed_at": "2026-09-07T19:48:55.649Z",
+            "freshness_s": 2035660.261
+          }
+        ]
       }
     },
     "conflicts": [
@@ -175,6 +232,63 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2645195.91,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "jamo-hasa-d5",
+                  "next_episode_id": "jamo-hasa-d5-s1e2",
+                  "last_play_at": "2026-09-28T06:40:16.117000Z",
+                  "sources": [
+                    {
+                      "ref": "event:8b7933d2-0978-44c5-ba24-dc04ce8717d7",
+                      "observed_at": "2026-09-28T06:41:22.782Z"
+                    },
+                    {
+                      "ref": "event:04e39a30-44e0-47e3-8fda-2363c6e5c433",
+                      "observed_at": "2026-09-28T06:44:10.231Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "gubava-gihaya-d5",
+                  "next_episode_id": "gubava-gihaya-d5-s1e1",
+                  "last_play_at": "2026-09-03T16:07:26.695000Z",
+                  "sources": [
+                    {
+                      "ref": "event:bf7aff26-985b-4063-aaf3-b9525d2a2130",
+                      "observed_at": "2026-09-07T19:48:55.649Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:8b7933d2-0978-44c5-ba24-dc04ce8717d7",
+              "event:04e39a30-44e0-47e3-8fda-2363c6e5c433",
+              "event:bf7aff26-985b-4063-aaf3-b9525d2a2130"
+            ],
+            "observed_at": "2026-10-01T09:16:35.910000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:8b7933d2-0978-44c5-ba24-dc04ce8717d7",
+                "observed_at": "2026-09-28T06:41:22.782Z",
+                "freshness_s": 268513.128
+              },
+              {
+                "ref": "event:04e39a30-44e0-47e3-8fda-2363c6e5c433",
+                "observed_at": "2026-09-28T06:44:10.231Z",
+                "freshness_s": 268345.679
+              },
+              {
+                "ref": "event:bf7aff26-985b-4063-aaf3-b9525d2a2130",
+                "observed_at": "2026-09-07T19:48:55.649Z",
+                "freshness_s": 2035660.261
+              }
+            ]
           }
         },
         "conflicts": [
@@ -190,6 +304,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -211,7 +331,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-026559"
+          "event:oua-026562"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

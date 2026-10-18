@@ -61,6 +61,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2662154.604,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yatite-roloda-d3",
+              "next_episode_id": "yatite-roloda-d3-s1e2",
+              "last_play_at": "2026-09-17T15:29:44.547000Z",
+              "sources": [
+                {
+                  "ref": "event:3055ed26-c62e-4c6e-82c9-04572392d647",
+                  "observed_at": "2026-09-17T15:31:10.643Z"
+                },
+                {
+                  "ref": "event:48c7f886-fd4c-4aca-a93e-d991df8a2395",
+                  "observed_at": "2026-09-23T03:57:06.844Z"
+                },
+                {
+                  "ref": "event:948c33cd-4331-41a3-9977-11f69f6bb74d",
+                  "observed_at": "2026-09-23T04:00:47.674Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:3055ed26-c62e-4c6e-82c9-04572392d647",
+          "event:48c7f886-fd4c-4aca-a93e-d991df8a2395",
+          "event:948c33cd-4331-41a3-9977-11f69f6bb74d"
+        ],
+        "observed_at": "2026-10-01T13:59:14.604000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:3055ed26-c62e-4c6e-82c9-04572392d647",
+            "observed_at": "2026-09-17T15:31:10.643Z",
+            "freshness_s": 1204083.961
+          },
+          {
+            "ref": "event:48c7f886-fd4c-4aca-a93e-d991df8a2395",
+            "observed_at": "2026-09-23T03:57:06.844Z",
+            "freshness_s": 727327.76
+          },
+          {
+            "ref": "event:948c33cd-4331-41a3-9977-11f69f6bb74d",
+            "observed_at": "2026-09-23T04:00:47.674Z",
+            "freshness_s": 727106.93
+          }
+        ]
       }
     },
     "conflicts": [],

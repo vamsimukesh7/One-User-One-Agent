@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2610761.898,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e1",
+              "last_play_at": "2026-09-13T14:47:47.119000Z",
+              "sources": [
+                {
+                  "ref": "event:cdff7111-48d2-43af-8a06-4efe5adba02d",
+                  "observed_at": "2026-09-13T14:47:47.119Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:cdff7111-48d2-43af-8a06-4efe5adba02d"
+        ],
+        "observed_at": "2026-09-30T23:42:41.898000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:cdff7111-48d2-43af-8a06-4efe5adba02d",
+            "observed_at": "2026-09-13T14:47:47.119Z",
+            "freshness_s": 1500894.779
+          }
+        ]
       }
     },
     "conflicts": [
@@ -171,6 +201,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2610761.898,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "hama-chudibha-d1",
+                  "next_episode_id": "hama-chudibha-d1-s1e1",
+                  "last_play_at": "2026-09-13T14:47:47.119000Z",
+                  "sources": [
+                    {
+                      "ref": "event:cdff7111-48d2-43af-8a06-4efe5adba02d",
+                      "observed_at": "2026-09-13T14:47:47.119Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:cdff7111-48d2-43af-8a06-4efe5adba02d"
+            ],
+            "observed_at": "2026-09-30T23:42:41.898000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:cdff7111-48d2-43af-8a06-4efe5adba02d",
+                "observed_at": "2026-09-13T14:47:47.119Z",
+                "freshness_s": 1500894.779
+              }
+            ]
           }
         },
         "conflicts": [
@@ -195,6 +255,9 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "No app_open in the 14 days before the trigger."
+      },
       "actions": [],
       "final_outcome": {
         "plan_id": "P-baec05b7790472d5c57b",
@@ -211,9 +274,9 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-013882",
-          "event:oua-013894",
-          "event:oua-013891"
+          "event:oua-013887",
+          "event:oua-013899",
+          "event:oua-013896"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

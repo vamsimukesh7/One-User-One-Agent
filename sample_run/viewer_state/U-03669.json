@@ -67,6 +67,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2646230.325,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "dhada-bhate-d1",
+              "next_episode_id": "dhada-bhate-d1-s1e2",
+              "last_play_at": "2026-09-16T09:17:30.842000Z",
+              "sources": [
+                {
+                  "ref": "event:b77898c7-5ada-4426-9cfa-a7b2840e763d",
+                  "observed_at": "2026-09-24T13:11:24.078Z"
+                },
+                {
+                  "ref": "event:c0079bfc-79d3-4ea2-b686-c88e4d4e9df8",
+                  "observed_at": "2026-09-24T13:32:34.716Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:b77898c7-5ada-4426-9cfa-a7b2840e763d",
+          "event:c0079bfc-79d3-4ea2-b686-c88e4d4e9df8"
+        ],
+        "observed_at": "2026-10-01T09:33:50.325000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:b77898c7-5ada-4426-9cfa-a7b2840e763d",
+            "observed_at": "2026-09-24T13:11:24.078Z",
+            "freshness_s": 591746.247
+          },
+          {
+            "ref": "event:c0079bfc-79d3-4ea2-b686-c88e4d4e9df8",
+            "observed_at": "2026-09-24T13:32:34.716Z",
+            "freshness_s": 590475.609
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +207,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2646230.325,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "dhada-bhate-d1",
+                  "next_episode_id": "dhada-bhate-d1-s1e2",
+                  "last_play_at": "2026-09-16T09:17:30.842000Z",
+                  "sources": [
+                    {
+                      "ref": "event:b77898c7-5ada-4426-9cfa-a7b2840e763d",
+                      "observed_at": "2026-09-24T13:11:24.078Z"
+                    },
+                    {
+                      "ref": "event:c0079bfc-79d3-4ea2-b686-c88e4d4e9df8",
+                      "observed_at": "2026-09-24T13:32:34.716Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:b77898c7-5ada-4426-9cfa-a7b2840e763d",
+              "event:c0079bfc-79d3-4ea2-b686-c88e4d4e9df8"
+            ],
+            "observed_at": "2026-10-01T09:33:50.325000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:b77898c7-5ada-4426-9cfa-a7b2840e763d",
+                "observed_at": "2026-09-24T13:11:24.078Z",
+                "freshness_s": 591746.247
+              },
+              {
+                "ref": "event:c0079bfc-79d3-4ea2-b686-c88e4d4e9df8",
+                "observed_at": "2026-09-24T13:32:34.716Z",
+                "freshness_s": 590475.609
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +254,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -194,15 +280,15 @@
           "window_hours": 336
         },
         "signal_refs": [
-          "event:oua-023218",
-          "event:oua-023221",
-          "event:oua-023229"
+          "event:oua-023220",
+          "event:oua-023223",
+          "event:oua-023231"
         ],
         "exposure_refs": [
-          "event:oua-023217"
+          "event:oua-023219"
         ],
         "associated_signal_refs": [
-          "event:oua-023218"
+          "event:oua-023220"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

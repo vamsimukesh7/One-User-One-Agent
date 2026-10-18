@@ -67,6 +67,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2666033.799,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "tegu-kote-d4",
+              "next_episode_id": "tegu-kote-d4-s1e2",
+              "last_play_at": "2026-09-17T10:19:19.938000Z",
+              "sources": [
+                {
+                  "ref": "event:8e0fa4c9-8bb1-49ee-9f6a-d6b4e4016849",
+                  "observed_at": "2026-09-17T10:19:19.938Z"
+                },
+                {
+                  "ref": "event:282c4f96-7fc6-49c2-aa2c-311076d5baba",
+                  "observed_at": "2026-09-17T10:44:12.008Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "koha-kagite-d4",
+              "next_episode_id": "koha-kagite-d4-s1e1",
+              "last_play_at": "2026-09-09T13:01:58.562000Z",
+              "sources": [
+                {
+                  "ref": "event:e2746d4a-90fd-435f-9963-d0d976ce0261",
+                  "observed_at": "2026-09-09T13:01:58.562Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:8e0fa4c9-8bb1-49ee-9f6a-d6b4e4016849",
+          "event:282c4f96-7fc6-49c2-aa2c-311076d5baba",
+          "event:e2746d4a-90fd-435f-9963-d0d976ce0261"
+        ],
+        "observed_at": "2026-10-01T15:03:53.799000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:8e0fa4c9-8bb1-49ee-9f6a-d6b4e4016849",
+            "observed_at": "2026-09-17T10:19:19.938Z",
+            "freshness_s": 1226673.861
+          },
+          {
+            "ref": "event:282c4f96-7fc6-49c2-aa2c-311076d5baba",
+            "observed_at": "2026-09-17T10:44:12.008Z",
+            "freshness_s": 1225181.791
+          },
+          {
+            "ref": "event:e2746d4a-90fd-435f-9963-d0d976ce0261",
+            "observed_at": "2026-09-09T13:01:58.562Z",
+            "freshness_s": 1908115.237
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +225,63 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2666033.799,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "tegu-kote-d4",
+                  "next_episode_id": "tegu-kote-d4-s1e2",
+                  "last_play_at": "2026-09-17T10:19:19.938000Z",
+                  "sources": [
+                    {
+                      "ref": "event:8e0fa4c9-8bb1-49ee-9f6a-d6b4e4016849",
+                      "observed_at": "2026-09-17T10:19:19.938Z"
+                    },
+                    {
+                      "ref": "event:282c4f96-7fc6-49c2-aa2c-311076d5baba",
+                      "observed_at": "2026-09-17T10:44:12.008Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "koha-kagite-d4",
+                  "next_episode_id": "koha-kagite-d4-s1e1",
+                  "last_play_at": "2026-09-09T13:01:58.562000Z",
+                  "sources": [
+                    {
+                      "ref": "event:e2746d4a-90fd-435f-9963-d0d976ce0261",
+                      "observed_at": "2026-09-09T13:01:58.562Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:8e0fa4c9-8bb1-49ee-9f6a-d6b4e4016849",
+              "event:282c4f96-7fc6-49c2-aa2c-311076d5baba",
+              "event:e2746d4a-90fd-435f-9963-d0d976ce0261"
+            ],
+            "observed_at": "2026-10-01T15:03:53.799000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:8e0fa4c9-8bb1-49ee-9f6a-d6b4e4016849",
+                "observed_at": "2026-09-17T10:19:19.938Z",
+                "freshness_s": 1226673.861
+              },
+              {
+                "ref": "event:282c4f96-7fc6-49c2-aa2c-311076d5baba",
+                "observed_at": "2026-09-17T10:44:12.008Z",
+                "freshness_s": 1225181.791
+              },
+              {
+                "ref": "event:e2746d4a-90fd-435f-9963-d0d976ce0261",
+                "observed_at": "2026-09-09T13:01:58.562Z",
+                "freshness_s": 1908115.237
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +289,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],
@@ -193,11 +313,11 @@
           "window_hours": 336
         },
         "signal_refs": [
-          "event:oua-023114",
-          "event:oua-023118",
-          "event:oua-023122",
-          "event:oua-023126",
-          "event:oua-023130"
+          "event:oua-023116",
+          "event:oua-023120",
+          "event:oua-023124",
+          "event:oua-023128",
+          "event:oua-023132"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

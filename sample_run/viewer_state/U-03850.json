@@ -61,6 +61,153 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2675472.973,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hate-d1",
+              "next_episode_id": "hate-d1-s1e3",
+              "last_play_at": "2026-09-15T16:25:47.427000Z",
+              "sources": [
+                {
+                  "ref": "event:cbe2a535-480d-4585-89ee-2fef988560ed",
+                  "observed_at": "2026-09-11T04:31:48.569Z"
+                },
+                {
+                  "ref": "event:9c7dd506-351a-441a-a304-982d93783825",
+                  "observed_at": "2026-09-11T04:35:29.173Z"
+                },
+                {
+                  "ref": "event:4812991f-3019-4370-b35e-952ae6956bd1",
+                  "observed_at": "2026-09-15T16:25:47.427Z"
+                },
+                {
+                  "ref": "event:c9ea0774-cb2f-4616-a2c2-1eed1bf91de4",
+                  "observed_at": "2026-09-15T16:28:34.876Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "bagugu-gigupi-d1",
+              "next_episode_id": "bagugu-gigupi-d1-s1e4",
+              "last_play_at": "2026-09-11T16:04:57.439000Z",
+              "sources": [
+                {
+                  "ref": "event:ecca7b8f-6d80-42ef-a2fb-a67d6921dbf5",
+                  "observed_at": "2026-09-04T09:35:23.622Z"
+                },
+                {
+                  "ref": "event:ba29e80d-7dab-4b5d-b64e-ebee88bfb872",
+                  "observed_at": "2026-09-04T10:12:12.679Z"
+                },
+                {
+                  "ref": "event:7485f7cf-b762-4865-be4b-f108aedae319",
+                  "observed_at": "2026-09-04T11:18:55.132Z"
+                },
+                {
+                  "ref": "event:5f339277-22d3-4ef1-a504-98c3002b79e3",
+                  "observed_at": "2026-09-04T11:59:24.097Z"
+                },
+                {
+                  "ref": "event:9c64faf3-2033-4685-b008-ebc88d8deaff",
+                  "observed_at": "2026-09-09T10:01:24.657Z"
+                },
+                {
+                  "ref": "event:e52b7f43-d393-4c0d-b1eb-f6528092f355",
+                  "observed_at": "2026-09-11T16:04:57.439Z"
+                },
+                {
+                  "ref": "event:14b1303c-519a-477f-9683-527886048436",
+                  "observed_at": "2026-09-13T12:12:21.628Z"
+                },
+                {
+                  "ref": "event:5d1e59a5-5a5b-4e6e-8eb3-825eada64a65",
+                  "observed_at": "2026-09-13T12:37:11.486Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:cbe2a535-480d-4585-89ee-2fef988560ed",
+          "event:9c7dd506-351a-441a-a304-982d93783825",
+          "event:4812991f-3019-4370-b35e-952ae6956bd1",
+          "event:c9ea0774-cb2f-4616-a2c2-1eed1bf91de4",
+          "event:ecca7b8f-6d80-42ef-a2fb-a67d6921dbf5",
+          "event:ba29e80d-7dab-4b5d-b64e-ebee88bfb872",
+          "event:7485f7cf-b762-4865-be4b-f108aedae319",
+          "event:5f339277-22d3-4ef1-a504-98c3002b79e3",
+          "event:9c64faf3-2033-4685-b008-ebc88d8deaff",
+          "event:e52b7f43-d393-4c0d-b1eb-f6528092f355",
+          "event:14b1303c-519a-477f-9683-527886048436",
+          "event:5d1e59a5-5a5b-4e6e-8eb3-825eada64a65"
+        ],
+        "observed_at": "2026-10-01T17:41:12.973000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:cbe2a535-480d-4585-89ee-2fef988560ed",
+            "observed_at": "2026-09-11T04:31:48.569Z",
+            "freshness_s": 1775364.404
+          },
+          {
+            "ref": "event:9c7dd506-351a-441a-a304-982d93783825",
+            "observed_at": "2026-09-11T04:35:29.173Z",
+            "freshness_s": 1775143.8
+          },
+          {
+            "ref": "event:4812991f-3019-4370-b35e-952ae6956bd1",
+            "observed_at": "2026-09-15T16:25:47.427Z",
+            "freshness_s": 1386925.546
+          },
+          {
+            "ref": "event:c9ea0774-cb2f-4616-a2c2-1eed1bf91de4",
+            "observed_at": "2026-09-15T16:28:34.876Z",
+            "freshness_s": 1386758.097
+          },
+          {
+            "ref": "event:ecca7b8f-6d80-42ef-a2fb-a67d6921dbf5",
+            "observed_at": "2026-09-04T09:35:23.622Z",
+            "freshness_s": 2361949.351
+          },
+          {
+            "ref": "event:ba29e80d-7dab-4b5d-b64e-ebee88bfb872",
+            "observed_at": "2026-09-04T10:12:12.679Z",
+            "freshness_s": 2359740.294
+          },
+          {
+            "ref": "event:7485f7cf-b762-4865-be4b-f108aedae319",
+            "observed_at": "2026-09-04T11:18:55.132Z",
+            "freshness_s": 2355737.841
+          },
+          {
+            "ref": "event:5f339277-22d3-4ef1-a504-98c3002b79e3",
+            "observed_at": "2026-09-04T11:59:24.097Z",
+            "freshness_s": 2353308.876
+          },
+          {
+            "ref": "event:9c64faf3-2033-4685-b008-ebc88d8deaff",
+            "observed_at": "2026-09-09T10:01:24.657Z",
+            "freshness_s": 1928388.316
+          },
+          {
+            "ref": "event:e52b7f43-d393-4c0d-b1eb-f6528092f355",
+            "observed_at": "2026-09-11T16:04:57.439Z",
+            "freshness_s": 1733775.534
+          },
+          {
+            "ref": "event:14b1303c-519a-477f-9683-527886048436",
+            "observed_at": "2026-09-13T12:12:21.628Z",
+            "freshness_s": 1574931.345
+          },
+          {
+            "ref": "event:5d1e59a5-5a5b-4e6e-8eb3-825eada64a65",
+            "observed_at": "2026-09-13T12:37:11.486Z",
+            "freshness_s": 1573441.487
+          }
+        ]
       }
     },
     "conflicts": [],

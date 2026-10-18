@@ -61,6 +61,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2666870.207,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bhaja-moguba-d2",
+              "next_episode_id": "bhaja-moguba-d2-s1e1",
+              "last_play_at": "2026-09-14T17:15:19.391000Z",
+              "sources": [
+                {
+                  "ref": "event:27a612f8-61bd-44fc-bbaf-11014b457d7c",
+                  "observed_at": "2026-09-14T17:15:19.391Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e1",
+              "last_play_at": "2026-09-03T15:46:04.016000Z",
+              "sources": [
+                {
+                  "ref": "event:249a5648-0923-4d4a-8dfc-c8cc8987be41",
+                  "observed_at": "2026-09-03T15:46:04.016Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:27a612f8-61bd-44fc-bbaf-11014b457d7c",
+          "event:249a5648-0923-4d4a-8dfc-c8cc8987be41"
+        ],
+        "observed_at": "2026-10-01T15:17:50.207000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:27a612f8-61bd-44fc-bbaf-11014b457d7c",
+            "observed_at": "2026-09-14T17:15:19.391Z",
+            "freshness_s": 1461750.816
+          },
+          {
+            "ref": "event:249a5648-0923-4d4a-8dfc-c8cc8987be41",
+            "observed_at": "2026-09-03T15:46:04.016Z",
+            "freshness_s": 2417506.191
+          }
+        ]
       }
     },
     "conflicts": [],

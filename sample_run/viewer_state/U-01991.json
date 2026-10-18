@@ -61,6 +61,73 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2638178.414,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yadha-kopa-d3",
+              "next_episode_id": "yadha-kopa-d3-s1e2",
+              "last_play_at": "2026-09-25T10:09:16.648000Z",
+              "sources": [
+                {
+                  "ref": "event:1dc00abe-7166-4f39-b3dd-3d766e7183d7",
+                  "observed_at": "2026-09-25T10:09:16.648Z"
+                },
+                {
+                  "ref": "event:41df84de-a39b-4c00-9941-26c8ecda0d51",
+                  "observed_at": "2026-09-25T10:42:25.474Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "ririgi-d3",
+              "next_episode_id": "ririgi-d3-s1e2",
+              "last_play_at": "2026-09-14T18:23:35.484000Z",
+              "sources": [
+                {
+                  "ref": "event:e6675a8e-d29d-4cf8-9f1c-d7a6b51a5450",
+                  "observed_at": "2026-09-14T18:23:35.484Z"
+                },
+                {
+                  "ref": "event:7e375004-af46-4c2c-bb40-3b8692ed01ad",
+                  "observed_at": "2026-09-14T18:46:35.155Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:1dc00abe-7166-4f39-b3dd-3d766e7183d7",
+          "event:41df84de-a39b-4c00-9941-26c8ecda0d51",
+          "event:e6675a8e-d29d-4cf8-9f1c-d7a6b51a5450",
+          "event:7e375004-af46-4c2c-bb40-3b8692ed01ad"
+        ],
+        "observed_at": "2026-10-01T07:19:38.414000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:1dc00abe-7166-4f39-b3dd-3d766e7183d7",
+            "observed_at": "2026-09-25T10:09:16.648Z",
+            "freshness_s": 508221.766
+          },
+          {
+            "ref": "event:41df84de-a39b-4c00-9941-26c8ecda0d51",
+            "observed_at": "2026-09-25T10:42:25.474Z",
+            "freshness_s": 506232.94
+          },
+          {
+            "ref": "event:e6675a8e-d29d-4cf8-9f1c-d7a6b51a5450",
+            "observed_at": "2026-09-14T18:23:35.484Z",
+            "freshness_s": 1428962.93
+          },
+          {
+            "ref": "event:7e375004-af46-4c2c-bb40-3b8692ed01ad",
+            "observed_at": "2026-09-14T18:46:35.155Z",
+            "freshness_s": 1427583.259
+          }
+        ]
       }
     },
     "conflicts": [],

@@ -67,6 +67,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2666244.81,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e1",
+              "last_play_at": "2026-09-14T16:23:13.458000Z",
+              "sources": [
+                {
+                  "ref": "event:82d89146-ce20-418e-b20d-77596caee12a",
+                  "observed_at": "2026-09-14T16:23:13.458Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:82d89146-ce20-418e-b20d-77596caee12a"
+        ],
+        "observed_at": "2026-10-01T15:07:24.810000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:82d89146-ce20-418e-b20d-77596caee12a",
+            "observed_at": "2026-09-14T16:23:13.458Z",
+            "freshness_s": 1464251.352
+          }
+        ]
       }
     },
     "conflicts": [
@@ -176,6 +206,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2666244.81,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "molo-d2",
+                  "next_episode_id": "molo-d2-s1e1",
+                  "last_play_at": "2026-09-14T16:23:13.458000Z",
+                  "sources": [
+                    {
+                      "ref": "event:82d89146-ce20-418e-b20d-77596caee12a",
+                      "observed_at": "2026-09-14T16:23:13.458Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:82d89146-ce20-418e-b20d-77596caee12a"
+            ],
+            "observed_at": "2026-10-01T15:07:24.810000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:82d89146-ce20-418e-b20d-77596caee12a",
+                "observed_at": "2026-09-14T16:23:13.458Z",
+                "freshness_s": 1464251.352
+              }
+            ]
           }
         },
         "conflicts": [
@@ -191,6 +251,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

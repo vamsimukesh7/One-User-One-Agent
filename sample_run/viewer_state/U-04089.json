@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2666800.669,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e2",
+              "last_play_at": "2026-09-26T22:27:05.296000Z",
+              "sources": [
+                {
+                  "ref": "event:09a750f7-09a7-4b70-9036-e8417ff735b0",
+                  "observed_at": "2026-09-26T22:27:05.296Z"
+                },
+                {
+                  "ref": "event:f7e2cf45-f83a-407b-8ba1-65fe8006351c",
+                  "observed_at": "2026-09-26T22:29:51.323Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:09a750f7-09a7-4b70-9036-e8417ff735b0",
+          "event:f7e2cf45-f83a-407b-8ba1-65fe8006351c"
+        ],
+        "observed_at": "2026-10-01T15:16:40.669000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:09a750f7-09a7-4b70-9036-e8417ff735b0",
+            "observed_at": "2026-09-26T22:27:05.296Z",
+            "freshness_s": 406175.373
+          },
+          {
+            "ref": "event:f7e2cf45-f83a-407b-8ba1-65fe8006351c",
+            "observed_at": "2026-09-26T22:29:51.323Z",
+            "freshness_s": 406009.346
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -74,7 +114,7 @@
   "latest_decision_id": "D-786ddd97f03f53f5fff3",
   "learning": [
     {
-      "goal_id": "G05",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -82,16 +122,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-34d76400af07d64f7b2f",
+      "plan_id": "P-83f52b3ed92451b93d46",
       "user_id": "U-04089",
-      "goal_id": "G05",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T15:16:40.669000Z",
-      "deadline": "2026-10-08T15:16:40.669000Z",
+      "deadline": "2026-10-04T15:16:40.669000Z",
       "success": {
-        "event": "purchase_completed",
-        "condition": "is_trial = false",
-        "window_hours": 168
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "80596eba-e7f9-47d2-9d7f-ffd05d07aab8",
@@ -155,6 +195,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2666800.669,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "guka-kosusa-d2",
+                  "next_episode_id": "guka-kosusa-d2-s1e2",
+                  "last_play_at": "2026-09-26T22:27:05.296000Z",
+                  "sources": [
+                    {
+                      "ref": "event:09a750f7-09a7-4b70-9036-e8417ff735b0",
+                      "observed_at": "2026-09-26T22:27:05.296Z"
+                    },
+                    {
+                      "ref": "event:f7e2cf45-f83a-407b-8ba1-65fe8006351c",
+                      "observed_at": "2026-09-26T22:29:51.323Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:09a750f7-09a7-4b70-9036-e8417ff735b0",
+              "event:f7e2cf45-f83a-407b-8ba1-65fe8006351c"
+            ],
+            "observed_at": "2026-10-01T15:16:40.669000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:09a750f7-09a7-4b70-9036-e8417ff735b0",
+                "observed_at": "2026-09-26T22:27:05.296Z",
+                "freshness_s": 406175.373
+              },
+              {
+                "ref": "event:f7e2cf45-f83a-407b-8ba1-65fe8006351c",
+                "observed_at": "2026-09-26T22:29:51.323Z",
+                "freshness_s": 406009.346
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -164,20 +244,25 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [],
+      "target_content_slug": "guka-kosusa-d2",
+      "next_episode_id": "guka-kosusa-d2-s1e2",
       "final_outcome": {
-        "plan_id": "P-34d76400af07d64f7b2f",
+        "plan_id": "P-83f52b3ed92451b93d46",
         "user_id": "U-04089",
-        "goal_id": "G05",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T15:16:40.669000Z",
-        "deadline": "2026-10-08T15:16:40.669000Z",
+        "deadline": "2026-10-04T15:16:40.669000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "purchase_completed",
-          "condition": "is_trial = false",
-          "window_hours": 168
+          "event": "play_started",
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -185,7 +270,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T15:16:40.669000Z"
+      "closed_at": "2026-10-04T15:16:40.669000Z"
     }
   ]
 }

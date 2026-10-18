@@ -61,6 +61,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2638607.433,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "pima-pana-d3",
+              "next_episode_id": "pima-pana-d3-s1e1",
+              "last_play_at": "2026-09-26T14:10:33.412000Z",
+              "sources": [
+                {
+                  "ref": "event:bce232d3-71a6-4da8-b19f-343cf387b9e2",
+                  "observed_at": "2026-09-26T14:10:33.412Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "haja-d3",
+              "next_episode_id": "haja-d3-s1e1",
+              "last_play_at": "2026-09-15T14:22:44.262000Z",
+              "sources": [
+                {
+                  "ref": "event:c7d18d81-485e-48f8-b7a7-9e53d6cc8050",
+                  "observed_at": "2026-09-14T13:38:55.715Z"
+                },
+                {
+                  "ref": "event:a119df05-cf67-4f1e-8a09-f762d16cab57",
+                  "observed_at": "2026-09-15T14:22:44.262Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:bce232d3-71a6-4da8-b19f-343cf387b9e2",
+          "event:c7d18d81-485e-48f8-b7a7-9e53d6cc8050",
+          "event:a119df05-cf67-4f1e-8a09-f762d16cab57"
+        ],
+        "observed_at": "2026-10-01T07:26:47.433000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:bce232d3-71a6-4da8-b19f-343cf387b9e2",
+            "observed_at": "2026-09-26T14:10:33.412Z",
+            "freshness_s": 407774.021
+          },
+          {
+            "ref": "event:c7d18d81-485e-48f8-b7a7-9e53d6cc8050",
+            "observed_at": "2026-09-14T13:38:55.715Z",
+            "freshness_s": 1446471.718
+          },
+          {
+            "ref": "event:a119df05-cf67-4f1e-8a09-f762d16cab57",
+            "observed_at": "2026-09-15T14:22:44.262Z",
+            "freshness_s": 1357443.171
+          }
+        ]
       }
     },
     "conflicts": [],

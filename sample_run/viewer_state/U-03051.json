@@ -67,6 +67,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2649906.863,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bagi-baya-d4",
+              "next_episode_id": "bagi-baya-d4-s1e1",
+              "last_play_at": "2026-09-09T04:47:40.514000Z",
+              "sources": [
+                {
+                  "ref": "event:f9ff7469-f5f4-47b4-af40-a01e31927827",
+                  "observed_at": "2026-09-07T13:59:04.438Z"
+                },
+                {
+                  "ref": "event:084e4bc3-c3cb-4966-9294-1fbf5dbd5763",
+                  "observed_at": "2026-09-09T04:47:40.514Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "bharipa-lanaro-d4",
+              "next_episode_id": "bharipa-lanaro-d4-s1e1",
+              "last_play_at": "2026-09-02T10:56:27.350000Z",
+              "sources": [
+                {
+                  "ref": "event:807de9a6-be27-4fbe-8d41-a138e63b3bdd",
+                  "observed_at": "2026-09-02T10:56:27.350Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:f9ff7469-f5f4-47b4-af40-a01e31927827",
+          "event:084e4bc3-c3cb-4966-9294-1fbf5dbd5763",
+          "event:807de9a6-be27-4fbe-8d41-a138e63b3bdd"
+        ],
+        "observed_at": "2026-10-01T10:35:06.863000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:f9ff7469-f5f4-47b4-af40-a01e31927827",
+            "observed_at": "2026-09-07T13:59:04.438Z",
+            "freshness_s": 2061362.425
+          },
+          {
+            "ref": "event:084e4bc3-c3cb-4966-9294-1fbf5dbd5763",
+            "observed_at": "2026-09-09T04:47:40.514Z",
+            "freshness_s": 1921646.349
+          },
+          {
+            "ref": "event:807de9a6-be27-4fbe-8d41-a138e63b3bdd",
+            "observed_at": "2026-09-02T10:56:27.350Z",
+            "freshness_s": 2504319.513
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +225,63 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2649906.863,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "bagi-baya-d4",
+                  "next_episode_id": "bagi-baya-d4-s1e1",
+                  "last_play_at": "2026-09-09T04:47:40.514000Z",
+                  "sources": [
+                    {
+                      "ref": "event:f9ff7469-f5f4-47b4-af40-a01e31927827",
+                      "observed_at": "2026-09-07T13:59:04.438Z"
+                    },
+                    {
+                      "ref": "event:084e4bc3-c3cb-4966-9294-1fbf5dbd5763",
+                      "observed_at": "2026-09-09T04:47:40.514Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "bharipa-lanaro-d4",
+                  "next_episode_id": "bharipa-lanaro-d4-s1e1",
+                  "last_play_at": "2026-09-02T10:56:27.350000Z",
+                  "sources": [
+                    {
+                      "ref": "event:807de9a6-be27-4fbe-8d41-a138e63b3bdd",
+                      "observed_at": "2026-09-02T10:56:27.350Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:f9ff7469-f5f4-47b4-af40-a01e31927827",
+              "event:084e4bc3-c3cb-4966-9294-1fbf5dbd5763",
+              "event:807de9a6-be27-4fbe-8d41-a138e63b3bdd"
+            ],
+            "observed_at": "2026-10-01T10:35:06.863000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:f9ff7469-f5f4-47b4-af40-a01e31927827",
+                "observed_at": "2026-09-07T13:59:04.438Z",
+                "freshness_s": 2061362.425
+              },
+              {
+                "ref": "event:084e4bc3-c3cb-4966-9294-1fbf5dbd5763",
+                "observed_at": "2026-09-09T04:47:40.514Z",
+                "freshness_s": 1921646.349
+              },
+              {
+                "ref": "event:807de9a6-be27-4fbe-8d41-a138e63b3bdd",
+                "observed_at": "2026-09-02T10:56:27.350Z",
+                "freshness_s": 2504319.513
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +289,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -196,7 +316,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-018961"
+          "event:oua-018960"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

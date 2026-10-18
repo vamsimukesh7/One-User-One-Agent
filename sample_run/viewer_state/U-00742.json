@@ -61,6 +61,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2672565.855,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bagugu-gigupi-d1",
+              "next_episode_id": "bagugu-gigupi-d1-s1e2",
+              "last_play_at": "2026-09-27T16:32:49.063000Z",
+              "sources": [
+                {
+                  "ref": "event:991889b1-a043-4b95-8d75-f28db07d7f2c",
+                  "observed_at": "2026-09-27T16:32:49.063Z"
+                },
+                {
+                  "ref": "event:f1ce4177-41a4-472a-a93a-e6204d224504",
+                  "observed_at": "2026-09-27T17:13:17.372Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "nini-namoko-d1",
+              "next_episode_id": "nini-namoko-d1-s1e1",
+              "last_play_at": "2026-09-24T09:55:04.480000Z",
+              "sources": [
+                {
+                  "ref": "event:4e238951-d51b-4311-99ce-f538e7c01e2d",
+                  "observed_at": "2026-10-01T14:51:32.304Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:991889b1-a043-4b95-8d75-f28db07d7f2c",
+          "event:f1ce4177-41a4-472a-a93a-e6204d224504",
+          "event:4e238951-d51b-4311-99ce-f538e7c01e2d"
+        ],
+        "observed_at": "2026-10-01T16:52:45.855000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:991889b1-a043-4b95-8d75-f28db07d7f2c",
+            "observed_at": "2026-09-27T16:32:49.063Z",
+            "freshness_s": 346796.792
+          },
+          {
+            "ref": "event:f1ce4177-41a4-472a-a93a-e6204d224504",
+            "observed_at": "2026-09-27T17:13:17.372Z",
+            "freshness_s": 344368.483
+          },
+          {
+            "ref": "event:4e238951-d51b-4311-99ce-f538e7c01e2d",
+            "observed_at": "2026-10-01T14:51:32.304Z",
+            "freshness_s": 7273.551
+          }
+        ]
       }
     },
     "conflicts": [

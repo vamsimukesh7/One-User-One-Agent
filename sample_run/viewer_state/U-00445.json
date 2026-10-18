@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2629030.823,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "rigu-dhadi-d2",
+              "next_episode_id": "rigu-dhadi-d2-s1e1",
+              "last_play_at": "2026-09-17T07:04:14.913000Z",
+              "sources": [
+                {
+                  "ref": "event:f60ce469-1ad5-4289-a09c-1778998bcbca",
+                  "observed_at": "2026-09-17T07:04:14.913Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:f60ce469-1ad5-4289-a09c-1778998bcbca"
+        ],
+        "observed_at": "2026-10-01T04:47:10.823000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:f60ce469-1ad5-4289-a09c-1778998bcbca",
+            "observed_at": "2026-09-17T07:04:14.913Z",
+            "freshness_s": 1201375.91
+          }
+        ]
       }
     },
     "conflicts": [

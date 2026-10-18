@@ -61,6 +61,103 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2659420.311,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bhaja-moguba-d2",
+              "next_episode_id": "bhaja-moguba-d2-s1e4",
+              "last_play_at": "2026-09-23T16:46:57.386000Z",
+              "sources": [
+                {
+                  "ref": "event:9b187940-67ff-48fc-b39d-447e2e33f93c",
+                  "observed_at": "2026-09-02T12:56:11.476Z"
+                },
+                {
+                  "ref": "event:ce5b5687-c3e5-4617-9020-3114acb23b88",
+                  "observed_at": "2026-09-02T12:59:50.187Z"
+                },
+                {
+                  "ref": "event:57e36a10-cb64-4c33-9726-9850aa7b7b42",
+                  "observed_at": "2026-09-08T06:45:08.069Z"
+                },
+                {
+                  "ref": "event:77e0307f-9dc8-4add-b90e-080accdd0f86",
+                  "observed_at": "2026-09-08T06:48:49.387Z"
+                },
+                {
+                  "ref": "event:a4a7741b-28b9-4669-a0b8-a771966d01e9",
+                  "observed_at": "2026-09-26T20:26:21.942Z"
+                },
+                {
+                  "ref": "event:86f57dd7-2d96-469d-95c4-ebc9f2b8aabf",
+                  "observed_at": "2026-09-26T20:29:07.555Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "dhapipa-gini-d2",
+              "next_episode_id": "dhapipa-gini-d2-s1e1",
+              "last_play_at": "2026-09-23T04:04:39.275000Z",
+              "sources": [
+                {
+                  "ref": "event:649a9ae5-b0cf-45ee-bee9-5abf0b4912f3",
+                  "observed_at": "2026-09-23T04:04:39.275Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:9b187940-67ff-48fc-b39d-447e2e33f93c",
+          "event:ce5b5687-c3e5-4617-9020-3114acb23b88",
+          "event:57e36a10-cb64-4c33-9726-9850aa7b7b42",
+          "event:77e0307f-9dc8-4add-b90e-080accdd0f86",
+          "event:a4a7741b-28b9-4669-a0b8-a771966d01e9",
+          "event:86f57dd7-2d96-469d-95c4-ebc9f2b8aabf",
+          "event:649a9ae5-b0cf-45ee-bee9-5abf0b4912f3"
+        ],
+        "observed_at": "2026-10-01T13:13:40.311000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:9b187940-67ff-48fc-b39d-447e2e33f93c",
+            "observed_at": "2026-09-02T12:56:11.476Z",
+            "freshness_s": 2506648.835
+          },
+          {
+            "ref": "event:ce5b5687-c3e5-4617-9020-3114acb23b88",
+            "observed_at": "2026-09-02T12:59:50.187Z",
+            "freshness_s": 2506430.124
+          },
+          {
+            "ref": "event:57e36a10-cb64-4c33-9726-9850aa7b7b42",
+            "observed_at": "2026-09-08T06:45:08.069Z",
+            "freshness_s": 2010512.242
+          },
+          {
+            "ref": "event:77e0307f-9dc8-4add-b90e-080accdd0f86",
+            "observed_at": "2026-09-08T06:48:49.387Z",
+            "freshness_s": 2010290.924
+          },
+          {
+            "ref": "event:a4a7741b-28b9-4669-a0b8-a771966d01e9",
+            "observed_at": "2026-09-26T20:26:21.942Z",
+            "freshness_s": 406038.369
+          },
+          {
+            "ref": "event:86f57dd7-2d96-469d-95c4-ebc9f2b8aabf",
+            "observed_at": "2026-09-26T20:29:07.555Z",
+            "freshness_s": 405872.756
+          },
+          {
+            "ref": "event:649a9ae5-b0cf-45ee-bee9-5abf0b4912f3",
+            "observed_at": "2026-09-23T04:04:39.275Z",
+            "freshness_s": 724141.036
+          }
+        ]
       }
     },
     "conflicts": [],

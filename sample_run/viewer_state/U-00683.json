@@ -61,6 +61,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2637214.32,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hama-chudibha-d1",
+              "next_episode_id": "hama-chudibha-d1-s1e1",
+              "last_play_at": "2026-09-23T15:34:27.264000Z",
+              "sources": [
+                {
+                  "ref": "event:8c4ffcf2-3574-4164-86c7-4248fa53600a",
+                  "observed_at": "2026-09-23T15:34:27.264Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "bagugu-gigupi-d1",
+              "next_episode_id": "bagugu-gigupi-d1-s1e1",
+              "last_play_at": "2026-09-08T10:44:06.410000Z",
+              "sources": [
+                {
+                  "ref": "event:4a5a1d3a-6ab9-4763-9e52-f91421fc3ee5",
+                  "observed_at": "2026-09-08T19:18:24.630Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:8c4ffcf2-3574-4164-86c7-4248fa53600a",
+          "event:4a5a1d3a-6ab9-4763-9e52-f91421fc3ee5"
+        ],
+        "observed_at": "2026-10-01T07:03:34.320000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:8c4ffcf2-3574-4164-86c7-4248fa53600a",
+            "observed_at": "2026-09-23T15:34:27.264Z",
+            "freshness_s": 660547.056
+          },
+          {
+            "ref": "event:4a5a1d3a-6ab9-4763-9e52-f91421fc3ee5",
+            "observed_at": "2026-09-08T19:18:24.630Z",
+            "freshness_s": 1943109.69
+          }
+        ]
       }
     },
     "conflicts": [],

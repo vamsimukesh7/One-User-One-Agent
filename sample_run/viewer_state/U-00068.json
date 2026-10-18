@@ -67,6 +67,70 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2647541.292,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "nisu-sapapa-d4",
+              "next_episode_id": "nisu-sapapa-d4-s1e1",
+              "last_play_at": "2026-09-27T01:21:07.956000Z",
+              "sources": [
+                {
+                  "ref": "event:813048c4-1272-4de1-8440-8a8bca86ffbe",
+                  "observed_at": "2026-09-27T01:21:07.956Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "vapa-kalasa-d4",
+              "next_episode_id": "vapa-kalasa-d4-s1e1",
+              "last_play_at": "2026-09-01T20:43:11.767000Z",
+              "sources": [
+                {
+                  "ref": "event:ad9e8444-adf9-4706-9903-119add228b23",
+                  "observed_at": "2026-09-01T20:43:11.767Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "bagi-baya-d4",
+              "next_episode_id": "bagi-baya-d4-s1e1",
+              "last_play_at": "2026-09-01T04:32:30.536000Z",
+              "sources": [
+                {
+                  "ref": "event:72cc4406-c816-449b-8f70-76eba65c474c",
+                  "observed_at": "2026-09-01T04:32:30.536Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:813048c4-1272-4de1-8440-8a8bca86ffbe",
+          "event:ad9e8444-adf9-4706-9903-119add228b23",
+          "event:72cc4406-c816-449b-8f70-76eba65c474c"
+        ],
+        "observed_at": "2026-10-01T09:55:41.292000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:813048c4-1272-4de1-8440-8a8bca86ffbe",
+            "observed_at": "2026-09-27T01:21:07.956Z",
+            "freshness_s": 376473.336
+          },
+          {
+            "ref": "event:ad9e8444-adf9-4706-9903-119add228b23",
+            "observed_at": "2026-09-01T20:43:11.767Z",
+            "freshness_s": 2553149.525
+          },
+          {
+            "ref": "event:72cc4406-c816-449b-8f70-76eba65c474c",
+            "observed_at": "2026-09-01T04:32:30.536Z",
+            "freshness_s": 2611390.756
+          }
+        ]
       }
     },
     "conflicts": [],

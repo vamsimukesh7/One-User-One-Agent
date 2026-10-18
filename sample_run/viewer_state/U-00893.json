@@ -67,6 +67,93 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2647673.857,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "pima-pana-d3",
+              "next_episode_id": "pima-pana-d3-s1e2",
+              "last_play_at": "2026-09-26T16:22:35.074000Z",
+              "sources": [
+                {
+                  "ref": "event:9d5e8f1b-1793-4515-8d98-d787cf70e168",
+                  "observed_at": "2026-09-05T20:14:51.759Z"
+                },
+                {
+                  "ref": "event:6e650985-1117-422c-b2cd-4d70bf90a35c",
+                  "observed_at": "2026-09-05T20:16:41.952Z"
+                },
+                {
+                  "ref": "event:0aee7ee2-b29b-473f-bf19-94f38aac5a2c",
+                  "observed_at": "2026-09-08T07:40:46.190Z"
+                },
+                {
+                  "ref": "event:d549adf4-fbaf-49f5-baf5-10f720aa9be7",
+                  "observed_at": "2026-09-26T16:22:35.074Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "ririgi-d3",
+              "next_episode_id": "ririgi-d3-s1e1",
+              "last_play_at": "2026-09-22T12:07:44.660000Z",
+              "sources": [
+                {
+                  "ref": "event:415f8ccb-a4d5-470e-ba28-6184f73644c0",
+                  "observed_at": "2026-09-05T08:34:21.717Z"
+                },
+                {
+                  "ref": "event:4dece618-cbf9-460b-9889-bb7385b090a8",
+                  "observed_at": "2026-09-22T12:07:44.660Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:9d5e8f1b-1793-4515-8d98-d787cf70e168",
+          "event:6e650985-1117-422c-b2cd-4d70bf90a35c",
+          "event:0aee7ee2-b29b-473f-bf19-94f38aac5a2c",
+          "event:d549adf4-fbaf-49f5-baf5-10f720aa9be7",
+          "event:415f8ccb-a4d5-470e-ba28-6184f73644c0",
+          "event:4dece618-cbf9-460b-9889-bb7385b090a8"
+        ],
+        "observed_at": "2026-10-01T09:57:53.857000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:9d5e8f1b-1793-4515-8d98-d787cf70e168",
+            "observed_at": "2026-09-05T20:14:51.759Z",
+            "freshness_s": 2209382.098
+          },
+          {
+            "ref": "event:6e650985-1117-422c-b2cd-4d70bf90a35c",
+            "observed_at": "2026-09-05T20:16:41.952Z",
+            "freshness_s": 2209271.905
+          },
+          {
+            "ref": "event:0aee7ee2-b29b-473f-bf19-94f38aac5a2c",
+            "observed_at": "2026-09-08T07:40:46.190Z",
+            "freshness_s": 1995427.667
+          },
+          {
+            "ref": "event:d549adf4-fbaf-49f5-baf5-10f720aa9be7",
+            "observed_at": "2026-09-26T16:22:35.074Z",
+            "freshness_s": 408918.783
+          },
+          {
+            "ref": "event:415f8ccb-a4d5-470e-ba28-6184f73644c0",
+            "observed_at": "2026-09-05T08:34:21.717Z",
+            "freshness_s": 2251412.14
+          },
+          {
+            "ref": "event:4dece618-cbf9-460b-9889-bb7385b090a8",
+            "observed_at": "2026-09-22T12:07:44.660Z",
+            "freshness_s": 769809.197
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -169,6 +256,93 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2647673.857,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "pima-pana-d3",
+                  "next_episode_id": "pima-pana-d3-s1e2",
+                  "last_play_at": "2026-09-26T16:22:35.074000Z",
+                  "sources": [
+                    {
+                      "ref": "event:9d5e8f1b-1793-4515-8d98-d787cf70e168",
+                      "observed_at": "2026-09-05T20:14:51.759Z"
+                    },
+                    {
+                      "ref": "event:6e650985-1117-422c-b2cd-4d70bf90a35c",
+                      "observed_at": "2026-09-05T20:16:41.952Z"
+                    },
+                    {
+                      "ref": "event:0aee7ee2-b29b-473f-bf19-94f38aac5a2c",
+                      "observed_at": "2026-09-08T07:40:46.190Z"
+                    },
+                    {
+                      "ref": "event:d549adf4-fbaf-49f5-baf5-10f720aa9be7",
+                      "observed_at": "2026-09-26T16:22:35.074Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "ririgi-d3",
+                  "next_episode_id": "ririgi-d3-s1e1",
+                  "last_play_at": "2026-09-22T12:07:44.660000Z",
+                  "sources": [
+                    {
+                      "ref": "event:415f8ccb-a4d5-470e-ba28-6184f73644c0",
+                      "observed_at": "2026-09-05T08:34:21.717Z"
+                    },
+                    {
+                      "ref": "event:4dece618-cbf9-460b-9889-bb7385b090a8",
+                      "observed_at": "2026-09-22T12:07:44.660Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:9d5e8f1b-1793-4515-8d98-d787cf70e168",
+              "event:6e650985-1117-422c-b2cd-4d70bf90a35c",
+              "event:0aee7ee2-b29b-473f-bf19-94f38aac5a2c",
+              "event:d549adf4-fbaf-49f5-baf5-10f720aa9be7",
+              "event:415f8ccb-a4d5-470e-ba28-6184f73644c0",
+              "event:4dece618-cbf9-460b-9889-bb7385b090a8"
+            ],
+            "observed_at": "2026-10-01T09:57:53.857000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:9d5e8f1b-1793-4515-8d98-d787cf70e168",
+                "observed_at": "2026-09-05T20:14:51.759Z",
+                "freshness_s": 2209382.098
+              },
+              {
+                "ref": "event:6e650985-1117-422c-b2cd-4d70bf90a35c",
+                "observed_at": "2026-09-05T20:16:41.952Z",
+                "freshness_s": 2209271.905
+              },
+              {
+                "ref": "event:0aee7ee2-b29b-473f-bf19-94f38aac5a2c",
+                "observed_at": "2026-09-08T07:40:46.190Z",
+                "freshness_s": 1995427.667
+              },
+              {
+                "ref": "event:d549adf4-fbaf-49f5-baf5-10f720aa9be7",
+                "observed_at": "2026-09-26T16:22:35.074Z",
+                "freshness_s": 408918.783
+              },
+              {
+                "ref": "event:415f8ccb-a4d5-470e-ba28-6184f73644c0",
+                "observed_at": "2026-09-05T08:34:21.717Z",
+                "freshness_s": 2251412.14
+              },
+              {
+                "ref": "event:4dece618-cbf9-460b-9889-bb7385b090a8",
+                "observed_at": "2026-09-22T12:07:44.660Z",
+                "freshness_s": 769809.197
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -176,6 +350,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

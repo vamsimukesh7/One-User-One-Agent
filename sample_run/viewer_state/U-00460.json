@@ -67,6 +67,70 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2638820.37,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "tilava-d1",
+              "next_episode_id": "tilava-d1-s1e1",
+              "last_play_at": "2026-09-24T15:58:35.169000Z",
+              "sources": [
+                {
+                  "ref": "event:0e2e72ae-b90b-4855-940c-f6427f113e3f",
+                  "observed_at": "2026-09-24T15:58:35.169Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "hate-d1",
+              "next_episode_id": "hate-d1-s1e1",
+              "last_play_at": "2026-09-08T08:01:41.443000Z",
+              "sources": [
+                {
+                  "ref": "event:843f2adc-d684-4e83-8212-a09434abc9e6",
+                  "observed_at": "2026-09-08T08:01:41.443Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "hapibha-d1",
+              "next_episode_id": "hapibha-d1-s1e1",
+              "last_play_at": "2026-09-01T15:13:02.680000Z",
+              "sources": [
+                {
+                  "ref": "event:7b8af7c9-88c0-4783-97e3-8a360ecdc1bd",
+                  "observed_at": "2026-09-01T15:13:02.680Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:0e2e72ae-b90b-4855-940c-f6427f113e3f",
+          "event:843f2adc-d684-4e83-8212-a09434abc9e6",
+          "event:7b8af7c9-88c0-4783-97e3-8a360ecdc1bd"
+        ],
+        "observed_at": "2026-10-01T07:30:20.370000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:0e2e72ae-b90b-4855-940c-f6427f113e3f",
+            "observed_at": "2026-09-24T15:58:35.169Z",
+            "freshness_s": 574305.201
+          },
+          {
+            "ref": "event:843f2adc-d684-4e83-8212-a09434abc9e6",
+            "observed_at": "2026-09-08T08:01:41.443Z",
+            "freshness_s": 1985318.927
+          },
+          {
+            "ref": "event:7b8af7c9-88c0-4783-97e3-8a360ecdc1bd",
+            "observed_at": "2026-09-01T15:13:02.680Z",
+            "freshness_s": 2564237.69
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +231,70 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2638820.37,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "tilava-d1",
+                  "next_episode_id": "tilava-d1-s1e1",
+                  "last_play_at": "2026-09-24T15:58:35.169000Z",
+                  "sources": [
+                    {
+                      "ref": "event:0e2e72ae-b90b-4855-940c-f6427f113e3f",
+                      "observed_at": "2026-09-24T15:58:35.169Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "hate-d1",
+                  "next_episode_id": "hate-d1-s1e1",
+                  "last_play_at": "2026-09-08T08:01:41.443000Z",
+                  "sources": [
+                    {
+                      "ref": "event:843f2adc-d684-4e83-8212-a09434abc9e6",
+                      "observed_at": "2026-09-08T08:01:41.443Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "hapibha-d1",
+                  "next_episode_id": "hapibha-d1-s1e1",
+                  "last_play_at": "2026-09-01T15:13:02.680000Z",
+                  "sources": [
+                    {
+                      "ref": "event:7b8af7c9-88c0-4783-97e3-8a360ecdc1bd",
+                      "observed_at": "2026-09-01T15:13:02.680Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:0e2e72ae-b90b-4855-940c-f6427f113e3f",
+              "event:843f2adc-d684-4e83-8212-a09434abc9e6",
+              "event:7b8af7c9-88c0-4783-97e3-8a360ecdc1bd"
+            ],
+            "observed_at": "2026-10-01T07:30:20.370000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:0e2e72ae-b90b-4855-940c-f6427f113e3f",
+                "observed_at": "2026-09-24T15:58:35.169Z",
+                "freshness_s": 574305.201
+              },
+              {
+                "ref": "event:843f2adc-d684-4e83-8212-a09434abc9e6",
+                "observed_at": "2026-09-08T08:01:41.443Z",
+                "freshness_s": 1985318.927
+              },
+              {
+                "ref": "event:7b8af7c9-88c0-4783-97e3-8a360ecdc1bd",
+                "observed_at": "2026-09-01T15:13:02.680Z",
+                "freshness_s": 2564237.69
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +302,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -194,14 +328,14 @@
           "window_hours": 168
         },
         "signal_refs": [
-          "event:oua-003092",
-          "event:oua-003095"
+          "event:oua-003097",
+          "event:oua-003100"
         ],
         "exposure_refs": [
-          "event:oua-003091"
+          "event:oua-003096"
         ],
         "associated_signal_refs": [
-          "event:oua-003092"
+          "event:oua-003097"
         ],
         "intervention_judgment": "observed_association_not_individual_causation",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."

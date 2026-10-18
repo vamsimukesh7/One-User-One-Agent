@@ -61,6 +61,76 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2624630.727,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yani-rilana-d1",
+              "next_episode_id": "yani-rilana-d1-s1e3",
+              "last_play_at": "2026-09-16T15:06:51.214000Z",
+              "sources": [
+                {
+                  "ref": "event:90c33d46-8f57-430e-87eb-863fbc169db6",
+                  "observed_at": "2026-09-13T15:21:58.264Z"
+                },
+                {
+                  "ref": "event:ddbbe02e-0f46-427f-b735-22a2cad57946",
+                  "observed_at": "2026-09-13T15:49:32.228Z"
+                },
+                {
+                  "ref": "event:cf8b7786-4185-403b-ab78-585cd900a79d",
+                  "observed_at": "2026-09-14T17:18:31.736Z"
+                },
+                {
+                  "ref": "event:1e13f672-199c-4123-9039-cbcde301556e",
+                  "observed_at": "2026-09-14T17:49:48.542Z"
+                },
+                {
+                  "ref": "event:7783829a-8e1a-462a-8b36-1596d568dd44",
+                  "observed_at": "2026-09-16T15:06:51.214Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:90c33d46-8f57-430e-87eb-863fbc169db6",
+          "event:ddbbe02e-0f46-427f-b735-22a2cad57946",
+          "event:cf8b7786-4185-403b-ab78-585cd900a79d",
+          "event:1e13f672-199c-4123-9039-cbcde301556e",
+          "event:7783829a-8e1a-462a-8b36-1596d568dd44"
+        ],
+        "observed_at": "2026-10-01T03:33:50.727000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:90c33d46-8f57-430e-87eb-863fbc169db6",
+            "observed_at": "2026-09-13T15:21:58.264Z",
+            "freshness_s": 1512712.463
+          },
+          {
+            "ref": "event:ddbbe02e-0f46-427f-b735-22a2cad57946",
+            "observed_at": "2026-09-13T15:49:32.228Z",
+            "freshness_s": 1511058.499
+          },
+          {
+            "ref": "event:cf8b7786-4185-403b-ab78-585cd900a79d",
+            "observed_at": "2026-09-14T17:18:31.736Z",
+            "freshness_s": 1419318.991
+          },
+          {
+            "ref": "event:1e13f672-199c-4123-9039-cbcde301556e",
+            "observed_at": "2026-09-14T17:49:48.542Z",
+            "freshness_s": 1417442.185
+          },
+          {
+            "ref": "event:7783829a-8e1a-462a-8b36-1596d568dd44",
+            "observed_at": "2026-09-16T15:06:51.214Z",
+            "freshness_s": 1254419.513
+          }
+        ]
       }
     },
     "conflicts": [],

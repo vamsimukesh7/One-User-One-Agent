@@ -67,6 +67,83 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2662862.541,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "naja-giha-d5",
+              "next_episode_id": "naja-giha-d5-s1e2",
+              "last_play_at": "2026-09-21T15:16:43.521000Z",
+              "sources": [
+                {
+                  "ref": "event:da1e2469-a2cc-49e2-80b8-9ce3e0e7a90d",
+                  "observed_at": "2026-09-08T03:53:13.391Z"
+                },
+                {
+                  "ref": "event:3ddf65a1-82af-4630-a9b8-4588622ee8dd",
+                  "observed_at": "2026-09-08T03:55:59.969Z"
+                },
+                {
+                  "ref": "event:79db7697-a1bd-4d18-806e-0f546012c4fd",
+                  "observed_at": "2026-09-09T05:59:59.129Z"
+                },
+                {
+                  "ref": "event:3b9856d1-c673-4e2f-ad1c-47dc4b994bfa",
+                  "observed_at": "2026-09-21T15:16:43.521Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "guko-lorina-d5",
+              "next_episode_id": "guko-lorina-d5-s1e1",
+              "last_play_at": "2026-09-18T03:15:03.392000Z",
+              "sources": [
+                {
+                  "ref": "event:87884533-f8a6-47e4-ae68-80dcf33e7dd2",
+                  "observed_at": "2026-09-18T03:15:03.392Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:da1e2469-a2cc-49e2-80b8-9ce3e0e7a90d",
+          "event:3ddf65a1-82af-4630-a9b8-4588622ee8dd",
+          "event:79db7697-a1bd-4d18-806e-0f546012c4fd",
+          "event:3b9856d1-c673-4e2f-ad1c-47dc4b994bfa",
+          "event:87884533-f8a6-47e4-ae68-80dcf33e7dd2"
+        ],
+        "observed_at": "2026-10-01T14:11:02.541000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:da1e2469-a2cc-49e2-80b8-9ce3e0e7a90d",
+            "observed_at": "2026-09-08T03:53:13.391Z",
+            "freshness_s": 2024269.15
+          },
+          {
+            "ref": "event:3ddf65a1-82af-4630-a9b8-4588622ee8dd",
+            "observed_at": "2026-09-08T03:55:59.969Z",
+            "freshness_s": 2024102.572
+          },
+          {
+            "ref": "event:79db7697-a1bd-4d18-806e-0f546012c4fd",
+            "observed_at": "2026-09-09T05:59:59.129Z",
+            "freshness_s": 1930263.412
+          },
+          {
+            "ref": "event:3b9856d1-c673-4e2f-ad1c-47dc4b994bfa",
+            "observed_at": "2026-09-21T15:16:43.521Z",
+            "freshness_s": 860059.02
+          },
+          {
+            "ref": "event:87884533-f8a6-47e4-ae68-80dcf33e7dd2",
+            "observed_at": "2026-09-18T03:15:03.392Z",
+            "freshness_s": 1162559.149
+          }
+        ]
       }
     },
     "conflicts": [
@@ -175,6 +252,83 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2648220.494,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "naja-giha-d5",
+                  "next_episode_id": "naja-giha-d5-s1e2",
+                  "last_play_at": "2026-09-21T15:16:43.521000Z",
+                  "sources": [
+                    {
+                      "ref": "event:da1e2469-a2cc-49e2-80b8-9ce3e0e7a90d",
+                      "observed_at": "2026-09-08T03:53:13.391Z"
+                    },
+                    {
+                      "ref": "event:3ddf65a1-82af-4630-a9b8-4588622ee8dd",
+                      "observed_at": "2026-09-08T03:55:59.969Z"
+                    },
+                    {
+                      "ref": "event:79db7697-a1bd-4d18-806e-0f546012c4fd",
+                      "observed_at": "2026-09-09T05:59:59.129Z"
+                    },
+                    {
+                      "ref": "event:3b9856d1-c673-4e2f-ad1c-47dc4b994bfa",
+                      "observed_at": "2026-09-21T15:16:43.521Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "guko-lorina-d5",
+                  "next_episode_id": "guko-lorina-d5-s1e1",
+                  "last_play_at": "2026-09-18T03:15:03.392000Z",
+                  "sources": [
+                    {
+                      "ref": "event:87884533-f8a6-47e4-ae68-80dcf33e7dd2",
+                      "observed_at": "2026-09-18T03:15:03.392Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:da1e2469-a2cc-49e2-80b8-9ce3e0e7a90d",
+              "event:3ddf65a1-82af-4630-a9b8-4588622ee8dd",
+              "event:79db7697-a1bd-4d18-806e-0f546012c4fd",
+              "event:3b9856d1-c673-4e2f-ad1c-47dc4b994bfa",
+              "event:87884533-f8a6-47e4-ae68-80dcf33e7dd2"
+            ],
+            "observed_at": "2026-10-01T10:07:00.494000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:da1e2469-a2cc-49e2-80b8-9ce3e0e7a90d",
+                "observed_at": "2026-09-08T03:53:13.391Z",
+                "freshness_s": 2009627.103
+              },
+              {
+                "ref": "event:3ddf65a1-82af-4630-a9b8-4588622ee8dd",
+                "observed_at": "2026-09-08T03:55:59.969Z",
+                "freshness_s": 2009460.525
+              },
+              {
+                "ref": "event:79db7697-a1bd-4d18-806e-0f546012c4fd",
+                "observed_at": "2026-09-09T05:59:59.129Z",
+                "freshness_s": 1915621.365
+              },
+              {
+                "ref": "event:3b9856d1-c673-4e2f-ad1c-47dc4b994bfa",
+                "observed_at": "2026-09-21T15:16:43.521Z",
+                "freshness_s": 845416.973
+              },
+              {
+                "ref": "event:87884533-f8a6-47e4-ae68-80dcf33e7dd2",
+                "observed_at": "2026-09-18T03:15:03.392Z",
+                "freshness_s": 1147917.102
+              }
+            ]
           }
         },
         "conflicts": [
@@ -199,6 +353,12 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
+        ]
+      },
       "actions": [
         "A-20ddda5a9f7215198707",
         "A-72eea68459b70cff2fca"
@@ -219,8 +379,8 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-005443",
-          "event:oua-005445"
+          "event:oua-005447",
+          "event:oua-005449"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

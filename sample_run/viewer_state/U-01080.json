@@ -67,6 +67,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2651255.286,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "gidi-dima-d1",
+              "next_episode_id": "gidi-dima-d1-s1e1",
+              "last_play_at": "2026-09-11T22:24:09.779000Z",
+              "sources": [
+                {
+                  "ref": "event:6c30e1c5-a34e-4224-8116-6868b8631966",
+                  "observed_at": "2026-09-11T22:24:09.779Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:6c30e1c5-a34e-4224-8116-6868b8631966"
+        ],
+        "observed_at": "2026-10-01T10:57:35.286000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:6c30e1c5-a34e-4224-8116-6868b8631966",
+            "observed_at": "2026-09-11T22:24:09.779Z",
+            "freshness_s": 1686805.507
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -80,7 +110,7 @@
   "latest_decision_id": "D-3f60c78577413420b471",
   "learning": [
     {
-      "goal_id": "G09",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -88,16 +118,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-d53622b2d0a5cc19daab",
+      "plan_id": "P-c8094164c8b4eeb04224",
       "user_id": "U-01080",
-      "goal_id": "G09",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T10:57:35.286000Z",
-      "deadline": "2026-10-15T10:57:35.286000Z",
+      "deadline": "2026-10-04T10:57:35.286000Z",
       "success": {
         "event": "play_started",
-        "condition": "on 3 distinct IST days",
-        "window_hours": 336
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "7e960984-1db3-4e4a-9482-7a3513b6daac",
@@ -167,6 +197,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2651255.286,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "gidi-dima-d1",
+                  "next_episode_id": "gidi-dima-d1-s1e1",
+                  "last_play_at": "2026-09-11T22:24:09.779000Z",
+                  "sources": [
+                    {
+                      "ref": "event:6c30e1c5-a34e-4224-8116-6868b8631966",
+                      "observed_at": "2026-09-11T22:24:09.779Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:6c30e1c5-a34e-4224-8116-6868b8631966"
+            ],
+            "observed_at": "2026-10-01T10:57:35.286000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:6c30e1c5-a34e-4224-8116-6868b8631966",
+                "observed_at": "2026-09-11T22:24:09.779Z",
+                "freshness_s": 1686805.507
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -176,32 +236,35 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [
         "A-3f60c78577413420b471"
       ],
+      "target_content_slug": "gidi-dima-d1",
+      "next_episode_id": "gidi-dima-d1-s1e1",
       "final_outcome": {
-        "plan_id": "P-d53622b2d0a5cc19daab",
+        "plan_id": "P-c8094164c8b4eeb04224",
         "user_id": "U-01080",
-        "goal_id": "G09",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T10:57:35.286000Z",
-        "deadline": "2026-10-15T10:57:35.286000Z",
+        "deadline": "2026-10-04T10:57:35.286000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
           "event": "play_started",
-          "condition": "on 3 distinct IST days",
-          "window_hours": 336
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
-        "exposure_refs": [
-          "event:oua-007069"
-        ],
+        "exposure_refs": [],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-15T10:57:35.286000Z"
+      "closed_at": "2026-10-04T10:57:35.286000Z"
     }
   ]
 }

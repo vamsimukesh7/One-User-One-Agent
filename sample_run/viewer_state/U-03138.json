@@ -67,6 +67,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2665965.535,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hapibha-d1",
+              "next_episode_id": "hapibha-d1-s1e1",
+              "last_play_at": "2026-09-26T06:11:15.819000Z",
+              "sources": [
+                {
+                  "ref": "event:1b68f58f-aedb-4722-a938-cff17254f12b",
+                  "observed_at": "2026-09-08T03:56:35.209Z"
+                },
+                {
+                  "ref": "event:0b21451b-8e64-42ee-b581-c59830cad156",
+                  "observed_at": "2026-09-26T06:11:15.819Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "suda-d1",
+              "next_episode_id": "suda-d1-s1e1",
+              "last_play_at": "2026-09-01T08:01:49.799000Z",
+              "sources": [
+                {
+                  "ref": "event:aadf4509-bab5-44aa-8841-aef24e5f626e",
+                  "observed_at": "2026-09-01T08:01:49.799Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:1b68f58f-aedb-4722-a938-cff17254f12b",
+          "event:0b21451b-8e64-42ee-b581-c59830cad156",
+          "event:aadf4509-bab5-44aa-8841-aef24e5f626e"
+        ],
+        "observed_at": "2026-10-01T15:02:45.535000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:1b68f58f-aedb-4722-a938-cff17254f12b",
+            "observed_at": "2026-09-08T03:56:35.209Z",
+            "freshness_s": 2027170.326
+          },
+          {
+            "ref": "event:0b21451b-8e64-42ee-b581-c59830cad156",
+            "observed_at": "2026-09-26T06:11:15.819Z",
+            "freshness_s": 463889.716
+          },
+          {
+            "ref": "event:aadf4509-bab5-44aa-8841-aef24e5f626e",
+            "observed_at": "2026-09-01T08:01:49.799Z",
+            "freshness_s": 2617255.736
+          }
+        ]
       }
     },
     "conflicts": [

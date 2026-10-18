@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2656644.204,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "tidha-dakachu-d1",
+              "next_episode_id": "tidha-dakachu-d1-s1e2",
+              "last_play_at": "2026-09-12T16:52:09.569000Z",
+              "sources": [
+                {
+                  "ref": "event:356b52e9-6796-4507-af12-c1933382bc5e",
+                  "observed_at": "2026-09-12T16:52:09.569Z"
+                },
+                {
+                  "ref": "event:44208e2e-9c6a-4ac4-82da-30947fa03440",
+                  "observed_at": "2026-09-12T17:17:53.940Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:356b52e9-6796-4507-af12-c1933382bc5e",
+          "event:44208e2e-9c6a-4ac4-82da-30947fa03440"
+        ],
+        "observed_at": "2026-10-01T12:27:24.204000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:356b52e9-6796-4507-af12-c1933382bc5e",
+            "observed_at": "2026-09-12T16:52:09.569Z",
+            "freshness_s": 1625714.635
+          },
+          {
+            "ref": "event:44208e2e-9c6a-4ac4-82da-30947fa03440",
+            "observed_at": "2026-09-12T17:17:53.940Z",
+            "freshness_s": 1624170.264
+          }
+        ]
       }
     },
     "conflicts": [],

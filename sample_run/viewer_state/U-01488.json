@@ -61,6 +61,66 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2639337.868,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "labha-d1",
+              "next_episode_id": "labha-d1-s1e3",
+              "last_play_at": "2026-09-22T14:48:19.973000Z",
+              "sources": [
+                {
+                  "ref": "event:60fe6b65-f0c5-49e7-9144-63553002e5f6",
+                  "observed_at": "2026-09-14T14:23:04.407Z"
+                },
+                {
+                  "ref": "event:d6f668e4-9f0c-422e-9db3-a975e414a3d9",
+                  "observed_at": "2026-09-14T14:44:15.368Z"
+                },
+                {
+                  "ref": "event:95498c09-5c58-497b-a4d7-576d05cc96c8",
+                  "observed_at": "2026-09-22T14:48:19.973Z"
+                },
+                {
+                  "ref": "event:03dbb087-7b8d-427b-abd5-a1003d9ad4ff",
+                  "observed_at": "2026-09-22T15:29:44.965Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:60fe6b65-f0c5-49e7-9144-63553002e5f6",
+          "event:d6f668e4-9f0c-422e-9db3-a975e414a3d9",
+          "event:95498c09-5c58-497b-a4d7-576d05cc96c8",
+          "event:03dbb087-7b8d-427b-abd5-a1003d9ad4ff"
+        ],
+        "observed_at": "2026-10-01T07:38:57.868000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:60fe6b65-f0c5-49e7-9144-63553002e5f6",
+            "observed_at": "2026-09-14T14:23:04.407Z",
+            "freshness_s": 1444553.461
+          },
+          {
+            "ref": "event:d6f668e4-9f0c-422e-9db3-a975e414a3d9",
+            "observed_at": "2026-09-14T14:44:15.368Z",
+            "freshness_s": 1443282.5
+          },
+          {
+            "ref": "event:95498c09-5c58-497b-a4d7-576d05cc96c8",
+            "observed_at": "2026-09-22T14:48:19.973Z",
+            "freshness_s": 751837.895
+          },
+          {
+            "ref": "event:03dbb087-7b8d-427b-abd5-a1003d9ad4ff",
+            "observed_at": "2026-09-22T15:29:44.965Z",
+            "freshness_s": 749352.903
+          }
+        ]
       }
     },
     "conflicts": [

@@ -61,6 +61,80 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2629970.259,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "tiko-subava-d4",
+              "next_episode_id": "tiko-subava-d4-s1e2",
+              "last_play_at": "2026-09-25T12:20:36.818000Z",
+              "sources": [
+                {
+                  "ref": "event:194d117c-6e6a-4deb-a502-bf5a1a906307",
+                  "observed_at": "2026-09-25T15:04:58.427Z"
+                },
+                {
+                  "ref": "event:0d69f949-5450-451e-951a-8243c9b3504a",
+                  "observed_at": "2026-09-25T15:08:39.983Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "bharipa-lanaro-d4",
+              "next_episode_id": "bharipa-lanaro-d4-s1e1",
+              "last_play_at": "2026-09-21T05:38:00.625000Z",
+              "sources": [
+                {
+                  "ref": "event:930e3821-02de-4f05-9c44-783e749f686d",
+                  "observed_at": "2026-09-21T05:38:00.625Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "radi-d4",
+              "next_episode_id": "radi-d4-s1e1",
+              "last_play_at": "2026-09-04T18:47:35.060000Z",
+              "sources": [
+                {
+                  "ref": "event:4465cda2-e46d-4495-b2b6-518e52e36b51",
+                  "observed_at": "2026-09-04T18:47:35.060Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:194d117c-6e6a-4deb-a502-bf5a1a906307",
+          "event:0d69f949-5450-451e-951a-8243c9b3504a",
+          "event:930e3821-02de-4f05-9c44-783e749f686d",
+          "event:4465cda2-e46d-4495-b2b6-518e52e36b51"
+        ],
+        "observed_at": "2026-10-01T05:02:50.259000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:194d117c-6e6a-4deb-a502-bf5a1a906307",
+            "observed_at": "2026-09-25T15:04:58.427Z",
+            "freshness_s": 482271.832
+          },
+          {
+            "ref": "event:0d69f949-5450-451e-951a-8243c9b3504a",
+            "observed_at": "2026-09-25T15:08:39.983Z",
+            "freshness_s": 482050.276
+          },
+          {
+            "ref": "event:930e3821-02de-4f05-9c44-783e749f686d",
+            "observed_at": "2026-09-21T05:38:00.625Z",
+            "freshness_s": 861889.634
+          },
+          {
+            "ref": "event:4465cda2-e46d-4495-b2b6-518e52e36b51",
+            "observed_at": "2026-09-04T18:47:35.060Z",
+            "freshness_s": 2283315.199
+          }
+        ]
       }
     },
     "conflicts": [],

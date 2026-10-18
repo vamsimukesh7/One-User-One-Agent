@@ -67,6 +67,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2662911.481,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "dani-jachuma-d2",
+              "next_episode_id": "dani-jachuma-d2-s1e1",
+              "last_play_at": "2026-09-19T06:06:40.836000Z",
+              "sources": [
+                {
+                  "ref": "event:854e6568-cdac-4661-9b97-e255e88eb8a0",
+                  "observed_at": "2026-09-19T06:06:40.836Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:854e6568-cdac-4661-9b97-e255e88eb8a0"
+        ],
+        "observed_at": "2026-10-01T14:11:51.481000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:854e6568-cdac-4661-9b97-e255e88eb8a0",
+            "observed_at": "2026-09-19T06:06:40.836Z",
+            "freshness_s": 1065910.645
+          }
+        ]
       }
     },
     "conflicts": [
@@ -88,7 +118,7 @@
   "latest_decision_id": "D-54eeefee734460aee523",
   "learning": [
     {
-      "goal_id": "G08",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -96,16 +126,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-734a9abb5ee7d64a70dd",
+      "plan_id": "P-6abf7a937bf12c1a6b5d",
       "user_id": "U-00989",
-      "goal_id": "G08",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T14:11:51.481000Z",
-      "deadline": "2026-10-08T14:11:51.481000Z",
+      "deadline": "2026-10-04T14:11:51.481000Z",
       "success": {
         "event": "play_started",
-        "condition": "a title released in the 30 days before the goal start",
-        "window_hours": 168
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "f05a457b-6933-4f31-bf33-2eaef815cc23",
@@ -175,6 +205,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2662911.481,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "dani-jachuma-d2",
+                  "next_episode_id": "dani-jachuma-d2-s1e1",
+                  "last_play_at": "2026-09-19T06:06:40.836000Z",
+                  "sources": [
+                    {
+                      "ref": "event:854e6568-cdac-4661-9b97-e255e88eb8a0",
+                      "observed_at": "2026-09-19T06:06:40.836Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:854e6568-cdac-4661-9b97-e255e88eb8a0"
+            ],
+            "observed_at": "2026-10-01T14:11:51.481000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:854e6568-cdac-4661-9b97-e255e88eb8a0",
+                "observed_at": "2026-09-19T06:06:40.836Z",
+                "freshness_s": 1065910.645
+              }
+            ]
           }
         },
         "conflicts": [
@@ -192,32 +252,35 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [
         "A-54eeefee734460aee523"
       ],
+      "target_content_slug": "dani-jachuma-d2",
+      "next_episode_id": "dani-jachuma-d2-s1e1",
       "final_outcome": {
-        "plan_id": "P-734a9abb5ee7d64a70dd",
+        "plan_id": "P-6abf7a937bf12c1a6b5d",
         "user_id": "U-00989",
-        "goal_id": "G08",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T14:11:51.481000Z",
-        "deadline": "2026-10-08T14:11:51.481000Z",
+        "deadline": "2026-10-04T14:11:51.481000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
           "event": "play_started",
-          "condition": "a title released in the 30 days before the goal start",
-          "window_hours": 168
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
-        "exposure_refs": [
-          "event:oua-006633"
-        ],
+        "exposure_refs": [],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T14:11:51.481000Z"
+      "closed_at": "2026-10-04T14:11:51.481000Z"
     }
   ]
 }

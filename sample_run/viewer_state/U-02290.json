@@ -61,6 +61,36 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2664562.627,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "hapibha-d1",
+              "next_episode_id": "hapibha-d1-s1e1",
+              "last_play_at": "2026-09-21T14:07:17.110000Z",
+              "sources": [
+                {
+                  "ref": "event:ceb218a2-b1e9-4d29-ad5f-9392ccb8c5ac",
+                  "observed_at": "2026-09-28T06:41:30.615Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:ceb218a2-b1e9-4d29-ad5f-9392ccb8c5ac"
+        ],
+        "observed_at": "2026-10-01T14:39:22.627000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:ceb218a2-b1e9-4d29-ad5f-9392ccb8c5ac",
+            "observed_at": "2026-09-28T06:41:30.615Z",
+            "freshness_s": 287872.012
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -156,6 +186,36 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2656316.972,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "hapibha-d1",
+                  "next_episode_id": "hapibha-d1-s1e1",
+                  "last_play_at": "2026-09-21T14:07:17.110000Z",
+                  "sources": [
+                    {
+                      "ref": "event:ceb218a2-b1e9-4d29-ad5f-9392ccb8c5ac",
+                      "observed_at": "2026-09-28T06:41:30.615Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:ceb218a2-b1e9-4d29-ad5f-9392ccb8c5ac"
+            ],
+            "observed_at": "2026-10-01T12:21:56.972000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:ceb218a2-b1e9-4d29-ad5f-9392ccb8c5ac",
+                "observed_at": "2026-09-28T06:41:30.615Z",
+                "freshness_s": 279626.357
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -164,6 +224,10 @@
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
+      },
+      "eligibility_rule": {
+        "text": "Has never completed an episode.",
+        "requires_no_prior_event": "episode_completed"
       },
       "actions": [
         "A-b40303aefe7ef32f6f9e"
@@ -184,7 +248,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-014674"
+          "event:oua-014673"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

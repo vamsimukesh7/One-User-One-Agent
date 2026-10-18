@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2672265.225,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "kavadha-rilo-d5",
+              "next_episode_id": "kavadha-rilo-d5-s1e2",
+              "last_play_at": "2026-09-03T03:58:09.900000Z",
+              "sources": [
+                {
+                  "ref": "event:f2af2445-fdca-44a9-b45b-be1596e657f8",
+                  "observed_at": "2026-09-03T03:58:09.900Z"
+                },
+                {
+                  "ref": "event:21131aa4-e3b1-4e7a-9ec7-805461663bba",
+                  "observed_at": "2026-09-03T04:26:41.407Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:f2af2445-fdca-44a9-b45b-be1596e657f8",
+          "event:21131aa4-e3b1-4e7a-9ec7-805461663bba"
+        ],
+        "observed_at": "2026-10-01T16:47:45.225000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:f2af2445-fdca-44a9-b45b-be1596e657f8",
+            "observed_at": "2026-09-03T03:58:09.900Z",
+            "freshness_s": 2465375.325
+          },
+          {
+            "ref": "event:21131aa4-e3b1-4e7a-9ec7-805461663bba",
+            "observed_at": "2026-09-03T04:26:41.407Z",
+            "freshness_s": 2463663.818
+          }
+        ]
       }
     },
     "conflicts": [],

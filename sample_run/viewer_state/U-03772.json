@@ -67,6 +67,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2637716.563,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "nisu-sapapa-d4",
+              "next_episode_id": "nisu-sapapa-d4-s1e2",
+              "last_play_at": "2026-09-28T07:01:13.764000Z",
+              "sources": [
+                {
+                  "ref": "event:a7dfa1e0-8035-4ce7-bbc0-5002ec7be9aa",
+                  "observed_at": "2026-09-15T06:40:23.230Z"
+                },
+                {
+                  "ref": "event:7b32e310-4575-4b69-ba77-09342c168c39",
+                  "observed_at": "2026-09-15T06:42:12.604Z"
+                },
+                {
+                  "ref": "event:87721a7b-c23c-4c4e-9c61-6569afb899d7",
+                  "observed_at": "2026-09-28T07:01:13.764Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:a7dfa1e0-8035-4ce7-bbc0-5002ec7be9aa",
+          "event:7b32e310-4575-4b69-ba77-09342c168c39",
+          "event:87721a7b-c23c-4c4e-9c61-6569afb899d7"
+        ],
+        "observed_at": "2026-10-01T07:11:56.563000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:a7dfa1e0-8035-4ce7-bbc0-5002ec7be9aa",
+            "observed_at": "2026-09-15T06:40:23.230Z",
+            "freshness_s": 1384293.333
+          },
+          {
+            "ref": "event:7b32e310-4575-4b69-ba77-09342c168c39",
+            "observed_at": "2026-09-15T06:42:12.604Z",
+            "freshness_s": 1384183.959
+          },
+          {
+            "ref": "event:87721a7b-c23c-4c4e-9c61-6569afb899d7",
+            "observed_at": "2026-09-28T07:01:13.764Z",
+            "freshness_s": 259842.799
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +217,56 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2637716.563,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "nisu-sapapa-d4",
+                  "next_episode_id": "nisu-sapapa-d4-s1e2",
+                  "last_play_at": "2026-09-28T07:01:13.764000Z",
+                  "sources": [
+                    {
+                      "ref": "event:a7dfa1e0-8035-4ce7-bbc0-5002ec7be9aa",
+                      "observed_at": "2026-09-15T06:40:23.230Z"
+                    },
+                    {
+                      "ref": "event:7b32e310-4575-4b69-ba77-09342c168c39",
+                      "observed_at": "2026-09-15T06:42:12.604Z"
+                    },
+                    {
+                      "ref": "event:87721a7b-c23c-4c4e-9c61-6569afb899d7",
+                      "observed_at": "2026-09-28T07:01:13.764Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:a7dfa1e0-8035-4ce7-bbc0-5002ec7be9aa",
+              "event:7b32e310-4575-4b69-ba77-09342c168c39",
+              "event:87721a7b-c23c-4c4e-9c61-6569afb899d7"
+            ],
+            "observed_at": "2026-10-01T07:11:56.563000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:a7dfa1e0-8035-4ce7-bbc0-5002ec7be9aa",
+                "observed_at": "2026-09-15T06:40:23.230Z",
+                "freshness_s": 1384293.333
+              },
+              {
+                "ref": "event:7b32e310-4575-4b69-ba77-09342c168c39",
+                "observed_at": "2026-09-15T06:42:12.604Z",
+                "freshness_s": 1384183.959
+              },
+              {
+                "ref": "event:87721a7b-c23c-4c4e-9c61-6569afb899d7",
+                "observed_at": "2026-09-28T07:01:13.764Z",
+                "freshness_s": 259842.799
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +274,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -195,7 +301,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-023959"
+          "event:oua-023961"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

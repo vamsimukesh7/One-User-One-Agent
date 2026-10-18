@@ -67,6 +67,76 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2672695.778,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bhaja-moguba-d2",
+              "next_episode_id": "bhaja-moguba-d2-s1e3",
+              "last_play_at": "2026-09-22T02:19:08.370000Z",
+              "sources": [
+                {
+                  "ref": "event:3841639e-7594-48fe-89ae-4624112aafbc",
+                  "observed_at": "2026-09-10T14:04:31.458Z"
+                },
+                {
+                  "ref": "event:d2525b9e-c45e-484b-9ed7-f4042663d46a",
+                  "observed_at": "2026-09-10T14:08:10.249Z"
+                },
+                {
+                  "ref": "event:2fbf6dcc-4a6c-4767-8eca-aa9b9fccf317",
+                  "observed_at": "2026-09-12T06:41:20.348Z"
+                },
+                {
+                  "ref": "event:dd7169e4-6d52-4cd1-8e06-84c0eab749fd",
+                  "observed_at": "2026-09-22T02:19:08.370Z"
+                },
+                {
+                  "ref": "event:10ca87b5-65bf-4782-a7c6-ea70676ba4cf",
+                  "observed_at": "2026-09-22T02:22:48.747Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:3841639e-7594-48fe-89ae-4624112aafbc",
+          "event:d2525b9e-c45e-484b-9ed7-f4042663d46a",
+          "event:2fbf6dcc-4a6c-4767-8eca-aa9b9fccf317",
+          "event:dd7169e4-6d52-4cd1-8e06-84c0eab749fd",
+          "event:10ca87b5-65bf-4782-a7c6-ea70676ba4cf"
+        ],
+        "observed_at": "2026-10-01T16:54:55.778000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:3841639e-7594-48fe-89ae-4624112aafbc",
+            "observed_at": "2026-09-10T14:04:31.458Z",
+            "freshness_s": 1824624.32
+          },
+          {
+            "ref": "event:d2525b9e-c45e-484b-9ed7-f4042663d46a",
+            "observed_at": "2026-09-10T14:08:10.249Z",
+            "freshness_s": 1824405.529
+          },
+          {
+            "ref": "event:2fbf6dcc-4a6c-4767-8eca-aa9b9fccf317",
+            "observed_at": "2026-09-12T06:41:20.348Z",
+            "freshness_s": 1678415.43
+          },
+          {
+            "ref": "event:dd7169e4-6d52-4cd1-8e06-84c0eab749fd",
+            "observed_at": "2026-09-22T02:19:08.370Z",
+            "freshness_s": 830147.408
+          },
+          {
+            "ref": "event:10ca87b5-65bf-4782-a7c6-ea70676ba4cf",
+            "observed_at": "2026-09-22T02:22:48.747Z",
+            "freshness_s": 829927.031
+          }
+        ]
       }
     },
     "conflicts": [
@@ -175,6 +245,76 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2672695.778,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "bhaja-moguba-d2",
+                  "next_episode_id": "bhaja-moguba-d2-s1e3",
+                  "last_play_at": "2026-09-22T02:19:08.370000Z",
+                  "sources": [
+                    {
+                      "ref": "event:3841639e-7594-48fe-89ae-4624112aafbc",
+                      "observed_at": "2026-09-10T14:04:31.458Z"
+                    },
+                    {
+                      "ref": "event:d2525b9e-c45e-484b-9ed7-f4042663d46a",
+                      "observed_at": "2026-09-10T14:08:10.249Z"
+                    },
+                    {
+                      "ref": "event:2fbf6dcc-4a6c-4767-8eca-aa9b9fccf317",
+                      "observed_at": "2026-09-12T06:41:20.348Z"
+                    },
+                    {
+                      "ref": "event:dd7169e4-6d52-4cd1-8e06-84c0eab749fd",
+                      "observed_at": "2026-09-22T02:19:08.370Z"
+                    },
+                    {
+                      "ref": "event:10ca87b5-65bf-4782-a7c6-ea70676ba4cf",
+                      "observed_at": "2026-09-22T02:22:48.747Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:3841639e-7594-48fe-89ae-4624112aafbc",
+              "event:d2525b9e-c45e-484b-9ed7-f4042663d46a",
+              "event:2fbf6dcc-4a6c-4767-8eca-aa9b9fccf317",
+              "event:dd7169e4-6d52-4cd1-8e06-84c0eab749fd",
+              "event:10ca87b5-65bf-4782-a7c6-ea70676ba4cf"
+            ],
+            "observed_at": "2026-10-01T16:54:55.778000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:3841639e-7594-48fe-89ae-4624112aafbc",
+                "observed_at": "2026-09-10T14:04:31.458Z",
+                "freshness_s": 1824624.32
+              },
+              {
+                "ref": "event:d2525b9e-c45e-484b-9ed7-f4042663d46a",
+                "observed_at": "2026-09-10T14:08:10.249Z",
+                "freshness_s": 1824405.529
+              },
+              {
+                "ref": "event:2fbf6dcc-4a6c-4767-8eca-aa9b9fccf317",
+                "observed_at": "2026-09-12T06:41:20.348Z",
+                "freshness_s": 1678415.43
+              },
+              {
+                "ref": "event:dd7169e4-6d52-4cd1-8e06-84c0eab749fd",
+                "observed_at": "2026-09-22T02:19:08.370Z",
+                "freshness_s": 830147.408
+              },
+              {
+                "ref": "event:10ca87b5-65bf-4782-a7c6-ea70676ba4cf",
+                "observed_at": "2026-09-22T02:22:48.747Z",
+                "freshness_s": 829927.031
+              }
+            ]
           }
         },
         "conflicts": [
@@ -190,6 +330,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -210,13 +356,13 @@
           "window_hours": 336
         },
         "signal_refs": [
-          "event:oua-016275",
-          "event:oua-016278",
-          "event:oua-016282",
-          "event:oua-016285"
+          "event:oua-016273",
+          "event:oua-016276",
+          "event:oua-016280",
+          "event:oua-016283"
         ],
         "exposure_refs": [
-          "event:oua-016268"
+          "event:oua-016266"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

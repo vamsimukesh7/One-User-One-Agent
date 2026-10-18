@@ -67,6 +67,63 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2628996.486,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e2",
+              "last_play_at": "2026-09-23T03:41:16.433000Z",
+              "sources": [
+                {
+                  "ref": "event:74285722-853a-4cf0-ab97-6db85e591839",
+                  "observed_at": "2026-09-23T03:41:16.433Z"
+                },
+                {
+                  "ref": "event:4fb00652-f14a-4d2b-8a99-9a6bf252d04a",
+                  "observed_at": "2026-09-23T03:44:01.284Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e1",
+              "last_play_at": "2026-09-22T17:22:48.768000Z",
+              "sources": [
+                {
+                  "ref": "event:281d09cf-2a76-453e-aa65-8397d8323264",
+                  "observed_at": "2026-09-22T17:22:48.768Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:74285722-853a-4cf0-ab97-6db85e591839",
+          "event:4fb00652-f14a-4d2b-8a99-9a6bf252d04a",
+          "event:281d09cf-2a76-453e-aa65-8397d8323264"
+        ],
+        "observed_at": "2026-10-01T04:46:36.486000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:74285722-853a-4cf0-ab97-6db85e591839",
+            "observed_at": "2026-09-23T03:41:16.433Z",
+            "freshness_s": 695120.053
+          },
+          {
+            "ref": "event:4fb00652-f14a-4d2b-8a99-9a6bf252d04a",
+            "observed_at": "2026-09-23T03:44:01.284Z",
+            "freshness_s": 694955.202
+          },
+          {
+            "ref": "event:281d09cf-2a76-453e-aa65-8397d8323264",
+            "observed_at": "2026-09-22T17:22:48.768Z",
+            "freshness_s": 732227.718
+          }
+        ]
       }
     },
     "conflicts": [],

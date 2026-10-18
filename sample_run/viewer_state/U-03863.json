@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2667998.738,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "bagugu-gigupi-d1",
+              "next_episode_id": "bagugu-gigupi-d1-s1e2",
+              "last_play_at": "2026-09-06T22:15:48.037000Z",
+              "sources": [
+                {
+                  "ref": "event:5920135b-935a-4594-99ed-9aba10491bf8",
+                  "observed_at": "2026-09-06T22:15:48.037Z"
+                },
+                {
+                  "ref": "event:b81c4d34-1b75-4f1e-9876-2b931886730c",
+                  "observed_at": "2026-09-06T22:56:19.012Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:5920135b-935a-4594-99ed-9aba10491bf8",
+          "event:b81c4d34-1b75-4f1e-9876-2b931886730c"
+        ],
+        "observed_at": "2026-10-01T15:36:38.738000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:5920135b-935a-4594-99ed-9aba10491bf8",
+            "observed_at": "2026-09-06T22:15:48.037Z",
+            "freshness_s": 2136050.701
+          },
+          {
+            "ref": "event:b81c4d34-1b75-4f1e-9876-2b931886730c",
+            "observed_at": "2026-09-06T22:56:19.012Z",
+            "freshness_s": 2133619.726
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -76,7 +116,7 @@
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     {
-      "goal_id": "G05",
+      "goal_id": "G07",
       "result": "failed",
       "intervention": "inconclusive_no_linked_success",
       "lesson": "Do not equate publishing with seeing or observing success with causation."
@@ -84,16 +124,16 @@
   ],
   "plans": [
     {
-      "plan_id": "P-d3ca7df38b6b655229be",
+      "plan_id": "P-bf124215b8e4b85a2200",
       "user_id": "U-03863",
-      "goal_id": "G05",
+      "goal_id": "G07",
       "status": "failed",
       "started_at": "2026-10-01T05:46:37.309000Z",
-      "deadline": "2026-10-08T05:46:37.309000Z",
+      "deadline": "2026-10-04T05:46:37.309000Z",
       "success": {
-        "event": "purchase_completed",
-        "condition": "is_trial = false",
-        "window_hours": 168
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
       },
       "rule_version": "2026-09-30",
       "trigger_event_id": "0dde7c8f-89cb-4da0-b63f-443459f0f759",
@@ -157,6 +197,46 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2632597.309,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "bagugu-gigupi-d1",
+                  "next_episode_id": "bagugu-gigupi-d1-s1e2",
+                  "last_play_at": "2026-09-06T22:15:48.037000Z",
+                  "sources": [
+                    {
+                      "ref": "event:5920135b-935a-4594-99ed-9aba10491bf8",
+                      "observed_at": "2026-09-06T22:15:48.037Z"
+                    },
+                    {
+                      "ref": "event:b81c4d34-1b75-4f1e-9876-2b931886730c",
+                      "observed_at": "2026-09-06T22:56:19.012Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:5920135b-935a-4594-99ed-9aba10491bf8",
+              "event:b81c4d34-1b75-4f1e-9876-2b931886730c"
+            ],
+            "observed_at": "2026-10-01T05:46:37.309000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:5920135b-935a-4594-99ed-9aba10491bf8",
+                "observed_at": "2026-09-06T22:15:48.037Z",
+                "freshness_s": 2100649.272
+              },
+              {
+                "ref": "event:b81c4d34-1b75-4f1e-9876-2b931886730c",
+                "observed_at": "2026-09-06T22:56:19.012Z",
+                "freshness_s": 2098218.297
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -166,20 +246,25 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days."
+      },
       "actions": [],
+      "target_content_slug": "bagugu-gigupi-d1",
+      "next_episode_id": "bagugu-gigupi-d1-s1e2",
       "final_outcome": {
-        "plan_id": "P-d3ca7df38b6b655229be",
+        "plan_id": "P-bf124215b8e4b85a2200",
         "user_id": "U-03863",
-        "goal_id": "G05",
+        "goal_id": "G07",
         "rule_version": "2026-09-30",
         "started_at": "2026-10-01T05:46:37.309000Z",
-        "deadline": "2026-10-08T05:46:37.309000Z",
+        "deadline": "2026-10-04T05:46:37.309000Z",
         "status": "failed",
         "reason": "no_success_signal_by_deadline_under_complete_feed_assumption",
         "success_signal": {
-          "event": "purchase_completed",
-          "condition": "is_trial = false",
-          "window_hours": 168
+          "event": "play_started",
+          "condition": "same content_slug as the unfinished series",
+          "window_hours": 72
         },
         "signal_refs": [],
         "exposure_refs": [],
@@ -187,7 +272,7 @@
         "intervention_judgment": "inconclusive_no_linked_success",
         "attribution_note": "Temporal same-session exposure is association only. Randomized ITT estimates population effect."
       },
-      "closed_at": "2026-10-08T05:46:37.309000Z"
+      "closed_at": "2026-10-04T05:46:37.309000Z"
     }
   ]
 }

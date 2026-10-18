@@ -61,6 +61,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2603699.072,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yane-tegi-d3",
+              "next_episode_id": "yane-tegi-d3-s1e1",
+              "last_play_at": "2026-09-10T10:43:20.872000Z",
+              "sources": [
+                {
+                  "ref": "event:494b47d9-0cae-4481-bfc5-9a82e11701a1",
+                  "observed_at": "2026-09-07T11:47:01.062Z"
+                },
+                {
+                  "ref": "event:e5a41087-c624-4c15-b65e-f363b5a42c01",
+                  "observed_at": "2026-09-10T06:43:05.060Z"
+                },
+                {
+                  "ref": "event:b0858480-2cac-4f0f-8c78-0d22b2cbdbb6",
+                  "observed_at": "2026-09-10T10:43:20.872Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:494b47d9-0cae-4481-bfc5-9a82e11701a1",
+          "event:e5a41087-c624-4c15-b65e-f363b5a42c01",
+          "event:b0858480-2cac-4f0f-8c78-0d22b2cbdbb6"
+        ],
+        "observed_at": "2026-09-30T21:44:59.072000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:494b47d9-0cae-4481-bfc5-9a82e11701a1",
+            "observed_at": "2026-09-07T11:47:01.062Z",
+            "freshness_s": 2023078.01
+          },
+          {
+            "ref": "event:e5a41087-c624-4c15-b65e-f363b5a42c01",
+            "observed_at": "2026-09-10T06:43:05.060Z",
+            "freshness_s": 1782114.012
+          },
+          {
+            "ref": "event:b0858480-2cac-4f0f-8c78-0d22b2cbdbb6",
+            "observed_at": "2026-09-10T10:43:20.872Z",
+            "freshness_s": 1767698.2
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -76,6 +126,6 @@
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy",
     "model_call_skipped: no actionable uncertainty or budget; deterministic policy"
   ],
-  "state_updated_at": "2026-10-01T04:21:35.037Z",
+  "state_updated_at": "2026-10-01T04:21:35.037000Z",
   "plans": []
 }

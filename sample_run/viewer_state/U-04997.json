@@ -61,6 +61,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2639520.341,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "dhapipa-gini-d2",
+              "next_episode_id": "dhapipa-gini-d2-s1e1",
+              "last_play_at": "2026-09-17T14:21:13.250000Z",
+              "sources": [
+                {
+                  "ref": "event:12e04e4e-6fa9-4d06-997b-3366c61666b7",
+                  "observed_at": "2026-09-17T14:21:13.250Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e1",
+              "last_play_at": "2026-09-11T03:30:27.638000Z",
+              "sources": [
+                {
+                  "ref": "event:390f02e8-c6c7-46ff-b550-9b9031b97803",
+                  "observed_at": "2026-09-11T03:31:43.009Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:12e04e4e-6fa9-4d06-997b-3366c61666b7",
+          "event:390f02e8-c6c7-46ff-b550-9b9031b97803"
+        ],
+        "observed_at": "2026-10-01T07:42:00.341000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:12e04e4e-6fa9-4d06-997b-3366c61666b7",
+            "observed_at": "2026-09-17T14:21:13.250Z",
+            "freshness_s": 1185647.091
+          },
+          {
+            "ref": "event:390f02e8-c6c7-46ff-b550-9b9031b97803",
+            "observed_at": "2026-09-11T03:31:43.009Z",
+            "freshness_s": 1743017.332
+          }
+        ]
       }
     },
     "conflicts": [

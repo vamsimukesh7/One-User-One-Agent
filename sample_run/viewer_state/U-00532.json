@@ -67,6 +67,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2628939.435,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "radi-d4",
+              "next_episode_id": "radi-d4-s1e1",
+              "last_play_at": "2026-09-25T16:13:19.914000Z",
+              "sources": [
+                {
+                  "ref": "event:b0cd8f11-6270-47b9-bf81-5b33578ed8eb",
+                  "observed_at": "2026-09-25T16:47:23.714Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "bagi-baya-d4",
+              "next_episode_id": "bagi-baya-d4-s1e1",
+              "last_play_at": "2026-09-06T11:47:56.438000Z",
+              "sources": [
+                {
+                  "ref": "event:e557ef3d-7153-4079-b07e-370c67439608",
+                  "observed_at": "2026-09-06T11:47:56.438Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:b0cd8f11-6270-47b9-bf81-5b33578ed8eb",
+          "event:e557ef3d-7153-4079-b07e-370c67439608"
+        ],
+        "observed_at": "2026-10-01T04:45:39.435000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:b0cd8f11-6270-47b9-bf81-5b33578ed8eb",
+            "observed_at": "2026-09-25T16:47:23.714Z",
+            "freshness_s": 475095.721
+          },
+          {
+            "ref": "event:e557ef3d-7153-4079-b07e-370c67439608",
+            "observed_at": "2026-09-06T11:47:56.438Z",
+            "freshness_s": 2134662.997
+          }
+        ]
       }
     },
     "conflicts": [

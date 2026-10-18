@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2628918.192,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "lomobha-moni-d3",
+              "next_episode_id": "lomobha-moni-d3-s1e2",
+              "last_play_at": "2026-09-22T07:09:48.436000Z",
+              "sources": [
+                {
+                  "ref": "event:e17f7667-965b-48d0-bf79-9f14dae0df89",
+                  "observed_at": "2026-09-22T18:32:12.776Z"
+                },
+                {
+                  "ref": "event:dae10bca-9124-478f-a52b-6e10fb6b7d85",
+                  "observed_at": "2026-09-22T18:34:04.599Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:e17f7667-965b-48d0-bf79-9f14dae0df89",
+          "event:dae10bca-9124-478f-a52b-6e10fb6b7d85"
+        ],
+        "observed_at": "2026-10-01T04:45:18.192000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:e17f7667-965b-48d0-bf79-9f14dae0df89",
+            "observed_at": "2026-09-22T18:32:12.776Z",
+            "freshness_s": 727985.416
+          },
+          {
+            "ref": "event:dae10bca-9124-478f-a52b-6e10fb6b7d85",
+            "observed_at": "2026-09-22T18:34:04.599Z",
+            "freshness_s": 727873.593
+          }
+        ]
       }
     },
     "conflicts": [],

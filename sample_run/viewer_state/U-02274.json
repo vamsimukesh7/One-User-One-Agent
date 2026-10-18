@@ -67,6 +67,73 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2656301.419,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "guka-kosusa-d2",
+              "next_episode_id": "guka-kosusa-d2-s1e1",
+              "last_play_at": "2026-09-28T03:43:03.465000Z",
+              "sources": [
+                {
+                  "ref": "event:dc1b64ff-12b6-448e-86f3-68526f649324",
+                  "observed_at": "2026-09-11T13:31:14.625Z"
+                },
+                {
+                  "ref": "event:02f3b1ea-0af7-475f-80a4-c48a1b31dde8",
+                  "observed_at": "2026-09-28T03:43:03.465Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "dhapipa-gini-d2",
+              "next_episode_id": "dhapipa-gini-d2-s1e1",
+              "last_play_at": "2026-09-21T14:47:11.731000Z",
+              "sources": [
+                {
+                  "ref": "event:29733359-4b50-4d29-86cc-b5cf6c0221b7",
+                  "observed_at": "2026-09-06T17:34:33.171Z"
+                },
+                {
+                  "ref": "event:449a1c87-7ee6-4bba-ad42-82224bb61ec8",
+                  "observed_at": "2026-09-25T20:15:28.912Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:dc1b64ff-12b6-448e-86f3-68526f649324",
+          "event:02f3b1ea-0af7-475f-80a4-c48a1b31dde8",
+          "event:29733359-4b50-4d29-86cc-b5cf6c0221b7",
+          "event:449a1c87-7ee6-4bba-ad42-82224bb61ec8"
+        ],
+        "observed_at": "2026-10-01T12:21:41.419000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:dc1b64ff-12b6-448e-86f3-68526f649324",
+            "observed_at": "2026-09-11T13:31:14.625Z",
+            "freshness_s": 1723826.794
+          },
+          {
+            "ref": "event:02f3b1ea-0af7-475f-80a4-c48a1b31dde8",
+            "observed_at": "2026-09-28T03:43:03.465Z",
+            "freshness_s": 290317.954
+          },
+          {
+            "ref": "event:29733359-4b50-4d29-86cc-b5cf6c0221b7",
+            "observed_at": "2026-09-06T17:34:33.171Z",
+            "freshness_s": 2141228.248
+          },
+          {
+            "ref": "event:449a1c87-7ee6-4bba-ad42-82224bb61ec8",
+            "observed_at": "2026-09-25T20:15:28.912Z",
+            "freshness_s": 489972.507
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -167,6 +234,73 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2656301.419,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "guka-kosusa-d2",
+                  "next_episode_id": "guka-kosusa-d2-s1e1",
+                  "last_play_at": "2026-09-28T03:43:03.465000Z",
+                  "sources": [
+                    {
+                      "ref": "event:dc1b64ff-12b6-448e-86f3-68526f649324",
+                      "observed_at": "2026-09-11T13:31:14.625Z"
+                    },
+                    {
+                      "ref": "event:02f3b1ea-0af7-475f-80a4-c48a1b31dde8",
+                      "observed_at": "2026-09-28T03:43:03.465Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "dhapipa-gini-d2",
+                  "next_episode_id": "dhapipa-gini-d2-s1e1",
+                  "last_play_at": "2026-09-21T14:47:11.731000Z",
+                  "sources": [
+                    {
+                      "ref": "event:29733359-4b50-4d29-86cc-b5cf6c0221b7",
+                      "observed_at": "2026-09-06T17:34:33.171Z"
+                    },
+                    {
+                      "ref": "event:449a1c87-7ee6-4bba-ad42-82224bb61ec8",
+                      "observed_at": "2026-09-25T20:15:28.912Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:dc1b64ff-12b6-448e-86f3-68526f649324",
+              "event:02f3b1ea-0af7-475f-80a4-c48a1b31dde8",
+              "event:29733359-4b50-4d29-86cc-b5cf6c0221b7",
+              "event:449a1c87-7ee6-4bba-ad42-82224bb61ec8"
+            ],
+            "observed_at": "2026-10-01T12:21:41.419000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:dc1b64ff-12b6-448e-86f3-68526f649324",
+                "observed_at": "2026-09-11T13:31:14.625Z",
+                "freshness_s": 1723826.794
+              },
+              {
+                "ref": "event:02f3b1ea-0af7-475f-80a4-c48a1b31dde8",
+                "observed_at": "2026-09-28T03:43:03.465Z",
+                "freshness_s": 290317.954
+              },
+              {
+                "ref": "event:29733359-4b50-4d29-86cc-b5cf6c0221b7",
+                "observed_at": "2026-09-06T17:34:33.171Z",
+                "freshness_s": 2141228.248
+              },
+              {
+                "ref": "event:449a1c87-7ee6-4bba-ad42-82224bb61ec8",
+                "observed_at": "2026-09-25T20:15:28.912Z",
+                "freshness_s": 489972.507
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -174,6 +308,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [
@@ -195,7 +335,7 @@
         },
         "signal_refs": [],
         "exposure_refs": [
-          "event:oua-014594"
+          "event:oua-014593"
         ],
         "associated_signal_refs": [],
         "intervention_judgment": "inconclusive_no_linked_success",

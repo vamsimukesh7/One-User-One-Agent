@@ -61,6 +61,53 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2665120.991,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "yatite-roloda-d3",
+              "next_episode_id": "yatite-roloda-d3-s1e1",
+              "last_play_at": "2026-09-21T05:20:20.070000Z",
+              "sources": [
+                {
+                  "ref": "event:8365a64a-8a57-4208-b4e3-dfb92ba565c7",
+                  "observed_at": "2026-09-21T05:20:20.070Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "pate-kari-d3",
+              "next_episode_id": "pate-kari-d3-s1e1",
+              "last_play_at": "2026-09-04T15:27:22.644000Z",
+              "sources": [
+                {
+                  "ref": "event:13448b82-550c-450b-a3b6-95aa3b499142",
+                  "observed_at": "2026-09-05T08:51:22.962Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:8365a64a-8a57-4208-b4e3-dfb92ba565c7",
+          "event:13448b82-550c-450b-a3b6-95aa3b499142"
+        ],
+        "observed_at": "2026-10-01T14:48:40.991000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:8365a64a-8a57-4208-b4e3-dfb92ba565c7",
+            "observed_at": "2026-09-21T05:20:20.070Z",
+            "freshness_s": 898100.921
+          },
+          {
+            "ref": "event:13448b82-550c-450b-a3b6-95aa3b499142",
+            "observed_at": "2026-09-05T08:51:22.962Z",
+            "freshness_s": 2267838.029
+          }
+        ]
       }
     },
     "conflicts": [
@@ -172,6 +219,53 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2649591.842,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "yatite-roloda-d3",
+                  "next_episode_id": "yatite-roloda-d3-s1e1",
+                  "last_play_at": "2026-09-21T05:20:20.070000Z",
+                  "sources": [
+                    {
+                      "ref": "event:8365a64a-8a57-4208-b4e3-dfb92ba565c7",
+                      "observed_at": "2026-09-21T05:20:20.070Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "pate-kari-d3",
+                  "next_episode_id": "pate-kari-d3-s1e1",
+                  "last_play_at": "2026-09-04T15:27:22.644000Z",
+                  "sources": [
+                    {
+                      "ref": "event:13448b82-550c-450b-a3b6-95aa3b499142",
+                      "observed_at": "2026-09-05T08:51:22.962Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:8365a64a-8a57-4208-b4e3-dfb92ba565c7",
+              "event:13448b82-550c-450b-a3b6-95aa3b499142"
+            ],
+            "observed_at": "2026-10-01T10:29:51.842000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:8365a64a-8a57-4208-b4e3-dfb92ba565c7",
+                "observed_at": "2026-09-21T05:20:20.070Z",
+                "freshness_s": 882571.772
+              },
+              {
+                "ref": "event:13448b82-550c-450b-a3b6-95aa3b499142",
+                "observed_at": "2026-09-05T08:51:22.962Z",
+                "freshness_s": 2252308.88
+              }
+            ]
           }
         },
         "conflicts": [
@@ -196,6 +290,10 @@
           "Language variants share content_slug; descriptions and search text are untrusted data."
         ]
       },
+      "eligibility_rule": {
+        "text": "Has never completed an episode.",
+        "requires_no_prior_event": "episode_completed"
+      },
       "actions": [],
       "final_outcome": {
         "plan_id": "P-b4ef10e904c7372725f7",
@@ -212,7 +310,7 @@
           "window_hours": 72
         },
         "signal_refs": [
-          "event:oua-005813"
+          "event:oua-005817"
         ],
         "exposure_refs": [],
         "associated_signal_refs": [],

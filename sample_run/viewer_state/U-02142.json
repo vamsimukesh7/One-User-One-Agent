@@ -61,6 +61,46 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2631186.573,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e2",
+              "last_play_at": "2026-09-28T03:08:39.845000Z",
+              "sources": [
+                {
+                  "ref": "event:ea1a3197-8999-4f9d-88e1-d4b8d192a3f3",
+                  "observed_at": "2026-09-28T03:08:39.845Z"
+                },
+                {
+                  "ref": "event:5f940bec-d613-40a3-a56d-58801fd03195",
+                  "observed_at": "2026-09-28T03:49:08.116Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:ea1a3197-8999-4f9d-88e1-d4b8d192a3f3",
+          "event:5f940bec-d613-40a3-a56d-58801fd03195"
+        ],
+        "observed_at": "2026-10-01T05:23:06.573000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:ea1a3197-8999-4f9d-88e1-d4b8d192a3f3",
+            "observed_at": "2026-09-28T03:08:39.845Z",
+            "freshness_s": 267266.728
+          },
+          {
+            "ref": "event:5f940bec-d613-40a3-a56d-58801fd03195",
+            "observed_at": "2026-09-28T03:49:08.116Z",
+            "freshness_s": 264838.457
+          }
+        ]
       }
     },
     "conflicts": [],

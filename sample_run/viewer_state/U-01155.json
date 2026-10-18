@@ -61,6 +61,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2676359.401,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "molo-d2",
+              "next_episode_id": "molo-d2-s1e1",
+              "last_play_at": "2026-09-20T13:11:21.672000Z",
+              "sources": [
+                {
+                  "ref": "event:d37572f9-eb1c-415a-9996-8c4eabc7cda0",
+                  "observed_at": "2026-09-20T02:09:53.286Z"
+                },
+                {
+                  "ref": "event:17dfc8e2-e052-4048-b2e6-4ed99574f37d",
+                  "observed_at": "2026-09-20T13:11:21.672Z"
+                },
+                {
+                  "ref": "event:b5b0c9f8-e3d2-400e-a1e3-2435985a61b2",
+                  "observed_at": "2026-09-20T15:30:20.468Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:d37572f9-eb1c-415a-9996-8c4eabc7cda0",
+          "event:17dfc8e2-e052-4048-b2e6-4ed99574f37d",
+          "event:b5b0c9f8-e3d2-400e-a1e3-2435985a61b2"
+        ],
+        "observed_at": "2026-10-01T17:55:59.401000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:d37572f9-eb1c-415a-9996-8c4eabc7cda0",
+            "observed_at": "2026-09-20T02:09:53.286Z",
+            "freshness_s": 1007166.115
+          },
+          {
+            "ref": "event:17dfc8e2-e052-4048-b2e6-4ed99574f37d",
+            "observed_at": "2026-09-20T13:11:21.672Z",
+            "freshness_s": 967477.729
+          },
+          {
+            "ref": "event:b5b0c9f8-e3d2-400e-a1e3-2435985a61b2",
+            "observed_at": "2026-09-20T15:30:20.468Z",
+            "freshness_s": 959138.933
+          }
+        ]
       }
     },
     "conflicts": [],

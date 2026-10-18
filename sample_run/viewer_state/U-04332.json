@@ -67,6 +67,123 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2633031.63,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "radi-d4",
+              "next_episode_id": "radi-d4-s1e5",
+              "last_play_at": "2026-09-13T07:24:22.109000Z",
+              "sources": [
+                {
+                  "ref": "event:16a79b69-4779-4e80-aaf5-74620d53643d",
+                  "observed_at": "2026-09-08T07:42:45.496Z"
+                },
+                {
+                  "ref": "event:d0bc7c21-736a-49f5-b560-c879964088b2",
+                  "observed_at": "2026-09-08T07:44:36.226Z"
+                },
+                {
+                  "ref": "event:95750a0c-eb56-4353-ac22-334ded96b4aa",
+                  "observed_at": "2026-09-08T11:34:58.482Z"
+                },
+                {
+                  "ref": "event:f22aeae0-7e1a-4875-9b02-7db8870aba17",
+                  "observed_at": "2026-09-08T11:37:45.141Z"
+                },
+                {
+                  "ref": "event:9dcd0297-be70-4791-a26f-a6bff291c6c3",
+                  "observed_at": "2026-09-11T09:32:08.859Z"
+                },
+                {
+                  "ref": "event:ad428531-4df4-44cd-93a9-51b36541cbcb",
+                  "observed_at": "2026-09-11T09:35:49.822Z"
+                },
+                {
+                  "ref": "event:4139540a-af9a-4c1b-ad80-a25774454a98",
+                  "observed_at": "2026-09-13T07:24:22.109Z"
+                },
+                {
+                  "ref": "event:3515ced1-630f-4512-b271-727127017463",
+                  "observed_at": "2026-09-13T07:27:08.343Z"
+                }
+              ]
+            },
+            {
+              "content_slug": "tichumo-d4",
+              "next_episode_id": "tichumo-d4-s1e1",
+              "last_play_at": "2026-09-01T14:29:41.967000Z",
+              "sources": [
+                {
+                  "ref": "event:cb634ec4-de4b-4cf1-9224-6049fdebebda",
+                  "observed_at": "2026-09-01T14:29:41.967Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:16a79b69-4779-4e80-aaf5-74620d53643d",
+          "event:d0bc7c21-736a-49f5-b560-c879964088b2",
+          "event:95750a0c-eb56-4353-ac22-334ded96b4aa",
+          "event:f22aeae0-7e1a-4875-9b02-7db8870aba17",
+          "event:9dcd0297-be70-4791-a26f-a6bff291c6c3",
+          "event:ad428531-4df4-44cd-93a9-51b36541cbcb",
+          "event:4139540a-af9a-4c1b-ad80-a25774454a98",
+          "event:3515ced1-630f-4512-b271-727127017463",
+          "event:cb634ec4-de4b-4cf1-9224-6049fdebebda"
+        ],
+        "observed_at": "2026-10-01T05:53:51.630000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:16a79b69-4779-4e80-aaf5-74620d53643d",
+            "observed_at": "2026-09-08T07:42:45.496Z",
+            "freshness_s": 1980666.134
+          },
+          {
+            "ref": "event:d0bc7c21-736a-49f5-b560-c879964088b2",
+            "observed_at": "2026-09-08T07:44:36.226Z",
+            "freshness_s": 1980555.404
+          },
+          {
+            "ref": "event:95750a0c-eb56-4353-ac22-334ded96b4aa",
+            "observed_at": "2026-09-08T11:34:58.482Z",
+            "freshness_s": 1966733.148
+          },
+          {
+            "ref": "event:f22aeae0-7e1a-4875-9b02-7db8870aba17",
+            "observed_at": "2026-09-08T11:37:45.141Z",
+            "freshness_s": 1966566.489
+          },
+          {
+            "ref": "event:9dcd0297-be70-4791-a26f-a6bff291c6c3",
+            "observed_at": "2026-09-11T09:32:08.859Z",
+            "freshness_s": 1714902.771
+          },
+          {
+            "ref": "event:ad428531-4df4-44cd-93a9-51b36541cbcb",
+            "observed_at": "2026-09-11T09:35:49.822Z",
+            "freshness_s": 1714681.808
+          },
+          {
+            "ref": "event:4139540a-af9a-4c1b-ad80-a25774454a98",
+            "observed_at": "2026-09-13T07:24:22.109Z",
+            "freshness_s": 1549769.521
+          },
+          {
+            "ref": "event:3515ced1-630f-4512-b271-727127017463",
+            "observed_at": "2026-09-13T07:27:08.343Z",
+            "freshness_s": 1549603.287
+          },
+          {
+            "ref": "event:cb634ec4-de4b-4cf1-9224-6049fdebebda",
+            "observed_at": "2026-09-01T14:29:41.967Z",
+            "freshness_s": 2561049.663
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +285,123 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2633031.63,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "radi-d4",
+                  "next_episode_id": "radi-d4-s1e5",
+                  "last_play_at": "2026-09-13T07:24:22.109000Z",
+                  "sources": [
+                    {
+                      "ref": "event:16a79b69-4779-4e80-aaf5-74620d53643d",
+                      "observed_at": "2026-09-08T07:42:45.496Z"
+                    },
+                    {
+                      "ref": "event:d0bc7c21-736a-49f5-b560-c879964088b2",
+                      "observed_at": "2026-09-08T07:44:36.226Z"
+                    },
+                    {
+                      "ref": "event:95750a0c-eb56-4353-ac22-334ded96b4aa",
+                      "observed_at": "2026-09-08T11:34:58.482Z"
+                    },
+                    {
+                      "ref": "event:f22aeae0-7e1a-4875-9b02-7db8870aba17",
+                      "observed_at": "2026-09-08T11:37:45.141Z"
+                    },
+                    {
+                      "ref": "event:9dcd0297-be70-4791-a26f-a6bff291c6c3",
+                      "observed_at": "2026-09-11T09:32:08.859Z"
+                    },
+                    {
+                      "ref": "event:ad428531-4df4-44cd-93a9-51b36541cbcb",
+                      "observed_at": "2026-09-11T09:35:49.822Z"
+                    },
+                    {
+                      "ref": "event:4139540a-af9a-4c1b-ad80-a25774454a98",
+                      "observed_at": "2026-09-13T07:24:22.109Z"
+                    },
+                    {
+                      "ref": "event:3515ced1-630f-4512-b271-727127017463",
+                      "observed_at": "2026-09-13T07:27:08.343Z"
+                    }
+                  ]
+                },
+                {
+                  "content_slug": "tichumo-d4",
+                  "next_episode_id": "tichumo-d4-s1e1",
+                  "last_play_at": "2026-09-01T14:29:41.967000Z",
+                  "sources": [
+                    {
+                      "ref": "event:cb634ec4-de4b-4cf1-9224-6049fdebebda",
+                      "observed_at": "2026-09-01T14:29:41.967Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:16a79b69-4779-4e80-aaf5-74620d53643d",
+              "event:d0bc7c21-736a-49f5-b560-c879964088b2",
+              "event:95750a0c-eb56-4353-ac22-334ded96b4aa",
+              "event:f22aeae0-7e1a-4875-9b02-7db8870aba17",
+              "event:9dcd0297-be70-4791-a26f-a6bff291c6c3",
+              "event:ad428531-4df4-44cd-93a9-51b36541cbcb",
+              "event:4139540a-af9a-4c1b-ad80-a25774454a98",
+              "event:3515ced1-630f-4512-b271-727127017463",
+              "event:cb634ec4-de4b-4cf1-9224-6049fdebebda"
+            ],
+            "observed_at": "2026-10-01T05:53:51.630000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:16a79b69-4779-4e80-aaf5-74620d53643d",
+                "observed_at": "2026-09-08T07:42:45.496Z",
+                "freshness_s": 1980666.134
+              },
+              {
+                "ref": "event:d0bc7c21-736a-49f5-b560-c879964088b2",
+                "observed_at": "2026-09-08T07:44:36.226Z",
+                "freshness_s": 1980555.404
+              },
+              {
+                "ref": "event:95750a0c-eb56-4353-ac22-334ded96b4aa",
+                "observed_at": "2026-09-08T11:34:58.482Z",
+                "freshness_s": 1966733.148
+              },
+              {
+                "ref": "event:f22aeae0-7e1a-4875-9b02-7db8870aba17",
+                "observed_at": "2026-09-08T11:37:45.141Z",
+                "freshness_s": 1966566.489
+              },
+              {
+                "ref": "event:9dcd0297-be70-4791-a26f-a6bff291c6c3",
+                "observed_at": "2026-09-11T09:32:08.859Z",
+                "freshness_s": 1714902.771
+              },
+              {
+                "ref": "event:ad428531-4df4-44cd-93a9-51b36541cbcb",
+                "observed_at": "2026-09-11T09:35:49.822Z",
+                "freshness_s": 1714681.808
+              },
+              {
+                "ref": "event:4139540a-af9a-4c1b-ad80-a25774454a98",
+                "observed_at": "2026-09-13T07:24:22.109Z",
+                "freshness_s": 1549769.521
+              },
+              {
+                "ref": "event:3515ced1-630f-4512-b271-727127017463",
+                "observed_at": "2026-09-13T07:27:08.343Z",
+                "freshness_s": 1549603.287
+              },
+              {
+                "ref": "event:cb634ec4-de4b-4cf1-9224-6049fdebebda",
+                "observed_at": "2026-09-01T14:29:41.967Z",
+                "freshness_s": 2561049.663
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +409,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],

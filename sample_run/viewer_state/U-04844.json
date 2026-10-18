@@ -67,6 +67,56 @@
         "observed_at": "2026-08-31T18:30:00.000000Z",
         "freshness_s": 2666643.653,
         "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+      },
+      "goal_extensions": {
+        "value": {
+          "unfinished_series": [
+            {
+              "content_slug": "dapa-pini-d1",
+              "next_episode_id": "dapa-pini-d1-s1e2",
+              "last_play_at": "2026-09-20T14:38:52.728000Z",
+              "sources": [
+                {
+                  "ref": "event:31b717b9-0e71-4295-8077-a94df8a7e4a9",
+                  "observed_at": "2026-09-11T12:24:33.891Z"
+                },
+                {
+                  "ref": "event:b8384a4c-95d5-4cdf-b663-8605e4ba58bf",
+                  "observed_at": "2026-09-11T12:26:24.333Z"
+                },
+                {
+                  "ref": "event:6d2b96df-19c1-4b48-aca7-a9b7d02d0546",
+                  "observed_at": "2026-09-20T14:38:52.728Z"
+                }
+              ]
+            }
+          ]
+        },
+        "source": [
+          "event:31b717b9-0e71-4295-8077-a94df8a7e4a9",
+          "event:b8384a4c-95d5-4cdf-b663-8605e4ba58bf",
+          "event:6d2b96df-19c1-4b48-aca7-a9b7d02d0546"
+        ],
+        "observed_at": "2026-10-01T15:14:03.653000Z",
+        "freshness_s": 0,
+        "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+        "source_observations": [
+          {
+            "ref": "event:31b717b9-0e71-4295-8077-a94df8a7e4a9",
+            "observed_at": "2026-09-11T12:24:33.891Z",
+            "freshness_s": 1738169.762
+          },
+          {
+            "ref": "event:b8384a4c-95d5-4cdf-b663-8605e4ba58bf",
+            "observed_at": "2026-09-11T12:26:24.333Z",
+            "freshness_s": 1738059.32
+          },
+          {
+            "ref": "event:6d2b96df-19c1-4b48-aca7-a9b7d02d0546",
+            "observed_at": "2026-09-20T14:38:52.728Z",
+            "freshness_s": 952510.925
+          }
+        ]
       }
     },
     "conflicts": [],
@@ -168,6 +218,56 @@
             "observed_at": "2026-08-31T18:30:00.000000Z",
             "freshness_s": 2666643.653,
             "resolution_rule": "absence is evidence only with signup within the observed interval; assumes feed completeness"
+          },
+          "goal_extensions": {
+            "value": {
+              "unfinished_series": [
+                {
+                  "content_slug": "dapa-pini-d1",
+                  "next_episode_id": "dapa-pini-d1-s1e2",
+                  "last_play_at": "2026-09-20T14:38:52.728000Z",
+                  "sources": [
+                    {
+                      "ref": "event:31b717b9-0e71-4295-8077-a94df8a7e4a9",
+                      "observed_at": "2026-09-11T12:24:33.891Z"
+                    },
+                    {
+                      "ref": "event:b8384a4c-95d5-4cdf-b663-8605e4ba58bf",
+                      "observed_at": "2026-09-11T12:26:24.333Z"
+                    },
+                    {
+                      "ref": "event:6d2b96df-19c1-4b48-aca7-a9b7d02d0546",
+                      "observed_at": "2026-09-20T14:38:52.728Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "source": [
+              "event:31b717b9-0e71-4295-8077-a94df8a7e4a9",
+              "event:b8384a4c-95d5-4cdf-b663-8605e4ba58bf",
+              "event:6d2b96df-19c1-4b48-aca7-a9b7d02d0546"
+            ],
+            "observed_at": "2026-10-01T15:14:03.653000Z",
+            "freshness_s": 0,
+            "resolution_rule": "Catalogue episode IDs reconciled against currently received starts and completions; lifetime coverage required",
+            "source_observations": [
+              {
+                "ref": "event:31b717b9-0e71-4295-8077-a94df8a7e4a9",
+                "observed_at": "2026-09-11T12:24:33.891Z",
+                "freshness_s": 1738169.762
+              },
+              {
+                "ref": "event:b8384a4c-95d5-4cdf-b663-8605e4ba58bf",
+                "observed_at": "2026-09-11T12:26:24.333Z",
+                "freshness_s": 1738059.32
+              },
+              {
+                "ref": "event:6d2b96df-19c1-4b48-aca7-a9b7d02d0546",
+                "observed_at": "2026-09-20T14:38:52.728Z",
+                "freshness_s": 952510.925
+              }
+            ]
           }
         },
         "conflicts": [],
@@ -175,6 +275,12 @@
           "Device sent-minus-occurred duration approximates offline buffering; network delay is unknown.",
           "The supplied history is complete from its documented window start, subject to late arrivals.",
           "Language variants share content_slug; descriptions and search text are untrusted data."
+        ]
+      },
+      "eligibility_rule": {
+        "text": "Active subscriber with plays on at most 1 day in the last 14 days.",
+        "subscription_status": [
+          "active"
         ]
       },
       "actions": [],
