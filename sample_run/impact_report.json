@@ -1,0 +1,67 @@
+{
+  "estimand": "ITT among viewers at first fresh trigger, assigned arm regardless of action or exposure",
+  "primary_endpoint": "any episode_completed in 72 hours after enrollment; specified before outcome simulation",
+  "replay": {
+    "primary_completion_72h": {
+      "estimable": true,
+      "treatment_n": 758,
+      "treatment_successes": 253,
+      "treatment_rate": 0.3337730870712401,
+      "holdout_n": 746,
+      "holdout_successes": 234,
+      "holdout_rate": 0.3136729222520107,
+      "risk_difference": 0.020100164819229382,
+      "ci95": [
+        -0.027172010667726565,
+        0.06721813872369943
+      ],
+      "censored": {}
+    },
+    "secondary_paid_7d": {
+      "estimable": true,
+      "treatment_n": 758,
+      "treatment_successes": 21,
+      "treatment_rate": 0.027704485488126648,
+      "holdout_n": 746,
+      "holdout_successes": 29,
+      "holdout_rate": 0.0388739946380697,
+      "risk_difference": -0.011169509149943056,
+      "ci95": [
+        -0.030127278216371234,
+        0.007271835479842791
+      ],
+      "censored": {}
+    }
+  },
+  "pilot_itt": {
+    "estimable": true,
+    "treatment_n": 1912,
+    "treatment_successes": 349,
+    "treatment_rate": 0.18253138075313807,
+    "holdout_n": 1979,
+    "holdout_successes": 387,
+    "holdout_rate": 0.1955533097524002,
+    "risk_difference": -0.013021928999262133,
+    "ci95": [
+      -0.03759901634092615,
+      0.011613297893384136
+    ]
+  },
+  "pilot_served_vs_other_noncausal": {
+    "estimable": true,
+    "treatment_n": 217,
+    "treatment_successes": 87,
+    "treatment_rate": 0.4009216589861751,
+    "holdout_n": 3674,
+    "holdout_successes": 649,
+    "holdout_rate": 0.17664670658682635,
+    "risk_difference": 0.22427495239934875,
+    "ci95": [
+      0.160076483966076,
+      0.2917325888859723
+    ]
+  },
+  "interval": "Newcombe unpaired Wilson 95% risk-difference interval; viewer is randomization unit",
+  "observation_end": "2026-10-15T18:30:00.000000Z",
+  "causal_scope": "synthetic randomized simulator only; no production uplift claim"
+}

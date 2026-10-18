@@ -1,0 +1,16 @@
+# Known limitations and intentional scope
+
+- Home pages only. Push, WhatsApp and in-app messaging are disabled and rejected by the verifier. Consent is resolved for future use, but this submission does not claim a working message scheduler or template sender.
+- G06 has unresolved “recently” semantics, G07 episode reconciliation is deferred, G10 has no measurable definition, and G11 lacks telemetry. They are explicitly excluded. This prioritizes the working decide/act/measure loop over catalogue coverage.
+- “Never” is inferred only for viewers whose signup falls within the supplied observation window, under a disclosed complete-feed assumption. Missing events and unbounded late arrivals could still invalidate it. Production would need authoritative lifetime counters and stream watermarks.
+- Absolute occurrence time is estimated from device buffering duration and server receipt. Negative durations fail closed. Unknown transport delay and within-batch device clock changes cannot be repaired from this pack.
+- Profile consent and subscription information can be stale without an authoritative billing/settings service. Expired known plans become unknown, and contradictory positive events override stale negative claims; billing truth beyond the supplied evidence is unavailable.
+- Mock provider only, no hosted LLM integration. The abstraction is present, supplied faults are exercised, and the default policy is deterministic. Confidence is heuristic evidence adequacy, not a calibrated outcome probability.
+- Dependency waits are explicitly simulated in a virtual clock. Actual Python/SQLite service time is reported separately. The run exercises the supplied traffic but is not a real concurrent load benchmark or proof of 10-million-viewer scale.
+- SQLite supports one CLI writer. Engine retry/reopen is tested; a crash-resumable replay CLI, distributed leases, remote outbox acknowledgments and a real-time API are not implemented.
+- The supplied simulator is batch-based. Scripted live events cause online revision; simulated replay-day events are learned after actions are generated. They do not retroactively alter earlier decisions. Continuing this agent on a second day would need an event consumer using the same state API.
+- Withdrawals block subsequent publication and identify affected live actions. A remote page-retraction API is not provided; a deployed platform must invalidate existing layouts when catalogue availability changes.
+- Failure lessons are stored, but no learned policy optimization is claimed. User-level causal attribution is impossible from this observational event stream; even linked exposure/success is only association.
+- The primary randomized interval spans zero in the sample. There is no demonstrated production uplift. One seed, one day, and synthetic randomization do not establish business impact.
+- The goal-judgment watermark uses the supplied simulator's documented 14 future days. Replacing the simulator requires an explicit observation-completeness contract; maximum observed event time alone is insufficient.
+- Raw pack, simulator events, SQLite and full viewer snapshots stay local and are excluded from Git. Compact decision/action/outcome/report artifacts are included; rerun the CLI to regenerate all evidence. No external upload, Git push or submission to a hiring platform was performed.
