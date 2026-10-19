@@ -1,6 +1,7 @@
 """Behavioral coverage for model, channel, goal and historical audit extensions."""
 import copy
 import json
+import sqlite3
 import unittest
 from datetime import timedelta
 from unittest.mock import patch
@@ -16,6 +17,28 @@ from one_agent.audit import inspect
 class Extensions(unittest.TestCase):
     setUp=fixtures.AgentTests.setUp
     tearDown=fixtures.AgentTests.tearDown
+
+    def test_audit_closes_connection_on_return(self):
+        connect=sqlite3.connect
+        opened=[]
+        def tracked(*args,**kwargs):
+            db=connect(*args,**kwargs);opened.append(db);return db
+        with patch('one_agent.audit.sqlite3.connect',side_effect=tracked):
+            inspect(self.path,'test-viewer')
+            inspect(self.path,'test-viewer',iso(NOW))
+        self.assertEqual(len(opened),2)
+        for db in opened:
+            with self.assertRaises(sqlite3.ProgrammingError):db.execute('SELECT 1')
+
+    def test_audit_closes_connection_on_error(self):
+        connect=sqlite3.connect
+        opened=[]
+        def tracked(*args,**kwargs):
+            db=connect(*args,**kwargs);opened.append(db);return db
+        with patch('one_agent.audit.sqlite3.connect',side_effect=tracked):
+            with self.assertRaises(ValueError):inspect(self.path,'test-viewer','2026-01-01T00:00:00')
+        self.assertEqual(len(opened),1)
+        with self.assertRaises(sqlite3.ProgrammingError):opened[0].execute('SELECT 1')
 
     def setup_extensions(self):
         self.pack.goals.update({g:{'goal_id':g,'eligibility':{'subscription_status':['lapsed']} if g=='G06' else {},

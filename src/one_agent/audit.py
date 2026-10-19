@@ -1,4 +1,5 @@
 """Read-only point-in-time reconstruction from committed version history."""
+from contextlib import closing
 import json
 import sqlite3
 from pathlib import Path
@@ -8,7 +9,8 @@ from .common import iso, ts
 def inspect(path, viewer, at=None):
     path=Path(path)
     if not path.is_file():raise ValueError('Database does not exist')
-    with sqlite3.connect(path.resolve().as_uri()+'?mode=ro',uri=True) as db:
+    # SQLite's connection context manager ends transactions but does not close.
+    with closing(sqlite3.connect(path.resolve().as_uri()+'?mode=ro',uri=True)) as db:
         if at is None:
             tables={r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
             return {table:[json.loads(r[0]) for r in db.execute('SELECT body FROM '+table+' WHERE user_id=?',(viewer,))] if table in tables else []
